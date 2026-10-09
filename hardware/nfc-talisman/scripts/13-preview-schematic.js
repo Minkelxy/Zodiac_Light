@@ -1,0 +1,1 @@
+await eda.dmt_EditorControl.openDocument('293c7786afd689e8');await new Promise(r=>setTimeout(r,500));const b=await eda.dmt_EditorControl.getCurrentRenderedAreaImage();if(!b)throw Error('render failed');const saved=await eda.sys_FileSystem.saveFileToFileSystem('D:/星座灯/hardware/nfc-talisman/eda/schematic-preview.png',b,undefined,true);return {saved,size:b.size};

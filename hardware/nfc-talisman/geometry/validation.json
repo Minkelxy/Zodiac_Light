@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "status": "pass",
+  "checks": {
+    "all_subboards_valid_and_connected": true,
+    "whole_panel_material_connected": true,
+    "panel_bounds_exact_100mm": true,
+    "top_bottom_3mm_rails_intact": true,
+    "constellation_hole_slot_web_ge_1mm": true,
+    "constellation_slot_slot_web_ge_1mm": true,
+    "constellation_slots_are_11_separate_closed_polygons": true,
+    "minimum_interboard_clearance_ge_2mm": true,
+    "manufacturing_exterior_and_internal_routes_do_not_share_edges": true,
+    "all_tabs_intersect_board_and_waste": true
+  },
+  "boards": {
+    "horse": {
+      "is_valid": true,
+      "connected": true,
+      "area_mm2": 1134.116733777534,
+      "internal_void_count": 0,
+      "minimum_aperture_to_outer_mm": null
+    },
+    "spacer2": {
+      "is_valid": true,
+      "connected": true,
+      "area_mm2": 388.70568017961807,
+      "internal_void_count": 1,
+      "minimum_aperture_to_outer_mm": 3.499999600906406
+    },
+    "core": {
+      "is_valid": true,
+      "connected": true,
+      "area_mm2": 1134.1167337775341,
+      "internal_void_count": 0,
+      "minimum_aperture_to_outer_mm": null
+    },
+    "spacer4": {
+      "is_valid": true,
+      "connected": true,
+      "area_mm2": 388.7056801796182,
+      "internal_void_count": 1,
+      "minimum_aperture_to_outer_mm": 3.499999600906403
+    },
+    "sagittarius5": {
+      "is_valid": true,
+      "connected": true,
+      "area_mm2": 1066.1567726488324,
+      "internal_void_count": 19,
+      "minimum_aperture_to_outer_mm": 4.349999999999995
+    }
+  },
+  "measurements": {
+    "star_count": 8,
+    "slot_count": 11,
+    "minimum_star_to_slot_web_mm": 1.000000633601639,
+    "star_to_slot_pair": [
+      "hip_90496",
+      "e10"
+    ],
+    "minimum_slot_to_slot_web_mm": 1.0000007049119335,
+    "slot_to_slot_pair": [
+      "e03",
+      "e06"
+    ],
+    "minimum_star_to_star_web_mm": 3.6348596202104986,
+    "minimum_slot_overall_length_mm": 1.2016956078683962,
+    "minimum_slot_centerline_length_mm": 0.20169560786839627,
+    "minimum_interboard_clearance_mm": 2.597979746446664,
+    "closest_board_pair": [
+      "core",
+      "spacer4"
+    ],
+    "panel_material_components": 1,
+    "panel_route_cutout_components": 16,
+    "panel_enclosed_route_cutouts": 8,
+    "tabs_count": 20,
+    "mousebite_drill_count": 100,
+    "panel_material_area_mm2": 7414.588298234535
+  },
+  "limitations": [
+    "Geometric validation is not a supplier production approval.",
+    "The 1.0mm slots require a 1.0mm router; external panel cuts use 2.0mm routing.",
+    "Horse light window is a clear FR-4 optical/mask feature, not a mechanical cutout.",
+    "Mousebites produce 0.25mm edge scallops before dressing; sand only tabs, protect antenna copper."
+  ]
+}

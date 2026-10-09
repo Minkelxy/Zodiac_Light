@@ -1,0 +1,1 @@
+const sch=await eda.dmt_Schematic.createSchematic('Core'); const pcb=await eda.dmt_Pcb.createPcb('Core'); const devices=await eda.lib_Device.getByLcscIds(['C710403','C5875720','C114662','C105579','C162182','C60137']);return {sch,pcb,devices,project:await eda.dmt_Project.getCurrentProjectInfo(),enumTypes:{layer:typeof EPCB_LayerId}};

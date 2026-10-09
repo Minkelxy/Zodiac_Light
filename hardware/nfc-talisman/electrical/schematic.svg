@@ -1,0 +1,180 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="980" viewBox="0 0 1400 980">
+<rect width="1400" height="980" fill="#f8fafc"/>
+<style>text{font-family:Arial,Microsoft YaHei,sans-serif;fill:#102b42}.title{font-size:30px;font-weight:bold}.small{font-size:16px}.label{font-size:20px}.wire{stroke:#257381;stroke-width:3;fill:none}.part{stroke:#102b42;stroke-width:3;fill:white}.hint{fill:#f0d899;stroke:#997e35;stroke-width:1.5}</style>
+<text x="45" y="55" class="title">37 mm NFC talisman — core electrical v1</text>
+<text x="45" y="88" class="small">Source-backed schematic overview · Connectivity contract: netlist.json · No battery / no MCU</text>
+<rect x="470" y="165" width="350" height="280" rx="5" class="part"/>
+<text x="645" y="200" class="label" text-anchor="middle">U1  NT3H2111W0FHKH</text>
+<text x="645" y="224" class="small" text-anchor="middle">XQFN8 · SOT902-3</text>
+<path d="M440,260 L470,260" class="wire"/>
+<text x="478" y="253" class="small">1  LA</text>
+<path d="M440,385 L470,385" class="wire"/>
+<text x="478" y="378" class="small">8  LB</text>
+<path d="M820,260 L850,260" class="wire"/>
+<text x="715" y="253" class="small">VCC  6</text>
+<text x="855" y="255" class="small">VOUT</text>
+<path d="M820,295 L850,295" class="wire"/>
+<text x="715" y="288" class="small">VOUT  7</text>
+<text x="855" y="290" class="small">VOUT</text>
+<path d="M820,330 L850,330" class="wire"/>
+<text x="715" y="323" class="small">SCL  3</text>
+<text x="855" y="325" class="small">SCL</text>
+<path d="M820,365 L850,365" class="wire"/>
+<text x="715" y="358" class="small">SDA  5</text>
+<text x="855" y="360" class="small">SDA</text>
+<path d="M820,400 L850,400" class="wire"/>
+<text x="715" y="393" class="small">FD  4</text>
+<text x="855" y="395" class="small">FD</text>
+<path d="M645,445 L645,475" class="wire"/>
+<text x="657" y="463" class="small">2 VSS / GND</text>
+<path d="M610,475 L680,475" class="wire"/>
+<text x="541" y="420" class="small">Center metal: NO solder/paste</text>
+<path d="M130,260 L440,260" class="wire"/>
+<path d="M130,385 L440,385" class="wire"/>
+<path d="M130,260 L130,274 C85,274 85,296 130,296 C85,296 85,318 130,318 C85,318 85,340 130,340 C85,340 85,362 130,362 L130,385" class="wire"/>
+<text x="45" y="235" class="small">L1 PCB coil</text>
+<text x="45" y="415" class="small">4 turns · 34 mm AF</text>
+<text x="45" y="440" class="small">0.25 / 0.25 mm</text>
+<text x="300" y="250" class="small">ANT_LA</text>
+<text x="300" y="408" class="small">ANT_LB</text>
+<circle cx="250" cy="260" r="4" fill="#257381"/>
+<circle cx="250" cy="385" r="4" fill="#257381"/>
+<path d="M250,260 L250,290" class="wire"/>
+<path d="M250,290 L250,312" class="wire"/>
+<path d="M232,312 L268,312" class="wire"/>
+<path d="M232,326 L268,326" class="wire"/>
+<path d="M250,326 L250,365" class="wire"/>
+<text x="274" y="318" class="small">CT1</text>
+<text x="274" y="340" class="small">47 pF C0G</text>
+<path d="M250,365 L250,385" class="wire"/>
+<circle cx="385" cy="260" r="4" fill="#257381"/>
+<circle cx="385" cy="385" r="4" fill="#257381"/>
+<path d="M385,260 L385,290" class="wire"/>
+<path d="M385,290 L385,312" class="wire"/>
+<path d="M367,312 L403,312" class="wire"/>
+<path d="M367,326 L403,326" class="wire"/>
+<path d="M385,326 L385,365" class="wire"/>
+<text x="409" y="318" class="small">CT2</text>
+<text x="409" y="340" class="small">DNP</text>
+<path d="M385,365 L385,385" class="wire"/>
+<text x="1000" y="190" class="label">Shared EH supply</text>
+<text x="945" y="219" class="small">VOUT</text>
+<path d="M945,230 L945,265" class="wire"/>
+<path d="M945,265 L945,287" class="wire"/>
+<path d="M927,287 L963,287" class="wire"/>
+<path d="M927,301 L963,301" class="wire"/>
+<path d="M945,301 L945,340" class="wire"/>
+<text x="969" y="293" class="small">C1</text>
+<text x="969" y="315" class="small">150 nF X7R</text>
+<path d="M945,340 L945,367" class="wire"/>
+<text x="954" y="361" class="small">GND</text>
+<text x="940" y="410" class="small">TP1: VOUT   TP2: GND</text>
+<path d="M1080,230 L1320,230" class="wire"/>
+<text x="1090" y="220" class="small">VOUT</text>
+<circle cx="1090" cy="230" r="4" fill="#257381"/>
+<path d="M1090,230 L1090,240" class="wire"/>
+<rect x="1079" y="240" width="22" height="48" class="part"/>
+<path d="M1090,288 L1090,305" class="wire"/>
+<text x="1108" y="252" class="small">R5</text>
+<text x="1108" y="277" class="small">47k</text>
+<path d="M1090,305 L1090,347" class="wire"/>
+<text x="1081" y="369" class="small">SCL</text>
+<circle cx="1170" cy="230" r="4" fill="#257381"/>
+<path d="M1170,230 L1170,240" class="wire"/>
+<rect x="1159" y="240" width="22" height="48" class="part"/>
+<path d="M1170,288 L1170,305" class="wire"/>
+<text x="1188" y="252" class="small">R6</text>
+<text x="1188" y="277" class="small">47k</text>
+<path d="M1170,305 L1170,347" class="wire"/>
+<text x="1161" y="369" class="small">SDA</text>
+<circle cx="1250" cy="230" r="4" fill="#257381"/>
+<path d="M1250,230 L1250,240" class="wire"/>
+<rect x="1239" y="240" width="22" height="48" class="part"/>
+<path d="M1250,288 L1250,305" class="wire"/>
+<text x="1268" y="252" class="small">R7</text>
+<text x="1268" y="277" class="small">47k</text>
+<path d="M1250,305 L1250,347" class="wire"/>
+<text x="1241" y="369" class="small">FD</text>
+<rect x="40" y="510" width="1320" height="330" rx="8" fill="#ecf2f6" stroke="#c4d3dd"/>
+<text x="65" y="548" class="label">Independent LED branches — D2 and D4 may be omitted to reduce load</text>
+<text x="150" y="580" class="small">VOUT</text>
+<path d="M175,587 L175,600" class="wire"/>
+<path d="M175,600 L175,610" class="wire"/>
+<rect x="164" y="610" width="22" height="48" class="part"/>
+<path d="M175,658 L175,675" class="wire"/>
+<text x="193" y="622" class="small">R1</text>
+<text x="193" y="647" class="small">2.2k</text>
+<text x="190" y="699" class="small">LED1_A</text>
+<path d="M175,675 L175,704" class="wire"/>
+<path d="M158,704 L192,704 L175,732 Z" class="part"/>
+<path d="M156,736 L194,736" class="wire"/>
+<path d="M175,736 L175,776" class="wire"/>
+<path d="M197,711 l17,-13 m-6,0 l6,0 l-1,6 M205,730 l17,-13 m-6,0 l6,0 l-1,6" class="wire"/>
+<text x="133" y="797" class="small">GND</text>
+<text x="237" y="735" class="small">D1</text>
+<text x="237" y="758" class="small">590 nm yellow</text>
+<text x="120" y="821" class="small">TOP / horse</text>
+<text x="138" y="722" class="small">A</text>
+<text x="138" y="750" class="small">K</text>
+<text x="460" y="580" class="small">VOUT</text>
+<path d="M485,587 L485,600" class="wire"/>
+<path d="M485,600 L485,610" class="wire"/>
+<rect x="474" y="610" width="22" height="48" class="part"/>
+<path d="M485,658 L485,675" class="wire"/>
+<text x="503" y="622" class="small">R2</text>
+<text x="503" y="647" class="small">2.2k</text>
+<text x="500" y="699" class="small">LED2_A</text>
+<path d="M485,675 L485,704" class="wire"/>
+<path d="M468,704 L502,704 L485,732 Z" class="part"/>
+<path d="M466,736 L504,736" class="wire"/>
+<path d="M485,736 L485,776" class="wire"/>
+<path d="M507,711 l17,-13 m-6,0 l6,0 l-1,6 M515,730 l17,-13 m-6,0 l6,0 l-1,6" class="wire"/>
+<text x="443" y="797" class="small">GND</text>
+<text x="547" y="735" class="small">D2</text>
+<text x="547" y="758" class="small">590 nm yellow</text>
+<text x="430" y="821" class="small">TOP / horse</text>
+<text x="448" y="722" class="small">A</text>
+<text x="448" y="750" class="small">K</text>
+<text x="770" y="580" class="small">VOUT</text>
+<path d="M795,587 L795,600" class="wire"/>
+<path d="M795,600 L795,610" class="wire"/>
+<rect x="784" y="610" width="22" height="48" class="part"/>
+<path d="M795,658 L795,675" class="wire"/>
+<text x="813" y="622" class="small">R3</text>
+<text x="813" y="647" class="small">2.2k</text>
+<text x="810" y="699" class="small">LED3_A</text>
+<path d="M795,675 L795,704" class="wire"/>
+<path d="M778,704 L812,704 L795,732 Z" class="part"/>
+<path d="M776,736 L814,736" class="wire"/>
+<path d="M795,736 L795,776" class="wire"/>
+<path d="M817,711 l17,-13 m-6,0 l6,0 l-1,6 M825,730 l17,-13 m-6,0 l6,0 l-1,6" class="wire"/>
+<text x="753" y="797" class="small">GND</text>
+<text x="857" y="735" class="small">D3</text>
+<text x="857" y="758" class="small">590 nm yellow</text>
+<text x="740" y="821" class="small">BOTTOM / stars</text>
+<text x="758" y="722" class="small">A</text>
+<text x="758" y="750" class="small">K</text>
+<text x="1080" y="580" class="small">VOUT</text>
+<path d="M1105,587 L1105,600" class="wire"/>
+<path d="M1105,600 L1105,610" class="wire"/>
+<rect x="1094" y="610" width="22" height="48" class="part"/>
+<path d="M1105,658 L1105,675" class="wire"/>
+<text x="1123" y="622" class="small">R4</text>
+<text x="1123" y="647" class="small">2.2k</text>
+<text x="1120" y="699" class="small">LED4_A</text>
+<path d="M1105,675 L1105,704" class="wire"/>
+<path d="M1088,704 L1122,704 L1105,732 Z" class="part"/>
+<path d="M1086,736 L1124,736" class="wire"/>
+<path d="M1105,736 L1105,776" class="wire"/>
+<path d="M1127,711 l17,-13 m-6,0 l6,0 l-1,6 M1135,730 l17,-13 m-6,0 l6,0 l-1,6" class="wire"/>
+<text x="1063" y="797" class="small">GND</text>
+<text x="1167" y="735" class="small">D4</text>
+<text x="1167" y="758" class="small">590 nm yellow</text>
+<text x="1050" y="821" class="small">BOTTOM / stars</text>
+<text x="1068" y="722" class="small">A</text>
+<text x="1068" y="750" class="small">K</text>
+<rect x="40" y="860" width="1320" height="82" rx="5" class="hint"/>
+<text x="60" y="887" class="small">VCC ties directly to VOUT. C1 is the entire bypass total; do not add another supply capacitor.</text>
+<text x="60" y="911" class="small">CT1 is an initial tuning value. Four LEDs may dim at low NFC field; assess full stack resonance and read/write under load.</text>
+<text x="60" y="935" class="small">A/K identify LED polarity; map actual EasyEDA library pad numbers before manufacture. This SVG is not a native EDA schematic.</text>
+</svg>

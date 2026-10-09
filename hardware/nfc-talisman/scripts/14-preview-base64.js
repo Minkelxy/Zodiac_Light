@@ -1,0 +1,1 @@
+await eda.dmt_EditorControl.openDocument('293c7786afd689e8');await new Promise(r=>setTimeout(r,500));const b=await eda.dmt_EditorControl.getCurrentRenderedAreaImage();if(!b)throw Error('render failed');const a=new Uint8Array(await b.arrayBuffer());let s='';for(let i=0;i<a.length;i++)s+=String.fromCharCode(a[i]);return {base64:btoa(s),size:b.size};

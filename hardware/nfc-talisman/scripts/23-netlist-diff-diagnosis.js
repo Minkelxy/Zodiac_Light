@@ -1,0 +1,14 @@
+const SCHEMATIC='293c7786afd689e8',PCB='eb14b9eaec4f920c';
+await eda.dmt_EditorControl.openDocument(SCHEMATIC);
+await new Promise(r=>setTimeout(r,400));
+const sInfo=await eda.dmt_SelectControl.getCurrentDocumentInfo();
+if(sInfo?.uuid!==SCHEMATIC)throw Error('Schematic is not active');
+const schematic=await eda.sch_PrimitiveComponent.getAll();
+await eda.dmt_EditorControl.openDocument(PCB);
+await new Promise(r=>setTimeout(r,400));
+const pInfo=await eda.dmt_SelectControl.getCurrentDocumentInfo();
+if(pInfo?.uuid!==PCB)throw Error('Core PCB is not active');
+const board=await eda.pcb_PrimitiveComponent.getAll();
+const sRefs=schematic.map(c=>({designator:c.getState_Designator(),name:c.getState_Name(),footprint:c.getState_Footprint(),addIntoPcb:c.getState_AddIntoPcb(),addIntoBom:c.getState_AddIntoBom()})).filter(c=>c.designator);
+const pRefs=board.map(c=>({designator:c.getState_Designator(),footprint:c.getState_Footprint(),id:c.getState_PrimitiveId()}));
+return {schematicCount:sRefs.length,schematic:sRefs,pcbCount:pRefs.length,pcb:pRefs,missingFromPcb:sRefs.filter(x=>!pRefs.some(y=>y.designator===x.designator)),extraOnPcb:pRefs.filter(x=>!sRefs.some(y=>y.designator===x.designator))};

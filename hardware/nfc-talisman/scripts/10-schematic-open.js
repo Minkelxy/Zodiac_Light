@@ -1,0 +1,1 @@
+await eda.dmt_EditorControl.openDocument('293c7786afd689e8'); await new Promise(r=>setTimeout(r,1000));return {doc:await eda.dmt_SelectControl.getCurrentDocumentInfo(),wires:(await eda.sch_PrimitiveWire.getAll()).length,parts:(await eda.sch_PrimitiveComponent.getAll()).length};

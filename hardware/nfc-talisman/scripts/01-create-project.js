@@ -1,0 +1,1 @@
+const before=await eda.dmt_Project.getCurrentProjectInfo(); const uuid=await eda.dmt_Project.createProject('37mm双面NFC符咒首版','nfc-talisman-37mm-v1',undefined,undefined,'五片1mm PCB，马符咒与射手座，100mm拼板，实物调谐首版'); if(!uuid)throw Error('Project creation failed'); return {beforeUuid:before?.uuid,uuid,opened:await eda.dmt_Project.openProject(uuid)};

@@ -1,0 +1,92 @@
+[
+  {
+    "file": "NXP_NT3H2111_2211_rev3.6.pdf",
+    "url": "https://cache.nxp.com/docs/en/data-sheet/NT3H2111_2211.pdf",
+    "publisher": "NXP",
+    "revision": "Rev. 3.6, 2023-07-21",
+    "retrieved_date": "2026-10-09",
+    "sha256": "44a7cbee1220999138538341392aacde5a87aed7a284974328e8297b132a20c8",
+    "size_bytes": 881999,
+    "status": "archived"
+  },
+  {
+    "file": "NXP_TN00042_rev1.0.pdf",
+    "url": "https://cache.nxp.com/docs/en/engineering-bulletin/TN00042.pdf",
+    "publisher": "NXP",
+    "revision": "Rev. 1.0, 2018-07-10",
+    "retrieved_date": "2026-10-09",
+    "sha256": "be555836dced1ee3bd94763dcf6210d32fe82a686956e84ce1018e7b67d4097b",
+    "size_bytes": 369570,
+    "status": "archived"
+  },
+  {
+    "file": "NXP_AN11578_rev1.0.pdf",
+    "url": "https://cache.nxp.com/docs/en/application-note/AN11578.pdf",
+    "publisher": "NXP",
+    "revision": "Rev. 1.0, 2016-02-01",
+    "retrieved_date": "2026-10-09",
+    "sha256": "efefd7d501f851510ebba60814bd4fe3372f5aac08a2a2b62ba4af636a9a8ddc",
+    "size_bytes": 92100,
+    "status": "archived"
+  },
+  {
+    "file": "NXP_ES_NT3H2111_2211_rev4.1.pdf",
+    "url": "https://cache.nxp.com/docs/en/errata/ES_NT3H2111_2211.pdf",
+    "publisher": "NXP",
+    "revision": "Rev. 4.1, 2025-10-30",
+    "retrieved_date": "2026-10-09",
+    "sha256": "37c7afb52db718fd4123580573ae62ce7e919cf6913cf0781e06f7394fc9d3df",
+    "size_bytes": 550708,
+    "status": "archived"
+  },
+  {
+    "file": "Kingbright_APG1608SYKC-T.pdf",
+    "url": "https://www.kingbrightusa.com/images/catalog/SPEC/APG1608SYKC-T.pdf",
+    "publisher": "Kingbright",
+    "revision": "V.15B, 2025-03-13",
+    "retrieved_date": "2026-10-09",
+    "sha256": "3cbd46d78890a2843ffae1762d6c8753adb2ae601ace5edf79ac595247398248",
+    "size_bytes": 488778,
+    "status": "archived"
+  },
+  {
+    "file": "Murata_GRM155R71C154KA12.pdf",
+    "url": "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R71C154KA12-01A.pdf",
+    "publisher": "Murata",
+    "revision": "Reference sheet, 2024-12-25 specifications",
+    "retrieved_date": "2026-10-09",
+    "sha256": "521c7684b4be833d0e8309b9c0df195a0788a304427fc6181abb59b76d66d1c2",
+    "size_bytes": 2001743,
+    "status": "archived"
+  },
+  {
+    "file": "YAGEO_RC0603FR-072K2L.pdf",
+    "url": "https://yageogroup.com/component-documentation/download/specsheet/RC0603FR-072K2L",
+    "publisher": "YAGEO",
+    "revision": "Online part-specific specification",
+    "retrieved_date": "2026-10-09",
+    "sha256": "3bb6a7290a9203d31ec51e6b08b94ecc5fb1da92c8a01fa75cd092638c11ea31",
+    "size_bytes": 56524,
+    "status": "archived"
+  },
+  {
+    "file": "YAGEO_RC0603FR-0747KL.pdf",
+    "url": "https://yageogroup.com/component-documentation/download/specsheet/RC0603FR-0747KL",
+    "publisher": "YAGEO",
+    "revision": "Online part-specific specification",
+    "retrieved_date": "2026-10-09",
+    "sha256": "2e7c3e432f10e9f26340974d6253d11ea1bd806e06869f2d17233e9c5dc04ec8",
+    "size_bytes": 56515,
+    "status": "archived"
+  },
+  {
+    "file": "YAGEO_CC0402JRNPO9BN470.pdf",
+    "url": "https://yageogroup.com/download/specsheet/CC0402JRNPO9BN470",
+    "publisher": "YAGEO",
+    "revision": "Online part-specific specification",
+    "retrieved_date": "2026-10-09",
+    "sha256": "2a74ca03e6afa140fca6d62d74796ee6485f58e58c999feb1bcb5c851a06781b",
+    "size_bytes": 248973,
+    "status": "archived"
+  }
+]

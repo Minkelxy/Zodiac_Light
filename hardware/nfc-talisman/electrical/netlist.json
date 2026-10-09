@@ -1,0 +1,519 @@
+{
+  "format": "nfc-talisman.connectivity.v1",
+  "revision": "v1",
+  "source_verified_date": "2026-10-09",
+  "description": "Connectivity handoff. This JSON is not an EasyEDA native project or imported native netlist.",
+  "power": {
+    "external_source": false,
+    "vcc_tied_to_vout": true,
+    "vout_storage_nominal_nF": 150,
+    "vout_storage_limit_nF": 220
+  },
+  "pin_name_map_U1": {
+    "1": "LA",
+    "2": "VSS",
+    "3": "SCL",
+    "4": "FD",
+    "5": "SDA",
+    "6": "VCC",
+    "7": "VOUT",
+    "8": "LB"
+  },
+  "led_pin_policy": "A and K denote polarity, not native library pad numbers. Resolve the EasyEDA/LCSC device mapping before routing; library pad digits are not assumed.",
+  "components": [
+    {
+      "reference": "U1",
+      "value": "NT3H2111W0FHKH",
+      "pins": {
+        "1": "ANT_LA",
+        "2": "GND",
+        "3": "SCL",
+        "4": "FD",
+        "5": "SDA",
+        "6": "VOUT",
+        "7": "VOUT",
+        "8": "ANT_LB"
+      },
+      "pcb_side": "Top",
+      "population": "Fit",
+      "notes": "Center metal area is not an electrical pin: no copper/paste exposed center pad.",
+      "manufacturer": "NXP",
+      "mpn": "NT3H2111W0FHKH",
+      "lcsc": "C710403",
+      "package": "XQFN8 1.6x1.6 / SOT902-3",
+      "height_max_mm": 0.5,
+      "source": "https://www.lcsc.com/fr/product-detail/RFID-ICs_NXP-NT3H2111W0FHKH_C710403.html"
+    },
+    {
+      "reference": "L1",
+      "value": "PCB octagonal spiral",
+      "pins": {
+        "1": "ANT_LA",
+        "2": "ANT_LB"
+      },
+      "pcb_side": "Top",
+      "population": "Fit",
+      "notes": "34mm across flats, 4 turns, width/gap 0.25/0.25mm; inner end via bottom return. Physical inductance is unmeasured."
+    },
+    {
+      "reference": "C1",
+      "value": "150nF 16V X7R 10%",
+      "pins": {
+        "1": "VOUT",
+        "2": "GND"
+      },
+      "pcb_side": "Top",
+      "population": "Fit",
+      "notes": "The ONLY VOUT/VCC bypass/storage capacitor. Nominal total 150nF; 165nF with +10% initial tolerance, below 220nF ceiling.",
+      "manufacturer": "Murata",
+      "mpn": "GRM155R71C154KA12D",
+      "lcsc": "C162182",
+      "package": "0402 (1005 metric)",
+      "height_max_mm": 0.55,
+      "source": "https://www.lcsc.com/es/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_Murata-Electronics_C162182.html"
+    },
+    {
+      "reference": "CT1",
+      "value": "47pF 50V C0G 5%",
+      "pins": {
+        "1": "ANT_LA",
+        "2": "ANT_LB"
+      },
+      "pcb_side": "Top",
+      "population": "Fit",
+      "notes": "Starting value only. Include internal IC 50pF plus antenna/assembly parasitics when tuning.",
+      "manufacturer": "YAGEO",
+      "mpn": "CC0402JRNPO9BN470",
+      "lcsc": "C60137",
+      "package": "0402 (1005 metric)",
+      "height_max_mm": 0.55,
+      "source": "https://www.lcsc.com/product-detail/C60137.html"
+    },
+    {
+      "reference": "CT2",
+      "value": "TUNE C0G 0402",
+      "pins": {
+        "1": "ANT_LA",
+        "2": "ANT_LB"
+      },
+      "pcb_side": "Top",
+      "population": "DNP",
+      "notes": "Unpopulated additional parallel tuning capacitor. Selection follows complete stack measurement; no invented part number."
+    },
+    {
+      "reference": "R5",
+      "value": "47kOhm 1%",
+      "pins": {
+        "1": "VOUT",
+        "2": "SCL"
+      },
+      "pcb_side": "Top",
+      "population": "Fit",
+      "notes": "Unused I2C clock held high.",
+      "manufacturer": "YAGEO",
+      "mpn": "RC0603FR-0747KL",
+      "lcsc": "C105579",
+      "package": "0603 (1608 metric)",
+      "height_max_mm": 0.55,
+      "source": "https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount_YAGEO-RC0603FR-0747KL_C105579.html"
+    },
+    {
+      "reference": "R6",
+      "value": "47kOhm 1%",
+      "pins": {
+        "1": "VOUT",
+        "2": "SDA"
+      },
+      "pcb_side": "Top",
+      "population": "Fit",
+      "notes": "Unused I2C data held high.",
+      "manufacturer": "YAGEO",
+      "mpn": "RC0603FR-0747KL",
+      "lcsc": "C105579",
+      "package": "0603 (1608 metric)",
+      "height_max_mm": 0.55,
+      "source": "https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount_YAGEO-RC0603FR-0747KL_C105579.html"
+    },
+    {
+      "reference": "R7",
+      "value": "47kOhm 1%",
+      "pins": {
+        "1": "VOUT",
+        "2": "FD"
+      },
+      "pcb_side": "Top",
+      "population": "Fit",
+      "notes": "FD pull-up; about 64uA at 3V while FD sinks. No external host.",
+      "manufacturer": "YAGEO",
+      "mpn": "RC0603FR-0747KL",
+      "lcsc": "C105579",
+      "package": "0603 (1608 metric)",
+      "height_max_mm": 0.55,
+      "source": "https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount_YAGEO-RC0603FR-0747KL_C105579.html"
+    },
+    {
+      "reference": "TP1",
+      "value": "VOUT test pad",
+      "pins": {
+        "1": "VOUT"
+      },
+      "pcb_side": "Top",
+      "population": "Fit",
+      "notes": ""
+    },
+    {
+      "reference": "TP2",
+      "value": "GND test pad",
+      "pins": {
+        "1": "GND"
+      },
+      "pcb_side": "Top",
+      "population": "Fit",
+      "notes": ""
+    },
+    {
+      "reference": "R1",
+      "value": "2.2kOhm 1%",
+      "pins": {
+        "1": "VOUT",
+        "2": "LED1_A"
+      },
+      "pcb_side": "Top",
+      "population": "Fit",
+      "notes": "Independent LED current limit; never short.",
+      "manufacturer": "YAGEO",
+      "mpn": "RC0603FR-072K2L",
+      "lcsc": "C114662",
+      "package": "0603 (1608 metric)",
+      "height_max_mm": 0.55,
+      "source": "https://www.lcsc.com/product-detail/C114662.html"
+    },
+    {
+      "reference": "D1",
+      "value": "Yellow 590nm",
+      "pins": {
+        "A": "LED1_A",
+        "K": "GND"
+      },
+      "pcb_side": "Top",
+      "population": "Fit",
+      "notes": "Baseline light source on this face.",
+      "manufacturer": "Kingbright",
+      "mpn": "APG1608SYKC/T",
+      "lcsc": "C5875720",
+      "package": "0603 (1608 metric) LED",
+      "height_max_mm": 0.35,
+      "source": "https://www.lcsc.com/product-detail/LED-Indication-Discrete_Kingbright-APG1608SYKC-T_C5875720.html"
+    },
+    {
+      "reference": "R2",
+      "value": "2.2kOhm 1%",
+      "pins": {
+        "1": "VOUT",
+        "2": "LED2_A"
+      },
+      "pcb_side": "Top",
+      "population": "Fit",
+      "notes": "Independent LED current limit; never short.",
+      "manufacturer": "YAGEO",
+      "mpn": "RC0603FR-072K2L",
+      "lcsc": "C114662",
+      "package": "0603 (1608 metric)",
+      "height_max_mm": 0.55,
+      "source": "https://www.lcsc.com/product-detail/C114662.html"
+    },
+    {
+      "reference": "D2",
+      "value": "Yellow 590nm",
+      "pins": {
+        "A": "LED2_A",
+        "K": "GND"
+      },
+      "pcb_side": "Top",
+      "population": "Fit",
+      "notes": "Optional DNP to reduce load.",
+      "manufacturer": "Kingbright",
+      "mpn": "APG1608SYKC/T",
+      "lcsc": "C5875720",
+      "package": "0603 (1608 metric) LED",
+      "height_max_mm": 0.35,
+      "source": "https://www.lcsc.com/product-detail/LED-Indication-Discrete_Kingbright-APG1608SYKC-T_C5875720.html"
+    },
+    {
+      "reference": "R3",
+      "value": "2.2kOhm 1%",
+      "pins": {
+        "1": "VOUT",
+        "2": "LED3_A"
+      },
+      "pcb_side": "Bottom",
+      "population": "Fit",
+      "notes": "Independent LED current limit; never short.",
+      "manufacturer": "YAGEO",
+      "mpn": "RC0603FR-072K2L",
+      "lcsc": "C114662",
+      "package": "0603 (1608 metric)",
+      "height_max_mm": 0.55,
+      "source": "https://www.lcsc.com/product-detail/C114662.html"
+    },
+    {
+      "reference": "D3",
+      "value": "Yellow 590nm",
+      "pins": {
+        "A": "LED3_A",
+        "K": "GND"
+      },
+      "pcb_side": "Bottom",
+      "population": "Fit",
+      "notes": "Baseline light source on this face.",
+      "manufacturer": "Kingbright",
+      "mpn": "APG1608SYKC/T",
+      "lcsc": "C5875720",
+      "package": "0603 (1608 metric) LED",
+      "height_max_mm": 0.35,
+      "source": "https://www.lcsc.com/product-detail/LED-Indication-Discrete_Kingbright-APG1608SYKC-T_C5875720.html"
+    },
+    {
+      "reference": "R4",
+      "value": "2.2kOhm 1%",
+      "pins": {
+        "1": "VOUT",
+        "2": "LED4_A"
+      },
+      "pcb_side": "Bottom",
+      "population": "Fit",
+      "notes": "Independent LED current limit; never short.",
+      "manufacturer": "YAGEO",
+      "mpn": "RC0603FR-072K2L",
+      "lcsc": "C114662",
+      "package": "0603 (1608 metric)",
+      "height_max_mm": 0.55,
+      "source": "https://www.lcsc.com/product-detail/C114662.html"
+    },
+    {
+      "reference": "D4",
+      "value": "Yellow 590nm",
+      "pins": {
+        "A": "LED4_A",
+        "K": "GND"
+      },
+      "pcb_side": "Bottom",
+      "population": "Fit",
+      "notes": "Optional DNP to reduce load.",
+      "manufacturer": "Kingbright",
+      "mpn": "APG1608SYKC/T",
+      "lcsc": "C5875720",
+      "package": "0603 (1608 metric) LED",
+      "height_max_mm": 0.35,
+      "source": "https://www.lcsc.com/product-detail/LED-Indication-Discrete_Kingbright-APG1608SYKC-T_C5875720.html"
+    }
+  ],
+  "nets": {
+    "ANT_LA": [
+      {
+        "reference": "U1",
+        "pin": "1"
+      },
+      {
+        "reference": "L1",
+        "pin": "1"
+      },
+      {
+        "reference": "CT1",
+        "pin": "1"
+      },
+      {
+        "reference": "CT2",
+        "pin": "1"
+      }
+    ],
+    "GND": [
+      {
+        "reference": "U1",
+        "pin": "2"
+      },
+      {
+        "reference": "C1",
+        "pin": "2"
+      },
+      {
+        "reference": "TP2",
+        "pin": "1"
+      },
+      {
+        "reference": "D1",
+        "pin": "K"
+      },
+      {
+        "reference": "D2",
+        "pin": "K"
+      },
+      {
+        "reference": "D3",
+        "pin": "K"
+      },
+      {
+        "reference": "D4",
+        "pin": "K"
+      }
+    ],
+    "SCL": [
+      {
+        "reference": "U1",
+        "pin": "3"
+      },
+      {
+        "reference": "R5",
+        "pin": "2"
+      }
+    ],
+    "FD": [
+      {
+        "reference": "U1",
+        "pin": "4"
+      },
+      {
+        "reference": "R7",
+        "pin": "2"
+      }
+    ],
+    "SDA": [
+      {
+        "reference": "U1",
+        "pin": "5"
+      },
+      {
+        "reference": "R6",
+        "pin": "2"
+      }
+    ],
+    "VOUT": [
+      {
+        "reference": "U1",
+        "pin": "6"
+      },
+      {
+        "reference": "U1",
+        "pin": "7"
+      },
+      {
+        "reference": "C1",
+        "pin": "1"
+      },
+      {
+        "reference": "R5",
+        "pin": "1"
+      },
+      {
+        "reference": "R6",
+        "pin": "1"
+      },
+      {
+        "reference": "R7",
+        "pin": "1"
+      },
+      {
+        "reference": "TP1",
+        "pin": "1"
+      },
+      {
+        "reference": "R1",
+        "pin": "1"
+      },
+      {
+        "reference": "R2",
+        "pin": "1"
+      },
+      {
+        "reference": "R3",
+        "pin": "1"
+      },
+      {
+        "reference": "R4",
+        "pin": "1"
+      }
+    ],
+    "ANT_LB": [
+      {
+        "reference": "U1",
+        "pin": "8"
+      },
+      {
+        "reference": "L1",
+        "pin": "2"
+      },
+      {
+        "reference": "CT1",
+        "pin": "2"
+      },
+      {
+        "reference": "CT2",
+        "pin": "2"
+      }
+    ],
+    "LED1_A": [
+      {
+        "reference": "R1",
+        "pin": "2"
+      },
+      {
+        "reference": "D1",
+        "pin": "A"
+      }
+    ],
+    "LED2_A": [
+      {
+        "reference": "R2",
+        "pin": "2"
+      },
+      {
+        "reference": "D2",
+        "pin": "A"
+      }
+    ],
+    "LED3_A": [
+      {
+        "reference": "R3",
+        "pin": "2"
+      },
+      {
+        "reference": "D3",
+        "pin": "A"
+      }
+    ],
+    "LED4_A": [
+      {
+        "reference": "R4",
+        "pin": "2"
+      },
+      {
+        "reference": "D4",
+        "pin": "A"
+      }
+    ]
+  },
+  "assembly_profiles": {
+    "full": {
+      "DNP": [
+        "CT2"
+      ]
+    },
+    "low_load": {
+      "DNP": [
+        "CT2",
+        "D2",
+        "D4"
+      ]
+    },
+    "rf_only_diagnostic": {
+      "DNP": [
+        "CT2",
+        "D1",
+        "D2",
+        "D3",
+        "D4"
+      ]
+    }
+  },
+  "validation_status": "Source and connectivity reviewed; no fabricated PCB or phone validation performed."
+}

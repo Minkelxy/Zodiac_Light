@@ -1,0 +1,1 @@
+const lib=await eda.lib_LibrariesList.getSystemLibraryUuid();const devices=await eda.lib_Device.getByLcscIds(['C710403','C5875720','C114662','C105579','C162182','C60137'],lib,false);return {lib,devices,current:await eda.dmt_SelectControl.getCurrentDocumentInfo()};

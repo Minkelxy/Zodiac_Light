@@ -1,0 +1,10 @@
+await eda.dmt_EditorControl.openDocument('4a4719695b24dc2b');
+await new Promise(r=>setTimeout(r,500));
+const info=await eda.dmt_Pcb.getCurrentPcbInfo();
+const fills=await eda.pcb_PrimitiveFill.getAll();
+const lines=await eda.pcb_PrimitiveLine.getAll();
+const polylines=await eda.pcb_PrimitivePolyline.getAll();
+const pads=await eda.pcb_PrimitivePad.getAll();
+const components=await eda.pcb_PrimitiveComponent.getAll();
+const images=await eda.pcb_PrimitiveImage.getAll();
+return {info,counts:{fills:fills.length,lines:lines.length,polylines:polylines.length,pads:pads.length,components:components.length,images:images.length},imageLayers:images.reduce((a,x)=>(a[x.getState_Layer()]=(a[x.getState_Layer()]||0)+1,a),{}),fillLayers:fills.map(x=>x.getState_Layer()),lineLayers:lines.reduce((a,x)=>(a[x.getState_Layer()]=(a[x.getState_Layer()]||0)+1,a),{})};

@@ -1,0 +1,11 @@
+await eda.dmt_EditorControl.openDocument('eb14b9eaec4f920c');
+await new Promise(r=>setTimeout(r,500));
+const document = await eda.dmt_SelectControl.getCurrentDocumentInfo();
+if (document?.uuid !== 'eb14b9eaec4f920c') throw Error('Core PCB is not the active document');
+const info = await eda.dmt_Pcb.getCurrentPcbInfo();
+const components = await eda.pcb_PrimitiveComponent.getAll();
+const pads = await eda.pcb_PrimitivePad.getAll();
+const lines = await eda.pcb_PrimitiveLine.getAll();
+const vias = await eda.pcb_PrimitiveVia.getAll();
+const report = await eda.pcb_Drc.check(true,false,true);
+return {document,info,counts:{components:components.length,pads:pads.length,lines:lines.length,vias:vias.length},drcCount:report.length,drc:report};

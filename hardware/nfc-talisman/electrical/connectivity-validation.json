@@ -1,0 +1,47 @@
+{
+  "status": "passed",
+  "scope": "Source-backed logical connectivity only. Not native EDA ERC/DRC or prototype validation.",
+  "checks": [
+    {
+      "check": "U1 pinning",
+      "passed": true,
+      "detail": "NXP datasheet Table3; center pad is absent."
+    },
+    {
+      "check": "EH supply capacitance",
+      "passed": true,
+      "detail": "Single C1; max initial tolerance 165nF."
+    },
+    {
+      "check": "LED individual resistors and polarity",
+      "passed": true,
+      "detail": "Four independent 2.2k branches."
+    },
+    {
+      "check": "SCL/SDA/FD pullups",
+      "passed": true,
+      "detail": "Three 47k >5k pullups."
+    },
+    {
+      "check": "RF tuning only LA/LB",
+      "passed": true,
+      "detail": "Both tuning caps across antenna; CT2 DNP."
+    },
+    {
+      "check": "Parts under 0.6mm body height",
+      "passed": true,
+      "detail": "Based on selected manufacturer specifications; solder height excluded."
+    },
+    {
+      "check": "Net membership covers all pins",
+      "passed": true,
+      "detail": "Connectivity consistency; does not test PCB copper."
+    }
+  ],
+  "pending": [
+    "Native EasyEDA library LED polarity mapping",
+    "Native EDA ERC and PCB DRC",
+    "Full-stack resonance and VOUT measurement",
+    "Android/iPhone and optical tests"
+  ]
+}

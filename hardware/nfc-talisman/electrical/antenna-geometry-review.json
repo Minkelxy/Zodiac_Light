@@ -1,0 +1,2358 @@
+{
+  "helper_sha256": "f864dde4ce7e572679d4339322e9aab1bac2f04a91033dfdabc0681afca6e2dc",
+  "core_pads_sha256": "13f0e1132d8d5e1573bd3f5c0182a2596e4c94532ae407004968d093ffc66941",
+  "live_routes_sha256": "cb660821f243779f68d38ab19196caabb1880968fe2acd782a66e6b8adc8af70",
+  "offline_JS_preview_valid": true,
+  "apply": false,
+  "layer_ids": [
+    1,
+    2,
+    11
+  ],
+  "coordinate_units": "geometry evaluated in mm; proposal track/via outputs remain native mil",
+  "baseline": {
+    "geometry_safe_under_stated_rules": false,
+    "checks": [
+      {
+        "check": "coil minimum non-neighbor copper gap",
+        "value_mm": 0.24901979,
+        "segments": [
+          94,
+          125
+        ],
+        "required_mm": 0.25
+      },
+      {
+        "check": "minimum track to unrelated native pad",
+        "value_mm": 0.07185,
+        "pair": [
+          "U1 LB pad breakout",
+          "CT2.1"
+        ],
+        "required_mm": 0.15
+      },
+      {
+        "check": "minimum opposite bottom return gap",
+        "value_mm": -0.00524916,
+        "pair": [
+          0,
+          1
+        ],
+        "required_mm": 0.15
+      },
+      {
+        "check": "minimum different-net track gap including current live tracks",
+        "value_mm": -0.00524916,
+        "pair": [
+          "outer-end return",
+          "inner-end return"
+        ],
+        "required_mm": 0.15
+      },
+      {
+        "check": "all new copper is inside 37mm outline",
+        "passed": true,
+        "outside": []
+      }
+    ],
+    "native_endpoint_checks": [
+      {
+        "endpoint": "U1_LA",
+        "pad_net": "ANT_LA",
+        "position_mm": [
+          -0.59944,
+          0.5003799999999999
+        ],
+        "matches_native_center": true
+      },
+      {
+        "endpoint": "U1_LB",
+        "pad_net": "ANT_LB",
+        "position_mm": [
+          0.0,
+          0.59944
+        ],
+        "matches_native_center": true
+      }
+    ],
+    "violations": [
+      {
+        "kind": "via_to_other_route",
+        "a": "U1_LA_breakout",
+        "b": "inner-end return",
+        "copper_gap_mm": -0.10524916,
+        "required_mm": 0.15,
+        "physical_overlap": true
+      },
+      {
+        "kind": "via_to_other_route",
+        "a": "coil_inner_terminal",
+        "b": "outer-end return",
+        "copper_gap_mm": -0.07873109,
+        "required_mm": 0.15,
+        "physical_overlap": true
+      },
+      {
+        "kind": "via_to_unrelated_pad",
+        "a": "U1_LB_breakout",
+        "b": "CT2.1",
+        "copper_gap_mm": -0.02815,
+        "required_mm": 0.15,
+        "physical_overlap": true
+      },
+      {
+        "kind": "opposite_bottom_returns",
+        "a": "outer-end return",
+        "b": "inner-end return",
+        "copper_gap_mm": -0.00524916,
+        "required_mm": 0.15,
+        "physical_overlap": true
+      },
+      {
+        "kind": "different_net_track_clearance",
+        "a": "outer-end return",
+        "b": "inner-end return",
+        "copper_gap_mm": -0.00524916,
+        "required_mm": 0.15,
+        "physical_overlap": true
+      },
+      {
+        "kind": "track_to_unrelated_pad",
+        "a": "U1 LB pad breakout",
+        "b": "CT2.1",
+        "copper_gap_mm": 0.07185,
+        "required_mm": 0.15,
+        "physical_overlap": false
+      },
+      {
+        "kind": "via_to_other_route",
+        "a": "coil_inner_terminal",
+        "b": "4-turn octagonal spiral; net assignment intentionally blank",
+        "copper_gap_mm": 0.14999346,
+        "required_mm": 0.15,
+        "physical_overlap": false
+      },
+      {
+        "kind": "via_to_other_route",
+        "a": "coil_outer_terminal",
+        "b": "4-turn octagonal spiral; net assignment intentionally blank",
+        "copper_gap_mm": 0.14999426,
+        "required_mm": 0.15,
+        "physical_overlap": false
+      },
+      {
+        "kind": "coil_turn_gap",
+        "a": "coil_segment_94",
+        "b": "coil_segment_125",
+        "copper_gap_mm": 0.24901979,
+        "required_mm": 0.25,
+        "physical_overlap": false
+      }
+    ],
+    "limits": [
+      "Pad source is a saved native snapshot, not live EDA state.",
+      "Copper shape and spacing only; no native DRC or RF simulation.",
+      "Only the current 19 native tracks are included; future VOUT/GND tracks must be re-audited.",
+      "L1 intentional ANT_LA/ANT_LB copper continuity still requires native bridge-copper property."
+    ]
+  },
+  "proposal": {
+    "geometry_safe_under_stated_rules": true,
+    "checks": [
+      {
+        "check": "coil minimum non-neighbor copper gap",
+        "value_mm": 0.25101153,
+        "segments": [
+          94,
+          125
+        ],
+        "required_mm": 0.25
+      },
+      {
+        "check": "minimum track to unrelated native pad",
+        "value_mm": 0.26489,
+        "pair": [
+          "U1 LA pad breakout",
+          "U1.2"
+        ],
+        "required_mm": 0.15
+      },
+      {
+        "check": "minimum opposite bottom return gap",
+        "value_mm": 1.86162427,
+        "pair": [
+          0,
+          3
+        ],
+        "required_mm": 0.15
+      },
+      {
+        "check": "minimum different-net track gap including current live tracks",
+        "value_mm": 0.35756991,
+        "pair": [
+          "U1 LA pad breakout",
+          "U1 LB pad breakout"
+        ],
+        "required_mm": 0.15
+      },
+      {
+        "check": "all new copper is inside 37mm outline",
+        "passed": true,
+        "outside": []
+      }
+    ],
+    "native_endpoint_checks": [
+      {
+        "endpoint": "U1_LA",
+        "pad_net": "ANT_LA",
+        "position_mm": [
+          -0.59944,
+          0.5003799999999999
+        ],
+        "matches_native_center": true
+      },
+      {
+        "endpoint": "U1_LB",
+        "pad_net": "ANT_LB",
+        "position_mm": [
+          0.0,
+          0.59944
+        ],
+        "matches_native_center": true
+      }
+    ],
+    "violations": [],
+    "limits": [
+      "Pad source is a saved native snapshot, not live EDA state.",
+      "Copper shape and spacing only; no native DRC or RF simulation.",
+      "Only the current 19 native tracks are included; future VOUT/GND tracks must be re-audited.",
+      "L1 intentional ANT_LA/ANT_LB copper continuity still requires native bridge-copper property."
+    ]
+  },
+  "proposal_geometry": {
+    "units": "EasyEDA PCB core coordinates in mil; dimensions are generated in mm then converted by 1/0.0254",
+    "apply": false,
+    "geometryReviewApproved": false,
+    "outerCopperFlatToFlat_mm": 34,
+    "turns": 4,
+    "trackWidth_mm": 0.25,
+    "nominalTrackGap_mm": 0.25,
+    "outerCenterlineApothem_mm": 16.875,
+    "innerCenterlineApothem_mm": 14.875,
+    "boardOutlineFlatToFlat_mm": 37,
+    "permanentMountingHoles": 0,
+    "vias": [
+      {
+        "name": "U1_LA_breakout",
+        "x_mil": -60.0,
+        "y_mil": 47.24409448818898,
+        "drill_mm": 0.2,
+        "diameter_mm": 0.45,
+        "semanticNet": "ANT_LA"
+      },
+      {
+        "name": "U1_LB_breakout",
+        "x_mil": 39.37007874015748,
+        "y_mil": 47.24409448818898,
+        "drill_mm": 0.2,
+        "diameter_mm": 0.45,
+        "semanticNet": "ANT_LB"
+      },
+      {
+        "name": "coil_outer_terminal",
+        "x_mil": -668.3070866141733,
+        "y_mil": 8.136186903784088e-14,
+        "drill_mm": 0.2,
+        "diameter_mm": 0.45,
+        "semanticNet": "ANT_LA"
+      },
+      {
+        "name": "coil_inner_terminal",
+        "x_mil": -581.3779527559055,
+        "y_mil": 6.45123683725643e-13,
+        "drill_mm": 0.2,
+        "diameter_mm": 0.45,
+        "semanticNet": "ANT_LB"
+      }
+    ],
+    "expectedElectricalLimitation": "The two-terminal L1 spiral joins ANT_LA to ANT_LB. The official EasyEDA UI supports bridge copper on a FILL region to list these allowed nets; this installed API has no documented bridge property. Use a reviewed solid fill and enable the bridge in the native Properties panel before accepting DRC.",
+    "lineCount": 140,
+    "trackGeometry": [
+      {
+        "a": {
+          "x": -664.3700787401575,
+          "y": 8.136186903784088e-14
+        },
+        "b": {
+          "x": -663.7524606299213,
+          "y": -132.02857329797098
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "4-turn octagonal spiral",
+        "semanticNet": "L1_INTERNAL"
+      },
+      {
+        "a": {
+          "x": -663.7524606299213,
+          "y": -132.02857329797098
+        },
+        "b": {
+          "x": -663.1348425196851,
+          "y": -274.67944545380004
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "4-turn octagonal spiral",
+        "semanticNet": "L1_INTERNAL"
+      },
+      {
+        "a": {
+          "x": -663.1348425196851,
+          "y": -274.67944545380004
+        },
+        "b": {
+          "x": -561.6549827267049,
+          "y": -375.2858613389168
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "4-turn octagonal spiral",
+        "semanticNet": "L1_INTERNAL"
+      },
+      {
+        "a": {
+          "x": -561.6549827267049,
+          "y": -375.2858613389168
+        },
+        "b": {
+          "x": -468.0337000788794,
+          "y": -468.03370007887924
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "4-turn octagonal spiral",
+        "semanticNet": "L1_INTERNAL"
+      },
+      {
+        "a": {
+          "x": -468.0337000788794,
+          "y": -468.03370007887924
+        },
+        "b": {
+          "x": -374.5861562265402,
+          "y": -560.6078000233553
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "4-turn octagonal spiral",
+        "semanticNet": "L1_INTERNAL"
+      },
+      {
+        "a": {
+          "x": -374.5861562265402,
+          "y": -560.6078000233553
+        },
+        "b": {
+          "x": -273.6561422632922,
+          "y": -660.6643700787401
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "4-turn octagonal spiral",
+        "semanticNet": "L1_INTERNAL"
+      },
+      {
+        "a": {
+          "x": -273.6561422632922,
+          "y": -660.6643700787401
+        },
+        "b": {
+          "x": -131.29146201530935,
+          "y": -660.0467519685039
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "4-turn octagonal spiral",
+        "semanticNet": "L1_INTERNAL"
+      },
+      {
+        "a": {
+          "x": -131.29146201530935,
+          "y": -660.0467519685039
+        },
+        "b": {
+          "x": -1.2113516670660586e-13,
+          "y": -659.4291338582677
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "4-turn octagonal spiral",
+        "semanticNet": "L1_INTERNAL"
+      },
+      {
+        "a": {
+          "x": -1.2113516670660586e-13,
+          "y": -659.4291338582677
+        },
+        "b": {
+          "x": 131.0457582544218,
+          "y": -658.8115157480315
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "4-turn octagonal spiral",
+        "semanticNet": "L1_INTERNAL"
+      },
+      {
+        "a": {
+          "x": 131.0457582544218,
+          "y": -658.8115157480315
+        },
+        "b": {
+          "x": 272.63283907278355,
+          "y": -658.1938976377951
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "4-turn octagonal spiral",
+        "semanticNet": "L1_INTERNAL"
+      },
+      {
+        "a": {
+          "x": 272.63283907278355,
+          "y": -658.1938976377951
+        },
+        "b": {
+          "x": 372.4870408894092,
+          "y": -557.4662519133059
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "4-turn octagonal spiral",
+        "semanticNet": "L1_INTERNAL"
+      },
+      {
+        "a": {
+          "x": 372.4870408894092,
+          "y": -557.4662519133059
+        },
+        "b": {
+          "x": 464.53992444742596,
+          "y": -464.5399244474262
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "4-turn octagonal spiral",
+        "semanticNet": "L1_INTERNAL"
+      },
+      {
+        "a": {
+          "x": 464.53992444742596,
+          "y": -464.5399244474262
+        },
+        "b": {
+          "x": 556.4190692099563,
+          "y": -371.78733577703264
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "4-turn octagonal spiral",
+        "semanticNet": "L1_INTERNAL"
+      },
+      {
+        "a": {
+          "x": 556.4190692099563,
+          "y": -371.78733577703264
+        },
+        "b": {
+          "x": 655.7234251968503,
+          "y": -271.60953588227557
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "4-turn octagonal spiral",
+        "semanticNet": "L1_INTERNAL"
+      },
+      {
+        "a": {
+          "x": 655.7234251968503,
+          "y": -271.60953588227557
+        },
+        "b": {
+          "x": 655.1058070866143,
+          "y": -130.30864697176028
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "4-turn octagonal spiral",
+        "semanticNet": "L1_INTERNAL"
+      },
+      {
+        "a": {
+          "x": 655.1058070866143,
+          "y": -130.30864697176028
+        },
+        "b": {
+          "x": 654.488188976378,
+          "y": -1.6030337314193387e-13
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "4-turn octagonal spiral",
+        "semanticNet": "L1_INTERNAL"
+      },
+      {
+        "a": {
+          "x": 654.488188976378,
+          "y": -1.6030337314193387e-13
+        },
+        "b": {
+          "x": 653.8705708661417,
+          "y": 130.06294321087267
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "4-turn octagonal spiral",
+        "semanticNet": "L1_INTERNAL"
+      },
+      {
+        "a": {
+          "x": 653.8705708661417,
+          "y": 130.06294321087267
+        },
+        "b": {
+          "x": 653.2529527559053,
+          "y": 270.5862326917669
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "4-turn octagonal spiral",
+        "semanticNet": "L1_INTERNAL"
+      },
+      {
+        "a": {
+          "x": 653.2529527559053,
+          "y": 270.5862326917669
+        },
+        "b": {
+          "x": 553.2775210999071,
+          "y": 369.6882204399017
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "4-turn octagonal spiral",
+        "semanticNet": "L1_INTERNAL"
+      },
+      {
+        "a": {
+          "x": 553.2775210999071,
+          "y": 369.6882204399017
+        },
+        "b": {
+          "x": 461.046148815973,
+          "y": 461.0461488159728
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "4-turn octagonal spiral",
+        "semanticNet": "L1_INTERNAL"
+      },
+      {
+        "a": {
+          "x": 461.046148815973,
+          "y": 461.0461488159728
+        },
+        "b": {
+          "x": 368.9885153275252,
+          "y": 552.2303383965573
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "4-turn octagonal spiral",
+        "semanticNet": "L1_INTERNAL"
+      },
+      {
+        "a": {
+          "x": 368.9885153275252,
+          "y": 552.2303383965573
+        },
+        "b": {
+          "x": 269.56292950125896,
+          "y": 650.7824803149604
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "4-turn octagonal spiral",
+        "semanticNet": "L1_INTERNAL"
+      },
+      {
+        "a": {
+          "x": 269.56292950125896,
+          "y": 650.7824803149604
+        },
+        "b": {
+          "x": 129.32583192821122,
+          "y": 650.1648622047244
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "4-turn octagonal spiral",
+        "semanticNet": "L1_INTERNAL"
+      },
+      {
+        "a": {
+          "x": 129.32583192821122,
+          "y": 650.1648622047244
+        },
+        "b": {
+          "x": 1.988664883438249e-13,
+          "y": 649.5472440944882
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "4-turn octagonal spiral",
+        "semanticNet": "L1_INTERNAL"
+      },
+      {
+        "a": {
+          "x": 1.988664883438249e-13,
+          "y": 649.5472440944882
+        },
+        "b": {
+          "x": -129.08012816732418,
+          "y": 648.9296259842522
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "4-turn octagonal spiral",
+        "semanticNet": "L1_INTERNAL"
+      },
+      {
+        "a": {
+          "x": -129.08012816732418,
+          "y": 648.9296259842522
+        },
+        "b": {
+          "x": -268.53962631075007,
+          "y": 648.3120078740154
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "4-turn octagonal spiral",
+        "semanticNet": "L1_INTERNAL"
+      },
+      {
+        "a": {
+          "x": -268.53962631075007,
+          "y": 648.3120078740154
+        },
+        "b": {
+          "x": -366.8893999903942,
+          "y": 549.0887902865084
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "4-turn octagonal spiral",
+        "semanticNet": "L1_INTERNAL"
+      },
+      {
+        "a": {
+          "x": -366.8893999903942,
+          "y": 549.0887902865084
+        },
+        "b": {
+          "x": -457.552373184519,
+          "y": 457.55237318452015
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "4-turn octagonal spiral",
+        "semanticNet": "L1_INTERNAL"
+      },
+      {
+        "a": {
+          "x": -457.552373184519,
+          "y": 457.55237318452015
+        },
+        "b": {
+          "x": -548.0416075831582,
+          "y": 366.18969487801775
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "4-turn octagonal spiral",
+        "semanticNet": "L1_INTERNAL"
+      },
+      {
+        "a": {
+          "x": -548.0416075831582,
+          "y": 366.18969487801775
+        },
+        "b": {
+          "x": -645.8415354330707,
+          "y": 267.5163231202423
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "4-turn octagonal spiral",
+        "semanticNet": "L1_INTERNAL"
+      },
+      {
+        "a": {
+          "x": -645.8415354330707,
+          "y": 267.5163231202423
+        },
+        "b": {
+          "x": -645.2239173228346,
+          "y": 128.34301688466158
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "4-turn octagonal spiral",
+        "semanticNet": "L1_INTERNAL"
+      },
+      {
+        "a": {
+          "x": -645.2239173228346,
+          "y": 128.34301688466158
+        },
+        "b": {
+          "x": -644.6062992125985,
+          "y": 2.3682451231227895e-13
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "4-turn octagonal spiral",
+        "semanticNet": "L1_INTERNAL"
+      },
+      {
+        "a": {
+          "x": -644.6062992125985,
+          "y": 2.3682451231227895e-13
+        },
+        "b": {
+          "x": -643.9886811023623,
+          "y": -128.0973131237738
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "4-turn octagonal spiral",
+        "semanticNet": "L1_INTERNAL"
+      },
+      {
+        "a": {
+          "x": -643.9886811023623,
+          "y": -128.0973131237738
+        },
+        "b": {
+          "x": -643.3710629921258,
+          "y": -266.4930199297334
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "4-turn octagonal spiral",
+        "semanticNet": "L1_INTERNAL"
+      },
+      {
+        "a": {
+          "x": -643.3710629921258,
+          "y": -266.4930199297334
+        },
+        "b": {
+          "x": -544.9000594731093,
+          "y": -364.09057954088667
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "4-turn octagonal spiral",
+        "semanticNet": "L1_INTERNAL"
+      },
+      {
+        "a": {
+          "x": -544.9000594731093,
+          "y": -364.09057954088667
+        },
+        "b": {
+          "x": -454.0585975530662,
+          "y": -454.05859755306665
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "4-turn octagonal spiral",
+        "semanticNet": "L1_INTERNAL"
+      },
+      {
+        "a": {
+          "x": -454.0585975530662,
+          "y": -454.05859755306665
+        },
+        "b": {
+          "x": -363.3908744285104,
+          "y": -543.8528767697595
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "4-turn octagonal spiral",
+        "semanticNet": "L1_INTERNAL"
+      },
+      {
+        "a": {
+          "x": -363.3908744285104,
+          "y": -543.8528767697595
+        },
+        "b": {
+          "x": -265.4697167392257,
+          "y": -640.9005905511809
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "4-turn octagonal spiral",
+        "semanticNet": "L1_INTERNAL"
+      },
+      {
+        "a": {
+          "x": -265.4697167392257,
+          "y": -640.9005905511809
+        },
+        "b": {
+          "x": -127.36020184111368,
+          "y": -640.2829724409448
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "4-turn octagonal spiral",
+        "semanticNet": "L1_INTERNAL"
+      },
+      {
+        "a": {
+          "x": -127.36020184111368,
+          "y": -640.2829724409448
+        },
+        "b": {
+          "x": -2.7417744504729596e-13,
+          "y": -639.6653543307086
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "4-turn octagonal spiral",
+        "semanticNet": "L1_INTERNAL"
+      },
+      {
+        "a": {
+          "x": -2.7417744504729596e-13,
+          "y": -639.6653543307086
+        },
+        "b": {
+          "x": 127.11449808022468,
+          "y": -639.0477362204725
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "4-turn octagonal spiral",
+        "semanticNet": "L1_INTERNAL"
+      },
+      {
+        "a": {
+          "x": 127.11449808022468,
+          "y": -639.0477362204725
+        },
+        "b": {
+          "x": 264.44641354871675,
+          "y": -638.4301181102362
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "4-turn octagonal spiral",
+        "semanticNet": "L1_INTERNAL"
+      },
+      {
+        "a": {
+          "x": 264.44641354871675,
+          "y": -638.4301181102362
+        },
+        "b": {
+          "x": 361.2917590913791,
+          "y": -540.7113286597104
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "4-turn octagonal spiral",
+        "semanticNet": "L1_INTERNAL"
+      },
+      {
+        "a": {
+          "x": 361.2917590913791,
+          "y": -540.7113286597104
+        },
+        "b": {
+          "x": 450.56482192161263,
+          "y": -450.5648219216139
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "4-turn octagonal spiral",
+        "semanticNet": "L1_INTERNAL"
+      },
+      {
+        "a": {
+          "x": 450.56482192161263,
+          "y": -450.5648219216139
+        },
+        "b": {
+          "x": 539.6641459563605,
+          "y": -360.5920539790028
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "4-turn octagonal spiral",
+        "semanticNet": "L1_INTERNAL"
+      },
+      {
+        "a": {
+          "x": 539.6641459563605,
+          "y": -360.5920539790028
+        },
+        "b": {
+          "x": 635.9596456692911,
+          "y": -263.423110358209
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "4-turn octagonal spiral",
+        "semanticNet": "L1_INTERNAL"
+      },
+      {
+        "a": {
+          "x": 635.9596456692911,
+          "y": -263.423110358209
+        },
+        "b": {
+          "x": 635.342027559055,
+          "y": -126.37738679756342
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "4-turn octagonal spiral",
+        "semanticNet": "L1_INTERNAL"
+      },
+      {
+        "a": {
+          "x": 635.342027559055,
+          "y": -126.37738679756342
+        },
+        "b": {
+          "x": 634.724409448819,
+          "y": -3.1092528654887606e-13
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "4-turn octagonal spiral",
+        "semanticNet": "L1_INTERNAL"
+      },
+      {
+        "a": {
+          "x": 634.724409448819,
+          "y": -3.1092528654887606e-13
+        },
+        "b": {
+          "x": 634.1067913385828,
+          "y": 126.13168303667557
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "4-turn octagonal spiral",
+        "semanticNet": "L1_INTERNAL"
+      },
+      {
+        "a": {
+          "x": 634.1067913385828,
+          "y": 126.13168303667557
+        },
+        "b": {
+          "x": 633.4891732283462,
+          "y": 262.3998071677
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "4-turn octagonal spiral",
+        "semanticNet": "L1_INTERNAL"
+      },
+      {
+        "a": {
+          "x": 633.4891732283462,
+          "y": 262.3998071677
+        },
+        "b": {
+          "x": 536.5225978463116,
+          "y": 358.4929386418716
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "4-turn octagonal spiral",
+        "semanticNet": "L1_INTERNAL"
+      },
+      {
+        "a": {
+          "x": 536.5225978463116,
+          "y": 358.4929386418716
+        },
+        "b": {
+          "x": 447.07104629015976,
+          "y": 447.0710462901601
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "4-turn octagonal spiral",
+        "semanticNet": "L1_INTERNAL"
+      },
+      {
+        "a": {
+          "x": 447.07104629015976,
+          "y": 447.0710462901601
+        },
+        "b": {
+          "x": 357.7932335294954,
+          "y": 535.4754151429614
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "4-turn octagonal spiral",
+        "semanticNet": "L1_INTERNAL"
+      },
+      {
+        "a": {
+          "x": 357.7932335294954,
+          "y": 535.4754151429614
+        },
+        "b": {
+          "x": 261.37650397719244,
+          "y": 631.0187007874014
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "4-turn octagonal spiral",
+        "semanticNet": "L1_INTERNAL"
+      },
+      {
+        "a": {
+          "x": 261.37650397719244,
+          "y": 631.0187007874014
+        },
+        "b": {
+          "x": 125.39457175401436,
+          "y": 630.4010826771653
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "4-turn octagonal spiral",
+        "semanticNet": "L1_INTERNAL"
+      },
+      {
+        "a": {
+          "x": 125.39457175401436,
+          "y": 630.4010826771653
+        },
+        "b": {
+          "x": 3.470680368170191e-13,
+          "y": 629.7834645669292
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "4-turn octagonal spiral",
+        "semanticNet": "L1_INTERNAL"
+      },
+      {
+        "a": {
+          "x": 3.470680368170191e-13,
+          "y": 629.7834645669292
+        },
+        "b": {
+          "x": -125.14886799312643,
+          "y": 629.1658464566931
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "4-turn octagonal spiral",
+        "semanticNet": "L1_INTERNAL"
+      },
+      {
+        "a": {
+          "x": -125.14886799312643,
+          "y": 629.1658464566931
+        },
+        "b": {
+          "x": -260.35320078668326,
+          "y": 628.5482283464565
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "4-turn octagonal spiral",
+        "semanticNet": "L1_INTERNAL"
+      },
+      {
+        "a": {
+          "x": -260.35320078668326,
+          "y": 628.5482283464565
+        },
+        "b": {
+          "x": -355.69411819236404,
+          "y": 532.3338670329126
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "4-turn octagonal spiral",
+        "semanticNet": "L1_INTERNAL"
+      },
+      {
+        "a": {
+          "x": -355.69411819236404,
+          "y": 532.3338670329126
+        },
+        "b": {
+          "x": -443.5772706587061,
+          "y": 443.57727065870745
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "4-turn octagonal spiral",
+        "semanticNet": "L1_INTERNAL"
+      },
+      {
+        "a": {
+          "x": -443.5772706587061,
+          "y": 443.57727065870745
+        },
+        "b": {
+          "x": -531.2866843295625,
+          "y": 354.99441307998785
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "4-turn octagonal spiral",
+        "semanticNet": "L1_INTERNAL"
+      },
+      {
+        "a": {
+          "x": -531.2866843295625,
+          "y": 354.99441307998785
+        },
+        "b": {
+          "x": -626.0777559055115,
+          "y": 259.3298975961757
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "4-turn octagonal spiral",
+        "semanticNet": "L1_INTERNAL"
+      },
+      {
+        "a": {
+          "x": -626.0777559055115,
+          "y": 259.3298975961757
+        },
+        "b": {
+          "x": -625.4601377952755,
+          "y": 124.41175671046533
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "4-turn octagonal spiral",
+        "semanticNet": "L1_INTERNAL"
+      },
+      {
+        "a": {
+          "x": -625.4601377952755,
+          "y": 124.41175671046533
+        },
+        "b": {
+          "x": -624.8425196850394,
+          "y": 3.826056958517253e-13
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "4-turn octagonal spiral",
+        "semanticNet": "L1_INTERNAL"
+      },
+      {
+        "a": {
+          "x": -624.8425196850394,
+          "y": 3.826056958517253e-13
+        },
+        "b": {
+          "x": -624.2249015748031,
+          "y": -124.16605294957725
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "4-turn octagonal spiral",
+        "semanticNet": "L1_INTERNAL"
+      },
+      {
+        "a": {
+          "x": -624.2249015748031,
+          "y": -124.16605294957725
+        },
+        "b": {
+          "x": -623.6072834645663,
+          "y": -258.3065944056676
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "4-turn octagonal spiral",
+        "semanticNet": "L1_INTERNAL"
+      },
+      {
+        "a": {
+          "x": -623.6072834645663,
+          "y": -258.3065944056676
+        },
+        "b": {
+          "x": -528.1451362195129,
+          "y": -352.89529774285745
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "4-turn octagonal spiral",
+        "semanticNet": "L1_INTERNAL"
+      },
+      {
+        "a": {
+          "x": -528.1451362195129,
+          "y": -352.89529774285745
+        },
+        "b": {
+          "x": -440.08349502725343,
+          "y": -440.08349502725366
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "4-turn octagonal spiral",
+        "semanticNet": "L1_INTERNAL"
+      },
+      {
+        "a": {
+          "x": -440.08349502725343,
+          "y": -440.08349502725366
+        },
+        "b": {
+          "x": -352.19559263048035,
+          "y": -527.0979535161634
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "4-turn octagonal spiral",
+        "semanticNet": "L1_INTERNAL"
+      },
+      {
+        "a": {
+          "x": -352.19559263048035,
+          "y": -527.0979535161634
+        },
+        "b": {
+          "x": -257.28329121515895,
+          "y": -621.1368110236214
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "4-turn octagonal spiral",
+        "semanticNet": "L1_INTERNAL"
+      },
+      {
+        "a": {
+          "x": -257.28329121515895,
+          "y": -621.1368110236214
+        },
+        "b": {
+          "x": -123.42894166691744,
+          "y": -620.519192913386
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "4-turn octagonal spiral",
+        "semanticNet": "L1_INTERNAL"
+      },
+      {
+        "a": {
+          "x": -123.42894166691744,
+          "y": -620.519192913386
+        },
+        "b": {
+          "x": -1.5187046658095551e-12,
+          "y": -619.9015748031496
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "4-turn octagonal spiral",
+        "semanticNet": "L1_INTERNAL"
+      },
+      {
+        "a": {
+          "x": -1.5187046658095551e-12,
+          "y": -619.9015748031496
+        },
+        "b": {
+          "x": 123.18323790602696,
+          "y": -619.2839566929133
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "4-turn octagonal spiral",
+        "semanticNet": "L1_INTERNAL"
+      },
+      {
+        "a": {
+          "x": 123.18323790602696,
+          "y": -619.2839566929133
+        },
+        "b": {
+          "x": 256.25998802464983,
+          "y": -618.666338582677
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "4-turn octagonal spiral",
+        "semanticNet": "L1_INTERNAL"
+      },
+      {
+        "a": {
+          "x": 256.25998802464983,
+          "y": -618.666338582677
+        },
+        "b": {
+          "x": 350.09647729334927,
+          "y": -523.956405406115
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "4-turn octagonal spiral",
+        "semanticNet": "L1_INTERNAL"
+      },
+      {
+        "a": {
+          "x": 350.09647729334927,
+          "y": -523.956405406115
+        },
+        "b": {
+          "x": 436.5897193957996,
+          "y": -436.58971939580107
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "4-turn octagonal spiral",
+        "semanticNet": "L1_INTERNAL"
+      },
+      {
+        "a": {
+          "x": 436.5897193957996,
+          "y": -436.58971939580107
+        },
+        "b": {
+          "x": 522.9092227027652,
+          "y": -349.3967721809721
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "4-turn octagonal spiral",
+        "semanticNet": "L1_INTERNAL"
+      },
+      {
+        "a": {
+          "x": 522.9092227027652,
+          "y": -349.3967721809721
+        },
+        "b": {
+          "x": 616.1958661417325,
+          "y": -255.23668483414139
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "4-turn octagonal spiral",
+        "semanticNet": "L1_INTERNAL"
+      },
+      {
+        "a": {
+          "x": 616.1958661417325,
+          "y": -255.23668483414139
+        },
+        "b": {
+          "x": 615.5782480314962,
+          "y": -122.44612662336723
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "4-turn octagonal spiral",
+        "semanticNet": "L1_INTERNAL"
+      },
+      {
+        "a": {
+          "x": 615.5782480314962,
+          "y": -122.44612662336723
+        },
+        "b": {
+          "x": 614.9606299212599,
+          "y": -4.5186574022082653e-13
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "4-turn octagonal spiral",
+        "semanticNet": "L1_INTERNAL"
+      },
+      {
+        "a": {
+          "x": 614.9606299212599,
+          "y": -4.5186574022082653e-13
+        },
+        "b": {
+          "x": 614.3430118110236,
+          "y": 122.200422862479
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "4-turn octagonal spiral",
+        "semanticNet": "L1_INTERNAL"
+      },
+      {
+        "a": {
+          "x": 614.3430118110236,
+          "y": 122.200422862479
+        },
+        "b": {
+          "x": 613.7253937007872,
+          "y": 254.21338164363183
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "4-turn octagonal spiral",
+        "semanticNet": "L1_INTERNAL"
+      },
+      {
+        "a": {
+          "x": 613.7253937007872,
+          "y": 254.21338164363183
+        },
+        "b": {
+          "x": 519.7676745927151,
+          "y": 347.2976568438424
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "4-turn octagonal spiral",
+        "semanticNet": "L1_INTERNAL"
+      },
+      {
+        "a": {
+          "x": 519.7676745927151,
+          "y": 347.2976568438424
+        },
+        "b": {
+          "x": 433.0959437643471,
+          "y": 433.09594376434717
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "4-turn octagonal spiral",
+        "semanticNet": "L1_INTERNAL"
+      },
+      {
+        "a": {
+          "x": 433.0959437643471,
+          "y": 433.09594376434717
+        },
+        "b": {
+          "x": 346.59795173146534,
+          "y": 518.7204918893655
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "4-turn octagonal spiral",
+        "semanticNet": "L1_INTERNAL"
+      },
+      {
+        "a": {
+          "x": 346.59795173146534,
+          "y": 518.7204918893655
+        },
+        "b": {
+          "x": 253.19007845312566,
+          "y": 611.2549212598418
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "4-turn octagonal spiral",
+        "semanticNet": "L1_INTERNAL"
+      },
+      {
+        "a": {
+          "x": 253.19007845312566,
+          "y": 611.2549212598418
+        },
+        "b": {
+          "x": 121.46331157981932,
+          "y": 610.6373031496064
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "4-turn octagonal spiral",
+        "semanticNet": "L1_INTERNAL"
+      },
+      {
+        "a": {
+          "x": 121.46331157981932,
+          "y": 610.6373031496064
+        },
+        "b": {
+          "x": 1.5692007652436937e-12,
+          "y": 610.0196850393701
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "4-turn octagonal spiral",
+        "semanticNet": "L1_INTERNAL"
+      },
+      {
+        "a": {
+          "x": 1.5692007652436937e-12,
+          "y": 610.0196850393701
+        },
+        "b": {
+          "x": -121.217607818931,
+          "y": 609.4020669291339
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "4-turn octagonal spiral",
+        "semanticNet": "L1_INTERNAL"
+      },
+      {
+        "a": {
+          "x": -121.217607818931,
+          "y": 609.4020669291339
+        },
+        "b": {
+          "x": -252.16677526261645,
+          "y": 608.7844488188975
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "4-turn octagonal spiral",
+        "semanticNet": "L1_INTERNAL"
+      },
+      {
+        "a": {
+          "x": -252.16677526261645,
+          "y": 608.7844488188975
+        },
+        "b": {
+          "x": -344.49883639433415,
+          "y": 515.5789437793171
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "4-turn octagonal spiral",
+        "semanticNet": "L1_INTERNAL"
+      },
+      {
+        "a": {
+          "x": -344.49883639433415,
+          "y": 515.5789437793171
+        },
+        "b": {
+          "x": -429.60216813289327,
+          "y": 429.6021681328947
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "4-turn octagonal spiral",
+        "semanticNet": "L1_INTERNAL"
+      },
+      {
+        "a": {
+          "x": -429.60216813289327,
+          "y": 429.6021681328947
+        },
+        "b": {
+          "x": -514.5317610759657,
+          "y": 343.7991312819587
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "4-turn octagonal spiral",
+        "semanticNet": "L1_INTERNAL"
+      },
+      {
+        "a": {
+          "x": -514.5317610759657,
+          "y": 343.7991312819587
+        },
+        "b": {
+          "x": -606.3139763779529,
+          "y": 251.14347207210815
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "4-turn octagonal spiral",
+        "semanticNet": "L1_INTERNAL"
+      },
+      {
+        "a": {
+          "x": -606.3139763779529,
+          "y": 251.14347207210815
+        },
+        "b": {
+          "x": -605.6963582677166,
+          "y": 120.48049653626913
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "4-turn octagonal spiral",
+        "semanticNet": "L1_INTERNAL"
+      },
+      {
+        "a": {
+          "x": -605.6963582677166,
+          "y": 120.48049653626913
+        },
+        "b": {
+          "x": -605.0787401574803,
+          "y": 5.187054196561799e-13
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "4-turn octagonal spiral",
+        "semanticNet": "L1_INTERNAL"
+      },
+      {
+        "a": {
+          "x": -605.0787401574803,
+          "y": 5.187054196561799e-13
+        },
+        "b": {
+          "x": -604.461122047244,
+          "y": -120.23479277538074
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "4-turn octagonal spiral",
+        "semanticNet": "L1_INTERNAL"
+      },
+      {
+        "a": {
+          "x": -604.461122047244,
+          "y": -120.23479277538074
+        },
+        "b": {
+          "x": -603.8435039370078,
+          "y": -250.1201688815985
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "4-turn octagonal spiral",
+        "semanticNet": "L1_INTERNAL"
+      },
+      {
+        "a": {
+          "x": -603.8435039370078,
+          "y": -250.1201688815985
+        },
+        "b": {
+          "x": -511.39021296591744,
+          "y": -341.7000159448274
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "4-turn octagonal spiral",
+        "semanticNet": "L1_INTERNAL"
+      },
+      {
+        "a": {
+          "x": -511.39021296591744,
+          "y": -341.7000159448274
+        },
+        "b": {
+          "x": -426.10839250144073,
+          "y": -426.10839250144073
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "4-turn octagonal spiral",
+        "semanticNet": "L1_INTERNAL"
+      },
+      {
+        "a": {
+          "x": -426.10839250144073,
+          "y": -426.10839250144073
+        },
+        "b": {
+          "x": -341.0003108324504,
+          "y": -510.3430302625676
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "4-turn octagonal spiral",
+        "semanticNet": "L1_INTERNAL"
+      },
+      {
+        "a": {
+          "x": -341.0003108324504,
+          "y": -510.3430302625676
+        },
+        "b": {
+          "x": -249.09686569109238,
+          "y": -601.3730314960623
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "4-turn octagonal spiral",
+        "semanticNet": "L1_INTERNAL"
+      },
+      {
+        "a": {
+          "x": -249.09686569109238,
+          "y": -601.3730314960623
+        },
+        "b": {
+          "x": -119.49768149272117,
+          "y": -600.7554133858268
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "4-turn octagonal spiral",
+        "semanticNet": "L1_INTERNAL"
+      },
+      {
+        "a": {
+          "x": -119.49768149272117,
+          "y": -600.7554133858268
+        },
+        "b": {
+          "x": 5.148412546966815e-13,
+          "y": -600.1377952755906
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "4-turn octagonal spiral",
+        "semanticNet": "L1_INTERNAL"
+      },
+      {
+        "a": {
+          "x": 5.148412546966815e-13,
+          "y": -600.1377952755906
+        },
+        "b": {
+          "x": 119.25197773183272,
+          "y": -599.5201771653543
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "4-turn octagonal spiral",
+        "semanticNet": "L1_INTERNAL"
+      },
+      {
+        "a": {
+          "x": 119.25197773183272,
+          "y": -599.5201771653543
+        },
+        "b": {
+          "x": 248.07356250058308,
+          "y": -598.9025590551181
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "4-turn octagonal spiral",
+        "semanticNet": "L1_INTERNAL"
+      },
+      {
+        "a": {
+          "x": 248.07356250058308,
+          "y": -598.9025590551181
+        },
+        "b": {
+          "x": 338.9011954953191,
+          "y": -507.2014821525193
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "4-turn octagonal spiral",
+        "semanticNet": "L1_INTERNAL"
+      },
+      {
+        "a": {
+          "x": 338.9011954953191,
+          "y": -507.2014821525193
+        },
+        "b": {
+          "x": 422.61461686998666,
+          "y": -422.6146168699882
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "4-turn octagonal spiral",
+        "semanticNet": "L1_INTERNAL"
+      },
+      {
+        "a": {
+          "x": 422.61461686998666,
+          "y": -422.6146168699882
+        },
+        "b": {
+          "x": 506.1542994491678,
+          "y": -338.20149038294375
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "4-turn octagonal spiral",
+        "semanticNet": "L1_INTERNAL"
+      },
+      {
+        "a": {
+          "x": 506.1542994491678,
+          "y": -338.20149038294375
+        },
+        "b": {
+          "x": 596.4320866141733,
+          "y": -247.05025931007486
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "4-turn octagonal spiral",
+        "semanticNet": "L1_INTERNAL"
+      },
+      {
+        "a": {
+          "x": 596.4320866141733,
+          "y": -247.05025931007486
+        },
+        "b": {
+          "x": 595.8144685039372,
+          "y": -118.51486644917101
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "4-turn octagonal spiral",
+        "semanticNet": "L1_INTERNAL"
+      },
+      {
+        "a": {
+          "x": 595.8144685039372,
+          "y": -118.51486644917101
+        },
+        "b": {
+          "x": 595.1968503937009,
+          "y": -5.831247341577854e-13
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "4-turn octagonal spiral",
+        "semanticNet": "L1_INTERNAL"
+      },
+      {
+        "a": {
+          "x": 595.1968503937009,
+          "y": -5.831247341577854e-13
+        },
+        "b": {
+          "x": 594.5792322834645,
+          "y": 118.26916268828248
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "4-turn octagonal spiral",
+        "semanticNet": "L1_INTERNAL"
+      },
+      {
+        "a": {
+          "x": 594.5792322834645,
+          "y": 118.26916268828248
+        },
+        "b": {
+          "x": 593.9616141732283,
+          "y": 246.02695611956514
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "4-turn octagonal spiral",
+        "semanticNet": "L1_INTERNAL"
+      },
+      {
+        "a": {
+          "x": 593.9616141732283,
+          "y": 246.02695611956514
+        },
+        "b": {
+          "x": 503.0127513391195,
+          "y": 336.1023750458123
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "4-turn octagonal spiral",
+        "semanticNet": "L1_INTERNAL"
+      },
+      {
+        "a": {
+          "x": 503.0127513391195,
+          "y": 336.1023750458123
+        },
+        "b": {
+          "x": 419.1208412385343,
+          "y": 419.12084123853424
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "4-turn octagonal spiral",
+        "semanticNet": "L1_INTERNAL"
+      },
+      {
+        "a": {
+          "x": 419.1208412385343,
+          "y": 419.12084123853424
+        },
+        "b": {
+          "x": 335.4026699334355,
+          "y": 501.9655686357697
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "4-turn octagonal spiral",
+        "semanticNet": "L1_INTERNAL"
+      },
+      {
+        "a": {
+          "x": 335.4026699334355,
+          "y": 501.9655686357697
+        },
+        "b": {
+          "x": 245.00365292905911,
+          "y": 591.4911417322828
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "4-turn octagonal spiral",
+        "semanticNet": "L1_INTERNAL"
+      },
+      {
+        "a": {
+          "x": 245.00365292905911,
+          "y": 591.4911417322828
+        },
+        "b": {
+          "x": 117.53205140562302,
+          "y": 590.8735236220473
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "4-turn octagonal spiral",
+        "semanticNet": "L1_INTERNAL"
+      },
+      {
+        "a": {
+          "x": 117.53205140562302,
+          "y": 590.8735236220473
+        },
+        "b": {
+          "x": 1.6629318693107264e-12,
+          "y": 590.2559055118111
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "4-turn octagonal spiral",
+        "semanticNet": "L1_INTERNAL"
+      },
+      {
+        "a": {
+          "x": 1.6629318693107264e-12,
+          "y": 590.2559055118111
+        },
+        "b": {
+          "x": -117.28634764473445,
+          "y": 589.6382874015748
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "4-turn octagonal spiral",
+        "semanticNet": "L1_INTERNAL"
+      },
+      {
+        "a": {
+          "x": -117.28634764473445,
+          "y": 589.6382874015748
+        },
+        "b": {
+          "x": -243.98034973854965,
+          "y": 589.0206692913385
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "4-turn octagonal spiral",
+        "semanticNet": "L1_INTERNAL"
+      },
+      {
+        "a": {
+          "x": -243.98034973854965,
+          "y": 589.0206692913385
+        },
+        "b": {
+          "x": -333.3035545963041,
+          "y": 498.82402052572144
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "4-turn octagonal spiral",
+        "semanticNet": "L1_INTERNAL"
+      },
+      {
+        "a": {
+          "x": -333.3035545963041,
+          "y": 498.82402052572144
+        },
+        "b": {
+          "x": -415.6270656070802,
+          "y": 415.6270656070819
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "4-turn octagonal spiral",
+        "semanticNet": "L1_INTERNAL"
+      },
+      {
+        "a": {
+          "x": -415.6270656070802,
+          "y": 415.6270656070819
+        },
+        "b": {
+          "x": -497.7768378223699,
+          "y": 332.6038494839288
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "4-turn octagonal spiral",
+        "semanticNet": "L1_INTERNAL"
+      },
+      {
+        "a": {
+          "x": -497.7768378223699,
+          "y": 332.6038494839288
+        },
+        "b": {
+          "x": -586.5501968503938,
+          "y": 242.9570465480416
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "4-turn octagonal spiral",
+        "semanticNet": "L1_INTERNAL"
+      },
+      {
+        "a": {
+          "x": -586.5501968503938,
+          "y": 242.9570465480416
+        },
+        "b": {
+          "x": -585.9325787401575,
+          "y": 116.54923636207288
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "4-turn octagonal spiral",
+        "semanticNet": "L1_INTERNAL"
+      },
+      {
+        "a": {
+          "x": -585.9325787401575,
+          "y": 116.54923636207288
+        },
+        "b": {
+          "x": -585.3149606299213,
+          "y": 6.45123683725643e-13
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "4-turn octagonal spiral",
+        "semanticNet": "L1_INTERNAL"
+      },
+      {
+        "a": {
+          "x": -23.6,
+          "y": 19.7
+        },
+        "b": {
+          "x": -60.0,
+          "y": 47.24409448818898
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "U1 LA pad breakout",
+        "semanticNet": "ANT_LA"
+      },
+      {
+        "a": {
+          "x": 0.0,
+          "y": 23.6
+        },
+        "b": {
+          "x": 0.0,
+          "y": 47.24409448818898
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "U1 LB pad breakout",
+        "semanticNet": "ANT_LB"
+      },
+      {
+        "a": {
+          "x": 0.0,
+          "y": 47.24409448818898
+        },
+        "b": {
+          "x": 39.37007874015748,
+          "y": 47.24409448818898
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "U1 LB pad breakout",
+        "semanticNet": "ANT_LB"
+      },
+      {
+        "a": {
+          "x": -664.3700787401575,
+          "y": 8.136186903784088e-14
+        },
+        "b": {
+          "x": -668.3070866141733,
+          "y": 8.136186903784088e-14
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "outer terminal via neck",
+        "semanticNet": "L1_INTERNAL"
+      },
+      {
+        "a": {
+          "x": -585.3149606299213,
+          "y": 6.45123683725643e-13
+        },
+        "b": {
+          "x": -581.3779527559055,
+          "y": 6.45123683725643e-13
+        },
+        "layer": 1,
+        "width": 9.84251968503937,
+        "role": "inner terminal via neck",
+        "semanticNet": "L1_INTERNAL"
+      },
+      {
+        "a": {
+          "x": -668.3070866141733,
+          "y": 8.136186903784088e-14
+        },
+        "b": {
+          "x": -614.1732283464567,
+          "y": 177.16535433070868
+        },
+        "layer": 2,
+        "width": 9.84251968503937,
+        "role": "outer-end return",
+        "semanticNet": "ANT_LA"
+      },
+      {
+        "a": {
+          "x": -614.1732283464567,
+          "y": 177.16535433070868
+        },
+        "b": {
+          "x": -157.48031496062993,
+          "y": 177.16535433070868
+        },
+        "layer": 2,
+        "width": 9.84251968503937,
+        "role": "outer-end return",
+        "semanticNet": "ANT_LA"
+      },
+      {
+        "a": {
+          "x": -157.48031496062993,
+          "y": 177.16535433070868
+        },
+        "b": {
+          "x": -60.0,
+          "y": 47.24409448818898
+        },
+        "layer": 2,
+        "width": 9.84251968503937,
+        "role": "outer-end return",
+        "semanticNet": "ANT_LA"
+      },
+      {
+        "a": {
+          "x": -581.3779527559055,
+          "y": 6.45123683725643e-13
+        },
+        "b": {
+          "x": -511.8110236220473,
+          "y": -177.16535433070868
+        },
+        "layer": 2,
+        "width": 9.84251968503937,
+        "role": "inner-end return",
+        "semanticNet": "ANT_LB"
+      },
+      {
+        "a": {
+          "x": -511.8110236220473,
+          "y": -177.16535433070868
+        },
+        "b": {
+          "x": 39.37007874015748,
+          "y": -177.16535433070868
+        },
+        "layer": 2,
+        "width": 9.84251968503937,
+        "role": "inner-end return",
+        "semanticNet": "ANT_LB"
+      },
+      {
+        "a": {
+          "x": 39.37007874015748,
+          "y": -177.16535433070868
+        },
+        "b": {
+          "x": 39.37007874015748,
+          "y": 47.24409448818898
+        },
+        "layer": 2,
+        "width": 9.84251968503937,
+        "role": "inner-end return",
+        "semanticNet": "ANT_LB"
+      }
+    ],
+    "outlineSegments": [
+      {
+        "layer": 11,
+        "width": 1,
+        "a": {
+          "x": 728.3464566929134,
+          "y": 301.69098046859284
+        },
+        "b": {
+          "x": 301.6909804685929,
+          "y": 728.3464566929134
+        }
+      },
+      {
+        "layer": 11,
+        "width": 1,
+        "a": {
+          "x": 301.6909804685929,
+          "y": 728.3464566929134
+        },
+        "b": {
+          "x": -301.69098046859284,
+          "y": 728.3464566929134
+        }
+      },
+      {
+        "layer": 11,
+        "width": 1,
+        "a": {
+          "x": -301.69098046859284,
+          "y": 728.3464566929134
+        },
+        "b": {
+          "x": -728.3464566929134,
+          "y": 301.69098046859295
+        }
+      },
+      {
+        "layer": 11,
+        "width": 1,
+        "a": {
+          "x": -728.3464566929134,
+          "y": 301.69098046859295
+        },
+        "b": {
+          "x": -728.3464566929135,
+          "y": -301.6909804685928
+        }
+      },
+      {
+        "layer": 11,
+        "width": 1,
+        "a": {
+          "x": -728.3464566929135,
+          "y": -301.6909804685928
+        },
+        "b": {
+          "x": -301.6909804685933,
+          "y": -728.3464566929133
+        }
+      },
+      {
+        "layer": 11,
+        "width": 1,
+        "a": {
+          "x": -301.6909804685933,
+          "y": -728.3464566929133
+        },
+        "b": {
+          "x": 301.690980468593,
+          "y": -728.3464566929133
+        }
+      },
+      {
+        "layer": 11,
+        "width": 1,
+        "a": {
+          "x": 301.690980468593,
+          "y": -728.3464566929133
+        },
+        "b": {
+          "x": 728.3464566929133,
+          "y": -301.69098046859335
+        }
+      },
+      {
+        "layer": 11,
+        "width": 1,
+        "a": {
+          "x": 728.3464566929133,
+          "y": -301.69098046859335
+        },
+        "b": {
+          "x": 728.3464566929134,
+          "y": 301.69098046859284
+        }
+      }
+    ],
+    "pitch_mm": 0.502,
+    "proposal_only": true,
+    "note": "Geometry-only proposal. +0.002mm pitch corrects sampled geometry; shifting the LA breakout via to (-60,47.244) mil clears current LED branches. EasyEDA provides bridge copper for a FILL region via the native UI, but the installed API does not expose that property; VOUT/GND routing, bridge setting, full-stack DRC and RF tests remain."
+  },
+  "coil_fill_geometry": {
+    "polygon_valid": true,
+    "vertex_count": 258,
+    "bridge_nets": [
+      "ANT_LA",
+      "ANT_LB"
+    ],
+    "bridge_enabled": false,
+    "minimum_fill_to_top_pad_copper_gap_mm": 6.77368002,
+    "closest_top_pad": "D2.2",
+    "minimum_fill_to_existing_top_track_copper_gap_mm": 6.66239392,
+    "closest_top_track": "existing fa66c787dcab9acb",
+    "required_clearance_mm": 0.15,
+    "passes_existing_top_copper_screen": true,
+    "terminal_via_overlap_checks": [
+      {
+        "x_mm": -16.975,
+        "y_mm": 0.0,
+        "copper_overlap_mm": 0.2245322
+      },
+      {
+        "x_mm": -14.775,
+        "y_mm": 0.0,
+        "copper_overlap_mm": 0.2245125
+      }
+    ],
+    "note": "This checks the fill polygon against current Top pads/tracks only. It does not validate bridge-copper properties, proposed necks/vias, bottom return routes, native DRC or RF behavior."
+  }
+}

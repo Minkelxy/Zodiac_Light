@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="205mm" height="145mm" viewBox="0 0 205 145">
+<title>NFC talisman 3D-printable assembly alignment jig dimension drawing</title>
+<rect width="205" height="145" fill="#f7f5f0"/>
+<text x="10" y="12" font-family="Microsoft YaHei,Arial,sans-serif" font-size="5" fill="#28252b" text-anchor="start">叠装定位夹具 · FDM 打印尺寸示意</text>
+<text x="10" y="20" font-family="Microsoft YaHei,Arial,sans-serif" font-size="3" fill="#28252b" text-anchor="start">尺寸 mm；属于辅助工具，口袋间隙需先试装；无需修改 PCB。</text>
+<polygon points="43.6447,37.0000 64.3553,37.0000 79.0000,51.6447 79.0000,72.3553 64.3553,87.0000 43.6447,87.0000 29.0000,72.3553 29.0000,51.6447" fill="#d7e2e6" stroke="#425a68" stroke-width="0.15"/>
+<path d="M79.0000,51.6447 L64.3553,37.0000 L43.6447,37.0000 L29.0000,51.6447 L29.0000,56.0871 L29.2168,56.0513 L29.6076,56.0128 L30.0000,56.0000 L30.3924,56.0128 L30.7832,56.0513 L31.1705,56.1153 L31.5529,56.2044 L31.9286,56.3184 L32.2961,56.4567 L32.6537,56.6188 L33.0000,56.8038 L33.3334,57.0112 L33.6526,57.2399 L33.9561,57.4890 L34.2426,57.7574 L34.5110,58.0439 L34.7601,58.3474 L34.9888,58.6666 L35.1962,59.0000 L35.3000,59.1943 L35.3000,54.2542 L46.2542,43.3000 L61.7458,43.3000 L72.7000,54.2542 L72.7000,59.1943 L72.8038,59.0000 L73.0112,58.6666 L73.2399,58.3474 L73.4890,58.0439 L73.7574,57.7574 L74.0439,57.4890 L74.3474,57.2399 L74.6666,57.0112 L75.0000,56.8038 L75.3463,56.6188 L75.7039,56.4567 L76.0714,56.3184 L76.4471,56.2044 L76.8295,56.1153 L77.2168,56.0513 L77.6076,56.0128 L78.0000,56.0000 L78.3924,56.0128 L78.7832,56.0513 L79.0000,56.0871 Z" fill="#91a6b1" fill-rule="evenodd" stroke="#425a68" stroke-width="0.12"/>
+<path d="M29.0000,72.3553 L43.6447,87.0000 L64.3553,87.0000 L79.0000,72.3553 L79.0000,67.9129 L78.7832,67.9487 L78.3924,67.9872 L78.0000,68.0000 L77.6076,67.9872 L77.2168,67.9487 L76.8295,67.8847 L76.4471,67.7956 L76.0714,67.6816 L75.7039,67.5433 L75.3463,67.3812 L75.0000,67.1962 L74.6666,66.9888 L74.3474,66.7601 L74.0439,66.5110 L73.7574,66.2426 L73.4890,65.9561 L73.2399,65.6526 L73.0112,65.3334 L72.8038,65.0000 L72.7000,64.8057 L72.7000,69.7458 L61.7458,80.7000 L46.2542,80.7000 L35.3000,69.7458 L35.3000,64.8057 L35.1962,65.0000 L34.9888,65.3334 L34.7601,65.6526 L34.5110,65.9561 L34.2426,66.2426 L33.9561,66.5110 L33.6526,66.7601 L33.3334,66.9888 L33.0000,67.1962 L32.6537,67.3812 L32.2961,67.5433 L31.9286,67.6816 L31.5529,67.7956 L31.1705,67.8847 L30.7832,67.9487 L30.3924,67.9872 L30.0000,68.0000 L29.6076,67.9872 L29.2168,67.9487 L29.0000,67.9129 Z" fill="#91a6b1" fill-rule="evenodd" stroke="#425a68" stroke-width="0.12"/>
+<polyline points="35.3000,35.0000 72.7000,35.0000" fill="none" stroke="#4d6573" stroke-width="0.15" stroke-linecap="round"/>
+<polyline points="35.3000,33.0000 35.3000,37.0000" fill="none" stroke="#4d6573" stroke-width="0.15" stroke-linecap="round"/>
+<polyline points="72.7000,33.0000 72.7000,37.0000" fill="none" stroke="#4d6573" stroke-width="0.15" stroke-linecap="round"/>
+<text x="54" y="31" font-family="Microsoft YaHei,Arial,sans-serif" font-size="3" fill="#28252b" text-anchor="middle">口袋对边距 37.4</text>
+<polyline points="29.0000,96.0000 79.0000,96.0000" fill="none" stroke="#4d6573" stroke-width="0.15" stroke-linecap="round"/>
+<polyline points="29.0000,94.0000 29.0000,98.0000" fill="none" stroke="#4d6573" stroke-width="0.15" stroke-linecap="round"/>
+<polyline points="79.0000,94.0000 79.0000,98.0000" fill="none" stroke="#4d6573" stroke-width="0.15" stroke-linecap="round"/>
+<text x="54" y="103" font-family="Microsoft YaHei,Arial,sans-serif" font-size="3" fill="#28252b" text-anchor="middle">外形对边距 50</text>
+<text x="54" y="92" font-family="Microsoft YaHei,Arial,sans-serif" font-size="3" fill="#28252b" text-anchor="middle">俯视：两侧 Ø12 取件口</text>
+<polygon points="117.0000,63.0000 167.0000,63.0000 167.0000,71.0000 117.0000,71.0000" fill="#91a6b1" stroke="#425a68" stroke-width="0.15"/>
+<polygon points="123.3000,62.8000 160.7000,62.8000 160.7000,69.0000 123.3000,69.0000" fill="#f7f5f0" stroke="#f7f5f0" stroke-width="0.15"/>
+<polygon points="123.5000,68.8000 160.5000,68.8000 160.5000,69.7800 123.5000,69.7800" fill="#303032" stroke="#303032" stroke-width="0.15"/>
+<polygon points="123.5000,67.7200 160.5000,67.7200 160.5000,68.7000 123.5000,68.7000" fill="#77797a" stroke="#77797a" stroke-width="0.15"/>
+<polygon points="123.5000,66.6400 160.5000,66.6400 160.5000,67.6200 123.5000,67.6200" fill="#303032" stroke="#303032" stroke-width="0.15"/>
+<polygon points="123.5000,65.5600 160.5000,65.5600 160.5000,66.5400 123.5000,66.5400" fill="#77797a" stroke="#77797a" stroke-width="0.15"/>
+<polygon points="123.5000,64.4800 160.5000,64.4800 160.5000,65.4600 123.5000,65.4600" fill="#303032" stroke="#303032" stroke-width="0.15"/>
+<text x="142" y="48" font-family="Microsoft YaHei,Arial,sans-serif" font-size="3" fill="#28252b" text-anchor="middle">剖面：对齐未开取件口的平边</text>
+<text x="142" y="81" font-family="Microsoft YaHei,Arial,sans-serif" font-size="3" fill="#28252b" text-anchor="middle">总高 8 · 底厚 2 · 口袋深 6</text>
+<text x="142" y="90" font-family="Microsoft YaHei,Arial,sans-serif" font-size="3" fill="#28252b" text-anchor="middle">37 mm 板单边名义间隙 0.2</text>
+<text x="142" y="99" font-family="Microsoft YaHei,Arial,sans-serif" font-size="3" fill="#28252b" text-anchor="middle">胶合时使用平压板，均匀轻压外围</text>
+<text x="10" y="117" font-family="Microsoft YaHei,Arial,sans-serif" font-size="3" fill="#28252b" text-anchor="start">建议：PLA / PETG；层高 0.2 mm；无需金属定位件。</text>
+<text x="10" y="125" font-family="Microsoft YaHei,Arial,sans-serif" font-size="3" fill="#28252b" text-anchor="start">先放单片检查松紧和基准平边，再试叠装；取件口底部保留 2 mm 底板。</text>
+<text x="10" y="133" font-family="Microsoft YaHei,Arial,sans-serif" font-size="3" fill="#28252b" text-anchor="start">assembly-jig.scad 包含夹具和独立 37 mm 压板；STL 导出前核验打印机尺寸。</text>
+<text x="10" y="141" font-family="Microsoft YaHei,Arial,sans-serif" font-size="3" fill="#6e6b65" text-anchor="start">辅助夹具未实物打印，尺寸与装配间隙尚未实测。</text>
+</svg>

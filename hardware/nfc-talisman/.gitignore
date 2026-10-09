@@ -1,0 +1,13 @@
+# Local EasyEDA bridge responses are large and may contain volatile UI state.
+eda/logs/
+
+# EasyEDA extension bundle and downloaded vendor datasheets are reproducible from links.
+tools/*.eext
+sources/electrical/*.pdf
+
+# Experiments and rejected artwork are kept out of the reviewable design source.
+artwork/archive/
+scripts/*probe*.js
+scripts/17b-remove-rejected-horse-art.js
+scripts/__pycache__/
+eda/*probe*.png

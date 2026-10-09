@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="60mm" height="50mm" viewBox="-30 -25 60 50">
+  <title>Horse Talisman image placement guide — NOT manufacturing artwork</title>
+  <desc>Blank gray octagonal base and dark field; user imports original horse image manually.</desc>
+  <rect x="-30" y="-25" width="60" height="50" fill="#f5f4ef"/>
+  <polygon points="-7.6630,-18.5000 7.6630,-18.5000 18.5000,-7.6630 18.5000,7.6630 7.6630,18.5000 -7.6630,18.5000 -18.5000,7.6630 -18.5000,-7.6630" fill="#858b8e" stroke="#c0c3c3" stroke-width="0.35"/>
+  <polygon points="-6.8345,-16.5000 6.8345,-16.5000 16.5000,-6.8345 16.5000,6.8345 6.8345,16.5000 -6.8345,16.5000 -16.5000,6.8345 -16.5000,-6.8345" fill="#a5aaab" stroke="#555b60" stroke-width="0.25"/>
+  <polygon points="-6.2132,-15.0000 6.2132,-15.0000 15.0000,-6.2132 15.0000,6.2132 6.2132,15.0000 -6.2132,15.0000 -15.0000,6.2132 -15.0000,-6.2132" fill="#151d27" stroke="#c0c3c3" stroke-width="0.3"/>
+  <polygon points="-5.3848,-13.0000 5.3848,-13.0000 13.0000,-5.3848 13.0000,5.3848 5.3848,13.0000 -5.3848,13.0000 -13.0000,5.3848 -13.0000,-5.3848" fill="none" stroke="#9b83d8" stroke-width="0.2" stroke-dasharray="0.8 0.6"/>
+  <text x="0" y="-0.8" text-anchor="middle" font-family="Arial,sans-serif" font-size="1.25" fill="#d9d6df">USER IMAGE AREA</text>
+  <text x="0" y="1.2" text-anchor="middle" font-family="Arial,sans-serif" font-size="0.9" fill="#b8b5c0">manual import · no horse artwork</text>
+  <text x="0" y="23" text-anchor="middle" font-family="Arial,sans-serif" font-size="1.15" fill="#38363b">37 mm across flats · face outward · do not mirror</text>
+</svg>

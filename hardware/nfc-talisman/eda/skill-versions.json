@@ -1,0 +1,20 @@
+{
+  "easyeda_api": {
+    "version": "1.1.44",
+    "commit": "20e08dd62ec4faa5eb527332df2c29c9dc0fbaf4",
+    "installed_path": "C:\\\\Users\\\\20177\\\\.codex\\\\skills\\\\easyeda-api",
+    "purpose": "live EasyEDA Pro API and bridge; used for current active project"
+  },
+  "easyeda_eprj3": {
+    "version": "1.7.3",
+    "commit": "40c94e129df18e94232f8c94260134bfcac6cabf",
+    "installed_path": "C:\\\\Users\\\\20177\\\\.codex\\\\skills\\\\easyeda-eprj3",
+    "node": "v22.20.0",
+    "smoke_test": "121/121 checks passed in disposable test project; companion skill gate still applies to any real .eprj3 work",
+    "purpose": "offline folder-format .eprj3 authoring; not used for current live project",
+    "required_companion": "easyeda-pro-format-skill must be installed and read before any .eprj3 generation/edit/validation",
+    "required_companion_status": "not installed; do not author/validate .eprj3 with this skill until installed and read"
+  },
+  "easyeda_pro_version": "4.1.71",
+  "bridge_extension": "run-api-gateway 1.0.6"
+}

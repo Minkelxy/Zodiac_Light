@@ -1,0 +1,1 @@
+const codes=['C710403','C5875720','C114662','C105579','C162182','C60137'];const devices={};for(const code of codes)devices[code]=await eda.lib_Device.searchByProperties({supplierId:code},undefined,undefined,undefined,10,1);return {devices,opened:await eda.dmt_EditorControl.openDocument('eb14b9eaec4f920c')};

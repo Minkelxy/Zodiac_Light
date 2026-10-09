@@ -1,0 +1,24 @@
+{
+  "snapshot": "eda/logs/22-audit-core-tracks.json",
+  "pad_source": "eda/core-pads.json",
+  "route_count": 19,
+  "different_net_track_to_pad_pairs_checked": 374,
+  "different_net_track_pairs_checked": 71,
+  "required_clearance_mm": 0.1524,
+  "closest_track_to_different_net_pad": {
+    "line_id": "f77876691d6b6957",
+    "line_net": "FD",
+    "pad": "U1.5",
+    "pad_net": "SDA",
+    "gap_mm": 0.28269389
+  },
+  "closest_different_net_track_pair": {
+    "line_a": "7e10129e9b16e637",
+    "net_a": "SDA",
+    "line_b": "f77876691d6b6957",
+    "net_b": "FD",
+    "gap_mm": 0.40187476
+  },
+  "violations": [],
+  "note": "Geometry-only screening of current 19 routes; excludes net connectivity, solder-mask, via, antenna and native EasyEDA DRC checks."
+}
