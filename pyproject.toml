@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "constellation-lamp"
+version = "0.1.0"
+description = "Sagittarius WS2812 layout compiler and offline Python light-effect simulator"
+requires-python = ">=3.11"
+dependencies = ["numpy>=1.24", "matplotlib>=3.6"]
+
+[project.optional-dependencies]
+serial = ["pyserial>=3.5"]
+
+[tool.setuptools]
+packages = ["constellation_lamp"]

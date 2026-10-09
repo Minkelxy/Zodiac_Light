@@ -1,0 +1,58 @@
+#
+#   VizieR Astronomical Server vizier.cfa.harvard.edu
+#    Date: 2026-10-08T15:08:43 [V7.6]
+#   In case of problem, please report to:	cds-question@unistra.fr
+#
+#
+#Coosys	J2000:	eq_FK5 J2000
+#INFO	service_protocol=ASU	  IVOID of the protocol through which the data was retrieved
+#INFO	request_date=2026-10-08T15:08:43	  Query execution date
+#INFO	request=https://vizier.cfa.harvard.edu/viz-bin/asu-tsv?-source=I%2F239%2Fhip_main&-out=HIP%2CRAICRS%2CDEICRS%2CVmag&HIP=87072%2C88635%2C89341%2C89642%2C89931%2C90185%2C90496%2C92041%2C92855%2C93085%2C93506%2C93683%2C93864%2C94820%2C95168%2C95294%2C95347%2C96406%2C98032%2C98412%2C98688	  Full request URL
+#INFO	contact=cds-question@unistra.fr	  Email or URL to contact publisher
+#INFO	server_software=VizieR/7.6	  Software version
+#INFO	publisher=CDS	  Data centre that produced the VOTable
+#INFO	MaxTuples=50000	
+
+#RESOURCE=yCat_1239
+#Name: I/239
+#Title: The Hipparcos and Tycho Catalogues (ESA 1997)
+#INFO	ivoid=ivo://cds.vizier/i/239	    IVOID of underlying data collection
+#INFO	data_ivoid=ivo://cds.vizier/i/239	    IVOID of underlying data collection
+#INFO	creator=ESA 1997	    First author or institution
+#INFO	cites=1997HIP...C......0E	    Article or Data origin sources
+#INFO	reference_url=https://cdsarc.cds.unistra.fr/viz-bin/cat/I/239	    Dataset landing page
+#INFO	publication_date=2021-11-18	    Date of first publication in the data centre
+#INFO	rights_uri=https://cds.unistra.fr/vizier-org/licences_vizier.html	    Licence URI
+#Coosys	H_1991.250:	ICRS
+#Table	I_239_hip_main:
+#Name: I/239/hip_main
+#Title: The Hipparcos Main Catalogue
+#Column	HIP	(I6)	Identifier (HIP number) (H1)	[ucd=meta.id;meta.main]
+#Column	RAICRS	(F12.8)	? alpha, degrees (ICRS, Epoch=J1991.25) (H8)	[ucd=pos.eq.ra;meta.main]
+#Column	DEICRS	(F12.8)	? delta, degrees (ICRS, Epoch=J1991.25) (H9)	[ucd=pos.eq.dec;meta.main]
+#Column	Vmag	(F5.2)	? Magnitude in Johnson V (H5)	[ucd=phot.mag;em.opt.V]
+HIP	RAICRS	DEICRS	Vmag
+ 	deg	deg	mag
+------	------------	------------	-----
+ 87072	266.89011276	-27.83076255	 4.53
+ 88635	271.45218586	-30.42365007	 2.98
+ 89341	273.44086963	-21.05883031	 3.84
+ 89642	274.40720490	-36.76128103	 3.10
+ 89931	275.24842337	-29.82803914	 2.72
+ 90185	276.04310967	-34.38431460	 1.79
+ 90496	276.99278955	-25.42124732	 2.82
+ 92041	281.41397083	-26.99077940	 3.17
+ 92855	283.81631956	-26.29659428	 2.05
+ 93085	284.43241556	-21.10662433	 3.52
+ 93506	285.65301428	-29.88011429	 2.60
+ 93683	286.17055765	-21.74135451	 3.76
+ 93864	286.73517629	-27.66981416	 3.32
+ 94820	289.40868994	-18.95288215	 4.88
+ 95168	290.41823037	-17.84725155	 3.92
+ 95294	290.80441920	-44.79964788	 4.27
+ 95347	290.97146411	-40.61564629	 3.96
+ 96406	294.00687266	-24.71901737	 5.64
+ 98032	298.81532954	-41.86841350	 4.12
+ 98412	299.93405965	-35.27624433	 4.37
+ 98688	300.66441367	-27.70987972	 4.43
+

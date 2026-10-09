@@ -1,0 +1,5 @@
+* text=auto eol=lf
+*.cmd text eol=crlf
+*.png binary
+# HTTP snapshots must retain their exact bytes for recorded SHA-256 checks.
+data/sources/** -text -whitespace

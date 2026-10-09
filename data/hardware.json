@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "board": {"reference": "esp32dev", "framework": "esp-idf", "data_pin": 18, "status": "reference_not_hardware_tested"},
+  "transport": {"protocol": "CLP1", "baud": 460800, "fps": 30, "frame_order": "RGB", "packet_timeout_ms": 250},
+  "ws2812": {"wire_order": "GRB", "bit_rate_hz": 800000, "reset_us": 300, "timeout_ms": 1000},
+  "power_estimate": {
+    "supply_voltage_v": 5,
+    "current_limit_ma": 2000,
+    "idle_led_ma": 1,
+    "channel_ma": 20,
+    "note": "Configurable estimate; replace current coefficients with measurements for the actual LED revision."
+  }
+}

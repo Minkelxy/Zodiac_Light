@@ -1,0 +1,302 @@
+{
+  "schema_version": 1,
+  "id": "Sgr",
+  "name": "人马座",
+  "reference_image": {
+    "filename": "reference.png",
+    "width_px": 453,
+    "height_px": 375
+  },
+  "stars": [
+    {
+      "id": "hip_95168",
+      "hip": 95168,
+      "reference_px": [
+        116,
+        79
+      ]
+    },
+    {
+      "id": "hip_94820",
+      "hip": 94820,
+      "reference_px": [
+        131,
+        84
+      ]
+    },
+    {
+      "id": "hip_93683",
+      "hip": 93683,
+      "reference_px": [
+        171,
+        98
+      ]
+    },
+    {
+      "id": "hip_93085",
+      "hip": 93085,
+      "reference_px": [
+        181,
+        84
+      ]
+    },
+    {
+      "id": "hip_92855",
+      "hip": 92855,
+      "reference_px": [
+        207,
+        133
+      ]
+    },
+    {
+      "id": "hip_92041",
+      "hip": 92041,
+      "reference_px": [
+        229,
+        129
+      ]
+    },
+    {
+      "id": "hip_90496",
+      "hip": 90496,
+      "reference_px": [
+        262,
+        99
+      ]
+    },
+    {
+      "id": "hip_89341",
+      "hip": 89341,
+      "reference_px": [
+        277,
+        36
+      ]
+    },
+    {
+      "id": "hip_89931",
+      "hip": 89931,
+      "reference_px": [
+        290,
+        136
+      ]
+    },
+    {
+      "id": "hip_88635",
+      "hip": 88635,
+      "reference_px": [
+        324,
+        129
+      ]
+    },
+    {
+      "id": "hip_87072",
+      "hip": 87072,
+      "reference_px": [
+        355,
+        87
+      ]
+    },
+    {
+      "id": "hip_90185",
+      "hip": 90185,
+      "reference_px": [
+        299,
+        186
+      ]
+    },
+    {
+      "id": "hip_89642",
+      "hip": 89642,
+      "reference_px": [
+        317,
+        207
+      ]
+    },
+    {
+      "id": "hip_93506",
+      "hip": 93506,
+      "reference_px": [
+        204,
+        177
+      ]
+    },
+    {
+      "id": "hip_93864",
+      "hip": 93864,
+      "reference_px": [
+        188,
+        162
+      ]
+    },
+    {
+      "id": "hip_96406",
+      "hip": 96406,
+      "reference_px": [
+        116,
+        167
+      ]
+    },
+    {
+      "id": "hip_98688",
+      "hip": 98688,
+      "reference_px": [
+        78,
+        230
+      ]
+    },
+    {
+      "id": "hip_98412",
+      "hip": 98412,
+      "reference_px": [
+        121,
+        298
+      ]
+    },
+    {
+      "id": "hip_98032",
+      "hip": 98032,
+      "reference_px": [
+        165,
+        358
+      ]
+    },
+    {
+      "id": "hip_95347",
+      "hip": 95347,
+      "reference_px": [
+        209,
+        310
+      ]
+    },
+    {
+      "id": "hip_95294",
+      "hip": 95294,
+      "reference_px": [
+        231,
+        349
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "e01",
+      "start": "hip_89931",
+      "end": "hip_90496"
+    },
+    {
+      "id": "e02",
+      "start": "hip_89642",
+      "end": "hip_90185"
+    },
+    {
+      "id": "e03",
+      "start": "hip_90185",
+      "end": "hip_88635"
+    },
+    {
+      "id": "e04",
+      "start": "hip_88635",
+      "end": "hip_87072"
+    },
+    {
+      "id": "e05",
+      "start": "hip_88635",
+      "end": "hip_89931"
+    },
+    {
+      "id": "e06",
+      "start": "hip_89931",
+      "end": "hip_90185"
+    },
+    {
+      "id": "e07",
+      "start": "hip_90185",
+      "end": "hip_93506"
+    },
+    {
+      "id": "e08",
+      "start": "hip_93506",
+      "end": "hip_92041"
+    },
+    {
+      "id": "e09",
+      "start": "hip_92041",
+      "end": "hip_89931"
+    },
+    {
+      "id": "e10",
+      "start": "hip_92041",
+      "end": "hip_90496"
+    },
+    {
+      "id": "e11",
+      "start": "hip_90496",
+      "end": "hip_89341"
+    },
+    {
+      "id": "e12",
+      "start": "hip_93506",
+      "end": "hip_93864"
+    },
+    {
+      "id": "e13",
+      "start": "hip_93864",
+      "end": "hip_92855"
+    },
+    {
+      "id": "e14",
+      "start": "hip_92855",
+      "end": "hip_92041"
+    },
+    {
+      "id": "e15",
+      "start": "hip_92855",
+      "end": "hip_93085"
+    },
+    {
+      "id": "e16",
+      "start": "hip_93085",
+      "end": "hip_93683"
+    },
+    {
+      "id": "e17",
+      "start": "hip_93683",
+      "end": "hip_94820"
+    },
+    {
+      "id": "e18",
+      "start": "hip_94820",
+      "end": "hip_95168"
+    },
+    {
+      "id": "e19",
+      "start": "hip_93864",
+      "end": "hip_96406"
+    },
+    {
+      "id": "e20",
+      "start": "hip_96406",
+      "end": "hip_98688"
+    },
+    {
+      "id": "e21",
+      "start": "hip_98688",
+      "end": "hip_98412"
+    },
+    {
+      "id": "e22",
+      "start": "hip_98412",
+      "end": "hip_98032"
+    },
+    {
+      "id": "e23",
+      "start": "hip_98032",
+      "end": "hip_95347"
+    },
+    {
+      "id": "e24",
+      "start": "hip_98032",
+      "end": "hip_95294"
+    }
+  ]
+}

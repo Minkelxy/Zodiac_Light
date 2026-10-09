@@ -1,0 +1,360 @@
+{
+  "schema_version": 1,
+  "sources": [
+    {
+      "id": "hipparcos_i239",
+      "filename": "hipparcos_i239.tsv",
+      "url": "https://vizier.cfa.harvard.edu/viz-bin/asu-tsv?-source=I%2F239%2Fhip_main&-out=HIP%2CRAICRS%2CDEICRS%2CVmag&HIP=87072%2C88635%2C89341%2C89642%2C89931%2C90185%2C90496%2C92041%2C92855%2C93085%2C93506%2C93683%2C93864%2C94820%2C95168%2C95294%2C95347%2C96406%2C98032%2C98412%2C98688",
+      "license": "CC BY-NC 3.0 IGO; Credit: ESA (ESA catalogue website)",
+      "citation": "ESA 1997, The Hipparcos and Tycho Catalogues, ESA SP-1200; 1997HIP...C......0E",
+      "license_url": "https://www.cosmos.esa.int/web/hipparcos/catalogues",
+      "snapshot_path": "sources/20261008T150844925832Z/hipparcos_i239.tsv",
+      "retrieved_at_utc": "2026-10-08T15:08:44.925832+00:00",
+      "sha256": "f8a5b452e249ed52745b3538d7cf11d7775a2aad7d67ede352a005f24d778709"
+    },
+    {
+      "id": "simbad_names",
+      "filename": "simbad_names.tsv",
+      "url": "https://simbad.cds.unistra.fr/simbad/sim-tap/sync",
+      "request_method": "POST",
+      "request_body": "REQUEST=doQuery&LANG=ADQL&FORMAT=tsv&QUERY=SELECT+i.id%2C+b.main_id+FROM+ident+AS+i+JOIN+basic+AS+b+ON+i.oidref%3Db.oid+WHERE+i.id+IN+%28%27HIP+87072%27%2C%27HIP+88635%27%2C%27HIP+89341%27%2C%27HIP+89642%27%2C%27HIP+89931%27%2C%27HIP+90185%27%2C%27HIP+90496%27%2C%27HIP+92041%27%2C%27HIP+92855%27%2C%27HIP+93085%27%2C%27HIP+93506%27%2C%27HIP+93683%27%2C%27HIP+93864%27%2C%27HIP+94820%27%2C%27HIP+95168%27%2C%27HIP+95294%27%2C%27HIP+95347%27%2C%27HIP+96406%27%2C%27HIP+98032%27%2C%27HIP+98412%27%2C%27HIP+98688%27%29",
+      "adql": "SELECT i.id, b.main_id FROM ident AS i JOIN basic AS b ON i.oidref=b.oid WHERE i.id IN ('HIP 87072','HIP 88635','HIP 89341','HIP 89642','HIP 89931','HIP 90185','HIP 90496','HIP 92041','HIP 92855','HIP 93085','HIP 93506','HIP 93683','HIP 93864','HIP 94820','HIP 95168','HIP 95294','HIP 95347','HIP 96406','HIP 98032','HIP 98412','HIP 98688')",
+      "license": "Publicly accessible service; a redistribution licence was not established by this project",
+      "citation": "SIMBAD astronomical database, CDS, Strasbourg, France",
+      "license_url": "https://cds.unistra.fr/cgi-bin/SimbadBib",
+      "snapshot_path": "sources/20261008T150844925832Z/simbad_names.tsv",
+      "retrieved_at_utc": "2026-10-08T15:08:44.925832+00:00",
+      "sha256": "f956d08660de45327ca2e2ad4641cae7248ecd25a49373fd5082958eeac45393"
+    },
+    {
+      "id": "stellarium_modern",
+      "filename": "stellarium_modern_index.json",
+      "url": "https://raw.githubusercontent.com/Stellarium/stellarium/master/skycultures/modern/index.json",
+      "source_ref": "master (content frozen by SHA-256)",
+      "license": "CC BY-SA 4.0 (text and data)",
+      "citation": "Stellarium team, Modern sky culture, CON modern Sgr",
+      "license_url": "https://raw.githubusercontent.com/Stellarium/stellarium/master/skycultures/modern/description.md",
+      "snapshot_path": "sources/20261008T150844925832Z/stellarium_modern_index.json",
+      "retrieved_at_utc": "2026-10-08T15:08:44.925832+00:00",
+      "sha256": "1f2f5ffd6c9e25a7d0dcfdbf1f756e2db03dd3b8ed4ec016a2839b09f6b0fe1e"
+    },
+    {
+      "id": "stellarium_license",
+      "filename": "stellarium_modern_description.md",
+      "url": "https://raw.githubusercontent.com/Stellarium/stellarium/master/skycultures/modern/description.md",
+      "license": "CC BY-SA 4.0 (text and data)",
+      "citation": "Stellarium team, Modern sky culture description",
+      "license_url": "https://raw.githubusercontent.com/Stellarium/stellarium/master/skycultures/modern/description.md",
+      "snapshot_path": "sources/20261008T150844925832Z/stellarium_modern_description.md",
+      "retrieved_at_utc": "2026-10-08T15:08:44.925832+00:00",
+      "sha256": "4b58344f63168d7c816fdfef405103b5770fda2e1f4a4bf5c8871041ce042586"
+    },
+    {
+      "id": "esa_hipparcos_license",
+      "filename": "esa_hipparcos_catalogues.html",
+      "url": "https://www.cosmos.esa.int/web/hipparcos/catalogues",
+      "license": "Website snapshot retained as evidence of catalogue usage terms; no commercial permission inferred",
+      "citation": "European Space Agency, Hipparcos catalogues and usage terms",
+      "license_url": "https://www.cosmos.esa.int/web/hipparcos/catalogues",
+      "snapshot_path": "sources/20261008T150844925832Z/esa_hipparcos_catalogues.html",
+      "retrieved_at_utc": "2026-10-08T15:08:44.925832+00:00",
+      "sha256": "7bf9b9a19da29a3ee7ddb51d92c9842df1823aaf0ba30e5003db72760e706bb2"
+    }
+  ],
+  "stars": [
+    {
+      "hip": 95168,
+      "id": "hip_95168",
+      "name": "* rho01 Sgr",
+      "ra_deg": 290.41823037,
+      "dec_deg": -17.84725155,
+      "mag_v": 3.92,
+      "coordinate_frame": "ICRS",
+      "coordinate_epoch": "J1991.25",
+      "source_ids": [
+        "hipparcos_i239",
+        "simbad_names"
+      ]
+    },
+    {
+      "hip": 94820,
+      "id": "hip_94820",
+      "name": "* d Sgr",
+      "ra_deg": 289.40868994,
+      "dec_deg": -18.95288215,
+      "mag_v": 4.88,
+      "coordinate_frame": "ICRS",
+      "coordinate_epoch": "J1991.25",
+      "source_ids": [
+        "hipparcos_i239",
+        "simbad_names"
+      ]
+    },
+    {
+      "hip": 93683,
+      "id": "hip_93683",
+      "name": "* omi Sgr",
+      "ra_deg": 286.17055765,
+      "dec_deg": -21.74135451,
+      "mag_v": 3.76,
+      "coordinate_frame": "ICRS",
+      "coordinate_epoch": "J1991.25",
+      "source_ids": [
+        "hipparcos_i239",
+        "simbad_names"
+      ]
+    },
+    {
+      "hip": 93085,
+      "id": "hip_93085",
+      "name": "* ksi02 Sgr",
+      "ra_deg": 284.43241556,
+      "dec_deg": -21.10662433,
+      "mag_v": 3.52,
+      "coordinate_frame": "ICRS",
+      "coordinate_epoch": "J1991.25",
+      "source_ids": [
+        "hipparcos_i239",
+        "simbad_names"
+      ]
+    },
+    {
+      "hip": 92855,
+      "id": "hip_92855",
+      "name": "* sig Sgr",
+      "ra_deg": 283.81631956,
+      "dec_deg": -26.29659428,
+      "mag_v": 2.05,
+      "coordinate_frame": "ICRS",
+      "coordinate_epoch": "J1991.25",
+      "source_ids": [
+        "hipparcos_i239",
+        "simbad_names"
+      ]
+    },
+    {
+      "hip": 92041,
+      "id": "hip_92041",
+      "name": "* phi Sgr",
+      "ra_deg": 281.41397083,
+      "dec_deg": -26.9907794,
+      "mag_v": 3.17,
+      "coordinate_frame": "ICRS",
+      "coordinate_epoch": "J1991.25",
+      "source_ids": [
+        "hipparcos_i239",
+        "simbad_names"
+      ]
+    },
+    {
+      "hip": 90496,
+      "id": "hip_90496",
+      "name": "* lam Sgr",
+      "ra_deg": 276.99278955,
+      "dec_deg": -25.42124732,
+      "mag_v": 2.82,
+      "coordinate_frame": "ICRS",
+      "coordinate_epoch": "J1991.25",
+      "source_ids": [
+        "hipparcos_i239",
+        "simbad_names"
+      ]
+    },
+    {
+      "hip": 89341,
+      "id": "hip_89341",
+      "name": "* mu. Sgr",
+      "ra_deg": 273.44086963,
+      "dec_deg": -21.05883031,
+      "mag_v": 3.84,
+      "coordinate_frame": "ICRS",
+      "coordinate_epoch": "J1991.25",
+      "source_ids": [
+        "hipparcos_i239",
+        "simbad_names"
+      ]
+    },
+    {
+      "hip": 89931,
+      "id": "hip_89931",
+      "name": "* del Sgr",
+      "ra_deg": 275.24842337,
+      "dec_deg": -29.82803914,
+      "mag_v": 2.72,
+      "coordinate_frame": "ICRS",
+      "coordinate_epoch": "J1991.25",
+      "source_ids": [
+        "hipparcos_i239",
+        "simbad_names"
+      ]
+    },
+    {
+      "hip": 88635,
+      "id": "hip_88635",
+      "name": "* gam02 Sgr",
+      "ra_deg": 271.45218586,
+      "dec_deg": -30.42365007,
+      "mag_v": 2.98,
+      "coordinate_frame": "ICRS",
+      "coordinate_epoch": "J1991.25",
+      "source_ids": [
+        "hipparcos_i239",
+        "simbad_names"
+      ]
+    },
+    {
+      "hip": 87072,
+      "id": "hip_87072",
+      "name": "V* X Sgr",
+      "ra_deg": 266.89011276,
+      "dec_deg": -27.83076255,
+      "mag_v": 4.53,
+      "coordinate_frame": "ICRS",
+      "coordinate_epoch": "J1991.25",
+      "source_ids": [
+        "hipparcos_i239",
+        "simbad_names"
+      ]
+    },
+    {
+      "hip": 90185,
+      "id": "hip_90185",
+      "name": "* eps Sgr",
+      "ra_deg": 276.04310967,
+      "dec_deg": -34.3843146,
+      "mag_v": 1.79,
+      "coordinate_frame": "ICRS",
+      "coordinate_epoch": "J1991.25",
+      "source_ids": [
+        "hipparcos_i239",
+        "simbad_names"
+      ]
+    },
+    {
+      "hip": 89642,
+      "id": "hip_89642",
+      "name": "* eta Sgr",
+      "ra_deg": 274.4072049,
+      "dec_deg": -36.76128103,
+      "mag_v": 3.1,
+      "coordinate_frame": "ICRS",
+      "coordinate_epoch": "J1991.25",
+      "source_ids": [
+        "hipparcos_i239",
+        "simbad_names"
+      ]
+    },
+    {
+      "hip": 93506,
+      "id": "hip_93506",
+      "name": "* zet Sgr",
+      "ra_deg": 285.65301428,
+      "dec_deg": -29.88011429,
+      "mag_v": 2.6,
+      "coordinate_frame": "ICRS",
+      "coordinate_epoch": "J1991.25",
+      "source_ids": [
+        "hipparcos_i239",
+        "simbad_names"
+      ]
+    },
+    {
+      "hip": 93864,
+      "id": "hip_93864",
+      "name": "* tau Sgr",
+      "ra_deg": 286.73517629,
+      "dec_deg": -27.66981416,
+      "mag_v": 3.32,
+      "coordinate_frame": "ICRS",
+      "coordinate_epoch": "J1991.25",
+      "source_ids": [
+        "hipparcos_i239",
+        "simbad_names"
+      ]
+    },
+    {
+      "hip": 96406,
+      "id": "hip_96406",
+      "name": "* h01 Sgr",
+      "ra_deg": 294.00687266,
+      "dec_deg": -24.71901737,
+      "mag_v": 5.64,
+      "coordinate_frame": "ICRS",
+      "coordinate_epoch": "J1991.25",
+      "source_ids": [
+        "hipparcos_i239",
+        "simbad_names"
+      ]
+    },
+    {
+      "hip": 98688,
+      "id": "hip_98688",
+      "name": "* c Sgr",
+      "ra_deg": 300.66441367,
+      "dec_deg": -27.70987972,
+      "mag_v": 4.43,
+      "coordinate_frame": "ICRS",
+      "coordinate_epoch": "J1991.25",
+      "source_ids": [
+        "hipparcos_i239",
+        "simbad_names"
+      ]
+    },
+    {
+      "hip": 98412,
+      "id": "hip_98412",
+      "name": "* tet01 Sgr",
+      "ra_deg": 299.93405965,
+      "dec_deg": -35.27624433,
+      "mag_v": 4.37,
+      "coordinate_frame": "ICRS",
+      "coordinate_epoch": "J1991.25",
+      "source_ids": [
+        "hipparcos_i239",
+        "simbad_names"
+      ]
+    },
+    {
+      "hip": 98032,
+      "id": "hip_98032",
+      "name": "* iot Sgr",
+      "ra_deg": 298.81532954,
+      "dec_deg": -41.8684135,
+      "mag_v": 4.12,
+      "coordinate_frame": "ICRS",
+      "coordinate_epoch": "J1991.25",
+      "source_ids": [
+        "hipparcos_i239",
+        "simbad_names"
+      ]
+    },
+    {
+      "hip": 95347,
+      "id": "hip_95347",
+      "name": "* alf Sgr",
+      "ra_deg": 290.97146411,
+      "dec_deg": -40.61564629,
+      "mag_v": 3.96,
+      "coordinate_frame": "ICRS",
+      "coordinate_epoch": "J1991.25",
+      "source_ids": [
+        "hipparcos_i239",
+        "simbad_names"
+      ]
+    },
+    {
+      "hip": 95294,
+      "id": "hip_95294",
+      "name": "* bet02 Sgr",
+      "ra_deg": 290.8044192,
+      "dec_deg": -44.79964788,
+      "mag_v": 4.27,
+      "coordinate_frame": "ICRS",
+      "coordinate_epoch": "J1991.25",
+      "source_ids": [
+        "hipparcos_i239",
+        "simbad_names"
+      ]
+    }
+  ]
+}

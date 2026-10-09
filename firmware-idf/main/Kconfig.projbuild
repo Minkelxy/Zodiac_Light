@@ -1,0 +1,83 @@
+menu "Constellation lamp"
+
+config CLP_LED_COUNT
+    int "Physical LED count (must match generated scene header)"
+    range 1 1024
+    default 268
+
+config CLP_DATA_GPIO
+    int "WS2812 data output GPIO"
+    range 0 33
+    default 18
+    help
+        Reference classic ESP32 board uses GPIO18. Confirm the actual board
+        pinout before flashing. UART0 uses GPIO1 TX and GPIO3 RX.
+
+config CLP_BAUD
+    int "UART0 baud, 8N1"
+    range 9600 2000000
+    default 460800
+
+config CLP_CURRENT_LIMIT_MA
+    int "Estimated current limit (mA)"
+    range 1 100000
+    default 2000
+
+config CLP_IDLE_LED_UA
+    int "Estimated idle current per LED (microamps)"
+    range 0 100000
+    default 1000
+
+config CLP_CHANNEL_UA
+    int "Estimated full-scale current per RGB channel (microamps)"
+    range 1 100000
+    default 20000
+    help
+        These coefficients are estimates, not a current sensor. Calibrate
+        them against the actual LED revision. The host uses the same model.
+
+config CLP_STREAM_TIMEOUT_MS
+    int "Blank after this time without a valid frame (ms)"
+    range 100 60000
+    default 1000
+
+config CLP_PACKET_TIMEOUT_MS
+    int "Incomplete packet total/interbyte timeout (ms)"
+    range 100 5000
+    default 250
+
+config CLP_RESET_US
+    int "WS2812 low reset duration (microseconds)"
+    range 300 1000
+    default 300
+
+config CLP_LOCAL_MODE
+    int "Mode: 0=PC frames, 1=chase, 2=RGB, 3=star/line colors, 4=native effect"
+    range 0 4
+    default 0
+    help
+        Local modes are selected at build time only. Losing the stream in
+        mode 0 always blanks the display; it never enables a local mode.
+
+config CLP_NATIVE_EFFECT
+    int "Native effect: 0=twinkle,1=flow,2=ripple,3=breath,4=aurora,5=sparkle,6=graph,7=draw,8=meteor"
+    range 0 8
+    default 0
+    help
+        Parameters and seed are compiled from data/effects.json by the build
+        script. The scene and presets are read only at build time.
+
+config CLP_NATIVE_FPS
+    int "Native effect requested frames per second"
+    range 1 60
+    default 30
+    help
+        A fixed cadence target; timestamps drive the animation even if a
+        deadline is missed. Actual rendering speed needs board measurement.
+
+config CLP_LOCAL_LEVEL
+    int "Low brightness for local wiring tests (0..255 RGB level)"
+    range 1 32
+    default 16
+
+endmenu

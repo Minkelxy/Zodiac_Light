@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+.venv/
+.tools/
+.pio/
+firmware/.venv/
+*.egg-info/
+build/
+# User-supplied artwork stays local; runtime uses the stored star coordinates.
+data/reference.png

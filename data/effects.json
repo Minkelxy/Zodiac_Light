@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "defaults": {"seed": 1, "brightness": 0.2, "speed": 1, "gamma": 2.2},
+  "presets": {
+    "twinkle": {},
+    "flow": {},
+    "ripple": {},
+    "breath": {"breath_period_s": 6, "breath_floor": 0.08},
+    "aurora": {"aurora_wavelength_mm": 220, "aurora_velocity_mm_s": 22, "aurora_contrast": 0.65},
+    "sparkle": {"sparkle_period_s": 3.2, "sparkle_duration_s": 0.8, "sparkle_density": 0.85},
+    "graph_wave": {"graph_velocity_mm_s": 100, "graph_width_mm": 25},
+    "draw": {"draw_velocity_mm_s": 160, "draw_hold_s": 2.5, "draw_fade_s": 1.5, "draw_head_width_mm": 20},
+    "meteor": {"meteor_angle_deg": -35, "meteor_velocity_mm_s": 220, "meteor_tail_mm": 80, "meteor_width_mm": 45}
+  }
+}
