@@ -1,0 +1,182 @@
+{
+  "generated_utc": "2026-10-10T17:42:18.072629+00:00",
+  "files_checked": 12,
+  "exact_rgb_pass_count": 12,
+  "alpha_unchanged_count": 12,
+  "visible_bbox_unchanged_count": 12,
+  "source_hashes_unchanged": true,
+  "validation_scope": "RGBA mode and 1024x1024 dimensions, exact per-pixel alpha byte equality, specified RGB for every alpha>0 pixel, unchanged nontransparent bounding box, and unchanged source hashes.",
+  "files": [
+    {
+      "id": "rat",
+      "mode_rgba_1024": true,
+      "alpha_bytes_unchanged": true,
+      "all_nontransparent_rgb_equals_ink": true,
+      "visible_bbox_unchanged": true,
+      "visible_bbox_xyxy": [
+        102,
+        237,
+        922,
+        786
+      ],
+      "distinct_nontransparent_rgb_count": 1
+    },
+    {
+      "id": "ox",
+      "mode_rgba_1024": true,
+      "alpha_bytes_unchanged": true,
+      "all_nontransparent_rgb_equals_ink": true,
+      "visible_bbox_unchanged": true,
+      "visible_bbox_xyxy": [
+        104,
+        102,
+        920,
+        922
+      ],
+      "distinct_nontransparent_rgb_count": 1
+    },
+    {
+      "id": "tiger",
+      "mode_rgba_1024": true,
+      "alpha_bytes_unchanged": true,
+      "all_nontransparent_rgb_equals_ink": true,
+      "visible_bbox_unchanged": true,
+      "visible_bbox_xyxy": [
+        102,
+        104,
+        922,
+        919
+      ],
+      "distinct_nontransparent_rgb_count": 1
+    },
+    {
+      "id": "rabbit",
+      "mode_rgba_1024": true,
+      "alpha_bytes_unchanged": true,
+      "all_nontransparent_rgb_equals_ink": true,
+      "visible_bbox_unchanged": true,
+      "visible_bbox_xyxy": [
+        102,
+        218,
+        922,
+        806
+      ],
+      "distinct_nontransparent_rgb_count": 1
+    },
+    {
+      "id": "dragon",
+      "mode_rgba_1024": true,
+      "alpha_bytes_unchanged": true,
+      "all_nontransparent_rgb_equals_ink": true,
+      "visible_bbox_unchanged": true,
+      "visible_bbox_xyxy": [
+        187,
+        102,
+        836,
+        922
+      ],
+      "distinct_nontransparent_rgb_count": 1
+    },
+    {
+      "id": "snake",
+      "mode_rgba_1024": true,
+      "alpha_bytes_unchanged": true,
+      "all_nontransparent_rgb_equals_ink": true,
+      "visible_bbox_unchanged": true,
+      "visible_bbox_xyxy": [
+        102,
+        124,
+        922,
+        899
+      ],
+      "distinct_nontransparent_rgb_count": 1
+    },
+    {
+      "id": "horse",
+      "mode_rgba_1024": true,
+      "alpha_bytes_unchanged": true,
+      "all_nontransparent_rgb_equals_ink": true,
+      "visible_bbox_unchanged": true,
+      "visible_bbox_xyxy": [
+        102,
+        156,
+        922,
+        868
+      ],
+      "distinct_nontransparent_rgb_count": 1
+    },
+    {
+      "id": "sheep",
+      "mode_rgba_1024": true,
+      "alpha_bytes_unchanged": true,
+      "all_nontransparent_rgb_equals_ink": true,
+      "visible_bbox_unchanged": true,
+      "visible_bbox_xyxy": [
+        102,
+        214,
+        922,
+        809
+      ],
+      "distinct_nontransparent_rgb_count": 1
+    },
+    {
+      "id": "monkey",
+      "mode_rgba_1024": true,
+      "alpha_bytes_unchanged": true,
+      "all_nontransparent_rgb_equals_ink": true,
+      "visible_bbox_unchanged": true,
+      "visible_bbox_xyxy": [
+        106,
+        102,
+        918,
+        922
+      ],
+      "distinct_nontransparent_rgb_count": 1
+    },
+    {
+      "id": "rooster",
+      "mode_rgba_1024": true,
+      "alpha_bytes_unchanged": true,
+      "all_nontransparent_rgb_equals_ink": true,
+      "visible_bbox_unchanged": true,
+      "visible_bbox_xyxy": [
+        102,
+        109,
+        922,
+        914
+      ],
+      "distinct_nontransparent_rgb_count": 1
+    },
+    {
+      "id": "dog",
+      "mode_rgba_1024": true,
+      "alpha_bytes_unchanged": true,
+      "all_nontransparent_rgb_equals_ink": true,
+      "visible_bbox_unchanged": true,
+      "visible_bbox_xyxy": [
+        108,
+        102,
+        915,
+        922
+      ],
+      "distinct_nontransparent_rgb_count": 1
+    },
+    {
+      "id": "pig",
+      "mode_rgba_1024": true,
+      "alpha_bytes_unchanged": true,
+      "all_nontransparent_rgb_equals_ink": true,
+      "visible_bbox_unchanged": true,
+      "visible_bbox_xyxy": [
+        145,
+        102,
+        878,
+        922
+      ],
+      "distinct_nontransparent_rgb_count": 1
+    }
+  ],
+  "zip_crc_pass": true,
+  "zip_byte_for_byte_pass": true,
+  "zip_path": "D:\\星座灯\\hardware\\nfc-talisman\\artwork\\talisman-single-ink-v1.zip"
+}

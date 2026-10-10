@@ -1,0 +1,12 @@
+{
+  "asset": "sheep",
+  "tool": "Native ImageGen",
+  "generated_local": "2026-10-11 (time per generated file)",
+  "generated_source": "C:\\Users\\20177\\.codex\\generated_images\\01a126cf-8c05-79e0-9a41-2755b1717e6a\\exec-e1a7ddee-0fa1-4add-a730-bef537088e10.png",
+  "inputs": [
+    "talisman-restored-v1/sheep-restored.png",
+    "talisman-monochrome-v1/raw/sheep-pattern-guide.png"
+  ],
+  "prompt_file": "talisman-monochrome-v1/raw/sheep-prompt.txt",
+  "visual_notes": "Continuous mint head, two hollow loops, left curl, wavy back, four separated legs and transparent central body are visible. No extra facial detail. Significant cyan fringe at contours and visible slight internal hue/brightness variation; root should validate uniform ink after size normalization."
+}

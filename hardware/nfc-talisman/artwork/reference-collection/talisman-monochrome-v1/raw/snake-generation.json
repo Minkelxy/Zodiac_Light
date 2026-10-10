@@ -1,0 +1,11 @@
+{
+  "asset": "snake",
+  "tool": "Native ImageGen",
+  "generated_source": "C:\\Users\\20177\\.codex\\generated_images\\01a126cf-8c05-79e0-9a41-2755b1717e6a\\exec-d9256d33-f543-406c-925e-74dadacfbf87.png",
+  "inputs": [
+    "talisman-restored-v1/snake-restored.png",
+    "talisman-monochrome-v1/raw/snake-pattern-guide.png"
+  ],
+  "prompt_file": "talisman-monochrome-v1/raw/snake-prompt.txt",
+  "visual_notes": "Upper-left left-facing head, S-curved neck, central coil and lower tail/bands retained; central field transparent and no scales. Lower coil bands may be wider than the source and bright edge speckling is visible; check spacing and shape against guide. No retry used."
+}

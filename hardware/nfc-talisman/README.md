@@ -59,4 +59,6 @@ python hardware/nfc-talisman/scripts/archive_check_summary.py
 
 2026-10-10：[十二符咒与十二星座素材索引](artwork/reference-collection/index.html)、[来源说明](artwork/reference-collection/README.md) 与 [ZIP整包](artwork/reference-collection.zip) 提供完整源 PNG、原像素透明版及 [十二张修复正视透明 PNG](artwork/reference-collection/talisman-restored-v1/README.md)。v1 修复稿使用原生 ImageGen 依据原图重建轮廓、校正图案承载平面，以保留动物姿态与分段留白为约束，统一 1024×1024、最长边约 820 px。**牛、猪、龙、虎、猴仍需精修**；逐张复核与文件/布局验证分别记录，不视为全部准确还原完成。索引默认显示修复稿，可切换两种原图作对照；原图、提示词、生成原稿和输出哈希均归档。星图保留原可编辑 SVG；本轮未改 EDA/制造设计，马图仍由用户手动导入。
 
-已完成 [十二张修复 PNG 的单色检查与重绘规范](artwork/reference-collection/talisman-monochrome-v1/README.md)。用户选择每张保留原主色，用实色、透明留白和稀疏排线表达阴影；现稿仍非严格单墨。牛脸分区和猪下方长左弧列为优先补正项。原生绘图服务连续两次 403，用户选择等待恢复，尚未生成单色成品；完整提示词、参考指南、逐图审查与服务待办已归档，供后续唤醒继续。
+2026-10-11 原生 ImageGen 已恢复，完成十二张独立的 [单色风格重绘候选与复核](artwork/reference-collection/talisman-monochrome-v1/README.md)。每张保留原主色，用透明留白、同色内线和少量排线表达转折；羊保留连续头，猪补回长下弧，马保留六块紫色。用户随后批准仅统一 RGB，完成 [十二张严格单色 PNG](artwork/reference-collection/talisman-single-ink-v1/README.md) 与 [下载包](artwork/talisman-single-ink-v1.zip)：1024×1024、等比居中，12/12颜色唯一性通过，12/12 alpha 与原生候选逐字节一致。图库支持五种对照并默认显示单色版，来源、准确提示词、原生稿与输出哈希已归档。牛脸、龙角等局部仍有造型精修待办，不将颜色通过解释为原作准确还原通过；前一日403保留为历史。未更改EDA、PCB或制造几何，马图仍由用户手动导入。
+
+本轮交付文档只修正制造入口过时的最小异网铜距（当前 **0.20140041 mm**）并明确 C1 的 NRND 采购冻结/候选替代料同步要求。核对已有三项 ERC/DRC 日志哈希与摘要一致，未重新运行客户端检查。原制造草案、实物 RF/手机/光路与 CAM 放行待办继续保留。

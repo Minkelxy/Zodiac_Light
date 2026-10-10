@@ -1,0 +1,11 @@
+{
+  "asset": "dragon",
+  "tool": "Native ImageGen",
+  "generated_source": "C:\\Users\\20177\\.codex\\generated_images\\01a126cf-8c05-79e0-9a41-2755b1717e6a\\exec-e08feb4b-1cc8-405f-a4e2-462273d5ea1b.png",
+  "inputs": [
+    "talisman-restored-v1/dragon-restored.png",
+    "talisman-monochrome-v1/raw/dragon-pattern-guide.png"
+  ],
+  "prompt_file": "talisman-monochrome-v1/raw/dragon-prompt.txt",
+  "visual_notes": "Disconnected head, mane, right/back arc, detached limb/claw marks and lower tail fragments remain separate; central field transparent. Redrawn top horn/barb forms remain prominent but no new claw toes or decorative scales are visible. Evaluate against source guide; no retry used."
+}

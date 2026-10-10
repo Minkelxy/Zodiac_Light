@@ -1,0 +1,351 @@
+{
+  "title": "十二符咒 · 严格单色候选 · v1",
+  "generated_utc": "2026-10-10T17:42:16.400748+00:00",
+  "user_approved_rgb_normalization_date": "2026-10-11",
+  "method": "Native ImageGen redraw followed by layout candidate normalization; Python changes RGB only for pixels with alpha > 0 to the specified ink_hex. Alpha bytes, geometry, transparent gaps, hatch lines and framing are preserved. No programmatic drawing, denoising, thresholding, resizing or rotation.",
+  "canvas_px": [
+    1024,
+    1024
+  ],
+  "candidate_count": 12,
+  "strict_single_ink_pass_count": 12,
+  "visual_release_status": "Draft pending human visual fidelity review; RGB normalization does not establish visual fidelity.",
+  "files": [
+    {
+      "id": "rat",
+      "animal_zh": "鼠",
+      "animal_en": "Rat",
+      "path": "talisman-single-ink-v1/rat-single-ink.png",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "output_sha256": "388ea11b4b0ae6565ab7e2e43508e193ddbe97b99cd300efc45f8cc0b1b5da0c",
+      "source_path": "source-talisman/Rat_Talisman.png",
+      "source_sha256": "bd422075c29a27d87e06740ebce47e0185e620c341991c2c02d108285cb2f957",
+      "candidate_path": "talisman-monochrome-v1/rat-monochrome.png",
+      "candidate_sha256": "068701fd8fa2316b14425b869ff9397b411466ebdc16658969445a80f01cc94c",
+      "ink_hex": "#595959",
+      "canvas_px": [
+        1024,
+        1024
+      ],
+      "provenance": {
+        "prompt_ref": "talisman-monochrome-v1/raw/rat-prompt.txt",
+        "generation_ref": "talisman-monochrome-v1/raw/rat-generation.json",
+        "native_ref": "talisman-monochrome-v1/raw/rat-native.png",
+        "method_ref": "talisman-monochrome-v1/manifest.json"
+      },
+      "visual_status": "reviewed_draft",
+      "visual_note": "右向姿态、卷尾、折形肢体和透明身腔保留；用少量透明内缝表达灰色带转折。低清原图的局部曲率仍有重建差异。 鼠头透明眼孔较明显，源图面部印痕很小，仍需核对其大小。"
+    },
+    {
+      "id": "ox",
+      "animal_zh": "牛",
+      "animal_en": "Ox",
+      "path": "talisman-single-ink-v1/ox-single-ink.png",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "output_sha256": "4a3ae5335c1822fa063b2a3245b74bf8ea31874addb0b6b8abd87b701520792f",
+      "source_path": "source-talisman/Ox_Talisman.png",
+      "source_sha256": "873ed3864f96879ea1528cad541d580424d5dc633c9f602a0ee96495d2cbb2f7",
+      "candidate_path": "talisman-monochrome-v1/ox-monochrome.png",
+      "candidate_sha256": "36b7991b3da1b82790b9a4f170a8ca5add547f4b00a0a9b4fce32adac00318e3",
+      "ink_hex": "#286DA8",
+      "canvas_px": [
+        1024,
+        1024
+      ],
+      "provenance": {
+        "prompt_ref": "talisman-monochrome-v1/raw/ox-prompt.txt",
+        "generation_ref": "talisman-monochrome-v1/raw/ox-generation.json",
+        "native_ref": "talisman-monochrome-v1/raw/ox-native.png",
+        "method_ref": "talisman-monochrome-v1/manifest.json"
+      },
+      "visual_status": "needs_refinement",
+      "visual_note": "正面双角双耳与脸颊缺口保留；耳部、颊侧有少量透明排线。鼻端小留白与头部比例仍需以源图复核，不据此添加新器官。 两侧透明开口较源图显著，仍可能偏大，属于待精修项。"
+    },
+    {
+      "id": "tiger",
+      "animal_zh": "虎",
+      "animal_en": "Tiger",
+      "path": "talisman-single-ink-v1/tiger-single-ink.png",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "output_sha256": "462e8beb2e45e33490ab2d5d98d106b48c1f111ffa1cdd0218a9b3daa37b40fb",
+      "source_path": "source-talisman/Tiger_Talisman.png",
+      "source_sha256": "d1fdf943305e743b7c5d09532ef35c8bc1df81286096dae1fa62da620da9c8ae",
+      "candidate_path": "talisman-monochrome-v1/tiger-monochrome.png",
+      "candidate_sha256": "6b90ec2453b96f55f06c08cd64eaa1540ceac3a91e12b1e87b53c4b984c3f581",
+      "ink_hex": "#282828",
+      "canvas_px": [
+        1024,
+        1024
+      ],
+      "provenance": {
+        "prompt_ref": "talisman-monochrome-v1/raw/tiger-prompt.txt",
+        "generation_ref": "talisman-monochrome-v1/raw/tiger-generation.json",
+        "native_ref": "talisman-monochrome-v1/raw/tiger-native.png",
+        "method_ref": "talisman-monochrome-v1/manifest.json"
+      },
+      "visual_status": "needs_refinement",
+      "visual_note": "双虎相对布局清楚，原白身改为透明，以同一深灰轮廓和条纹界定形体。条纹、口部和爪形仍较低清源图规整，尚非逐笔还原。"
+    },
+    {
+      "id": "rabbit",
+      "animal_zh": "兔",
+      "animal_en": "Rabbit",
+      "path": "talisman-single-ink-v1/rabbit-single-ink.png",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "output_sha256": "f0fad039213ad37549658c6048a02e8421b6560a4ec93633cc1f446516e9d052",
+      "source_path": "source-talisman/Rabbit_Talisman.png",
+      "source_sha256": "94ba6ef0962939225cd2d34ad4b0da4b59dde3321aef45d599ae0944fc2abb10",
+      "candidate_path": "talisman-monochrome-v1/rabbit-monochrome.png",
+      "candidate_sha256": "afdd86da94b3bd07c3daeac5e44fc7f93760792b59652d59cb202d53ec3619ae",
+      "ink_hex": "#86278D",
+      "canvas_px": [
+        1024,
+        1024
+      ],
+      "provenance": {
+        "prompt_ref": "talisman-monochrome-v1/raw/rabbit-prompt.txt",
+        "generation_ref": "talisman-monochrome-v1/raw/rabbit-generation.json",
+        "native_ref": "talisman-monochrome-v1/raw/rabbit-native.png",
+        "method_ref": "talisman-monochrome-v1/manifest.json"
+      },
+      "visual_status": "reviewed_draft",
+      "visual_note": "右向单兔、头耳和分开的背/腿/足片保留；眼、耳内与身腔为透明负形，片段曲率仍有重建解释。"
+    },
+    {
+      "id": "dragon",
+      "animal_zh": "龙",
+      "animal_en": "Dragon",
+      "path": "talisman-single-ink-v1/dragon-single-ink.png",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "output_sha256": "8160779614610904414b618cdf664aa7b043c909906e801f44ce2e9742a6adba",
+      "source_path": "source-talisman/Dragon_Talisman.png",
+      "source_sha256": "cf50cd4fff43edbafff6f25d209aaf284e48f5bd4b4d3879640dfaa8369d0760",
+      "candidate_path": "talisman-monochrome-v1/dragon-monochrome.png",
+      "candidate_sha256": "e578d06fa1a0ee6c82539552f25fcc4c7324a5edb4737b80d5783ec9b2e278c3",
+      "ink_hex": "#CF3037",
+      "canvas_px": [
+        1024,
+        1024
+      ],
+      "provenance": {
+        "prompt_ref": "talisman-monochrome-v1/raw/dragon-prompt.txt",
+        "generation_ref": "talisman-monochrome-v1/raw/dragon-generation.json",
+        "native_ref": "talisman-monochrome-v1/raw/dragon-native.png",
+        "method_ref": "talisman-monochrome-v1/manifest.json"
+      },
+      "visual_status": "needs_refinement",
+      "visual_note": "环绕构图、分离红片与中央透明区保留；上方尖角、内鬃扇形仍偏长、偏尖，未达到精确还原。"
+    },
+    {
+      "id": "snake",
+      "animal_zh": "蛇",
+      "animal_en": "Snake",
+      "path": "talisman-single-ink-v1/snake-single-ink.png",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "output_sha256": "45edc71977712929173bdae0f626a40364369b3582664eda9890f66b7ce6de8d",
+      "source_path": "source-talisman/Snake_Talisman.png",
+      "source_sha256": "0dcf12ea59825066302865521076ec312f46988d60f853a76bfd4243207a5752",
+      "candidate_path": "talisman-monochrome-v1/snake-monochrome.png",
+      "candidate_sha256": "f7f065dc85fbf5368afe63f432f7c33efb25b057f9c7ed453ea752484dcbe189",
+      "ink_hex": "#22964C",
+      "canvas_px": [
+        1024,
+        1024
+      ],
+      "provenance": {
+        "prompt_ref": "talisman-monochrome-v1/raw/snake-prompt.txt",
+        "generation_ref": "talisman-monochrome-v1/raw/snake-generation.json",
+        "native_ref": "talisman-monochrome-v1/raw/snake-native.png",
+        "method_ref": "talisman-monochrome-v1/manifest.json"
+      },
+      "visual_status": "reviewed_draft",
+      "visual_note": "左上头部、S形主身、中央盘绕及分开的下盘/尾片保留；透明内缝表达转折，下盘色带仍比源图规整。 中盘/下盘色带较粗，独立弧间距缩小，继续复核负形。"
+    },
+    {
+      "id": "horse",
+      "animal_zh": "马",
+      "animal_en": "Horse",
+      "path": "talisman-single-ink-v1/horse-single-ink.png",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "output_sha256": "c732fa1d57448ed367c3a7d841f3674c9f5a4565fe4e5d2999c4e43b0d17c728",
+      "source_path": "source-talisman/Horse_Talisman.png",
+      "source_sha256": "5dfc7db6d0148310fa678244565070bc9072ca36d339cd65af03522ba52ed390",
+      "candidate_path": "talisman-monochrome-v1/horse-monochrome.png",
+      "candidate_sha256": "06b408ee2683f93c75eb4fe5a522c6c9a1fdb2ebd849dcd7457cb11a85473d97",
+      "ink_hex": "#7365B6",
+      "canvas_px": [
+        1024,
+        1024
+      ],
+      "provenance": {
+        "prompt_ref": "talisman-monochrome-v1/raw/horse-prompt.txt",
+        "generation_ref": "talisman-monochrome-v1/raw/horse-generation.json",
+        "native_ref": "talisman-monochrome-v1/raw/horse-native.png",
+        "method_ref": "talisman-monochrome-v1/manifest.json"
+      },
+      "visual_status": "reviewed_draft",
+      "visual_note": "左向六块紫色保留：耳、额片、脸/下颌、鬃毛和两条颈片；头颈中央透明，没有补成完整实填马头。"
+    },
+    {
+      "id": "sheep",
+      "animal_zh": "羊",
+      "animal_en": "Sheep",
+      "path": "talisman-single-ink-v1/sheep-single-ink.png",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "output_sha256": "404af3e8122304576cf144057226dbbae1c8d3cea18da25c1edc81cb31959dea",
+      "source_path": "source-talisman/Sheep_Talisman.png",
+      "source_sha256": "e1d2d7bce49639cf4e05bcc333e014db5f313292ebbfdfc7ec47015248a2c791",
+      "candidate_path": "talisman-monochrome-v1/sheep-monochrome.png",
+      "candidate_sha256": "253ced6353409aa7f8465bbc73762110bf7803c63dce51b8cf0b7661e578948d",
+      "ink_hex": "#80DDC2",
+      "canvas_px": [
+        1024,
+        1024
+      ],
+      "provenance": {
+        "prompt_ref": "talisman-monochrome-v1/raw/sheep-prompt.txt",
+        "generation_ref": "talisman-monochrome-v1/raw/sheep-generation.json",
+        "native_ref": "talisman-monochrome-v1/raw/sheep-native.png",
+        "method_ref": "talisman-monochrome-v1/manifest.json"
+      },
+      "visual_status": "reviewed_draft",
+      "visual_note": "连续薄荷绿头、头后两道耳部弯线、左卷尾、波背与四条分开的腿保留；中央躯干透明。耳线开口、头部与腿线曲率仍需对照。"
+    },
+    {
+      "id": "monkey",
+      "animal_zh": "猴",
+      "animal_en": "Monkey",
+      "path": "talisman-single-ink-v1/monkey-single-ink.png",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "output_sha256": "2a65ca768ca9269d14375cdd772398aafb87169703c5a631c8aefa7d90be8a8a",
+      "source_path": "source-talisman/Monkey_Talisman.png",
+      "source_sha256": "48dc4bd76d84e92d5562abce21ce334cb869a731d026f866ab6420cb2d6f5fa8",
+      "candidate_path": "talisman-monochrome-v1/monkey-monochrome.png",
+      "candidate_sha256": "9d4bc1d7d50476d9d3864e5845116ca08c427c532697c29af55c5c1b19344f02",
+      "ink_hex": "#9B594B",
+      "canvas_px": [
+        1024,
+        1024
+      ],
+      "provenance": {
+        "prompt_ref": "talisman-monochrome-v1/raw/monkey-prompt.txt",
+        "generation_ref": "talisman-monochrome-v1/raw/monkey-generation.json",
+        "native_ref": "talisman-monochrome-v1/raw/monkey-native.png",
+        "method_ref": "talisman-monochrome-v1/manifest.json"
+      },
+      "visual_status": "needs_refinement",
+      "visual_note": "左上卷尾、下方U形、坐姿和肢体留白保留；用透明细缝表示转折，尾/身体色带仍较源图宽。"
+    },
+    {
+      "id": "rooster",
+      "animal_zh": "鸡",
+      "animal_en": "Rooster",
+      "path": "talisman-single-ink-v1/rooster-single-ink.png",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "output_sha256": "cc914dcb4710b4b6f06950ef9c62325ed7ced1e2c57ff1da55a36df2de48bd23",
+      "source_path": "source-talisman/Rooster_Talisman.png",
+      "source_sha256": "827ed7f2fe95e939440640331e4e8a882e49b30309b660e5eead5824912ac082",
+      "candidate_path": "talisman-monochrome-v1/rooster-monochrome.png",
+      "candidate_sha256": "cc0fc662e9290e01c3720e17af5b78562ef4889d90c85c3d619f439ddee10195",
+      "ink_hex": "#B9313B",
+      "canvas_px": [
+        1024,
+        1024
+      ],
+      "provenance": {
+        "prompt_ref": "talisman-monochrome-v1/raw/rooster-prompt.txt",
+        "generation_ref": "talisman-monochrome-v1/raw/rooster-generation.json",
+        "native_ref": "talisman-monochrome-v1/raw/rooster-native.png",
+        "method_ref": "talisman-monochrome-v1/manifest.json"
+      },
+      "visual_status": "reviewed_draft",
+      "visual_note": "右上头冠、左尾羽、右下身片和分开脚片保留；主要羽隙透明，头冠与红块仍较源图规整。 尾羽与躯干实色较厚，源图局部羽隙更细，应继续对照。"
+    },
+    {
+      "id": "dog",
+      "animal_zh": "狗",
+      "animal_en": "Dog",
+      "path": "talisman-single-ink-v1/dog-single-ink.png",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "output_sha256": "abfe2b67f8b82f3e5ff8a489b2eb2809e2933e1301a589a6933088ecda31999f",
+      "source_path": "source-talisman/Dog_Talisman.png",
+      "source_sha256": "009392d934edc1990968c0a95371e5c2335f9504621ce69666eafb7010138234",
+      "candidate_path": "talisman-monochrome-v1/dog-monochrome.png",
+      "candidate_sha256": "5580968fd380432b0b6cc85880c0962b8ea9527a3f51e0163208b6ed1bd28a48",
+      "ink_hex": "#DFBA32",
+      "canvas_px": [
+        1024,
+        1024
+      ],
+      "provenance": {
+        "prompt_ref": "talisman-monochrome-v1/raw/dog-prompt.txt",
+        "generation_ref": "talisman-monochrome-v1/raw/dog-generation.json",
+        "native_ref": "talisman-monochrome-v1/raw/dog-native.png",
+        "method_ref": "talisman-monochrome-v1/manifest.json"
+      },
+      "visual_status": "reviewed_draft",
+      "visual_note": "右向站姿、卷尾、四腿和中央透明躯干保留；颈胸小片与笔画宽度仍需对照。原生预览中的彩色散点多数处于完全透明区，应以合成后的PNG检查。"
+    },
+    {
+      "id": "pig",
+      "animal_zh": "猪",
+      "animal_en": "Pig",
+      "path": "talisman-single-ink-v1/pig-single-ink.png",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "output_sha256": "84766e8e12593e08a31e5dae10572d754b6c65d0d56ea2146ebda82b88c02c6f",
+      "source_path": "source-talisman/Pig_Talisman.png",
+      "source_sha256": "f62324ec4d260aa5bdf0580c6c3079bd15244034a81a183d78231e966a9035d6",
+      "candidate_path": "talisman-monochrome-v1/pig-monochrome.png",
+      "candidate_sha256": "e98ce596cfbade97c0062e396963a3d7f9a6cde925fc72c5bbc94e7174f01061",
+      "ink_hex": "#DF819D",
+      "canvas_px": [
+        1024,
+        1024
+      ],
+      "provenance": {
+        "prompt_ref": "talisman-monochrome-v1/raw/pig-prompt.txt",
+        "generation_ref": "talisman-monochrome-v1/raw/pig-generation.json",
+        "native_ref": "talisman-monochrome-v1/raw/pig-native.png",
+        "method_ref": "talisman-monochrome-v1/manifest.json"
+      },
+      "visual_status": "reviewed_draft",
+      "visual_note": "上耳带、左鼻眼卷线、右颊弧与中下弧保留；此前遗漏的最下方长左弧已补回，未镜像。透明内缝用于表达曲面转折。"
+    }
+  ]
+}

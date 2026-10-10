@@ -163,7 +163,7 @@ def main():
         'limitations': 'Reference-based restoration from 200×141 originals, not an exact recovery of lost pixels or authoritative animation production art. No change to PCB or manufacturing geometry.',
         'canvas_px': [CANVAS, CANVAS], 'target_longest_extent_px': EXTENT,
         'alpha_bbox_threshold': BOUND_ALPHA, 'files': records,
-        'visual_release_status': 'Reference-guided restoration drafts; Ox facial divisions, Pig missing lower-left arc, Dragon, Tiger and Monkey need refinement. Monochrome redraw is pending native image service recovery. Not approved as exact final reproductions.',
+        'visual_release_status': 'Reference-guided restoration drafts; Ox facial divisions, Pig missing lower-left arc, Dragon, Tiger and Monkey need refinement. Monochrome candidates and their current review status are tracked separately in talisman-monochrome-v1. Not approved as exact final reproductions.',
     }
     (OUT / 'manifest.json').write_text(json.dumps(report, ensure_ascii=False, indent=2)+'\n', encoding='utf-8')
     prompts = {item['id']: (ROOT/item['prompt_path']).read_text(encoding='utf-8-sig') for item in records}

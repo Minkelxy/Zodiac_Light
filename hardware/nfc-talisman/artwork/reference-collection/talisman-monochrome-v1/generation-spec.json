@@ -1,9 +1,9 @@
 {
-  "title": "十二符咒单色阴影重绘规范（待生成）",
+  "title": "十二符咒单色阴影重绘规范与原生候选",
   "tool": "Native ImageGen",
-  "status": "pending_native_imagegen_recovery",
+  "status": "native_candidates_generated_review_pending",
   "successful_monochrome_images": 0,
-  "client_date": "2026-10-10",
+  "client_date": "2026-10-11",
   "user_fallback_choice": "Keep review records and wait for native drawing service recovery",
   "palette_policy": "Per-animal original primary hue; same ink for outlines, fill and hatching. Unpainted stone and highlights are transparent.",
   "files": [
@@ -151,5 +151,6 @@
       "native": "talisman-monochrome-v1/raw/pig-native.png",
       "prompt_path": "talisman-monochrome-v1/raw/pig-prompt.txt"
     }
-  ]
+  ],
+  "successful_native_generations": 12
 }

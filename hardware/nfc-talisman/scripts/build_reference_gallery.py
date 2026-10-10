@@ -19,6 +19,23 @@ def link(path, label):
     return f'<a href="{esc(path)}">{esc(label)}</a>'
 
 
+def refresh_restored_zip(records):
+    # Metadata may change when a newer sibling version is ready. Repackage the
+    # old set without resampling or modifying any of its twelve baseline PNGs.
+    base = ROOT / 'talisman-restored-v1'
+    paths = [ROOT/item['path'] for item in records.values()]
+    paths += [base/name for name in ('README.md', 'manifest.json', 'prompts.json',
+                                    'validation.json', 'visual-review.md', 'restored-contact-sheet.jpg')]
+    target = ROOT.parent / 'talisman-restored-v1.zip'
+    with zipfile.ZipFile(target, 'w', zipfile.ZIP_DEFLATED) as bundle:
+        for path in paths:
+            bundle.write(path, path.relative_to(base).as_posix())
+    with zipfile.ZipFile(target) as bundle:
+        assert bundle.testzip() is None
+        assert set(bundle.namelist()) == {p.relative_to(base).as_posix() for p in paths}
+        assert all(bundle.read(p.relative_to(base).as_posix()) == p.read_bytes() for p in paths)
+
+
 class LocalLinks(HTMLParser):
     def __init__(self):
         super().__init__()
@@ -26,7 +43,7 @@ class LocalLinks(HTMLParser):
 
     def handle_starttag(self, tag, attrs):
         for key, value in attrs:
-            if key in ('href', 'src', 'data-original', 'data-pattern', 'data-restored') and value:
+            if key in ('href', 'src', 'data-original', 'data-pattern', 'data-restored', 'data-monochrome', 'data-ink') and value:
                 parsed = urlsplit(value)
                 if not parsed.scheme and not parsed.netloc and parsed.path:
                     self.paths.add(unquote(parsed.path))
@@ -51,6 +68,31 @@ def main():
         restored = {item['id']: item for item in restored_manifest['files']}
         assert set(restored) == {item['id'] for item in talisman['files']}
         assert patterns, 'Restored gallery requires the original-pixel comparison set'
+        refresh_restored_zip(restored)
+    monochrome = {}
+    monochrome_file = ROOT / 'talisman-monochrome-v1/manifest.json'
+    if monochrome_file.is_file():
+        monochrome_manifest = json.loads(monochrome_file.read_text(encoding='utf-8-sig'))
+        monochrome = {item['id']: item for item in monochrome_manifest['files']}
+        assert set(monochrome) <= {item['id'] for item in talisman['files']}
+        for item in monochrome.values():
+            if hashlib.sha256((ROOT/item['path']).read_bytes()).hexdigest() != item['output_sha256']:
+                raise ValueError('Monochrome candidate bytes changed: ' + item['id'])
+            assert item['dimensions'] == [1024, 1024]
+    show_monochrome = len(monochrome) == 12
+    single_ink = {}
+    ink_file = ROOT / 'talisman-single-ink-v1/manifest.json'
+    if ink_file.is_file():
+        ink_manifest = json.loads(ink_file.read_text(encoding='utf-8-sig'))
+        single_ink = {item['id']: item for item in ink_manifest['files']}
+        assert set(single_ink) == {item['id'] for item in talisman['files']}
+        assert ink_manifest['strict_single_ink_pass_count'] == 12
+        for item in single_ink.values():
+            if hashlib.sha256((ROOT/item['path']).read_bytes()).hexdigest() != item['output_sha256']:
+                raise ValueError('Single-ink bytes changed: ' + item['id'])
+            assert item['dimensions'] == [1024, 1024]
+    ink_review_file = ROOT / 'talisman-monochrome-v1/visual-review.json'
+    ink_reviews = {item['id']: item for item in json.loads(ink_review_file.read_text(encoding='utf-8-sig'))['files']} if ink_review_file.is_file() else {}
     fronts = []
     for item in talisman['files']:
         path = item.get('path') or item.get('local_path')
@@ -76,6 +118,13 @@ def main():
             restore_attribute = ''
             restore_link = ''
             review_warning = ''
+            restore_note = ''
+            mono_attribute = ''
+            mono_link = ''
+            mono_note = ''
+            ink_attribute = ''
+            ink_link = ''
+            ink_note = ''
             if restored:
                 restore = restored[item['id']]
                 display_path = restore['path']
@@ -89,14 +138,39 @@ def main():
                 restore_attribute = f' data-restored="{esc(display_path)}"'
                 restore_link = link(display_path, '修复 PNG') + ' '
                 if restore.get('visual_status') == 'needs_refinement':
-                    review_warning = '<p class="review-warning">待精修：' + esc(restore['visual_note']) + '</p>'
+                    restore_note = '待精修：' + restore['visual_note']
+                    review_warning = '<p class="review-warning">' + esc(restore_note) + '</p>'
                 if restore.get('revision_label'):
                     review_warning += '<p class="revision-note">' + esc(restore['revision_label']) + '</p>'
-            fronts.append(f'''<article class="card pattern-card" data-original="{esc(path)}" data-pattern="{esc(pattern_path)}"{restore_attribute} data-caption="{esc(caption)}" data-name="{esc(item['animal_zh'])}">
+            if item['id'] in monochrome:
+                mono = monochrome[item['id']]
+                mono_path = mono['path'] + '?v=' + mono['output_sha256'][:12]
+                mono_attribute = f' data-monochrome="{esc(mono_path)}"'
+                mono_link = link(mono_path, '单色候选 PNG') + ' '
+                mono_note = mono.get('visual_note', '原生重绘候选，造型与严格单墨颜色仍待复核。')
+                if not isinstance(mono_note, str):
+                    mono_note = json.dumps(mono_note, ensure_ascii=False)
+                if show_monochrome:
+                    display_path = mono_path
+                    display_caption = 'v1 单色重绘候选 · 1024 × 1024 · 透明'
+                    review_warning = '<p class="review-warning">' + esc(mono_note) + '</p>'
+            if item['id'] in single_ink:
+                ink = single_ink[item['id']]
+                ink_path = ink['path'] + '?v=' + ink['output_sha256'][:12]
+                ink_attribute = f' data-ink="{esc(ink_path)}"'
+                ink_link = link(ink_path, '单色 PNG') + ' '
+                ink_note = ink_reviews.get(item['id'], {}).get('note', '颜色已统一，造型仍按原生重绘稿复核。')
+                display_path = ink_path
+                display_caption = '严格单色版 · 1024 × 1024 · 透明'
+                review_warning = '<p class="review-warning">' + esc(ink_note) + '</p>'
+            # Keep a warning node in each card so mode changes can update it.
+            if not review_warning:
+                review_warning = '<p class="review-warning" hidden></p>'
+            fronts.append(f'''<article class="card pattern-card" data-original="{esc(path)}" data-pattern="{esc(pattern_path)}"{restore_attribute}{mono_attribute}{ink_attribute} data-review-restored="{esc(restore_note)}" data-review-monochrome="{esc(mono_note)}" data-review-ink="{esc(ink_note)}" data-caption="{esc(caption)}" data-name="{esc(item['animal_zh'])}">
 <a class="image talisman-pattern" href="{esc(display_path)}"><img src="{esc(display_path)}" alt="{esc(item['animal_zh'])}{esc(display_caption)}" loading="lazy"></a>
 <h3>{esc(item['animal_zh'])} · {esc(item['animal_en'])}</h3><p class="image-caption">{esc(display_caption)}</p>
 {review_warning}
-<div class="links">{restore_link}{link(pattern_path, '原像素 PNG')} {link(path, '完整符咒 PNG')} {link(item['file_page'], '图源页面')}</div></article>''')
+<div class="links">{ink_link}{mono_link}{restore_link}{link(pattern_path, '原像素 PNG')} {link(path, '完整符咒 PNG')} {link(item['file_page'], '图源页面')}</div></article>''')
             continue
         fronts.append(f'''<article class="card">
 <a class="image talisman" href="{esc(path)}"><img src="{esc(path)}" alt="{esc(item['animal_zh'])}符咒正面" loading="lazy"></a>
@@ -142,7 +216,23 @@ nav a,.links a{padding:3px 8px;border:1px solid #384454;border-radius:6px;font-s
     monochrome_review = ROOT / 'talisman-monochrome-v1/README.md'
     if monochrome_review.is_file():
         body = body.replace('<a href="README.md">说明与来源</a>', '<a href="README.md">说明与来源</a><a href="talisman-monochrome-v1/README.md">单色阴影重绘规范</a>')
-        body = body.replace('<div class="mode-switch"', '<div class="note"><strong>单色版待生成</strong>：保留每张原主色，用实色、透明留白与稀疏排线表现阴影。当前显示的仍是原修复稿；已保存<a href="talisman-monochrome-v1/README.md">十二张检查记录与重绘规范</a>，等待绘图服务恢复。</div><div class="mode-switch"', 1)
+        if monochrome:
+            notice = f'<div class="note"><strong>原生绘图已恢复 · {len(monochrome)}/12 张单色风格候选</strong>：保留各自主色，去掉第二种描线色，以透明留白与少量排线表达转折。原生 PNG 仍有细微 RGB 色差和边缘杂色，严格单墨检查未通过；逐张造型备注见卡片。<a href="talisman-monochrome-v1/README.md">检查与下载说明</a>。</div>'
+        else:
+            notice = '<div class="note"><strong>单色版待生成</strong>：保留每张原主色，用实色、透明留白与稀疏排线表现阴影。当前显示的仍是原修复稿；已保存<a href="talisman-monochrome-v1/README.md">十二张检查记录与重绘规范</a>，等待绘图服务恢复。</div>'
+        body = body.replace('<div class="mode-switch"', notice+'<div class="mode-switch"', 1)
+    if show_monochrome:
+        body = body.replace('<h2 id="talismans">十二符咒 · v1 修复正视稿</h2><p>牛脸分区、猪下方长弧及龙、虎、猴的细节需要精修，已逐张标注。<a href="talisman-restored-v1/visual-review.md">逐张复核记录</a></p>', '<h2 id="talismans">十二符咒 · 单色重绘候选</h2>')
+        body = body.replace('可切换两种原图对照；', '可切换旧修复稿与两种原图对照；')
+        body = body.replace('<button type="button" data-mode="restored" aria-pressed="true">修复正视版</button>', '<button type="button" data-mode="monochrome" aria-pressed="true">单色重绘候选</button><button type="button" data-mode="restored" aria-pressed="false">修复正视版</button>')
+        body = body.replace('<a href="../talisman-restored-v1.zip">十二张修复 PNG ZIP</a>', '<a href="../talisman-monochrome-v1.zip">十二张单色候选 ZIP</a><a href="../talisman-restored-v1.zip">十二张修复 PNG ZIP</a>')
+    if single_ink:
+        notice_start = body.index('<div class="note"><strong>原生绘图已恢复')
+        notice_end = body.index('</div>', notice_start)+len('</div>')
+        body = body[:notice_start] + '<div class="note"><strong>十二张严格单色 PNG 已完成</strong>：各自保留原主色，只统一 RGB；alpha、轮廓、留白和排线与原生重绘候选逐像素一致。十二张颜色唯一性与透明通道核验通过。牛、龙等局部仍有造型精修待办，逐张见卡片。<a href="talisman-single-ink-v1/README.md">单色版说明与验证</a>。</div>' + body[notice_end:]
+        body = body.replace('<h2 id="talismans">十二符咒 · 单色重绘候选</h2>', '<h2 id="talismans">十二符咒 · 单色正视图案</h2>')
+        body = body.replace('<button type="button" data-mode="monochrome" aria-pressed="true">单色重绘候选</button>', '<button type="button" data-mode="ink" aria-pressed="true">单色正视版</button><button type="button" data-mode="monochrome" aria-pressed="false">原生单色候选</button>')
+        body = body.replace('<a href="../talisman-monochrome-v1.zip">十二张单色候选 ZIP</a>', '<a href="../talisman-single-ink-v1.zip">十二张单色 PNG ZIP</a><a href="../talisman-monochrome-v1.zip">原生候选 ZIP</a>')
     body += '\n'.join(fronts) + '</div><h2 id="zodiac">十二星座 · Stellarium Modern</h2>'
     body += '<p>暗底浅线预览；透明 SVG 只含星点与连线。北上、东左，按实际星位等比投影。IAU / Sky &amp; Telescope 原星图作为另一种画法对照。</p><div class="grid">'
     body += '\n'.join(charts) + '</div><h2 id="sagittarius">射手座八星茶壶</h2>'
@@ -158,7 +248,7 @@ nav a,.links a{padding:3px 8px;border:1px solid #384454;border-radius:6px;font-s
         body = body.replace('</main></html>', '''</main><script>
 document.querySelectorAll('[data-mode]').forEach(button=>button.addEventListener('click',()=>{
   const mode=button.dataset.mode, transparent=mode!=='original';
-  const captions={restored:'v1 修复正视稿 · 1024 × 1024 · 透明',pattern:'原像素透明 PNG · 保留源图透视'};
+  const captions={ink:'严格单色版 · 1024 × 1024 · 透明',monochrome:'v1 单色重绘候选 · 1024 × 1024 · 透明',restored:'v1 修复正视稿 · 1024 × 1024 · 透明',pattern:'原像素透明 PNG · 保留源图透视'};
   document.querySelectorAll('[data-mode]').forEach(control=>control.setAttribute('aria-pressed',String(control===button)));
   document.querySelectorAll('.pattern-card').forEach(card=>{
     const anchor=card.querySelector('.image'), img=anchor.querySelector('img');
@@ -166,6 +256,9 @@ document.querySelectorAll('[data-mode]').forEach(button=>button.addEventListener
     anchor.href=path;img.src=path;img.alt=card.dataset.name+(transparent?captions[mode]:'完整符咒正面');
     anchor.classList.toggle('talisman-pattern',transparent);anchor.classList.toggle('talisman',!transparent);
     card.querySelector('.image-caption').textContent=transparent?captions[mode]:card.dataset.caption+' · 保留源图字节';
+    const warning=card.querySelector('.review-warning'), note=card.getAttribute('data-review-'+mode)||'';
+    warning.textContent=note;warning.hidden=!note;
+    card.querySelectorAll('.revision-note').forEach(node=>node.hidden=mode!=='restored');
   });
 }));
 </script></html>''')
@@ -175,7 +268,7 @@ document.querySelectorAll('[data-mode]').forEach(button=>button.addEventListener
         if path.is_file() and path.name != 'collection-manifest.json':
             data = path.read_bytes()
             rows.append({'path':path.relative_to(ROOT).as_posix(),'bytes':len(data),'sha256':hashlib.sha256(data).hexdigest()})
-    report = {'generated_utc':datetime.now(timezone.utc).isoformat(),'talisman_png_count':12,'talisman_pattern_png_count':len(patterns),'talisman_restored_png_count':len(restored),'talisman_monochrome_generated_png_count':len(list((ROOT/'talisman-monochrome-v1').glob('*-monochrome.png'))),'monochrome_review_available':monochrome_review.is_file(),'zodiac_main_chart_count':12,'files':rows}
+    report = {'generated_utc':datetime.now(timezone.utc).isoformat(),'talisman_png_count':12,'talisman_pattern_png_count':len(patterns),'talisman_restored_png_count':len(restored),'talisman_monochrome_generated_png_count':len(list((ROOT/'talisman-monochrome-v1').glob('*-monochrome.png'))),'talisman_strict_single_ink_png_count':len(single_ink),'monochrome_review_available':monochrome_review.is_file(),'zodiac_main_chart_count':12,'files':rows}
     (ROOT / 'collection-manifest.json').write_bytes((json.dumps(report,ensure_ascii=False,indent=2)+'\n').encode('utf-8'))
     target = ROOT.parent / 'reference-collection.zip'
     with zipfile.ZipFile(target, 'w', zipfile.ZIP_DEFLATED) as bundle:

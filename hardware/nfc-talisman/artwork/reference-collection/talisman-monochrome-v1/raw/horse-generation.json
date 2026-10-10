@@ -1,0 +1,12 @@
+{
+  "asset": "horse",
+  "tool": "Native ImageGen",
+  "generated_local": "2026-10-11 (exact time unavailable from tool response)",
+  "generated_source": "C:\\Users\\20177\\.codex\\generated_images\\01a126cf-8c05-79e0-9a41-2755b1717e6a\\exec-6cb5313f-1593-4050-8a45-65e9ad8dc5d5.png",
+  "inputs": [
+    "talisman-restored-v1/horse-restored.png",
+    "talisman-monochrome-v1/raw/horse-pattern-guide.png"
+  ],
+  "prompt_file": "talisman-monochrome-v1/raw/horse-prompt.txt",
+  "visual_notes": "Composition preserves six source marks, broad head/neck interior remains transparent, and no eye is invented. Visible slight internal color variation/texture and blue-cyan contour fringe; validate uniform ink after size normalization."
+}

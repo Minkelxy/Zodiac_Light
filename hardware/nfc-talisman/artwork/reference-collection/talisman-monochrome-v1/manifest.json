@@ -1,0 +1,1445 @@
+{
+  "title": "十二符咒 · 原生单色风格重绘候选 · v1",
+  "generated_utc": "2026-10-10T17:42:15.866207+00:00",
+  "tool": "Native ImageGen",
+  "set_complete": true,
+  "candidate_count": 12,
+  "canvas_px": [
+    1024,
+    1024
+  ],
+  "target_longest_extent_px": 820,
+  "strict_single_ink_pass_count": 0,
+  "method": "Native reference-guided redraw. Pillow only crops transparent margins, resizes uniformly, centers canvases and assembles a preview. No recoloring, alpha thresholding or geometry edits.",
+  "visual_release_status": "Candidates pending fidelity/palette review; not pixel-exact one-ink manufacturing artwork.",
+  "files": [
+    {
+      "id": "rat",
+      "animal_zh": "鼠",
+      "animal_en": "Rat",
+      "ink_hex": "#595959",
+      "path": "talisman-monochrome-v1/rat-monochrome.png",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "bytes": 234702,
+      "output_sha256": "068701fd8fa2316b14425b869ff9397b411466ebdc16658969445a80f01cc94c",
+      "source_path": "source-talisman/Rat_Talisman.png",
+      "source_sha256": "bd422075c29a27d87e06740ebce47e0185e620c341991c2c02d108285cb2f957",
+      "source_page": "https://jackiechanadventures.fandom.com/wiki/File:Rat_Talisman.png",
+      "inputs": [
+        {
+          "path": "talisman-restored-v1/rat-restored.png",
+          "sha256": "e3f2f7b48ef5a9e4414f23fd6efb5b34fe1150e924caece39bab1c0412021872"
+        },
+        {
+          "path": "talisman-monochrome-v1/raw/rat-pattern-guide.png",
+          "sha256": "f71f23b14be31c9349008bbf8ecb2cd42c9d3c0166654a57a414283ba8b77cea"
+        }
+      ],
+      "native_path": "talisman-monochrome-v1/raw/rat-native.png",
+      "native_sha256": "156d800a8e6029f57f6c15d57d62a85218d6a92f49e5f6f56e1cd509c3315dac",
+      "native_dimensions": [
+        1254,
+        1254
+      ],
+      "prompt_path": "talisman-monochrome-v1/raw/rat-prompt.txt",
+      "prompt_sha256": "65018fb9630ac10db8298809dff14322442c17ce115bdf1dff9f952a830c0e61",
+      "generation_path": "talisman-monochrome-v1/raw/rat-generation.json",
+      "generation_sha256": "34c90d10b1d1f419d8a3861be3e569287e179d44b1bf65ac6c615f54b999a3cf",
+      "visible_bounds_xyxy": [
+        103,
+        239,
+        921,
+        785
+      ],
+      "alpha_nonzero_bounds_xyxy": [
+        102,
+        237,
+        922,
+        786
+      ],
+      "normalization": {
+        "crop_bounds_xyxy": [
+          110,
+          294,
+          1182,
+          1012
+        ],
+        "uniform_scale": 0.7649253731343284,
+        "resized_dimensions": [
+          820,
+          549
+        ],
+        "placement_xy": [
+          102,
+          237
+        ]
+      },
+      "palette_audit": {
+        "intended_ink_hex": "#595959",
+        "strict_all_nontransparent_rgb_equal_intended_ink": false,
+        "distinct_visible_rgb_count": 1161,
+        "visible_pixel_count": 111045,
+        "exact_intended_rgb_pixel_count": 0,
+        "interior_eroded_5x5_pixel_count": 70476,
+        "interior_alpha_below_250_pixel_count": 5386,
+        "interior_rgb_top_5": [
+          {
+            "rgb": [
+              73,
+              72,
+              72
+            ],
+            "pixels": 8682
+          },
+          {
+            "rgb": [
+              74,
+              73,
+              73
+            ],
+            "pixels": 6337
+          },
+          {
+            "rgb": [
+              72,
+              71,
+              71
+            ],
+            "pixels": 5049
+          },
+          {
+            "rgb": [
+              73,
+              73,
+              72
+            ],
+            "pixels": 4004
+          },
+          {
+            "rgb": [
+              73,
+              72,
+              71
+            ],
+            "pixels": 3963
+          }
+        ],
+        "interpretation": "Read-only analysis. RGB variation and interior alpha can include native rendering artifacts; visual review is separate. No palette quantization has been applied."
+      },
+      "visual_status": "reviewed_draft",
+      "visual_note": "右向姿态、卷尾、折形肢体和透明身腔保留；用少量透明内缝表达灰色带转折。低清原图的局部曲率仍有重建差异。 鼠头透明眼孔较明显，源图面部印痕很小，仍需核对其大小。"
+    },
+    {
+      "id": "ox",
+      "animal_zh": "牛",
+      "animal_en": "Ox",
+      "ink_hex": "#286DA8",
+      "path": "talisman-monochrome-v1/ox-monochrome.png",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "bytes": 304462,
+      "output_sha256": "36b7991b3da1b82790b9a4f170a8ca5add547f4b00a0a9b4fce32adac00318e3",
+      "source_path": "source-talisman/Ox_Talisman.png",
+      "source_sha256": "873ed3864f96879ea1528cad541d580424d5dc633c9f602a0ee96495d2cbb2f7",
+      "source_page": "https://jackiechanadventures.fandom.com/wiki/File:Ox_Talisman.png",
+      "inputs": [
+        {
+          "path": "talisman-restored-v1/ox-restored.png",
+          "sha256": "55af10e27e3624ce5425b08419d7de8a03a51cac33d56518ba438204870145e4"
+        },
+        {
+          "path": "talisman-monochrome-v1/raw/ox-pattern-guide.png",
+          "sha256": "c4bc5c2ce5cb92f8a57b6b52729a7eacf7063090bb0c43d90e9ab8d75a7fa2a3"
+        }
+      ],
+      "native_path": "talisman-monochrome-v1/raw/ox-native.png",
+      "native_sha256": "f7356a22ddf346a75032884e140c13cca9773885da6e61a923941b37fa72ea86",
+      "native_dimensions": [
+        1254,
+        1254
+      ],
+      "prompt_path": "talisman-monochrome-v1/raw/ox-prompt.txt",
+      "prompt_sha256": "382b1fef387380fefa46a0d8bbc3264e0f8dd54333d427d31e65e70b685ab3b9",
+      "generation_path": "talisman-monochrome-v1/raw/ox-generation.json",
+      "generation_sha256": "c75bc80e33b876faa722f673e02b2ac270451266b7352aa623840468408ad59f",
+      "visible_bounds_xyxy": [
+        105,
+        103,
+        919,
+        921
+      ],
+      "alpha_nonzero_bounds_xyxy": [
+        104,
+        102,
+        920,
+        922
+      ],
+      "normalization": {
+        "crop_bounds_xyxy": [
+          87,
+          93,
+          1167,
+          1178
+        ],
+        "uniform_scale": 0.7557603686635944,
+        "resized_dimensions": [
+          816,
+          820
+        ],
+        "placement_xy": [
+          104,
+          102
+        ]
+      },
+      "palette_audit": {
+        "intended_ink_hex": "#286DA8",
+        "strict_all_nontransparent_rgb_equal_intended_ink": false,
+        "distinct_visible_rgb_count": 2190,
+        "visible_pixel_count": 220834,
+        "exact_intended_rgb_pixel_count": 0,
+        "interior_eroded_5x5_pixel_count": 193822,
+        "interior_alpha_below_250_pixel_count": 1967,
+        "interior_rgb_top_5": [
+          {
+            "rgb": [
+              26,
+              103,
+              170
+            ],
+            "pixels": 29650
+          },
+          {
+            "rgb": [
+              26,
+              102,
+              169
+            ],
+            "pixels": 13821
+          },
+          {
+            "rgb": [
+              25,
+              102,
+              169
+            ],
+            "pixels": 13657
+          },
+          {
+            "rgb": [
+              26,
+              103,
+              169
+            ],
+            "pixels": 9611
+          },
+          {
+            "rgb": [
+              27,
+              103,
+              170
+            ],
+            "pixels": 9514
+          }
+        ],
+        "interpretation": "Read-only analysis. RGB variation and interior alpha can include native rendering artifacts; visual review is separate. No palette quantization has been applied."
+      },
+      "visual_status": "needs_refinement",
+      "visual_note": "正面双角双耳与脸颊缺口保留；耳部、颊侧有少量透明排线。鼻端小留白与头部比例仍需以源图复核，不据此添加新器官。 两侧透明开口较源图显著，仍可能偏大，属于待精修项。"
+    },
+    {
+      "id": "tiger",
+      "animal_zh": "虎",
+      "animal_en": "Tiger",
+      "ink_hex": "#282828",
+      "path": "talisman-monochrome-v1/tiger-monochrome.png",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "bytes": 436779,
+      "output_sha256": "6b90ec2453b96f55f06c08cd64eaa1540ceac3a91e12b1e87b53c4b984c3f581",
+      "source_path": "source-talisman/Tiger_Talisman.png",
+      "source_sha256": "d1fdf943305e743b7c5d09532ef35c8bc1df81286096dae1fa62da620da9c8ae",
+      "source_page": "https://jackiechanadventures.fandom.com/wiki/File:Tiger_Talisman.png",
+      "inputs": [
+        {
+          "path": "talisman-restored-v1/tiger-restored.png",
+          "sha256": "3083923b39e4165f8b504030fd3faaa1ef212e59b62e716b10bc4c1467c2da60"
+        },
+        {
+          "path": "talisman-monochrome-v1/raw/tiger-pattern-guide.png",
+          "sha256": "6963b8ebb2044cc2ca9ab7a50a17c73beac0fcef1f6302b2602d48e51aee556f"
+        }
+      ],
+      "native_path": "talisman-monochrome-v1/raw/tiger-native.png",
+      "native_sha256": "15cf056215c314645cb6fe4d02b5e2ccfd0f6766650373d193c84bf77a86523d",
+      "native_dimensions": [
+        1254,
+        1254
+      ],
+      "prompt_path": "talisman-monochrome-v1/raw/tiger-prompt.txt",
+      "prompt_sha256": "a0bca5c0724e3d990781c6c228ca523982bde6cec5f14f36f39436721887f835",
+      "generation_path": "talisman-monochrome-v1/raw/tiger-generation.json",
+      "generation_sha256": "449e2b3c9a026492331cfe129c6234a2a73b69b71efc8d746da92d207aa31f31",
+      "visible_bounds_xyxy": [
+        103,
+        105,
+        920,
+        917
+      ],
+      "alpha_nonzero_bounds_xyxy": [
+        102,
+        104,
+        922,
+        919
+      ],
+      "normalization": {
+        "crop_bounds_xyxy": [
+          76,
+          97,
+          1164,
+          1179
+        ],
+        "uniform_scale": 0.7536764705882353,
+        "resized_dimensions": [
+          820,
+          815
+        ],
+        "placement_xy": [
+          102,
+          104
+        ]
+      },
+      "palette_audit": {
+        "intended_ink_hex": "#282828",
+        "strict_all_nontransparent_rgb_equal_intended_ink": false,
+        "distinct_visible_rgb_count": 925,
+        "visible_pixel_count": 207872,
+        "exact_intended_rgb_pixel_count": 32,
+        "interior_eroded_5x5_pixel_count": 111815,
+        "interior_alpha_below_250_pixel_count": 13298,
+        "interior_rgb_top_5": [
+          {
+            "rgb": [
+              31,
+              31,
+              31
+            ],
+            "pixels": 14000
+          },
+          {
+            "rgb": [
+              33,
+              33,
+              32
+            ],
+            "pixels": 11974
+          },
+          {
+            "rgb": [
+              33,
+              33,
+              33
+            ],
+            "pixels": 10682
+          },
+          {
+            "rgb": [
+              32,
+              32,
+              32
+            ],
+            "pixels": 7586
+          },
+          {
+            "rgb": [
+              33,
+              32,
+              32
+            ],
+            "pixels": 7419
+          }
+        ],
+        "interpretation": "Read-only analysis. RGB variation and interior alpha can include native rendering artifacts; visual review is separate. No palette quantization has been applied."
+      },
+      "visual_status": "needs_refinement",
+      "visual_note": "双虎相对布局清楚，原白身改为透明，以同一深灰轮廓和条纹界定形体。条纹、口部和爪形仍较低清源图规整，尚非逐笔还原。"
+    },
+    {
+      "id": "rabbit",
+      "animal_zh": "兔",
+      "animal_en": "Rabbit",
+      "ink_hex": "#86278D",
+      "path": "talisman-monochrome-v1/rabbit-monochrome.png",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "bytes": 182976,
+      "output_sha256": "afdd86da94b3bd07c3daeac5e44fc7f93760792b59652d59cb202d53ec3619ae",
+      "source_path": "source-talisman/Rabbit_Talisman.png",
+      "source_sha256": "94ba6ef0962939225cd2d34ad4b0da4b59dde3321aef45d599ae0944fc2abb10",
+      "source_page": "https://jackiechanadventures.fandom.com/wiki/File:Rabbit_Talisman.png",
+      "inputs": [
+        {
+          "path": "talisman-restored-v1/rabbit-restored.png",
+          "sha256": "94e064eb2e2132b2df0f3b37e0b75ce2f7b0fba8309ecd11ef492b79aa73e13f"
+        },
+        {
+          "path": "talisman-monochrome-v1/raw/rabbit-pattern-guide.png",
+          "sha256": "9e00b5c7f7c0568d51384514631ff4865e4e71159eb4e74a8615267e56e2232d"
+        }
+      ],
+      "native_path": "talisman-monochrome-v1/raw/rabbit-native.png",
+      "native_sha256": "599f23dfaec54371c716f7a2c058097f65f032a3d1eb058780b82b17a2acbdda",
+      "native_dimensions": [
+        1254,
+        1254
+      ],
+      "prompt_path": "talisman-monochrome-v1/raw/rabbit-prompt.txt",
+      "prompt_sha256": "4da6abf1904ee841f4732c8e4fccd4284f95688d3a5cf8af495a960498352f57",
+      "generation_path": "talisman-monochrome-v1/raw/rabbit-generation.json",
+      "generation_sha256": "25df053d873c2a9122ec1480820d0a095c87db46f405b2d147678dfd571553fe",
+      "visible_bounds_xyxy": [
+        103,
+        219,
+        921,
+        804
+      ],
+      "alpha_nonzero_bounds_xyxy": [
+        102,
+        218,
+        922,
+        806
+      ],
+      "normalization": {
+        "crop_bounds_xyxy": [
+          82,
+          241,
+          1180,
+          1029
+        ],
+        "uniform_scale": 0.7468123861566485,
+        "resized_dimensions": [
+          820,
+          588
+        ],
+        "placement_xy": [
+          102,
+          218
+        ]
+      },
+      "palette_audit": {
+        "intended_ink_hex": "#86278D",
+        "strict_all_nontransparent_rgb_equal_intended_ink": false,
+        "distinct_visible_rgb_count": 1967,
+        "visible_pixel_count": 98662,
+        "exact_intended_rgb_pixel_count": 1,
+        "interior_eroded_5x5_pixel_count": 76008,
+        "interior_alpha_below_250_pixel_count": 1024,
+        "interior_rgb_top_5": [
+          {
+            "rgb": [
+              132,
+              34,
+              136
+            ],
+            "pixels": 5432
+          },
+          {
+            "rgb": [
+              133,
+              34,
+              137
+            ],
+            "pixels": 5283
+          },
+          {
+            "rgb": [
+              133,
+              35,
+              137
+            ],
+            "pixels": 3439
+          },
+          {
+            "rgb": [
+              132,
+              33,
+              136
+            ],
+            "pixels": 3189
+          },
+          {
+            "rgb": [
+              134,
+              34,
+              138
+            ],
+            "pixels": 2760
+          }
+        ],
+        "interpretation": "Read-only analysis. RGB variation and interior alpha can include native rendering artifacts; visual review is separate. No palette quantization has been applied."
+      },
+      "visual_status": "reviewed_draft",
+      "visual_note": "右向单兔、头耳和分开的背/腿/足片保留；眼、耳内与身腔为透明负形，片段曲率仍有重建解释。"
+    },
+    {
+      "id": "dragon",
+      "animal_zh": "龙",
+      "animal_en": "Dragon",
+      "ink_hex": "#CF3037",
+      "path": "talisman-monochrome-v1/dragon-monochrome.png",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "bytes": 275653,
+      "output_sha256": "e578d06fa1a0ee6c82539552f25fcc4c7324a5edb4737b80d5783ec9b2e278c3",
+      "source_path": "source-talisman/Dragon_Talisman.png",
+      "source_sha256": "cf50cd4fff43edbafff6f25d209aaf284e48f5bd4b4d3879640dfaa8369d0760",
+      "source_page": "https://jackiechanadventures.fandom.com/wiki/File:Dragon_Talisman.png",
+      "inputs": [
+        {
+          "path": "talisman-restored-v1/dragon-restored.png",
+          "sha256": "66f7481ff623bcb360dec7642e45db276cd55a5a9e2f15929b91fbd5ea2beec9"
+        },
+        {
+          "path": "talisman-monochrome-v1/raw/dragon-pattern-guide.png",
+          "sha256": "e2f2faabbe6843d1fe9cde9a00488d698ae60e362e908e30013170489a1faa6c"
+        }
+      ],
+      "native_path": "talisman-monochrome-v1/raw/dragon-native.png",
+      "native_sha256": "397312f3b092938f2d20b1f2245fae42803b9d0da82120342033a8e76ed0ebfb",
+      "native_dimensions": [
+        1254,
+        1254
+      ],
+      "prompt_path": "talisman-monochrome-v1/raw/dragon-prompt.txt",
+      "prompt_sha256": "e654fc3a7701803fea29eb52813111e1d52c177abd38efd426e9d22332b94ec5",
+      "generation_path": "talisman-monochrome-v1/raw/dragon-generation.json",
+      "generation_sha256": "5aec1840e37d6537ad5744a67a1bcf42a42c0a585007f7b8211846523639754f",
+      "visible_bounds_xyxy": [
+        189,
+        104,
+        835,
+        921
+      ],
+      "alpha_nonzero_bounds_xyxy": [
+        187,
+        102,
+        836,
+        922
+      ],
+      "normalization": {
+        "crop_bounds_xyxy": [
+          233,
+          113,
+          1046,
+          1140
+        ],
+        "uniform_scale": 0.7984420642648491,
+        "resized_dimensions": [
+          649,
+          820
+        ],
+        "placement_xy": [
+          187,
+          102
+        ]
+      },
+      "palette_audit": {
+        "intended_ink_hex": "#CF3037",
+        "strict_all_nontransparent_rgb_equal_intended_ink": false,
+        "distinct_visible_rgb_count": 2980,
+        "visible_pixel_count": 130064,
+        "exact_intended_rgb_pixel_count": 0,
+        "interior_eroded_5x5_pixel_count": 89317,
+        "interior_alpha_below_250_pixel_count": 3461,
+        "interior_rgb_top_5": [
+          {
+            "rgb": [
+              207,
+              39,
+              49
+            ],
+            "pixels": 7493
+          },
+          {
+            "rgb": [
+              206,
+              38,
+              48
+            ],
+            "pixels": 6528
+          },
+          {
+            "rgb": [
+              207,
+              39,
+              48
+            ],
+            "pixels": 4740
+          },
+          {
+            "rgb": [
+              207,
+              38,
+              48
+            ],
+            "pixels": 4680
+          },
+          {
+            "rgb": [
+              206,
+              39,
+              49
+            ],
+            "pixels": 4391
+          }
+        ],
+        "interpretation": "Read-only analysis. RGB variation and interior alpha can include native rendering artifacts; visual review is separate. No palette quantization has been applied."
+      },
+      "visual_status": "needs_refinement",
+      "visual_note": "环绕构图、分离红片与中央透明区保留；上方尖角、内鬃扇形仍偏长、偏尖，未达到精确还原。"
+    },
+    {
+      "id": "snake",
+      "animal_zh": "蛇",
+      "animal_en": "Snake",
+      "ink_hex": "#22964C",
+      "path": "talisman-monochrome-v1/snake-monochrome.png",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "bytes": 323998,
+      "output_sha256": "f7f065dc85fbf5368afe63f432f7c33efb25b057f9c7ed453ea752484dcbe189",
+      "source_path": "source-talisman/Snake_Talisman.png",
+      "source_sha256": "0dcf12ea59825066302865521076ec312f46988d60f853a76bfd4243207a5752",
+      "source_page": "https://jackiechanadventures.fandom.com/wiki/File:Snake_Talisman.png",
+      "inputs": [
+        {
+          "path": "talisman-restored-v1/snake-restored.png",
+          "sha256": "8c3f0eb79944d3213be8d0e08f66befef5916e99b39884f814bb8f07e170c0bf"
+        },
+        {
+          "path": "talisman-monochrome-v1/raw/snake-pattern-guide.png",
+          "sha256": "1303e22309bf34d3aacbb956ac03fec04475e2ff28671922fbb7a7fff8a1bbdd"
+        }
+      ],
+      "native_path": "talisman-monochrome-v1/raw/snake-native.png",
+      "native_sha256": "347cdccecda6544f20cc2b3207c6a0ac47e3d941c9e6e0bb56bd507ddb645841",
+      "native_dimensions": [
+        1254,
+        1254
+      ],
+      "prompt_path": "talisman-monochrome-v1/raw/snake-prompt.txt",
+      "prompt_sha256": "ac4b553df73ea19b25acc858b1b658f2a90b86a15965f89db2faed2acd3b1cad",
+      "generation_path": "talisman-monochrome-v1/raw/snake-generation.json",
+      "generation_sha256": "8e1770263848a54570ff6886f6c6b5dcd744733ba146a7a3d01b82ba9e67c794",
+      "visible_bounds_xyxy": [
+        103,
+        126,
+        921,
+        896
+      ],
+      "alpha_nonzero_bounds_xyxy": [
+        102,
+        124,
+        922,
+        899
+      ],
+      "normalization": {
+        "crop_bounds_xyxy": [
+          87,
+          113,
+          1207,
+          1171
+        ],
+        "uniform_scale": 0.7321428571428571,
+        "resized_dimensions": [
+          820,
+          775
+        ],
+        "placement_xy": [
+          102,
+          124
+        ]
+      },
+      "palette_audit": {
+        "intended_ink_hex": "#22964C",
+        "strict_all_nontransparent_rgb_equal_intended_ink": false,
+        "distinct_visible_rgb_count": 2402,
+        "visible_pixel_count": 172439,
+        "exact_intended_rgb_pixel_count": 0,
+        "interior_eroded_5x5_pixel_count": 118602,
+        "interior_alpha_below_250_pixel_count": 4644,
+        "interior_rgb_top_5": [
+          {
+            "rgb": [
+              21,
+              142,
+              71
+            ],
+            "pixels": 4696
+          },
+          {
+            "rgb": [
+              22,
+              144,
+              69
+            ],
+            "pixels": 4315
+          },
+          {
+            "rgb": [
+              21,
+              144,
+              69
+            ],
+            "pixels": 3657
+          },
+          {
+            "rgb": [
+              22,
+              143,
+              72
+            ],
+            "pixels": 3225
+          },
+          {
+            "rgb": [
+              21,
+              143,
+              68
+            ],
+            "pixels": 3158
+          }
+        ],
+        "interpretation": "Read-only analysis. RGB variation and interior alpha can include native rendering artifacts; visual review is separate. No palette quantization has been applied."
+      },
+      "visual_status": "reviewed_draft",
+      "visual_note": "左上头部、S形主身、中央盘绕及分开的下盘/尾片保留；透明内缝表达转折，下盘色带仍比源图规整。 中盘/下盘色带较粗，独立弧间距缩小，继续复核负形。"
+    },
+    {
+      "id": "horse",
+      "animal_zh": "马",
+      "animal_en": "Horse",
+      "ink_hex": "#7365B6",
+      "path": "talisman-monochrome-v1/horse-monochrome.png",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "bytes": 260984,
+      "output_sha256": "06b408ee2683f93c75eb4fe5a522c6c9a1fdb2ebd849dcd7457cb11a85473d97",
+      "source_path": "source-talisman/Horse_Talisman.png",
+      "source_sha256": "5dfc7db6d0148310fa678244565070bc9072ca36d339cd65af03522ba52ed390",
+      "source_page": "https://jackiechanadventures.fandom.com/wiki/File:Horse_Talisman.png",
+      "inputs": [
+        {
+          "path": "talisman-restored-v1/horse-restored.png",
+          "sha256": "aed206f55d77027dabec9e7fb9d825754dd1e09c78a93a255507e4a8e1acb690"
+        },
+        {
+          "path": "talisman-monochrome-v1/raw/horse-pattern-guide.png",
+          "sha256": "2181bde57ab903dbe0594e482151ad369d10ac5982a29af72e559261d7bbde32"
+        }
+      ],
+      "native_path": "talisman-monochrome-v1/raw/horse-native.png",
+      "native_sha256": "b657a0da007fb5703efa2a9f3358c581c1be13ce7244403b71e298b088503e81",
+      "native_dimensions": [
+        1254,
+        1254
+      ],
+      "prompt_path": "talisman-monochrome-v1/raw/horse-prompt.txt",
+      "prompt_sha256": "babf711d015e627638f774948932ffeaa7020929eebc9cf7f2ea3017dcc7e2f2",
+      "generation_path": "talisman-monochrome-v1/raw/horse-generation.json",
+      "generation_sha256": "3c07cf1a75d854bb4f9fae83b32fe2e7a7bed6dd375b638c15ae0e499eeabf19",
+      "visible_bounds_xyxy": [
+        105,
+        157,
+        920,
+        866
+      ],
+      "alpha_nonzero_bounds_xyxy": [
+        102,
+        156,
+        922,
+        868
+      ],
+      "normalization": {
+        "crop_bounds_xyxy": [
+          56,
+          135,
+          1213,
+          1140
+        ],
+        "uniform_scale": 0.7087294727744166,
+        "resized_dimensions": [
+          820,
+          712
+        ],
+        "placement_xy": [
+          102,
+          156
+        ]
+      },
+      "palette_audit": {
+        "intended_ink_hex": "#7365B6",
+        "strict_all_nontransparent_rgb_equal_intended_ink": false,
+        "distinct_visible_rgb_count": 2141,
+        "visible_pixel_count": 171503,
+        "exact_intended_rgb_pixel_count": 0,
+        "interior_eroded_5x5_pixel_count": 145932,
+        "interior_alpha_below_250_pixel_count": 1242,
+        "interior_rgb_top_5": [
+          {
+            "rgb": [
+              108,
+              89,
+              176
+            ],
+            "pixels": 15858
+          },
+          {
+            "rgb": [
+              109,
+              90,
+              177
+            ],
+            "pixels": 15413
+          },
+          {
+            "rgb": [
+              109,
+              90,
+              176
+            ],
+            "pixels": 10530
+          },
+          {
+            "rgb": [
+              108,
+              90,
+              176
+            ],
+            "pixels": 10049
+          },
+          {
+            "rgb": [
+              108,
+              90,
+              177
+            ],
+            "pixels": 5944
+          }
+        ],
+        "interpretation": "Read-only analysis. RGB variation and interior alpha can include native rendering artifacts; visual review is separate. No palette quantization has been applied."
+      },
+      "visual_status": "reviewed_draft",
+      "visual_note": "左向六块紫色保留：耳、额片、脸/下颌、鬃毛和两条颈片；头颈中央透明，没有补成完整实填马头。"
+    },
+    {
+      "id": "sheep",
+      "animal_zh": "羊",
+      "animal_en": "Sheep",
+      "ink_hex": "#80DDC2",
+      "path": "talisman-monochrome-v1/sheep-monochrome.png",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "bytes": 174695,
+      "output_sha256": "253ced6353409aa7f8465bbc73762110bf7803c63dce51b8cf0b7661e578948d",
+      "source_path": "source-talisman/Sheep_Talisman.png",
+      "source_sha256": "e1d2d7bce49639cf4e05bcc333e014db5f313292ebbfdfc7ec47015248a2c791",
+      "source_page": "https://jackiechanadventures.fandom.com/wiki/File:Sheep_Talisman.png",
+      "inputs": [
+        {
+          "path": "talisman-restored-v1/sheep-restored.png",
+          "sha256": "f936be7f6a83b9385d4ddbdc704670069073a8741c1bc5acf2daf31f600d41e9"
+        },
+        {
+          "path": "talisman-monochrome-v1/raw/sheep-pattern-guide.png",
+          "sha256": "65e173128872f1b13fc4660b26fa26c8d7af17f3242a15ece6c160316626c061"
+        }
+      ],
+      "native_path": "talisman-monochrome-v1/raw/sheep-native.png",
+      "native_sha256": "c98546d3eaed01c8d9fb9257539b6a0f88afe6d7b30fed6a5080597050a54caa",
+      "native_dimensions": [
+        1254,
+        1254
+      ],
+      "prompt_path": "talisman-monochrome-v1/raw/sheep-prompt.txt",
+      "prompt_sha256": "c10edc55f8a0ea5944aac27a6d31502763607c639f6cee01c14f4c5bda7b1534",
+      "generation_path": "talisman-monochrome-v1/raw/sheep-generation.json",
+      "generation_sha256": "79ff56a1d4b166fb5391a3acaa777a90c96eaf8c49858f8a3be5ef72ed5cc68f",
+      "visible_bounds_xyxy": [
+        103,
+        216,
+        921,
+        808
+      ],
+      "alpha_nonzero_bounds_xyxy": [
+        102,
+        214,
+        922,
+        809
+      ],
+      "normalization": {
+        "crop_bounds_xyxy": [
+          105,
+          269,
+          1161,
+          1035
+        ],
+        "uniform_scale": 0.7765151515151515,
+        "resized_dimensions": [
+          820,
+          595
+        ],
+        "placement_xy": [
+          102,
+          214
+        ]
+      },
+      "palette_audit": {
+        "intended_ink_hex": "#80DDC2",
+        "strict_all_nontransparent_rgb_equal_intended_ink": false,
+        "distinct_visible_rgb_count": 3643,
+        "visible_pixel_count": 85083,
+        "exact_intended_rgb_pixel_count": 0,
+        "interior_eroded_5x5_pixel_count": 57203,
+        "interior_alpha_below_250_pixel_count": 2065,
+        "interior_rgb_top_5": [
+          {
+            "rgb": [
+              119,
+              230,
+              200
+            ],
+            "pixels": 3289
+          },
+          {
+            "rgb": [
+              118,
+              230,
+              200
+            ],
+            "pixels": 3081
+          },
+          {
+            "rgb": [
+              119,
+              230,
+              201
+            ],
+            "pixels": 2976
+          },
+          {
+            "rgb": [
+              120,
+              230,
+              200
+            ],
+            "pixels": 2854
+          },
+          {
+            "rgb": [
+              119,
+              231,
+              201
+            ],
+            "pixels": 1949
+          }
+        ],
+        "interpretation": "Read-only analysis. RGB variation and interior alpha can include native rendering artifacts; visual review is separate. No palette quantization has been applied."
+      },
+      "visual_status": "reviewed_draft",
+      "visual_note": "连续薄荷绿头、头后两道耳部弯线、左卷尾、波背与四条分开的腿保留；中央躯干透明。耳线开口、头部与腿线曲率仍需对照。"
+    },
+    {
+      "id": "monkey",
+      "animal_zh": "猴",
+      "animal_en": "Monkey",
+      "ink_hex": "#9B594B",
+      "path": "talisman-monochrome-v1/monkey-monochrome.png",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "bytes": 392050,
+      "output_sha256": "9d4bc1d7d50476d9d3864e5845116ca08c427c532697c29af55c5c1b19344f02",
+      "source_path": "source-talisman/Monkey_Talisman.png",
+      "source_sha256": "48dc4bd76d84e92d5562abce21ce334cb869a731d026f866ab6420cb2d6f5fa8",
+      "source_page": "https://jackiechanadventures.fandom.com/wiki/File:Monkey_Talisman.png",
+      "inputs": [
+        {
+          "path": "talisman-restored-v1/monkey-restored.png",
+          "sha256": "ece98dd5cace82762cff24a3fcf394ab51ac389f1510bb89ea3ab1bc1a00258e"
+        },
+        {
+          "path": "talisman-monochrome-v1/raw/monkey-pattern-guide.png",
+          "sha256": "7404080b43f35bbfb20c326ff14b7564126f1db7241e9a6a158d1c3c48f68c2c"
+        }
+      ],
+      "native_path": "talisman-monochrome-v1/raw/monkey-native.png",
+      "native_sha256": "10e954022423e9c8485a8464ed5f49378602a41c528d2b429707f2682ed03448",
+      "native_dimensions": [
+        1254,
+        1254
+      ],
+      "prompt_path": "talisman-monochrome-v1/raw/monkey-prompt.txt",
+      "prompt_sha256": "bb18daa5b2761276e64315db048839c682ee274e098f3962096f54bafe1a3ef7",
+      "generation_path": "talisman-monochrome-v1/raw/monkey-generation.json",
+      "generation_sha256": "5faf2e64d15c2b718615d44a2ebf9828ccdf1dfd055959c641990f55c0807d56",
+      "visible_bounds_xyxy": [
+        108,
+        104,
+        916,
+        921
+      ],
+      "alpha_nonzero_bounds_xyxy": [
+        106,
+        102,
+        918,
+        922
+      ],
+      "normalization": {
+        "crop_bounds_xyxy": [
+          131,
+          133,
+          1147,
+          1159
+        ],
+        "uniform_scale": 0.7992202729044834,
+        "resized_dimensions": [
+          812,
+          820
+        ],
+        "placement_xy": [
+          106,
+          102
+        ]
+      },
+      "palette_audit": {
+        "intended_ink_hex": "#9B594B",
+        "strict_all_nontransparent_rgb_equal_intended_ink": false,
+        "distinct_visible_rgb_count": 2570,
+        "visible_pixel_count": 176154,
+        "exact_intended_rgb_pixel_count": 0,
+        "interior_eroded_5x5_pixel_count": 102816,
+        "interior_alpha_below_250_pixel_count": 6428,
+        "interior_rgb_top_5": [
+          {
+            "rgb": [
+              147,
+              74,
+              63
+            ],
+            "pixels": 5094
+          },
+          {
+            "rgb": [
+              148,
+              75,
+              63
+            ],
+            "pixels": 4591
+          },
+          {
+            "rgb": [
+              148,
+              74,
+              63
+            ],
+            "pixels": 4382
+          },
+          {
+            "rgb": [
+              147,
+              74,
+              62
+            ],
+            "pixels": 4036
+          },
+          {
+            "rgb": [
+              147,
+              73,
+              62
+            ],
+            "pixels": 3255
+          }
+        ],
+        "interpretation": "Read-only analysis. RGB variation and interior alpha can include native rendering artifacts; visual review is separate. No palette quantization has been applied."
+      },
+      "visual_status": "needs_refinement",
+      "visual_note": "左上卷尾、下方U形、坐姿和肢体留白保留；用透明细缝表示转折，尾/身体色带仍较源图宽。"
+    },
+    {
+      "id": "rooster",
+      "animal_zh": "鸡",
+      "animal_en": "Rooster",
+      "ink_hex": "#B9313B",
+      "path": "talisman-monochrome-v1/rooster-monochrome.png",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "bytes": 311081,
+      "output_sha256": "cc0fc662e9290e01c3720e17af5b78562ef4889d90c85c3d619f439ddee10195",
+      "source_path": "source-talisman/Rooster_Talisman.png",
+      "source_sha256": "827ed7f2fe95e939440640331e4e8a882e49b30309b660e5eead5824912ac082",
+      "source_page": "https://jackiechanadventures.fandom.com/wiki/File:Rooster_Talisman.png",
+      "inputs": [
+        {
+          "path": "talisman-restored-v1/rooster-restored.png",
+          "sha256": "17ba72e0d25521a8e87b5075e10f9b02415264a162621485358c08c9862f9258"
+        },
+        {
+          "path": "talisman-monochrome-v1/raw/rooster-pattern-guide.png",
+          "sha256": "b64fe29d187d9bdd4f4a6a893e4010b309c3c66b94f36b3a671006da564a3aae"
+        }
+      ],
+      "native_path": "talisman-monochrome-v1/raw/rooster-native.png",
+      "native_sha256": "c7e381b547abd22b665f7efcf48332f9b6ddc6a0b89a452daa4ba6752705d3ba",
+      "native_dimensions": [
+        1254,
+        1254
+      ],
+      "prompt_path": "talisman-monochrome-v1/raw/rooster-prompt.txt",
+      "prompt_sha256": "c2b270412e5451c489be0308d67d76dadf0e427540a3097d95f7ecd6481f851d",
+      "generation_path": "talisman-monochrome-v1/raw/rooster-generation.json",
+      "generation_sha256": "0677317fb675f28f863f6f1bf99c83ba269fd622e6ed7142e91bb82e79aede35",
+      "visible_bounds_xyxy": [
+        104,
+        110,
+        920,
+        913
+      ],
+      "alpha_nonzero_bounds_xyxy": [
+        102,
+        109,
+        922,
+        914
+      ],
+      "normalization": {
+        "crop_bounds_xyxy": [
+          98,
+          126,
+          1162,
+          1170
+        ],
+        "uniform_scale": 0.7706766917293233,
+        "resized_dimensions": [
+          820,
+          805
+        ],
+        "placement_xy": [
+          102,
+          109
+        ]
+      },
+      "palette_audit": {
+        "intended_ink_hex": "#B9313B",
+        "strict_all_nontransparent_rgb_equal_intended_ink": false,
+        "distinct_visible_rgb_count": 2344,
+        "visible_pixel_count": 207438,
+        "exact_intended_rgb_pixel_count": 0,
+        "interior_eroded_5x5_pixel_count": 175759,
+        "interior_alpha_below_250_pixel_count": 2124,
+        "interior_rgb_top_5": [
+          {
+            "rgb": [
+              182,
+              47,
+              53
+            ],
+            "pixels": 18115
+          },
+          {
+            "rgb": [
+              183,
+              48,
+              54
+            ],
+            "pixels": 12949
+          },
+          {
+            "rgb": [
+              183,
+              47,
+              53
+            ],
+            "pixels": 10197
+          },
+          {
+            "rgb": [
+              182,
+              47,
+              54
+            ],
+            "pixels": 9858
+          },
+          {
+            "rgb": [
+              183,
+              47,
+              54
+            ],
+            "pixels": 9073
+          }
+        ],
+        "interpretation": "Read-only analysis. RGB variation and interior alpha can include native rendering artifacts; visual review is separate. No palette quantization has been applied."
+      },
+      "visual_status": "reviewed_draft",
+      "visual_note": "右上头冠、左尾羽、右下身片和分开脚片保留；主要羽隙透明，头冠与红块仍较源图规整。 尾羽与躯干实色较厚，源图局部羽隙更细，应继续对照。"
+    },
+    {
+      "id": "dog",
+      "animal_zh": "狗",
+      "animal_en": "Dog",
+      "ink_hex": "#DFBA32",
+      "path": "talisman-monochrome-v1/dog-monochrome.png",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "bytes": 262225,
+      "output_sha256": "5580968fd380432b0b6cc85880c0962b8ea9527a3f51e0163208b6ed1bd28a48",
+      "source_path": "source-talisman/Dog_Talisman.png",
+      "source_sha256": "009392d934edc1990968c0a95371e5c2335f9504621ce69666eafb7010138234",
+      "source_page": "https://jackiechanadventures.fandom.com/wiki/File:Dog_Talisman.png",
+      "inputs": [
+        {
+          "path": "talisman-restored-v1/dog-restored.png",
+          "sha256": "704c07865962ea9f45f522822243c33e4292c074ff02ffa7292eb9bc1f3658d3"
+        },
+        {
+          "path": "talisman-monochrome-v1/raw/dog-pattern-guide.png",
+          "sha256": "6720b374486426bc95a71039940ddbdee987ef98f980e895bac7ecab06c0aea9"
+        }
+      ],
+      "native_path": "talisman-monochrome-v1/raw/dog-native.png",
+      "native_sha256": "a189bf2b2a1f839f71520109e93f4ca672a8e7b57b1e3ee809b14d006beb2e13",
+      "native_dimensions": [
+        1254,
+        1254
+      ],
+      "prompt_path": "talisman-monochrome-v1/raw/dog-prompt.txt",
+      "prompt_sha256": "49bdd8b89ea7d50682d9189cb3e06c6c624397fffb88e74c61cfadd9280395a7",
+      "generation_path": "talisman-monochrome-v1/raw/dog-generation.json",
+      "generation_sha256": "b3414242515bc765512435324210cfa0370111f6b35b959c69dc1cbfb44b1ce1",
+      "visible_bounds_xyxy": [
+        110,
+        104,
+        914,
+        920
+      ],
+      "alpha_nonzero_bounds_xyxy": [
+        108,
+        102,
+        915,
+        922
+      ],
+      "normalization": {
+        "crop_bounds_xyxy": [
+          149,
+          120,
+          1136,
+          1123
+        ],
+        "uniform_scale": 0.8175473579262214,
+        "resized_dimensions": [
+          807,
+          820
+        ],
+        "placement_xy": [
+          108,
+          102
+        ]
+      },
+      "palette_audit": {
+        "intended_ink_hex": "#DFBA32",
+        "strict_all_nontransparent_rgb_equal_intended_ink": false,
+        "distinct_visible_rgb_count": 3611,
+        "visible_pixel_count": 137540,
+        "exact_intended_rgb_pixel_count": 0,
+        "interior_eroded_5x5_pixel_count": 96009,
+        "interior_alpha_below_250_pixel_count": 2576,
+        "interior_rgb_top_5": [
+          {
+            "rgb": [
+              230,
+              187,
+              31
+            ],
+            "pixels": 6366
+          },
+          {
+            "rgb": [
+              230,
+              185,
+              31
+            ],
+            "pixels": 5209
+          },
+          {
+            "rgb": [
+              230,
+              187,
+              32
+            ],
+            "pixels": 5039
+          },
+          {
+            "rgb": [
+              230,
+              186,
+              31
+            ],
+            "pixels": 4133
+          },
+          {
+            "rgb": [
+              229,
+              186,
+              31
+            ],
+            "pixels": 3619
+          }
+        ],
+        "interpretation": "Read-only analysis. RGB variation and interior alpha can include native rendering artifacts; visual review is separate. No palette quantization has been applied."
+      },
+      "visual_status": "reviewed_draft",
+      "visual_note": "右向站姿、卷尾、四腿和中央透明躯干保留；颈胸小片与笔画宽度仍需对照。原生预览中的彩色散点多数处于完全透明区，应以合成后的PNG检查。"
+    },
+    {
+      "id": "pig",
+      "animal_zh": "猪",
+      "animal_en": "Pig",
+      "ink_hex": "#DF819D",
+      "path": "talisman-monochrome-v1/pig-monochrome.png",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "bytes": 322726,
+      "output_sha256": "e98ce596cfbade97c0062e396963a3d7f9a6cde925fc72c5bbc94e7174f01061",
+      "source_path": "source-talisman/Pig_Talisman.png",
+      "source_sha256": "f62324ec4d260aa5bdf0580c6c3079bd15244034a81a183d78231e966a9035d6",
+      "source_page": "https://jackiechanadventures.fandom.com/wiki/File:Pig_Talisman.png",
+      "inputs": [
+        {
+          "path": "talisman-restored-v1/pig-restored.png",
+          "sha256": "259b60093f3cf322f7afc0d7905a4b864914179a64b8179386fd5ced2ee72f0b"
+        },
+        {
+          "path": "talisman-monochrome-v1/raw/pig-pattern-guide.png",
+          "sha256": "692cf2c8af4cd7ef8789c159234efc974afbad79feedfc210906387d1b92f7b9"
+        }
+      ],
+      "native_path": "talisman-monochrome-v1/raw/pig-native.png",
+      "native_sha256": "becb60cc21ef9e58cb692ddaa6a0351689501206f449457485b1ffeaf3f1cd8c",
+      "native_dimensions": [
+        1254,
+        1254
+      ],
+      "prompt_path": "talisman-monochrome-v1/raw/pig-prompt.txt",
+      "prompt_sha256": "a5e534f13ddb9cf60d5df335774bd98b14bad87070ff0c6c1dc09b98699d4244",
+      "generation_path": "talisman-monochrome-v1/raw/pig-generation.json",
+      "generation_sha256": "4c77e6ccbf22bf77963ce9c776d264c043f6529322d6deea0abc4cfbc73eef74",
+      "visible_bounds_xyxy": [
+        147,
+        103,
+        877,
+        919
+      ],
+      "alpha_nonzero_bounds_xyxy": [
+        145,
+        102,
+        878,
+        922
+      ],
+      "normalization": {
+        "crop_bounds_xyxy": [
+          159,
+          103,
+          1123,
+          1182
+        ],
+        "uniform_scale": 0.7599629286376274,
+        "resized_dimensions": [
+          733,
+          820
+        ],
+        "placement_xy": [
+          145,
+          102
+        ]
+      },
+      "palette_audit": {
+        "intended_ink_hex": "#DF819D",
+        "strict_all_nontransparent_rgb_equal_intended_ink": false,
+        "distinct_visible_rgb_count": 3325,
+        "visible_pixel_count": 159365,
+        "exact_intended_rgb_pixel_count": 0,
+        "interior_eroded_5x5_pixel_count": 88556,
+        "interior_alpha_below_250_pixel_count": 3754,
+        "interior_rgb_top_5": [
+          {
+            "rgb": [
+              225,
+              104,
+              138
+            ],
+            "pixels": 3522
+          },
+          {
+            "rgb": [
+              225,
+              105,
+              138
+            ],
+            "pixels": 3367
+          },
+          {
+            "rgb": [
+              225,
+              107,
+              136
+            ],
+            "pixels": 2975
+          },
+          {
+            "rgb": [
+              225,
+              105,
+              139
+            ],
+            "pixels": 2719
+          },
+          {
+            "rgb": [
+              225,
+              106,
+              136
+            ],
+            "pixels": 2665
+          }
+        ],
+        "interpretation": "Read-only analysis. RGB variation and interior alpha can include native rendering artifacts; visual review is separate. No palette quantization has been applied."
+      },
+      "visual_status": "reviewed_draft",
+      "visual_note": "上耳带、左鼻眼卷线、右颊弧与中下弧保留；此前遗漏的最下方长左弧已补回，未镜像。透明内缝用于表达曲面转折。"
+    }
+  ]
+}

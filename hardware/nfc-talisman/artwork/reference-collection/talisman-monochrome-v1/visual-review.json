@@ -1,0 +1,71 @@
+{
+  "client_date": "2026-10-11",
+  "scope": "Twelve native candidates reviewed after alpha compositing against original guides. Independent Luna review confirms subject/facing and key Sheep/Pig/Horse/Tiger structure; local contour differences remain. User-approved RGB-only final retains identical alpha.",
+  "original_resolution_px": [
+    200,
+    141
+  ],
+  "visual_final_approval": false,
+  "files": [
+    {
+      "id": "rat",
+      "status": "reviewed_draft",
+      "note": "右向姿态、卷尾、折形肢体和透明身腔保留；用少量透明内缝表达灰色带转折。低清原图的局部曲率仍有重建差异。 鼠头透明眼孔较明显，源图面部印痕很小，仍需核对其大小。"
+    },
+    {
+      "id": "ox",
+      "status": "needs_refinement",
+      "note": "正面双角双耳与脸颊缺口保留；耳部、颊侧有少量透明排线。鼻端小留白与头部比例仍需以源图复核，不据此添加新器官。 两侧透明开口较源图显著，仍可能偏大，属于待精修项。"
+    },
+    {
+      "id": "tiger",
+      "status": "needs_refinement",
+      "note": "双虎相对布局清楚，原白身改为透明，以同一深灰轮廓和条纹界定形体。条纹、口部和爪形仍较低清源图规整，尚非逐笔还原。"
+    },
+    {
+      "id": "rabbit",
+      "status": "reviewed_draft",
+      "note": "右向单兔、头耳和分开的背/腿/足片保留；眼、耳内与身腔为透明负形，片段曲率仍有重建解释。"
+    },
+    {
+      "id": "dragon",
+      "status": "needs_refinement",
+      "note": "环绕构图、分离红片与中央透明区保留；上方尖角、内鬃扇形仍偏长、偏尖，未达到精确还原。"
+    },
+    {
+      "id": "snake",
+      "status": "reviewed_draft",
+      "note": "左上头部、S形主身、中央盘绕及分开的下盘/尾片保留；透明内缝表达转折，下盘色带仍比源图规整。 中盘/下盘色带较粗，独立弧间距缩小，继续复核负形。"
+    },
+    {
+      "id": "horse",
+      "status": "reviewed_draft",
+      "note": "左向六块紫色保留：耳、额片、脸/下颌、鬃毛和两条颈片；头颈中央透明，没有补成完整实填马头。"
+    },
+    {
+      "id": "sheep",
+      "status": "reviewed_draft",
+      "note": "连续薄荷绿头、头后两道耳部弯线、左卷尾、波背与四条分开的腿保留；中央躯干透明。耳线开口、头部与腿线曲率仍需对照。"
+    },
+    {
+      "id": "monkey",
+      "status": "needs_refinement",
+      "note": "左上卷尾、下方U形、坐姿和肢体留白保留；用透明细缝表示转折，尾/身体色带仍较源图宽。"
+    },
+    {
+      "id": "rooster",
+      "status": "reviewed_draft",
+      "note": "右上头冠、左尾羽、右下身片和分开脚片保留；主要羽隙透明，头冠与红块仍较源图规整。 尾羽与躯干实色较厚，源图局部羽隙更细，应继续对照。"
+    },
+    {
+      "id": "dog",
+      "status": "reviewed_draft",
+      "note": "右向站姿、卷尾、四腿和中央透明躯干保留；颈胸小片与笔画宽度仍需对照。原生预览中的彩色散点多数处于完全透明区，应以合成后的PNG检查。"
+    },
+    {
+      "id": "pig",
+      "status": "reviewed_draft",
+      "note": "上耳带、左鼻眼卷线、右颊弧与中下弧保留；此前遗漏的最下方长左弧已补回，未镜像。透明内缝用于表达曲面转折。"
+    }
+  ]
+}

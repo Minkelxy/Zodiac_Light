@@ -1,14 +1,27 @@
 {
-  "client_date": "2026-10-10",
-  "status": "pending_native_imagegen_recovery",
-  "successful_monochrome_images": 0,
+  "client_date": "2026-10-11",
+  "status": "native_service_recovered_rgb_normalization_completed",
+  "successful_monochrome_images": 12,
   "failed_attempts": 2,
   "asset_attempted": "ox",
   "tool": "Native ImageGen",
-  "error_summary": "HTTP 403 Forbidden",
+  "error_summary": null,
   "user_palette_choice": "Each animal keeps its original primary hue",
   "user_fallback_choice": "Keep review records and wait for drawing service recovery",
   "retry_policy": "Retry on a later authorized continuation or heartbeat; do not loop repeated unchanged failures in one run.",
-  "next_priority": ["ox", "pig", "tiger", "dragon", "monkey"],
-  "note": "No generated monochrome PNG exists. Reference guides are source-layout-only PNGs."
+  "next_priority": [
+    "ox",
+    "pig",
+    "tiger",
+    "dragon",
+    "monkey"
+  ],
+  "note": "Twelve native one-hue candidates remain unchanged. The user approved RGB-only palette normalization on 2026-10-11; strict-color finals are saved separately with identical alpha. Visual fidelity remains draft; no programmatic redraw or alpha edits.",
+  "native_candidate_count": 12,
+  "layout_candidate_count": 12,
+  "strict_single_ink_pass_count": 0,
+  "previous_error_summary": "2026-10-10: two HTTP 403 Forbidden attempts",
+  "strict_single_ink_candidate_pass_count": 0,
+  "strict_single_ink_final_count": 12,
+  "single_ink_manifest": "talisman-single-ink-v1/manifest.json"
 }
