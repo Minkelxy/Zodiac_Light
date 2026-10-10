@@ -1,0 +1,9 @@
+Use case: precise-object-edit
+Asset type: restored transparent 2D talisman emblem
+Input images: Image 1 is authoritative for the dog's exact painted segments, pose, proportions and unpainted gaps. Image 2 is the previous cutout and only a secondary topology reference. Image 3 is the Horse pilot style/edge guide only.
+Primary request: faithfully restore the single dog glyph from Image 1, correcting only the talisman face plane to a flat, straight-on orthographic view. Do not redesign the animal as a conventional complete dog icon.
+Subject: one slender golden-yellow dog in a right-facing raised-head side pose. Upright pointed muzzle/nose at upper right, pointed ears, narrow curved neck, long lean torso, four thin separated legs, and a high curl tail on the left. Precisely preserve the original fragmented arrangement: yellow painted lines/pieces define the head/neck, upper and lower legs, a thin back/torso outline and curled tail; most of the interior torso is unpainted gray stone and must remain transparent. Do not fill it as a solid yellow body.
+Style: faithful clean 2D animation restoration, fine charcoal outline, flat golden-yellow source color, smooth crisp edges. Match the Horse pilot only for restrained outline weight and finish.
+Composition: centered emblem, longest dimension about 820 px on a square 1024 × 1024 transparent canvas, ample transparent margins.
+Backdrop: genuine transparent alpha.
+Constraints: retain each original gap between separate paint fragments and all gray/unpainted stone as transparent negative space. Preserve the exact original orientation, four-leg stance and left curl tail; do not mirror, turn frontal, add fur, markings, new anatomy, collar, ground, shadow, text, stone, rim, or background.

@@ -1,0 +1,8 @@
+Use case: precise-object-edit
+Create a faithful restoration of the small pink Pig glyph in Image 1. Image 1 is the authoritative original; Image 2 is the same unmodified glyph in an old cutout. Shape source is ONLY these two images.
+Treat this as traced restoration: remove the octagonal stone and straighten its flat front plane. Redraw only existing pink marks with smooth edges; retain their disconnected, sparse layout and the original narrow stroke-to-glyph proportions. This is not a new pig illustration.
+Important source geometry: a small pink head cluster in the left-center with its pointed ear slanting diagonally toward upper-right; the face/snouted head points left. Beneath it is one small lower curved neck mark. A separate compact pink crescent/curl sits to the right of the head, with open space between. Preserve the actual short, broken contours seen in the reference. The ear is a thin pointed source stroke, never a large arch or long horizontal top bar. The right curl is a small separate curved stroke, never an oversized moon or full body.
+Style: faithful, restrained clean 2D animation restoration; source pink/coral and darker pink accents only where visible; narrow charcoal outline; flat fills, smooth crisp contours.
+Composition: centered symbol, longest dimension about 820 px on square 1024 × 1024 canvas, transparent margin.
+Backdrop: genuine transparent alpha.
+All gray stone and unpainted regions are transparent. Preserve tiny original face marks only; do not invent eyes, nostrils or highlights. No complete body, legs, background, stone, shadow, text, rim, decorations, or mirrored/front-facing pose.

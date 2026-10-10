@@ -1,0 +1,71 @@
+{
+  "title": "十二生肖符号重绘参考规格",
+  "purpose": "指导从原始斜视符咒图重新绘制动物符号：恢复清晰轮廓和内部细节，校正符咒正面平面的透视，并导出统一画布的独立透明 PNG。",
+  "references": {
+    "source_directory": "reference-collection/source-talisman/",
+    "existing_cutout_directory": "reference-collection/talisman-patterns/",
+    "source_observation": "12 张原图均为 200×141 像素，包含灰色八边形符咒、可见侧厚及近似一致的斜视透视。现有透明 PNG 保留原始像素比例与符号透视，只移除了背景/符咒部分，不能作为最终正视重绘稿。"
+  },
+  "shared_output_spec": {
+    "canvas_px": [1024, 1024],
+    "format": "PNG RGBA with genuine transparent background",
+    "composition": "单个动物符号居中；按视觉重心轻微调整位置；图案最长边约占画布 80%（约 820 px），统一视觉尺度并保留透明留白。",
+    "style": "干净的 2D 动画符号插画；形状清楚、色块平整、边缘平滑；十二张使用一致的细描线粗细、边缘质量和细节密度。依据原图重建轮廓、填色、描线与内部标记，允许为清晰度补全可辨识细节，但不得添加原图没有的装饰。",
+    "exclude": ["八边形石符咒及侧面厚度", "投影、背景、底座、支架、文字或新装饰", "为统一视角而改变动物姿态或让动物转成正面脸"]
+  },
+  "perspective_and_pose_constraints": {
+    "plane_rectification": "以灰色八边形符咒的正面为单一平面参照，将该平面校正为平整、正对观者的 2D 图案面；去掉统一的斜视缩短、平面倾斜和边缘透视形变。只将此校正用于确定图案平面，不要把它误用成动物转头、改姿态或左右镜像。",
+    "reconstruction": "根据原符号的拓扑、轮廓、颜色分区、内部线条及负空间重新绘制；不要把低分辨率像素边缘当作目标轮廓，也不要直接放大扣取图。细化应恢复原来可读的结构，不创造新器官、肢体或纹样。",
+    "face_direction": "保留每个符号原本呈现的侧脸、正脸、俯仰、弯曲及运动方向。正视化的是符咒的承载平面，而非强迫每个动物改成脸朝观者。"
+  },
+  "subjects": [
+    {
+      "id": "dog", "animal_zh": "狗", "source": "source-talisman/Dog_Talisman.png", "pose_and_orientation": "单只细身狗的侧面全身，朝右并略向上抬头；四肢分开站立，尾巴高高卷起。",
+      "preserve": "金黄/黄色填色与深色细轮廓；尖长上扬口鼻、竖耳、卷尾、细长躯干和四条腿。保留简洁线描，不补毛发或背景。"
+    },
+    {
+      "id": "dragon", "animal_zh": "龙", "source": "source-talisman/Dragon_Talisman.png", "pose_and_orientation": "单只红色东方龙的动态弯曲全身；头在左上，朝左，长躯干向右上弯转再回旋至下方，四爪张开。",
+      "preserve": "红色主体和深色轮廓；有角的龙头、张口/口鼻细节、背部鬃刺、弯曲长身、腿爪和尾部尖端。保持原有回旋路径及不对称动势，不改成西方翼龙。"
+    },
+    {
+      "id": "horse", "animal_zh": "马", "source": "source-talisman/Horse_Talisman.png", "pose_and_orientation": "单只马头与长颈的左向侧面像；口鼻指向左，鬃毛向右上方飘起，颈部向下延伸并收尖。",
+      "preserve": "淡紫/薰衣草紫主体与深色轮廓；保留六块主要紫色分段：耳、额头楔形、面部/下颌、大块锯齿鬃毛、两条向下颈部细段。大面积灰色马头内部是未着色石面，须透明；不要新增眼睛、完整马身或改成正脸。"
+    },
+    {
+      "id": "monkey", "animal_zh": "猴", "source": "source-talisman/Monkey_Talisman.png", "pose_and_orientation": "单只坐姿/蜷曲的猴形符号，主体集中在右侧；小头位于右上，躯干及肢体向下弯折，左侧长尾形成显眼的大弧并在上端卷成螺旋。",
+      "preserve": "棕红/赭红色线描；头部五官、细长手臂、弯曲腿部与左侧大卷尾的轮廓关系。保留肢体之间的透明负空间，不把卷尾误画为第二只动物或装饰圆环。"
+    },
+    {
+      "id": "ox", "animal_zh": "牛", "source": "source-talisman/Ox_Talisman.png", "pose_and_orientation": "单个牛头正面像，整体近似左右对称；两角向外再向上弯，耳朵横向展开，脸向下收窄。",
+      "preserve": "深蓝/宝蓝填色、深色外轮廓及内部明暗/线条；一对牛角、两侧耳朵、宽额头、眼部、鼻梁与鼻端。维持正面牛头设计和两侧平衡，不画成侧面全身牛。"
+    },
+    {
+      "id": "pig", "animal_zh": "猪", "source": "source-talisman/Pig_Talisman.png", "pose_and_orientation": "单只粉红猪的侧向头像与卷曲轮廓组合；头部在左上、口鼻朝左，右上有尖耳，轮廓向右下回旋成明显的弧形/卷曲形。",
+      "preserve": "粉红/珊瑚粉色主体、较深粉色分区与深色轮廓；尖耳、单侧眼、朝左的猪鼻和下方弧形躯体/卷曲线。保留脸与卷曲轮廓的连接关系及内部留白，不改为正面猪脸。"
+    },
+    {
+      "id": "rabbit", "animal_zh": "兔", "source": "source-talisman/Rabbit_Talisman.png", "pose_and_orientation": "单只朝右的奔跑兔，由互不连接的紫色笔画组成；头与长耳位于右上，背部弧线在左上，腿和脚为下部的分段笔画。",
+      "preserve": "紫色与深色描线；保留原有耳、头、背部和腿脚分段，中央未着色石面透明，最下方长弧形脚仍保留。不得误读成双兔、阴阳旋涡或添加第二个头。"
+    },
+    {
+      "id": "rat", "animal_zh": "鼠", "source": "source-talisman/Rat_Talisman.png", "pose_and_orientation": "单只灰黑色鼠的侧面奔跑姿态，朝右；身体水平伸展，四肢向前后伸出，长尾从后部向左下绕行再沿底部回弯。",
+      "preserve": "灰/黑主体与深色轮廓；尖口鼻、耳朵、眼、胡须/口部线条、奔跑四肢及一条长而弯绕的尾巴。保留头朝右、身体与尾巴形成的横向弧形，不缩短或切断尾巴。"
+    },
+    {
+      "id": "rooster", "animal_zh": "鸡", "source": "source-talisman/Rooster_Talisman.png", "pose_and_orientation": "单只朝右的公鸡，由红色分段笔画组成；头及冠在右上，尾羽在左侧，身体位于右下，脚在下方。",
+      "preserve": "红色主体、深色轮廓与各段负空间；保持头冠、左侧上扬尾羽、右侧身体及下方脚的关系，不连接原有断开的片段。不得增加第二只鸟或误画阴阳旋涡。"
+    },
+    {
+      "id": "sheep", "animal_zh": "羊", "source": "source-talisman/Sheep_Talisman.png", "pose_and_orientation": "单只羊的侧面全身朝右站立；身体横向，头在右上，四条细腿向下，背线呈羊毛起伏。",
+      "preserve": "薄荷绿/青绿色外轮廓与蹄/角分段；羊头、口鼻、短尾、起伏羊毛轮廓及腿部片段。灰色身体内部为未着色石面，须透明，不填白或整块绿色；不改成正脸羊头。"
+    },
+    {
+      "id": "snake", "animal_zh": "蛇", "source": "source-talisman/Snake_Talisman.png", "pose_and_orientation": "单条绿色蛇构成上下起伏的大型 S 形/盘绕姿态；头在左上并朝左，长颈向上弯成拱形，身体向右下绕成多段流线。",
+      "preserve": "亮绿/深绿笔画与深色轮廓；左上蛇头、弯起的颈部、右下盘绕长身及尾尖。保留原图绿色笔画的断口与曲线负空间，不强行连接成连续实心蛇，不拉直或添加鳞片。"
+    },
+    {
+      "id": "tiger", "animal_zh": "虎", "source": "source-talisman/Tiger_Talisman.png", "pose_and_orientation": "两只黑白虎形符号互相回旋构成阴阳式对置图案；较大的虎形环绕左上/上侧，另一只较小虎形位于右下，头部朝相对方向。",
+      "preserve": "黑白高对比填色、深色轮廓和条纹标记；两只虎各自的脸、耳、爪、弯曲躯干及条纹走向。维持双虎的大小层次、彼此朝向、环绕关系与中央分隔/负空间，不简化成单虎或抽象黑白旋涡。"
+    }
+  ]
+}

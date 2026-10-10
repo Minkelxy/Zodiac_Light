@@ -1,0 +1,8 @@
+Use case: precise-object-edit.
+Asset: final restored Ox Talisman emblem, transparent PNG.
+Input images: Image 1 is the ORIGINAL full talisman and has final authority for the nose and all source markings. Image 2 is the old transparent ox cutout, a secondary guide to original painted fragments. Image 3 is the CURRENT restored ox artwork and is the edit target for its smooth line quality, scale, color, horns, ears and head silhouette.
+Task: keep the current restored ox head's orthographic front view, overall shape, blue fill, paired horns, ears, head proportions, charcoal contour and transparent background unchanged. Make one precise correction at the muzzle: remove the two large dark oval/teardrop nostril marks added by the current artwork. The original has a blue nose tip with only a fine dark lower contour line. Restore that plain blue nose-tip area and its subtle lower edge, matching Image 1. Do not put nostrils, holes, dots, eyes, eyebrows or other new interior marks on the nose or face.
+Keep exactly one symmetrical front-facing ox head. Preserve the original's modest feature scale and all existing parts other than the two added nose marks. Smooth antialiased 2D animation illustration, flat blue, restrained charcoal outlines.
+Composition: exact 1024 x 1024 square, centered, longest motif dimension about 820 pixels, clear transparent margin.
+Genuine transparent alpha throughout negative spaces. No talisman, stone, rim, background, text, shadow, glow, base or 3D rendering.
+Avoid: any nostril mark, adding new facial markings, changing horns or ears, changing symmetry or silhouette, adding extra anatomy, filling unpainted stone.

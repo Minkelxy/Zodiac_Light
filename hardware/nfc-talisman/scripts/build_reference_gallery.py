@@ -26,7 +26,7 @@ class LocalLinks(HTMLParser):
 
     def handle_starttag(self, tag, attrs):
         for key, value in attrs:
-            if key in ('href', 'src', 'data-original', 'data-pattern') and value:
+            if key in ('href', 'src', 'data-original', 'data-pattern', 'data-restored') and value:
                 parsed = urlsplit(value)
                 if not parsed.scheme and not parsed.netloc and parsed.path:
                     self.paths.add(unquote(parsed.path))
@@ -44,6 +44,13 @@ def main():
         pattern_manifest = json.loads(pattern_file.read_text(encoding='utf-8-sig'))
         patterns = {item['id']: item for item in pattern_manifest['files']}
         assert set(patterns) == {item['id'] for item in talisman['files']}
+    restored_file = ROOT / 'talisman-restored-v1/manifest.json'
+    restored = {}
+    if restored_file.is_file():
+        restored_manifest = json.loads(restored_file.read_text(encoding='utf-8-sig'))
+        restored = {item['id']: item for item in restored_manifest['files']}
+        assert set(restored) == {item['id'] for item in talisman['files']}
+        assert patterns, 'Restored gallery requires the original-pixel comparison set'
     fronts = []
     for item in talisman['files']:
         path = item.get('path') or item.get('local_path')
@@ -64,10 +71,27 @@ def main():
             raw = (ROOT / pattern_path).read_bytes()
             if hashlib.sha256(raw).hexdigest() != pattern['output_sha256']:
                 raise ValueError('Pattern bytes changed: ' + item['id'])
-            fronts.append(f'''<article class="card pattern-card" data-original="{esc(path)}" data-pattern="{esc(pattern_path)}" data-caption="{esc(caption)}" data-name="{esc(item['animal_zh'])}">
-<a class="image talisman-pattern" href="{esc(pattern_path)}"><img src="{esc(pattern_path)}" alt="{esc(item['animal_zh'])}透明动物图案" loading="lazy"></a>
-<h3>{esc(item['animal_zh'])} · {esc(item['animal_en'])}</h3><p class="image-caption">透明 PNG · 独立动物图案</p>
-<div class="links">{link(pattern_path, '透明图案 PNG')} {link(path, '完整符咒 PNG')} {link(item['file_page'], '图源页面')}</div></article>''')
+            display_path = pattern_path
+            display_caption = '原像素透明 PNG · 保留源图透视'
+            restore_attribute = ''
+            restore_link = ''
+            review_warning = ''
+            if restored:
+                restore = restored[item['id']]
+                display_path = restore['path']
+                if hashlib.sha256((ROOT/display_path).read_bytes()).hexdigest() != restore['output_sha256']:
+                    raise ValueError('Restoration bytes changed: ' + item['id'])
+                assert restore['dimensions'] == [1024, 1024]
+                display_caption = 'v1 修复正视稿 · 1024 × 1024 · 透明'
+                restore_attribute = f' data-restored="{esc(display_path)}"'
+                restore_link = link(display_path, '修复 PNG') + ' '
+                if restore.get('visual_status') == 'needs_refinement':
+                    review_warning = '<p class="review-warning">待精修：' + esc(restore['visual_note']) + '</p>'
+            fronts.append(f'''<article class="card pattern-card" data-original="{esc(path)}" data-pattern="{esc(pattern_path)}"{restore_attribute} data-caption="{esc(caption)}" data-name="{esc(item['animal_zh'])}">
+<a class="image talisman-pattern" href="{esc(display_path)}"><img src="{esc(display_path)}" alt="{esc(item['animal_zh'])}{esc(display_caption)}" loading="lazy"></a>
+<h3>{esc(item['animal_zh'])} · {esc(item['animal_en'])}</h3><p class="image-caption">{esc(display_caption)}</p>
+{review_warning}
+<div class="links">{restore_link}{link(pattern_path, '原像素 PNG')} {link(path, '完整符咒 PNG')} {link(item['file_page'], '图源页面')}</div></article>''')
             continue
         fronts.append(f'''<article class="card">
 <a class="image talisman" href="{esc(path)}"><img src="{esc(path)}" alt="{esc(item['animal_zh'])}符咒正面" loading="lazy"></a>
@@ -96,12 +120,20 @@ nav a,.links a{padding:3px 8px;border:1px solid #384454;border-radius:6px;font-s
 .talisman-pattern{background-color:#eee;background-image:conic-gradient(#ddd 25%,transparent 0 50%,#ddd 0 75%,transparent 0);background-size:24px 24px}
 .mode-switch{display:flex;gap:10px;margin:18px 0}button{font:inherit;color:#bbd6ff;background:#1a2029;border:1px solid #384454;border-radius:6px;padding:6px 12px;cursor:pointer}button[aria-pressed="true"]{color:#101419;background:#bbd6ff;border-color:#bbd6ff}
 .note{border-left:3px solid #bacfe9;padding:12px 18px;background:#1a2029;max-width:1100px}footer{margin-top:36px;border-top:1px solid #384454;padding-top:18px}
+.card .review-warning{color:#f0c27c}
 </style><main><h1>十二符咒与十二星座</h1><p>本地参考素材 · 点击图片查看原尺寸 · 图片与 SVG 可逐项下载</p>
 <nav><a href="#talismans">十二符咒</a><a href="#zodiac">十二星座</a><a href="#sagittarius">射手座八星</a><a href="README.md">说明与来源</a><a href="../reference-collection.zip">完整 ZIP</a></nav>
 <h2 id="talismans">十二符咒正面</h2><p>PNG 保留源文件，不改色、不镜像、不重画。来源图库中的插画用于核对动物轮廓、灰石底座和配色；动画不同镜头也可能存在画法差异。</p><div class="grid">'''
     if patterns:
+        if restored:
+            introduction = '<h2 id="talismans">十二符咒 · 修复正视图案</h2><p>依据原图修复轮廓、校正图案平面透视；保留动物姿态、朝向与分段留白。十二张统一为 1024 × 1024，图案最长边约 820 px。可切换两种原图对照；棋盘格仅用于预览透明区域。</p><div class="mode-switch" role="group" aria-label="符咒图片显示方式"><button type="button" data-mode="restored" aria-pressed="true">修复正视版</button><button type="button" data-mode="pattern" aria-pressed="false">原像素透明版</button><button type="button" data-mode="original" aria-pressed="false">完整符咒</button></div><div class="grid">'
+        else:
+            introduction = '<h2 id="talismans">十二符咒 · 独立动物图案</h2><p>透明 PNG 去掉石质底座和边框；可切换完整符咒作对照。棋盘格只用于显示透明区域，不在图片里。</p><div class="mode-switch" role="group" aria-label="符咒图片显示方式"><button type="button" data-mode="pattern" aria-pressed="true">原像素透明版</button><button type="button" data-mode="original" aria-pressed="false">完整符咒</button></div><div class="grid">'
         body = body.replace('<h2 id="talismans">十二符咒正面</h2><p>PNG 保留源文件，不改色、不镜像、不重画。来源图库中的插画用于核对动物轮廓、灰石底座和配色；动画不同镜头也可能存在画法差异。</p><div class="grid">',
-                            '<h2 id="talismans">十二符咒 · 独立动物图案</h2><p>新增透明 PNG 去掉石质底座和边框；可切换完整符咒作对照。棋盘格只用于显示透明区域，不在图片里。</p><div class="mode-switch" role="group" aria-label="符咒图片显示方式"><button type="button" data-mode="pattern" aria-pressed="true">透明图案</button><button type="button" data-mode="original" aria-pressed="false">完整符咒</button></div><div class="grid">')
+                            introduction)
+    if restored:
+        body = body.replace('<a href="../reference-collection.zip">完整 ZIP</a>', '<a href="../talisman-restored-v1.zip">十二张修复 PNG ZIP</a><a href="../reference-collection.zip">完整素材 ZIP</a>')
+        body = body.replace('<h2 id="talismans">十二符咒 · 修复正视图案</h2>', '<h2 id="talismans">十二符咒 · v1 修复正视稿</h2><p>龙、虎、猴仍有细节偏差，已标注待精修。<a href="talisman-restored-v1/visual-review.md">逐张复核记录</a></p>')
     body += '\n'.join(fronts) + '</div><h2 id="zodiac">十二星座 · Stellarium Modern</h2>'
     body += '<p>暗底浅线预览；透明 SVG 只含星点与连线。北上、东左，按实际星位等比投影。IAU / Sky &amp; Telescope 原星图作为另一种画法对照。</p><div class="grid">'
     body += '\n'.join(charts) + '</div><h2 id="sagittarius">射手座八星茶壶</h2>'
@@ -116,14 +148,15 @@ nav a,.links a{padding:3px 8px;border:1px solid #384454;border-radius:6px;font-s
     if patterns:
         body = body.replace('</main></html>', '''</main><script>
 document.querySelectorAll('[data-mode]').forEach(button=>button.addEventListener('click',()=>{
-  const showPattern=button.dataset.mode==='pattern';
+  const mode=button.dataset.mode, transparent=mode!=='original';
+  const captions={restored:'v1 修复正视稿 · 1024 × 1024 · 透明',pattern:'原像素透明 PNG · 保留源图透视'};
   document.querySelectorAll('[data-mode]').forEach(control=>control.setAttribute('aria-pressed',String(control===button)));
   document.querySelectorAll('.pattern-card').forEach(card=>{
     const anchor=card.querySelector('.image'), img=anchor.querySelector('img');
-    const path=showPattern?card.dataset.pattern:card.dataset.original;
-    anchor.href=path;img.src=path;img.alt=card.dataset.name+(showPattern?'透明动物图案':'完整符咒正面');
-    anchor.classList.toggle('talisman-pattern',showPattern);anchor.classList.toggle('talisman',!showPattern);
-    card.querySelector('.image-caption').textContent=showPattern?'透明 PNG · 独立动物图案':card.dataset.caption+' · 保留源图字节';
+    const path=card.dataset[mode];
+    anchor.href=path;img.src=path;img.alt=card.dataset.name+(transparent?captions[mode]:'完整符咒正面');
+    anchor.classList.toggle('talisman-pattern',transparent);anchor.classList.toggle('talisman',!transparent);
+    card.querySelector('.image-caption').textContent=transparent?captions[mode]:card.dataset.caption+' · 保留源图字节';
   });
 }));
 </script></html>''')
@@ -133,7 +166,7 @@ document.querySelectorAll('[data-mode]').forEach(button=>button.addEventListener
         if path.is_file() and path.name != 'collection-manifest.json':
             data = path.read_bytes()
             rows.append({'path':path.relative_to(ROOT).as_posix(),'bytes':len(data),'sha256':hashlib.sha256(data).hexdigest()})
-    report = {'generated_utc':datetime.now(timezone.utc).isoformat(),'talisman_png_count':12,'talisman_pattern_png_count':len(patterns),'zodiac_main_chart_count':12,'files':rows}
+    report = {'generated_utc':datetime.now(timezone.utc).isoformat(),'talisman_png_count':12,'talisman_pattern_png_count':len(patterns),'talisman_restored_png_count':len(restored),'zodiac_main_chart_count':12,'files':rows}
     (ROOT / 'collection-manifest.json').write_bytes((json.dumps(report,ensure_ascii=False,indent=2)+'\n').encode('utf-8'))
     target = ROOT.parent / 'reference-collection.zip'
     with zipfile.ZipFile(target, 'w', zipfile.ZIP_DEFLATED) as bundle:
@@ -153,7 +186,7 @@ document.querySelectorAll('[data-mode]').forEach(button=>button.addEventListener
         if not (ROOT / relative).is_file():
             raise FileNotFoundError('Broken gallery link: ' + relative)
     print(json.dumps({'gallery':str(ROOT/'index.html'),'files':len(rows)+1,
-                      'talisman_patterns':len(patterns),'local_links_checked':len(links.paths),
+                      'talisman_patterns':len(patterns),'talisman_restored':len(restored),'local_links_checked':len(links.paths),
                       'zip_matches_disk':True,'zip_bytes':target.stat().st_size},ensure_ascii=False))
 
 

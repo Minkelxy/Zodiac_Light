@@ -1,0 +1,9 @@
+Use case: precise-object-edit
+Asset type: restored transparent 2D talisman emblem
+Input images: Image 1 is the authoritative Rooster source and determines exactly one bird, its red painted fragments, topology, pose and negative spaces. Image 2 is the old cutout and secondary reference only. Image 3 is a Horse restoration style guide for clean restrained contours only.
+Primary request: faithfully restore the one original rooster glyph from Image 1 on a straight-on orthographic talisman face plane. This is not a redesign: rebuild the fragmented red symbol from its visible contour paths, keeping the original fragments disconnected.
+Subject and layout: exactly one red rooster facing right. The small head and comb are at upper right; the body is low on the right; the raised tail feathers sweep left/up. Preserve the source's separate curved tail/wing/body/leg pieces and their exact relative placement. Keep gray gaps between red parts completely transparent. Never add a second rooster, second head, or connected full bird silhouette.
+Style/palette: source-matched muted crimson red fills and fine charcoal outlines, clean crisp 2D animation restoration, restrained consistent line weight matching Image 3 only in finish.
+Composition: centered, longest emblem dimension about 820 px on a square 1024 × 1024 canvas with generous transparent padding.
+Backdrop: true transparent alpha.
+Constraints: carefully preserve the rooster's one head, comb, left raised tail, right-lower body and feet arrangement from Image 1; preserve red fragment boundaries, gaps, and gray/unpainted stone negative areas as transparency. Keep the rooster's side orientation, do not mirror or turn it frontal. No added feathers, details, anatomy, ground, text, shadow, stone, rim or background.

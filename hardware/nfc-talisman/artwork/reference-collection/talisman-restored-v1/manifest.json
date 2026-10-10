@@ -1,0 +1,736 @@
+{
+  "generated_utc": "2026-10-10T12:42:59.409654+00:00",
+  "title": "十二符咒 · 修复正视透明 PNG · v1",
+  "tool": "Native ImageGen; separate reference-guided restoration for each animal",
+  "method": "Reconstruct original motif, rectify the talisman face plane; preserve animal pose. Pillow performs transparent-margin crop, uniform resize and canvas placement only.",
+  "limitations": "Reference-based restoration from 200×141 originals, not an exact recovery of lost pixels or authoritative animation production art. No change to PCB or manufacturing geometry.",
+  "canvas_px": [
+    1024,
+    1024
+  ],
+  "target_longest_extent_px": 820,
+  "alpha_bbox_threshold": 8,
+  "files": [
+    {
+      "id": "rat",
+      "animal_en": "Rat",
+      "animal_zh": "鼠",
+      "path": "talisman-restored-v1/rat-restored.png",
+      "source_path": "source-talisman/Rat_Talisman.png",
+      "source_page": "https://jackiechanadventures.fandom.com/wiki/File:Rat_Talisman.png",
+      "source_sha256": "bd422075c29a27d87e06740ebce47e0185e620c341991c2c02d108285cb2f957",
+      "native_path": "talisman-restored-v1/raw/rat-native.png",
+      "native_sha256": "c6268a867ee3a9ca8d4b4446204cca5a9fb683417c84abcc431dca63f07ed3de",
+      "native_dimensions": [
+        1254,
+        1254
+      ],
+      "prompt_path": "talisman-restored-v1/raw/rat-prompt.txt",
+      "prompt_sha256": "e6e0d52d8cb6478014a1736e8a246b8e11cb9cb8e191a595998818c42edf3df0",
+      "output_sha256": "e3f2f7b48ef5a9e4414f23fd6efb5b34fe1150e924caece39bab1c0412021872",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "bytes": 237563,
+      "visible_bounds_xyxy": [
+        104,
+        247,
+        921,
+        775
+      ],
+      "visual_status": "reviewed_draft",
+      "visual_note": "保留右向奔跑、弯尾和肢体留白；曲线比低分辨率源图更规整。",
+      "alpha_nonzero_bounds_xyxy": [
+        102,
+        246,
+        922,
+        777
+      ],
+      "normalization": {
+        "native_core_bounds_alpha_ge_8": [
+          147,
+          314,
+          1210,
+          1001
+        ],
+        "crop_bounds_xyxy": [
+          145,
+          312,
+          1212,
+          1003
+        ],
+        "uniform_scale": 0.7685098406747891,
+        "resized_dimensions": [
+          820,
+          531
+        ],
+        "placement_xy": [
+          102,
+          246
+        ]
+      }
+    },
+    {
+      "id": "ox",
+      "animal_en": "Ox",
+      "animal_zh": "牛",
+      "path": "talisman-restored-v1/ox-restored.png",
+      "source_path": "source-talisman/Ox_Talisman.png",
+      "source_page": "https://jackiechanadventures.fandom.com/wiki/File:Ox_Talisman.png",
+      "source_sha256": "873ed3864f96879ea1528cad541d580424d5dc633c9f602a0ee96495d2cbb2f7",
+      "native_path": "talisman-restored-v1/raw/ox-native.png",
+      "native_sha256": "26e4794a83a4c81fd473788a12f833d8bd6f2c1e1006279095e4208da08248ae",
+      "native_dimensions": [
+        1254,
+        1254
+      ],
+      "prompt_path": "talisman-restored-v1/raw/ox-prompt.txt",
+      "prompt_sha256": "ab6b8df2a5ff59ae243ac54292103c955070c2bf692a06d41ec168bf48f17ed9",
+      "output_sha256": "55af10e27e3624ce5425b08419d7de8a03a51cac33d56518ba438204870145e4",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "bytes": 325576,
+      "visible_bounds_xyxy": [
+        123,
+        103,
+        902,
+        919
+      ],
+      "visual_status": "reviewed_draft",
+      "visual_note": "保留蓝色正面牛头、双角双耳；已去掉生成初稿新增的大鼻孔。",
+      "alpha_nonzero_bounds_xyxy": [
+        121,
+        102,
+        903,
+        922
+      ],
+      "normalization": {
+        "native_core_bounds_alpha_ge_8": [
+          120,
+          106,
+          1133,
+          1168
+        ],
+        "crop_bounds_xyxy": [
+          118,
+          104,
+          1135,
+          1170
+        ],
+        "uniform_scale": 0.7692307692307693,
+        "resized_dimensions": [
+          782,
+          820
+        ],
+        "placement_xy": [
+          121,
+          102
+        ]
+      }
+    },
+    {
+      "id": "tiger",
+      "animal_en": "Tiger",
+      "animal_zh": "虎",
+      "path": "talisman-restored-v1/tiger-restored.png",
+      "source_path": "source-talisman/Tiger_Talisman.png",
+      "source_page": "https://jackiechanadventures.fandom.com/wiki/File:Tiger_Talisman.png",
+      "source_sha256": "d1fdf943305e743b7c5d09532ef35c8bc1df81286096dae1fa62da620da9c8ae",
+      "native_path": "talisman-restored-v1/raw/tiger-native.png",
+      "native_sha256": "18059b90476e39fe77eebcc31110d09992f93bd59eef0792737947ac07bc5f17",
+      "native_dimensions": [
+        1254,
+        1254
+      ],
+      "prompt_path": "talisman-restored-v1/raw/tiger-prompt.txt",
+      "prompt_sha256": "c27e71df96c931465be985a88e58a0e10b17d8f9480b9d181d97dddaddca3335",
+      "output_sha256": "3083923b39e4165f8b504030fd3faaa1ef212e59b62e716b10bc4c1467c2da60",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "bytes": 610531,
+      "visible_bounds_xyxy": [
+        104,
+        121,
+        921,
+        902
+      ],
+      "visual_status": "needs_refinement",
+      "visual_note": "双虎和相对朝向保留；部分黑白碎笔扩大成连续形体，条纹与小细节仍需精修。",
+      "alpha_nonzero_bounds_xyxy": [
+        102,
+        120,
+        922,
+        904
+      ],
+      "normalization": {
+        "native_core_bounds_alpha_ge_8": [
+          134,
+          129,
+          1131,
+          1082
+        ],
+        "crop_bounds_xyxy": [
+          132,
+          127,
+          1133,
+          1084
+        ],
+        "uniform_scale": 0.8191808191808192,
+        "resized_dimensions": [
+          820,
+          784
+        ],
+        "placement_xy": [
+          102,
+          120
+        ]
+      }
+    },
+    {
+      "id": "rabbit",
+      "animal_en": "Rabbit",
+      "animal_zh": "兔",
+      "path": "talisman-restored-v1/rabbit-restored.png",
+      "source_path": "source-talisman/Rabbit_Talisman.png",
+      "source_page": "https://jackiechanadventures.fandom.com/wiki/File:Rabbit_Talisman.png",
+      "source_sha256": "94ba6ef0962939225cd2d34ad4b0da4b59dde3321aef45d599ae0944fc2abb10",
+      "native_path": "talisman-restored-v1/raw/rabbit-native.png",
+      "native_sha256": "fcf5be8ae9a9ef96ca042a6a4d5f4ee69775bc28396cb1b3689897ec78d3aab7",
+      "native_dimensions": [
+        1254,
+        1254
+      ],
+      "prompt_path": "talisman-restored-v1/raw/rabbit-prompt.txt",
+      "prompt_sha256": "0fef914f6a4746f9ffeeb9a152e9bd3052d2b18054c9ceed030aebf6270330b2",
+      "output_sha256": "94e064eb2e2132b2df0f3b37e0b75ce2f7b0fba8309ecd11ef492b79aa73e13f",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "bytes": 251267,
+      "visible_bounds_xyxy": [
+        103,
+        208,
+        921,
+        815
+      ],
+      "visual_status": "reviewed_draft",
+      "visual_note": "右向单兔、耳头和分段腿脚保留；小眼标记的大小仍是重建解释。",
+      "alpha_nonzero_bounds_xyxy": [
+        102,
+        207,
+        922,
+        816
+      ],
+      "normalization": {
+        "native_core_bounds_alpha_ge_8": [
+          97,
+          238,
+          1203,
+          1059
+        ],
+        "crop_bounds_xyxy": [
+          95,
+          236,
+          1205,
+          1061
+        ],
+        "uniform_scale": 0.7387387387387387,
+        "resized_dimensions": [
+          820,
+          609
+        ],
+        "placement_xy": [
+          102,
+          207
+        ]
+      }
+    },
+    {
+      "id": "dragon",
+      "animal_en": "Dragon",
+      "animal_zh": "龙",
+      "path": "talisman-restored-v1/dragon-restored.png",
+      "source_path": "source-talisman/Dragon_Talisman.png",
+      "source_page": "https://jackiechanadventures.fandom.com/wiki/File:Dragon_Talisman.png",
+      "source_sha256": "cf50cd4fff43edbafff6f25d209aaf284e48f5bd4b4d3879640dfaa8369d0760",
+      "native_path": "talisman-restored-v1/raw/dragon-native.png",
+      "native_sha256": "639e622e25da83cf971f21c4f1c2aeb50ff968a11c981ca1766553dc273fc587",
+      "native_dimensions": [
+        1254,
+        1254
+      ],
+      "prompt_path": "talisman-restored-v1/raw/dragon-prompt.txt",
+      "prompt_sha256": "6c70fcf945e029fca2703181ebf446a588cd6a1608ecaabd6594066ba9ca988c",
+      "output_sha256": "66f7481ff623bcb360dec7642e45db276cd55a5a9e2f15929b91fbd5ea2beec9",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "bytes": 335598,
+      "visible_bounds_xyxy": [
+        193,
+        103,
+        830,
+        921
+      ],
+      "visual_status": "needs_refinement",
+      "visual_note": "主要红色片段与环绕关系保留；尖端、内扇形与下方片段仍比源图夸张，多次生成后尚未精确匹配。",
+      "alpha_nonzero_bounds_xyxy": [
+        192,
+        102,
+        831,
+        922
+      ],
+      "normalization": {
+        "native_core_bounds_alpha_ge_8": [
+          203,
+          83,
+          1050,
+          1171
+        ],
+        "crop_bounds_xyxy": [
+          201,
+          81,
+          1052,
+          1173
+        ],
+        "uniform_scale": 0.7509157509157509,
+        "resized_dimensions": [
+          639,
+          820
+        ],
+        "placement_xy": [
+          192,
+          102
+        ]
+      }
+    },
+    {
+      "id": "snake",
+      "animal_en": "Snake",
+      "animal_zh": "蛇",
+      "path": "talisman-restored-v1/snake-restored.png",
+      "source_path": "source-talisman/Snake_Talisman.png",
+      "source_page": "https://jackiechanadventures.fandom.com/wiki/File:Snake_Talisman.png",
+      "source_sha256": "0dcf12ea59825066302865521076ec312f46988d60f853a76bfd4243207a5752",
+      "native_path": "talisman-restored-v1/raw/snake-native.png",
+      "native_sha256": "6dcb852bab3647e6f5a3e211f2ca5d3a5778710b549ec4a6eb3b8ec02e28e91e",
+      "native_dimensions": [
+        1254,
+        1254
+      ],
+      "prompt_path": "talisman-restored-v1/raw/snake-prompt.txt",
+      "prompt_sha256": "54afbf594d2efb2c1682bf603921bb001d845544498f01d355259ab3ddd2566a",
+      "output_sha256": "8c3f0eb79944d3213be8d0e08f66befef5916e99b39884f814bb8f07e170c0bf",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "bytes": 371648,
+      "visible_bounds_xyxy": [
+        104,
+        120,
+        919,
+        903
+      ],
+      "visual_status": "reviewed_draft",
+      "visual_note": "保留左上头部、S形颈部和分开的盘绕笔画；色带更宽、曲线更规整。",
+      "alpha_nonzero_bounds_xyxy": [
+        102,
+        119,
+        922,
+        905
+      ],
+      "normalization": {
+        "native_core_bounds_alpha_ge_8": [
+          104,
+          109,
+          1200,
+          1159
+        ],
+        "crop_bounds_xyxy": [
+          102,
+          107,
+          1202,
+          1161
+        ],
+        "uniform_scale": 0.7454545454545455,
+        "resized_dimensions": [
+          820,
+          786
+        ],
+        "placement_xy": [
+          102,
+          119
+        ]
+      }
+    },
+    {
+      "id": "horse",
+      "animal_en": "Horse",
+      "animal_zh": "马",
+      "path": "talisman-restored-v1/horse-restored.png",
+      "source_path": "source-talisman/Horse_Talisman.png",
+      "source_page": "https://jackiechanadventures.fandom.com/wiki/File:Horse_Talisman.png",
+      "source_sha256": "5dfc7db6d0148310fa678244565070bc9072ca36d339cd65af03522ba52ed390",
+      "native_path": "talisman-restored-v1/raw/horse-native.png",
+      "native_sha256": "c597d4faeb6a8094fb5bc044b9da31ae12c1c94df8cd7fc333c5d3422edbc383",
+      "native_dimensions": [
+        1254,
+        1254
+      ],
+      "prompt_path": "talisman-restored-v1/raw/horse-prompt.txt",
+      "prompt_sha256": "273338e3203b780174211e79614f42cdc5cb905bdd26876173a874fcfc8bf829",
+      "output_sha256": "aed206f55d77027dabec9e7fb9d825754dd1e09c78a93a255507e4a8e1acb690",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "bytes": 327145,
+      "visible_bounds_xyxy": [
+        104,
+        153,
+        921,
+        872
+      ],
+      "visual_status": "reviewed_draft",
+      "visual_note": "保留左向紫色六块主分段；面部紫块来自源图着色片段，大块未着色头颈内部透明。",
+      "alpha_nonzero_bounds_xyxy": [
+        102,
+        151,
+        922,
+        873
+      ],
+      "normalization": {
+        "native_core_bounds_alpha_ge_8": [
+          76,
+          157,
+          1190,
+          1138
+        ],
+        "crop_bounds_xyxy": [
+          74,
+          155,
+          1192,
+          1140
+        ],
+        "uniform_scale": 0.7334525939177102,
+        "resized_dimensions": [
+          820,
+          722
+        ],
+        "placement_xy": [
+          102,
+          151
+        ]
+      }
+    },
+    {
+      "id": "sheep",
+      "animal_en": "Sheep",
+      "animal_zh": "羊",
+      "path": "talisman-restored-v1/sheep-restored.png",
+      "source_path": "source-talisman/Sheep_Talisman.png",
+      "source_page": "https://jackiechanadventures.fandom.com/wiki/File:Sheep_Talisman.png",
+      "source_sha256": "e1d2d7bce49639cf4e05bcc333e014db5f313292ebbfdfc7ec47015248a2c791",
+      "native_path": "talisman-restored-v1/raw/sheep-native.png",
+      "native_sha256": "ffe7e92eb05a9b4ebf729d681b7dbee2d63fbd933af7c87b3e434dc0bc16308e",
+      "native_dimensions": [
+        1254,
+        1254
+      ],
+      "prompt_path": "talisman-restored-v1/raw/sheep-prompt.txt",
+      "prompt_sha256": "873339d4228395fc4684347ee3589a7b0aaf11c59d05729e2cd8af2c7597602b",
+      "output_sha256": "2777cf6144dbae2ffbf3a07a58bf8f2747e98e3f2baec33c594cb1856a039c77",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "bytes": 214798,
+      "visible_bounds_xyxy": [
+        104,
+        208,
+        920,
+        815
+      ],
+      "visual_status": "reviewed_draft",
+      "visual_note": "已纠正初稿实心脸部；头部和身体内部透明，分散头部细笔仍需对照。",
+      "alpha_nonzero_bounds_xyxy": [
+        102,
+        206,
+        922,
+        817
+      ],
+      "normalization": {
+        "native_core_bounds_alpha_ge_8": [
+          274,
+          379,
+          1088,
+          985
+        ],
+        "crop_bounds_xyxy": [
+          272,
+          377,
+          1090,
+          987
+        ],
+        "uniform_scale": 1.0024449877750612,
+        "resized_dimensions": [
+          820,
+          611
+        ],
+        "placement_xy": [
+          102,
+          206
+        ]
+      }
+    },
+    {
+      "id": "monkey",
+      "animal_en": "Monkey",
+      "animal_zh": "猴",
+      "path": "talisman-restored-v1/monkey-restored.png",
+      "source_path": "source-talisman/Monkey_Talisman.png",
+      "source_page": "https://jackiechanadventures.fandom.com/wiki/File:Monkey_Talisman.png",
+      "source_sha256": "48dc4bd76d84e92d5562abce21ce334cb869a731d026f866ab6420cb2d6f5fa8",
+      "native_path": "talisman-restored-v1/raw/monkey-native.png",
+      "native_sha256": "767e8ba8df2a896f740347142b96158f966bc5f37dbf9bf6b5c935a3ba1a1bdd",
+      "native_dimensions": [
+        1254,
+        1254
+      ],
+      "prompt_path": "talisman-restored-v1/raw/monkey-prompt.txt",
+      "prompt_sha256": "c535eec71617b50683a94c05eeacbd165e4784f32cf1d9f91ecca4a409c89496",
+      "output_sha256": "ece98dd5cace82762cff24a3fcf394ab51ac389f1510bb89ea3ab1bc1a00258e",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "bytes": 372353,
+      "visible_bounds_xyxy": [
+        124,
+        104,
+        900,
+        920
+      ],
+      "visual_status": "needs_refinement",
+      "visual_note": "坐姿、左侧卷尾及肢体空隙保留；卷尾和躯干笔画仍明显偏粗。",
+      "alpha_nonzero_bounds_xyxy": [
+        123,
+        102,
+        901,
+        922
+      ],
+      "normalization": {
+        "native_core_bounds_alpha_ge_8": [
+          231,
+          166,
+          1141,
+          1125
+        ],
+        "crop_bounds_xyxy": [
+          229,
+          164,
+          1143,
+          1127
+        ],
+        "uniform_scale": 0.8515057113187954,
+        "resized_dimensions": [
+          778,
+          820
+        ],
+        "placement_xy": [
+          123,
+          102
+        ]
+      }
+    },
+    {
+      "id": "rooster",
+      "animal_en": "Rooster",
+      "animal_zh": "鸡",
+      "path": "talisman-restored-v1/rooster-restored.png",
+      "source_path": "source-talisman/Rooster_Talisman.png",
+      "source_page": "https://jackiechanadventures.fandom.com/wiki/File:Rooster_Talisman.png",
+      "source_sha256": "827ed7f2fe95e939440640331e4e8a882e49b30309b660e5eead5824912ac082",
+      "native_path": "talisman-restored-v1/raw/rooster-native.png",
+      "native_sha256": "9c3d9bb8fc1a0137ee8f4651492e999059d11061e0c85cd6c04150ac77f1fe3b",
+      "native_dimensions": [
+        1254,
+        1254
+      ],
+      "prompt_path": "talisman-restored-v1/raw/rooster-prompt.txt",
+      "prompt_sha256": "04d3d4f9c46a281d6885d28e5048eeafd5ea7559fbe4fb1a23ab44ddf2589279",
+      "output_sha256": "17ba72e0d25521a8e87b5075e10f9b02415264a162621485358c08c9862f9258",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "bytes": 370794,
+      "visible_bounds_xyxy": [
+        104,
+        122,
+        920,
+        901
+      ],
+      "visual_status": "reviewed_draft",
+      "visual_note": "单鸡、右上头冠/左尾/右下身体/下方脚保留；部分红块扩大。",
+      "alpha_nonzero_bounds_xyxy": [
+        102,
+        120,
+        921,
+        902
+      ],
+      "normalization": {
+        "native_core_bounds_alpha_ge_8": [
+          197,
+          217,
+          1067,
+          1048
+        ],
+        "crop_bounds_xyxy": [
+          195,
+          215,
+          1069,
+          1050
+        ],
+        "uniform_scale": 0.9382151029748284,
+        "resized_dimensions": [
+          820,
+          783
+        ],
+        "placement_xy": [
+          102,
+          120
+        ]
+      }
+    },
+    {
+      "id": "dog",
+      "animal_en": "Dog",
+      "animal_zh": "狗",
+      "path": "talisman-restored-v1/dog-restored.png",
+      "source_path": "source-talisman/Dog_Talisman.png",
+      "source_page": "https://jackiechanadventures.fandom.com/wiki/File:Dog_Talisman.png",
+      "source_sha256": "009392d934edc1990968c0a95371e5c2335f9504621ce69666eafb7010138234",
+      "native_path": "talisman-restored-v1/raw/dog-native.png",
+      "native_sha256": "0ae98d5b2c5fa42786f8ac4e3cbbfe7bd2ae0821ba240726cee874894e9de5b3",
+      "native_dimensions": [
+        1254,
+        1254
+      ],
+      "prompt_path": "talisman-restored-v1/raw/dog-prompt.txt",
+      "prompt_sha256": "224cee2280c153913516477b63845eca4cd9833b346774d2442fff996d204571",
+      "output_sha256": "704c07865962ea9f45f522822243c33e4292c074ff02ffa7292eb9bc1f3658d3",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "bytes": 348724,
+      "visible_bounds_xyxy": [
+        114,
+        104,
+        908,
+        920
+      ],
+      "visual_status": "reviewed_draft",
+      "visual_note": "右向站姿、四腿、卷尾及透明躯干保留；胸颈小片和线宽需对照。",
+      "alpha_nonzero_bounds_xyxy": [
+        113,
+        102,
+        910,
+        922
+      ],
+      "normalization": {
+        "native_core_bounds_alpha_ge_8": [
+          234,
+          179,
+          1103,
+          1073
+        ],
+        "crop_bounds_xyxy": [
+          232,
+          177,
+          1105,
+          1075
+        ],
+        "uniform_scale": 0.9131403118040089,
+        "resized_dimensions": [
+          797,
+          820
+        ],
+        "placement_xy": [
+          113,
+          102
+        ]
+      }
+    },
+    {
+      "id": "pig",
+      "animal_en": "Pig",
+      "animal_zh": "猪",
+      "path": "talisman-restored-v1/pig-restored.png",
+      "source_path": "source-talisman/Pig_Talisman.png",
+      "source_page": "https://jackiechanadventures.fandom.com/wiki/File:Pig_Talisman.png",
+      "source_sha256": "f62324ec4d260aa5bdf0580c6c3079bd15244034a81a183d78231e966a9035d6",
+      "native_path": "talisman-restored-v1/raw/pig-native.png",
+      "native_sha256": "48a39e0ea9e9ff907b1672ac62b430c947137e9c1f8df8ce4c0410e2f4bb49c1",
+      "native_dimensions": [
+        1254,
+        1254
+      ],
+      "prompt_path": "talisman-restored-v1/raw/pig-prompt.txt",
+      "prompt_sha256": "ca697a3a57d04e8104d4bbbe6a17d05e00567ab401882a8ab9e2f6ef1ea6079f",
+      "output_sha256": "259b60093f3cf322f7afc0d7905a4b864914179a64b8179386fd5ced2ee72f0b",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "bytes": 368561,
+      "visible_bounds_xyxy": [
+        102,
+        111,
+        920,
+        910
+      ],
+      "visual_status": "reviewed_draft",
+      "visual_note": "上耳带、左侧鼻口片、右侧弧及下方弧保持参考相对位置，未做整体镜像；描线与填色更规整。",
+      "alpha_nonzero_bounds_xyxy": [
+        102,
+        110,
+        920,
+        913
+      ],
+      "normalization": {
+        "native_core_bounds_alpha_ge_8": [
+          315,
+          220,
+          995,
+          886
+        ],
+        "crop_bounds_xyxy": [
+          313,
+          218,
+          997,
+          888
+        ],
+        "uniform_scale": 1.1988304093567252,
+        "resized_dimensions": [
+          820,
+          803
+        ],
+        "placement_xy": [
+          102,
+          110
+        ]
+      }
+    }
+  ],
+  "visual_release_status": "Reference-guided restoration drafts; Dragon, Tiger and Monkey need finer fidelity work. Not approved as exact final reproductions."
+}

@@ -1,0 +1,21 @@
+{
+  "generated_utc": "2026-10-10T12:42:59.409654+00:00",
+  "passed": true,
+  "files_checked": 12,
+  "checks": [
+    "All twelve unique animal ids",
+    "Original-source hashes unchanged",
+    "RGBA PNG, 1024×1024, true alpha transparency",
+    "Transparent corners and at least 100 px margins",
+    "Uniform scaling only, 820 px longest content extent within 8 px",
+    "Centered content bounding boxes within 3 px",
+    "Selected native outputs and exact prompts archived"
+  ],
+  "scope": "File/layout checks only. Visual fidelity remains draft; details in visual-review.md and per-image manifest notes.",
+  "visual_final_approval": false,
+  "needs_refinement": [
+    "dragon",
+    "monkey",
+    "tiger"
+  ]
+}

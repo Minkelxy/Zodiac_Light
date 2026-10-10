@@ -1,0 +1,9 @@
+Use case: precise-object-edit.
+Asset: restored Rabbit Talisman emblem, genuinely transparent PNG for PCB artwork.
+Input images: Image 1 is the ORIGINAL full talisman and is authoritative for the motif, stroke count, color and plane perspective. Image 2 is the old cutout, secondary guide to original fragments. Image 3 is the horse pilot and a line-quality reference only.
+Rectify the talisman's FACE PLANE to a flat, orthographic, straight-on view, removing stone-plane tilt and foreshortening. Keep the original rabbit right-facing; do not alter its pose.
+Exactly ONE rabbit, constructed from the purple painted fragments visible in Image 1: upper-right head and long ears, upper-left arcing back, separate lower legs/feet, and the long low curved foot at the bottom. Preserve all source separations and gaps. The broad gray center is unpainted stone and must be transparent; do not add a central crescent or solid body shape. Do not connect the marks. Keep the source's simple small dark contour only; there is no bright white eye in the original, so do not add one or enlarge any facial mark.
+Style: clean smooth 2D animation restoration, crisp antialiased edges, flat source-matched purple fills and restrained charcoal outlines. No gradient, gloss, highlights, extra anatomy, ornament, new facial features or decorative linework.
+Composition: one complete emblem centered on exact 1024 x 1024 square, longest dimension about 820 pixels, transparent margin. Genuine alpha throughout gaps and unpainted areas.
+No talisman, stone, octagon, rim, side, background, text, shadow, glow, base or 3D.
+Avoid: second animal/head, bright white eye, central crescent/body, filled gray stone, joined fragments, changed direction, gradients or new details.

@@ -1,0 +1,8 @@
+Use case: precise-object-edit
+Asset: one transparent restoration of the Monkey talisman glyph.
+References: Image 1 is the sole authority for geometry, orientation and brown paint. Image 2 shows that same glyph in the old cutout and confirms its original separations. Copy the glyph's proportions and positions; do not use stylistic inspiration from other animals.
+Request: remove only the stone and its perspective. Redraw the existing brown painted paths cleanly on a flat front-facing 2D plane, preserving the monkey's own side pose. This should look like the same original glyph at higher clarity.
+Geometry: one small head near upper right; compact bent body at lower right; thin separate arm and leg strokes on the right; one narrow tail on the left, rising from the lower portion, curving to the upper left and ending in the small inward spiral. Keep the tail's width relative to the overall glyph the same as in Image 1; it is a fine band, not a broad ribbon or ring. Keep the exact gaps between head, limb strokes, torso and tail. Retain only tiny original dark marks on the head; no new face details.
+Appearance: muted reddish ochre-brown paint, narrow charcoal outline close to the original stroke-to-symbol ratio, smooth antialiased edges, flat fills without gradients.
+Output: centered glyph on a 1024 × 1024 true transparent PNG canvas; overall symbol about 820 px at maximum.
+Leave transparent: all gray stone, all stone face inside outlines, and every original unpainted gap. Do not thicken any contour, close openings, enlarge the spiral, connect fragments, add anatomy, fur, decorations, text, shadows, background or talisman. Do not mirror or make the monkey frontal.

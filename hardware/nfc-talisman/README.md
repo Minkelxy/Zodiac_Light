@@ -57,4 +57,4 @@ python hardware/nfc-talisman/scripts/archive_check_summary.py
 
 当前 ERC/DRC 检查摘要与原生源文件哈希归档于 [`eda/check-summary.json`](eda/check-summary.json)，可用 `scripts/archive_check_summary.py` 重建；摘要标为 `current_draft`，并非制造放行。只读铜审计 `scripts/audit_native_copper.py` 与草案 CAM 审计 `scripts/audit_manufacturing_draft.py` 分别输出 `electrical/native-copper-audit.json` 和 `manufacturing/draft/cam-audit.json`。只有在 native 快照和导出 manifest 对应同一版设计后才运行/采信审计；这些本地离线审计不连接或修改 live 嘉立创EDA。
 
-2026-10-10：新增 [十二符咒与十二星座素材索引](artwork/reference-collection/index.html)、[来源说明](artwork/reference-collection/README.md) 与 [ZIP整包](artwork/reference-collection.zip)。符咒提供完整源 PNG 和十二张独立动物透明 PNG，可在索引中切换对照；透明版采用原像素蒙版，未重绘，保留 200×141 画布及原配色/朝向。星图有可编辑 SVG；本轮未改 EDA/制造设计。
+2026-10-10：[十二符咒与十二星座素材索引](artwork/reference-collection/index.html)、[来源说明](artwork/reference-collection/README.md) 与 [ZIP整包](artwork/reference-collection.zip) 提供完整源 PNG、原像素透明版及 [十二张修复正视透明 PNG](artwork/reference-collection/talisman-restored-v1/README.md)。v1 修复稿使用原生 ImageGen 依据原图重建轮廓、校正图案承载平面，以保留动物姿态与分段留白为约束，统一 1024×1024、最长边约 820 px。**龙、虎、猴仍有细节偏差，待精修**；逐张复核与文件/布局验证分别记录，不视为全部准确还原完成。索引默认显示修复稿，可切换两种原图作对照；原图、提示词、生成原稿和输出哈希均归档。星图保留原可编辑 SVG；本轮未改 EDA/制造设计，马图仍由用户手动导入。
