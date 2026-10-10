@@ -1,0 +1,296 @@
+{
+  "generated_utc": "2026-10-10T09:41:39.206202+00:00",
+  "title": "十二符咒独立动物图案 · 原像素透明 PNG",
+  "method": "Deterministic source-pixel alpha masking; no redraw, resampling, or mirroring.",
+  "limitations": "200×141 source canvas with original perspective. These are raster references, not orthographic manufacturing vectors. Antialiased source edge pixels retain their original colour.",
+  "files": [
+    {
+      "id": "rat",
+      "animal_en": "Rat",
+      "animal_zh": "鼠",
+      "path": "talisman-patterns/rat-pattern.png",
+      "source_path": "source-talisman/Rat_Talisman.png",
+      "source_sha256": "bd422075c29a27d87e06740ebce47e0185e620c341991c2c02d108285cb2f957",
+      "source_page": "https://jackiechanadventures.fandom.com/wiki/File:Rat_Talisman.png",
+      "output_sha256": "16deeab3030ccf1857bc3a7c82ac1c690853ac02a7d78ddcf2f5f0234aea3e3d",
+      "dimensions": [
+        200,
+        141
+      ],
+      "bytes": 31205,
+      "visible_pixels": 2285,
+      "visible_bounds_xyxy": [
+        59,
+        30,
+        165,
+        112
+      ],
+      "method": "Original source RGB with reviewed binary alpha mask",
+      "mask_file": "talisman-patterns/pixel-masks.json"
+    },
+    {
+      "id": "ox",
+      "animal_en": "Ox",
+      "animal_zh": "牛",
+      "path": "talisman-patterns/ox-pattern.png",
+      "source_path": "source-talisman/Ox_Talisman.png",
+      "source_sha256": "873ed3864f96879ea1528cad541d580424d5dc633c9f602a0ee96495d2cbb2f7",
+      "source_page": "https://jackiechanadventures.fandom.com/wiki/File:Ox_Talisman.png",
+      "output_sha256": "cc70f0e671c85775b54b67043d829412599d06b9d6994aab673628434759bb09",
+      "dimensions": [
+        200,
+        141
+      ],
+      "bytes": 31342,
+      "visible_pixels": 2794,
+      "visible_bounds_xyxy": [
+        65,
+        27,
+        149,
+        125
+      ],
+      "method": "Original source RGB with reviewed binary alpha mask",
+      "mask_file": "talisman-patterns/pixel-masks.json"
+    },
+    {
+      "id": "tiger",
+      "animal_en": "Tiger",
+      "animal_zh": "虎",
+      "path": "talisman-patterns/tiger-pattern.png",
+      "source_path": "source-talisman/Tiger_Talisman.png",
+      "source_sha256": "d1fdf943305e743b7c5d09532ef35c8bc1df81286096dae1fa62da620da9c8ae",
+      "source_page": "https://jackiechanadventures.fandom.com/wiki/File:Tiger_Talisman.png",
+      "output_sha256": "64e8708c4ae0cd0ad13c6ec0585ab81f0584cb537bf98ef5f24640c4dae4e365",
+      "dimensions": [
+        200,
+        141
+      ],
+      "bytes": 37569,
+      "visible_pixels": 5086,
+      "visible_bounds_xyxy": [
+        62,
+        22,
+        166,
+        121
+      ],
+      "method": "Original source RGB with reviewed binary alpha mask",
+      "mask_file": "talisman-patterns/pixel-masks.json"
+    },
+    {
+      "id": "rabbit",
+      "animal_en": "Rabbit",
+      "animal_zh": "兔",
+      "path": "talisman-patterns/rabbit-pattern.png",
+      "source_path": "source-talisman/Rabbit_Talisman.png",
+      "source_sha256": "94ba6ef0962939225cd2d34ad4b0da4b59dde3321aef45d599ae0944fc2abb10",
+      "source_page": "https://jackiechanadventures.fandom.com/wiki/File:Rabbit_Talisman.png",
+      "output_sha256": "9e68149d055c2780c531cef10f61d30b9847651d8dae5f6eeaf7901d54d7582f",
+      "dimensions": [
+        200,
+        141
+      ],
+      "bytes": 33852,
+      "visible_pixels": 2469,
+      "visible_bounds_xyxy": [
+        56,
+        33,
+        163,
+        117
+      ],
+      "method": "Original source RGB with reviewed binary alpha mask",
+      "mask_file": "talisman-patterns/pixel-masks.json"
+    },
+    {
+      "id": "dragon",
+      "animal_en": "Dragon",
+      "animal_zh": "龙",
+      "path": "talisman-patterns/dragon-pattern.png",
+      "source_path": "source-talisman/Dragon_Talisman.png",
+      "source_sha256": "cf50cd4fff43edbafff6f25d209aaf284e48f5bd4b4d3879640dfaa8369d0760",
+      "source_page": "https://jackiechanadventures.fandom.com/wiki/File:Dragon_Talisman.png",
+      "output_sha256": "db2c1b608fe3a1219ada114f00879061f6fc960cec087f47659b93e5ee622631",
+      "dimensions": [
+        200,
+        141
+      ],
+      "bytes": 35793,
+      "visible_pixels": 2558,
+      "visible_bounds_xyxy": [
+        65,
+        20,
+        148,
+        125
+      ],
+      "method": "Original source RGB with reviewed binary alpha mask",
+      "mask_file": "talisman-patterns/pixel-masks.json"
+    },
+    {
+      "id": "snake",
+      "animal_en": "Snake",
+      "animal_zh": "蛇",
+      "path": "talisman-patterns/snake-pattern.png",
+      "source_path": "source-talisman/Snake_Talisman.png",
+      "source_sha256": "0dcf12ea59825066302865521076ec312f46988d60f853a76bfd4243207a5752",
+      "source_page": "https://jackiechanadventures.fandom.com/wiki/File:Snake_Talisman.png",
+      "output_sha256": "f26c443cb4c7b6b8b1865e32ca742f9a770b1bb5638edfe8a892f9ef760aa605",
+      "dimensions": [
+        200,
+        141
+      ],
+      "bytes": 35058,
+      "visible_pixels": 2935,
+      "visible_bounds_xyxy": [
+        62,
+        25,
+        165,
+        122
+      ],
+      "method": "Original source RGB with reviewed binary alpha mask",
+      "mask_file": "talisman-patterns/pixel-masks.json"
+    },
+    {
+      "id": "horse",
+      "animal_en": "Horse",
+      "animal_zh": "马",
+      "path": "talisman-patterns/horse-pattern.png",
+      "source_path": "source-talisman/Horse_Talisman.png",
+      "source_sha256": "5dfc7db6d0148310fa678244565070bc9072ca36d339cd65af03522ba52ed390",
+      "source_page": "https://jackiechanadventures.fandom.com/wiki/File:Horse_Talisman.png",
+      "output_sha256": "b512698d2b9e5cc03c689308ba3ac1b090376be33af2a82f8599d46c4592798e",
+      "dimensions": [
+        200,
+        141
+      ],
+      "bytes": 35337,
+      "visible_pixels": 3408,
+      "visible_bounds_xyxy": [
+        56,
+        28,
+        167,
+        122
+      ],
+      "method": "Original source RGB with reviewed binary alpha mask",
+      "mask_file": "talisman-patterns/pixel-masks.json"
+    },
+    {
+      "id": "sheep",
+      "animal_en": "Sheep",
+      "animal_zh": "羊",
+      "path": "talisman-patterns/sheep-pattern.png",
+      "source_path": "source-talisman/Sheep_Talisman.png",
+      "source_sha256": "e1d2d7bce49639cf4e05bcc333e014db5f313292ebbfdfc7ec47015248a2c791",
+      "source_page": "https://jackiechanadventures.fandom.com/wiki/File:Sheep_Talisman.png",
+      "output_sha256": "83c2928b97302aec8b7a3fa197377b881affc2b88d4615bb4def1aef4c18ffce",
+      "dimensions": [
+        200,
+        141
+      ],
+      "bytes": 31344,
+      "visible_pixels": 1819,
+      "visible_bounds_xyxy": [
+        62,
+        32,
+        163,
+        113
+      ],
+      "method": "Original source RGB with reviewed binary alpha mask",
+      "mask_file": "talisman-patterns/pixel-masks.json"
+    },
+    {
+      "id": "monkey",
+      "animal_en": "Monkey",
+      "animal_zh": "猴",
+      "path": "talisman-patterns/monkey-pattern.png",
+      "source_path": "source-talisman/Monkey_Talisman.png",
+      "source_sha256": "48dc4bd76d84e92d5562abce21ce334cb869a731d026f866ab6420cb2d6f5fa8",
+      "source_page": "https://jackiechanadventures.fandom.com/wiki/File:Monkey_Talisman.png",
+      "output_sha256": "3333233617eb55f6ea8e439eb0faee3b27a1426eed88795cd53e1abfd4340722",
+      "dimensions": [
+        200,
+        141
+      ],
+      "bytes": 34901,
+      "visible_pixels": 2739,
+      "visible_bounds_xyxy": [
+        71,
+        25,
+        156,
+        123
+      ],
+      "method": "Original source RGB with reviewed binary alpha mask",
+      "mask_file": "talisman-patterns/pixel-masks.json"
+    },
+    {
+      "id": "rooster",
+      "animal_en": "Rooster",
+      "animal_zh": "鸡",
+      "path": "talisman-patterns/rooster-pattern.png",
+      "source_path": "source-talisman/Rooster_Talisman.png",
+      "source_sha256": "827ed7f2fe95e939440640331e4e8a882e49b30309b660e5eead5824912ac082",
+      "source_page": "https://jackiechanadventures.fandom.com/wiki/File:Rooster_Talisman.png",
+      "output_sha256": "a9a49e361c924db9ade3b69c0b606e676ec6dcb4d53138cf19b3c238de8e6651",
+      "dimensions": [
+        200,
+        141
+      ],
+      "bytes": 34090,
+      "visible_pixels": 3109,
+      "visible_bounds_xyxy": [
+        60,
+        31,
+        151,
+        122
+      ],
+      "method": "Original source RGB with reviewed binary alpha mask",
+      "mask_file": "talisman-patterns/pixel-masks.json"
+    },
+    {
+      "id": "dog",
+      "animal_en": "Dog",
+      "animal_zh": "狗",
+      "path": "talisman-patterns/dog-pattern.png",
+      "source_path": "source-talisman/Dog_Talisman.png",
+      "source_sha256": "009392d934edc1990968c0a95371e5c2335f9504621ce69666eafb7010138234",
+      "source_page": "https://jackiechanadventures.fandom.com/wiki/File:Dog_Talisman.png",
+      "output_sha256": "1bd1a2530b724fd0f968a7b0638b14a9582dacbcfe4f860213d6771f9f97b836",
+      "dimensions": [
+        200,
+        141
+      ],
+      "bytes": 33486,
+      "visible_pixels": 2220,
+      "visible_bounds_xyxy": [
+        64,
+        18,
+        149,
+        119
+      ],
+      "method": "Original source RGB with reviewed binary alpha mask",
+      "mask_file": "talisman-patterns/pixel-masks.json"
+    },
+    {
+      "id": "pig",
+      "animal_en": "Pig",
+      "animal_zh": "猪",
+      "path": "talisman-patterns/pig-pattern.png",
+      "source_path": "source-talisman/Pig_Talisman.png",
+      "source_sha256": "f62324ec4d260aa5bdf0580c6c3079bd15244034a81a183d78231e966a9035d6",
+      "source_page": "https://jackiechanadventures.fandom.com/wiki/File:Pig_Talisman.png",
+      "output_sha256": "3e0cbe7b561330c1f54f539d83416d284a3df583c5a917f00d1f3afd61934b7e",
+      "dimensions": [
+        200,
+        141
+      ],
+      "bytes": 33669,
+      "visible_pixels": 2558,
+      "visible_bounds_xyxy": [
+        67,
+        22,
+        146,
+        125
+      ],
+      "method": "Original source RGB with reviewed binary alpha mask",
+      "mask_file": "talisman-patterns/pixel-masks.json"
+    }
+  ]
+}

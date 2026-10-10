@@ -1,0 +1,223 @@
+{
+  "status": "pass",
+  "count": 12,
+  "scope": "Source hash, canvas, full RGB equality, source-or-zero alpha, mask equality, bounds, and preservation of every opaque source pixel with RGB channel spread >= 40. This pigment check does not assess gray/white motifs; visual completeness is reviewed separately in README.md.",
+  "files": [
+    {
+      "id": "rat",
+      "source_hash_matches": true,
+      "canvas_unchanged": true,
+      "all_rgb_pixels_unchanged": true,
+      "alpha_matches_source_or_zero": true,
+      "matches_archived_mask": true,
+      "strong_chromatic_source_pixels": 0,
+      "strong_chromatic_pixels_removed": 0,
+      "visible_pixels": 2285,
+      "removed_visible_pixels": 15305,
+      "visible_bounds_xyxy": [
+        59,
+        30,
+        165,
+        112
+      ]
+    },
+    {
+      "id": "ox",
+      "source_hash_matches": true,
+      "canvas_unchanged": true,
+      "all_rgb_pixels_unchanged": true,
+      "alpha_matches_source_or_zero": true,
+      "matches_archived_mask": true,
+      "strong_chromatic_source_pixels": 2287,
+      "strong_chromatic_pixels_removed": 0,
+      "visible_pixels": 2794,
+      "removed_visible_pixels": 14836,
+      "visible_bounds_xyxy": [
+        65,
+        27,
+        149,
+        125
+      ]
+    },
+    {
+      "id": "tiger",
+      "source_hash_matches": true,
+      "canvas_unchanged": true,
+      "all_rgb_pixels_unchanged": true,
+      "alpha_matches_source_or_zero": true,
+      "matches_archived_mask": true,
+      "strong_chromatic_source_pixels": 0,
+      "strong_chromatic_pixels_removed": 0,
+      "visible_pixels": 5086,
+      "removed_visible_pixels": 13195,
+      "visible_bounds_xyxy": [
+        62,
+        22,
+        166,
+        121
+      ]
+    },
+    {
+      "id": "rabbit",
+      "source_hash_matches": true,
+      "canvas_unchanged": true,
+      "all_rgb_pixels_unchanged": true,
+      "alpha_matches_source_or_zero": true,
+      "matches_archived_mask": true,
+      "strong_chromatic_source_pixels": 1274,
+      "strong_chromatic_pixels_removed": 0,
+      "visible_pixels": 2469,
+      "removed_visible_pixels": 14992,
+      "visible_bounds_xyxy": [
+        56,
+        33,
+        163,
+        117
+      ]
+    },
+    {
+      "id": "dragon",
+      "source_hash_matches": true,
+      "canvas_unchanged": true,
+      "all_rgb_pixels_unchanged": true,
+      "alpha_matches_source_or_zero": true,
+      "matches_archived_mask": true,
+      "strong_chromatic_source_pixels": 1490,
+      "strong_chromatic_pixels_removed": 0,
+      "visible_pixels": 2558,
+      "removed_visible_pixels": 14637,
+      "visible_bounds_xyxy": [
+        65,
+        20,
+        148,
+        125
+      ]
+    },
+    {
+      "id": "snake",
+      "source_hash_matches": true,
+      "canvas_unchanged": true,
+      "all_rgb_pixels_unchanged": true,
+      "alpha_matches_source_or_zero": true,
+      "matches_archived_mask": true,
+      "strong_chromatic_source_pixels": 2482,
+      "strong_chromatic_pixels_removed": 0,
+      "visible_pixels": 2935,
+      "removed_visible_pixels": 15346,
+      "visible_bounds_xyxy": [
+        62,
+        25,
+        165,
+        122
+      ]
+    },
+    {
+      "id": "horse",
+      "source_hash_matches": true,
+      "canvas_unchanged": true,
+      "all_rgb_pixels_unchanged": true,
+      "alpha_matches_source_or_zero": true,
+      "matches_archived_mask": true,
+      "strong_chromatic_source_pixels": 2409,
+      "strong_chromatic_pixels_removed": 0,
+      "visible_pixels": 3408,
+      "removed_visible_pixels": 14685,
+      "visible_bounds_xyxy": [
+        56,
+        28,
+        167,
+        122
+      ]
+    },
+    {
+      "id": "sheep",
+      "source_hash_matches": true,
+      "canvas_unchanged": true,
+      "all_rgb_pixels_unchanged": true,
+      "alpha_matches_source_or_zero": true,
+      "matches_archived_mask": true,
+      "strong_chromatic_source_pixels": 833,
+      "strong_chromatic_pixels_removed": 0,
+      "visible_pixels": 1819,
+      "removed_visible_pixels": 15571,
+      "visible_bounds_xyxy": [
+        62,
+        32,
+        163,
+        113
+      ]
+    },
+    {
+      "id": "monkey",
+      "source_hash_matches": true,
+      "canvas_unchanged": true,
+      "all_rgb_pixels_unchanged": true,
+      "alpha_matches_source_or_zero": true,
+      "matches_archived_mask": true,
+      "strong_chromatic_source_pixels": 638,
+      "strong_chromatic_pixels_removed": 0,
+      "visible_pixels": 2739,
+      "removed_visible_pixels": 15015,
+      "visible_bounds_xyxy": [
+        71,
+        25,
+        156,
+        123
+      ]
+    },
+    {
+      "id": "rooster",
+      "source_hash_matches": true,
+      "canvas_unchanged": true,
+      "all_rgb_pixels_unchanged": true,
+      "alpha_matches_source_or_zero": true,
+      "matches_archived_mask": true,
+      "strong_chromatic_source_pixels": 1568,
+      "strong_chromatic_pixels_removed": 0,
+      "visible_pixels": 3109,
+      "removed_visible_pixels": 14648,
+      "visible_bounds_xyxy": [
+        60,
+        31,
+        151,
+        122
+      ]
+    },
+    {
+      "id": "dog",
+      "source_hash_matches": true,
+      "canvas_unchanged": true,
+      "all_rgb_pixels_unchanged": true,
+      "alpha_matches_source_or_zero": true,
+      "matches_archived_mask": true,
+      "strong_chromatic_source_pixels": 1135,
+      "strong_chromatic_pixels_removed": 0,
+      "visible_pixels": 2220,
+      "removed_visible_pixels": 15608,
+      "visible_bounds_xyxy": [
+        64,
+        18,
+        149,
+        119
+      ]
+    },
+    {
+      "id": "pig",
+      "source_hash_matches": true,
+      "canvas_unchanged": true,
+      "all_rgb_pixels_unchanged": true,
+      "alpha_matches_source_or_zero": true,
+      "matches_archived_mask": true,
+      "strong_chromatic_source_pixels": 1421,
+      "strong_chromatic_pixels_removed": 0,
+      "visible_pixels": 2558,
+      "removed_visible_pixels": 15116,
+      "visible_bounds_xyxy": [
+        67,
+        22,
+        146,
+        125
+      ]
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 # 十二符咒与十二星座参考素材
 
-2026-10-10。打开 [本地图片索引](index.html) 可看24张主图、逐项下载，亦可下载旁边的 `reference-collection.zip` 整包。原工程中的马图仍由用户手动导入，本轮只增添参考素材，没有改动 EDA 或制造文件。
+2026-10-10。打开 [本地图片索引](index.html) 可看十二符咒与十二星座、逐项下载，亦可下载旁边的 `reference-collection.zip` 整包。符咒可切换「透明图案」和「完整符咒」作对照。原工程中的马图仍由用户手动导入，本轮只增添参考素材，没有改动 EDA 或制造文件。
 
 ## 十二符咒
 
@@ -9,6 +9,24 @@
 来源：[Jackie Chan Adventures Wiki 符咒页](https://jackiechanadventures.fandom.com/wiki/Talismans) 与 [Promotional images 图库](https://jackiechanadventures.fandom.com/wiki/Category:Promotional_images)。[原图清单](source-talisman/source_manifest.json) 记录每枚文件页、公开静态 CDN 地址、尺寸和 SHA-256。
 
 这套源图为 **200×141 px、带轻微透视的正面参考插画**，可见侧面厚度。它们不是正投影矢量加工稿；未裁切、换色、镜像、放大或自由重绘，亦未把 PNG 包装成虚假的路径 SVG。符咒版权属于原作相关权利方，未从 Wiki 的文本 CC 许可推定图像许可。
+
+### 独立透明图案
+
+`talisman-patterns/` 新增十二张 `*-pattern.png`，只保留动物图案，石质底座、侧面厚度和八边形外框设为透明。源图的原始画布、颜色和朝向均保留；马图仍为左向紫色图案。索引中的棋盘格仅是网页预览背景，不包含在 PNG 中。
+
+采用 Python/Pillow 对原始像素应用人工复核的二值透明蒙版。每个像素的 RGB 与同坐标源像素完全相同，alpha 只保留源值或置零；没有生成重绘、插值放大、镜像或透视矫正。边缘的原始抗锯齿颜色一并保留，低分辨率原图在大倍率下仍会显像素。
+
+[图案清单](talisman-patterns/manifest.json) 记录每张源图与输出哈希、可见区域和像素数；[行程蒙版](talisman-patterns/pixel-masks.json) 精确记录选取位置，格式为 `[y, x起点（含）, x终点（不含）]`；[像素验证结果](talisman-patterns/validation.json) 检查源哈希、原尺寸、RGB 不变、alpha 取值及蒙版一致性，并确认源图 RGB 通道差值至少 40 的明显彩色像素全部保留。该色差检查不适用于灰白色鼠、虎，二者另做轮廓和细节对照。十二张已与原图逐张目视对照，保留动物的分段构成与内部细节。该验证不将参考 PNG 认定为 PCB 加工矢量稿。
+
+在仓库根目录重建和检查：
+
+```powershell
+python hardware/nfc-talisman/scripts/build_talisman_patterns.py
+python hardware/nfc-talisman/scripts/build_talisman_patterns.py --check
+python hardware/nfc-talisman/scripts/build_reference_gallery.py
+```
+
+`--freeze-reviewed-masks` 仅用于首次归档已目视复核的候选 PNG 的透明选区，日常重建无需使用。最终 PNG 按归档蒙版从未修改的源图重建；蒙版文件改变后应重新做目视对照。
 
 ## 十二星座
 
