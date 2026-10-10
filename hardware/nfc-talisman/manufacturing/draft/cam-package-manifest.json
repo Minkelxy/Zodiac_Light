@@ -1,7 +1,7 @@
 {
   "path": "manufacturing/draft/nfc-talisman-panel-cam-review.zip",
-  "bytes": 26051,
-  "sha256": "8d142698c0522ddeb68105fa0515f5644b1817e3b95cb7e8c75d887fdccaf900",
+  "bytes": 609400,
+  "sha256": "5d5efa41d6ef8160b85dd2dc5e0a7de6ff00cc750bdea486e3a62bc8a85ad70e",
   "zip_entries": [
     "Gerber_TopLayer.GTL",
     "Gerber_BottomLayer.GBL",
@@ -13,15 +13,21 @@
     "Gerber_BottomPasteMaskLayer.GBP",
     "Gerber_BoardOutlineLayer.GKO",
     "Drill_PTH_Through.DRL",
-    "Drill_NPTH_Through.DRL"
+    "Drill_NPTH_Through.DRL",
+    "Fabrication_ColorfulTopSilkscreen.FCTS",
+    "Fabrication_ColorfulBottomSilkscreen.FCBS",
+    "Fabrication_ColorfulBoardOutlineLayer.FCBO",
+    "Fabrication_ColorfulBoardOutlineMark.FCBM"
   ],
   "status": "draft_CAM_review_only",
-  "source_sha256": "9136b99867b2425efa7d22f9eddc2747f1a04c111adea250765e61a7b4ad12ee",
+  "source_sha256": "6ec0dbed56204dfafa776a43e777ecd64c8cbd8ee49ce3ef5338d71d5c9cbae7",
   "excluded_duplicate_drill": "Drill_PTH_Through_Via.DRL",
   "other_excluded_reference_files": [
     "Gerber_DocumentLayer.GDL",
     "Gerber_DrillDrawingLayer.GDD",
     "PCB text report"
   ],
-  "gerber_and_retained_drill_bytes_unchanged": true
+  "gerber_and_retained_drill_bytes_unchanged": true,
+  "four_color_files_retained_unchanged": true,
+  "color_pixel_content_and_compositing_CAM_approval": "pending; opaque proprietary fabrication data has not been visually approved"
 }

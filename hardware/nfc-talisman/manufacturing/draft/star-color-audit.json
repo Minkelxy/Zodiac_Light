@@ -1,0 +1,63 @@
+{
+  "status": "color_draft_file_checks_pass",
+  "checks": {
+    "registered_37mm_object": true,
+    "native_png_matches_local_bytes": true,
+    "all_8_star_and_11_slot_sampling_points_transparent": true,
+    "four_color_export_files_present_nonempty": true
+  },
+  "source_sha256": {
+    "artwork/sagittarius-color-print-candidate.png": "cdd50b75d9e39df0b7d6eb6d34ff55ce432a0ad7ed339f604b6241c19cde191b",
+    "eda/native/nfc-talisman-current.epro2": "b03f193656124011737287f7fe9b47f258f364c792c2a46d23c39e1744fa8ddc",
+    "eda/native/panel-source.jsonl": "ab2c9b47595f17fed91e0a9963caa1feed33cde3dca1982c6ed54322ccca7f47",
+    "manufacturing/draft/nfc-talisman-panel-draft.zip": "6ec0dbed56204dfafa776a43e777ecd64c8cbd8ee49ce3ef5338d71d5c9cbae7"
+  },
+  "native_object_id": "5c3603bb4caf2f18",
+  "native_blob_reference": "9e2f24982d6b7d1065f53d8c1e9ce18d32c8696f01688e9f922a8f7d044018ac",
+  "registration": {
+    "startX": true,
+    "startY": true,
+    "width": true,
+    "height": true,
+    "layer": true,
+    "no_rotation": true,
+    "no_mirror": true
+  },
+  "png_pixels": [
+    3700,
+    3700
+  ],
+  "size_mm": [
+    37,
+    37
+  ],
+  "transparent_sample_count": 95,
+  "aperture_alpha_design_clearance_mm": 0.2,
+  "color_export_files": [
+    {
+      "name": "Fabrication_ColorfulTopSilkscreen.FCTS",
+      "bytes": 460035,
+      "sha256": "7c320cbaddb63507e6539360ef99799dd2862338cd40e2aac1a6928055942127"
+    },
+    {
+      "name": "Fabrication_ColorfulBottomSilkscreen.FCBS",
+      "bytes": 87638,
+      "sha256": "447c47c85307766b87d2eb7b344a08eefe4a58b72cac2f1611f5028306a8f478"
+    },
+    {
+      "name": "Fabrication_ColorfulBoardOutlineLayer.FCBO",
+      "bytes": 22920,
+      "sha256": "981c766b299175962a7f4be88c37b98309926064ec228aba855e455a6597d548"
+    },
+    {
+      "name": "Fabrication_ColorfulBoardOutlineMark.FCBM",
+      "bytes": 26772,
+      "sha256": "741c4693eabc74a96bb7f089a9a69c9f9622266a18a062dc04e3e4878f589d84"
+    }
+  ],
+  "limitations": [
+    "The proprietary binary color fabrication files were checked for presence and integrity; their pixel content/alpha and compositing order have not been decoded or visually approved.",
+    "Existing vector silk overlaps the color PNG linework. Confirm final light-line color and image/vector stacking in the official fabrication preview.",
+    "Printing tolerance, color, optical transmission and RF performance require CAM/sample acceptance."
+  ]
+}

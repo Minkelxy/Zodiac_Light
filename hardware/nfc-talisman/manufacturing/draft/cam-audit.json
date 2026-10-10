@@ -2,15 +2,19 @@
   "scope": "Read-only geometric and export consistency check. Not CAM/manufacturing release or electrical/assembly acceptance.",
   "inputs": {
     "zip_path": "manufacturing/draft/nfc-talisman-panel-draft.zip",
-    "zip_sha256": "9136b99867b2425efa7d22f9eddc2747f1a04c111adea250765e61a7b4ad12ee",
-    "zip_bytes": 45106,
+    "zip_sha256": "6ec0dbed56204dfafa776a43e777ecd64c8cbd8ee49ce3ef5338d71d5c9cbae7",
+    "zip_bytes": 628904,
     "zip_crc_error_member": null,
-    "native_panel_sha256": "7ad67a2797a1aa788609353028992b1cfd289629e290dadab5f3c72a4476aea6",
+    "native_panel_sha256": "ab2c9b47595f17fed91e0a9963caa1feed33cde3dca1982c6ed54322ccca7f47",
     "component_pads_sha256": "13f0e1132d8d5e1573bd3f5c0182a2596e4c94532ae407004968d093ffc66941",
     "zip_members": [
       "Drill_NPTH_Through.DRL",
       "Drill_PTH_Through.DRL",
       "Drill_PTH_Through_Via.DRL",
+      "Fabrication_ColorfulBoardOutlineLayer.FCBO",
+      "Fabrication_ColorfulBoardOutlineMark.FCBM",
+      "Fabrication_ColorfulBottomSilkscreen.FCBS",
+      "Fabrication_ColorfulTopSilkscreen.FCTS",
       "Gerber_BoardOutlineLayer.GKO",
       "Gerber_BottomLayer.GBL",
       "Gerber_BottomPasteMaskLayer.GBP",
@@ -41,7 +45,7 @@
           55.206999,
           53.936999
         ],
-        "sha256": "351f6ebeeb5d1bae5a69c3f0e3e3d1e8fcefddf35dbf595f300fa5e0de203739"
+        "sha256": "9c2fba6495db79a5a9124137f086e360d8d29d5adc2982b97eaddff2aef16687"
       },
       "Drill_PTH_Through_Via.DRL": {
         "tools_mm": {
@@ -57,7 +61,7 @@
           55.206999,
           53.936999
         ],
-        "sha256": "0ef07377d0138d58b196b42d8437f6cefc83e0bc6becde3d5b630a231f82c784"
+        "sha256": "ce50e8d49221554f17dc3b253c961574f08aea8af6d3a2a0f21130df2090d437"
       },
       "Drill_NPTH_Through.DRL": {
         "tools_mm": {
@@ -75,7 +79,7 @@
           98.0,
           95.000001
         ],
-        "sha256": "ecdc816b732883a8c4f41dcda64599cacc306f133236aef7deeda1e253e87f6a"
+        "sha256": "1a8bd772ab5888a2aff6a6c52196a920e2810dca93f1304fe83fffcb7ad3e5fa"
       }
     },
     "native_source_correspondence": {
@@ -265,12 +269,12 @@
         "path_index": 11,
         "point_count": 35,
         "start_mm": [
-          82.258479,
-          31.082605
+          82.276584,
+          31.058683
         ],
         "end_mm": [
-          82.258479,
-          31.082605
+          82.276584,
+          31.058683
         ],
         "endpoint_gap_mm": 0.0,
         "explicitly_closed": true
@@ -279,26 +283,26 @@
         "path_index": 12,
         "point_count": 35,
         "start_mm": [
-          92.833393,
-          24.035083
+          92.820274,
+          24.005177
         ],
         "end_mm": [
-          92.833393,
-          24.035083
+          92.820274,
+          24.005177
         ],
         "endpoint_gap_mm": 0.0,
         "explicitly_closed": true
       },
       {
         "path_index": 13,
-        "point_count": 38,
+        "point_count": 37,
         "start_mm": [
-          88.763673,
-          25.816611
+          88.164525,
+          25.693258
         ],
         "end_mm": [
-          88.763673,
-          25.816611
+          88.164525,
+          25.693258
         ],
         "endpoint_gap_mm": 0.0,
         "explicitly_closed": true
@@ -307,12 +311,12 @@
         "path_index": 14,
         "point_count": 35,
         "start_mm": [
-          87.094868,
-          17.992659
+          87.085749,
+          18.043317
         ],
         "end_mm": [
-          87.094868,
-          17.992659
+          87.085749,
+          18.043317
         ],
         "endpoint_gap_mm": 0.0,
         "explicitly_closed": true
@@ -321,12 +325,12 @@
         "path_index": 15,
         "point_count": 35,
         "start_mm": [
-          70.923983,
-          16.842471
+          70.953848,
+          16.839641
         ],
         "end_mm": [
-          70.923983,
-          16.842471
+          70.953848,
+          16.839641
         ],
         "endpoint_gap_mm": 0.0,
         "explicitly_closed": true
@@ -335,12 +339,12 @@
         "path_index": 16,
         "point_count": 35,
         "start_mm": [
-          73.366125,
-          23.852688
+          73.349358,
+          23.820496
         ],
         "end_mm": [
-          73.366125,
-          23.852688
+          73.349358,
+          23.820496
         ],
         "endpoint_gap_mm": 0.0,
         "explicitly_closed": true
@@ -349,12 +353,12 @@
         "path_index": 17,
         "point_count": 35,
         "start_mm": [
-          83.792855,
-          24.60737
+          83.754979,
+          24.611716
         ],
         "end_mm": [
-          83.792855,
-          24.60737
+          83.754979,
+          24.611716
         ],
         "endpoint_gap_mm": 0.0,
         "explicitly_closed": true
@@ -363,26 +367,26 @@
         "path_index": 18,
         "point_count": 35,
         "start_mm": [
-          79.643686,
-          30.647909
+          79.621487,
+          30.627726
         ],
         "end_mm": [
-          79.643686,
-          30.647909
+          79.621487,
+          30.627726
         ],
         "endpoint_gap_mm": 0.0,
         "explicitly_closed": true
       },
       {
         "path_index": 19,
-        "point_count": 40,
+        "point_count": 41,
         "start_mm": [
-          67.478092,
-          18.622267
+          67.499977,
+          18.601748
         ],
         "end_mm": [
-          67.478092,
-          18.622267
+          67.499977,
+          18.601748
         ],
         "endpoint_gap_mm": 0.0,
         "explicitly_closed": true
@@ -391,26 +395,26 @@
         "path_index": 20,
         "point_count": 37,
         "start_mm": [
-          68.968892,
-          23.557667
+          68.952453,
+          23.532574
         ],
         "end_mm": [
-          68.968892,
-          23.557667
+          68.952453,
+          23.532574
         ],
         "endpoint_gap_mm": 0.0,
         "explicitly_closed": true
       },
       {
         "path_index": 21,
-        "point_count": 42,
+        "point_count": 41,
         "start_mm": [
-          71.502059,
-          25.262505
+          72.061197,
+          25.36172
         ],
         "end_mm": [
-          71.502059,
-          25.262505
+          72.061197,
+          25.36172
         ],
         "endpoint_gap_mm": 0.0,
         "explicitly_closed": true

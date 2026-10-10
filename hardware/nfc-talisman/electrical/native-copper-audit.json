@@ -9,8 +9,8 @@
     "coil_centerline_review": "electrical/antenna-geometry-review.json:proposal_geometry"
   },
   "source_sha256": {
-    "eda\\native\\core-source.jsonl": "a1816656be6a6926021640aaea19774ea9046d6ef4ee81666ea2a74ff5b33e5c",
-    "eda\\native\\panel-source.jsonl": "7ad67a2797a1aa788609353028992b1cfd289629e290dadab5f3c72a4476aea6",
+    "eda\\native\\core-source.jsonl": "68f0145ebe19c457b804dbc0a2442a2d0f57902f70794e9a54b175005f5a98ac",
+    "eda\\native\\panel-source.jsonl": "ab2c9b47595f17fed91e0a9963caa1feed33cde3dca1982c6ed54322ccca7f47",
     "eda\\core-pads.json": "13f0e1132d8d5e1573bd3f5c0182a2596e4c94532ae407004968d093ffc66941",
     "electrical\\antenna-coil-fill-candidate.json": "a0d7b3e7c78b2c2f1449361083b596fdac7ad76ec349fa7302267d6cd654b890",
     "electrical\\antenna-geometry-review.json": "d91ec2997e581e1c8069bc71aaf73c40029a83c075e2da4d45b0145b5b4d59b4"

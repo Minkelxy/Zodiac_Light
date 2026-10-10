@@ -22,6 +22,7 @@
 python -m pip install -r hardware/nfc-talisman/requirements.txt
 python hardware/nfc-talisman/scripts/build_electrical.py
 python hardware/nfc-talisman/scripts/build_mechanical.py
+python hardware/nfc-talisman/scripts/build_star_face.py
 python hardware/nfc-talisman/scripts/build_mechanical.py --assembly-only
 python hardware/nfc-talisman/scripts/build_antenna_fill_candidate.py
 python hardware/nfc-talisman/scripts/validate_antenna_geometry.py
@@ -31,6 +32,10 @@ python hardware/nfc-talisman/scripts/archive_check_summary.py
 ```
 
 `build_mechanical.py` 从仓库根目录 `data/constellation.json` 读取星座源数据，重建本目录 `geometry/` 下的几何、验证结果与预览；`--assembly-only` 只重建装配辅助文件。`build_electrical.py` 重建 `electrical/` 下电气交接产物；只有明确需要下载器件资料时才加 `--download-sources`。天线填充候选与几何复核、已有走线审计均为离线步骤。生成会更新对应输出文件，需在提交前检查差异。
+
+射手座当前保留 8 个 Ø0.8 mm 星孔与 11 条 1 mm 独立槽，每个槽端分别优化，最短槽由 1.202 mm 延长到 1.489 mm；名义实材目标为 1.03 mm。新增 8 个细星环与 22 条细连接线，保留拉丁文字。已将深底浅线的 37×37 mm RGBA 图嵌入拼板；孔槽和板外透明。预览见 [`artwork/sagittarius-face-review.png`](artwork/sagittarius-face-review.png)，原生画布见 [`artwork/panel-native-render.png`](artwork/panel-native-render.png)。
+
+实际原生与 Gerber 核对见 [`manufacturing/draft/star-face-audit.json`](manufacturing/draft/star-face-audit.json)；彩印注册、原生嵌图和专用文件完整性见 [`manufacturing/draft/star-color-audit.json`](manufacturing/draft/star-color-audit.json)。普通线稿和原色图片叠放的最终颜色、透明区及刀补仍须官方加工预览确认。`build_star_face.py` 只更新本地源和候选图；`42-*`、`43-*` 是带备份/保护条件的阶段性实时修改，已执行后不能重复运行。
 
 ## 嘉立创EDA桥接操作
 
@@ -45,7 +50,7 @@ python hardware/nfc-talisman/scripts/summarize_checks.py
 python hardware/nfc-talisman/scripts/archive_check_summary.py
 ```
 
-摘要对缺日志、读取失败、检查错误和 DRC/ERC 发现分别给出明确状态。当前核心板和拼板已完成布线；保存、关闭并重开后的原生 DRC 均返回空结果，天线桥接铜皮也已原生往返确认。面板原 22 条轮廓 GKO 未显式闭合造成的加工缺口已在生成器和 live 面板中修正；更新后保存、关闭并重开，DRC 仍为空。制造草案和导出清单见 [`manufacturing/draft/export-manifest.json`](manufacturing/draft/export-manifest.json)。`bom-all.csv`/`pnp-all.csv` 是包含 DNP 占位的原始导出，不可用于装配；推荐默认四灯配置为 14 件，另有移除 D2/D4 的两灯减载版本 12 件（R2/R4 保持 Fit）。仅 CT2 固定 DNP，默认仍为四灯。制造草案已通过只读 CAM 几何初检：22/22 条 GKO 闭合、10 个 PTH 与 108 个 NPTH、线圈/引出铜一致性、TP1/TP2 铜与阻焊开窗/无锡膏均通过。正式刀补、槽加工与工艺评审仍待完成；PTH 两个导出文件命中位置相同，正式CAM需择一避免重复钻孔。当前 Gerber 为 `colorSilkscreen=false`，未包含马图或彩印。裸板/叠装 RF、手机、马图光路和实物验收尚未完成。TP1/TP2已加入当前快照：核心板VOUT/GND顶层圆铜直径0.8 mm，阻焊开窗0.9 mm，无孔、无钢网开窗，且不进入BOM/PnP。
+摘要对缺日志、读取失败、检查错误和 DRC/ERC 发现分别给出明确状态。当前核心板和拼板已完成布线；保存、关闭并重开后的原生 DRC 均返回空结果，天线桥接铜皮也已原生往返确认。面板原 22 条轮廓 GKO 未显式闭合造成的加工缺口已在生成器和 live 面板中修正；更新后保存、关闭并重开，DRC 仍为空。制造草案和导出清单见 [`manufacturing/draft/export-manifest.json`](manufacturing/draft/export-manifest.json)。`bom-all.csv`/`pnp-all.csv` 是包含 DNP 占位的原始导出，不可用于装配；推荐默认四灯配置为 14 件，另有移除 D2/D4 的两灯减载版本 12 件（R2/R4 保持 Fit）。仅 CT2 固定 DNP，默认仍为四灯。制造草案已通过只读 CAM 几何初检：22/22 条 GKO 闭合、10 个 PTH 与 108 个 NPTH、线圈/引出铜一致性、TP1/TP2 铜与阻焊开窗/无锡膏均通过。正式刀补、槽加工与工艺评审仍待完成；PTH 两个导出文件命中位置相同，正式CAM需择一避免重复钻孔。当前 Gerber 为 `colorSilkscreen=true`，已有射手座彩印专用文件；马图未包含，彩印合成效果待官方加工预览。裸板/叠装 RF、手机、马图光路和实物验收尚未完成。TP1/TP2已加入当前快照：核心板VOUT/GND顶层圆铜直径0.8 mm，阻焊开窗0.9 mm，无孔、无钢网开窗，且不进入BOM/PnP。
 
 
 当前 ERC/DRC 检查摘要与原生源文件哈希归档于 [`eda/check-summary.json`](eda/check-summary.json)，可用 `scripts/archive_check_summary.py` 重建；摘要标为 `current_draft`，并非制造放行。只读铜审计 `scripts/audit_native_copper.py` 与草案 CAM 审计 `scripts/audit_manufacturing_draft.py` 分别输出 `electrical/native-copper-audit.json` 和 `manufacturing/draft/cam-audit.json`。只有在 native 快照和导出 manifest 对应同一版设计后才运行/采信审计；这些本地离线审计不连接或修改 live 嘉立创EDA。

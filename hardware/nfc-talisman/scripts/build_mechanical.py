@@ -124,7 +124,7 @@ def raster_preview(out, panel_material, board_shapes, boards, tabs, drills):
     img.save(out / "panel-review.png")
 
 
-def local_constellation(source):
+def local_constellation(source, optimize=True):
     selected = {s["id"]: s for s in source["stars"] if s["hip"] in HIP_IDS}
     assert len(selected) == 8
     edges = [e for e in source["edges"] if e["start"] in selected and e["end"] in selected]
@@ -171,6 +171,15 @@ def local_constellation(source):
               "center": positions[k], "diameter_mm": 0.8,
               "endpoint_setback_mm": setbacks[k], "incident_angles_deg": angles[k]}
              for k, s in selected.items()]
+    if optimize:
+        from optimize_star_slots import optimize_slots
+        slots, _ = optimize_slots(stars, slots, web=1.03)
+        for star in stars:
+            star["initial_common_setback_mm"] = star.pop("endpoint_setback_mm")
+            star["actual_endpoint_setbacks_mm"] = {
+                slot["id"]: slot["start_setback_mm" if slot["start"] == star["id"] else "end_setback_mm"]
+                for slot in slots if star["id"] in (slot["start"], slot["end"])
+            }
     return stars, slots, scale
 
 
@@ -262,6 +271,7 @@ def build(out: Path):
                        "mousebites_per_tab": MOUSEBITE_COUNT,
                        "constellation_width_mm": 27.5, "star_diameter_mm": .8,
                        "slot_width_mm": 1, "minimum_constellation_web_mm": 1,
+                       "nominal_constellation_web_target_mm": 1.03,
                        "slot_geometry_segments_per_semicircle": 64},
         "panel": {"nominal_outer_ring": ring(panel.exterior.coords),
                   "outer_ring": ring(routed_panel.exterior.coords),
@@ -280,6 +290,7 @@ def build(out: Path):
                       "0.8mm stars and 0.6mm mousebites are non-plated drills."},
         "boards": boards,
         "constellation": {"source": "data/constellation.json", "scale_mm_per_reference_px": scale,
+                          "endpoint_policy": "Independent per-edge endpoint setbacks; 1.03mm nominal material webs with >=1mm exported-geometry acceptance.",
                           "stars_local": stars,
                           "edges": [{k: v for k, v in s.items() if k != "shape"} for s in slots]},
         "assembly": {"stack": ["horse", "spacer2", "core", "spacer4", "sagittarius5"],
@@ -342,8 +353,8 @@ def build(out: Path):
                       "Horse light window is a clear FR-4 optical/mask feature, not a mechanical cutout.",
                       "Mousebites produce 0.25mm edge scallops before dressing; sand only tabs, protect antenna copper."]}
     out.mkdir(parents=True, exist_ok=True)
-    (out / "design.json").write_text(json.dumps(design, ensure_ascii=False, indent=2)+"\n", encoding="utf-8")
-    (out / "validation.json").write_text(json.dumps(validation, ensure_ascii=False, indent=2)+"\n", encoding="utf-8")
+    (out / "design.json").write_text(json.dumps(design, ensure_ascii=False, indent=2)+"\n", encoding="utf-8", newline="\n")
+    (out / "validation.json").write_text(json.dumps(validation, ensure_ascii=False, indent=2)+"\n", encoding="utf-8", newline="\n")
     mechanical_body = f'<path d="{path_of(material)}" fill="#28252b" fill-rule="evenodd" stroke="#111" stroke-width="0.1"/>'
     (out / "panel-mechanical.svg").write_text(svg_document((0, 0, 100, 100), mechanical_body,
             "100x100mm mechanical material: connected panel, five boards, routing and NPTH"), encoding="utf-8")
@@ -382,6 +393,11 @@ def build(out: Path):
         "only; `all_routing_regions` is a CAM reference and must not be reimported as\n"
         "cutouts because some regions touch the exterior. The five closed\n"
         "`boards[].outer_ring` polygons are depanelled references only.")
+    readme = readme.replace("The shortest slot is only about 1.202mm end to end.",
+        f"Each slot endpoint is optimized independently with a 1.03mm nominal web target.\n"
+        f"The shortest slot is about {min(s['overall_length_mm'] for s in slots):.3f}mm end to end;\n"
+        "its short straight section still requires supplier CAM review. Printed links\n"
+        "on retained material complete the visible constellation between apertures.")
     readme = readme.replace("The spacer window is a regular octagon, 30mm across flats.",
         "The spacer window is 30mm across flats, with R1mm internal corners for a\n2mm router. Its nominal octagon is provided as a separate reference.")
     (out / "README.md").write_text(readme, encoding="utf-8")

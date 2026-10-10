@@ -18,6 +18,21 @@ def main():
     audit=json.loads((DRAFT/'cam-audit.json').read_text(encoding='utf-8'))
     copper=json.loads((ROOT/'electrical/native-copper-audit.json').read_text(encoding='utf-8'))
     netlists=json.loads((ROOT/'electrical/native-netlist-audit.json').read_text(encoding='utf-8'))
+    stars=json.loads((DRAFT/'star-face-audit.json').read_text(encoding='utf-8'))
+    colors=json.loads((DRAFT/'star-color-audit.json').read_text(encoding='utf-8'))
+    if stars['summary']['all_checks_pass'] is not True or not all(colors['checks'].values()):
+        raise ValueError('Sagittarius aperture, silk or color file audit failed')
+    if stars['inputs']['manufacturing_zip_sha256']!=hashlib.sha256(RAW.read_bytes()).hexdigest():
+        raise ValueError('Sagittarius audit and raw ZIP do not match')
+    if stars['inputs']['native_panel_sha256']!=hashlib.sha256((ROOT/'eda/native/panel-source.jsonl').read_bytes()).hexdigest():
+        raise ValueError('Sagittarius audit and native panel do not match')
+    for key,path in [('geometry',ROOT/'geometry/design.json'),('artwork',ROOT/'artwork/art_data.json')]:
+        semantic=json.dumps(json.loads(path.read_text(encoding='utf-8')),sort_keys=True,ensure_ascii=False,separators=(',',':')).encode('utf-8')
+        if hashlib.sha256(semantic).hexdigest()!=stars['inputs'][key+'_semantic_sha256']:
+            raise ValueError('Sagittarius audit design/artwork changed: '+key)
+    for path,expected in colors['source_sha256'].items():
+        if hashlib.sha256((ROOT/path).read_bytes()).hexdigest()!=expected:
+            raise ValueError('Color audit source changed: '+path)
     if netlists['all_groups_passed'] is not True:
         raise ValueError('Native netlist audit failed')
     for key,expected in netlists['input_sha256'].items():
@@ -63,6 +78,7 @@ def main():
             raise ValueError('PnP does not match native placement: '+row['designator'])
     target=DRAFT/'nfc-talisman-panel-cam-review.zip'
     keep=['Gerber_TopLayer.GTL','Gerber_BottomLayer.GBL','Gerber_TopSilkscreenLayer.GTO','Gerber_BottomSilkscreenLayer.GBO','Gerber_TopSolderMaskLayer.GTS','Gerber_BottomSolderMaskLayer.GBS','Gerber_TopPasteMaskLayer.GTP','Gerber_BottomPasteMaskLayer.GBP','Gerber_BoardOutlineLayer.GKO','Drill_PTH_Through.DRL','Drill_NPTH_Through.DRL']
+    keep += [f['name'] for f in colors['color_export_files']]
     with zipfile.ZipFile(RAW) as original:
         if original.testzip() is not None:
             raise ValueError('Original ZIP integrity failed')
@@ -77,10 +93,13 @@ def main():
     info['excluded_duplicate_drill']='Drill_PTH_Through_Via.DRL'
     info['other_excluded_reference_files']=['Gerber_DocumentLayer.GDL','Gerber_DrillDrawingLayer.GDD','PCB text report']
     info['gerber_and_retained_drill_bytes_unchanged']=True
+    info['four_color_files_retained_unchanged']=True
+    info['color_pixel_content_and_compositing_CAM_approval']='pending; opaque proprietary fabrication data has not been visually approved'
     (DRAFT/'cam-package-manifest.json').write_text(json.dumps(info,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     manifest_path=DRAFT/'export-manifest.json'
     manifest=json.loads(manifest_path.read_text(encoding='utf-8'))
     additions=[target,DRAFT/'four-led-bom.csv',DRAFT/'four-led-panel-pnp.csv',DRAFT/'two-led-bom.csv',DRAFT/'two-led-panel-pnp.csv',DRAFT/'assembly-variants.json',DRAFT/'cam-audit.json',DRAFT/'cam-package-manifest.json',ROOT/'electrical/native-copper-audit.json',ROOT/'electrical/native-netlist-audit.json',ROOT/'eda/check-summary.json']
+    additions += [DRAFT/'star-face-audit.json',DRAFT/'star-color-audit.json',ROOT/'artwork/sagittarius-color-print-candidate.png',ROOT/'artwork/sagittarius-linework-review.json']
     manifest['derived_files']=[file_info(path) for path in additions]
     manifest['cam_drill_note']='The raw EDA ZIP includes duplicate PTH programs. The review ZIP retains exactly one PTH file and one NPTH file; retained manufacturing-layer bytes are unchanged.'
     manifest_path.write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')

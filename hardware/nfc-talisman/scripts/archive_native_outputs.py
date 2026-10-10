@@ -50,7 +50,7 @@ def main():
     if path.stat().st_size!=project['size']:
         raise ValueError('Native project length mismatch')
     paths.append(path)
-    manifest={'date':'2026-10-10','status':'draft_not_released','project_uuid':project['project'],'files':[file_info(p) for p in paths],'pending':['Manual faithful horse artwork and front optical window design','CAM review of slots, tabs and 3 mm assembly rails','LED physical polarity and rotation review','Bare-core and five-layer RF tuning, VOUT, Android/iPhone and optical acceptance']}
+    manifest={'date':'2026-10-10','status':'draft_not_released','project_uuid':project['project'],'color_silkscreen_requested':result('38-export-manufacturing-draft').get('colorSilkscreenRequested',False),'files':[file_info(p) for p in paths],'pending':['Manual faithful horse artwork and front optical window design','CAM color pixel/alpha and vector/image compositing review for dark Sagittarius face','CAM review of slots, tabs and 3 mm assembly rails','LED physical polarity and rotation review','Bare-core and five-layer RF tuning, VOUT, Android/iPhone and optical acceptance']}
     (draft/'export-manifest.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     print(json.dumps(manifest,ensure_ascii=False,indent=2))
 

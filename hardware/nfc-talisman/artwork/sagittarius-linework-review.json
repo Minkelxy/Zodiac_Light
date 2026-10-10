@@ -1,0 +1,20 @@
+{
+  "status": "geometry_and_ink_pass",
+  "star_count": 8,
+  "slot_count": 11,
+  "star_rims": 8,
+  "printed_connectors": 22,
+  "existing_latin_keyline_paths": 66,
+  "total_silkscreen_paths": 96,
+  "minimum_ink_to_aperture_mm": 0.199221867284929,
+  "closest_ink_path": "star_rim_hip_89931",
+  "all_ink_within_board": true,
+  "all_optical_apertures_within_mirrored_spacer_window": true,
+  "minimum_aperture_to_window_edge_mm": 0.8499999999999996,
+  "source_constellation_semantic_sha256": "4024b4ed6d956abfc38dc602d7f7e9556c2c9e01e7ad826cd5adb876746c9377",
+  "appearance_note": "Dark background/light linework is the confirmed color-print direction. The dedicated color-object import/output is verified separately; final ink compositing, alpha and sample appearance require manufacturing preview and physical acceptance.",
+  "limitations": [
+    "Printed connectors do not transmit light; isolated machined slots remain separated by material webs.",
+    "Geometric preview does not establish actual NFC illumination, print contrast or manufacturing approval."
+  ]
+}

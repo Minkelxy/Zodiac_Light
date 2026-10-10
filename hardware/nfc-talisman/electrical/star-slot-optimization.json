@@ -1,0 +1,259 @@
+{
+  "status": "offline_geometry_candidate",
+  "source": {
+    "script": "scripts/build_mechanical.py:local_constellation",
+    "constellation": "data/constellation.json",
+    "scale_mm_per_reference_px": 0.20220588235294118
+  },
+  "method": {
+    "algorithm": "deterministic shortest-slot-first coordinate descent with binary search",
+    "target_nominal_web_mm": 1.03,
+    "minimum_endpoint_setback_mm": 1.9300000000000002,
+    "native_coordinate_grid_mm": 0.00254,
+    "native_coordinate_decimal_places": 4,
+    "post_rounding_simplification_tolerance_mm": 0.003,
+    "passes": 2
+  },
+  "before": {
+    "minimum_actual_web_mm": 1.000000633601639,
+    "minimum_centerline_length_mm": 0.20169560786839627,
+    "minimum_overall_length_mm": 1.2016956078683962,
+    "total_centerline_length_mm": 55.30442493108527,
+    "all_11_slots_closed_and_isolated": true,
+    "remaining_board_material_connected": true
+  },
+  "after": {
+    "minimum_actual_web_mm": 1.0300006283289562,
+    "minimum_hole_slot_web_mm": 1.0300006283289562,
+    "minimum_slot_slot_web_mm": 1.030000704911935,
+    "minimum_web_pair": [
+      "hip_90496",
+      "e10"
+    ],
+    "native_simplified_minimum_web_mm": 1.0290032498067618,
+    "native_simplified_minimum_hole_slot_web_mm": 1.0290032498067618,
+    "native_simplified_minimum_slot_slot_web_mm": 1.030305394863041,
+    "minimum_centerline_length_mm": 0.4888577836828518,
+    "minimum_overall_length_mm": 1.4888577836828518,
+    "total_centerline_length_mm": 57.72318245808544,
+    "all_11_slots_closed_and_isolated": true,
+    "remaining_board_material_connected": true,
+    "all_slot_polygons_valid": true,
+    "slot_count": 11,
+    "remaining_material_components": 1,
+    "constraints_pass": true,
+    "total_centerline_length_before_mm": 55.30442493108527,
+    "slots": [
+      {
+        "id": "e01",
+        "start": "hip_89931",
+        "end": "hip_90496",
+        "endpoint_a_mm": [
+          5.318215,
+          -3.371519
+        ],
+        "endpoint_b_mm": [
+          2.37788,
+          -7.256962
+        ],
+        "start_setback_mm": 2.57984,
+        "end_setback_mm": 1.93,
+        "centerline_length_before_mm": 4.940726,
+        "centerline_length_after_mm": 4.872601,
+        "overall_length_before_mm": 5.940726,
+        "overall_length_after_mm": 5.872601
+      },
+      {
+        "id": "e03",
+        "start": "hip_90185",
+        "end": "hip_88635",
+        "endpoint_a_mm": [
+          10.093815,
+          5.606323
+        ],
+        "endpoint_b_mm": [
+          12.86238,
+          -0.706006
+        ],
+        "start_setback_mm": 3.482937,
+        "end_setback_mm": 2.20987,
+        "centerline_length_before_mm": 6.976913,
+        "centerline_length_after_mm": 6.892783,
+        "overall_length_before_mm": 7.976913,
+        "overall_length_after_mm": 7.892783
+      },
+      {
+        "id": "e05",
+        "start": "hip_88635",
+        "end": "hip_89931",
+        "endpoint_a_mm": [
+          11.58553,
+          -2.284153
+        ],
+        "endpoint_b_mm": [
+          8.765352,
+          -1.703528
+        ],
+        "start_setback_mm": 2.209867,
+        "end_setback_mm": 1.93,
+        "centerline_length_before_mm": 2.300269,
+        "centerline_length_after_mm": 2.879328,
+        "overall_length_before_mm": 3.300269,
+        "overall_length_after_mm": 3.879328
+      },
+      {
+        "id": "e06",
+        "start": "hip_89931",
+        "end": "hip_90185",
+        "endpoint_a_mm": [
+          7.216905,
+          0.585136
+        ],
+        "endpoint_b_mm": [
+          8.07784,
+          5.368107
+        ],
+        "start_setback_mm": 1.93,
+        "end_setback_mm": 3.482937,
+        "centerline_length_before_mm": 4.299596,
+        "centerline_length_after_mm": 4.859838,
+        "overall_length_before_mm": 5.299596,
+        "overall_length_after_mm": 5.859838
+      },
+      {
+        "id": "e07",
+        "start": "hip_90185",
+        "end": "hip_93506",
+        "endpoint_a_mm": [
+          6.773456,
+          8.613929
+        ],
+        "endpoint_b_mm": [
+          -8.593309,
+          7.15813
+        ],
+        "start_setback_mm": 1.93,
+        "end_setback_mm": 1.93,
+        "centerline_length_before_mm": 13.964105,
+        "centerline_length_after_mm": 15.43557,
+        "overall_length_before_mm": 14.964105,
+        "overall_length_after_mm": 16.43557
+      },
+      {
+        "id": "e08",
+        "start": "hip_93506",
+        "end": "hip_92041",
+        "endpoint_a_mm": [
+          -9.623172,
+          5.264359
+        ],
+        "endpoint_b_mm": [
+          -6.594098,
+          -0.551464
+        ],
+        "start_setback_mm": 1.93,
+        "end_setback_mm": 2.456062,
+        "centerline_length_before_mm": 6.623665,
+        "centerline_length_after_mm": 6.557368,
+        "overall_length_before_mm": 7.623665,
+        "overall_length_after_mm": 7.557368
+      },
+      {
+        "id": "e09",
+        "start": "hip_92041",
+        "end": "hip_89931",
+        "endpoint_a_mm": [
+          -3.01951,
+          -2.449774
+        ],
+        "endpoint_b_mm": [
+          4.311981,
+          -1.608455
+        ],
+        "start_setback_mm": 2.456062,
+        "end_setback_mm": 2.57984,
+        "centerline_length_before_mm": 7.454028,
+        "centerline_length_after_mm": 7.379606,
+        "overall_length_before_mm": 8.454028,
+        "overall_length_after_mm": 8.379606
+      },
+      {
+        "id": "e10",
+        "start": "hip_92041",
+        "end": "hip_90496",
+        "endpoint_a_mm": [
+          -3.642294,
+          -4.381838
+        ],
+        "endpoint_b_mm": [
+          -0.214849,
+          -7.497697
+        ],
+        "start_setback_mm": 2.455962,
+        "end_setback_mm": 1.93,
+        "centerline_length_before_mm": 4.698254,
+        "centerline_length_after_mm": 4.632058,
+        "overall_length_before_mm": 5.698254,
+        "overall_length_after_mm": 5.632058
+      },
+      {
+        "id": "e12",
+        "start": "hip_93506",
+        "end": "hip_93864",
+        "endpoint_a_mm": [
+          -11.922713,
+          5.656097
+        ],
+        "endpoint_b_mm": [
+          -12.341993,
+          5.263021
+        ],
+        "start_setback_mm": 1.93,
+        "end_setback_mm": 1.93,
+        "centerline_length_before_mm": 0.634721,
+        "centerline_length_after_mm": 0.574721,
+        "overall_length_before_mm": 1.634721,
+        "overall_length_after_mm": 1.574721
+      },
+      {
+        "id": "e13",
+        "start": "hip_93864",
+        "end": "hip_92855",
+        "endpoint_a_mm": [
+          -12.692309,
+          2.328645
+        ],
+        "endpoint_b_mm": [
+          -10.965779,
+          -0.306586
+        ],
+        "start_setback_mm": 1.93,
+        "end_setback_mm": 1.93,
+        "centerline_length_before_mm": 3.210452,
+        "centerline_length_after_mm": 3.150452,
+        "overall_length_before_mm": 4.210452,
+        "overall_length_after_mm": 4.150452
+      },
+      {
+        "id": "e14",
+        "start": "hip_92855",
+        "end": "hip_92041",
+        "endpoint_a_mm": [
+          -8.009219,
+          -2.266205
+        ],
+        "endpoint_b_mm": [
+          -7.528247,
+          -2.353654
+        ],
+        "start_setback_mm": 1.93,
+        "end_setback_mm": 2.102603,
+        "centerline_length_before_mm": 0.201696,
+        "centerline_length_after_mm": 0.488858,
+        "overall_length_before_mm": 1.201696,
+        "overall_length_after_mm": 1.488858
+      }
+    ]
+  },
+  "scope": "offline candidate only; no live EDA connection or existing geometry writes"
+}

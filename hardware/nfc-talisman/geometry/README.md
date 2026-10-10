@@ -20,7 +20,10 @@ slots require a 1mm cutter. Verify this distinction in supplier CAM review.
 The horse cover has no designed aperture or image geometry yet; the user will
 manually import the gray-base/purple-horse reference art in EasyEDA. Sagittarius
 has 8 Ø0.8mm NPTH and 11 routed capsules. All optical-aperture material webs are
-checked against 1mm. The shortest slot is only about 1.202mm end to end.
+checked against 1mm. Each slot endpoint is optimized independently with a 1.03mm nominal web target.
+The shortest slot is about 1.489mm end to end;
+its short straight section still requires supplier CAM review. Printed links
+on retained material complete the visible constellation between apertures.
 The spacer window is 30mm across flats, with R1mm internal corners for a
 2mm router. Its nominal octagon is provided as a separate reference.
 

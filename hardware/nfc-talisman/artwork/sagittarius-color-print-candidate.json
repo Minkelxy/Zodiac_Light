@@ -1,0 +1,31 @@
+{
+  "status": "color_print_candidate_not_manufacturing_release",
+  "file": "artwork/sagittarius-color-print-candidate.png",
+  "size_mm": [
+    37,
+    37
+  ],
+  "pixels": [
+    3700,
+    3700
+  ],
+  "pixels_per_mm": 100,
+  "background_rgb": "#17232f",
+  "line_rgb": "#eee8d6",
+  "transparent_border_mm": 0.2,
+  "transparent_aperture_expansion_mm": 0.2,
+  "panel_design_center_mm": [
+    79.5,
+    76.5
+  ],
+  "native_bbox_top_left_mm": [
+    61,
+    42
+  ],
+  "orientation": "Exterior rear view; 0deg and no horizontal mirror. Verify API image Y convention after import.",
+  "contains_horse_art": false,
+  "limitations": [
+    "Import and dedicated color-silkscreen output must be verified separately.",
+    "Color and light appearance require a physical sample."
+  ]
+}

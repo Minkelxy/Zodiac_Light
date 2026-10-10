@@ -2,7 +2,7 @@
   "schema": "easyeda-check-summary/v1",
   "snapshot_status": "current_draft",
   "snapshot_note": "Current native/log snapshot for review; this is not manufacturing release. Regenerate after any source, native project, or check-log change.",
-  "generated_at_utc": "2026-10-10T02:33:16+00:00",
+  "generated_at_utc": "2026-10-10T03:47:03+00:00",
   "checks": {
     "schematic_erc": {
       "status": "completed_with_findings",
@@ -23,7 +23,7 @@
           "path": "eda/native/schematic-source.jsonl",
           "status": "present",
           "size_bytes": 263439,
-          "sha256": "49dc2da282faf50989e1233dc8eee3a94e6a2d327fa324403fc1ebdb7abacc51"
+          "sha256": "f68983fedcdb9d26c98a86fdae7f43ec533463307713489cc31582ccee596973"
         },
         {
           "path": "eda/native/schematic-netlist.json",
@@ -77,7 +77,7 @@
           "path": "eda/native/core-source.jsonl",
           "status": "present",
           "size_bytes": 105234,
-          "sha256": "a1816656be6a6926021640aaea19774ea9046d6ef4ee81666ea2a74ff5b33e5c"
+          "sha256": "68f0145ebe19c457b804dbc0a2442a2d0f57902f70794e9a54b175005f5a98ac"
         },
         {
           "path": "eda/native/core-netlist.json",
@@ -98,21 +98,21 @@
         "lines": 126,
         "vias": 10,
         "fills": 1,
-        "polylines": 88
+        "polylines": 118
       },
       "document_uuid": "4a4719695b24dc2b",
       "source_log": {
         "path": "eda/logs/26-panel-pcb-drc-current.json",
         "status": "present",
-        "size_bytes": 511,
-        "sha256": "4e524e39acda8260df3a4177e0dd8b3b3cd17a6597176885d379b4f11babdbce"
+        "size_bytes": 512,
+        "sha256": "14516d1f3f0ce6b4843bc5d7b67c440c62c867bc61674210f17bce63b9d1a258"
       },
       "source_native": [
         {
           "path": "eda/native/panel-source.jsonl",
           "status": "present",
-          "size_bytes": 223698,
-          "sha256": "7ad67a2797a1aa788609353028992b1cfd289629e290dadab5f3c72a4476aea6"
+          "size_bytes": 240439,
+          "sha256": "ab2c9b47595f17fed91e0a9963caa1feed33cde3dca1982c6ed54322ccca7f47"
         },
         {
           "path": "eda/native/panel-netlist.json",
@@ -126,7 +126,7 @@
   "native_project": {
     "path": "eda/native/nfc-talisman-current.epro2",
     "status": "present",
-    "size_bytes": 96069,
-    "sha256": "bc68aca27f9d3547b8e51a93a06bf07212c9afdc7ceb05838a6391f075fabd4b"
+    "size_bytes": 186748,
+    "sha256": "b03f193656124011737287f7fe9b47f258f364c792c2a46d23c39e1744fa8ddc"
   }
 }

@@ -45,7 +45,7 @@
     "sagittarius5": {
       "is_valid": true,
       "connected": true,
-      "area_mm2": 1066.1567726488324,
+      "area_mm2": 1063.7380288992879,
       "internal_void_count": 19,
       "minimum_aperture_to_outer_mm": 4.349999999999995
     }
@@ -53,19 +53,19 @@
   "measurements": {
     "star_count": 8,
     "slot_count": 11,
-    "minimum_star_to_slot_web_mm": 1.000000633601639,
+    "minimum_star_to_slot_web_mm": 1.0300006283289562,
     "star_to_slot_pair": [
       "hip_90496",
       "e10"
     ],
-    "minimum_slot_to_slot_web_mm": 1.0000007049119335,
+    "minimum_slot_to_slot_web_mm": 1.030000704911935,
     "slot_to_slot_pair": [
       "e03",
       "e06"
     ],
     "minimum_star_to_star_web_mm": 3.6348596202104986,
-    "minimum_slot_overall_length_mm": 1.2016956078683962,
-    "minimum_slot_centerline_length_mm": 0.20169560786839627,
+    "minimum_slot_overall_length_mm": 1.4888577836828518,
+    "minimum_slot_centerline_length_mm": 0.4888577836828518,
     "minimum_interboard_clearance_mm": 2.597979746446664,
     "closest_board_pair": [
       "core",
@@ -76,7 +76,7 @@
     "panel_enclosed_route_cutouts": 8,
     "tabs_count": 20,
     "mousebite_drill_count": 100,
-    "panel_material_area_mm2": 7414.588298234535
+    "panel_material_area_mm2": 7412.169554484991
   },
   "limitations": [
     "Geometric validation is not a supplier production approval.",

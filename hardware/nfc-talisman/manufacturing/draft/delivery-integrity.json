@@ -1,0 +1,199 @@
+{
+  "checked_at_utc": "2026-10-10T03:56:14.335680+00:00",
+  "status": "archived_draft_integrity_pass",
+  "passed": true,
+  "checks": [
+    {
+      "path": "manufacturing/draft/nfc-talisman-panel-draft.zip",
+      "passed": true
+    },
+    {
+      "path": "manufacturing/draft/nfc-talisman-panel-bom-all.csv",
+      "passed": true
+    },
+    {
+      "path": "manufacturing/draft/nfc-talisman-panel-pnp-all.csv",
+      "passed": true
+    },
+    {
+      "path": "eda/native/nfc-talisman-current.epro2",
+      "passed": true
+    },
+    {
+      "path": "manufacturing/draft/nfc-talisman-panel-cam-review.zip",
+      "passed": true
+    },
+    {
+      "path": "manufacturing/draft/four-led-bom.csv",
+      "passed": true
+    },
+    {
+      "path": "manufacturing/draft/four-led-panel-pnp.csv",
+      "passed": true
+    },
+    {
+      "path": "manufacturing/draft/two-led-bom.csv",
+      "passed": true
+    },
+    {
+      "path": "manufacturing/draft/two-led-panel-pnp.csv",
+      "passed": true
+    },
+    {
+      "path": "manufacturing/draft/assembly-variants.json",
+      "passed": true
+    },
+    {
+      "path": "manufacturing/draft/cam-audit.json",
+      "passed": true
+    },
+    {
+      "path": "manufacturing/draft/cam-package-manifest.json",
+      "passed": true
+    },
+    {
+      "path": "electrical/native-copper-audit.json",
+      "passed": true
+    },
+    {
+      "path": "electrical/native-netlist-audit.json",
+      "passed": true
+    },
+    {
+      "path": "eda/check-summary.json",
+      "passed": true
+    },
+    {
+      "path": "manufacturing/draft/star-face-audit.json",
+      "passed": true
+    },
+    {
+      "path": "manufacturing/draft/star-color-audit.json",
+      "passed": true
+    },
+    {
+      "path": "artwork/sagittarius-color-print-candidate.png",
+      "passed": true
+    },
+    {
+      "path": "artwork/sagittarius-linework-review.json",
+      "passed": true
+    },
+    {
+      "path": "eda/logs/24-schematic-erc-current.json",
+      "passed": true
+    },
+    {
+      "path": "eda/native/schematic-source.jsonl",
+      "passed": true
+    },
+    {
+      "path": "eda/native/schematic-netlist.json",
+      "passed": true
+    },
+    {
+      "path": "eda/logs/25-core-pcb-drc-current.json",
+      "passed": true
+    },
+    {
+      "path": "eda/native/core-source.jsonl",
+      "passed": true
+    },
+    {
+      "path": "eda/native/core-netlist.json",
+      "passed": true
+    },
+    {
+      "path": "eda/logs/26-panel-pcb-drc-current.json",
+      "passed": true
+    },
+    {
+      "path": "eda/native/panel-source.jsonl",
+      "passed": true
+    },
+    {
+      "path": "eda/native/panel-netlist.json",
+      "passed": true
+    },
+    {
+      "path": "CAM source ZIP hash",
+      "passed": true
+    },
+    {
+      "path": "ZIP CRC",
+      "passed": true
+    },
+    {
+      "path": "CAM member list",
+      "passed": true
+    },
+    {
+      "path": "Duplicate PTH excluded",
+      "passed": true
+    },
+    {
+      "path": "Gerber_TopLayer.GTL",
+      "passed": true
+    },
+    {
+      "path": "Gerber_BottomLayer.GBL",
+      "passed": true
+    },
+    {
+      "path": "Gerber_TopSilkscreenLayer.GTO",
+      "passed": true
+    },
+    {
+      "path": "Gerber_BottomSilkscreenLayer.GBO",
+      "passed": true
+    },
+    {
+      "path": "Gerber_TopSolderMaskLayer.GTS",
+      "passed": true
+    },
+    {
+      "path": "Gerber_BottomSolderMaskLayer.GBS",
+      "passed": true
+    },
+    {
+      "path": "Gerber_TopPasteMaskLayer.GTP",
+      "passed": true
+    },
+    {
+      "path": "Gerber_BottomPasteMaskLayer.GBP",
+      "passed": true
+    },
+    {
+      "path": "Gerber_BoardOutlineLayer.GKO",
+      "passed": true
+    },
+    {
+      "path": "Drill_PTH_Through.DRL",
+      "passed": true
+    },
+    {
+      "path": "Drill_NPTH_Through.DRL",
+      "passed": true
+    },
+    {
+      "path": "Fabrication_ColorfulTopSilkscreen.FCTS",
+      "passed": true
+    },
+    {
+      "path": "Fabrication_ColorfulBottomSilkscreen.FCBS",
+      "passed": true
+    },
+    {
+      "path": "Fabrication_ColorfulBoardOutlineLayer.FCBO",
+      "passed": true
+    },
+    {
+      "path": "Fabrication_ColorfulBoardOutlineMark.FCBM",
+      "passed": true
+    }
+  ],
+  "limitations": [
+    "Checks archived files only; does not inspect unsaved live EasyEDA changes.",
+    "No new native ERC/DRC run, CAM process approval or physical acceptance."
+  ]
+}

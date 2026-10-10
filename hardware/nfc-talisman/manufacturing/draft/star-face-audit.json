@@ -1,0 +1,1997 @@
+{
+  "scope": "Read-only audit of Sagittarius geometry against the actual native panel source and manufacturing ZIP. This does not replace supplier CAM approval.",
+  "inputs": {
+    "geometry_sha256": "3c677d826508b96cc74d04c815f9a35a69bd39f6a7b3d6d455734b9061138391",
+    "artwork_sha256": "10c357ce4abb7a86e7ef3dd1e72a409b25f693f2d0fa57e25a9643409b50f95b",
+    "geometry_semantic_sha256": "63df37e59d5f244adbce61ccb0b0feb010cdfd5552a07493648660db6e84b723",
+    "artwork_semantic_sha256": "13222a410d8f40ce8cd63c79541b7cacc663838eddb8c22ff19cfdf0f8f22e5c",
+    "native_panel_sha256": "ab2c9b47595f17fed91e0a9963caa1feed33cde3dca1982c6ed54322ccca7f47",
+    "manufacturing_zip_sha256": "6ec0dbed56204dfafa776a43e777ecd64c8cbd8ee49ce3ef5338d71d5c9cbae7",
+    "manufacturing_zip_bytes": 628904,
+    "zip_crc_error_member": null,
+    "zip_members": [
+      "Drill_NPTH_Through.DRL",
+      "Drill_PTH_Through.DRL",
+      "Drill_PTH_Through_Via.DRL",
+      "Fabrication_ColorfulBoardOutlineLayer.FCBO",
+      "Fabrication_ColorfulBoardOutlineMark.FCBM",
+      "Fabrication_ColorfulBottomSilkscreen.FCBS",
+      "Fabrication_ColorfulTopSilkscreen.FCTS",
+      "Gerber_BoardOutlineLayer.GKO",
+      "Gerber_BottomLayer.GBL",
+      "Gerber_BottomPasteMaskLayer.GBP",
+      "Gerber_BottomSilkscreenLayer.GBO",
+      "Gerber_BottomSolderMaskLayer.GBS",
+      "Gerber_DocumentLayer.GDL",
+      "Gerber_DrillDrawingLayer.GDD",
+      "Gerber_TopLayer.GTL",
+      "Gerber_TopPasteMaskLayer.GTP",
+      "Gerber_TopSilkscreenLayer.GTO",
+      "Gerber_TopSolderMaskLayer.GTS",
+      "PCB下单必读.txt"
+    ],
+    "native_coordinate_conversion": "mm = mil × 0.0254; design_panel_y = 100 − native_y_mm",
+    "gerber_coordinate_conversion": "Native and Gerber use the same upward Y coordinates; design_panel_y = 100 − Gerber_y_mm"
+  },
+  "geometry": {
+    "sagittarius_board_center_panel_mm": [
+      79.5,
+      76.5
+    ],
+    "expected_star_count": 8,
+    "expected_slot_count": 11,
+    "expected_slot_width_mm": 1,
+    "slots": [
+      {
+        "id": "e01",
+        "centerline_mm": 4.872601,
+        "overall_mm": 5.872601,
+        "width_mm": 1
+      },
+      {
+        "id": "e03",
+        "centerline_mm": 6.892783,
+        "overall_mm": 7.892783,
+        "width_mm": 1
+      },
+      {
+        "id": "e05",
+        "centerline_mm": 2.879328,
+        "overall_mm": 3.879328,
+        "width_mm": 1
+      },
+      {
+        "id": "e06",
+        "centerline_mm": 4.859838,
+        "overall_mm": 5.859838,
+        "width_mm": 1
+      },
+      {
+        "id": "e07",
+        "centerline_mm": 15.43557,
+        "overall_mm": 16.43557,
+        "width_mm": 1
+      },
+      {
+        "id": "e08",
+        "centerline_mm": 6.557368,
+        "overall_mm": 7.557368,
+        "width_mm": 1
+      },
+      {
+        "id": "e09",
+        "centerline_mm": 7.379606,
+        "overall_mm": 8.379606,
+        "width_mm": 1
+      },
+      {
+        "id": "e10",
+        "centerline_mm": 4.632058,
+        "overall_mm": 5.632058,
+        "width_mm": 1
+      },
+      {
+        "id": "e12",
+        "centerline_mm": 0.574721,
+        "overall_mm": 1.574721,
+        "width_mm": 1
+      },
+      {
+        "id": "e13",
+        "centerline_mm": 3.150452,
+        "overall_mm": 4.150452,
+        "width_mm": 1
+      },
+      {
+        "id": "e14",
+        "centerline_mm": 0.488858,
+        "overall_mm": 1.488858,
+        "width_mm": 1
+      }
+    ]
+  },
+  "native_source": {
+    "star_holes": [
+      {
+        "id": "hip_92855",
+        "native_pad_num": "HIP_92855",
+        "native_hole_type": "ROUND",
+        "present": true,
+        "diameter_mm": 0.8000009399999999,
+        "hole_height_mm": 0.8000009399999999,
+        "plated": false,
+        "center_error_mm": 2e-06,
+        "diameter_error_mm": 1e-06,
+        "round_hole_shape_pass": true
+      },
+      {
+        "id": "hip_92041",
+        "native_pad_num": "HIP_92041",
+        "native_hole_type": "ROUND",
+        "present": true,
+        "diameter_mm": 0.8000009399999999,
+        "hole_height_mm": 0.8000009399999999,
+        "plated": false,
+        "center_error_mm": 1e-06,
+        "diameter_error_mm": 1e-06,
+        "round_hole_shape_pass": true
+      },
+      {
+        "id": "hip_90496",
+        "native_pad_num": "HIP_90496",
+        "native_hole_type": "ROUND",
+        "present": true,
+        "diameter_mm": 0.8000009399999999,
+        "hole_height_mm": 0.8000009399999999,
+        "plated": false,
+        "center_error_mm": 1e-06,
+        "diameter_error_mm": 1e-06,
+        "round_hole_shape_pass": true
+      },
+      {
+        "id": "hip_89931",
+        "native_pad_num": "HIP_89931",
+        "native_hole_type": "ROUND",
+        "present": true,
+        "diameter_mm": 0.8000009399999999,
+        "hole_height_mm": 0.8000009399999999,
+        "plated": false,
+        "center_error_mm": 2e-06,
+        "diameter_error_mm": 1e-06,
+        "round_hole_shape_pass": true
+      },
+      {
+        "id": "hip_88635",
+        "native_pad_num": "HIP_88635",
+        "native_hole_type": "ROUND",
+        "present": true,
+        "diameter_mm": 0.8000009399999999,
+        "hole_height_mm": 0.8000009399999999,
+        "plated": false,
+        "center_error_mm": 1e-06,
+        "diameter_error_mm": 1e-06,
+        "round_hole_shape_pass": true
+      },
+      {
+        "id": "hip_90185",
+        "native_pad_num": "HIP_90185",
+        "native_hole_type": "ROUND",
+        "present": true,
+        "diameter_mm": 0.8000009399999999,
+        "hole_height_mm": 0.8000009399999999,
+        "plated": false,
+        "center_error_mm": 1e-06,
+        "diameter_error_mm": 1e-06,
+        "round_hole_shape_pass": true
+      },
+      {
+        "id": "hip_93506",
+        "native_pad_num": "HIP_93506",
+        "native_hole_type": "ROUND",
+        "present": true,
+        "diameter_mm": 0.8000009399999999,
+        "hole_height_mm": 0.8000009399999999,
+        "plated": false,
+        "center_error_mm": 1e-06,
+        "diameter_error_mm": 1e-06,
+        "round_hole_shape_pass": true
+      },
+      {
+        "id": "hip_93864",
+        "native_pad_num": "HIP_93864",
+        "native_hole_type": "ROUND",
+        "present": true,
+        "diameter_mm": 0.8000009399999999,
+        "hole_height_mm": 0.8000009399999999,
+        "plated": false,
+        "center_error_mm": 1e-06,
+        "diameter_error_mm": 1e-06,
+        "round_hole_shape_pass": true
+      }
+    ],
+    "star_holes_present": 8,
+    "slots": [
+      {
+        "id": "e01",
+        "present": true,
+        "native_id": "a83e22ddb928ccf9",
+        "hausdorff_mm": 0.002409,
+        "geometry_width_mm": 1.0,
+        "native_path_vertex_count": 34,
+        "explicitly_closed": true
+      },
+      {
+        "id": "e03",
+        "present": true,
+        "native_id": "9adb8044ac0aad90",
+        "hausdorff_mm": 0.002409,
+        "geometry_width_mm": 1.0,
+        "native_path_vertex_count": 34,
+        "explicitly_closed": true
+      },
+      {
+        "id": "e05",
+        "present": true,
+        "native_id": "e1d75302a13f58df",
+        "hausdorff_mm": 0.002409,
+        "geometry_width_mm": 1.0,
+        "native_path_vertex_count": 36,
+        "explicitly_closed": true
+      },
+      {
+        "id": "e06",
+        "present": true,
+        "native_id": "edc7184636daca02",
+        "hausdorff_mm": 0.002409,
+        "geometry_width_mm": 1.0,
+        "native_path_vertex_count": 34,
+        "explicitly_closed": true
+      },
+      {
+        "id": "e07",
+        "present": true,
+        "native_id": "15b8197e320259e4",
+        "hausdorff_mm": 0.002409,
+        "geometry_width_mm": 1.0,
+        "native_path_vertex_count": 34,
+        "explicitly_closed": true
+      },
+      {
+        "id": "e08",
+        "present": true,
+        "native_id": "e0dff31ba0707afe",
+        "hausdorff_mm": 0.002409,
+        "geometry_width_mm": 1.0,
+        "native_path_vertex_count": 34,
+        "explicitly_closed": true
+      },
+      {
+        "id": "e09",
+        "present": true,
+        "native_id": "f12af8039d05933c",
+        "hausdorff_mm": 0.002408,
+        "geometry_width_mm": 1.0,
+        "native_path_vertex_count": 34,
+        "explicitly_closed": true
+      },
+      {
+        "id": "e10",
+        "present": true,
+        "native_id": "24a015efa25c7b53",
+        "hausdorff_mm": 0.002409,
+        "geometry_width_mm": 1.0,
+        "native_path_vertex_count": 34,
+        "explicitly_closed": true
+      },
+      {
+        "id": "e12",
+        "present": true,
+        "native_id": "d63c39e618628033",
+        "hausdorff_mm": 0.002408,
+        "geometry_width_mm": 1.0,
+        "native_path_vertex_count": 40,
+        "explicitly_closed": true
+      },
+      {
+        "id": "e13",
+        "present": true,
+        "native_id": "24f4eea90e87064d",
+        "hausdorff_mm": 0.002408,
+        "geometry_width_mm": 1.0,
+        "native_path_vertex_count": 36,
+        "explicitly_closed": true
+      },
+      {
+        "id": "e14",
+        "present": true,
+        "native_id": "0517a2bec13e5d1c",
+        "hausdorff_mm": 0.002409,
+        "geometry_width_mm": 1.0,
+        "native_path_vertex_count": 40,
+        "explicitly_closed": true
+      }
+    ],
+    "layer11_slot_polygon_count": 22,
+    "silkscreen_native_path_candidates": 96,
+    "silkscreen_art_matches": [
+      {
+        "id": "latin_ad_astra_0_0_part1",
+        "present": true,
+        "native_id": "9c12e593dad862aa",
+        "native_layer_id": 3,
+        "hausdorff_mm": 1e-06,
+        "stroke_width_error_mm": 0.0
+      },
+      {
+        "id": "latin_ad_astra_0_1_part1",
+        "present": true,
+        "native_id": "fee3c32584275777",
+        "native_layer_id": 3,
+        "hausdorff_mm": 1e-06,
+        "stroke_width_error_mm": 0.0
+      },
+      {
+        "id": "latin_ad_astra_0_2_part1",
+        "present": true,
+        "native_id": "b8b337ac48f7eb9d",
+        "native_layer_id": 3,
+        "hausdorff_mm": 2e-06,
+        "stroke_width_error_mm": 0.0
+      },
+      {
+        "id": "latin_ad_astra_0_3_part1",
+        "present": true,
+        "native_id": "b6133a868de58303",
+        "native_layer_id": 3,
+        "hausdorff_mm": 1e-06,
+        "stroke_width_error_mm": 0.0
+      },
+      {
+        "id": "latin_ad_astra_1_0_part1",
+        "present": true,
+        "native_id": "599ce0f3a02f48ba",
+        "native_layer_id": 3,
+        "hausdorff_mm": 1e-06,
+        "stroke_width_error_mm": 0.0
+      },
+      {
+        "id": "latin_ad_astra_1_1_part1",
+        "present": true,
+        "native_id": "4cefd01b0b62374a",
+        "native_layer_id": 3,
+        "hausdorff_mm": 2e-06,
+        "stroke_width_error_mm": 0.0
+      },
+      {
+        "id": "latin_ad_astra_1_3_part1",
+        "present": true,
+        "native_id": "2e0396840f30eee7",
+        "native_layer_id": 3,
+        "hausdorff_mm": 1e-06,
+        "stroke_width_error_mm": 0.0
+      },
+      {
+        "id": "latin_ad_astra_1_5_part1",
+        "present": true,
+        "native_id": "13f8f3f88ab7e8a6",
+        "native_layer_id": 3,
+        "hausdorff_mm": 2e-06,
+        "stroke_width_error_mm": 0.0
+      },
+      {
+        "id": "latin_ad_astra_3_0_part1",
+        "present": true,
+        "native_id": "2818d1bad72a0876",
+        "native_layer_id": 3,
+        "hausdorff_mm": 1e-06,
+        "stroke_width_error_mm": 0.0
+      },
+      {
+        "id": "latin_ad_astra_3_1_part1",
+        "present": true,
+        "native_id": "2af8ff31dbf83f54",
+        "native_layer_id": 3,
+        "hausdorff_mm": 1e-06,
+        "stroke_width_error_mm": 0.0
+      },
+      {
+        "id": "latin_ad_astra_3_2_part1",
+        "present": true,
+        "native_id": "5f49ab7be425a1d1",
+        "native_layer_id": 3,
+        "hausdorff_mm": 1e-06,
+        "stroke_width_error_mm": 0.0
+      },
+      {
+        "id": "latin_ad_astra_3_3_part1",
+        "present": true,
+        "native_id": "c5a8ddfa4ad84e4f",
+        "native_layer_id": 3,
+        "hausdorff_mm": 1e-06,
+        "stroke_width_error_mm": 0.0
+      },
+      {
+        "id": "latin_ad_astra_4_0_part1",
+        "present": true,
+        "native_id": "4a138cc73a45df46",
+        "native_layer_id": 3,
+        "hausdorff_mm": 2e-06,
+        "stroke_width_error_mm": 0.0
+      },
+      {
+        "id": "latin_ad_astra_4_3_part1",
+        "present": true,
+        "native_id": "3c60a39fae9eb701",
+        "native_layer_id": 3,
+        "hausdorff_mm": 1e-06,
+        "stroke_width_error_mm": 0.0
+      },
+      {
+        "id": "latin_ad_astra_4_6_part1",
+        "present": true,
+        "native_id": "8f738cbe9bbdf0e1",
+        "native_layer_id": 3,
+        "hausdorff_mm": 1e-06,
+        "stroke_width_error_mm": 0.0
+      },
+      {
+        "id": "latin_ad_astra_5_0_part1",
+        "present": true,
+        "native_id": "6dbe0d38bc1725cc",
+        "native_layer_id": 3,
+        "hausdorff_mm": 1e-06,
+        "stroke_width_error_mm": 0.0
+      },
+      {
+        "id": "latin_ad_astra_5_1_part1",
+        "present": true,
+        "native_id": "646a75437eb568db",
+        "native_layer_id": 3,
+        "hausdorff_mm": 1e-06,
+        "stroke_width_error_mm": 0.0
+      },
+      {
+        "id": "latin_ad_astra_6_0_part1",
+        "present": true,
+        "native_id": "758e4ee3f3e6ee2c",
+        "native_layer_id": 3,
+        "hausdorff_mm": 2e-06,
+        "stroke_width_error_mm": 0.0
+      },
+      {
+        "id": "latin_ad_astra_6_1_part1",
+        "present": true,
+        "native_id": "b81e2b249bcf8c09",
+        "native_layer_id": 3,
+        "hausdorff_mm": 2e-06,
+        "stroke_width_error_mm": 0.0
+      },
+      {
+        "id": "latin_ad_astra_6_5_part1",
+        "present": true,
+        "native_id": "9b6e048daa921fb5",
+        "native_layer_id": 3,
+        "hausdorff_mm": 1e-06,
+        "stroke_width_error_mm": 0.0
+      },
+      {
+        "id": "latin_ad_astra_6_6_part1",
+        "present": true,
+        "native_id": "9c379696064fb667",
+        "native_layer_id": 3,
+        "hausdorff_mm": 1e-06,
+        "stroke_width_error_mm": 0.0
+      },
+      {
+        "id": "latin_ad_astra_7_0_part1",
+        "present": true,
+        "native_id": "78915a76615b0068",
+        "native_layer_id": 3,
+        "hausdorff_mm": 2e-06,
+        "stroke_width_error_mm": 0.0
+      },
+      {
+        "id": "latin_ad_astra_7_1_part1",
+        "present": true,
+        "native_id": "0cc2dfa311fb2be3",
+        "native_layer_id": 3,
+        "hausdorff_mm": 2e-06,
+        "stroke_width_error_mm": 0.0
+      },
+      {
+        "id": "latin_ad_astra_7_2_part1",
+        "present": true,
+        "native_id": "792990831528f492",
+        "native_layer_id": 3,
+        "hausdorff_mm": 1e-06,
+        "stroke_width_error_mm": 0.0
+      },
+      {
+        "id": "latin_ad_astra_7_3_part1",
+        "present": true,
+        "native_id": "f0a6adc3e7d63491",
+        "native_layer_id": 3,
+        "hausdorff_mm": 1e-06,
+        "stroke_width_error_mm": 0.0
+      },
+      {
+        "id": "latin_fortis_et_liber_0_0_part1",
+        "present": true,
+        "native_id": "cd0017d2f428acd5",
+        "native_layer_id": 3,
+        "hausdorff_mm": 1e-06,
+        "stroke_width_error_mm": 0.0
+      },
+      {
+        "id": "latin_fortis_et_liber_0_1_part1",
+        "present": true,
+        "native_id": "a5c1ed9bc4c9ab07",
+        "native_layer_id": 3,
+        "hausdorff_mm": 1e-06,
+        "stroke_width_error_mm": 0.0
+      },
+      {
+        "id": "latin_fortis_et_liber_0_2_part1",
+        "present": true,
+        "native_id": "cd2d13279f61e49a",
+        "native_layer_id": 3,
+        "hausdorff_mm": 1e-06,
+        "stroke_width_error_mm": 0.0
+      },
+      {
+        "id": "latin_fortis_et_liber_1_0_part1",
+        "present": true,
+        "native_id": "b91011ccf3b5ec7b",
+        "native_layer_id": 3,
+        "hausdorff_mm": 1e-06,
+        "stroke_width_error_mm": 0.0
+      },
+      {
+        "id": "latin_fortis_et_liber_1_4_part1",
+        "present": true,
+        "native_id": "0c7097337f977f41",
+        "native_layer_id": 3,
+        "hausdorff_mm": 1e-06,
+        "stroke_width_error_mm": 0.0
+      },
+      {
+        "id": "latin_fortis_et_liber_2_0_part1",
+        "present": true,
+        "native_id": "49c01481a78487d0",
+        "native_layer_id": 3,
+        "hausdorff_mm": 1e-06,
+        "stroke_width_error_mm": 0.0
+      },
+      {
+        "id": "latin_fortis_et_liber_2_1_part1",
+        "present": true,
+        "native_id": "39e5410ef42bd62d",
+        "native_layer_id": 3,
+        "hausdorff_mm": 1e-06,
+        "stroke_width_error_mm": 0.0
+      },
+      {
+        "id": "latin_fortis_et_liber_2_5_part1",
+        "present": true,
+        "native_id": "455263b5994d7bef",
+        "native_layer_id": 3,
+        "hausdorff_mm": 1e-06,
+        "stroke_width_error_mm": 0.0
+      },
+      {
+        "id": "latin_fortis_et_liber_2_6_part1",
+        "present": true,
+        "native_id": "6fc2f7eeef7d7498",
+        "native_layer_id": 3,
+        "hausdorff_mm": 2e-06,
+        "stroke_width_error_mm": 0.0
+      },
+      {
+        "id": "latin_fortis_et_liber_3_0_part1",
+        "present": true,
+        "native_id": "a9f1245b9adc784a",
+        "native_layer_id": 3,
+        "hausdorff_mm": 2e-06,
+        "stroke_width_error_mm": 0.0
+      },
+      {
+        "id": "latin_fortis_et_liber_3_1_part1",
+        "present": true,
+        "native_id": "3392a9b922ec4f88",
+        "native_layer_id": 3,
+        "hausdorff_mm": 1e-06,
+        "stroke_width_error_mm": 0.0
+      },
+      {
+        "id": "latin_fortis_et_liber_4_0_part1",
+        "present": true,
+        "native_id": "9eace728bea4d366",
+        "native_layer_id": 3,
+        "hausdorff_mm": 1e-06,
+        "stroke_width_error_mm": 0.0
+      },
+      {
+        "id": "latin_fortis_et_liber_4_1_part1",
+        "present": true,
+        "native_id": "0ebf389a44f0633a",
+        "native_layer_id": 3,
+        "hausdorff_mm": 1e-06,
+        "stroke_width_error_mm": 0.0
+      },
+      {
+        "id": "latin_fortis_et_liber_4_2_part1",
+        "present": true,
+        "native_id": "81c837dabe5a531c",
+        "native_layer_id": 3,
+        "hausdorff_mm": 1e-06,
+        "stroke_width_error_mm": 0.0
+      },
+      {
+        "id": "latin_fortis_et_liber_5_0_part1",
+        "present": true,
+        "native_id": "04e176def1e6658d",
+        "native_layer_id": 3,
+        "hausdorff_mm": 1e-06,
+        "stroke_width_error_mm": 0.0
+      },
+      {
+        "id": "latin_fortis_et_liber_5_3_part1",
+        "present": true,
+        "native_id": "a9d4e181ec4b0f54",
+        "native_layer_id": 3,
+        "hausdorff_mm": 1e-06,
+        "stroke_width_error_mm": 0.0
+      },
+      {
+        "id": "latin_fortis_et_liber_5_6_part1",
+        "present": true,
+        "native_id": "59e20d3f1c555f7c",
+        "native_layer_id": 3,
+        "hausdorff_mm": 1e-06,
+        "stroke_width_error_mm": 0.0
+      },
+      {
+        "id": "latin_fortis_et_liber_7_0_part1",
+        "present": true,
+        "native_id": "0237466c08a9f998",
+        "native_layer_id": 3,
+        "hausdorff_mm": 1e-06,
+        "stroke_width_error_mm": 0.0
+      },
+      {
+        "id": "latin_fortis_et_liber_7_1_part1",
+        "present": true,
+        "native_id": "f75bec6ddd20f458",
+        "native_layer_id": 3,
+        "hausdorff_mm": 1e-06,
+        "stroke_width_error_mm": 0.0
+      },
+      {
+        "id": "latin_fortis_et_liber_7_2_part1",
+        "present": true,
+        "native_id": "37520ef8df1158f0",
+        "native_layer_id": 3,
+        "hausdorff_mm": 1e-06,
+        "stroke_width_error_mm": 0.0
+      },
+      {
+        "id": "latin_fortis_et_liber_7_3_part1",
+        "present": true,
+        "native_id": "dceec35cbce0340c",
+        "native_layer_id": 3,
+        "hausdorff_mm": 1e-06,
+        "stroke_width_error_mm": 0.0
+      },
+      {
+        "id": "latin_fortis_et_liber_8_0_part1",
+        "present": true,
+        "native_id": "c4ce7dd8b0aabd14",
+        "native_layer_id": 3,
+        "hausdorff_mm": 1e-06,
+        "stroke_width_error_mm": 0.0
+      },
+      {
+        "id": "latin_fortis_et_liber_8_1_part1",
+        "present": true,
+        "native_id": "3cb491f2b29209ad",
+        "native_layer_id": 3,
+        "hausdorff_mm": 1e-06,
+        "stroke_width_error_mm": 0.0
+      },
+      {
+        "id": "latin_fortis_et_liber_10_0_part1",
+        "present": true,
+        "native_id": "d5e725dc915581c4",
+        "native_layer_id": 3,
+        "hausdorff_mm": 2e-06,
+        "stroke_width_error_mm": 0.0
+      },
+      {
+        "id": "latin_fortis_et_liber_10_1_part1",
+        "present": true,
+        "native_id": "1107d51df620c004",
+        "native_layer_id": 3,
+        "hausdorff_mm": 2e-06,
+        "stroke_width_error_mm": 0.0
+      },
+      {
+        "id": "latin_fortis_et_liber_11_0_part1",
+        "present": true,
+        "native_id": "9ba2662d83a65efb",
+        "native_layer_id": 3,
+        "hausdorff_mm": 2e-06,
+        "stroke_width_error_mm": 0.0
+      },
+      {
+        "id": "latin_fortis_et_liber_11_1_part1",
+        "present": true,
+        "native_id": "72a09bfb2706ced0",
+        "native_layer_id": 3,
+        "hausdorff_mm": 1e-06,
+        "stroke_width_error_mm": 0.0
+      },
+      {
+        "id": "latin_fortis_et_liber_11_2_part1",
+        "present": true,
+        "native_id": "213280a526b0b59a",
+        "native_layer_id": 3,
+        "hausdorff_mm": 1e-06,
+        "stroke_width_error_mm": 0.0
+      },
+      {
+        "id": "latin_fortis_et_liber_12_0_part1",
+        "present": true,
+        "native_id": "d1b58776193a9b3a",
+        "native_layer_id": 3,
+        "hausdorff_mm": 1e-06,
+        "stroke_width_error_mm": 0.0
+      },
+      {
+        "id": "latin_fortis_et_liber_12_1_part1",
+        "present": true,
+        "native_id": "294a312a11efd25a",
+        "native_layer_id": 3,
+        "hausdorff_mm": 1e-06,
+        "stroke_width_error_mm": 0.0
+      },
+      {
+        "id": "latin_fortis_et_liber_12_4_part1",
+        "present": true,
+        "native_id": "f13f4c70fa78c7d0",
+        "native_layer_id": 3,
+        "hausdorff_mm": 1e-06,
+        "stroke_width_error_mm": 0.0
+      },
+      {
+        "id": "latin_fortis_et_liber_12_7_part1",
+        "present": true,
+        "native_id": "fd7b8db8c4845c6e",
+        "native_layer_id": 3,
+        "hausdorff_mm": 1e-06,
+        "stroke_width_error_mm": 0.0
+      },
+      {
+        "id": "latin_fortis_et_liber_13_0_part1",
+        "present": true,
+        "native_id": "e152ede1abd778f6",
+        "native_layer_id": 3,
+        "hausdorff_mm": 1e-06,
+        "stroke_width_error_mm": 0.0
+      },
+      {
+        "id": "latin_fortis_et_liber_13_1_part1",
+        "present": true,
+        "native_id": "c609986d9a708026",
+        "native_layer_id": 3,
+        "hausdorff_mm": 1e-06,
+        "stroke_width_error_mm": 0.0
+      },
+      {
+        "id": "latin_fortis_et_liber_13_2_part1",
+        "present": true,
+        "native_id": "649152088b872707",
+        "native_layer_id": 3,
+        "hausdorff_mm": 1e-06,
+        "stroke_width_error_mm": 0.0
+      },
+      {
+        "id": "latin_fortis_et_liber_13_3_part1",
+        "present": true,
+        "native_id": "69b0497fc288c0b8",
+        "native_layer_id": 3,
+        "hausdorff_mm": 1e-06,
+        "stroke_width_error_mm": 0.0
+      },
+      {
+        "id": "latin_fortis_et_liber_14_0_part1",
+        "present": true,
+        "native_id": "b3688a8aecebc03c",
+        "native_layer_id": 3,
+        "hausdorff_mm": 1e-06,
+        "stroke_width_error_mm": 0.0
+      },
+      {
+        "id": "latin_fortis_et_liber_14_1_part1",
+        "present": true,
+        "native_id": "b07192248fa437a8",
+        "native_layer_id": 3,
+        "hausdorff_mm": 1e-06,
+        "stroke_width_error_mm": 0.0
+      },
+      {
+        "id": "latin_fortis_et_liber_14_5_part1",
+        "present": true,
+        "native_id": "6b9518743df2d4bb",
+        "native_layer_id": 3,
+        "hausdorff_mm": 1e-06,
+        "stroke_width_error_mm": 0.0
+      },
+      {
+        "id": "latin_fortis_et_liber_14_6_part1",
+        "present": true,
+        "native_id": "999ffb1b7f3cd23f",
+        "native_layer_id": 3,
+        "hausdorff_mm": 1e-06,
+        "stroke_width_error_mm": 0.0
+      },
+      {
+        "id": "sagittarius_outer_keyline_part1",
+        "present": true,
+        "native_id": "f602653ccc83b071",
+        "native_layer_id": 3,
+        "hausdorff_mm": 2e-06,
+        "stroke_width_error_mm": 0.0
+      },
+      {
+        "id": "star_rim_hip_92855",
+        "present": true,
+        "native_id": "fa911970c4860c4d",
+        "native_layer_id": 3,
+        "hausdorff_mm": 2e-06,
+        "stroke_width_error_mm": 0.0
+      },
+      {
+        "id": "star_rim_hip_92041",
+        "present": true,
+        "native_id": "23a7c19ec9adaaac",
+        "native_layer_id": 3,
+        "hausdorff_mm": 1e-06,
+        "stroke_width_error_mm": 0.0
+      },
+      {
+        "id": "star_rim_hip_90496",
+        "present": true,
+        "native_id": "241b230d47a170e1",
+        "native_layer_id": 3,
+        "hausdorff_mm": 2e-06,
+        "stroke_width_error_mm": 0.0
+      },
+      {
+        "id": "star_rim_hip_89931",
+        "present": true,
+        "native_id": "5b33e077abd1cc35",
+        "native_layer_id": 3,
+        "hausdorff_mm": 2e-06,
+        "stroke_width_error_mm": 0.0
+      },
+      {
+        "id": "star_rim_hip_88635",
+        "present": true,
+        "native_id": "063e37f6823d6f7a",
+        "native_layer_id": 3,
+        "hausdorff_mm": 1e-06,
+        "stroke_width_error_mm": 0.0
+      },
+      {
+        "id": "star_rim_hip_90185",
+        "present": true,
+        "native_id": "91c715c65e5b2258",
+        "native_layer_id": 3,
+        "hausdorff_mm": 2e-06,
+        "stroke_width_error_mm": 0.0
+      },
+      {
+        "id": "star_rim_hip_93506",
+        "present": true,
+        "native_id": "633ac185ff840134",
+        "native_layer_id": 3,
+        "hausdorff_mm": 1e-06,
+        "stroke_width_error_mm": 0.0
+      },
+      {
+        "id": "star_rim_hip_93864",
+        "present": true,
+        "native_id": "721413951d3f8ae3",
+        "native_layer_id": 3,
+        "hausdorff_mm": 1e-06,
+        "stroke_width_error_mm": 0.0
+      },
+      {
+        "id": "star_link_e01_a",
+        "present": true,
+        "native_id": "c98e96c6d3126c05",
+        "native_layer_id": 3,
+        "hausdorff_mm": 1e-06,
+        "stroke_width_error_mm": 0.0
+      },
+      {
+        "id": "star_link_e01_b",
+        "present": true,
+        "native_id": "b82f86b7b30bd2c3",
+        "native_layer_id": 3,
+        "hausdorff_mm": 1e-06,
+        "stroke_width_error_mm": 0.0
+      },
+      {
+        "id": "star_link_e03_a",
+        "present": true,
+        "native_id": "a68c3c9e8f4a382c",
+        "native_layer_id": 3,
+        "hausdorff_mm": 1e-06,
+        "stroke_width_error_mm": 0.0
+      },
+      {
+        "id": "star_link_e03_b",
+        "present": true,
+        "native_id": "46dc8e568dfded2d",
+        "native_layer_id": 3,
+        "hausdorff_mm": 1e-06,
+        "stroke_width_error_mm": 0.0
+      },
+      {
+        "id": "star_link_e05_a",
+        "present": true,
+        "native_id": "7915da32d581aabe",
+        "native_layer_id": 3,
+        "hausdorff_mm": 1e-06,
+        "stroke_width_error_mm": 0.0
+      },
+      {
+        "id": "star_link_e05_b",
+        "present": true,
+        "native_id": "2bc69d02a5c86296",
+        "native_layer_id": 3,
+        "hausdorff_mm": 1e-06,
+        "stroke_width_error_mm": 0.0
+      },
+      {
+        "id": "star_link_e06_a",
+        "present": true,
+        "native_id": "1e1a556b25bba359",
+        "native_layer_id": 3,
+        "hausdorff_mm": 1e-06,
+        "stroke_width_error_mm": 0.0
+      },
+      {
+        "id": "star_link_e06_b",
+        "present": true,
+        "native_id": "78c157e15011a5a8",
+        "native_layer_id": 3,
+        "hausdorff_mm": 1e-06,
+        "stroke_width_error_mm": 0.0
+      },
+      {
+        "id": "star_link_e07_a",
+        "present": true,
+        "native_id": "50e7ef6cc20f7ecd",
+        "native_layer_id": 3,
+        "hausdorff_mm": 2e-06,
+        "stroke_width_error_mm": 0.0
+      },
+      {
+        "id": "star_link_e07_b",
+        "present": true,
+        "native_id": "959304fda748875c",
+        "native_layer_id": 3,
+        "hausdorff_mm": 1e-06,
+        "stroke_width_error_mm": 0.0
+      },
+      {
+        "id": "star_link_e08_a",
+        "present": true,
+        "native_id": "2a0cbf4b6abe190d",
+        "native_layer_id": 3,
+        "hausdorff_mm": 1e-06,
+        "stroke_width_error_mm": 0.0
+      },
+      {
+        "id": "star_link_e08_b",
+        "present": true,
+        "native_id": "306a9ccb50a8b1b8",
+        "native_layer_id": 3,
+        "hausdorff_mm": 2e-06,
+        "stroke_width_error_mm": 0.0
+      },
+      {
+        "id": "star_link_e09_a",
+        "present": true,
+        "native_id": "3b2d438313ce8c8c",
+        "native_layer_id": 3,
+        "hausdorff_mm": 1e-06,
+        "stroke_width_error_mm": 0.0
+      },
+      {
+        "id": "star_link_e09_b",
+        "present": true,
+        "native_id": "bf9e7769185a48db",
+        "native_layer_id": 3,
+        "hausdorff_mm": 1e-06,
+        "stroke_width_error_mm": 0.0
+      },
+      {
+        "id": "star_link_e10_a",
+        "present": true,
+        "native_id": "9b130d90269dddfe",
+        "native_layer_id": 3,
+        "hausdorff_mm": 1e-06,
+        "stroke_width_error_mm": 0.0
+      },
+      {
+        "id": "star_link_e10_b",
+        "present": true,
+        "native_id": "3611592bcc6bdf6a",
+        "native_layer_id": 3,
+        "hausdorff_mm": 1e-06,
+        "stroke_width_error_mm": 0.0
+      },
+      {
+        "id": "star_link_e12_a",
+        "present": true,
+        "native_id": "510f290738663d6e",
+        "native_layer_id": 3,
+        "hausdorff_mm": 1e-06,
+        "stroke_width_error_mm": 0.0
+      },
+      {
+        "id": "star_link_e12_b",
+        "present": true,
+        "native_id": "e9538921f6eb852d",
+        "native_layer_id": 3,
+        "hausdorff_mm": 1e-06,
+        "stroke_width_error_mm": 0.0
+      },
+      {
+        "id": "star_link_e13_a",
+        "present": true,
+        "native_id": "b3812f98f2cea7c3",
+        "native_layer_id": 3,
+        "hausdorff_mm": 1e-06,
+        "stroke_width_error_mm": 0.0
+      },
+      {
+        "id": "star_link_e13_b",
+        "present": true,
+        "native_id": "d76e05f06dce9c77",
+        "native_layer_id": 3,
+        "hausdorff_mm": 1e-06,
+        "stroke_width_error_mm": 0.0
+      },
+      {
+        "id": "star_link_e14_a",
+        "present": true,
+        "native_id": "c6cfb9141d3aa3fd",
+        "native_layer_id": 3,
+        "hausdorff_mm": 1e-06,
+        "stroke_width_error_mm": 0.0
+      },
+      {
+        "id": "star_link_e14_b",
+        "present": true,
+        "native_id": "dcbe700a812f4b71",
+        "native_layer_id": 3,
+        "hausdorff_mm": 1e-06,
+        "stroke_width_error_mm": 0.0
+      }
+    ],
+    "apertures_match_geometry": true,
+    "all_96_silkscreen_paths_match": true,
+    "source_face_pass": true
+  },
+  "manufacturing_export": {
+    "npth_tool_sizes_mm": {
+      "01": 0.599999,
+      "02": 0.800001
+    },
+    "star_drills": [
+      {
+        "id": "hip_92855",
+        "present": true,
+        "diameter_mm": 0.800001,
+        "center_error_mm": 1e-06,
+        "diameter_error_mm": 1e-06
+      },
+      {
+        "id": "hip_92041",
+        "present": true,
+        "diameter_mm": 0.800001,
+        "center_error_mm": 1e-06,
+        "diameter_error_mm": 1e-06
+      },
+      {
+        "id": "hip_90496",
+        "present": true,
+        "diameter_mm": 0.800001,
+        "center_error_mm": 1e-06,
+        "diameter_error_mm": 1e-06
+      },
+      {
+        "id": "hip_89931",
+        "present": true,
+        "diameter_mm": 0.800001,
+        "center_error_mm": 1e-06,
+        "diameter_error_mm": 1e-06
+      },
+      {
+        "id": "hip_88635",
+        "present": true,
+        "diameter_mm": 0.800001,
+        "center_error_mm": 1e-06,
+        "diameter_error_mm": 1e-06
+      },
+      {
+        "id": "hip_90185",
+        "present": true,
+        "diameter_mm": 0.800001,
+        "center_error_mm": 1e-06,
+        "diameter_error_mm": 1e-06
+      },
+      {
+        "id": "hip_93506",
+        "present": true,
+        "diameter_mm": 0.800001,
+        "center_error_mm": 1e-06,
+        "diameter_error_mm": 1e-06
+      },
+      {
+        "id": "hip_93864",
+        "present": true,
+        "diameter_mm": 0.800001,
+        "center_error_mm": 1e-06,
+        "diameter_error_mm": 1e-06
+      }
+    ],
+    "npth_0_8_count": 8,
+    "gko_slot_contours": [
+      {
+        "id": "e01",
+        "present": true,
+        "gko_path_index": 11,
+        "hausdorff_mm": 0.002409,
+        "actual_bounds_native_mm": [
+          81.378268,
+          26.371542,
+          85.317825,
+          31.256938
+        ],
+        "area_mm2": 5.635739,
+        "explicitly_closed": true
+      },
+      {
+        "id": "e03",
+        "present": true,
+        "gko_path_index": 12,
+        "hausdorff_mm": 0.002409,
+        "actual_bounds_native_mm": [
+          89.094018,
+          17.394893,
+          92.862273,
+          24.704792
+        ],
+        "area_mm2": 7.667163,
+        "explicitly_closed": true
+      },
+      {
+        "id": "e05",
+        "present": true,
+        "gko_path_index": 13,
+        "hausdorff_mm": 0.002409,
+        "actual_bounds_native_mm": [
+          87.767442,
+          24.70354,
+          91.585519,
+          26.284141
+        ],
+        "area_mm2": 3.656799,
+        "explicitly_closed": true
+      },
+      {
+        "id": "e06",
+        "present": true,
+        "gko_path_index": 14,
+        "hausdorff_mm": 0.002409,
+        "actual_bounds_native_mm": [
+          86.218502,
+          17.633025,
+          88.076245,
+          23.413268
+        ],
+        "area_mm2": 5.623016,
+        "explicitly_closed": true
+      },
+      {
+        "id": "e07",
+        "present": true,
+        "gko_path_index": 15,
+        "hausdorff_mm": 0.002409,
+        "actual_bounds_native_mm": [
+          70.407388,
+          14.386585,
+          86.77276,
+          16.839641
+        ],
+        "area_mm2": 16.202242,
+        "explicitly_closed": true
+      },
+      {
+        "id": "e08",
+        "present": true,
+        "gko_path_index": 16,
+        "hausdorff_mm": 0.002409,
+        "actual_bounds_native_mm": [
+          69.378739,
+          17.735669,
+          73.403991,
+          24.551434
+        ],
+        "area_mm2": 7.320335,
+        "explicitly_closed": true
+      },
+      {
+        "id": "e09",
+        "present": true,
+        "gko_path_index": 17,
+        "hausdorff_mm": 0.002408,
+        "actual_bounds_native_mm": [
+          75.980762,
+          24.610139,
+          84.310296,
+          26.448713
+        ],
+        "area_mm2": 8.153551,
+        "explicitly_closed": true
+      },
+      {
+        "id": "e10",
+        "present": true,
+        "gko_path_index": 18,
+        "hausdorff_mm": 0.002409,
+        "actual_bounds_native_mm": [
+          75.358272,
+          27.382478,
+          79.784585,
+          31.497059
+        ],
+        "area_mm2": 5.396063,
+        "explicitly_closed": true
+      },
+      {
+        "id": "e12",
+        "present": true,
+        "gko_path_index": 19,
+        "hausdorff_mm": 0.002408,
+        "actual_bounds_native_mm": [
+          66.659092,
+          17.345556,
+          68.075635,
+          18.736719
+        ],
+        "area_mm2": 1.356236,
+        "explicitly_closed": true
+      },
+      {
+        "id": "e13",
+        "present": true,
+        "gko_path_index": 20,
+        "hausdorff_mm": 0.002408,
+        "actual_bounds_native_mm": [
+          66.308534,
+          20.672199,
+          69.033819,
+          24.304602
+        ],
+        "area_mm2": 3.927598,
+        "explicitly_closed": true
+      },
+      {
+        "id": "e14",
+        "present": true,
+        "gko_path_index": 21,
+        "hausdorff_mm": 0.002409,
+        "actual_bounds_native_mm": [
+          70.990849,
+          25.266274,
+          72.470678,
+          26.353587
+        ],
+        "area_mm2": 1.270456,
+        "explicitly_closed": true
+      }
+    ],
+    "gko_paths_matched": 11,
+    "aperture_geometry_matches": true,
+    "optical_window_coverage": {
+      "expected_aperture_count": 19,
+      "manufactured_aperture_count": 19,
+      "intersection_over_expected_area": 0.99787,
+      "symmetric_difference_area_mm2": 0.149902,
+      "expected_aperture_perimeter_mm": 170.106102,
+      "area_difference_budget_mm2": 0.680424,
+      "max_actual_boundary_hausdorff_mm": 0.002409,
+      "boundary_tolerance_mm": 0.004,
+      "pass": true
+    }
+  },
+  "assembly_projection": {
+    "source_face": "Sagittarius outside-back view",
+    "mirror": "X coordinate mirrored in assembly-local coordinates",
+    "spacer_window_checks": [
+      {
+        "spacer": "spacer2",
+        "window_present": true,
+        "window_across_flats_mm": 30,
+        "projection_x_mirrored": true,
+        "projection_coverage_ratio": 1.0,
+        "aperture_area_outside_window_mm2": 0.0,
+        "minimum_projected_aperture_to_window_edge_mm": 0.85,
+        "pass": true
+      },
+      {
+        "spacer": "spacer4",
+        "window_present": true,
+        "window_across_flats_mm": 30,
+        "projection_x_mirrored": true,
+        "projection_coverage_ratio": 1.0,
+        "aperture_area_outside_window_mm2": 0.0,
+        "minimum_projected_aperture_to_window_edge_mm": 0.85,
+        "pass": true
+      }
+    ],
+    "pass": true,
+    "note": "The actual exported aperture union is projected through the 30 mm rounded windows after assembly-local X mirroring."
+  },
+  "manufactured_webs": {
+    "minimum_star_to_slot_mm": 1.030017,
+    "star_slot_pair_indices": [
+      0,
+      10
+    ],
+    "minimum_slot_to_slot_mm": 1.030699,
+    "slot_pair_indices": [
+      0,
+      6
+    ],
+    "required_mm": 1.0,
+    "pass": true,
+    "limitation": "Webs are computed from the exported GKO cutout contours and NPTH drills; supplier routing compensation and actual cutter behavior are not represented."
+  },
+  "material_connectivity": {
+    "reference_octagon_minus_manufactured_apertures_component_count": 1,
+    "pass": true,
+    "note": "Connected-material check subtracts the manufactured apertures from the Sagittarius board outline polygon."
+  },
+  "silkscreen": {
+    "expected_art_path_count": 96,
+    "artwork_categories": {
+      "latin_and_outer_keyline": 66,
+      "star_rims": 8,
+      "connector_segments": 22
+    },
+    "gerber_member_scores": [
+      {
+        "member": "Gerber_TopSilkscreenLayer.GTO",
+        "D02_path_count": 236,
+        "stroke_object_count": 223,
+        "art_paths_matched": 96
+      },
+      {
+        "member": "Gerber_BottomSilkscreenLayer.GBO",
+        "D02_path_count": 60,
+        "stroke_object_count": 60,
+        "art_paths_matched": 0
+      }
+    ],
+    "selected_member": "Gerber_TopSilkscreenLayer.GTO",
+    "actual_path_objects": 223,
+    "matched_art_path_count": 96,
+    "path_matches": [
+      {
+        "id": "latin_ad_astra_0_0_part1",
+        "present": true,
+        "hausdorff_mm": 1e-06,
+        "actual_width_mm": 0.18
+      },
+      {
+        "id": "latin_ad_astra_0_1_part1",
+        "present": true,
+        "hausdorff_mm": 1e-06,
+        "actual_width_mm": 0.18
+      },
+      {
+        "id": "latin_ad_astra_0_2_part1",
+        "present": true,
+        "hausdorff_mm": 1e-06,
+        "actual_width_mm": 0.18
+      },
+      {
+        "id": "latin_ad_astra_0_3_part1",
+        "present": true,
+        "hausdorff_mm": 1e-06,
+        "actual_width_mm": 0.18
+      },
+      {
+        "id": "latin_ad_astra_1_0_part1",
+        "present": true,
+        "hausdorff_mm": 1e-06,
+        "actual_width_mm": 0.18
+      },
+      {
+        "id": "latin_ad_astra_1_1_part1",
+        "present": true,
+        "hausdorff_mm": 1e-06,
+        "actual_width_mm": 0.18
+      },
+      {
+        "id": "latin_ad_astra_1_3_part1",
+        "present": true,
+        "hausdorff_mm": 1e-06,
+        "actual_width_mm": 0.18
+      },
+      {
+        "id": "latin_ad_astra_1_5_part1",
+        "present": true,
+        "hausdorff_mm": 1e-06,
+        "actual_width_mm": 0.18
+      },
+      {
+        "id": "latin_ad_astra_3_0_part1",
+        "present": true,
+        "hausdorff_mm": 1e-06,
+        "actual_width_mm": 0.18
+      },
+      {
+        "id": "latin_ad_astra_3_1_part1",
+        "present": true,
+        "hausdorff_mm": 1e-06,
+        "actual_width_mm": 0.18
+      },
+      {
+        "id": "latin_ad_astra_3_2_part1",
+        "present": true,
+        "hausdorff_mm": 1e-06,
+        "actual_width_mm": 0.18
+      },
+      {
+        "id": "latin_ad_astra_3_3_part1",
+        "present": true,
+        "hausdorff_mm": 1e-06,
+        "actual_width_mm": 0.18
+      },
+      {
+        "id": "latin_ad_astra_4_0_part1",
+        "present": true,
+        "hausdorff_mm": 1e-06,
+        "actual_width_mm": 0.18
+      },
+      {
+        "id": "latin_ad_astra_4_3_part1",
+        "present": true,
+        "hausdorff_mm": 1e-06,
+        "actual_width_mm": 0.18
+      },
+      {
+        "id": "latin_ad_astra_4_6_part1",
+        "present": true,
+        "hausdorff_mm": 1e-06,
+        "actual_width_mm": 0.18
+      },
+      {
+        "id": "latin_ad_astra_5_0_part1",
+        "present": true,
+        "hausdorff_mm": 1e-06,
+        "actual_width_mm": 0.18
+      },
+      {
+        "id": "latin_ad_astra_5_1_part1",
+        "present": true,
+        "hausdorff_mm": 1e-06,
+        "actual_width_mm": 0.18
+      },
+      {
+        "id": "latin_ad_astra_6_0_part1",
+        "present": true,
+        "hausdorff_mm": 1e-06,
+        "actual_width_mm": 0.18
+      },
+      {
+        "id": "latin_ad_astra_6_1_part1",
+        "present": true,
+        "hausdorff_mm": 1e-06,
+        "actual_width_mm": 0.18
+      },
+      {
+        "id": "latin_ad_astra_6_5_part1",
+        "present": true,
+        "hausdorff_mm": 1e-06,
+        "actual_width_mm": 0.18
+      },
+      {
+        "id": "latin_ad_astra_6_6_part1",
+        "present": true,
+        "hausdorff_mm": 1e-06,
+        "actual_width_mm": 0.18
+      },
+      {
+        "id": "latin_ad_astra_7_0_part1",
+        "present": true,
+        "hausdorff_mm": 1e-06,
+        "actual_width_mm": 0.18
+      },
+      {
+        "id": "latin_ad_astra_7_1_part1",
+        "present": true,
+        "hausdorff_mm": 1e-06,
+        "actual_width_mm": 0.18
+      },
+      {
+        "id": "latin_ad_astra_7_2_part1",
+        "present": true,
+        "hausdorff_mm": 1e-06,
+        "actual_width_mm": 0.18
+      },
+      {
+        "id": "latin_ad_astra_7_3_part1",
+        "present": true,
+        "hausdorff_mm": 1e-06,
+        "actual_width_mm": 0.18
+      },
+      {
+        "id": "latin_fortis_et_liber_0_0_part1",
+        "present": true,
+        "hausdorff_mm": 1e-06,
+        "actual_width_mm": 0.18
+      },
+      {
+        "id": "latin_fortis_et_liber_0_1_part1",
+        "present": true,
+        "hausdorff_mm": 1e-06,
+        "actual_width_mm": 0.18
+      },
+      {
+        "id": "latin_fortis_et_liber_0_2_part1",
+        "present": true,
+        "hausdorff_mm": 1e-06,
+        "actual_width_mm": 0.18
+      },
+      {
+        "id": "latin_fortis_et_liber_1_0_part1",
+        "present": true,
+        "hausdorff_mm": 1e-06,
+        "actual_width_mm": 0.18
+      },
+      {
+        "id": "latin_fortis_et_liber_1_4_part1",
+        "present": true,
+        "hausdorff_mm": 1e-06,
+        "actual_width_mm": 0.18
+      },
+      {
+        "id": "latin_fortis_et_liber_2_0_part1",
+        "present": true,
+        "hausdorff_mm": 1e-06,
+        "actual_width_mm": 0.18
+      },
+      {
+        "id": "latin_fortis_et_liber_2_1_part1",
+        "present": true,
+        "hausdorff_mm": 1e-06,
+        "actual_width_mm": 0.18
+      },
+      {
+        "id": "latin_fortis_et_liber_2_5_part1",
+        "present": true,
+        "hausdorff_mm": 1e-06,
+        "actual_width_mm": 0.18
+      },
+      {
+        "id": "latin_fortis_et_liber_2_6_part1",
+        "present": true,
+        "hausdorff_mm": 1e-06,
+        "actual_width_mm": 0.18
+      },
+      {
+        "id": "latin_fortis_et_liber_3_0_part1",
+        "present": true,
+        "hausdorff_mm": 1e-06,
+        "actual_width_mm": 0.18
+      },
+      {
+        "id": "latin_fortis_et_liber_3_1_part1",
+        "present": true,
+        "hausdorff_mm": 1e-06,
+        "actual_width_mm": 0.18
+      },
+      {
+        "id": "latin_fortis_et_liber_4_0_part1",
+        "present": true,
+        "hausdorff_mm": 1e-06,
+        "actual_width_mm": 0.18
+      },
+      {
+        "id": "latin_fortis_et_liber_4_1_part1",
+        "present": true,
+        "hausdorff_mm": 1e-06,
+        "actual_width_mm": 0.18
+      },
+      {
+        "id": "latin_fortis_et_liber_4_2_part1",
+        "present": true,
+        "hausdorff_mm": 1e-06,
+        "actual_width_mm": 0.18
+      },
+      {
+        "id": "latin_fortis_et_liber_5_0_part1",
+        "present": true,
+        "hausdorff_mm": 1e-06,
+        "actual_width_mm": 0.18
+      },
+      {
+        "id": "latin_fortis_et_liber_5_3_part1",
+        "present": true,
+        "hausdorff_mm": 1e-06,
+        "actual_width_mm": 0.18
+      },
+      {
+        "id": "latin_fortis_et_liber_5_6_part1",
+        "present": true,
+        "hausdorff_mm": 1e-06,
+        "actual_width_mm": 0.18
+      },
+      {
+        "id": "latin_fortis_et_liber_7_0_part1",
+        "present": true,
+        "hausdorff_mm": 1e-06,
+        "actual_width_mm": 0.18
+      },
+      {
+        "id": "latin_fortis_et_liber_7_1_part1",
+        "present": true,
+        "hausdorff_mm": 1e-06,
+        "actual_width_mm": 0.18
+      },
+      {
+        "id": "latin_fortis_et_liber_7_2_part1",
+        "present": true,
+        "hausdorff_mm": 1e-06,
+        "actual_width_mm": 0.18
+      },
+      {
+        "id": "latin_fortis_et_liber_7_3_part1",
+        "present": true,
+        "hausdorff_mm": 1e-06,
+        "actual_width_mm": 0.18
+      },
+      {
+        "id": "latin_fortis_et_liber_8_0_part1",
+        "present": true,
+        "hausdorff_mm": 1e-06,
+        "actual_width_mm": 0.18
+      },
+      {
+        "id": "latin_fortis_et_liber_8_1_part1",
+        "present": true,
+        "hausdorff_mm": 1e-06,
+        "actual_width_mm": 0.18
+      },
+      {
+        "id": "latin_fortis_et_liber_10_0_part1",
+        "present": true,
+        "hausdorff_mm": 1e-06,
+        "actual_width_mm": 0.18
+      },
+      {
+        "id": "latin_fortis_et_liber_10_1_part1",
+        "present": true,
+        "hausdorff_mm": 1e-06,
+        "actual_width_mm": 0.18
+      },
+      {
+        "id": "latin_fortis_et_liber_11_0_part1",
+        "present": true,
+        "hausdorff_mm": 1e-06,
+        "actual_width_mm": 0.18
+      },
+      {
+        "id": "latin_fortis_et_liber_11_1_part1",
+        "present": true,
+        "hausdorff_mm": 1e-06,
+        "actual_width_mm": 0.18
+      },
+      {
+        "id": "latin_fortis_et_liber_11_2_part1",
+        "present": true,
+        "hausdorff_mm": 1e-06,
+        "actual_width_mm": 0.18
+      },
+      {
+        "id": "latin_fortis_et_liber_12_0_part1",
+        "present": true,
+        "hausdorff_mm": 1e-06,
+        "actual_width_mm": 0.18
+      },
+      {
+        "id": "latin_fortis_et_liber_12_1_part1",
+        "present": true,
+        "hausdorff_mm": 1e-06,
+        "actual_width_mm": 0.18
+      },
+      {
+        "id": "latin_fortis_et_liber_12_4_part1",
+        "present": true,
+        "hausdorff_mm": 1e-06,
+        "actual_width_mm": 0.18
+      },
+      {
+        "id": "latin_fortis_et_liber_12_7_part1",
+        "present": true,
+        "hausdorff_mm": 1e-06,
+        "actual_width_mm": 0.18
+      },
+      {
+        "id": "latin_fortis_et_liber_13_0_part1",
+        "present": true,
+        "hausdorff_mm": 1e-06,
+        "actual_width_mm": 0.18
+      },
+      {
+        "id": "latin_fortis_et_liber_13_1_part1",
+        "present": true,
+        "hausdorff_mm": 1e-06,
+        "actual_width_mm": 0.18
+      },
+      {
+        "id": "latin_fortis_et_liber_13_2_part1",
+        "present": true,
+        "hausdorff_mm": 1e-06,
+        "actual_width_mm": 0.18
+      },
+      {
+        "id": "latin_fortis_et_liber_13_3_part1",
+        "present": true,
+        "hausdorff_mm": 1e-06,
+        "actual_width_mm": 0.18
+      },
+      {
+        "id": "latin_fortis_et_liber_14_0_part1",
+        "present": true,
+        "hausdorff_mm": 1e-06,
+        "actual_width_mm": 0.18
+      },
+      {
+        "id": "latin_fortis_et_liber_14_1_part1",
+        "present": true,
+        "hausdorff_mm": 1e-06,
+        "actual_width_mm": 0.18
+      },
+      {
+        "id": "latin_fortis_et_liber_14_5_part1",
+        "present": true,
+        "hausdorff_mm": 1e-06,
+        "actual_width_mm": 0.18
+      },
+      {
+        "id": "latin_fortis_et_liber_14_6_part1",
+        "present": true,
+        "hausdorff_mm": 1e-06,
+        "actual_width_mm": 0.18
+      },
+      {
+        "id": "sagittarius_outer_keyline_part1",
+        "present": true,
+        "hausdorff_mm": 1e-06,
+        "actual_width_mm": 0.2
+      },
+      {
+        "id": "star_rim_hip_92855",
+        "present": true,
+        "hausdorff_mm": 1e-06,
+        "actual_width_mm": 0.18
+      },
+      {
+        "id": "star_rim_hip_92041",
+        "present": true,
+        "hausdorff_mm": 1e-06,
+        "actual_width_mm": 0.18
+      },
+      {
+        "id": "star_rim_hip_90496",
+        "present": true,
+        "hausdorff_mm": 1e-06,
+        "actual_width_mm": 0.18
+      },
+      {
+        "id": "star_rim_hip_89931",
+        "present": true,
+        "hausdorff_mm": 1e-06,
+        "actual_width_mm": 0.18
+      },
+      {
+        "id": "star_rim_hip_88635",
+        "present": true,
+        "hausdorff_mm": 1e-06,
+        "actual_width_mm": 0.18
+      },
+      {
+        "id": "star_rim_hip_90185",
+        "present": true,
+        "hausdorff_mm": 1e-06,
+        "actual_width_mm": 0.18
+      },
+      {
+        "id": "star_rim_hip_93506",
+        "present": true,
+        "hausdorff_mm": 1e-06,
+        "actual_width_mm": 0.18
+      },
+      {
+        "id": "star_rim_hip_93864",
+        "present": true,
+        "hausdorff_mm": 1e-06,
+        "actual_width_mm": 0.18
+      },
+      {
+        "id": "star_link_e01_a",
+        "present": true,
+        "hausdorff_mm": 1e-06,
+        "actual_width_mm": 0.18
+      },
+      {
+        "id": "star_link_e01_b",
+        "present": true,
+        "hausdorff_mm": 1e-06,
+        "actual_width_mm": 0.18
+      },
+      {
+        "id": "star_link_e03_a",
+        "present": true,
+        "hausdorff_mm": 1e-06,
+        "actual_width_mm": 0.18
+      },
+      {
+        "id": "star_link_e03_b",
+        "present": true,
+        "hausdorff_mm": 1e-06,
+        "actual_width_mm": 0.18
+      },
+      {
+        "id": "star_link_e05_a",
+        "present": true,
+        "hausdorff_mm": 1e-06,
+        "actual_width_mm": 0.18
+      },
+      {
+        "id": "star_link_e05_b",
+        "present": true,
+        "hausdorff_mm": 1e-06,
+        "actual_width_mm": 0.18
+      },
+      {
+        "id": "star_link_e06_a",
+        "present": true,
+        "hausdorff_mm": 1e-06,
+        "actual_width_mm": 0.18
+      },
+      {
+        "id": "star_link_e06_b",
+        "present": true,
+        "hausdorff_mm": 1e-06,
+        "actual_width_mm": 0.18
+      },
+      {
+        "id": "star_link_e07_a",
+        "present": true,
+        "hausdorff_mm": 1e-06,
+        "actual_width_mm": 0.18
+      },
+      {
+        "id": "star_link_e07_b",
+        "present": true,
+        "hausdorff_mm": 1e-06,
+        "actual_width_mm": 0.18
+      },
+      {
+        "id": "star_link_e08_a",
+        "present": true,
+        "hausdorff_mm": 1e-06,
+        "actual_width_mm": 0.18
+      },
+      {
+        "id": "star_link_e08_b",
+        "present": true,
+        "hausdorff_mm": 1e-06,
+        "actual_width_mm": 0.18
+      },
+      {
+        "id": "star_link_e09_a",
+        "present": true,
+        "hausdorff_mm": 1e-06,
+        "actual_width_mm": 0.18
+      },
+      {
+        "id": "star_link_e09_b",
+        "present": true,
+        "hausdorff_mm": 1e-06,
+        "actual_width_mm": 0.18
+      },
+      {
+        "id": "star_link_e10_a",
+        "present": true,
+        "hausdorff_mm": 1e-06,
+        "actual_width_mm": 0.18
+      },
+      {
+        "id": "star_link_e10_b",
+        "present": true,
+        "hausdorff_mm": 1e-06,
+        "actual_width_mm": 0.18
+      },
+      {
+        "id": "star_link_e12_a",
+        "present": true,
+        "hausdorff_mm": 1e-06,
+        "actual_width_mm": 0.18
+      },
+      {
+        "id": "star_link_e12_b",
+        "present": true,
+        "hausdorff_mm": 1e-06,
+        "actual_width_mm": 0.18
+      },
+      {
+        "id": "star_link_e13_a",
+        "present": true,
+        "hausdorff_mm": 1e-06,
+        "actual_width_mm": 0.18
+      },
+      {
+        "id": "star_link_e13_b",
+        "present": true,
+        "hausdorff_mm": 1e-06,
+        "actual_width_mm": 0.18
+      },
+      {
+        "id": "star_link_e14_a",
+        "present": true,
+        "hausdorff_mm": 1e-06,
+        "actual_width_mm": 0.18
+      },
+      {
+        "id": "star_link_e14_b",
+        "present": true,
+        "hausdorff_mm": 1e-06,
+        "actual_width_mm": 0.18
+      }
+    ],
+    "minimum_edge_clearance_to_apertures_mm": 0.199165,
+    "required_edge_clearance_mm": 0.18,
+    "native_all_paths_match": true,
+    "gerber_all_paths_and_clearance_pass": true,
+    "pass": true,
+    "limitation": "Gerber stroke reconstruction uses round-buffered centerline paths; generated line-cap geometry approximates the CAM raster. A supplier preview remains the final check."
+  },
+  "summary": {
+    "native_apertures_pass": true,
+    "export_apertures_pass": true,
+    "native_aperture_geometry_pass": true,
+    "native_silkscreen_pass": true,
+    "actual_webs_pass": true,
+    "window_coverage_pass": true,
+    "actual_silkscreen_pass": true,
+    "material_connectivity_pass": true,
+    "assembly_projection_pass": true,
+    "all_checks_pass": true
+  },
+  "manufacturing_limits": [
+    "The shortest routed slot e14 is 1.489 mm end to end (0.489 mm centerline travel); supplier CAM must confirm it can be routed with the nominal 1.000 mm cutter.",
+    "This is a file-level geometry audit. It does not establish color-silkscreen process coverage, optical transmission, or sample performance."
+  ]
+}

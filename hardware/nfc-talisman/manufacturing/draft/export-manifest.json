@@ -2,11 +2,12 @@
   "date": "2026-10-10",
   "status": "draft_not_released",
   "project_uuid": "c051e4069a83472198ecce7729fbd257",
+  "color_silkscreen_requested": true,
   "files": [
     {
       "path": "manufacturing/draft/nfc-talisman-panel-draft.zip",
-      "bytes": 45106,
-      "sha256": "9136b99867b2425efa7d22f9eddc2747f1a04c111adea250765e61a7b4ad12ee",
+      "bytes": 628904,
+      "sha256": "6ec0dbed56204dfafa776a43e777ecd64c8cbd8ee49ce3ef5338d71d5c9cbae7",
       "zip_entries": [
         "Gerber_TopLayer.GTL",
         "Gerber_BottomLayer.GBL",
@@ -19,9 +20,13 @@
         "Gerber_BoardOutlineLayer.GKO",
         "Gerber_DocumentLayer.GDL",
         "Gerber_DrillDrawingLayer.GDD",
+        "Fabrication_ColorfulBoardOutlineMark.FCBM",
         "Drill_PTH_Through.DRL",
         "Drill_NPTH_Through.DRL",
         "Drill_PTH_Through_Via.DRL",
+        "Fabrication_ColorfulTopSilkscreen.FCTS",
+        "Fabrication_ColorfulBottomSilkscreen.FCBS",
+        "Fabrication_ColorfulBoardOutlineLayer.FCBO",
         "PCB下单必读.txt"
       ]
     },
@@ -37,8 +42,8 @@
     },
     {
       "path": "eda/native/nfc-talisman-current.epro2",
-      "bytes": 96069,
-      "sha256": "bc68aca27f9d3547b8e51a93a06bf07212c9afdc7ceb05838a6391f075fabd4b",
+      "bytes": 186748,
+      "sha256": "b03f193656124011737287f7fe9b47f258f364c792c2a46d23c39e1744fa8ddc",
       "zip_entries": [
         "IMAGE/",
         "project2.json",
@@ -48,6 +53,7 @@
   ],
   "pending": [
     "Manual faithful horse artwork and front optical window design",
+    "CAM color pixel/alpha and vector/image compositing review for dark Sagittarius face",
     "CAM review of slots, tabs and 3 mm assembly rails",
     "LED physical polarity and rotation review",
     "Bare-core and five-layer RF tuning, VOUT, Android/iPhone and optical acceptance"
@@ -55,8 +61,8 @@
   "derived_files": [
     {
       "path": "manufacturing/draft/nfc-talisman-panel-cam-review.zip",
-      "bytes": 26051,
-      "sha256": "8d142698c0522ddeb68105fa0515f5644b1817e3b95cb7e8c75d887fdccaf900",
+      "bytes": 609400,
+      "sha256": "5d5efa41d6ef8160b85dd2dc5e0a7de6ff00cc750bdea486e3a62bc8a85ad70e",
       "zip_entries": [
         "Gerber_TopLayer.GTL",
         "Gerber_BottomLayer.GBL",
@@ -68,7 +74,11 @@
         "Gerber_BottomPasteMaskLayer.GBP",
         "Gerber_BoardOutlineLayer.GKO",
         "Drill_PTH_Through.DRL",
-        "Drill_NPTH_Through.DRL"
+        "Drill_NPTH_Through.DRL",
+        "Fabrication_ColorfulTopSilkscreen.FCTS",
+        "Fabrication_ColorfulBottomSilkscreen.FCBS",
+        "Fabrication_ColorfulBoardOutlineLayer.FCBO",
+        "Fabrication_ColorfulBoardOutlineMark.FCBM"
       ]
     },
     {
@@ -98,28 +108,48 @@
     },
     {
       "path": "manufacturing/draft/cam-audit.json",
-      "bytes": 25093,
-      "sha256": "b73a414919f5eed70e31fe4d0925704ce73638a9895b89dcf60f83904bd78700"
+      "bytes": 25300,
+      "sha256": "01c9b452b2aeac15edc28fc81ab57c5f37e0ce14ba7d02dd81f1f9b6892876d5"
     },
     {
       "path": "manufacturing/draft/cam-package-manifest.json",
-      "bytes": 968,
-      "sha256": "cfae4dde4d77fc771c9280ed4b3d8c92ccf0c11375e47815fcc51af717bab5ef"
+      "bytes": 1349,
+      "sha256": "e416c06ce252cd9a5110e04ac8f3b6ef66a0845be395567a5394c9f5432f70ea"
     },
     {
       "path": "electrical/native-copper-audit.json",
       "bytes": 11941,
-      "sha256": "612e3d162b59ff88e1dd4a5e925062adc45e069a89107a8438df77ce4fd34659"
+      "sha256": "4fb96e3fa0dffaca6d09265e3e2db6be4822712cc64402b12c94f2bb3c060b3e"
     },
     {
       "path": "electrical/native-netlist-audit.json",
       "bytes": 6922,
-      "sha256": "0f2dbbd6305c49593333ace6afe110b7b5f825ecb97eb2e7156223d5d5a6ae8f"
+      "sha256": "aafce3424bb25e7a853fabeb0992bf90dc0d497bc5d45b9905e8445651baf038"
     },
     {
       "path": "eda/check-summary.json",
-      "bytes": 4105,
-      "sha256": "5f5fc838fc38b2feb60413639ef289229f102dfa25ca5c9ddd953c2ef344c535"
+      "bytes": 4107,
+      "sha256": "a48a41775fe61a334d8e44120aae6c547387b0a9c0bdf81eabfa93131f36c6fc"
+    },
+    {
+      "path": "manufacturing/draft/star-face-audit.json",
+      "bytes": 54116,
+      "sha256": "af1f85f032db535e0853eaa8c095eb077be5832f17d4eac073c9932021044bb9"
+    },
+    {
+      "path": "manufacturing/draft/star-color-audit.json",
+      "bytes": 2421,
+      "sha256": "78b20fcaebe5d0274a3886c8782c1669247a71dffdde1ac9febb85f9fcbadccd"
+    },
+    {
+      "path": "artwork/sagittarius-color-print-candidate.png",
+      "bytes": 119729,
+      "sha256": "cdd50b75d9e39df0b7d6eb6d34ff55ce432a0ad7ed339f604b6241c19cde191b"
+    },
+    {
+      "path": "artwork/sagittarius-linework-review.json",
+      "bytes": 1063,
+      "sha256": "0221abe37f461bc2e08453bc60a04b71703455e6f569fdfca485ce5a816d9bcd"
     }
   ],
   "cam_drill_note": "The raw EDA ZIP includes duplicate PTH programs. The review ZIP retains exactly one PTH file and one NPTH file; retained manufacturing-layer bytes are unchanged."

@@ -1,4 +1,4 @@
-{"type":"DOCHEAD"}||{"docType":"PCB","client":"02b7fb7d41f242e5","uuid":"eb14b9eaec4f920c","updateTime":1791599292548,"version":"1791599292548"}|
+{"type":"DOCHEAD"}||{"docType":"PCB","client":"38452944416a00be","uuid":"eb14b9eaec4f920c","updateTime":1791603915472,"version":"1791603915472"}|
 {"type":"CANVAS","ticket":1,"id":"CANVAS"}||{"originX":0,"originY":0,"unit":"mil","gridXSize":5,"gridYSize":5,"snapXSize":5,"snapYSize":5,"altSnapXSize":5,"altSnapYSize":5,"gridType":"OUTLETS","multiGridType":"NONE","multiGridRatio":5,"highlightValue":0.5,"layerBrightness":"NORMAL"}|
 {"type":"LAYER","ticket":2,"id":"[\"LAYER\",1]"}||{"layerId":1,"layerType":"TOP","layerName":"Top Layer","use":true,"show":true,"locked":false,"activeColor":"#ff0000","activateTransparency":1,"inactiveColor":"#7f0000","inactiveTransparency":0.5}|
 {"type":"LAYER","ticket":3,"id":"[\"LAYER\",2]"}||{"layerId":2,"layerType":"BOTTOM","layerName":"Bottom Layer","use":true,"show":true,"locked":false,"activeColor":"#0000ff","activateTransparency":1,"inactiveColor":"#00007f","inactiveTransparency":0.5}|

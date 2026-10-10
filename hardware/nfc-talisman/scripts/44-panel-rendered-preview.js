@@ -1,0 +1,13 @@
+const PANEL='4a4719695b24dc2b';
+await eda.dmt_EditorControl.openDocument(PANEL);
+await new Promise(r=>setTimeout(r,400));
+const info=await eda.dmt_SelectControl.getCurrentDocumentInfo();
+if(info?.uuid!==PANEL)throw Error('Wrong panel');
+const bounds=await eda.dmt_EditorControl.zoomToAllPrimitives(info.tabId);
+await new Promise(r=>setTimeout(r,500));
+const blob=await eda.dmt_EditorControl.getCurrentRenderedAreaImage(info.tabId);
+if(!blob)throw Error('No rendered image');
+const bytes=new Uint8Array(await blob.arrayBuffer());
+let data='';
+for(let i=0;i<bytes.length;i+=16384)data+=String.fromCharCode(...bytes.subarray(i,i+16384));
+return {bounds,size:blob.size,base64:btoa(data)};
