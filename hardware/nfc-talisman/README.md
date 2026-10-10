@@ -56,3 +56,5 @@ python hardware/nfc-talisman/scripts/archive_check_summary.py
 
 
 当前 ERC/DRC 检查摘要与原生源文件哈希归档于 [`eda/check-summary.json`](eda/check-summary.json)，可用 `scripts/archive_check_summary.py` 重建；摘要标为 `current_draft`，并非制造放行。只读铜审计 `scripts/audit_native_copper.py` 与草案 CAM 审计 `scripts/audit_manufacturing_draft.py` 分别输出 `electrical/native-copper-audit.json` 和 `manufacturing/draft/cam-audit.json`。只有在 native 快照和导出 manifest 对应同一版设计后才运行/采信审计；这些本地离线审计不连接或修改 live 嘉立创EDA。
+
+2026-10-10：新增 [十二符咒与十二星座素材索引](artwork/reference-collection/index.html)、[来源说明](artwork/reference-collection/README.md) 与 [ZIP整包](artwork/reference-collection.zip)。符咒为源 PNG 参考，星图有可编辑 SVG；本轮未改 EDA/制造设计。

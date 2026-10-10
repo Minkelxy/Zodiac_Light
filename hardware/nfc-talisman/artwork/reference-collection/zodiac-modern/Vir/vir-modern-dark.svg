@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+<title>Virgo constellation chart | Stellarium Modern</title>
+<desc>Source-faithful Stellarium Modern constellation; Hipparcos star positions, gnomonic projection, east left and north up.</desc>
+<rect width="1024" height="1024" fill="#08111f"/>
+<g fill="none" stroke="#ecf3ff" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round">
+<path d="M 912 389.42 L 746.023 523.176"/>
+<path d="M 746.023 523.176 L 648.81 536.267"/>
+<path d="M 648.81 536.267 L 463.993 700.003"/>
+<path d="M 463.993 700.003 L 262.857 687.94"/>
+<path d="M 262.857 687.94 L 249.062 614.216"/>
+<path d="M 249.062 614.216 L 127.694 611.476"/>
+<path d="M 463.993 700.003 L 424.306 521.471"/>
+<path d="M 424.306 521.471 L 310.6 485.374"/>
+<path d="M 310.6 485.374 L 112 477.904"/>
+<path d="M 424.306 521.471 L 588.89 453.929"/>
+<path d="M 588.89 453.929 L 561.166 323.997"/>
+<path d="M 588.89 453.929 L 648.81 536.267"/>
+</g>
+<g fill="#ecf3ff">
+<circle cx="912" cy="389.42" r="3.443"/>
+<circle cx="746.023" cy="523.176" r="3.506"/>
+<circle cx="648.81" cy="536.267" r="3.989"/>
+<circle cx="588.89" cy="453.929" r="3.716"/>
+<circle cx="561.166" cy="323.997" r="3.943"/>
+<circle cx="463.993" cy="700.003" r="4.728"/>
+<circle cx="424.306" cy="521.471" r="3.72"/>
+<circle cx="310.6" cy="485.374" r="3.363"/>
+<circle cx="262.857" cy="687.94" r="3.384"/>
+<circle cx="249.062" cy="614.216" r="3.431"/>
+<circle cx="127.694" cy="611.476" r="3.515"/>
+<circle cx="112" cy="477.904" r="3.573"/>
+</g></svg>

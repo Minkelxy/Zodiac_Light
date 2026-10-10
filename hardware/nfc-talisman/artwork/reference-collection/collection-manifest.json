@@ -1,0 +1,487 @@
+{
+  "generated_utc": "2026-10-10T06:48:19.407620+00:00",
+  "talisman_png_count": 12,
+  "zodiac_main_chart_count": 12,
+  "files": [
+    {
+      "path": "index.html",
+      "bytes": 15690,
+      "sha256": "272ba135aa0e0f21140b3bbe0113f81c3b6cc62826c1de33eb35a65243046d43"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4518,
+      "sha256": "6ca115ef937f9658f4dfcb980224745c539272a5727937f77af97959b23560af"
+    },
+    {
+      "path": "source-talisman/Dog_Talisman.png",
+      "bytes": 24794,
+      "sha256": "009392d934edc1990968c0a95371e5c2335f9504621ce69666eafb7010138234"
+    },
+    {
+      "path": "source-talisman/Dragon_Talisman.png",
+      "bytes": 29955,
+      "sha256": "cf50cd4fff43edbafff6f25d209aaf284e48f5bd4b4d3879640dfaa8369d0760"
+    },
+    {
+      "path": "source-talisman/Horse_Talisman.png",
+      "bytes": 31122,
+      "sha256": "5dfc7db6d0148310fa678244565070bc9072ca36d339cd65af03522ba52ed390"
+    },
+    {
+      "path": "source-talisman/Monkey_Talisman.png",
+      "bytes": 30247,
+      "sha256": "48dc4bd76d84e92d5562abce21ce334cb869a731d026f866ab6420cb2d6f5fa8"
+    },
+    {
+      "path": "source-talisman/Ox_Talisman.png",
+      "bytes": 27949,
+      "sha256": "873ed3864f96879ea1528cad541d580424d5dc633c9f602a0ee96495d2cbb2f7"
+    },
+    {
+      "path": "source-talisman/Pig_Talisman.png",
+      "bytes": 29564,
+      "sha256": "f62324ec4d260aa5bdf0580c6c3079bd15244034a81a183d78231e966a9035d6"
+    },
+    {
+      "path": "source-talisman/Rabbit_Talisman.png",
+      "bytes": 30154,
+      "sha256": "94ba6ef0962939225cd2d34ad4b0da4b59dde3321aef45d599ae0944fc2abb10"
+    },
+    {
+      "path": "source-talisman/Rat_Talisman.png",
+      "bytes": 23024,
+      "sha256": "bd422075c29a27d87e06740ebce47e0185e620c341991c2c02d108285cb2f957"
+    },
+    {
+      "path": "source-talisman/Rooster_Talisman.png",
+      "bytes": 29773,
+      "sha256": "827ed7f2fe95e939440640331e4e8a882e49b30309b660e5eead5824912ac082"
+    },
+    {
+      "path": "source-talisman/Sheep_Talisman.png",
+      "bytes": 27187,
+      "sha256": "e1d2d7bce49639cf4e05bcc333e014db5f313292ebbfdfc7ec47015248a2c791"
+    },
+    {
+      "path": "source-talisman/Snake_Talisman.png",
+      "bytes": 31198,
+      "sha256": "0dcf12ea59825066302865521076ec312f46988d60f853a76bfd4243207a5752"
+    },
+    {
+      "path": "source-talisman/source_manifest.json",
+      "bytes": 13978,
+      "sha256": "b56498a4c0cb3a4fcfe5e0ef1fe16705c9664af4d1bb905705baa712468f255e"
+    },
+    {
+      "path": "source-talisman/Tiger_Talisman.png",
+      "bytes": 25882,
+      "sha256": "d1fdf943305e743b7c5d09532ef35c8bc1df81286096dae1fa62da620da9c8ae"
+    },
+    {
+      "path": "source-zodiac/hipparcos-zodiac.tsv",
+      "bytes": 8578,
+      "sha256": "49390ff7042926dfe7206485a0acc39c69843e4d4cbbc348b90dfc5e03c4ac1b"
+    },
+    {
+      "path": "source-zodiac/iau-sky-and-telescope/Aqr.gif",
+      "bytes": 126473,
+      "sha256": "eb6307426feddb4802a1557d42270124ae2404d451ddc8b259ee5382fceed33a"
+    },
+    {
+      "path": "source-zodiac/iau-sky-and-telescope/Aqr.pdf",
+      "bytes": 899676,
+      "sha256": "ded34e575f2fe6e7e5ff3148573213aea625520c7ad985b3f7b6dc3930f25dfd"
+    },
+    {
+      "path": "source-zodiac/iau-sky-and-telescope/Ari.gif",
+      "bytes": 119966,
+      "sha256": "829f1f730dfa7158b57fc8524e523bc50ab691b44002c5170d4db5f3b7040233"
+    },
+    {
+      "path": "source-zodiac/iau-sky-and-telescope/Ari.pdf",
+      "bytes": 824208,
+      "sha256": "5b94aadeffd05028dc08a8398b838f36a6e9bc8e645b85d8edeb16ceeaa6b90b"
+    },
+    {
+      "path": "source-zodiac/iau-sky-and-telescope/Cap.gif",
+      "bytes": 99666,
+      "sha256": "3e2cb250a4d4501bb52060e46c70c561dd78aafae9b25b8f2ab5de97e10319aa"
+    },
+    {
+      "path": "source-zodiac/iau-sky-and-telescope/Cap.pdf",
+      "bytes": 836839,
+      "sha256": "dda9b4980f79746204f3547c83eb2b1d1a00e576c70a08d32ee8d7d3215fc2b4"
+    },
+    {
+      "path": "source-zodiac/iau-sky-and-telescope/Cnc.gif",
+      "bytes": 109659,
+      "sha256": "3a39b25ca62d8ffb1a752098970d099178ef83a787f378895f220928e45944e8"
+    },
+    {
+      "path": "source-zodiac/iau-sky-and-telescope/Cnc.pdf",
+      "bytes": 833277,
+      "sha256": "3bbc62d283e5f6be92f7db22c46d7dd6bf18627819384f1daebdef00d9272ff9"
+    },
+    {
+      "path": "source-zodiac/iau-sky-and-telescope/Gem.gif",
+      "bytes": 138509,
+      "sha256": "3cbc991d68ff17bd0f83a75334d5b110fdc76e9ce75b07d1b6196eb73cfacb0c"
+    },
+    {
+      "path": "source-zodiac/iau-sky-and-telescope/Gem.pdf",
+      "bytes": 380896,
+      "sha256": "5ff87e28dbac343109662aa204bc84790c9df130836a0370c311a27b452ded97"
+    },
+    {
+      "path": "source-zodiac/iau-sky-and-telescope/Leo.gif",
+      "bytes": 145121,
+      "sha256": "8c5d38a2544ccce7cccbf188b21290909fa32085a2e38af56c05982bc80246f2"
+    },
+    {
+      "path": "source-zodiac/iau-sky-and-telescope/Leo.pdf",
+      "bytes": 838807,
+      "sha256": "377133a9ef07f6a2f05ba4c1e2f8fece3669c3a7f1a8032aa67c790c07c411c1"
+    },
+    {
+      "path": "source-zodiac/iau-sky-and-telescope/Lib.gif",
+      "bytes": 112873,
+      "sha256": "d37f9ace2e0620f6ef8385532d3a673de8ad0e6be80dca3cc9fcd83b5cd827a6"
+    },
+    {
+      "path": "source-zodiac/iau-sky-and-telescope/Lib.pdf",
+      "bytes": 838475,
+      "sha256": "b7cd4f21690b1569afbdd0b7a9d32b1f9567f8f5aa4a85110f572f6fd1aa624e"
+    },
+    {
+      "path": "source-zodiac/iau-sky-and-telescope/manifest.json",
+      "bytes": 10661,
+      "sha256": "51e3871ff00d82669f36877daf9eb352a50f7d8b60c55bea961218ce296a8d48"
+    },
+    {
+      "path": "source-zodiac/iau-sky-and-telescope/Psc.gif",
+      "bytes": 130127,
+      "sha256": "da2f1df59ceac98cc657fc53882fd61b90180012bfd159dc2de24d784908950b"
+    },
+    {
+      "path": "source-zodiac/iau-sky-and-telescope/Psc.pdf",
+      "bytes": 879113,
+      "sha256": "0995e10b5c68f95c62c3e1b90b91fa8c1748849c2dc94ef6ccb53ecf4d3c87ff"
+    },
+    {
+      "path": "source-zodiac/iau-sky-and-telescope/README.md",
+      "bytes": 1846,
+      "sha256": "6c50a77209e09a0333513d89a0479ca620eb88b65a055d0860d64ed825f12e21"
+    },
+    {
+      "path": "source-zodiac/iau-sky-and-telescope/Sco.gif",
+      "bytes": 197752,
+      "sha256": "43f839a1a8b3f90c2c02320dfc6aa8d082905c119a94a4772315729727a19ec2"
+    },
+    {
+      "path": "source-zodiac/iau-sky-and-telescope/Sco.pdf",
+      "bytes": 894169,
+      "sha256": "12cac34a7d188f9bbfa2192484081da711227e9698e83fee1ebe77300182951f"
+    },
+    {
+      "path": "source-zodiac/iau-sky-and-telescope/Sgr.gif",
+      "bytes": 165968,
+      "sha256": "50f74c7e90c47d86845b6422581e98ae20c7c7c97cefd54a6346c837c3b4da04"
+    },
+    {
+      "path": "source-zodiac/iau-sky-and-telescope/Sgr.pdf",
+      "bytes": 898569,
+      "sha256": "550a9569b2495e86f4d847766ae0030e87542b917ce413d4746d1e40f305ede9"
+    },
+    {
+      "path": "source-zodiac/iau-sky-and-telescope/Tau.gif",
+      "bytes": 116754,
+      "sha256": "9dd6113c6ea5195d926d2f56b344bb4f06211d51e73ba4d9dad0290c4f6a9d29"
+    },
+    {
+      "path": "source-zodiac/iau-sky-and-telescope/Tau.pdf",
+      "bytes": 851392,
+      "sha256": "c7d2a42e33d047f05e55f33bd3e7ac4a335de58cc7911bb8ce682ae84421a81f"
+    },
+    {
+      "path": "source-zodiac/iau-sky-and-telescope/Vir.gif",
+      "bytes": 99566,
+      "sha256": "16d95c6b6af221955c8dba40a9443554591960a16e5fcab3eba1c6db97a94af6"
+    },
+    {
+      "path": "source-zodiac/iau-sky-and-telescope/Vir.pdf",
+      "bytes": 850666,
+      "sha256": "4506f9ad1424dc6c5f32eaa3cada7a3519b015def65c61cf3e416df046885c97"
+    },
+    {
+      "path": "source-zodiac/zodiac-study.md",
+      "bytes": 3597,
+      "sha256": "79be8b18c2165b6e4aa012bf269e78a133cddac62204798cfb62f053a1a56a5e"
+    },
+    {
+      "path": "zodiac-modern/Aqr/aqr-modern-dark.png",
+      "bytes": 45327,
+      "sha256": "ff4e26e0bc5761f942e970d09e2ee9247a5ec3dda16c885605ff5f661e5f6178"
+    },
+    {
+      "path": "zodiac-modern/Aqr/aqr-modern-dark.svg",
+      "bytes": 1838,
+      "sha256": "16e8a4eac8fccca743083708bfaf8d766e5fe0fbc7f786e13d5d44c9ba612968"
+    },
+    {
+      "path": "zodiac-modern/Aqr/aqr-modern-import-titled.svg",
+      "bytes": 1783,
+      "sha256": "1e0b0d5ced18e9d96ec6b68168e2193be5aae73be79a0eb18edd1d474e878931"
+    },
+    {
+      "path": "zodiac-modern/Aqr/aqr-modern-import.svg",
+      "bytes": 1590,
+      "sha256": "02925594e34ea50d785606ca8c454359602839d3f617a9900bdd213494cb86bc"
+    },
+    {
+      "path": "zodiac-modern/Ari/ari-modern-dark.png",
+      "bytes": 35295,
+      "sha256": "b43211988e80fb0bee6795c81c78e414b811bfa2a12a72da5b78979325c6f6d7"
+    },
+    {
+      "path": "zodiac-modern/Ari/ari-modern-dark.svg",
+      "bytes": 793,
+      "sha256": "e51fe72faafd53f653b200bf51710778e985617459e61d7c099aef77569d1d91"
+    },
+    {
+      "path": "zodiac-modern/Ari/ari-modern-import-titled.svg",
+      "bytes": 738,
+      "sha256": "aa4cede1435303937e43d09a123134444f4ab5f0eadc1cf9bc4b392dbf9e00e3"
+    },
+    {
+      "path": "zodiac-modern/Ari/ari-modern-import.svg",
+      "bytes": 548,
+      "sha256": "15c9d8d88317ebd5ef2ff8037f8c3154ea290cd218af31eb667bd20daf158f85"
+    },
+    {
+      "path": "zodiac-modern/Cap/cap-modern-dark.png",
+      "bytes": 44576,
+      "sha256": "ab5c7d743971d99d952a4fd2924d2b7e0b6667f88ed1388c5d2ac958d9eb2099"
+    },
+    {
+      "path": "zodiac-modern/Cap/cap-modern-dark.svg",
+      "bytes": 1315,
+      "sha256": "3f15048b6086847da5f1d16d9139336de55c61a34beb8d4625d88542dd32435f"
+    },
+    {
+      "path": "zodiac-modern/Cap/cap-modern-import-titled.svg",
+      "bytes": 1260,
+      "sha256": "b5fb4a33bae48f058a83a070b210f37b897ff1c90edfea49d26bd1e7f4eba3c8"
+    },
+    {
+      "path": "zodiac-modern/Cap/cap-modern-import.svg",
+      "bytes": 1064,
+      "sha256": "e30485a8e6ab5173c678f97afc4f27351339fb7980e29af881ea7a7c011244df"
+    },
+    {
+      "path": "zodiac-modern/Cnc/cnc-modern-dark.png",
+      "bytes": 45308,
+      "sha256": "039c0417fa5e4c2299e859225f23e63ad43c1abad91e90e97c3f258d59bfbdcc"
+    },
+    {
+      "path": "zodiac-modern/Cnc/cnc-modern-dark.svg",
+      "bytes": 986,
+      "sha256": "80336aa1477ed11048e9ef7019cc36fc5641e4a46e99ca505b452ffea595e861"
+    },
+    {
+      "path": "zodiac-modern/Cnc/cnc-modern-import-titled.svg",
+      "bytes": 931,
+      "sha256": "1f9246ade60519d27ef9568ac10d2eec1ace5aa988900304a116682fcf048bed"
+    },
+    {
+      "path": "zodiac-modern/Cnc/cnc-modern-import.svg",
+      "bytes": 740,
+      "sha256": "52c53ce9b7089e3f77415a79161151f1324935e9db850a366a11db8b4ec4b2ff"
+    },
+    {
+      "path": "zodiac-modern/Gem/gem-modern-dark.png",
+      "bytes": 54686,
+      "sha256": "ed4dfb2b4b2003209865f287daecf62e78e947167394304f227e3262ec2cd76c"
+    },
+    {
+      "path": "zodiac-modern/Gem/gem-modern-dark.svg",
+      "bytes": 2038,
+      "sha256": "707f8d014fdc994a296c2c33b913932fdf004d89194ff65d8c3137e938f43131"
+    },
+    {
+      "path": "zodiac-modern/Gem/gem-modern-import-titled.svg",
+      "bytes": 1983,
+      "sha256": "e92555e4b194806914db2254304b7e72f9320310e4c477cd0b95170b46f9bcb3"
+    },
+    {
+      "path": "zodiac-modern/Gem/gem-modern-import.svg",
+      "bytes": 1792,
+      "sha256": "2bfeeda74d2ebb8f55cb304495d82fdbe5ba76d415cb023eb93e8dbfa25f74a6"
+    },
+    {
+      "path": "zodiac-modern/Leo/leo-modern-dark.png",
+      "bytes": 40759,
+      "sha256": "145a5595dc3d47f58cbc30c086da67afcbbeee2d5cd02f3dcad40a289b5f2b25"
+    },
+    {
+      "path": "zodiac-modern/Leo/leo-modern-dark.svg",
+      "bytes": 1348,
+      "sha256": "835b25bed86173f9ae06a3e684db5cd7c04c096b05fc22fdb0c4156c67f13cc9"
+    },
+    {
+      "path": "zodiac-modern/Leo/leo-modern-import-titled.svg",
+      "bytes": 1293,
+      "sha256": "9a8c3d6a93bebb4c0f7b2f2e3177d648f76919c25671005c442cf7b8223dc20c"
+    },
+    {
+      "path": "zodiac-modern/Leo/leo-modern-import.svg",
+      "bytes": 1105,
+      "sha256": "e693ed7d4c74649973cadd8ac13711913416d545c3a33253f6f9f7ef6208fad6"
+    },
+    {
+      "path": "zodiac-modern/Lib/lib-modern-dark.png",
+      "bytes": 53624,
+      "sha256": "f109d7d42eeebaa8d4a37d7e0f44defde7b24910a7fb18581a7fcf2b7117b4d9"
+    },
+    {
+      "path": "zodiac-modern/Lib/lib-modern-dark.svg",
+      "bytes": 927,
+      "sha256": "3200cc5018909259c81b3fdcd25da17351d3b4bc602fa35308dc821d75fe6a11"
+    },
+    {
+      "path": "zodiac-modern/Lib/lib-modern-import-titled.svg",
+      "bytes": 872,
+      "sha256": "c6d3b276bffbe425801f6cf32d62191fea1231302295404d3a3f974019a0ef4a"
+    },
+    {
+      "path": "zodiac-modern/Lib/lib-modern-import.svg",
+      "bytes": 682,
+      "sha256": "5fb589c0ea97e5804b99314c7e945f4f4fa11cc8675897d9c944f707cfa71820"
+    },
+    {
+      "path": "zodiac-modern/manifest.json",
+      "bytes": 70321,
+      "sha256": "20125799560fdb0a91fbc3f9ceb4a75648b1109b0c777a1c7b93ff820fc30f1f"
+    },
+    {
+      "path": "zodiac-modern/Psc/psc-modern-dark.png",
+      "bytes": 42651,
+      "sha256": "d62542af9e9f595222278cf1281c763bd9d2fb7926d42ddc13c707f8e63f0447"
+    },
+    {
+      "path": "zodiac-modern/Psc/psc-modern-dark.svg",
+      "bytes": 2412,
+      "sha256": "f93056eb6e81e20e5063f53c07f652da493e5c44043393df870b3fd79e5c6eb7"
+    },
+    {
+      "path": "zodiac-modern/Psc/psc-modern-import-titled.svg",
+      "bytes": 2357,
+      "sha256": "79a3ac6a88af7871e241725632686ae1158e21ae8b13341ef1a7235cb9d0b39b"
+    },
+    {
+      "path": "zodiac-modern/Psc/psc-modern-import.svg",
+      "bytes": 2166,
+      "sha256": "9ad13bd7c5957d1a69ef30907fee129022ae4b15b46d542b35059fe62b56b51f"
+    },
+    {
+      "path": "zodiac-modern/README.md",
+      "bytes": 2274,
+      "sha256": "c4a3a8d684661e457e0a26634d419a67b9b6a03f50774b14418396e05d7911ee"
+    },
+    {
+      "path": "zodiac-modern/Sco/sco-modern-dark.png",
+      "bytes": 46101,
+      "sha256": "421d11094b0dc4afd06e2f6b8cfcd067bb8a6dab0b72009105c25770f508049e"
+    },
+    {
+      "path": "zodiac-modern/Sco/sco-modern-dark.svg",
+      "bytes": 1651,
+      "sha256": "2bd14bdfa7f8e271a2f46d4be753b794f658f290b6291468051b22f4a9990a10"
+    },
+    {
+      "path": "zodiac-modern/Sco/sco-modern-import-titled.svg",
+      "bytes": 1596,
+      "sha256": "01a8b8c87b529a965648c196494c565fefd652ec551433b368960e8e5d60ac11"
+    },
+    {
+      "path": "zodiac-modern/Sco/sco-modern-import.svg",
+      "bytes": 1403,
+      "sha256": "fb71849ddad8295adf28f4d855cfe16a6f3af18953dcea2fbd0ed7055f8e93e6"
+    },
+    {
+      "path": "zodiac-modern/Sgr/sagittarius-pcb-8star-11edge/sgr-pcb-teapot-dark.png",
+      "bytes": 51129,
+      "sha256": "a98d8a113582454c4117209fe6c00fdd5a0975108f9e3ac07b60fd281a57954e"
+    },
+    {
+      "path": "zodiac-modern/Sgr/sagittarius-pcb-8star-11edge/sgr-pcb-teapot-dark.svg",
+      "bytes": 1341,
+      "sha256": "79c3e4f14488b69c42b621404c20948a4916fac7a56086a6b6f525ace03f0415"
+    },
+    {
+      "path": "zodiac-modern/Sgr/sagittarius-pcb-8star-11edge/sgr-pcb-teapot-import.svg",
+      "bytes": 1088,
+      "sha256": "430dc48dfab071e3a66619357078500c2f3c6bff43d212f6711634cdcbdd3e04"
+    },
+    {
+      "path": "zodiac-modern/Sgr/sgr-modern-dark.png",
+      "bytes": 55468,
+      "sha256": "c2400b5462b0d4fcd03fe56afb7b11dac26f08cdf049e570099f1fcf876e8f16"
+    },
+    {
+      "path": "zodiac-modern/Sgr/sgr-modern-dark.svg",
+      "bytes": 2613,
+      "sha256": "f1b7c8b14d53a436c0205d9374471d9c26f444c0b378d9b74362bc48c8c2457e"
+    },
+    {
+      "path": "zodiac-modern/Sgr/sgr-modern-import-titled.svg",
+      "bytes": 2558,
+      "sha256": "2b2115c460adc414a7033a2cf7d505dfbd02374d70bc9beb2c051aed6b0fb75e"
+    },
+    {
+      "path": "zodiac-modern/Sgr/sgr-modern-import.svg",
+      "bytes": 2362,
+      "sha256": "1ef48b3f0531c87d7a877d2ecb7661eb7d57bab8d12abf80b4975c9d88c97e56"
+    },
+    {
+      "path": "zodiac-modern/Tau/tau-modern-dark.png",
+      "bytes": 41571,
+      "sha256": "a640035c2f208d00031af9672ddb10b7fafadd668eea1060a7ddeadacf4830e1"
+    },
+    {
+      "path": "zodiac-modern/Tau/tau-modern-dark.svg",
+      "bytes": 1607,
+      "sha256": "61db099c279443628732c84240eabac11fe8c23817752a93812dc150aef19795"
+    },
+    {
+      "path": "zodiac-modern/Tau/tau-modern-import-titled.svg",
+      "bytes": 1552,
+      "sha256": "0d90358be2bd10d9f1317bbcb469011b7febe46c23bd1fae4b76d7b02bac6b61"
+    },
+    {
+      "path": "zodiac-modern/Tau/tau-modern-import.svg",
+      "bytes": 1361,
+      "sha256": "a75f04d0a5c474723e8b826483ce5a1333de01116d909083d1df145181cf4564"
+    },
+    {
+      "path": "zodiac-modern/Vir/vir-modern-dark.png",
+      "bytes": 41866,
+      "sha256": "7637f91c7e813620036ced5e4c323ca37c9043fd483ef9f60b214aaf8b268f1f"
+    },
+    {
+      "path": "zodiac-modern/Vir/vir-modern-dark.svg",
+      "bytes": 1594,
+      "sha256": "24e0c2e59fb251f904c178ce7461036d77d0af140f8ef31fdc8b08eccaef3b0a"
+    },
+    {
+      "path": "zodiac-modern/Vir/vir-modern-import-titled.svg",
+      "bytes": 1539,
+      "sha256": "5c7ca71c635c76b45600b3363b9714ab42eb19c3c1bb22e57831743da7fd9eaa"
+    },
+    {
+      "path": "zodiac-modern/Vir/vir-modern-import.svg",
+      "bytes": 1349,
+      "sha256": "6d7b06cbfc7c19070691307450b9460db98a8e276dd960b4f7cf55dc4adf4406"
+    }
+  ]
+}

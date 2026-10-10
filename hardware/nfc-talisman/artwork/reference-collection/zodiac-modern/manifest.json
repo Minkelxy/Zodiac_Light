@@ -1,0 +1,2502 @@
+{
+  "schema_version": 1,
+  "collection": "zodiac-modern",
+  "canvas_px": [
+    1024,
+    1024
+  ],
+  "source_policy": "Use Stellarium CON modern line arrays verbatim as adjacent HIP pairs; no hand-selected or removed edges.",
+  "sources": [
+    {
+      "id": "stellarium_modern",
+      "path": "data/sources/20261008T150844925832Z/stellarium_modern_index.json",
+      "sha256": "1f2f5ffd6c9e25a7d0dcfdbf1f756e2db03dd3b8ed4ec016a2839b09f6b0fe1e",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Stellarium team, Modern sky culture, CON modern zodiac entries",
+      "url": "https://github.com/Stellarium/stellarium/tree/master/skycultures/modern"
+    },
+    {
+      "id": "hipparcos_i239",
+      "path": "../source-zodiac/hipparcos-zodiac.tsv",
+      "sha256": "49390ff7042926dfe7206485a0acc39c69843e4d4cbbc348b90dfc5e03c4ac1b",
+      "table": "CDS VizieR I/239/hip_main",
+      "fields": [
+        "HIP",
+        "RAICRS",
+        "DEICRS",
+        "Vmag"
+      ],
+      "license": "CC BY-NC 3.0 IGO",
+      "attribution": "Credit: ESA",
+      "citation": "ESA 1997, The Hipparcos and Tycho Catalogues, ESA SP-1200; 1997HIP...C......0E",
+      "url": "https://www.cosmos.esa.int/web/hipparcos/catalogues",
+      "coordinate_frame": "ICRS",
+      "coordinate_epoch": "J1991.25"
+    }
+  ],
+  "licensing_note": "Local reference use only. Stellarium source data is CC BY-SA 4.0. Hipparcos catalogue data is CC BY-NC 3.0 IGO and requires Credit: ESA. No commercial permission is inferred; check both source terms before redistribution or commercial use.",
+  "charts": [
+    {
+      "id": "Ari",
+      "english": "Aries",
+      "chinese": "白羊座",
+      "source_constellation_id": "CON modern Ari",
+      "stars": [
+        {
+          "hip": 8832,
+          "ra_deg": 28.38235506,
+          "dec_deg": 19.29409264,
+          "mag_v": 3.88,
+          "gnomonic_east_left_deg": 4.086078758059553,
+          "gnomonic_north_up_deg": -3.4657435095771363,
+          "x_px": 912.0,
+          "y_px": 768.889
+        },
+        {
+          "hip": 8903,
+          "ra_deg": 28.65978771,
+          "dec_deg": 20.80829949,
+          "mag_v": 2.64,
+          "gnomonic_east_left_deg": 3.7810081850632455,
+          "gnomonic_north_up_deg": -1.9515252953288802,
+          "x_px": 893.06,
+          "y_px": 674.883
+        },
+        {
+          "hip": 9884,
+          "ra_deg": 31.79285757,
+          "dec_deg": 23.46277743,
+          "mag_v": 2.01,
+          "gnomonic_east_left_deg": 0.8293616632220473,
+          "gnomonic_north_up_deg": 0.659028467513199,
+          "x_px": 709.814,
+          "y_px": 512.812
+        },
+        {
+          "hip": 13209,
+          "ra_deg": 42.49578911,
+          "dec_deg": 27.26079044,
+          "mag_v": 3.61,
+          "gnomonic_east_left_deg": -8.799955485089766,
+          "gnomonic_north_up_deg": 4.809969271327648,
+          "x_px": 112.0,
+          "y_px": 255.111
+        }
+      ],
+      "star_count": 4,
+      "edges": [
+        [
+          13209,
+          9884
+        ],
+        [
+          9884,
+          8903
+        ],
+        [
+          8903,
+          8832
+        ]
+      ],
+      "edge_count": 3,
+      "projection": "gnomonic; spherical-vector-mean centre; equal scale; celestial east left and north up",
+      "files": {
+        "svg": "Ari/ari-modern-dark.svg",
+        "png": "Ari/ari-modern-dark.png",
+        "import_svg": "Ari/ari-modern-import.svg",
+        "import_titled_svg": "Ari/ari-modern-import-titled.svg"
+      },
+      "svg": "Ari/ari-modern-dark.svg",
+      "png": "Ari/ari-modern-dark.png",
+      "import_svg": "Ari/ari-modern-import.svg",
+      "import_titled_svg": "Ari/ari-modern-import-titled.svg",
+      "source_sha256": {
+        "stellarium_modern_index": "1f2f5ffd6c9e25a7d0dcfdbf1f756e2db03dd3b8ed4ec016a2839b09f6b0fe1e",
+        "hipparcos_zodiac_tsv": "49390ff7042926dfe7206485a0acc39c69843e4d4cbbc348b90dfc5e03c4ac1b"
+      },
+      "rendered_with": "sharp"
+    },
+    {
+      "id": "Tau",
+      "english": "Taurus",
+      "chinese": "金牛座",
+      "source_constellation_id": "CON modern Tau",
+      "stars": [
+        {
+          "hip": 15900,
+          "ra_deg": 51.20349011,
+          "dec_deg": 9.02906504,
+          "mag_v": 3.61,
+          "gnomonic_east_left_deg": 16.15139622754775,
+          "gnomonic_north_up_deg": -9.317497038713835,
+          "x_px": 912.0,
+          "y_px": 758.252
+        },
+        {
+          "hip": 17847,
+          "ra_deg": 57.29054669,
+          "dec_deg": 24.05352412,
+          "mag_v": 3.62,
+          "gnomonic_east_left_deg": 8.930898069766908,
+          "gnomonic_north_up_deg": 5.767255395921535,
+          "x_px": 736.328,
+          "y_px": 391.247
+        },
+        {
+          "hip": 18724,
+          "ra_deg": 60.17008591,
+          "dec_deg": 12.49037571,
+          "mag_v": 3.41,
+          "gnomonic_east_left_deg": 6.687671882460396,
+          "gnomonic_north_up_deg": -6.058555077623156,
+          "x_px": 681.752,
+          "y_px": 678.964
+        },
+        {
+          "hip": 20205,
+          "ra_deg": 64.94805793,
+          "dec_deg": 15.62770031,
+          "mag_v": 3.65,
+          "gnomonic_east_left_deg": 1.9334544528097641,
+          "gnomonic_north_up_deg": -2.977608183338587,
+          "x_px": 566.084,
+          "y_px": 604.006
+        },
+        {
+          "hip": 20455,
+          "ra_deg": 65.73344722,
+          "dec_deg": 17.5425843,
+          "mag_v": 3.77,
+          "gnomonic_east_left_deg": 1.1625170938531715,
+          "gnomonic_north_up_deg": -1.0655425778131031,
+          "x_px": 547.327,
+          "y_px": 557.486
+        },
+        {
+          "hip": 20648,
+          "ra_deg": 66.37215593,
+          "dec_deg": 17.92798917,
+          "mag_v": 4.3,
+          "gnomonic_east_left_deg": 0.552026923003544,
+          "gnomonic_north_up_deg": -0.6829135118553941,
+          "x_px": 532.474,
+          "y_px": 548.177
+        },
+        {
+          "hip": 20889,
+          "ra_deg": 67.15388879,
+          "dec_deg": 19.18052092,
+          "mag_v": 3.53,
+          "gnomonic_east_left_deg": -0.19041138560315227,
+          "gnomonic_north_up_deg": 0.5689190943898466,
+          "x_px": 514.411,
+          "y_px": 517.72
+        },
+        {
+          "hip": 20894,
+          "ra_deg": 67.16531219,
+          "dec_deg": 15.8709468,
+          "mag_v": 3.4,
+          "gnomonic_east_left_deg": -0.20513083954659583,
+          "gnomonic_north_up_deg": -2.74277182395075,
+          "x_px": 514.053,
+          "y_px": 598.292
+        },
+        {
+          "hip": 21421,
+          "ra_deg": 68.98000195,
+          "dec_deg": 16.50976164,
+          "mag_v": 0.87,
+          "gnomonic_east_left_deg": -1.9461166015637656,
+          "gnomonic_north_up_deg": -2.0931186636809103,
+          "x_px": 471.695,
+          "y_px": 582.486
+        },
+        {
+          "hip": 21881,
+          "ra_deg": 70.56126452,
+          "dec_deg": 22.95697545,
+          "mag_v": 4.27,
+          "gnomonic_east_left_deg": -3.3362967888412705,
+          "gnomonic_north_up_deg": 4.3947094448875195,
+          "x_px": 437.873,
+          "y_px": 424.64
+        },
+        {
+          "hip": 25428,
+          "ra_deg": 81.57290804,
+          "dec_deg": 28.60787346,
+          "mag_v": 1.65,
+          "gnomonic_east_left_deg": -13.25517489421801,
+          "gnomonic_north_up_deg": 10.92556223749154,
+          "x_px": 196.551,
+          "y_px": 265.748
+        },
+        {
+          "hip": 26451,
+          "ra_deg": 84.41118447,
+          "dec_deg": 21.14259299,
+          "mag_v": 2.97,
+          "gnomonic_east_left_deg": -16.730401352851217,
+          "gnomonic_north_up_deg": 3.459995519432035,
+          "x_px": 112.0,
+          "y_px": 447.382
+        }
+      ],
+      "star_count": 12,
+      "edges": [
+        [
+          25428,
+          21881
+        ],
+        [
+          21881,
+          20889
+        ],
+        [
+          21421,
+          26451
+        ],
+        [
+          20205,
+          20455
+        ],
+        [
+          20205,
+          18724
+        ],
+        [
+          18724,
+          15900
+        ],
+        [
+          21421,
+          20889
+        ],
+        [
+          21421,
+          20894
+        ],
+        [
+          20894,
+          20205
+        ],
+        [
+          20889,
+          20648
+        ],
+        [
+          20648,
+          20455
+        ],
+        [
+          20455,
+          17847
+        ]
+      ],
+      "edge_count": 12,
+      "projection": "gnomonic; spherical-vector-mean centre; equal scale; celestial east left and north up",
+      "files": {
+        "svg": "Tau/tau-modern-dark.svg",
+        "png": "Tau/tau-modern-dark.png",
+        "import_svg": "Tau/tau-modern-import.svg",
+        "import_titled_svg": "Tau/tau-modern-import-titled.svg"
+      },
+      "svg": "Tau/tau-modern-dark.svg",
+      "png": "Tau/tau-modern-dark.png",
+      "import_svg": "Tau/tau-modern-import.svg",
+      "import_titled_svg": "Tau/tau-modern-import-titled.svg",
+      "source_sha256": {
+        "stellarium_modern_index": "1f2f5ffd6c9e25a7d0dcfdbf1f756e2db03dd3b8ed4ec016a2839b09f6b0fe1e",
+        "hipparcos_zodiac_tsv": "49390ff7042926dfe7206485a0acc39c69843e4d4cbbc348b90dfc5e03c4ac1b"
+      },
+      "rendered_with": "sharp"
+    },
+    {
+      "id": "Gem",
+      "english": "Gemini",
+      "chinese": "双子座",
+      "source_constellation_id": "CON modern Gem",
+      "stars": [
+        {
+          "hip": 28734,
+          "ra_deg": 91.0300689,
+          "dec_deg": 23.26363207,
+          "mag_v": 4.16,
+          "gnomonic_east_left_deg": 13.059282476912001,
+          "gnomonic_north_up_deg": -0.1380169512928651,
+          "x_px": 912.0,
+          "y_px": 495.875
+        },
+        {
+          "hip": 29655,
+          "ra_deg": 93.71956952,
+          "dec_deg": 22.50682376,
+          "mag_v": 3.31,
+          "gnomonic_east_left_deg": 10.556492474819033,
+          "gnomonic_north_up_deg": -1.1281995756792624,
+          "x_px": 825.877,
+          "y_px": 529.948
+        },
+        {
+          "hip": 30343,
+          "ra_deg": 95.73996302,
+          "dec_deg": 22.51385027,
+          "mag_v": 2.87,
+          "gnomonic_east_left_deg": 8.641670881208114,
+          "gnomonic_north_up_deg": -1.2525076148025058,
+          "x_px": 759.986,
+          "y_px": 534.226
+        },
+        {
+          "hip": 30883,
+          "ra_deg": 97.24079361,
+          "dec_deg": 20.2121672,
+          "mag_v": 4.13,
+          "gnomonic_east_left_deg": 7.360143450029074,
+          "gnomonic_north_up_deg": -3.654945167192964,
+          "x_px": 715.888,
+          "y_px": 616.896
+        },
+        {
+          "hip": 31681,
+          "ra_deg": 99.42792641,
+          "dec_deg": 16.39941482,
+          "mag_v": 1.93,
+          "gnomonic_east_left_deg": 5.435025621380041,
+          "gnomonic_north_up_deg": -7.605280909592242,
+          "x_px": 649.643,
+          "y_px": 752.83
+        },
+        {
+          "hip": 32246,
+          "ra_deg": 100.98304088,
+          "dec_deg": 25.13115531,
+          "mag_v": 3.06,
+          "gnomonic_east_left_deg": 3.667628427965558,
+          "gnomonic_north_up_deg": 1.1514112946332693,
+          "x_px": 588.825,
+          "y_px": 451.505
+        },
+        {
+          "hip": 32362,
+          "ra_deg": 101.3226398,
+          "dec_deg": 12.89605513,
+          "mag_v": 3.35,
+          "gnomonic_east_left_deg": 3.6860990171720744,
+          "gnomonic_north_up_deg": -11.254204170158072,
+          "x_px": 589.46,
+          "y_px": 878.393
+        },
+        {
+          "hip": 33018,
+          "ra_deg": 103.1972503,
+          "dec_deg": 33.96136985,
+          "mag_v": 3.6,
+          "gnomonic_east_left_deg": 1.542231616906236,
+          "gnomonic_north_up_deg": 10.04097200623066,
+          "x_px": 515.688,
+          "y_px": 145.607
+        },
+        {
+          "hip": 34088,
+          "ra_deg": 106.02723079,
+          "dec_deg": 20.57029939,
+          "mag_v": 4.01,
+          "gnomonic_east_left_deg": -0.936906653342013,
+          "gnomonic_north_up_deg": -3.465953510307825,
+          "x_px": 430.379,
+          "y_px": 610.392
+        },
+        {
+          "hip": 34693,
+          "ra_deg": 107.78496505,
+          "dec_deg": 30.24528065,
+          "mag_v": 4.41,
+          "gnomonic_east_left_deg": -2.396642436429195,
+          "gnomonic_north_up_deg": 6.264034833636947,
+          "x_px": 380.148,
+          "y_px": 275.575
+        },
+        {
+          "hip": 35350,
+          "ra_deg": 109.52336162,
+          "dec_deg": 16.54047526,
+          "mag_v": 3.58,
+          "gnomonic_east_left_deg": -4.353420313029139,
+          "gnomonic_north_up_deg": -7.488399385387905,
+          "x_px": 312.813,
+          "y_px": 748.808
+        },
+        {
+          "hip": 35550,
+          "ra_deg": 110.0307889,
+          "dec_deg": 21.98233941,
+          "mag_v": 3.5,
+          "gnomonic_east_left_deg": -4.650779998814407,
+          "gnomonic_north_up_deg": -1.977344317514919,
+          "x_px": 302.581,
+          "y_px": 559.168
+        },
+        {
+          "hip": 36046,
+          "ra_deg": 111.43198371,
+          "dec_deg": 27.79828561,
+          "mag_v": 3.78,
+          "gnomonic_east_left_deg": -5.693743789450059,
+          "gnomonic_north_up_deg": 3.917668453385348,
+          "x_px": 266.692,
+          "y_px": 356.315
+        },
+        {
+          "hip": 36850,
+          "ra_deg": 113.65001898,
+          "dec_deg": 31.88863645,
+          "mag_v": 1.58,
+          "gnomonic_east_left_deg": -7.427549911487612,
+          "gnomonic_north_up_deg": 8.201871158193846,
+          "x_px": 207.03,
+          "y_px": 208.892
+        },
+        {
+          "hip": 36962,
+          "ra_deg": 113.98071783,
+          "dec_deg": 26.89600343,
+          "mag_v": 4.06,
+          "gnomonic_east_left_deg": -8.041275743765645,
+          "gnomonic_north_up_deg": 3.148606278959188,
+          "x_px": 185.911,
+          "y_px": 382.779
+        },
+        {
+          "hip": 37740,
+          "ra_deg": 116.11195237,
+          "dec_deg": 24.39812929,
+          "mag_v": 3.57,
+          "gnomonic_east_left_deg": -10.189173842651371,
+          "gnomonic_north_up_deg": 0.7716102078991952,
+          "x_px": 112.0,
+          "y_px": 464.574
+        },
+        {
+          "hip": 37826,
+          "ra_deg": 116.33068263,
+          "dec_deg": 28.02631031,
+          "mag_v": 1.16,
+          "gnomonic_east_left_deg": -10.09459184495014,
+          "gnomonic_north_up_deg": 4.468372194035738,
+          "x_px": 115.255,
+          "y_px": 337.365
+        }
+      ],
+      "star_count": 17,
+      "edges": [
+        [
+          31681,
+          34088
+        ],
+        [
+          34088,
+          35550
+        ],
+        [
+          35550,
+          35350
+        ],
+        [
+          35350,
+          32362
+        ],
+        [
+          35550,
+          36962
+        ],
+        [
+          36962,
+          37740
+        ],
+        [
+          36962,
+          37826
+        ],
+        [
+          36962,
+          36046
+        ],
+        [
+          36046,
+          34693
+        ],
+        [
+          34693,
+          36850
+        ],
+        [
+          34693,
+          33018
+        ],
+        [
+          34693,
+          32246
+        ],
+        [
+          32246,
+          30883
+        ],
+        [
+          32246,
+          30343
+        ],
+        [
+          30343,
+          29655
+        ],
+        [
+          29655,
+          28734
+        ]
+      ],
+      "edge_count": 16,
+      "projection": "gnomonic; spherical-vector-mean centre; equal scale; celestial east left and north up",
+      "files": {
+        "svg": "Gem/gem-modern-dark.svg",
+        "png": "Gem/gem-modern-dark.png",
+        "import_svg": "Gem/gem-modern-import.svg",
+        "import_titled_svg": "Gem/gem-modern-import-titled.svg"
+      },
+      "svg": "Gem/gem-modern-dark.svg",
+      "png": "Gem/gem-modern-dark.png",
+      "import_svg": "Gem/gem-modern-import.svg",
+      "import_titled_svg": "Gem/gem-modern-import-titled.svg",
+      "source_sha256": {
+        "stellarium_modern_index": "1f2f5ffd6c9e25a7d0dcfdbf1f756e2db03dd3b8ed4ec016a2839b09f6b0fe1e",
+        "hipparcos_zodiac_tsv": "49390ff7042926dfe7206485a0acc39c69843e4d4cbbc348b90dfc5e03c4ac1b"
+      },
+      "rendered_with": "sharp"
+    },
+    {
+      "id": "Cnc",
+      "english": "Cancer",
+      "chinese": "巨蟹座",
+      "source_constellation_id": "CON modern Cnc",
+      "stars": [
+        {
+          "hip": 40526,
+          "ra_deg": 124.12895101,
+          "dec_deg": 9.18566295,
+          "mag_v": 3.53,
+          "gnomonic_east_left_deg": 5.4850453568540605,
+          "gnomonic_north_up_deg": -10.366423412595955,
+          "x_px": 724.211,
+          "y_px": 912.0
+        },
+        {
+          "hip": 40843,
+          "ra_deg": 125.01613464,
+          "dec_deg": 27.21862138,
+          "mag_v": 5.13,
+          "gnomonic_east_left_deg": 4.102998066748209,
+          "gnomonic_north_up_deg": 7.859298718736468,
+          "x_px": 668.209,
+          "y_px": 173.473
+        },
+        {
+          "hip": 42806,
+          "ra_deg": 130.82172127,
+          "dec_deg": 21.46859609,
+          "mag_v": 4.66,
+          "gnomonic_east_left_deg": -1.1558500181120248,
+          "gnomonic_north_up_deg": 1.9918128746304873,
+          "x_px": 455.114,
+          "y_px": 411.23
+        },
+        {
+          "hip": 42911,
+          "ra_deg": 131.17129209,
+          "dec_deg": 18.15486399,
+          "mag_v": 3.94,
+          "gnomonic_east_left_deg": -1.5122351994910195,
+          "gnomonic_north_up_deg": -1.3209947109260889,
+          "x_px": 440.673,
+          "y_px": 545.469
+        },
+        {
+          "hip": 43103,
+          "ra_deg": 131.67430955,
+          "dec_deg": 28.76000509,
+          "mag_v": 4.03,
+          "gnomonic_east_left_deg": -1.8603884138063582,
+          "gnomonic_north_up_deg": 9.376365069506186,
+          "x_px": 426.565,
+          "y_px": 112.0
+        },
+        {
+          "hip": 44066,
+          "ra_deg": 134.62165408,
+          "dec_deg": 11.85777198,
+          "mag_v": 4.26,
+          "gnomonic_east_left_deg": -4.989028249569035,
+          "gnomonic_north_up_deg": -7.624187129176988,
+          "x_px": 299.789,
+          "y_px": 800.882
+        }
+      ],
+      "star_count": 6,
+      "edges": [
+        [
+          43103,
+          42806
+        ],
+        [
+          42806,
+          40843
+        ],
+        [
+          42806,
+          42911
+        ],
+        [
+          42911,
+          40526
+        ],
+        [
+          42911,
+          44066
+        ]
+      ],
+      "edge_count": 5,
+      "projection": "gnomonic; spherical-vector-mean centre; equal scale; celestial east left and north up",
+      "files": {
+        "svg": "Cnc/cnc-modern-dark.svg",
+        "png": "Cnc/cnc-modern-dark.png",
+        "import_svg": "Cnc/cnc-modern-import.svg",
+        "import_titled_svg": "Cnc/cnc-modern-import-titled.svg"
+      },
+      "svg": "Cnc/cnc-modern-dark.svg",
+      "png": "Cnc/cnc-modern-dark.png",
+      "import_svg": "Cnc/cnc-modern-import.svg",
+      "import_titled_svg": "Cnc/cnc-modern-import-titled.svg",
+      "source_sha256": {
+        "stellarium_modern_index": "1f2f5ffd6c9e25a7d0dcfdbf1f756e2db03dd3b8ed4ec016a2839b09f6b0fe1e",
+        "hipparcos_zodiac_tsv": "49390ff7042926dfe7206485a0acc39c69843e4d4cbbc348b90dfc5e03c4ac1b"
+      },
+      "rendered_with": "sharp"
+    },
+    {
+      "id": "Leo",
+      "english": "Leo",
+      "chinese": "狮子座",
+      "source_constellation_id": "CON modern Leo",
+      "stars": [
+        {
+          "hip": 47908,
+          "ra_deg": 146.4629267,
+          "dec_deg": 23.77427792,
+          "mag_v": 2.97,
+          "gnomonic_east_left_deg": 10.813947939116796,
+          "gnomonic_north_up_deg": 4.804293585013289,
+          "x_px": 912.0,
+          "y_px": 377.748
+        },
+        {
+          "hip": 48455,
+          "ra_deg": 148.19149028,
+          "dec_deg": 26.00708498,
+          "mag_v": 3.88,
+          "gnomonic_east_left_deg": 9.049053735445135,
+          "gnomonic_north_up_deg": 6.958491364350697,
+          "x_px": 865.008,
+          "y_px": 320.39
+        },
+        {
+          "hip": 49583,
+          "ra_deg": 151.83313948,
+          "dec_deg": 16.76266572,
+          "mag_v": 3.48,
+          "gnomonic_east_left_deg": 6.042717529668049,
+          "gnomonic_north_up_deg": -2.567993644007921,
+          "x_px": 784.96,
+          "y_px": 574.044
+        },
+        {
+          "hip": 49669,
+          "ra_deg": 152.09358075,
+          "dec_deg": 11.96719513,
+          "mag_v": 1.36,
+          "gnomonic_east_left_deg": 5.96103714810918,
+          "gnomonic_north_up_deg": -7.434119629749017,
+          "x_px": 782.786,
+          "y_px": 703.61
+        },
+        {
+          "hip": 50335,
+          "ra_deg": 154.17251805,
+          "dec_deg": 23.4173284,
+          "mag_v": 3.43,
+          "gnomonic_east_left_deg": 3.63167929951972,
+          "gnomonic_north_up_deg": 4.049120998212309,
+          "x_px": 720.764,
+          "y_px": 397.855
+        },
+        {
+          "hip": 50583,
+          "ra_deg": 154.99234054,
+          "dec_deg": 19.84186032,
+          "mag_v": 2.01,
+          "gnomonic_east_left_deg": 2.940310216235931,
+          "gnomonic_north_up_deg": 0.44458808957815155,
+          "x_px": 702.355,
+          "y_px": 493.83
+        },
+        {
+          "hip": 54872,
+          "ra_deg": 168.52671705,
+          "dec_deg": 20.52403384,
+          "mag_v": 2.56,
+          "gnomonic_east_left_deg": -9.841654147471198,
+          "gnomonic_north_up_deg": 1.4140957411903383,
+          "x_px": 362.021,
+          "y_px": 468.016
+        },
+        {
+          "hip": 54879,
+          "ra_deg": 168.56017036,
+          "dec_deg": 15.4297631,
+          "mag_v": 3.33,
+          "gnomonic_east_left_deg": -10.190742067063601,
+          "gnomonic_north_up_deg": -3.752793853920944,
+          "x_px": 352.726,
+          "y_px": 605.59
+        },
+        {
+          "hip": 57632,
+          "ra_deg": 177.26615977,
+          "dec_deg": 14.57233687,
+          "mag_v": 2.14,
+          "gnomonic_east_left_deg": -19.231691828362273,
+          "gnomonic_north_up_deg": -4.044583734708347,
+          "x_px": 112.0,
+          "y_px": 613.36
+        }
+      ],
+      "star_count": 9,
+      "edges": [
+        [
+          57632,
+          54879
+        ],
+        [
+          54879,
+          49669
+        ],
+        [
+          49669,
+          49583
+        ],
+        [
+          49583,
+          50583
+        ],
+        [
+          50583,
+          54872
+        ],
+        [
+          54872,
+          57632
+        ],
+        [
+          50583,
+          50335
+        ],
+        [
+          50335,
+          48455
+        ],
+        [
+          48455,
+          47908
+        ],
+        [
+          54872,
+          54879
+        ]
+      ],
+      "edge_count": 10,
+      "projection": "gnomonic; spherical-vector-mean centre; equal scale; celestial east left and north up",
+      "files": {
+        "svg": "Leo/leo-modern-dark.svg",
+        "png": "Leo/leo-modern-dark.png",
+        "import_svg": "Leo/leo-modern-import.svg",
+        "import_titled_svg": "Leo/leo-modern-import-titled.svg"
+      },
+      "svg": "Leo/leo-modern-dark.svg",
+      "png": "Leo/leo-modern-dark.png",
+      "import_svg": "Leo/leo-modern-import.svg",
+      "import_titled_svg": "Leo/leo-modern-import-titled.svg",
+      "source_sha256": {
+        "stellarium_modern_index": "1f2f5ffd6c9e25a7d0dcfdbf1f756e2db03dd3b8ed4ec016a2839b09f6b0fe1e",
+        "hipparcos_zodiac_tsv": "49390ff7042926dfe7206485a0acc39c69843e4d4cbbc348b90dfc5e03c4ac1b"
+      },
+      "rendered_with": "sharp"
+    },
+    {
+      "id": "Vir",
+      "english": "Virgo",
+      "chinese": "处女座",
+      "source_constellation_id": "CON modern Vir",
+      "stars": [
+        {
+          "hip": 57380,
+          "ra_deg": 176.46487734,
+          "dec_deg": 6.52981394,
+          "mag_v": 4.04,
+          "gnomonic_east_left_deg": 27.703074684883095,
+          "gnomonic_north_up_deg": 8.284897423179377,
+          "x_px": 912.0,
+          "y_px": 389.42
+        },
+        {
+          "hip": 60129,
+          "ra_deg": 184.97663096,
+          "dec_deg": -0.66674709,
+          "mag_v": 3.89,
+          "gnomonic_east_left_deg": 17.77881733505113,
+          "gnomonic_north_up_deg": 0.2871985673927518,
+          "x_px": 746.023,
+          "y_px": 523.176
+        },
+        {
+          "hip": 61941,
+          "ra_deg": 190.41667557,
+          "dec_deg": -1.44952231,
+          "mag_v": 2.74,
+          "gnomonic_east_left_deg": 11.966177228539888,
+          "gnomonic_north_up_deg": -0.4955090198961765,
+          "x_px": 648.81,
+          "y_px": 536.267
+        },
+        {
+          "hip": 63090,
+          "ra_deg": 193.90201366,
+          "dec_deg": 3.39759862,
+          "mag_v": 3.39,
+          "gnomonic_east_left_deg": 8.383428872067904,
+          "gnomonic_north_up_deg": 4.4276928532220285,
+          "x_px": 588.89,
+          "y_px": 453.929
+        },
+        {
+          "hip": 63608,
+          "ra_deg": 195.54483557,
+          "dec_deg": 10.95910186,
+          "mag_v": 2.85,
+          "gnomonic_east_left_deg": 6.725717621038468,
+          "gnomonic_north_up_deg": 12.196679698654924,
+          "x_px": 561.166,
+          "y_px": 323.997
+        },
+        {
+          "hip": 65474,
+          "ra_deg": 201.2983523,
+          "dec_deg": -11.16124491,
+          "mag_v": 0.98,
+          "gnomonic_east_left_deg": 0.9154455180066197,
+          "gnomonic_north_up_deg": -10.285743133936721,
+          "x_px": 463.993,
+          "y_px": 700.003
+        },
+        {
+          "hip": 66249,
+          "ra_deg": 203.673978,
+          "dec_deg": -0.59593821,
+          "mag_v": 3.38,
+          "gnomonic_east_left_deg": -1.4575569143506062,
+          "gnomonic_north_up_deg": 0.3891804175981899,
+          "x_px": 424.306,
+          "y_px": 521.471
+        },
+        {
+          "hip": 68520,
+          "ra_deg": 210.41159648,
+          "dec_deg": 1.54458338,
+          "mag_v": 4.23,
+          "gnomonic_east_left_deg": -8.256337198419144,
+          "gnomonic_north_up_deg": 2.5474922837945986,
+          "x_px": 310.6,
+          "y_px": 485.374
+        },
+        {
+          "hip": 69427,
+          "ra_deg": 213.22392088,
+          "dec_deg": -10.274044,
+          "mag_v": 4.18,
+          "gnomonic_east_left_deg": -11.111036266377313,
+          "gnomonic_north_up_deg": -9.564462348906984,
+          "x_px": 262.857,
+          "y_px": 687.94
+        },
+        {
+          "hip": 69701,
+          "ra_deg": 214.00368717,
+          "dec_deg": -5.99952622,
+          "mag_v": 4.07,
+          "gnomonic_east_left_deg": -11.935871534023851,
+          "gnomonic_north_up_deg": -5.156333499088171,
+          "x_px": 249.062,
+          "y_px": 614.216
+        },
+        {
+          "hip": 71957,
+          "ra_deg": 220.76484284,
+          "dec_deg": -5.6574291,
+          "mag_v": 3.87,
+          "gnomonic_east_left_deg": -19.192810240016644,
+          "gnomonic_north_up_deg": -4.992490571168254,
+          "x_px": 127.694,
+          "y_px": 611.476
+        },
+        {
+          "hip": 72220,
+          "ra_deg": 221.56246594,
+          "dec_deg": 1.8929383,
+          "mag_v": 3.73,
+          "gnomonic_east_left_deg": -20.131203020172567,
+          "gnomonic_north_up_deg": 2.994152694274462,
+          "x_px": 112.0,
+          "y_px": 477.904
+        }
+      ],
+      "star_count": 12,
+      "edges": [
+        [
+          57380,
+          60129
+        ],
+        [
+          60129,
+          61941
+        ],
+        [
+          61941,
+          65474
+        ],
+        [
+          65474,
+          69427
+        ],
+        [
+          69427,
+          69701
+        ],
+        [
+          69701,
+          71957
+        ],
+        [
+          65474,
+          66249
+        ],
+        [
+          66249,
+          68520
+        ],
+        [
+          68520,
+          72220
+        ],
+        [
+          66249,
+          63090
+        ],
+        [
+          63090,
+          63608
+        ],
+        [
+          63090,
+          61941
+        ]
+      ],
+      "edge_count": 12,
+      "projection": "gnomonic; spherical-vector-mean centre; equal scale; celestial east left and north up",
+      "files": {
+        "svg": "Vir/vir-modern-dark.svg",
+        "png": "Vir/vir-modern-dark.png",
+        "import_svg": "Vir/vir-modern-import.svg",
+        "import_titled_svg": "Vir/vir-modern-import-titled.svg"
+      },
+      "svg": "Vir/vir-modern-dark.svg",
+      "png": "Vir/vir-modern-dark.png",
+      "import_svg": "Vir/vir-modern-import.svg",
+      "import_titled_svg": "Vir/vir-modern-import-titled.svg",
+      "source_sha256": {
+        "stellarium_modern_index": "1f2f5ffd6c9e25a7d0dcfdbf1f756e2db03dd3b8ed4ec016a2839b09f6b0fe1e",
+        "hipparcos_zodiac_tsv": "49390ff7042926dfe7206485a0acc39c69843e4d4cbbc348b90dfc5e03c4ac1b"
+      },
+      "rendered_with": "sharp"
+    },
+    {
+      "id": "Lib",
+      "english": "Libra",
+      "chinese": "天秤座",
+      "source_constellation_id": "CON modern Lib",
+      "stars": [
+        {
+          "hip": 72622,
+          "ra_deg": 222.71990536,
+          "dec_deg": -16.04161047,
+          "mag_v": 2.75,
+          "gnomonic_east_left_deg": 7.133874113474759,
+          "gnomonic_north_up_deg": 0.3468933575283063,
+          "x_px": 890.05,
+          "y_px": 451.788
+        },
+        {
+          "hip": 73714,
+          "ra_deg": 226.01775793,
+          "dec_deg": -25.28185602,
+          "mag_v": 3.25,
+          "gnomonic_east_left_deg": 3.745771026072774,
+          "gnomonic_north_up_deg": -8.892934923160666,
+          "x_px": 721.297,
+          "y_px": 912.0
+        },
+        {
+          "hip": 74785,
+          "ra_deg": 229.25196591,
+          "dec_deg": -9.38286694,
+          "mag_v": 2.61,
+          "gnomonic_east_left_deg": 0.8494878266719476,
+          "gnomonic_north_up_deg": 7.168913985395966,
+          "x_px": 577.041,
+          "y_px": 112.0
+        },
+        {
+          "hip": 76333,
+          "ra_deg": 233.88141398,
+          "dec_deg": -14.78955365,
+          "mag_v": 3.91,
+          "gnomonic_east_left_deg": -3.6564653867974797,
+          "gnomonic_north_up_deg": 1.6959362770411122,
+          "x_px": 352.611,
+          "y_px": 384.595
+        },
+        {
+          "hip": 77853,
+          "ra_deg": 238.45615438,
+          "dec_deg": -16.7296223,
+          "mag_v": 4.13,
+          "gnomonic_east_left_deg": -8.046580602500052,
+          "gnomonic_north_up_deg": -0.38295905345300024,
+          "x_px": 133.95,
+          "y_px": 488.14
+        }
+      ],
+      "star_count": 5,
+      "edges": [
+        [
+          77853,
+          76333
+        ],
+        [
+          76333,
+          74785
+        ],
+        [
+          74785,
+          72622
+        ],
+        [
+          72622,
+          73714
+        ],
+        [
+          73714,
+          76333
+        ]
+      ],
+      "edge_count": 5,
+      "projection": "gnomonic; spherical-vector-mean centre; equal scale; celestial east left and north up",
+      "files": {
+        "svg": "Lib/lib-modern-dark.svg",
+        "png": "Lib/lib-modern-dark.png",
+        "import_svg": "Lib/lib-modern-import.svg",
+        "import_titled_svg": "Lib/lib-modern-import-titled.svg"
+      },
+      "svg": "Lib/lib-modern-dark.svg",
+      "png": "Lib/lib-modern-dark.png",
+      "import_svg": "Lib/lib-modern-import.svg",
+      "import_titled_svg": "Lib/lib-modern-import-titled.svg",
+      "source_sha256": {
+        "stellarium_modern_index": "1f2f5ffd6c9e25a7d0dcfdbf1f756e2db03dd3b8ed4ec016a2839b09f6b0fe1e",
+        "hipparcos_zodiac_tsv": "49390ff7042926dfe7206485a0acc39c69843e4d4cbbc348b90dfc5e03c4ac1b"
+      },
+      "rendered_with": "sharp"
+    },
+    {
+      "id": "Sco",
+      "english": "Scorpius",
+      "chinese": "天蝎座",
+      "source_constellation_id": "CON modern Sco",
+      "stars": [
+        {
+          "hip": 78265,
+          "ra_deg": 239.71300283,
+          "dec_deg": -26.1140428,
+          "mag_v": 2.89,
+          "gnomonic_east_left_deg": 11.943515112944317,
+          "gnomonic_north_up_deg": 7.582926473566854,
+          "x_px": 895.58,
+          "y_px": 340.152
+        },
+        {
+          "hip": 78401,
+          "ra_deg": 240.08338225,
+          "dec_deg": -22.62162024,
+          "mag_v": 2.29,
+          "gnomonic_east_left_deg": 12.057544320766432,
+          "gnomonic_north_up_deg": 11.263705712614344,
+          "x_px": 899.415,
+          "y_px": 216.377
+        },
+        {
+          "hip": 78820,
+          "ra_deg": 241.35931206,
+          "dec_deg": -19.80539286,
+          "mag_v": 2.56,
+          "gnomonic_east_left_deg": 11.158997152279003,
+          "gnomonic_north_up_deg": 14.36762543699318,
+          "x_px": 869.199,
+          "y_px": 112.0
+        },
+        {
+          "hip": 80763,
+          "ra_deg": 247.35194804,
+          "dec_deg": -26.43194608,
+          "mag_v": 1.06,
+          "gnomonic_east_left_deg": 4.877519709206897,
+          "gnomonic_north_up_deg": 7.761937325347284,
+          "x_px": 657.97,
+          "y_px": 334.132
+        },
+        {
+          "hip": 81266,
+          "ra_deg": 248.97066423,
+          "dec_deg": -28.21596156,
+          "mag_v": 2.82,
+          "gnomonic_east_left_deg": 3.3413837077118274,
+          "gnomonic_north_up_deg": 6.002296661697249,
+          "x_px": 606.313,
+          "y_px": 393.304
+        },
+        {
+          "hip": 82396,
+          "ra_deg": 252.54268738,
+          "dec_deg": -34.29260982,
+          "mag_v": 2.29,
+          "gnomonic_east_left_deg": 0.16168514297260844,
+          "gnomonic_north_up_deg": -0.04464242707634649,
+          "x_px": 499.389,
+          "y_px": 596.647
+        },
+        {
+          "hip": 82514,
+          "ra_deg": 252.96766195,
+          "dec_deg": -38.04732717,
+          "mag_v": 3.0,
+          "gnomonic_east_left_deg": -0.18094932619781856,
+          "gnomonic_north_up_deg": -3.8050057757028113,
+          "x_px": 487.867,
+          "y_px": 723.098
+        },
+        {
+          "hip": 82671,
+          "ra_deg": 253.49886366,
+          "dec_deg": -42.36201968,
+          "mag_v": 4.7,
+          "gnomonic_east_left_deg": -0.5676109233756425,
+          "gnomonic_north_up_deg": -8.171139518642157,
+          "x_px": 474.864,
+          "y_px": 869.919
+        },
+        {
+          "hip": 84143,
+          "ra_deg": 258.038233,
+          "dec_deg": -43.23849039,
+          "mag_v": 3.32,
+          "gnomonic_east_left_deg": -3.913632496963634,
+          "gnomonic_north_up_deg": -9.19051285332614,
+          "x_px": 362.346,
+          "y_px": 904.198
+        },
+        {
+          "hip": 85927,
+          "ra_deg": 263.40219373,
+          "dec_deg": -37.10374835,
+          "mag_v": 1.62,
+          "gnomonic_east_left_deg": -8.563979211908533,
+          "gnomonic_north_up_deg": -3.3407569601007023,
+          "x_px": 205.967,
+          "y_px": 707.486
+        },
+        {
+          "hip": 86228,
+          "ra_deg": 264.32969072,
+          "dec_deg": -42.99782155,
+          "mag_v": 1.86,
+          "gnomonic_east_left_deg": -8.626688579343048,
+          "gnomonic_north_up_deg": -9.422523525098855,
+          "x_px": 203.859,
+          "y_px": 912.0
+        },
+        {
+          "hip": 86670,
+          "ra_deg": 265.62199908,
+          "dec_deg": -39.02992092,
+          "mag_v": 2.39,
+          "gnomonic_east_left_deg": -10.122957262488908,
+          "gnomonic_north_up_deg": -5.515191147088283,
+          "x_px": 153.543,
+          "y_px": 780.607
+        },
+        {
+          "hip": 87073,
+          "ra_deg": 266.89617137,
+          "dec_deg": -40.12698197,
+          "mag_v": 2.99,
+          "gnomonic_east_left_deg": -10.984104860658178,
+          "gnomonic_north_up_deg": -6.783321940837683,
+          "x_px": 124.585,
+          "y_px": 823.251
+        }
+      ],
+      "star_count": 13,
+      "edges": [
+        [
+          85927,
+          86670
+        ],
+        [
+          86670,
+          87073
+        ],
+        [
+          87073,
+          86228
+        ],
+        [
+          86228,
+          84143
+        ],
+        [
+          84143,
+          82671
+        ],
+        [
+          82671,
+          82514
+        ],
+        [
+          82514,
+          82396
+        ],
+        [
+          82396,
+          81266
+        ],
+        [
+          81266,
+          80763
+        ],
+        [
+          80763,
+          78401
+        ],
+        [
+          80763,
+          78265
+        ],
+        [
+          80763,
+          78820
+        ]
+      ],
+      "edge_count": 12,
+      "projection": "gnomonic; spherical-vector-mean centre; equal scale; celestial east left and north up",
+      "files": {
+        "svg": "Sco/sco-modern-dark.svg",
+        "png": "Sco/sco-modern-dark.png",
+        "import_svg": "Sco/sco-modern-import.svg",
+        "import_titled_svg": "Sco/sco-modern-import-titled.svg"
+      },
+      "svg": "Sco/sco-modern-dark.svg",
+      "png": "Sco/sco-modern-dark.png",
+      "import_svg": "Sco/sco-modern-import.svg",
+      "import_titled_svg": "Sco/sco-modern-import-titled.svg",
+      "source_sha256": {
+        "stellarium_modern_index": "1f2f5ffd6c9e25a7d0dcfdbf1f756e2db03dd3b8ed4ec016a2839b09f6b0fe1e",
+        "hipparcos_zodiac_tsv": "49390ff7042926dfe7206485a0acc39c69843e4d4cbbc348b90dfc5e03c4ac1b"
+      },
+      "rendered_with": "sharp"
+    },
+    {
+      "id": "Sgr",
+      "english": "Sagittarius",
+      "chinese": "射手座",
+      "source_constellation_id": "CON modern Sgr",
+      "stars": [
+        {
+          "hip": 87072,
+          "ra_deg": 266.89011276,
+          "dec_deg": -27.83076255,
+          "mag_v": 4.53,
+          "gnomonic_east_left_deg": 15.907154632794406,
+          "gnomonic_north_up_deg": 0.43934289365707724,
+          "x_px": 912.0,
+          "y_px": 443.948
+        },
+        {
+          "hip": 88635,
+          "ra_deg": 271.45218586,
+          "dec_deg": -30.42365007,
+          "mag_v": 2.98,
+          "gnomonic_east_left_deg": 11.374494519019525,
+          "gnomonic_north_up_deg": -1.662115029053258,
+          "x_px": 793.039,
+          "y_px": 499.102
+        },
+        {
+          "hip": 89341,
+          "ra_deg": 273.44086963,
+          "dec_deg": -21.05883031,
+          "mag_v": 3.84,
+          "gnomonic_east_left_deg": 10.52512228338501,
+          "gnomonic_north_up_deg": 8.051368523481068,
+          "x_px": 770.746,
+          "y_px": 244.168
+        },
+        {
+          "hip": 89642,
+          "ra_deg": 274.4072049,
+          "dec_deg": -36.76128103,
+          "mag_v": 3.1,
+          "gnomonic_east_left_deg": 8.197806457485607,
+          "gnomonic_north_up_deg": -7.818123577366808,
+          "x_px": 709.665,
+          "y_px": 660.669
+        },
+        {
+          "hip": 89931,
+          "ra_deg": 275.24842337,
+          "dec_deg": -29.82803914,
+          "mag_v": 2.72,
+          "gnomonic_east_left_deg": 8.068612876912809,
+          "gnomonic_north_up_deg": -0.7323782374673387,
+          "x_px": 706.274,
+          "y_px": 474.701
+        },
+        {
+          "hip": 90185,
+          "ra_deg": 276.04310967,
+          "dec_deg": -34.3843146,
+          "mag_v": 1.79,
+          "gnomonic_east_left_deg": 7.0333251036914435,
+          "gnomonic_north_up_deg": -5.27114921356121,
+          "x_px": 679.103,
+          "y_px": 593.822
+        },
+        {
+          "hip": 90496,
+          "ra_deg": 276.99278955,
+          "dec_deg": -25.42124732,
+          "mag_v": 2.82,
+          "gnomonic_east_left_deg": 6.821460007832225,
+          "gnomonic_north_up_deg": 3.8130536992484236,
+          "x_px": 673.542,
+          "y_px": 355.404
+        },
+        {
+          "hip": 92041,
+          "ra_deg": 281.41397083,
+          "dec_deg": -26.9907794,
+          "mag_v": 3.17,
+          "gnomonic_east_left_deg": 2.7520785969167685,
+          "gnomonic_north_up_deg": 2.3973440016450214,
+          "x_px": 566.74,
+          "y_px": 392.56
+        },
+        {
+          "hip": 92855,
+          "ra_deg": 283.81631956,
+          "dec_deg": -26.29659428,
+          "mag_v": 2.05,
+          "gnomonic_east_left_deg": 0.611784673157821,
+          "gnomonic_north_up_deg": 3.125206769445766,
+          "x_px": 510.567,
+          "y_px": 373.457
+        },
+        {
+          "hip": 93085,
+          "ra_deg": 284.43241556,
+          "dec_deg": -21.10662433,
+          "mag_v": 3.52,
+          "gnomonic_east_left_deg": 0.06154099845548574,
+          "gnomonic_north_up_deg": 8.372521506893333,
+          "x_px": 496.126,
+          "y_px": 235.739
+        },
+        {
+          "hip": 93506,
+          "ra_deg": 285.65301428,
+          "dec_deg": -29.88011429,
+          "mag_v": 2.6,
+          "gnomonic_east_left_deg": -1.0018658528275801,
+          "gnomonic_north_up_deg": -0.464840216516705,
+          "x_px": 468.216,
+          "y_px": 467.679
+        },
+        {
+          "hip": 93683,
+          "ra_deg": 286.17055765,
+          "dec_deg": -21.74135451,
+          "mag_v": 3.76,
+          "gnomonic_east_left_deg": -1.568253613872016,
+          "gnomonic_north_up_deg": 7.716713962074512,
+          "x_px": 453.351,
+          "y_px": 252.951
+        },
+        {
+          "hip": 93864,
+          "ra_deg": 286.73517629,
+          "dec_deg": -27.66981416,
+          "mag_v": 3.32,
+          "gnomonic_east_left_deg": -1.9831930602136958,
+          "gnomonic_north_up_deg": 1.7330542643699622,
+          "x_px": 442.461,
+          "y_px": 409.994
+        },
+        {
+          "hip": 94820,
+          "ra_deg": 289.40868994,
+          "dec_deg": -18.95288215,
+          "mag_v": 4.88,
+          "gnomonic_east_left_deg": -4.732132938826875,
+          "gnomonic_north_up_deg": 10.518439992416544,
+          "x_px": 370.314,
+          "y_px": 179.418
+        },
+        {
+          "hip": 95168,
+          "ra_deg": 290.41823037,
+          "dec_deg": -17.84725155,
+          "mag_v": 3.92,
+          "gnomonic_east_left_deg": -5.76838778555128,
+          "gnomonic_north_up_deg": 11.639747487714386,
+          "x_px": 343.117,
+          "y_px": 149.989
+        },
+        {
+          "hip": 95294,
+          "ra_deg": 290.8044192,
+          "dec_deg": -44.79964788,
+          "mag_v": 4.27,
+          "gnomonic_east_left_deg": -4.649970695115023,
+          "gnomonic_north_up_deg": -15.946866661854298,
+          "x_px": 372.47,
+          "y_px": 874.011
+        },
+        {
+          "hip": 95347,
+          "ra_deg": 290.97146411,
+          "dec_deg": -40.61564629,
+          "mag_v": 3.96,
+          "gnomonic_east_left_deg": -5.020452664962158,
+          "gnomonic_north_up_deg": -11.528434846169285,
+          "x_px": 362.747,
+          "y_px": 758.047
+        },
+        {
+          "hip": 96406,
+          "ra_deg": 294.00687266,
+          "dec_deg": -24.71901737,
+          "mag_v": 5.64,
+          "gnomonic_east_left_deg": -8.722429369625546,
+          "gnomonic_north_up_deg": 4.407480515917154,
+          "x_px": 265.587,
+          "y_px": 339.803
+        },
+        {
+          "hip": 98032,
+          "ra_deg": 298.81532954,
+          "dec_deg": -41.8684135,
+          "mag_v": 4.12,
+          "gnomonic_east_left_deg": -11.033090522766745,
+          "gnomonic_north_up_deg": -13.59487016427748,
+          "x_px": 204.943,
+          "y_px": 812.282
+        },
+        {
+          "hip": 98412,
+          "ra_deg": 299.93405965,
+          "dec_deg": -35.27624433,
+          "mag_v": 4.37,
+          "gnomonic_east_left_deg": -12.846575791887094,
+          "gnomonic_north_up_deg": -6.887183870575841,
+          "x_px": 157.347,
+          "y_px": 636.236
+        },
+        {
+          "hip": 98688,
+          "ra_deg": 300.66441367,
+          "dec_deg": -27.70987972,
+          "mag_v": 4.43,
+          "gnomonic_east_left_deg": -14.574386778657923,
+          "gnomonic_north_up_deg": 0.7480118961338447,
+          "x_px": 112.0,
+          "y_px": 435.847
+        }
+      ],
+      "star_count": 21,
+      "edges": [
+        [
+          89931,
+          90496
+        ],
+        [
+          89642,
+          90185
+        ],
+        [
+          90185,
+          88635
+        ],
+        [
+          88635,
+          87072
+        ],
+        [
+          88635,
+          89931
+        ],
+        [
+          89931,
+          90185
+        ],
+        [
+          90185,
+          93506
+        ],
+        [
+          93506,
+          92041
+        ],
+        [
+          92041,
+          89931
+        ],
+        [
+          92041,
+          90496
+        ],
+        [
+          90496,
+          89341
+        ],
+        [
+          93506,
+          93864
+        ],
+        [
+          93864,
+          92855
+        ],
+        [
+          92855,
+          92041
+        ],
+        [
+          92855,
+          93085
+        ],
+        [
+          93085,
+          93683
+        ],
+        [
+          93683,
+          94820
+        ],
+        [
+          94820,
+          95168
+        ],
+        [
+          93864,
+          96406
+        ],
+        [
+          96406,
+          98688
+        ],
+        [
+          98688,
+          98412
+        ],
+        [
+          98412,
+          98032
+        ],
+        [
+          98032,
+          95347
+        ],
+        [
+          98032,
+          95294
+        ]
+      ],
+      "edge_count": 24,
+      "projection": "gnomonic; spherical-vector-mean centre; equal scale; celestial east left and north up",
+      "files": {
+        "svg": "Sgr/sgr-modern-dark.svg",
+        "png": "Sgr/sgr-modern-dark.png",
+        "import_svg": "Sgr/sgr-modern-import.svg",
+        "import_titled_svg": "Sgr/sgr-modern-import-titled.svg"
+      },
+      "svg": "Sgr/sgr-modern-dark.svg",
+      "png": "Sgr/sgr-modern-dark.png",
+      "import_svg": "Sgr/sgr-modern-import.svg",
+      "import_titled_svg": "Sgr/sgr-modern-import-titled.svg",
+      "source_sha256": {
+        "stellarium_modern_index": "1f2f5ffd6c9e25a7d0dcfdbf1f756e2db03dd3b8ed4ec016a2839b09f6b0fe1e",
+        "hipparcos_zodiac_tsv": "49390ff7042926dfe7206485a0acc39c69843e4d4cbbc348b90dfc5e03c4ac1b"
+      },
+      "rendered_with": "sharp"
+    },
+    {
+      "id": "Cap",
+      "english": "Capricornus",
+      "chinese": "摩羯座",
+      "source_constellation_id": "CON modern Cap",
+      "stars": [
+        {
+          "hip": 100064,
+          "ra_deg": 304.5134103,
+          "dec_deg": -12.54485877,
+          "mag_v": 3.58,
+          "gnomonic_east_left_deg": 11.505456464171539,
+          "gnomonic_north_up_deg": 6.136442424755214,
+          "x_px": 912.0,
+          "y_px": 251.742
+        },
+        {
+          "hip": 100345,
+          "ra_deg": 305.25269347,
+          "dec_deg": -14.78140119,
+          "mag_v": 3.05,
+          "gnomonic_east_left_deg": 10.611929213032607,
+          "gnomonic_north_up_deg": 3.878167398841667,
+          "x_px": 879.324,
+          "y_px": 334.326
+        },
+        {
+          "hip": 102485,
+          "ra_deg": 311.52402547,
+          "dec_deg": -25.27051682,
+          "mag_v": 4.13,
+          "gnomonic_east_left_deg": 4.15689345651548,
+          "gnomonic_north_up_deg": -6.458108093128575,
+          "x_px": 643.267,
+          "y_px": 712.319
+        },
+        {
+          "hip": 102978,
+          "ra_deg": 312.95540084,
+          "dec_deg": -26.91912642,
+          "mag_v": 4.12,
+          "gnomonic_east_left_deg": 2.820063682881569,
+          "gnomonic_north_up_deg": -8.097154715301405,
+          "x_px": 594.38,
+          "y_px": 772.258
+        },
+        {
+          "hip": 104139,
+          "ra_deg": 316.48658082,
+          "dec_deg": -17.23271095,
+          "mag_v": 4.08,
+          "gnomonic_east_left_deg": -0.38383191754635065,
+          "gnomonic_north_up_deg": 1.6771424447728722,
+          "x_px": 477.215,
+          "y_px": 414.817
+        },
+        {
+          "hip": 105515,
+          "ra_deg": 320.56157261,
+          "dec_deg": -16.83455521,
+          "mag_v": 4.28,
+          "gnomonic_east_left_deg": -4.2951618569921415,
+          "gnomonic_north_up_deg": 2.0274736788595495,
+          "x_px": 334.18,
+          "y_px": 402.005
+        },
+        {
+          "hip": 105881,
+          "ra_deg": 321.66678212,
+          "dec_deg": -22.41137838,
+          "mag_v": 3.77,
+          "gnomonic_east_left_deg": -5.183310466270021,
+          "gnomonic_north_up_deg": -3.602488783652486,
+          "x_px": 301.7,
+          "y_px": 607.89
+        },
+        {
+          "hip": 106985,
+          "ra_deg": 325.02225935,
+          "dec_deg": -16.66225343,
+          "mag_v": 3.69,
+          "gnomonic_east_left_deg": -8.629016530621687,
+          "gnomonic_north_up_deg": 2.055161567629008,
+          "x_px": 175.693,
+          "y_px": 400.993
+        },
+        {
+          "hip": 107556,
+          "ra_deg": 326.75952199,
+          "dec_deg": -16.12656595,
+          "mag_v": 2.85,
+          "gnomonic_east_left_deg": -10.370705688770455,
+          "gnomonic_north_up_deg": 2.5159658275256045,
+          "x_px": 112.0,
+          "y_px": 384.141
+        }
+      ],
+      "star_count": 9,
+      "edges": [
+        [
+          100064,
+          100345
+        ],
+        [
+          100345,
+          104139
+        ],
+        [
+          104139,
+          105515
+        ],
+        [
+          105515,
+          106985
+        ],
+        [
+          106985,
+          107556
+        ],
+        [
+          105515,
+          105881
+        ],
+        [
+          105881,
+          104139
+        ],
+        [
+          100345,
+          102485
+        ],
+        [
+          104139,
+          102978
+        ]
+      ],
+      "edge_count": 9,
+      "projection": "gnomonic; spherical-vector-mean centre; equal scale; celestial east left and north up",
+      "files": {
+        "svg": "Cap/cap-modern-dark.svg",
+        "png": "Cap/cap-modern-dark.png",
+        "import_svg": "Cap/cap-modern-import.svg",
+        "import_titled_svg": "Cap/cap-modern-import-titled.svg"
+      },
+      "svg": "Cap/cap-modern-dark.svg",
+      "png": "Cap/cap-modern-dark.png",
+      "import_svg": "Cap/cap-modern-import.svg",
+      "import_titled_svg": "Cap/cap-modern-import-titled.svg",
+      "source_sha256": {
+        "stellarium_modern_index": "1f2f5ffd6c9e25a7d0dcfdbf1f756e2db03dd3b8ed4ec016a2839b09f6b0fe1e",
+        "hipparcos_zodiac_tsv": "49390ff7042926dfe7206485a0acc39c69843e4d4cbbc348b90dfc5e03c4ac1b"
+      },
+      "rendered_with": "sharp"
+    },
+    {
+      "id": "Aqr",
+      "english": "Aquarius",
+      "chinese": "水瓶座",
+      "source_constellation_id": "CON modern Aqr",
+      "stars": [
+        {
+          "hip": 102618,
+          "ra_deg": 311.91888574,
+          "dec_deg": -9.49568988,
+          "mag_v": 3.78,
+          "gnomonic_east_left_deg": 26.505561412166454,
+          "gnomonic_north_up_deg": -1.2372273138819125,
+          "x_px": 912.0,
+          "y_px": 505.267
+        },
+        {
+          "hip": 106278,
+          "ra_deg": 322.88966951,
+          "dec_deg": -5.57115593,
+          "mag_v": 2.9,
+          "gnomonic_east_left_deg": 14.471649979925813,
+          "gnomonic_north_up_deg": 3.4937276413670215,
+          "x_px": 669.953,
+          "y_px": 410.11
+        },
+        {
+          "hip": 109074,
+          "ra_deg": 331.44593869,
+          "dec_deg": -0.31982656,
+          "mag_v": 2.95,
+          "gnomonic_east_left_deg": 5.750115630021466,
+          "gnomonic_north_up_deg": 8.986693433056388,
+          "x_px": 494.53,
+          "y_px": 299.626
+        },
+        {
+          "hip": 109139,
+          "ra_deg": 331.60918894,
+          "dec_deg": -13.86954013,
+          "mag_v": 4.29,
+          "gnomonic_east_left_deg": 5.371727391411981,
+          "gnomonic_north_up_deg": -4.7062510295272935,
+          "x_px": 486.919,
+          "y_px": 575.042
+        },
+        {
+          "hip": 110003,
+          "ra_deg": 334.20819329,
+          "dec_deg": -7.78323706,
+          "mag_v": 4.17,
+          "gnomonic_east_left_deg": 2.876577875284085,
+          "gnomonic_north_up_deg": 1.4426729199845756,
+          "x_px": 436.732,
+          "y_px": 451.364
+        },
+        {
+          "hip": 110395,
+          "ra_deg": 335.41374983,
+          "dec_deg": -1.38735315,
+          "mag_v": 3.86,
+          "gnomonic_east_left_deg": 1.7104529087026787,
+          "gnomonic_north_up_deg": 7.896945502015908,
+          "x_px": 413.277,
+          "y_px": 321.544
+        },
+        {
+          "hip": 110960,
+          "ra_deg": 337.20750231,
+          "dec_deg": -0.02006304,
+          "mag_v": 3.65,
+          "gnomonic_east_left_deg": -0.10061354751307973,
+          "gnomonic_north_up_deg": 9.295695875076152,
+          "x_px": 376.85,
+          "y_px": 293.41
+        },
+        {
+          "hip": 111123,
+          "ra_deg": 337.66172918,
+          "dec_deg": -10.67788619,
+          "mag_v": 4.82,
+          "gnomonic_east_left_deg": -0.5441454093704134,
+          "gnomonic_north_up_deg": -1.443215247667607,
+          "x_px": 367.929,
+          "y_px": 509.41
+        },
+        {
+          "hip": 111497,
+          "ra_deg": 338.83887054,
+          "dec_deg": -0.11736123,
+          "mag_v": 4.04,
+          "gnomonic_east_left_deg": -1.7533615976979708,
+          "gnomonic_north_up_deg": 9.195809103316451,
+          "x_px": 343.607,
+          "y_px": 295.419
+        },
+        {
+          "hip": 112716,
+          "ra_deg": 342.39795761,
+          "dec_deg": -13.59253756,
+          "mag_v": 4.05,
+          "gnomonic_east_left_deg": -5.170379326382944,
+          "gnomonic_north_up_deg": -4.421787774383742,
+          "x_px": 274.878,
+          "y_px": 569.321
+        },
+        {
+          "hip": 112961,
+          "ra_deg": 343.15360192,
+          "dec_deg": -7.57967878,
+          "mag_v": 3.73,
+          "gnomonic_east_left_deg": -6.016729620104975,
+          "gnomonic_north_up_deg": 1.6143196629065777,
+          "x_px": 257.854,
+          "y_px": 447.912
+        },
+        {
+          "hip": 113136,
+          "ra_deg": 343.6626635,
+          "dec_deg": -15.82075994,
+          "mag_v": 3.27,
+          "gnomonic_east_left_deg": -6.374061300561315,
+          "gnomonic_north_up_deg": -6.714614934606008,
+          "x_px": 250.667,
+          "y_px": 615.438
+        },
+        {
+          "hip": 114341,
+          "ra_deg": 347.36150879,
+          "dec_deg": -21.17248555,
+          "mag_v": 3.68,
+          "gnomonic_east_left_deg": -9.868705897612802,
+          "gnomonic_north_up_deg": -12.439635844087029,
+          "x_px": 180.377,
+          "y_px": 730.59
+        },
+        {
+          "hip": 114855,
+          "ra_deg": 348.97198728,
+          "dec_deg": -9.08769554,
+          "mag_v": 4.24,
+          "gnomonic_east_left_deg": -11.878696008243127,
+          "gnomonic_north_up_deg": -0.047174377277138545,
+          "x_px": 139.948,
+          "y_px": 481.331
+        },
+        {
+          "hip": 115438,
+          "ra_deg": 350.7429228,
+          "dec_deg": -20.10034505,
+          "mag_v": 3.96,
+          "gnomonic_east_left_deg": -13.268197919361176,
+          "gnomonic_north_up_deg": -11.55208975534568,
+          "x_px": 112.0,
+          "y_px": 712.738
+        }
+      ],
+      "star_count": 15,
+      "edges": [
+        [
+          106278,
+          109074
+        ],
+        [
+          109074,
+          110395
+        ],
+        [
+          110395,
+          110960
+        ],
+        [
+          110960,
+          111497
+        ],
+        [
+          111497,
+          112961
+        ],
+        [
+          112961,
+          114855
+        ],
+        [
+          114855,
+          115438
+        ],
+        [
+          109074,
+          110003
+        ],
+        [
+          110003,
+          109139
+        ],
+        [
+          110003,
+          111123
+        ],
+        [
+          111123,
+          112716
+        ],
+        [
+          112716,
+          113136
+        ],
+        [
+          113136,
+          114341
+        ],
+        [
+          102618,
+          106278
+        ]
+      ],
+      "edge_count": 14,
+      "projection": "gnomonic; spherical-vector-mean centre; equal scale; celestial east left and north up",
+      "files": {
+        "svg": "Aqr/aqr-modern-dark.svg",
+        "png": "Aqr/aqr-modern-dark.png",
+        "import_svg": "Aqr/aqr-modern-import.svg",
+        "import_titled_svg": "Aqr/aqr-modern-import-titled.svg"
+      },
+      "svg": "Aqr/aqr-modern-dark.svg",
+      "png": "Aqr/aqr-modern-dark.png",
+      "import_svg": "Aqr/aqr-modern-import.svg",
+      "import_titled_svg": "Aqr/aqr-modern-import-titled.svg",
+      "source_sha256": {
+        "stellarium_modern_index": "1f2f5ffd6c9e25a7d0dcfdbf1f756e2db03dd3b8ed4ec016a2839b09f6b0fe1e",
+        "hipparcos_zodiac_tsv": "49390ff7042926dfe7206485a0acc39c69843e4d4cbbc348b90dfc5e03c4ac1b"
+      },
+      "rendered_with": "sharp"
+    },
+    {
+      "id": "Psc",
+      "english": "Pisces",
+      "chinese": "双鱼座",
+      "source_constellation_id": "CON modern Psc",
+      "stars": [
+        {
+          "hip": 1645,
+          "ra_deg": 5.14943435,
+          "dec_deg": 8.19024803,
+          "mag_v": 5.38,
+          "gnomonic_east_left_deg": 4.304598336799112,
+          "gnomonic_north_up_deg": -1.181857861272532,
+          "x_px": 600.583,
+          "y_px": 678.69
+        },
+        {
+          "hip": 3760,
+          "ra_deg": 12.07226858,
+          "dec_deg": 7.29991977,
+          "mag_v": 5.92,
+          "gnomonic_east_left_deg": -2.5653315554414617,
+          "gnomonic_north_up_deg": -2.0888312505468525,
+          "x_px": 473.605,
+          "y_px": 695.454
+        },
+        {
+          "hip": 4889,
+          "ra_deg": 15.70452742,
+          "dec_deg": 31.80433674,
+          "mag_v": 5.5,
+          "gnomonic_east_left_deg": -5.732751130193832,
+          "gnomonic_north_up_deg": 23.80376585459814,
+          "x_px": 415.061,
+          "y_px": 216.878
+        },
+        {
+          "hip": 4906,
+          "ra_deg": 15.73606615,
+          "dec_deg": 7.89007256,
+          "mag_v": 4.27,
+          "gnomonic_east_left_deg": -6.2134759471755245,
+          "gnomonic_north_up_deg": -1.4588853509399318,
+          "x_px": 406.176,
+          "y_px": 683.811
+        },
+        {
+          "hip": 5742,
+          "ra_deg": 18.43723014,
+          "dec_deg": 24.58376482,
+          "mag_v": 4.67,
+          "gnomonic_east_left_deg": -8.493115904386459,
+          "gnomonic_north_up_deg": 15.841140108423632,
+          "x_px": 364.041,
+          "y_px": 364.052
+        },
+        {
+          "hip": 6193,
+          "ra_deg": 19.86657455,
+          "dec_deg": 27.26408682,
+          "mag_v": 4.74,
+          "gnomonic_east_left_deg": -9.786439275383552,
+          "gnomonic_north_up_deg": 18.89943921739207,
+          "x_px": 340.136,
+          "y_px": 307.525
+        },
+        {
+          "hip": 7007,
+          "ra_deg": 22.54559597,
+          "dec_deg": 6.14393314,
+          "mag_v": 4.84,
+          "gnomonic_east_left_deg": -13.225815460825823,
+          "gnomonic_north_up_deg": -3.0924891039105185,
+          "x_px": 276.566,
+          "y_px": 714.005
+        },
+        {
+          "hip": 7097,
+          "ra_deg": 22.87080776,
+          "dec_deg": 15.34583101,
+          "mag_v": 3.62,
+          "gnomonic_east_left_deg": -13.199377251878609,
+          "gnomonic_north_up_deg": 6.384145251887827,
+          "x_px": 277.054,
+          "y_px": 538.847
+        },
+        {
+          "hip": 7884,
+          "ra_deg": 25.35794814,
+          "dec_deg": 5.48760445,
+          "mag_v": 4.45,
+          "gnomonic_east_left_deg": -16.24019790139031,
+          "gnomonic_north_up_deg": -3.696679124792413,
+          "x_px": 220.85,
+          "y_px": 725.172
+        },
+        {
+          "hip": 8198,
+          "ra_deg": 26.34828629,
+          "dec_deg": 9.15764102,
+          "mag_v": 4.26,
+          "gnomonic_east_left_deg": -17.121756739303805,
+          "gnomonic_north_up_deg": 0.1662900430860681,
+          "x_px": 204.556,
+          "y_px": 653.772
+        },
+        {
+          "hip": 8833,
+          "ra_deg": 28.38890233,
+          "dec_deg": 3.18747844,
+          "mag_v": 4.61,
+          "gnomonic_east_left_deg": -19.691101531436477,
+          "gnomonic_north_up_deg": -6.048786026008457,
+          "x_px": 157.067,
+          "y_px": 768.647
+        },
+        {
+          "hip": 9487,
+          "ra_deg": 30.51166929,
+          "dec_deg": 2.76376048,
+          "mag_v": 3.82,
+          "gnomonic_east_left_deg": -22.129365649599208,
+          "gnomonic_north_up_deg": -6.4618686019016796,
+          "x_px": 112.0,
+          "y_px": 776.282
+        },
+        {
+          "hip": 114971,
+          "ra_deg": 349.28955677,
+          "dec_deg": 3.28224524,
+          "mag_v": 3.7,
+          "gnomonic_east_left_deg": 21.153305128220982,
+          "gnomonic_north_up_deg": -5.919258626620744,
+          "x_px": 912.0,
+          "y_px": 766.253
+        },
+        {
+          "hip": 115227,
+          "ra_deg": 350.08557117,
+          "dec_deg": 5.38145156,
+          "mag_v": 5.05,
+          "gnomonic_east_left_deg": 20.1231837496304,
+          "gnomonic_north_up_deg": -3.69684094958872,
+          "x_px": 892.96,
+          "y_px": 725.175
+        },
+        {
+          "hip": 115738,
+          "ra_deg": 351.73293881,
+          "dec_deg": 1.25583758,
+          "mag_v": 4.95,
+          "gnomonic_east_left_deg": 18.526547587885677,
+          "gnomonic_north_up_deg": -8.130457962932327,
+          "x_px": 863.449,
+          "y_px": 807.122
+        },
+        {
+          "hip": 115830,
+          "ra_deg": 351.99236589,
+          "dec_deg": 6.37909727,
+          "mag_v": 4.27,
+          "gnomonic_east_left_deg": 17.95927316336767,
+          "gnomonic_north_up_deg": -2.711368501782568,
+          "x_px": 852.964,
+          "y_px": 706.961
+        },
+        {
+          "hip": 116771,
+          "ra_deg": 354.98675133,
+          "dec_deg": 5.62735374,
+          "mag_v": 4.13,
+          "gnomonic_east_left_deg": 14.773245750048364,
+          "gnomonic_north_up_deg": -3.5885337241950865,
+          "x_px": 794.076,
+          "y_px": 723.173
+        },
+        {
+          "hip": 116928,
+          "ra_deg": 355.51200741,
+          "dec_deg": 1.7804172,
+          "mag_v": 4.49,
+          "gnomonic_east_left_deg": 14.379124439229939,
+          "gnomonic_north_up_deg": -7.604653487538976,
+          "x_px": 786.792,
+          "y_px": 797.404
+        },
+        {
+          "hip": 117245,
+          "ra_deg": 356.59807048,
+          "dec_deg": 3.48687164,
+          "mag_v": 4.95,
+          "gnomonic_east_left_deg": 13.155590353217969,
+          "gnomonic_north_up_deg": -5.838453241947878,
+          "x_px": 764.177,
+          "y_px": 764.759
+        },
+        {
+          "hip": 118268,
+          "ra_deg": 359.82750994,
+          "dec_deg": 6.86359373,
+          "mag_v": 4.03,
+          "gnomonic_east_left_deg": 9.691359705707985,
+          "gnomonic_north_up_deg": -2.4352444149769132,
+          "x_px": 700.147,
+          "y_px": 701.857
+        }
+      ],
+      "star_count": 20,
+      "edges": [
+        [
+          4889,
+          5742
+        ],
+        [
+          4889,
+          6193
+        ],
+        [
+          6193,
+          5742
+        ],
+        [
+          5742,
+          7097
+        ],
+        [
+          7097,
+          8198
+        ],
+        [
+          8198,
+          9487
+        ],
+        [
+          9487,
+          8833
+        ],
+        [
+          8833,
+          7884
+        ],
+        [
+          7884,
+          7007
+        ],
+        [
+          7007,
+          4906
+        ],
+        [
+          4906,
+          3760
+        ],
+        [
+          3760,
+          1645
+        ],
+        [
+          1645,
+          118268
+        ],
+        [
+          118268,
+          116771
+        ],
+        [
+          116771,
+          117245
+        ],
+        [
+          117245,
+          116928
+        ],
+        [
+          116928,
+          115738
+        ],
+        [
+          115738,
+          114971
+        ],
+        [
+          114971,
+          115227
+        ],
+        [
+          115227,
+          115830
+        ],
+        [
+          115830,
+          116771
+        ]
+      ],
+      "edge_count": 21,
+      "projection": "gnomonic; spherical-vector-mean centre; equal scale; celestial east left and north up",
+      "files": {
+        "svg": "Psc/psc-modern-dark.svg",
+        "png": "Psc/psc-modern-dark.png",
+        "import_svg": "Psc/psc-modern-import.svg",
+        "import_titled_svg": "Psc/psc-modern-import-titled.svg"
+      },
+      "svg": "Psc/psc-modern-dark.svg",
+      "png": "Psc/psc-modern-dark.png",
+      "import_svg": "Psc/psc-modern-import.svg",
+      "import_titled_svg": "Psc/psc-modern-import-titled.svg",
+      "source_sha256": {
+        "stellarium_modern_index": "1f2f5ffd6c9e25a7d0dcfdbf1f756e2db03dd3b8ed4ec016a2839b09f6b0fe1e",
+        "hipparcos_zodiac_tsv": "49390ff7042926dfe7206485a0acc39c69843e4d4cbbc348b90dfc5e03c4ac1b"
+      },
+      "rendered_with": "sharp"
+    },
+    {
+      "id": "Sgr-PCB-teapot",
+      "english": "Sagittarius PCB teapot scheme",
+      "chinese": "射手座 PCB 茶壶简化版",
+      "stars": [
+        {
+          "hip": 92855,
+          "x_local_mm": -9.908088235294118,
+          "y_local_mm": -1.9209558823529411,
+          "x_px": 223.765,
+          "y_px": 456.118
+        },
+        {
+          "hip": 92041,
+          "x_local_mm": -5.459558823529412,
+          "y_local_mm": -2.729779411764706,
+          "x_px": 353.176,
+          "y_px": 432.588
+        },
+        {
+          "hip": 90496,
+          "x_local_mm": 1.2132352941176472,
+          "y_local_mm": -8.795955882352942,
+          "x_px": 547.294,
+          "y_px": 256.118
+        },
+        {
+          "hip": 89931,
+          "x_local_mm": 6.875,
+          "y_local_mm": -1.3143382352941178,
+          "x_px": 712.0,
+          "y_px": 473.765
+        },
+        {
+          "hip": 88635,
+          "x_local_mm": 13.75,
+          "y_local_mm": -2.729779411764706,
+          "x_px": 912.0,
+          "y_px": 432.588
+        },
+        {
+          "hip": 90185,
+          "x_local_mm": 8.694852941176471,
+          "y_local_mm": 8.795955882352942,
+          "x_px": 764.941,
+          "y_px": 767.882
+        },
+        {
+          "hip": 93506,
+          "x_local_mm": -10.514705882352942,
+          "y_local_mm": 6.976102941176471,
+          "x_px": 206.118,
+          "y_px": 714.941
+        },
+        {
+          "hip": 93864,
+          "x_local_mm": -13.75,
+          "y_local_mm": 3.943014705882353,
+          "x_px": 112.0,
+          "y_px": 626.706
+        }
+      ],
+      "star_count": 8,
+      "edges": [
+        [
+          89931,
+          90496
+        ],
+        [
+          90185,
+          88635
+        ],
+        [
+          88635,
+          89931
+        ],
+        [
+          89931,
+          90185
+        ],
+        [
+          90185,
+          93506
+        ],
+        [
+          93506,
+          92041
+        ],
+        [
+          92041,
+          89931
+        ],
+        [
+          92041,
+          90496
+        ],
+        [
+          93506,
+          93864
+        ],
+        [
+          93864,
+          92855
+        ],
+        [
+          92855,
+          92041
+        ]
+      ],
+      "edge_count": 11,
+      "projection": "local PCB geometry in mm; equal scale; source design orientation retained",
+      "files": {
+        "svg": "Sgr/sagittarius-pcb-8star-11edge/sgr-pcb-teapot-dark.svg",
+        "png": "Sgr/sagittarius-pcb-8star-11edge/sgr-pcb-teapot-dark.png",
+        "import_svg": "Sgr/sagittarius-pcb-8star-11edge/sgr-pcb-teapot-import.svg"
+      },
+      "svg": "Sgr/sagittarius-pcb-8star-11edge/sgr-pcb-teapot-dark.svg",
+      "png": "Sgr/sagittarius-pcb-8star-11edge/sgr-pcb-teapot-dark.png",
+      "import_svg": "Sgr/sagittarius-pcb-8star-11edge/sgr-pcb-teapot-import.svg",
+      "source_sha256": {
+        "sagittarius_before_refinement_geometry": "85d4c904aae641e4398b6137f790d86d27b9bb52437ddd8a212fb89d26cfa49c"
+      },
+      "rendered_with": "sharp"
+    }
+  ]
+}

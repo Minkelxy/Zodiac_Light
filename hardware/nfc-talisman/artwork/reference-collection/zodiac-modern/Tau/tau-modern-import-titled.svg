@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+<title>Taurus constellation | Stellarium Modern</title>
+<desc>Source-faithful Stellarium Modern constellation; Hipparcos star positions, gnomonic projection, east left and north up.</desc>
+
+<g fill="none" stroke="#111827" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round">
+<path d="M 196.551 265.748 L 437.873 424.64"/>
+<path d="M 437.873 424.64 L 514.411 517.72"/>
+<path d="M 471.695 582.486 L 112 447.382"/>
+<path d="M 566.084 604.006 L 547.327 557.486"/>
+<path d="M 566.084 604.006 L 681.752 678.964"/>
+<path d="M 681.752 678.964 L 912 758.252"/>
+<path d="M 471.695 582.486 L 514.411 517.72"/>
+<path d="M 471.695 582.486 L 514.053 598.292"/>
+<path d="M 514.053 598.292 L 566.084 604.006"/>
+<path d="M 514.411 517.72 L 532.474 548.177"/>
+<path d="M 532.474 548.177 L 547.327 557.486"/>
+<path d="M 547.327 557.486 L 736.328 391.247"/>
+</g>
+<g fill="#111827">
+<circle cx="912" cy="758.252" r="3.624"/>
+<circle cx="736.328" cy="391.247" r="3.62"/>
+<circle cx="681.752" cy="678.964" r="3.708"/>
+<circle cx="566.084" cy="604.006" r="3.607"/>
+<circle cx="547.327" cy="557.486" r="3.557"/>
+<circle cx="532.474" cy="548.177" r="3.334"/>
+<circle cx="514.411" cy="517.72" r="3.657"/>
+<circle cx="514.053" cy="598.292" r="3.712"/>
+<circle cx="471.695" cy="582.486" r="4.775"/>
+<circle cx="437.873" cy="424.64" r="3.347"/>
+<circle cx="196.551" cy="265.748" r="4.447"/>
+<circle cx="112" cy="447.382" r="3.893"/>
+</g></svg>

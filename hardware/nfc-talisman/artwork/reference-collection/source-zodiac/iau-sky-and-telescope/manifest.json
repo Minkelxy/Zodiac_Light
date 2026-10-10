@@ -1,0 +1,315 @@
+{
+  "title": "IAU / Sky & Telescope zodiac constellation chart source files",
+  "source_page": "https://iauarchive.eso.org/public/themes/constellations/",
+  "retrieved_utc_date": "2026-10-10",
+  "attribution": "International Astronomical Union (IAU) / Sky & Telescope; chart patterns by Alan MacRobert, in collaboration with Roger Sinnott and Rick Fienberg.",
+  "license": {
+    "name": "Creative Commons Attribution 4.0 International",
+    "spdx": "CC-BY-4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "chart_epoch": "J2000",
+  "note": "These charts show an attributed IAU/Sky & Telescope stick-figure convention. The IAU standardizes constellation boundaries; it does not prescribe a unique constellation line pattern.",
+  "files": [
+    {
+      "file": "Ari.gif",
+      "constellation": {
+        "name": "Aries",
+        "iau_abbreviation": "ARI"
+      },
+      "source_url": "https://iauarchive.eso.org/static/public/constellations/gif/ARI.gif",
+      "bytes": 119966,
+      "sha256": "829f1f730dfa7158b57fc8524e523bc50ab691b44002c5170d4db5f3b7040233",
+      "media_type": "image/gif",
+      "width_px": 1000,
+      "height_px": 991,
+      "frames": 1
+    },
+    {
+      "file": "Ari.pdf",
+      "constellation": {
+        "name": "Aries",
+        "iau_abbreviation": "ARI"
+      },
+      "source_url": "https://iauarchive.eso.org/static/public/constellations/pdf/ARI.pdf",
+      "bytes": 824208,
+      "sha256": "5b94aadeffd05028dc08a8398b838f36a6e9bc8e645b85d8edeb16ceeaa6b90b",
+      "media_type": "application/pdf"
+    },
+    {
+      "file": "Tau.gif",
+      "constellation": {
+        "name": "Taurus",
+        "iau_abbreviation": "TAU"
+      },
+      "source_url": "https://iauarchive.eso.org/static/public/constellations/gif/TAU.gif",
+      "bytes": 116754,
+      "sha256": "9dd6113c6ea5195d926d2f56b344bb4f06211d51e73ba4d9dad0290c4f6a9d29",
+      "media_type": "image/gif",
+      "width_px": 1000,
+      "height_px": 993,
+      "frames": 1
+    },
+    {
+      "file": "Tau.pdf",
+      "constellation": {
+        "name": "Taurus",
+        "iau_abbreviation": "TAU"
+      },
+      "source_url": "https://iauarchive.eso.org/static/public/constellations/pdf/TAU.pdf",
+      "bytes": 851392,
+      "sha256": "c7d2a42e33d047f05e55f33bd3e7ac4a335de58cc7911bb8ce682ae84421a81f",
+      "media_type": "application/pdf"
+    },
+    {
+      "file": "Gem.gif",
+      "constellation": {
+        "name": "Gemini",
+        "iau_abbreviation": "GEM"
+      },
+      "source_url": "https://iauarchive.eso.org/static/public/constellations/gif/GEM.gif",
+      "bytes": 138509,
+      "sha256": "3cbc991d68ff17bd0f83a75334d5b110fdc76e9ce75b07d1b6196eb73cfacb0c",
+      "media_type": "image/gif",
+      "width_px": 1000,
+      "height_px": 990,
+      "frames": 1
+    },
+    {
+      "file": "Gem.pdf",
+      "constellation": {
+        "name": "Gemini",
+        "iau_abbreviation": "GEM"
+      },
+      "source_url": "https://iauarchive.eso.org/static/public/constellations/pdf/GEM.pdf",
+      "bytes": 380896,
+      "sha256": "5ff87e28dbac343109662aa204bc84790c9df130836a0370c311a27b452ded97",
+      "media_type": "application/pdf"
+    },
+    {
+      "file": "Cnc.gif",
+      "constellation": {
+        "name": "Cancer",
+        "iau_abbreviation": "CNC"
+      },
+      "source_url": "https://iauarchive.eso.org/static/public/constellations/gif/CNC.gif",
+      "bytes": 109659,
+      "sha256": "3a39b25ca62d8ffb1a752098970d099178ef83a787f378895f220928e45944e8",
+      "media_type": "image/gif",
+      "width_px": 1000,
+      "height_px": 992,
+      "frames": 1
+    },
+    {
+      "file": "Cnc.pdf",
+      "constellation": {
+        "name": "Cancer",
+        "iau_abbreviation": "CNC"
+      },
+      "source_url": "https://iauarchive.eso.org/static/public/constellations/pdf/CNC.pdf",
+      "bytes": 833277,
+      "sha256": "3bbc62d283e5f6be92f7db22c46d7dd6bf18627819384f1daebdef00d9272ff9",
+      "media_type": "application/pdf"
+    },
+    {
+      "file": "Leo.gif",
+      "constellation": {
+        "name": "Leo",
+        "iau_abbreviation": "LEO"
+      },
+      "source_url": "https://iauarchive.eso.org/static/public/constellations/gif/LEO.gif",
+      "bytes": 145121,
+      "sha256": "8c5d38a2544ccce7cccbf188b21290909fa32085a2e38af56c05982bc80246f2",
+      "media_type": "image/gif",
+      "width_px": 1000,
+      "height_px": 1260,
+      "frames": 1
+    },
+    {
+      "file": "Leo.pdf",
+      "constellation": {
+        "name": "Leo",
+        "iau_abbreviation": "LEO"
+      },
+      "source_url": "https://iauarchive.eso.org/static/public/constellations/pdf/LEO.pdf",
+      "bytes": 838807,
+      "sha256": "377133a9ef07f6a2f05ba4c1e2f8fece3669c3a7f1a8032aa67c790c07c411c1",
+      "media_type": "application/pdf"
+    },
+    {
+      "file": "Vir.gif",
+      "constellation": {
+        "name": "Virgo",
+        "iau_abbreviation": "VIR"
+      },
+      "source_url": "https://iauarchive.eso.org/static/public/constellations/gif/VIR.gif",
+      "bytes": 99566,
+      "sha256": "16d95c6b6af221955c8dba40a9443554591960a16e5fcab3eba1c6db97a94af6",
+      "media_type": "image/gif",
+      "width_px": 1000,
+      "height_px": 899,
+      "frames": 1
+    },
+    {
+      "file": "Vir.pdf",
+      "constellation": {
+        "name": "Virgo",
+        "iau_abbreviation": "VIR"
+      },
+      "source_url": "https://iauarchive.eso.org/static/public/constellations/pdf/VIR.pdf",
+      "bytes": 850666,
+      "sha256": "4506f9ad1424dc6c5f32eaa3cada7a3519b015def65c61cf3e416df046885c97",
+      "media_type": "application/pdf"
+    },
+    {
+      "file": "Lib.gif",
+      "constellation": {
+        "name": "Libra",
+        "iau_abbreviation": "LIB"
+      },
+      "source_url": "https://iauarchive.eso.org/static/public/constellations/gif/LIB.gif",
+      "bytes": 112873,
+      "sha256": "d37f9ace2e0620f6ef8385532d3a673de8ad0e6be80dca3cc9fcd83b5cd827a6",
+      "media_type": "image/gif",
+      "width_px": 1000,
+      "height_px": 990,
+      "frames": 1
+    },
+    {
+      "file": "Lib.pdf",
+      "constellation": {
+        "name": "Libra",
+        "iau_abbreviation": "LIB"
+      },
+      "source_url": "https://iauarchive.eso.org/static/public/constellations/pdf/LIB.pdf",
+      "bytes": 838475,
+      "sha256": "b7cd4f21690b1569afbdd0b7a9d32b1f9567f8f5aa4a85110f572f6fd1aa624e",
+      "media_type": "application/pdf"
+    },
+    {
+      "file": "Sco.gif",
+      "constellation": {
+        "name": "Scorpius",
+        "iau_abbreviation": "SCO"
+      },
+      "source_url": "https://iauarchive.eso.org/static/public/constellations/gif/SCO.gif",
+      "bytes": 197752,
+      "sha256": "43f839a1a8b3f90c2c02320dfc6aa8d082905c119a94a4772315729727a19ec2",
+      "media_type": "image/gif",
+      "width_px": 1000,
+      "height_px": 1269,
+      "frames": 1
+    },
+    {
+      "file": "Sco.pdf",
+      "constellation": {
+        "name": "Scorpius",
+        "iau_abbreviation": "SCO"
+      },
+      "source_url": "https://iauarchive.eso.org/static/public/constellations/pdf/SCO.pdf",
+      "bytes": 894169,
+      "sha256": "12cac34a7d188f9bbfa2192484081da711227e9698e83fee1ebe77300182951f",
+      "media_type": "application/pdf"
+    },
+    {
+      "file": "Sgr.gif",
+      "constellation": {
+        "name": "Sagittarius",
+        "iau_abbreviation": "SGR"
+      },
+      "source_url": "https://iauarchive.eso.org/static/public/constellations/gif/SGR.gif",
+      "bytes": 165968,
+      "sha256": "50f74c7e90c47d86845b6422581e98ae20c7c7c97cefd54a6346c837c3b4da04",
+      "media_type": "image/gif",
+      "width_px": 1000,
+      "height_px": 1263,
+      "frames": 1
+    },
+    {
+      "file": "Sgr.pdf",
+      "constellation": {
+        "name": "Sagittarius",
+        "iau_abbreviation": "SGR"
+      },
+      "source_url": "https://iauarchive.eso.org/static/public/constellations/pdf/SGR.pdf",
+      "bytes": 898569,
+      "sha256": "550a9569b2495e86f4d847766ae0030e87542b917ce413d4746d1e40f305ede9",
+      "media_type": "application/pdf"
+    },
+    {
+      "file": "Cap.gif",
+      "constellation": {
+        "name": "Capricornus",
+        "iau_abbreviation": "CAP"
+      },
+      "source_url": "https://iauarchive.eso.org/static/public/constellations/gif/CAP.gif",
+      "bytes": 99666,
+      "sha256": "3e2cb250a4d4501bb52060e46c70c561dd78aafae9b25b8f2ab5de97e10319aa",
+      "media_type": "image/gif",
+      "width_px": 1000,
+      "height_px": 997,
+      "frames": 1
+    },
+    {
+      "file": "Cap.pdf",
+      "constellation": {
+        "name": "Capricornus",
+        "iau_abbreviation": "CAP"
+      },
+      "source_url": "https://iauarchive.eso.org/static/public/constellations/pdf/CAP.pdf",
+      "bytes": 836839,
+      "sha256": "dda9b4980f79746204f3547c83eb2b1d1a00e576c70a08d32ee8d7d3215fc2b4",
+      "media_type": "application/pdf"
+    },
+    {
+      "file": "Aqr.gif",
+      "constellation": {
+        "name": "Aquarius",
+        "iau_abbreviation": "AQR"
+      },
+      "source_url": "https://iauarchive.eso.org/static/public/constellations/gif/AQR.gif",
+      "bytes": 126473,
+      "sha256": "eb6307426feddb4802a1557d42270124ae2404d451ddc8b259ee5382fceed33a",
+      "media_type": "image/gif",
+      "width_px": 1000,
+      "height_px": 933,
+      "frames": 1
+    },
+    {
+      "file": "Aqr.pdf",
+      "constellation": {
+        "name": "Aquarius",
+        "iau_abbreviation": "AQR"
+      },
+      "source_url": "https://iauarchive.eso.org/static/public/constellations/pdf/AQR.pdf",
+      "bytes": 899676,
+      "sha256": "ded34e575f2fe6e7e5ff3148573213aea625520c7ad985b3f7b6dc3930f25dfd",
+      "media_type": "application/pdf"
+    },
+    {
+      "file": "Psc.gif",
+      "constellation": {
+        "name": "Pisces",
+        "iau_abbreviation": "PSC"
+      },
+      "source_url": "https://iauarchive.eso.org/static/public/constellations/gif/PSC.gif",
+      "bytes": 130127,
+      "sha256": "da2f1df59ceac98cc657fc53882fd61b90180012bfd159dc2de24d784908950b",
+      "media_type": "image/gif",
+      "width_px": 1000,
+      "height_px": 927,
+      "frames": 1
+    },
+    {
+      "file": "Psc.pdf",
+      "constellation": {
+        "name": "Pisces",
+        "iau_abbreviation": "PSC"
+      },
+      "source_url": "https://iauarchive.eso.org/static/public/constellations/pdf/PSC.pdf",
+      "bytes": 879113,
+      "sha256": "0995e10b5c68f95c62c3e1b90b91fa8c1748849c2dc94ef6ccb53ecf4d3c87ff",
+      "media_type": "application/pdf"
+    }
+  ]
+}

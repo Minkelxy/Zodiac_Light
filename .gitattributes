@@ -14,3 +14,5 @@ hardware/nfc-talisman/electrical/antenna-geometry-review.json -text -whitespace
 hardware/nfc-talisman/electrical/via-size-review.json -text -whitespace
 hardware/nfc-talisman/electrical/BOM.csv -text -whitespace
 hardware/nfc-talisman/manufacturing/draft/** -text -whitespace
+# Reference collection files are byte-checksummed, including generated vectors.
+hardware/nfc-talisman/artwork/reference-collection/** -text -whitespace

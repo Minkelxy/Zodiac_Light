@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+<title>Sagittarius PCB teapot scheme | local design geometry</title>
+<desc>Source-faithful Stellarium Modern constellation; Hipparcos star positions, gnomonic projection, east left and north up.</desc>
+<rect width="1024" height="1024" fill="#08111f"/>
+<g fill="none" stroke="#ecf3ff" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round">
+<path d="M 712 473.765 L 547.294 256.118"/>
+<path d="M 764.941 767.882 L 912 432.588"/>
+<path d="M 912 432.588 L 712 473.765"/>
+<path d="M 712 473.765 L 764.941 767.882"/>
+<path d="M 764.941 767.882 L 206.118 714.941"/>
+<path d="M 206.118 714.941 L 353.176 432.588"/>
+<path d="M 353.176 432.588 L 712 473.765"/>
+<path d="M 353.176 432.588 L 547.294 256.118"/>
+<path d="M 206.118 714.941 L 112 626.706"/>
+<path d="M 112 626.706 L 223.765 456.118"/>
+<path d="M 223.765 456.118 L 353.176 432.588"/>
+</g>
+<g fill="#ecf3ff">
+<circle cx="223.765" cy="456.118" r="4.3"/>
+<circle cx="353.176" cy="432.588" r="4.3"/>
+<circle cx="547.294" cy="256.118" r="4.3"/>
+<circle cx="712" cy="473.765" r="4.3"/>
+<circle cx="912" cy="432.588" r="4.3"/>
+<circle cx="764.941" cy="767.882" r="4.3"/>
+<circle cx="206.118" cy="714.941" r="4.3"/>
+<circle cx="112" cy="626.706" r="4.3"/>
+</g></svg>

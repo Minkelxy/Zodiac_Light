@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+<title>Aquarius constellation chart | Stellarium Modern</title>
+<desc>Source-faithful Stellarium Modern constellation; Hipparcos star positions, gnomonic projection, east left and north up.</desc>
+<rect width="1024" height="1024" fill="#08111f"/>
+<g fill="none" stroke="#ecf3ff" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round">
+<path d="M 669.953 410.11 L 494.53 299.626"/>
+<path d="M 494.53 299.626 L 413.277 321.544"/>
+<path d="M 413.277 321.544 L 376.85 293.41"/>
+<path d="M 376.85 293.41 L 343.607 295.419"/>
+<path d="M 343.607 295.419 L 257.854 447.912"/>
+<path d="M 257.854 447.912 L 139.948 481.331"/>
+<path d="M 139.948 481.331 L 112 712.738"/>
+<path d="M 494.53 299.626 L 436.732 451.364"/>
+<path d="M 436.732 451.364 L 486.919 575.042"/>
+<path d="M 436.732 451.364 L 367.929 509.41"/>
+<path d="M 367.929 509.41 L 274.878 569.321"/>
+<path d="M 274.878 569.321 L 250.667 615.438"/>
+<path d="M 250.667 615.438 L 180.377 730.59"/>
+<path d="M 912 505.267 L 669.953 410.11"/>
+</g>
+<g fill="#ecf3ff">
+<circle cx="912" cy="505.267" r="3.552"/>
+<circle cx="669.953" cy="410.11" r="3.922"/>
+<circle cx="494.53" cy="299.626" r="3.901"/>
+<circle cx="486.919" cy="575.042" r="3.338"/>
+<circle cx="436.732" cy="451.364" r="3.389"/>
+<circle cx="413.277" cy="321.544" r="3.519"/>
+<circle cx="376.85" cy="293.41" r="3.607"/>
+<circle cx="367.929" cy="509.41" r="3.116"/>
+<circle cx="343.607" cy="295.419" r="3.443"/>
+<circle cx="274.878" cy="569.321" r="3.439"/>
+<circle cx="257.854" cy="447.912" r="3.573"/>
+<circle cx="250.667" cy="615.438" r="3.767"/>
+<circle cx="180.377" cy="730.59" r="3.594"/>
+<circle cx="139.948" cy="481.331" r="3.359"/>
+<circle cx="112" cy="712.738" r="3.477"/>
+</g></svg>

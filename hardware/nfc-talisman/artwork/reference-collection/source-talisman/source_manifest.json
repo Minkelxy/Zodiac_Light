@@ -1,0 +1,266 @@
+{
+  "title": "Jackie Chan Adventures: Twelve Talismans front-face references",
+  "retrieved_utc": "2026-10-10T06:37:42.745948+00:00",
+  "source_page": "https://jackiechanadventures.fandom.com/wiki/Talismans",
+  "category_page": "https://jackiechanadventures.fandom.com/wiki/Category:Promotional_images",
+  "status": "12 original PNG files downloaded and visually inspected",
+  "rights": "Franchise artwork. Image licence not verified; the wiki community text licence is not applied to image content. Saved for local design reference.",
+  "limitations": [
+    "Original PNGs are 200 x 141 px and have a slight perspective. They are references rather than orthographic manufacturing artwork.",
+    "No recolouring, mirroring, cropping, upscaling, generative redrawing or vector tracing was applied."
+  ],
+  "files": [
+    {
+      "id": "rat",
+      "animal_en": "Rat",
+      "animal_zh": "鼠",
+      "power": "Animation",
+      "source_filename": "Rat Talisman.png",
+      "file_page": "https://jackiechanadventures.fandom.com/wiki/File:Rat_Talisman.png",
+      "original_file_redirect": "https://jackiechanadventures.fandom.com/wiki/Special:Redirect/file/Rat_Talisman.png",
+      "source_category": "https://jackiechanadventures.fandom.com/wiki/Category:Promotional_images",
+      "downloaded": true,
+      "dimensions": [
+        200,
+        141
+      ],
+      "sha256": "bd422075c29a27d87e06740ebce47e0185e620c341991c2c02d108285cb2f957",
+      "local_file": "Rat_Talisman.png",
+      "original_cdn_url": "https://static.wikia.nocookie.net/jackiechanadventures/images/d/d0/Rat_Talisman.png/revision/latest?format=original",
+      "bytes": 23024,
+      "path": "source-talisman/Rat_Talisman.png",
+      "visual_review": "Parent agent visually inspected all 12: grey octagonal talisman, front animal emblem visible, slight perspective and side thickness present; source bytes unmodified."
+    },
+    {
+      "id": "ox",
+      "animal_en": "Ox",
+      "animal_zh": "牛",
+      "power": "Super strength",
+      "source_filename": "Ox Talisman.png",
+      "file_page": "https://jackiechanadventures.fandom.com/wiki/File:Ox_Talisman.png",
+      "original_file_redirect": "https://jackiechanadventures.fandom.com/wiki/Special:Redirect/file/Ox_Talisman.png",
+      "source_category": "https://jackiechanadventures.fandom.com/wiki/Category:Promotional_images",
+      "downloaded": true,
+      "dimensions": [
+        200,
+        141
+      ],
+      "sha256": "873ed3864f96879ea1528cad541d580424d5dc633c9f602a0ee96495d2cbb2f7",
+      "local_file": "Ox_Talisman.png",
+      "original_cdn_url": "https://static.wikia.nocookie.net/jackiechanadventures/images/c/c7/Ox_Talisman.png/revision/latest?format=original",
+      "bytes": 27949,
+      "path": "source-talisman/Ox_Talisman.png",
+      "visual_review": "Parent agent visually inspected all 12: grey octagonal talisman, front animal emblem visible, slight perspective and side thickness present; source bytes unmodified."
+    },
+    {
+      "id": "tiger",
+      "animal_en": "Tiger",
+      "animal_zh": "虎",
+      "power": "Spiritual balance",
+      "source_filename": "Tiger Talisman.png",
+      "file_page": "https://jackiechanadventures.fandom.com/wiki/File:Tiger_Talisman.png",
+      "original_file_redirect": "https://jackiechanadventures.fandom.com/wiki/Special:Redirect/file/Tiger_Talisman.png",
+      "source_category": "https://jackiechanadventures.fandom.com/wiki/Category:Promotional_images",
+      "downloaded": true,
+      "dimensions": [
+        200,
+        141
+      ],
+      "sha256": "d1fdf943305e743b7c5d09532ef35c8bc1df81286096dae1fa62da620da9c8ae",
+      "local_file": "Tiger_Talisman.png",
+      "original_cdn_url": "https://static.wikia.nocookie.net/jackiechanadventures/images/1/14/Tiger_Talisman.png/revision/latest?format=original",
+      "bytes": 25882,
+      "path": "source-talisman/Tiger_Talisman.png",
+      "visual_review": "Parent agent visually inspected all 12: grey octagonal talisman, front animal emblem visible, slight perspective and side thickness present; source bytes unmodified."
+    },
+    {
+      "id": "rabbit",
+      "animal_en": "Rabbit",
+      "animal_zh": "兔",
+      "power": "Super speed",
+      "source_filename": "Rabbit Talisman.png",
+      "file_page": "https://jackiechanadventures.fandom.com/wiki/File:Rabbit_Talisman.png",
+      "original_file_redirect": "https://jackiechanadventures.fandom.com/wiki/Special:Redirect/file/Rabbit_Talisman.png",
+      "source_category": "https://jackiechanadventures.fandom.com/wiki/Category:Promotional_images",
+      "downloaded": true,
+      "dimensions": [
+        200,
+        141
+      ],
+      "sha256": "94ba6ef0962939225cd2d34ad4b0da4b59dde3321aef45d599ae0944fc2abb10",
+      "local_file": "Rabbit_Talisman.png",
+      "original_cdn_url": "https://static.wikia.nocookie.net/jackiechanadventures/images/1/1b/Rabbit_Talisman.png/revision/latest?format=original",
+      "bytes": 30154,
+      "path": "source-talisman/Rabbit_Talisman.png",
+      "visual_review": "Parent agent visually inspected all 12: grey octagonal talisman, front animal emblem visible, slight perspective and side thickness present; source bytes unmodified."
+    },
+    {
+      "id": "dragon",
+      "animal_en": "Dragon",
+      "animal_zh": "龙",
+      "power": "Combustion",
+      "source_filename": "Dragon Talisman.png",
+      "file_page": "https://jackiechanadventures.fandom.com/wiki/File:Dragon_Talisman.png",
+      "original_file_redirect": "https://jackiechanadventures.fandom.com/wiki/Special:Redirect/file/Dragon_Talisman.png",
+      "source_category": "https://jackiechanadventures.fandom.com/wiki/Category:Promotional_images",
+      "downloaded": true,
+      "dimensions": [
+        200,
+        141
+      ],
+      "sha256": "cf50cd4fff43edbafff6f25d209aaf284e48f5bd4b4d3879640dfaa8369d0760",
+      "local_file": "Dragon_Talisman.png",
+      "original_cdn_url": "https://static.wikia.nocookie.net/jackiechanadventures/images/5/56/Dragon_Talisman.png/revision/latest?format=original",
+      "bytes": 29955,
+      "path": "source-talisman/Dragon_Talisman.png",
+      "visual_review": "Parent agent visually inspected all 12: grey octagonal talisman, front animal emblem visible, slight perspective and side thickness present; source bytes unmodified."
+    },
+    {
+      "id": "snake",
+      "animal_en": "Snake",
+      "animal_zh": "蛇",
+      "power": "Invisibility",
+      "source_filename": "Snake Talisman.png",
+      "file_page": "https://jackiechanadventures.fandom.com/wiki/File:Snake_Talisman.png",
+      "original_file_redirect": "https://jackiechanadventures.fandom.com/wiki/Special:Redirect/file/Snake_Talisman.png",
+      "source_category": "https://jackiechanadventures.fandom.com/wiki/Category:Promotional_images",
+      "downloaded": true,
+      "dimensions": [
+        200,
+        141
+      ],
+      "sha256": "0dcf12ea59825066302865521076ec312f46988d60f853a76bfd4243207a5752",
+      "local_file": "Snake_Talisman.png",
+      "original_cdn_url": "https://static.wikia.nocookie.net/jackiechanadventures/images/e/ed/Snake_Talisman.png/revision/latest?format=original",
+      "bytes": 31198,
+      "path": "source-talisman/Snake_Talisman.png",
+      "visual_review": "Parent agent visually inspected all 12: grey octagonal talisman, front animal emblem visible, slight perspective and side thickness present; source bytes unmodified."
+    },
+    {
+      "id": "horse",
+      "animal_en": "Horse",
+      "animal_zh": "马",
+      "power": "Healing",
+      "source_filename": "Horse Talisman.png",
+      "file_page": "https://jackiechanadventures.fandom.com/wiki/File:Horse_Talisman.png",
+      "original_file_redirect": "https://jackiechanadventures.fandom.com/wiki/Special:Redirect/file/Horse_Talisman.png",
+      "source_category": "https://jackiechanadventures.fandom.com/wiki/Category:Promotional_images",
+      "downloaded": true,
+      "dimensions": [
+        200,
+        141
+      ],
+      "sha256": "5dfc7db6d0148310fa678244565070bc9072ca36d339cd65af03522ba52ed390",
+      "local_file": "Horse_Talisman.png",
+      "original_cdn_url": "https://static.wikia.nocookie.net/jackiechanadventures/images/f/ff/Horse_Talisman.png/revision/latest?format=original",
+      "bytes": 31122,
+      "path": "source-talisman/Horse_Talisman.png",
+      "visual_review": "Parent agent visually inspected all 12: grey octagonal talisman, front animal emblem visible, slight perspective and side thickness present; source bytes unmodified."
+    },
+    {
+      "id": "sheep",
+      "animal_en": "Sheep",
+      "animal_zh": "羊",
+      "power": "Astral projection",
+      "source_filename": "Sheep Talisman.png",
+      "file_page": "https://jackiechanadventures.fandom.com/wiki/File:Sheep_Talisman.png",
+      "original_file_redirect": "https://jackiechanadventures.fandom.com/wiki/Special:Redirect/file/Sheep_Talisman.png",
+      "source_category": "https://jackiechanadventures.fandom.com/wiki/Category:Promotional_images",
+      "downloaded": true,
+      "dimensions": [
+        200,
+        141
+      ],
+      "sha256": "e1d2d7bce49639cf4e05bcc333e014db5f313292ebbfdfc7ec47015248a2c791",
+      "local_file": "Sheep_Talisman.png",
+      "original_cdn_url": "https://static.wikia.nocookie.net/jackiechanadventures/images/d/db/Sheep_Talisman.png/revision/latest?format=original",
+      "bytes": 27187,
+      "path": "source-talisman/Sheep_Talisman.png",
+      "visual_review": "Parent agent visually inspected all 12: grey octagonal talisman, front animal emblem visible, slight perspective and side thickness present; source bytes unmodified."
+    },
+    {
+      "id": "monkey",
+      "animal_en": "Monkey",
+      "animal_zh": "猴",
+      "power": "Shapeshifting",
+      "source_filename": "Monkey Talisman.png",
+      "file_page": "https://jackiechanadventures.fandom.com/wiki/File:Monkey_Talisman.png",
+      "original_file_redirect": "https://jackiechanadventures.fandom.com/wiki/Special:Redirect/file/Monkey_Talisman.png",
+      "source_category": "https://jackiechanadventures.fandom.com/wiki/Category:Promotional_images",
+      "downloaded": true,
+      "dimensions": [
+        200,
+        141
+      ],
+      "sha256": "48dc4bd76d84e92d5562abce21ce334cb869a731d026f866ab6420cb2d6f5fa8",
+      "local_file": "Monkey_Talisman.png",
+      "original_cdn_url": "https://static.wikia.nocookie.net/jackiechanadventures/images/a/a4/Monkey_Talisman.png/revision/latest?format=original",
+      "bytes": 30247,
+      "path": "source-talisman/Monkey_Talisman.png",
+      "visual_review": "Parent agent visually inspected all 12: grey octagonal talisman, front animal emblem visible, slight perspective and side thickness present; source bytes unmodified."
+    },
+    {
+      "id": "rooster",
+      "animal_en": "Rooster",
+      "animal_zh": "鸡",
+      "power": "Levitation",
+      "source_filename": "Rooster Talisman.png",
+      "file_page": "https://jackiechanadventures.fandom.com/wiki/File:Rooster_Talisman.png",
+      "original_file_redirect": "https://jackiechanadventures.fandom.com/wiki/Special:Redirect/file/Rooster_Talisman.png",
+      "source_category": "https://jackiechanadventures.fandom.com/wiki/Category:Promotional_images",
+      "downloaded": true,
+      "dimensions": [
+        200,
+        141
+      ],
+      "sha256": "827ed7f2fe95e939440640331e4e8a882e49b30309b660e5eead5824912ac082",
+      "local_file": "Rooster_Talisman.png",
+      "original_cdn_url": "https://static.wikia.nocookie.net/jackiechanadventures/images/2/25/Rooster_Talisman.png/revision/latest?format=original",
+      "bytes": 29773,
+      "path": "source-talisman/Rooster_Talisman.png",
+      "visual_review": "Parent agent visually inspected all 12: grey octagonal talisman, front animal emblem visible, slight perspective and side thickness present; source bytes unmodified."
+    },
+    {
+      "id": "dog",
+      "animal_en": "Dog",
+      "animal_zh": "狗",
+      "power": "Immortality",
+      "source_filename": "Dog Talisman.png",
+      "file_page": "https://jackiechanadventures.fandom.com/wiki/File:Dog_Talisman.png",
+      "original_file_redirect": "https://jackiechanadventures.fandom.com/wiki/Special:Redirect/file/Dog_Talisman.png",
+      "source_category": "https://jackiechanadventures.fandom.com/wiki/Category:Promotional_images",
+      "downloaded": true,
+      "dimensions": [
+        200,
+        141
+      ],
+      "sha256": "009392d934edc1990968c0a95371e5c2335f9504621ce69666eafb7010138234",
+      "local_file": "Dog_Talisman.png",
+      "original_cdn_url": "https://static.wikia.nocookie.net/jackiechanadventures/images/a/a4/Dog_Talisman.png/revision/latest?format=original",
+      "bytes": 24794,
+      "path": "source-talisman/Dog_Talisman.png",
+      "visual_review": "Parent agent visually inspected all 12: grey octagonal talisman, front animal emblem visible, slight perspective and side thickness present; source bytes unmodified."
+    },
+    {
+      "id": "pig",
+      "animal_en": "Pig",
+      "animal_zh": "猪",
+      "power": "Thermal vision",
+      "source_filename": "Pig Talisman.png",
+      "file_page": "https://jackiechanadventures.fandom.com/wiki/File:Pig_Talisman.png",
+      "original_file_redirect": "https://jackiechanadventures.fandom.com/wiki/Special:Redirect/file/Pig_Talisman.png",
+      "source_category": "https://jackiechanadventures.fandom.com/wiki/Category:Promotional_images",
+      "downloaded": true,
+      "dimensions": [
+        200,
+        141
+      ],
+      "sha256": "f62324ec4d260aa5bdf0580c6c3079bd15244034a81a183d78231e966a9035d6",
+      "local_file": "Pig_Talisman.png",
+      "original_cdn_url": "https://static.wikia.nocookie.net/jackiechanadventures/images/5/54/Pig_Talisman.png/revision/latest?format=original",
+      "bytes": 29564,
+      "path": "source-talisman/Pig_Talisman.png",
+      "visual_review": "Parent agent visually inspected all 12: grey octagonal talisman, front animal emblem visible, slight perspective and side thickness present; source bytes unmodified."
+    }
+  ]
+}
