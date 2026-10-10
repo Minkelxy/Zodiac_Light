@@ -20,8 +20,8 @@ EXTENT = 820
 BOUND_ALPHA = 8
 REVIEW_NOTES = {
     'rat': '保留右向奔跑、弯尾和肢体留白；曲线比低分辨率源图更规整。',
-    'ox': '保留蓝色正面牛头、双角双耳；已去掉生成初稿新增的大鼻孔。',
-    'tiger': '双虎和相对朝向保留；部分黑白碎笔扩大成连续形体，条纹与小细节仍需精修。',
+    'ox': '正面双角双耳保留；脸部偏整块，源图可辨认的眼周/鼻口分区被简化，需恢复内部细线，避免新增大鼻孔。',
+    'tiger': '双虎与相对朝向保留；条纹、爪及白色形体被扩大/重解释，需精修。源图中央白色曲线本就相接，不据此推断为全部误合并。',
     'rabbit': '右向单兔、耳头和分段腿脚保留；小眼标记的大小仍是重建解释。',
     'dragon': '主要红色片段与环绕关系保留；尖端、内扇形与下方片段仍比源图夸张，多次生成后尚未精确匹配。',
     'snake': '保留左上头部、S形颈部和分开的盘绕笔画；色带更宽、曲线更规整。',
@@ -29,10 +29,10 @@ REVIEW_NOTES = {
     'sheep': '2026-10-10 修正：恢复原有连续薄荷绿羊头、尖耳/鼻梁/颊侧及两道空心耳线；背线接回头后，中央躯干透明。环线、轮廓曲率与右腿内缝仍有重建差异。',
     'monkey': '坐姿、左侧卷尾及肢体空隙保留；卷尾和躯干笔画仍明显偏粗。',
     'rooster': '单鸡、右上头冠/左尾/右下身体/下方脚保留；部分红块扩大。',
-    'dog': '右向站姿、四腿、卷尾及透明躯干保留；胸颈小片和线宽需对照。',
-    'pig': '上耳带、左侧鼻口片、右侧弧及下方弧保持参考相对位置，未做整体镜像；描线与填色更规整。',
+    'dog': '右向站姿、四腿、卷尾及中央透明躯干保留；部分笔画偏宽、胸颈小片需对照。未将躯干整体填黄。',
+    'pig': '上耳带、左鼻口片和右弯月位置保留，未整体镜像；最下方长左弧遗漏，仅留下较短中部弧，需按源图补回。',
 }
-REFINE_IDS = {'dragon', 'tiger', 'monkey'}
+REFINE_IDS = {'ox', 'pig', 'dragon', 'tiger', 'monkey'}
 
 
 def sha(path):
@@ -163,7 +163,7 @@ def main():
         'limitations': 'Reference-based restoration from 200×141 originals, not an exact recovery of lost pixels or authoritative animation production art. No change to PCB or manufacturing geometry.',
         'canvas_px': [CANVAS, CANVAS], 'target_longest_extent_px': EXTENT,
         'alpha_bbox_threshold': BOUND_ALPHA, 'files': records,
-        'visual_release_status': 'Reference-guided restoration drafts; Dragon, Tiger and Monkey need finer fidelity work. Not approved as exact final reproductions.',
+        'visual_release_status': 'Reference-guided restoration drafts; Ox facial divisions, Pig missing lower-left arc, Dragon, Tiger and Monkey need refinement. Monochrome redraw is pending native image service recovery. Not approved as exact final reproductions.',
     }
     (OUT / 'manifest.json').write_text(json.dumps(report, ensure_ascii=False, indent=2)+'\n', encoding='utf-8')
     prompts = {item['id']: (ROOT/item['prompt_path']).read_text(encoding='utf-8-sig') for item in records}

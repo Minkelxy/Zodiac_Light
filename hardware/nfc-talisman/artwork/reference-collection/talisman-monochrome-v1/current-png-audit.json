@@ -1,0 +1,1728 @@
+{
+  "audit": "restored-v1 PNG pixel/color audit",
+  "generated_utc": "2026-10-10T13:28:00.535839+00:00",
+  "manifest_path": "D:\\星座灯\\hardware\\nfc-talisman\\artwork\\reference-collection\\talisman-restored-v1\\manifest.json",
+  "manifest_entry_count": 12,
+  "all_file_layout_passed": true,
+  "file_layout_checks": {
+    "exactly_12_manifest_entries": true,
+    "12_unique_ids": true,
+    "native_png_mode_rgba": true,
+    "size_1024_by_1024": true,
+    "alpha_extrema_0_to_255": true,
+    "all_four_corners_alpha_zero": true,
+    "all_source_hashes_match_manifest": true,
+    "all_restored_hashes_match_manifest": true
+  },
+  "all_source_hashes_match_manifest": true,
+  "all_restored_hashes_match_manifest": true,
+  "partial_alpha_interpretation": "The count of alpha 1..254 pixels includes both edge antialiasing and possible interior transparency. The interior statistic erodes the alpha>=8 foreground mask with a 5x5 minimum filter and counts partial-alpha pixels remaining within that eroded mask. This helps distinguish transparency extending into interiors from edge-only coverage, but does not establish visual fidelity or intended layer semantics.",
+  "color_interpretation": "The restored drafts contain multiple opaque RGB values and, where the counts show it, many quantized RGB bins from colored fills, shading and gradients. A strict single-ink output should use one fixed RGB value for every nontransparent pixel; transparency and partial alpha may preserve negative space and antialiased edges, but must not encode additional ink colors or gray/color shading.",
+  "quantization_definition": "For each visible pixel (alpha > 0), quantize each RGB channel by floor(channel / 16); the reported count is the number of distinct resulting RGB triplets.",
+  "files": [
+    {
+      "id": "rat",
+      "animal_zh": "鼠",
+      "source_path": "source-talisman/Rat_Talisman.png",
+      "restored_path": "talisman-restored-v1/rat-restored.png",
+      "restored_png": {
+        "mode": "RGBA",
+        "pixel_analysis_mode": "RGBA",
+        "size_px": [
+          1024,
+          1024
+        ],
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "clear_corners_alpha_zero": {
+          "top_left": true,
+          "top_right": true,
+          "bottom_left": true,
+          "bottom_right": true
+        },
+        "opaque_pixel_count": 3363,
+        "partial_alpha_pixel_count_alpha_1_to_254": 123769,
+        "interior_alpha_ge_8_mask_eroded_5x5": {
+          "interior_foreground_pixel_count": 99446,
+          "partial_alpha_pixel_count_alpha_1_to_254": 99190,
+          "partial_alpha_fraction_of_interior_foreground": 0.9974257385917986,
+          "most_common_partial_alpha_values": [
+            {
+              "alpha": 253,
+              "pixel_count": 55970
+            },
+            {
+              "alpha": 254,
+              "pixel_count": 24655
+            },
+            {
+              "alpha": 252,
+              "pixel_count": 10176
+            },
+            {
+              "alpha": 251,
+              "pixel_count": 3194
+            },
+            {
+              "alpha": 250,
+              "pixel_count": 1678
+            },
+            {
+              "alpha": 249,
+              "pixel_count": 1254
+            },
+            {
+              "alpha": 248,
+              "pixel_count": 877
+            },
+            {
+              "alpha": 247,
+              "pixel_count": 604
+            }
+          ]
+        },
+        "opaque_distinct_rgb_count": 115,
+        "opaque_rgb_top_8": [
+          {
+            "rgb": [
+              21,
+              21,
+              21
+            ],
+            "pixel_count": 553
+          },
+          {
+            "rgb": [
+              21,
+              21,
+              20
+            ],
+            "pixel_count": 290
+          },
+          {
+            "rgb": [
+              20,
+              20,
+              20
+            ],
+            "pixel_count": 287
+          },
+          {
+            "rgb": [
+              22,
+              22,
+              22
+            ],
+            "pixel_count": 287
+          },
+          {
+            "rgb": [
+              22,
+              22,
+              21
+            ],
+            "pixel_count": 208
+          },
+          {
+            "rgb": [
+              22,
+              21,
+              21
+            ],
+            "pixel_count": 192
+          },
+          {
+            "rgb": [
+              21,
+              20,
+              20
+            ],
+            "pixel_count": 190
+          },
+          {
+            "rgb": [
+              20,
+              20,
+              19
+            ],
+            "pixel_count": 114
+          }
+        ],
+        "visible_pixel_count_alpha_gt_zero": 127132,
+        "quantized_rgb_16_levels_per_channel_distinct_count_alpha_gt_zero": 114,
+        "sha256": "e3f2f7b48ef5a9e4414f23fd6efb5b34fe1150e924caece39bab1c0412021872",
+        "manifest_sha256": "e3f2f7b48ef5a9e4414f23fd6efb5b34fe1150e924caece39bab1c0412021872",
+        "manifest_hash_matches": true
+      },
+      "source_png": {
+        "sha256": "bd422075c29a27d87e06740ebce47e0185e620c341991c2c02d108285cb2f957",
+        "manifest_sha256": "bd422075c29a27d87e06740ebce47e0185e620c341991c2c02d108285cb2f957",
+        "manifest_hash_matches": true
+      }
+    },
+    {
+      "id": "ox",
+      "animal_zh": "牛",
+      "source_path": "source-talisman/Ox_Talisman.png",
+      "restored_path": "talisman-restored-v1/ox-restored.png",
+      "restored_png": {
+        "mode": "RGBA",
+        "pixel_analysis_mode": "RGBA",
+        "size_px": [
+          1024,
+          1024
+        ],
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "clear_corners_alpha_zero": {
+          "top_left": true,
+          "top_right": true,
+          "bottom_left": true,
+          "bottom_right": true
+        },
+        "opaque_pixel_count": 2320,
+        "partial_alpha_pixel_count_alpha_1_to_254": 234767,
+        "interior_alpha_ge_8_mask_eroded_5x5": {
+          "interior_foreground_pixel_count": 219026,
+          "partial_alpha_pixel_count_alpha_1_to_254": 218861,
+          "partial_alpha_fraction_of_interior_foreground": 0.9992466647795238,
+          "most_common_partial_alpha_values": [
+            {
+              "alpha": 254,
+              "pixel_count": 164082
+            },
+            {
+              "alpha": 253,
+              "pixel_count": 44814
+            },
+            {
+              "alpha": 252,
+              "pixel_count": 5764
+            },
+            {
+              "alpha": 251,
+              "pixel_count": 1637
+            },
+            {
+              "alpha": 250,
+              "pixel_count": 840
+            },
+            {
+              "alpha": 249,
+              "pixel_count": 663
+            },
+            {
+              "alpha": 248,
+              "pixel_count": 485
+            },
+            {
+              "alpha": 247,
+              "pixel_count": 313
+            }
+          ]
+        },
+        "opaque_distinct_rgb_count": 180,
+        "opaque_rgb_top_8": [
+          {
+            "rgb": [
+              6,
+              12,
+              19
+            ],
+            "pixel_count": 164
+          },
+          {
+            "rgb": [
+              6,
+              11,
+              18
+            ],
+            "pixel_count": 147
+          },
+          {
+            "rgb": [
+              6,
+              11,
+              19
+            ],
+            "pixel_count": 129
+          },
+          {
+            "rgb": [
+              6,
+              12,
+              18
+            ],
+            "pixel_count": 106
+          },
+          {
+            "rgb": [
+              5,
+              11,
+              18
+            ],
+            "pixel_count": 95
+          },
+          {
+            "rgb": [
+              6,
+              12,
+              20
+            ],
+            "pixel_count": 94
+          },
+          {
+            "rgb": [
+              5,
+              11,
+              19
+            ],
+            "pixel_count": 75
+          },
+          {
+            "rgb": [
+              6,
+              11,
+              17
+            ],
+            "pixel_count": 70
+          }
+        ],
+        "visible_pixel_count_alpha_gt_zero": 237087,
+        "quantized_rgb_16_levels_per_channel_distinct_count_alpha_gt_zero": 148,
+        "sha256": "55af10e27e3624ce5425b08419d7de8a03a51cac33d56518ba438204870145e4",
+        "manifest_sha256": "55af10e27e3624ce5425b08419d7de8a03a51cac33d56518ba438204870145e4",
+        "manifest_hash_matches": true
+      },
+      "source_png": {
+        "sha256": "873ed3864f96879ea1528cad541d580424d5dc633c9f602a0ee96495d2cbb2f7",
+        "manifest_sha256": "873ed3864f96879ea1528cad541d580424d5dc633c9f602a0ee96495d2cbb2f7",
+        "manifest_hash_matches": true
+      }
+    },
+    {
+      "id": "tiger",
+      "animal_zh": "虎",
+      "source_path": "source-talisman/Tiger_Talisman.png",
+      "restored_path": "talisman-restored-v1/tiger-restored.png",
+      "restored_png": {
+        "mode": "RGBA",
+        "pixel_analysis_mode": "RGBA",
+        "size_px": [
+          1024,
+          1024
+        ],
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "clear_corners_alpha_zero": {
+          "top_left": true,
+          "top_right": true,
+          "bottom_left": true,
+          "bottom_right": true
+        },
+        "opaque_pixel_count": 6026,
+        "partial_alpha_pixel_count_alpha_1_to_254": 280390,
+        "interior_alpha_ge_8_mask_eroded_5x5": {
+          "interior_foreground_pixel_count": 228863,
+          "partial_alpha_pixel_count_alpha_1_to_254": 228340,
+          "partial_alpha_fraction_of_interior_foreground": 0.9977147900709158,
+          "most_common_partial_alpha_values": [
+            {
+              "alpha": 254,
+              "pixel_count": 114739
+            },
+            {
+              "alpha": 253,
+              "pixel_count": 84745
+            },
+            {
+              "alpha": 252,
+              "pixel_count": 15495
+            },
+            {
+              "alpha": 251,
+              "pixel_count": 4821
+            },
+            {
+              "alpha": 250,
+              "pixel_count": 2618
+            },
+            {
+              "alpha": 249,
+              "pixel_count": 1948
+            },
+            {
+              "alpha": 248,
+              "pixel_count": 1422
+            },
+            {
+              "alpha": 247,
+              "pixel_count": 977
+            }
+          ]
+        },
+        "opaque_distinct_rgb_count": 241,
+        "opaque_rgb_top_8": [
+          {
+            "rgb": [
+              0,
+              0,
+              0
+            ],
+            "pixel_count": 1275
+          },
+          {
+            "rgb": [
+              1,
+              1,
+              1
+            ],
+            "pixel_count": 676
+          },
+          {
+            "rgb": [
+              2,
+              2,
+              2
+            ],
+            "pixel_count": 423
+          },
+          {
+            "rgb": [
+              3,
+              3,
+              3
+            ],
+            "pixel_count": 251
+          },
+          {
+            "rgb": [
+              0,
+              0,
+              1
+            ],
+            "pixel_count": 242
+          },
+          {
+            "rgb": [
+              1,
+              1,
+              2
+            ],
+            "pixel_count": 235
+          },
+          {
+            "rgb": [
+              2,
+              2,
+              3
+            ],
+            "pixel_count": 174
+          },
+          {
+            "rgb": [
+              4,
+              4,
+              4
+            ],
+            "pixel_count": 164
+          }
+        ],
+        "visible_pixel_count_alpha_gt_zero": 286416,
+        "quantized_rgb_16_levels_per_channel_distinct_count_alpha_gt_zero": 275,
+        "sha256": "3083923b39e4165f8b504030fd3faaa1ef212e59b62e716b10bc4c1467c2da60",
+        "manifest_sha256": "3083923b39e4165f8b504030fd3faaa1ef212e59b62e716b10bc4c1467c2da60",
+        "manifest_hash_matches": true
+      },
+      "source_png": {
+        "sha256": "d1fdf943305e743b7c5d09532ef35c8bc1df81286096dae1fa62da620da9c8ae",
+        "manifest_sha256": "d1fdf943305e743b7c5d09532ef35c8bc1df81286096dae1fa62da620da9c8ae",
+        "manifest_hash_matches": true
+      }
+    },
+    {
+      "id": "rabbit",
+      "animal_zh": "兔",
+      "source_path": "source-talisman/Rabbit_Talisman.png",
+      "restored_path": "talisman-restored-v1/rabbit-restored.png",
+      "restored_png": {
+        "mode": "RGBA",
+        "pixel_analysis_mode": "RGBA",
+        "size_px": [
+          1024,
+          1024
+        ],
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "clear_corners_alpha_zero": {
+          "top_left": true,
+          "top_right": true,
+          "bottom_left": true,
+          "bottom_right": true
+        },
+        "opaque_pixel_count": 3441,
+        "partial_alpha_pixel_count_alpha_1_to_254": 116589,
+        "interior_alpha_ge_8_mask_eroded_5x5": {
+          "interior_foreground_pixel_count": 96433,
+          "partial_alpha_pixel_count_alpha_1_to_254": 96251,
+          "partial_alpha_fraction_of_interior_foreground": 0.9981126792695446,
+          "most_common_partial_alpha_values": [
+            {
+              "alpha": 254,
+              "pixel_count": 64321
+            },
+            {
+              "alpha": 253,
+              "pixel_count": 26235
+            },
+            {
+              "alpha": 252,
+              "pixel_count": 2675
+            },
+            {
+              "alpha": 251,
+              "pixel_count": 1099
+            },
+            {
+              "alpha": 250,
+              "pixel_count": 798
+            },
+            {
+              "alpha": 249,
+              "pixel_count": 576
+            },
+            {
+              "alpha": 248,
+              "pixel_count": 335
+            },
+            {
+              "alpha": 247,
+              "pixel_count": 127
+            }
+          ]
+        },
+        "opaque_distinct_rgb_count": 366,
+        "opaque_rgb_top_8": [
+          {
+            "rgb": [
+              18,
+              7,
+              23
+            ],
+            "pixel_count": 104
+          },
+          {
+            "rgb": [
+              17,
+              7,
+              22
+            ],
+            "pixel_count": 92
+          },
+          {
+            "rgb": [
+              18,
+              8,
+              23
+            ],
+            "pixel_count": 84
+          },
+          {
+            "rgb": [
+              17,
+              8,
+              22
+            ],
+            "pixel_count": 75
+          },
+          {
+            "rgb": [
+              19,
+              7,
+              24
+            ],
+            "pixel_count": 75
+          },
+          {
+            "rgb": [
+              17,
+              7,
+              21
+            ],
+            "pixel_count": 70
+          },
+          {
+            "rgb": [
+              16,
+              7,
+              20
+            ],
+            "pixel_count": 63
+          },
+          {
+            "rgb": [
+              16,
+              7,
+              21
+            ],
+            "pixel_count": 63
+          }
+        ],
+        "visible_pixel_count_alpha_gt_zero": 120030,
+        "quantized_rgb_16_levels_per_channel_distinct_count_alpha_gt_zero": 181,
+        "sha256": "94e064eb2e2132b2df0f3b37e0b75ce2f7b0fba8309ecd11ef492b79aa73e13f",
+        "manifest_sha256": "94e064eb2e2132b2df0f3b37e0b75ce2f7b0fba8309ecd11ef492b79aa73e13f",
+        "manifest_hash_matches": true
+      },
+      "source_png": {
+        "sha256": "94ba6ef0962939225cd2d34ad4b0da4b59dde3321aef45d599ae0944fc2abb10",
+        "manifest_sha256": "94ba6ef0962939225cd2d34ad4b0da4b59dde3321aef45d599ae0944fc2abb10",
+        "manifest_hash_matches": true
+      }
+    },
+    {
+      "id": "dragon",
+      "animal_zh": "龙",
+      "source_path": "source-talisman/Dragon_Talisman.png",
+      "restored_path": "talisman-restored-v1/dragon-restored.png",
+      "restored_png": {
+        "mode": "RGBA",
+        "pixel_analysis_mode": "RGBA",
+        "size_px": [
+          1024,
+          1024
+        ],
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "clear_corners_alpha_zero": {
+          "top_left": true,
+          "top_right": true,
+          "bottom_left": true,
+          "bottom_right": true
+        },
+        "opaque_pixel_count": 3818,
+        "partial_alpha_pixel_count_alpha_1_to_254": 151176,
+        "interior_alpha_ge_8_mask_eroded_5x5": {
+          "interior_foreground_pixel_count": 118939,
+          "partial_alpha_pixel_count_alpha_1_to_254": 118623,
+          "partial_alpha_fraction_of_interior_foreground": 0.9973431759137037,
+          "most_common_partial_alpha_values": [
+            {
+              "alpha": 253,
+              "pixel_count": 75845
+            },
+            {
+              "alpha": 254,
+              "pixel_count": 25322
+            },
+            {
+              "alpha": 252,
+              "pixel_count": 9845
+            },
+            {
+              "alpha": 251,
+              "pixel_count": 3020
+            },
+            {
+              "alpha": 250,
+              "pixel_count": 1694
+            },
+            {
+              "alpha": 249,
+              "pixel_count": 1182
+            },
+            {
+              "alpha": 248,
+              "pixel_count": 746
+            },
+            {
+              "alpha": 247,
+              "pixel_count": 429
+            }
+          ]
+        },
+        "opaque_distinct_rgb_count": 273,
+        "opaque_rgb_top_8": [
+          {
+            "rgb": [
+              0,
+              0,
+              2
+            ],
+            "pixel_count": 210
+          },
+          {
+            "rgb": [
+              0,
+              0,
+              3
+            ],
+            "pixel_count": 208
+          },
+          {
+            "rgb": [
+              1,
+              0,
+              4
+            ],
+            "pixel_count": 182
+          },
+          {
+            "rgb": [
+              1,
+              0,
+              3
+            ],
+            "pixel_count": 168
+          },
+          {
+            "rgb": [
+              0,
+              0,
+              1
+            ],
+            "pixel_count": 160
+          },
+          {
+            "rgb": [
+              0,
+              0,
+              4
+            ],
+            "pixel_count": 147
+          },
+          {
+            "rgb": [
+              0,
+              0,
+              0
+            ],
+            "pixel_count": 125
+          },
+          {
+            "rgb": [
+              1,
+              0,
+              2
+            ],
+            "pixel_count": 123
+          }
+        ],
+        "visible_pixel_count_alpha_gt_zero": 154994,
+        "quantized_rgb_16_levels_per_channel_distinct_count_alpha_gt_zero": 191,
+        "sha256": "66f7481ff623bcb360dec7642e45db276cd55a5a9e2f15929b91fbd5ea2beec9",
+        "manifest_sha256": "66f7481ff623bcb360dec7642e45db276cd55a5a9e2f15929b91fbd5ea2beec9",
+        "manifest_hash_matches": true
+      },
+      "source_png": {
+        "sha256": "cf50cd4fff43edbafff6f25d209aaf284e48f5bd4b4d3879640dfaa8369d0760",
+        "manifest_sha256": "cf50cd4fff43edbafff6f25d209aaf284e48f5bd4b4d3879640dfaa8369d0760",
+        "manifest_hash_matches": true
+      }
+    },
+    {
+      "id": "snake",
+      "animal_zh": "蛇",
+      "source_path": "source-talisman/Snake_Talisman.png",
+      "restored_path": "talisman-restored-v1/snake-restored.png",
+      "restored_png": {
+        "mode": "RGBA",
+        "pixel_analysis_mode": "RGBA",
+        "size_px": [
+          1024,
+          1024
+        ],
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "clear_corners_alpha_zero": {
+          "top_left": true,
+          "top_right": true,
+          "bottom_left": true,
+          "bottom_right": true
+        },
+        "opaque_pixel_count": 4639,
+        "partial_alpha_pixel_count_alpha_1_to_254": 193477,
+        "interior_alpha_ge_8_mask_eroded_5x5": {
+          "interior_foreground_pixel_count": 164751,
+          "partial_alpha_pixel_count_alpha_1_to_254": 164463,
+          "partial_alpha_fraction_of_interior_foreground": 0.9982519074239307,
+          "most_common_partial_alpha_values": [
+            {
+              "alpha": 254,
+              "pixel_count": 81809
+            },
+            {
+              "alpha": 253,
+              "pixel_count": 71033
+            },
+            {
+              "alpha": 252,
+              "pixel_count": 6097
+            },
+            {
+              "alpha": 251,
+              "pixel_count": 1742
+            },
+            {
+              "alpha": 250,
+              "pixel_count": 1267
+            },
+            {
+              "alpha": 249,
+              "pixel_count": 1009
+            },
+            {
+              "alpha": 248,
+              "pixel_count": 713
+            },
+            {
+              "alpha": 247,
+              "pixel_count": 431
+            }
+          ]
+        },
+        "opaque_distinct_rgb_count": 357,
+        "opaque_rgb_top_8": [
+          {
+            "rgb": [
+              9,
+              13,
+              15
+            ],
+            "pixel_count": 173
+          },
+          {
+            "rgb": [
+              8,
+              12,
+              14
+            ],
+            "pixel_count": 157
+          },
+          {
+            "rgb": [
+              9,
+              12,
+              15
+            ],
+            "pixel_count": 146
+          },
+          {
+            "rgb": [
+              8,
+              13,
+              15
+            ],
+            "pixel_count": 141
+          },
+          {
+            "rgb": [
+              8,
+              13,
+              14
+            ],
+            "pixel_count": 133
+          },
+          {
+            "rgb": [
+              8,
+              14,
+              15
+            ],
+            "pixel_count": 115
+          },
+          {
+            "rgb": [
+              9,
+              13,
+              16
+            ],
+            "pixel_count": 114
+          },
+          {
+            "rgb": [
+              8,
+              12,
+              15
+            ],
+            "pixel_count": 112
+          }
+        ],
+        "visible_pixel_count_alpha_gt_zero": 198116,
+        "quantized_rgb_16_levels_per_channel_distinct_count_alpha_gt_zero": 165,
+        "sha256": "8c3f0eb79944d3213be8d0e08f66befef5916e99b39884f814bb8f07e170c0bf",
+        "manifest_sha256": "8c3f0eb79944d3213be8d0e08f66befef5916e99b39884f814bb8f07e170c0bf",
+        "manifest_hash_matches": true
+      },
+      "source_png": {
+        "sha256": "0dcf12ea59825066302865521076ec312f46988d60f853a76bfd4243207a5752",
+        "manifest_sha256": "0dcf12ea59825066302865521076ec312f46988d60f853a76bfd4243207a5752",
+        "manifest_hash_matches": true
+      }
+    },
+    {
+      "id": "horse",
+      "animal_zh": "马",
+      "source_path": "source-talisman/Horse_Talisman.png",
+      "restored_path": "talisman-restored-v1/horse-restored.png",
+      "restored_png": {
+        "mode": "RGBA",
+        "pixel_analysis_mode": "RGBA",
+        "size_px": [
+          1024,
+          1024
+        ],
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "clear_corners_alpha_zero": {
+          "top_left": true,
+          "top_right": true,
+          "bottom_left": true,
+          "bottom_right": true
+        },
+        "opaque_pixel_count": 3226,
+        "partial_alpha_pixel_count_alpha_1_to_254": 184830,
+        "interior_alpha_ge_8_mask_eroded_5x5": {
+          "interior_foreground_pixel_count": 163456,
+          "partial_alpha_pixel_count_alpha_1_to_254": 163134,
+          "partial_alpha_fraction_of_interior_foreground": 0.9980300509005482,
+          "most_common_partial_alpha_values": [
+            {
+              "alpha": 254,
+              "pixel_count": 105522
+            },
+            {
+              "alpha": 253,
+              "pixel_count": 45471
+            },
+            {
+              "alpha": 252,
+              "pixel_count": 7205
+            },
+            {
+              "alpha": 251,
+              "pixel_count": 1695
+            },
+            {
+              "alpha": 250,
+              "pixel_count": 1118
+            },
+            {
+              "alpha": 249,
+              "pixel_count": 923
+            },
+            {
+              "alpha": 248,
+              "pixel_count": 592
+            },
+            {
+              "alpha": 247,
+              "pixel_count": 346
+            }
+          ]
+        },
+        "opaque_distinct_rgb_count": 370,
+        "opaque_rgb_top_8": [
+          {
+            "rgb": [
+              12,
+              12,
+              17
+            ],
+            "pixel_count": 103
+          },
+          {
+            "rgb": [
+              13,
+              12,
+              18
+            ],
+            "pixel_count": 92
+          },
+          {
+            "rgb": [
+              13,
+              13,
+              18
+            ],
+            "pixel_count": 87
+          },
+          {
+            "rgb": [
+              13,
+              12,
+              17
+            ],
+            "pixel_count": 75
+          },
+          {
+            "rgb": [
+              14,
+              13,
+              18
+            ],
+            "pixel_count": 74
+          },
+          {
+            "rgb": [
+              13,
+              13,
+              19
+            ],
+            "pixel_count": 73
+          },
+          {
+            "rgb": [
+              12,
+              12,
+              18
+            ],
+            "pixel_count": 72
+          },
+          {
+            "rgb": [
+              13,
+              12,
+              19
+            ],
+            "pixel_count": 67
+          }
+        ],
+        "visible_pixel_count_alpha_gt_zero": 188056,
+        "quantized_rgb_16_levels_per_channel_distinct_count_alpha_gt_zero": 264,
+        "sha256": "aed206f55d77027dabec9e7fb9d825754dd1e09c78a93a255507e4a8e1acb690",
+        "manifest_sha256": "aed206f55d77027dabec9e7fb9d825754dd1e09c78a93a255507e4a8e1acb690",
+        "manifest_hash_matches": true
+      },
+      "source_png": {
+        "sha256": "5dfc7db6d0148310fa678244565070bc9072ca36d339cd65af03522ba52ed390",
+        "manifest_sha256": "5dfc7db6d0148310fa678244565070bc9072ca36d339cd65af03522ba52ed390",
+        "manifest_hash_matches": true
+      }
+    },
+    {
+      "id": "sheep",
+      "animal_zh": "羊",
+      "source_path": "source-talisman/Sheep_Talisman.png",
+      "restored_path": "talisman-restored-v1/sheep-restored.png",
+      "restored_png": {
+        "mode": "RGBA",
+        "pixel_analysis_mode": "RGBA",
+        "size_px": [
+          1024,
+          1024
+        ],
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "clear_corners_alpha_zero": {
+          "top_left": true,
+          "top_right": true,
+          "bottom_left": true,
+          "bottom_right": true
+        },
+        "opaque_pixel_count": 2716,
+        "partial_alpha_pixel_count_alpha_1_to_254": 104209,
+        "interior_alpha_ge_8_mask_eroded_5x5": {
+          "interior_foreground_pixel_count": 83282,
+          "partial_alpha_pixel_count_alpha_1_to_254": 83010,
+          "partial_alpha_fraction_of_interior_foreground": 0.9967339881366922,
+          "most_common_partial_alpha_values": [
+            {
+              "alpha": 253,
+              "pixel_count": 54753
+            },
+            {
+              "alpha": 254,
+              "pixel_count": 17623
+            },
+            {
+              "alpha": 252,
+              "pixel_count": 5914
+            },
+            {
+              "alpha": 251,
+              "pixel_count": 1683
+            },
+            {
+              "alpha": 250,
+              "pixel_count": 1113
+            },
+            {
+              "alpha": 249,
+              "pixel_count": 877
+            },
+            {
+              "alpha": 248,
+              "pixel_count": 555
+            },
+            {
+              "alpha": 247,
+              "pixel_count": 264
+            }
+          ]
+        },
+        "opaque_distinct_rgb_count": 246,
+        "opaque_rgb_top_8": [
+          {
+            "rgb": [
+              1,
+              14,
+              9
+            ],
+            "pixel_count": 144
+          },
+          {
+            "rgb": [
+              0,
+              13,
+              8
+            ],
+            "pixel_count": 125
+          },
+          {
+            "rgb": [
+              1,
+              13,
+              8
+            ],
+            "pixel_count": 104
+          },
+          {
+            "rgb": [
+              0,
+              12,
+              7
+            ],
+            "pixel_count": 92
+          },
+          {
+            "rgb": [
+              1,
+              15,
+              9
+            ],
+            "pixel_count": 89
+          },
+          {
+            "rgb": [
+              0,
+              11,
+              7
+            ],
+            "pixel_count": 80
+          },
+          {
+            "rgb": [
+              0,
+              14,
+              9
+            ],
+            "pixel_count": 72
+          },
+          {
+            "rgb": [
+              1,
+              14,
+              8
+            ],
+            "pixel_count": 70
+          }
+        ],
+        "visible_pixel_count_alpha_gt_zero": 106925,
+        "quantized_rgb_16_levels_per_channel_distinct_count_alpha_gt_zero": 268,
+        "sha256": "f936be7f6a83b9385d4ddbdc704670069073a8741c1bc5acf2daf31f600d41e9",
+        "manifest_sha256": "f936be7f6a83b9385d4ddbdc704670069073a8741c1bc5acf2daf31f600d41e9",
+        "manifest_hash_matches": true
+      },
+      "source_png": {
+        "sha256": "e1d2d7bce49639cf4e05bcc333e014db5f313292ebbfdfc7ec47015248a2c791",
+        "manifest_sha256": "e1d2d7bce49639cf4e05bcc333e014db5f313292ebbfdfc7ec47015248a2c791",
+        "manifest_hash_matches": true
+      }
+    },
+    {
+      "id": "monkey",
+      "animal_zh": "猴",
+      "source_path": "source-talisman/Monkey_Talisman.png",
+      "restored_path": "talisman-restored-v1/monkey-restored.png",
+      "restored_png": {
+        "mode": "RGBA",
+        "pixel_analysis_mode": "RGBA",
+        "size_px": [
+          1024,
+          1024
+        ],
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "clear_corners_alpha_zero": {
+          "top_left": true,
+          "top_right": true,
+          "bottom_left": true,
+          "bottom_right": true
+        },
+        "opaque_pixel_count": 4285,
+        "partial_alpha_pixel_count_alpha_1_to_254": 179664,
+        "interior_alpha_ge_8_mask_eroded_5x5": {
+          "interior_foreground_pixel_count": 147931,
+          "partial_alpha_pixel_count_alpha_1_to_254": 147497,
+          "partial_alpha_fraction_of_interior_foreground": 0.9970661997823309,
+          "most_common_partial_alpha_values": [
+            {
+              "alpha": 254,
+              "pixel_count": 67945
+            },
+            {
+              "alpha": 253,
+              "pixel_count": 64883
+            },
+            {
+              "alpha": 252,
+              "pixel_count": 7345
+            },
+            {
+              "alpha": 251,
+              "pixel_count": 2583
+            },
+            {
+              "alpha": 250,
+              "pixel_count": 1841
+            },
+            {
+              "alpha": 249,
+              "pixel_count": 1321
+            },
+            {
+              "alpha": 248,
+              "pixel_count": 785
+            },
+            {
+              "alpha": 247,
+              "pixel_count": 458
+            }
+          ]
+        },
+        "opaque_distinct_rgb_count": 276,
+        "opaque_rgb_top_8": [
+          {
+            "rgb": [
+              9,
+              8,
+              8
+            ],
+            "pixel_count": 224
+          },
+          {
+            "rgb": [
+              8,
+              7,
+              7
+            ],
+            "pixel_count": 197
+          },
+          {
+            "rgb": [
+              9,
+              8,
+              7
+            ],
+            "pixel_count": 190
+          },
+          {
+            "rgb": [
+              10,
+              9,
+              8
+            ],
+            "pixel_count": 181
+          },
+          {
+            "rgb": [
+              10,
+              8,
+              8
+            ],
+            "pixel_count": 159
+          },
+          {
+            "rgb": [
+              8,
+              8,
+              7
+            ],
+            "pixel_count": 130
+          },
+          {
+            "rgb": [
+              9,
+              7,
+              7
+            ],
+            "pixel_count": 122
+          },
+          {
+            "rgb": [
+              9,
+              9,
+              8
+            ],
+            "pixel_count": 122
+          }
+        ],
+        "visible_pixel_count_alpha_gt_zero": 183949,
+        "quantized_rgb_16_levels_per_channel_distinct_count_alpha_gt_zero": 229,
+        "sha256": "ece98dd5cace82762cff24a3fcf394ab51ac389f1510bb89ea3ab1bc1a00258e",
+        "manifest_sha256": "ece98dd5cace82762cff24a3fcf394ab51ac389f1510bb89ea3ab1bc1a00258e",
+        "manifest_hash_matches": true
+      },
+      "source_png": {
+        "sha256": "48dc4bd76d84e92d5562abce21ce334cb869a731d026f866ab6420cb2d6f5fa8",
+        "manifest_sha256": "48dc4bd76d84e92d5562abce21ce334cb869a731d026f866ab6420cb2d6f5fa8",
+        "manifest_hash_matches": true
+      }
+    },
+    {
+      "id": "rooster",
+      "animal_zh": "鸡",
+      "source_path": "source-talisman/Rooster_Talisman.png",
+      "restored_path": "talisman-restored-v1/rooster-restored.png",
+      "restored_png": {
+        "mode": "RGBA",
+        "pixel_analysis_mode": "RGBA",
+        "size_px": [
+          1024,
+          1024
+        ],
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "clear_corners_alpha_zero": {
+          "top_left": true,
+          "top_right": true,
+          "bottom_left": true,
+          "bottom_right": true
+        },
+        "opaque_pixel_count": 3938,
+        "partial_alpha_pixel_count_alpha_1_to_254": 222226,
+        "interior_alpha_ge_8_mask_eroded_5x5": {
+          "interior_foreground_pixel_count": 194698,
+          "partial_alpha_pixel_count_alpha_1_to_254": 194021,
+          "partial_alpha_fraction_of_interior_foreground": 0.9965228199570617,
+          "most_common_partial_alpha_values": [
+            {
+              "alpha": 254,
+              "pixel_count": 110131
+            },
+            {
+              "alpha": 253,
+              "pixel_count": 71153
+            },
+            {
+              "alpha": 252,
+              "pixel_count": 6389
+            },
+            {
+              "alpha": 251,
+              "pixel_count": 2094
+            },
+            {
+              "alpha": 250,
+              "pixel_count": 1276
+            },
+            {
+              "alpha": 249,
+              "pixel_count": 936
+            },
+            {
+              "alpha": 248,
+              "pixel_count": 693
+            },
+            {
+              "alpha": 247,
+              "pixel_count": 470
+            }
+          ]
+        },
+        "opaque_distinct_rgb_count": 296,
+        "opaque_rgb_top_8": [
+          {
+            "rgb": [
+              14,
+              9,
+              11
+            ],
+            "pixel_count": 232
+          },
+          {
+            "rgb": [
+              13,
+              9,
+              11
+            ],
+            "pixel_count": 155
+          },
+          {
+            "rgb": [
+              15,
+              9,
+              11
+            ],
+            "pixel_count": 144
+          },
+          {
+            "rgb": [
+              13,
+              8,
+              10
+            ],
+            "pixel_count": 133
+          },
+          {
+            "rgb": [
+              13,
+              8,
+              11
+            ],
+            "pixel_count": 124
+          },
+          {
+            "rgb": [
+              14,
+              9,
+              12
+            ],
+            "pixel_count": 116
+          },
+          {
+            "rgb": [
+              15,
+              9,
+              12
+            ],
+            "pixel_count": 113
+          },
+          {
+            "rgb": [
+              15,
+              10,
+              12
+            ],
+            "pixel_count": 110
+          }
+        ],
+        "visible_pixel_count_alpha_gt_zero": 226164,
+        "quantized_rgb_16_levels_per_channel_distinct_count_alpha_gt_zero": 186,
+        "sha256": "17ba72e0d25521a8e87b5075e10f9b02415264a162621485358c08c9862f9258",
+        "manifest_sha256": "17ba72e0d25521a8e87b5075e10f9b02415264a162621485358c08c9862f9258",
+        "manifest_hash_matches": true
+      },
+      "source_png": {
+        "sha256": "827ed7f2fe95e939440640331e4e8a882e49b30309b660e5eead5824912ac082",
+        "manifest_sha256": "827ed7f2fe95e939440640331e4e8a882e49b30309b660e5eead5824912ac082",
+        "manifest_hash_matches": true
+      }
+    },
+    {
+      "id": "dog",
+      "animal_zh": "狗",
+      "source_path": "source-talisman/Dog_Talisman.png",
+      "restored_path": "talisman-restored-v1/dog-restored.png",
+      "restored_png": {
+        "mode": "RGBA",
+        "pixel_analysis_mode": "RGBA",
+        "size_px": [
+          1024,
+          1024
+        ],
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "clear_corners_alpha_zero": {
+          "top_left": true,
+          "top_right": true,
+          "bottom_left": true,
+          "bottom_right": true
+        },
+        "opaque_pixel_count": 3607,
+        "partial_alpha_pixel_count_alpha_1_to_254": 163179,
+        "interior_alpha_ge_8_mask_eroded_5x5": {
+          "interior_foreground_pixel_count": 129292,
+          "partial_alpha_pixel_count_alpha_1_to_254": 128604,
+          "partial_alpha_fraction_of_interior_foreground": 0.9946787117532407,
+          "most_common_partial_alpha_values": [
+            {
+              "alpha": 253,
+              "pixel_count": 85268
+            },
+            {
+              "alpha": 254,
+              "pixel_count": 25394
+            },
+            {
+              "alpha": 252,
+              "pixel_count": 9680
+            },
+            {
+              "alpha": 251,
+              "pixel_count": 2684
+            },
+            {
+              "alpha": 250,
+              "pixel_count": 1673
+            },
+            {
+              "alpha": 249,
+              "pixel_count": 1352
+            },
+            {
+              "alpha": 248,
+              "pixel_count": 928
+            },
+            {
+              "alpha": 247,
+              "pixel_count": 612
+            }
+          ]
+        },
+        "opaque_distinct_rgb_count": 203,
+        "opaque_rgb_top_8": [
+          {
+            "rgb": [
+              0,
+              0,
+              0
+            ],
+            "pixel_count": 1031
+          },
+          {
+            "rgb": [
+              1,
+              1,
+              0
+            ],
+            "pixel_count": 408
+          },
+          {
+            "rgb": [
+              1,
+              0,
+              0
+            ],
+            "pixel_count": 246
+          },
+          {
+            "rgb": [
+              2,
+              1,
+              0
+            ],
+            "pixel_count": 214
+          },
+          {
+            "rgb": [
+              2,
+              2,
+              0
+            ],
+            "pixel_count": 190
+          },
+          {
+            "rgb": [
+              3,
+              2,
+              0
+            ],
+            "pixel_count": 148
+          },
+          {
+            "rgb": [
+              0,
+              1,
+              0
+            ],
+            "pixel_count": 99
+          },
+          {
+            "rgb": [
+              4,
+              3,
+              0
+            ],
+            "pixel_count": 86
+          }
+        ],
+        "visible_pixel_count_alpha_gt_zero": 166786,
+        "quantized_rgb_16_levels_per_channel_distinct_count_alpha_gt_zero": 181,
+        "sha256": "704c07865962ea9f45f522822243c33e4292c074ff02ffa7292eb9bc1f3658d3",
+        "manifest_sha256": "704c07865962ea9f45f522822243c33e4292c074ff02ffa7292eb9bc1f3658d3",
+        "manifest_hash_matches": true
+      },
+      "source_png": {
+        "sha256": "009392d934edc1990968c0a95371e5c2335f9504621ce69666eafb7010138234",
+        "manifest_sha256": "009392d934edc1990968c0a95371e5c2335f9504621ce69666eafb7010138234",
+        "manifest_hash_matches": true
+      }
+    },
+    {
+      "id": "pig",
+      "animal_zh": "猪",
+      "source_path": "source-talisman/Pig_Talisman.png",
+      "restored_path": "talisman-restored-v1/pig-restored.png",
+      "restored_png": {
+        "mode": "RGBA",
+        "pixel_analysis_mode": "RGBA",
+        "size_px": [
+          1024,
+          1024
+        ],
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "clear_corners_alpha_zero": {
+          "top_left": true,
+          "top_right": true,
+          "bottom_left": true,
+          "bottom_right": true
+        },
+        "opaque_pixel_count": 3222,
+        "partial_alpha_pixel_count_alpha_1_to_254": 191747,
+        "interior_alpha_ge_8_mask_eroded_5x5": {
+          "interior_foreground_pixel_count": 165524,
+          "partial_alpha_pixel_count_alpha_1_to_254": 163513,
+          "partial_alpha_fraction_of_interior_foreground": 0.9878507044295691,
+          "most_common_partial_alpha_values": [
+            {
+              "alpha": 253,
+              "pixel_count": 90777
+            },
+            {
+              "alpha": 254,
+              "pixel_count": 52308
+            },
+            {
+              "alpha": 252,
+              "pixel_count": 10084
+            },
+            {
+              "alpha": 251,
+              "pixel_count": 3315
+            },
+            {
+              "alpha": 250,
+              "pixel_count": 1898
+            },
+            {
+              "alpha": 249,
+              "pixel_count": 1452
+            },
+            {
+              "alpha": 248,
+              "pixel_count": 1099
+            },
+            {
+              "alpha": 247,
+              "pixel_count": 794
+            }
+          ]
+        },
+        "opaque_distinct_rgb_count": 448,
+        "opaque_rgb_top_8": [
+          {
+            "rgb": [
+              27,
+              26,
+              31
+            ],
+            "pixel_count": 60
+          },
+          {
+            "rgb": [
+              28,
+              27,
+              33
+            ],
+            "pixel_count": 59
+          },
+          {
+            "rgb": [
+              27,
+              27,
+              32
+            ],
+            "pixel_count": 56
+          },
+          {
+            "rgb": [
+              28,
+              26,
+              32
+            ],
+            "pixel_count": 54
+          },
+          {
+            "rgb": [
+              28,
+              27,
+              32
+            ],
+            "pixel_count": 53
+          },
+          {
+            "rgb": [
+              29,
+              28,
+              33
+            ],
+            "pixel_count": 51
+          },
+          {
+            "rgb": [
+              26,
+              26,
+              31
+            ],
+            "pixel_count": 45
+          },
+          {
+            "rgb": [
+              27,
+              26,
+              32
+            ],
+            "pixel_count": 45
+          }
+        ],
+        "visible_pixel_count_alpha_gt_zero": 194969,
+        "quantized_rgb_16_levels_per_channel_distinct_count_alpha_gt_zero": 400,
+        "sha256": "259b60093f3cf322f7afc0d7905a4b864914179a64b8179386fd5ced2ee72f0b",
+        "manifest_sha256": "259b60093f3cf322f7afc0d7905a4b864914179a64b8179386fd5ced2ee72f0b",
+        "manifest_hash_matches": true
+      },
+      "source_png": {
+        "sha256": "f62324ec4d260aa5bdf0580c6c3079bd15244034a81a183d78231e966a9035d6",
+        "manifest_sha256": "f62324ec4d260aa5bdf0580c6c3079bd15244034a81a183d78231e966a9035d6",
+        "manifest_hash_matches": true
+      }
+    }
+  ]
+}

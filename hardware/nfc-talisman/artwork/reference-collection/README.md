@@ -12,11 +12,13 @@
 
 ### 修复正视透明图案
 
-`talisman-restored-v1/` 提供十二张 `*-restored.png` **v1 修复稿**。依据原图修复轮廓及可辨认细节、校正符咒正面平面的透视，以保留动物自身姿态、朝向、分段笔画和留白为约束。统一为 **1024×1024 RGBA**，图案最长边约 **820 px**、等比居中。图像重建由原生 ImageGen 逐张完成，Python/Pillow 仅整理透明边界、尺寸和画布；不是对源图扣取放大。**龙、虎、猴仍有细节偏差，已标注待精修**，不视为十二张均已准确还原；见 [逐张复核](talisman-restored-v1/visual-review.md)。
+`talisman-restored-v1/` 提供十二张 `*-restored.png` **v1 修复稿**。依据原图修复轮廓及可辨认细节、校正符咒正面平面的透视，以保留动物自身姿态、朝向、分段笔画和留白为约束。统一为 **1024×1024 RGBA**，图案最长边约 **820 px**、等比居中。图像重建由原生 ImageGen 逐张完成，Python/Pillow 仅整理透明边界、尺寸和画布；不是对源图扣取放大。**牛、猪、龙、虎、猴仍需精修**：牛脸分区简化，猪遗漏最下方长左弧，另三张有细节偏差。不视为十二张均已准确还原；见 [逐张复核](talisman-restored-v1/visual-review.md)。
 
 [修复版说明与十二张下载](talisman-restored-v1/README.md)、[总览 JPG](talisman-restored-v1/restored-contact-sheet.jpg)、[完整提示词](talisman-restored-v1/prompts.json)、[清单](talisman-restored-v1/manifest.json)、[文件/布局检查](talisman-restored-v1/validation.json)。生成原稿和提示词均归档在 `raw/`。这属于低分辨率参考图的修复重建，不能保证精确恢复原图中已丢失的细节；可用索引三种显示方式并排核对。
 
 2026-10-10 已修正羊图：恢复被误拆为散点的连续薄荷绿羊头及两道空心耳线，并保留透明躯干。索引和两份下载包同步采用修订稿；详见 [羊图修订记录](talisman-restored-v1/raw/sheep-revision.json)。
+
+同日完成 [十二张 PNG 的文件/颜色检查与单色重绘规范](talisman-monochrome-v1/README.md)：每张保留原来的主色，以透明负形、同色稀疏排线和实色暗部表现阴影。当前修复 PNG 仍含较深描线/色面层次。原生绘图服务两次返回 403，用户选择等待恢复；**单色成品数量为 0**，参考指南 PNG 不计作单色成品。
 
 ### 原像素透明图案（对照版）
 

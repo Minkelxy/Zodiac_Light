@@ -1,0 +1,14 @@
+{
+  "client_date": "2026-10-10",
+  "status": "pending_native_imagegen_recovery",
+  "successful_monochrome_images": 0,
+  "failed_attempts": 2,
+  "asset_attempted": "ox",
+  "tool": "Native ImageGen",
+  "error_summary": "HTTP 403 Forbidden",
+  "user_palette_choice": "Each animal keeps its original primary hue",
+  "user_fallback_choice": "Keep review records and wait for drawing service recovery",
+  "retry_policy": "Retry on a later authorized continuation or heartbeat; do not loop repeated unchanged failures in one run.",
+  "next_priority": ["ox", "pig", "tiger", "dragon", "monkey"],
+  "note": "No generated monochrome PNG exists. Reference guides are source-layout-only PNGs."
+}

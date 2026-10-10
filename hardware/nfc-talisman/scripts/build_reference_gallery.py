@@ -138,7 +138,11 @@ nav a,.links a{padding:3px 8px;border:1px solid #384454;border-radius:6px;font-s
                             introduction)
     if restored:
         body = body.replace('<a href="../reference-collection.zip">完整 ZIP</a>', '<a href="../talisman-restored-v1.zip">十二张修复 PNG ZIP</a><a href="../reference-collection.zip">完整素材 ZIP</a>')
-        body = body.replace('<h2 id="talismans">十二符咒 · 修复正视图案</h2>', '<h2 id="talismans">十二符咒 · v1 修复正视稿</h2><p>龙、虎、猴仍有细节偏差，已标注待精修。<a href="talisman-restored-v1/visual-review.md">逐张复核记录</a></p>')
+        body = body.replace('<h2 id="talismans">十二符咒 · 修复正视图案</h2>', '<h2 id="talismans">十二符咒 · v1 修复正视稿</h2><p>牛脸分区、猪下方长弧及龙、虎、猴的细节需要精修，已逐张标注。<a href="talisman-restored-v1/visual-review.md">逐张复核记录</a></p>')
+    monochrome_review = ROOT / 'talisman-monochrome-v1/README.md'
+    if monochrome_review.is_file():
+        body = body.replace('<a href="README.md">说明与来源</a>', '<a href="README.md">说明与来源</a><a href="talisman-monochrome-v1/README.md">单色阴影重绘规范</a>')
+        body = body.replace('<div class="mode-switch"', '<div class="note"><strong>单色版待生成</strong>：保留每张原主色，用实色、透明留白与稀疏排线表现阴影。当前显示的仍是原修复稿；已保存<a href="talisman-monochrome-v1/README.md">十二张检查记录与重绘规范</a>，等待绘图服务恢复。</div><div class="mode-switch"', 1)
     body += '\n'.join(fronts) + '</div><h2 id="zodiac">十二星座 · Stellarium Modern</h2>'
     body += '<p>暗底浅线预览；透明 SVG 只含星点与连线。北上、东左，按实际星位等比投影。IAU / Sky &amp; Telescope 原星图作为另一种画法对照。</p><div class="grid">'
     body += '\n'.join(charts) + '</div><h2 id="sagittarius">射手座八星茶壶</h2>'
@@ -171,7 +175,7 @@ document.querySelectorAll('[data-mode]').forEach(button=>button.addEventListener
         if path.is_file() and path.name != 'collection-manifest.json':
             data = path.read_bytes()
             rows.append({'path':path.relative_to(ROOT).as_posix(),'bytes':len(data),'sha256':hashlib.sha256(data).hexdigest()})
-    report = {'generated_utc':datetime.now(timezone.utc).isoformat(),'talisman_png_count':12,'talisman_pattern_png_count':len(patterns),'talisman_restored_png_count':len(restored),'zodiac_main_chart_count':12,'files':rows}
+    report = {'generated_utc':datetime.now(timezone.utc).isoformat(),'talisman_png_count':12,'talisman_pattern_png_count':len(patterns),'talisman_restored_png_count':len(restored),'talisman_monochrome_generated_png_count':len(list((ROOT/'talisman-monochrome-v1').glob('*-monochrome.png'))),'monochrome_review_available':monochrome_review.is_file(),'zodiac_main_chart_count':12,'files':rows}
     (ROOT / 'collection-manifest.json').write_bytes((json.dumps(report,ensure_ascii=False,indent=2)+'\n').encode('utf-8'))
     target = ROOT.parent / 'reference-collection.zip'
     with zipfile.ZipFile(target, 'w', zipfile.ZIP_DEFLATED) as bundle:

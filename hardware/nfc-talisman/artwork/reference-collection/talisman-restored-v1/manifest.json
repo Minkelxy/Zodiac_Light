@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-10-10T13:05:10.642918+00:00",
+  "generated_utc": "2026-10-10T13:30:08.193315+00:00",
   "title": "十二符咒 · 修复正视透明 PNG · v1",
   "tool": "Native ImageGen; separate reference-guided restoration for each animal",
   "method": "Reconstruct original motif, rectify the talisman face plane; preserve animal pose. Pillow performs transparent-margin crop, uniform resize and canvas placement only.",
@@ -99,8 +99,8 @@
         902,
         919
       ],
-      "visual_status": "reviewed_draft",
-      "visual_note": "保留蓝色正面牛头、双角双耳；已去掉生成初稿新增的大鼻孔。",
+      "visual_status": "needs_refinement",
+      "visual_note": "正面双角双耳保留；脸部偏整块，源图可辨认的眼周/鼻口分区被简化，需恢复内部细线，避免新增大鼻孔。",
       "alpha_nonzero_bounds_xyxy": [
         121,
         102,
@@ -160,7 +160,7 @@
         902
       ],
       "visual_status": "needs_refinement",
-      "visual_note": "双虎和相对朝向保留；部分黑白碎笔扩大成连续形体，条纹与小细节仍需精修。",
+      "visual_note": "双虎与相对朝向保留；条纹、爪及白色形体被扩大/重解释，需精修。源图中央白色曲线本就相接，不据此推断为全部误合并。",
       "alpha_nonzero_bounds_xyxy": [
         102,
         120,
@@ -643,7 +643,7 @@
         920
       ],
       "visual_status": "reviewed_draft",
-      "visual_note": "右向站姿、四腿、卷尾及透明躯干保留；胸颈小片和线宽需对照。",
+      "visual_note": "右向站姿、四腿、卷尾及中央透明躯干保留；部分笔画偏宽、胸颈小片需对照。未将躯干整体填黄。",
       "alpha_nonzero_bounds_xyxy": [
         113,
         102,
@@ -702,8 +702,8 @@
         920,
         910
       ],
-      "visual_status": "reviewed_draft",
-      "visual_note": "上耳带、左侧鼻口片、右侧弧及下方弧保持参考相对位置，未做整体镜像；描线与填色更规整。",
+      "visual_status": "needs_refinement",
+      "visual_note": "上耳带、左鼻口片和右弯月位置保留，未整体镜像；最下方长左弧遗漏，仅留下较短中部弧，需按源图补回。",
       "alpha_nonzero_bounds_xyxy": [
         102,
         110,
@@ -735,5 +735,5 @@
       }
     }
   ],
-  "visual_release_status": "Reference-guided restoration drafts; Dragon, Tiger and Monkey need finer fidelity work. Not approved as exact final reproductions."
+  "visual_release_status": "Reference-guided restoration drafts; Ox facial divisions, Pig missing lower-left arc, Dragon, Tiger and Monkey need refinement. Monochrome redraw is pending native image service recovery. Not approved as exact final reproductions."
 }
