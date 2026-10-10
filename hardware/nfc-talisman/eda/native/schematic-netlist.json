@@ -4,7 +4,6 @@
   "components": {
     "U1": {
       "props": {
-        "Unique ID": "U1",
         "Add into BOM": "yes",
         "Convert to PCB": "yes",
         "Device": "0826239021620644",
@@ -28,6 +27,7 @@
         "Features": "能量采集；内置非易失性存储；数据校验",
         "Name": "NT3H2111W0FHKH",
         "Description": "协议:ISO 14443A,NFC;接口类型:I2C;传输速率:106Kbit/s;",
+        "Unique ID": "U1",
         "Reuse Block": "",
         "Group ID": "",
         "Channel ID": "$1I2",
@@ -125,7 +125,6 @@
     },
     "C1": {
       "props": {
-        "Unique ID": "C1",
         "Add into BOM": "yes",
         "Convert to PCB": "yes",
         "Device": "3f1d0a7ba18d9857",
@@ -150,6 +149,7 @@
         "Temperature Coefficient": "X7R",
         "Name": "GRM155R71C154KA12D",
         "Description": "容值:150nF;精度:±10%;额定电压:16V;材质(温度系数):X7R;",
+        "Unique ID": "C1",
         "Reuse Block": "",
         "Group ID": "",
         "Channel ID": "$1I3",
@@ -187,7 +187,6 @@
     },
     "CT1": {
       "props": {
-        "Unique ID": "CT1",
         "Add into BOM": "yes",
         "Convert to PCB": "yes",
         "Device": "f1f17454a90f1e99",
@@ -212,6 +211,7 @@
         "Temperature Coefficient": "NP0",
         "Name": "CC0402JRNPO9BN470",
         "Description": "容值:47pF;精度:±5%;额定电压:50V;材质(温度系数):NP0;",
+        "Unique ID": "CT1",
         "Reuse Block": "",
         "Group ID": "",
         "Channel ID": "$1I4",
@@ -249,7 +249,6 @@
     },
     "CT2": {
       "props": {
-        "Unique ID": "CT2",
         "Add into BOM": "yes",
         "Convert to PCB": "yes",
         "Device": "f1f17454a90f1e99",
@@ -274,6 +273,7 @@
         "Temperature Coefficient": "NP0",
         "Name": "TUNE C0G DNP",
         "Description": "容值:47pF;精度:±5%;额定电压:50V;材质(温度系数):NP0;",
+        "Unique ID": "CT2",
         "Reuse Block": "",
         "Group ID": "",
         "Channel ID": "$1I5",
@@ -311,7 +311,6 @@
     },
     "R5": {
       "props": {
-        "Unique ID": "R5",
         "Add into BOM": "yes",
         "Convert to PCB": "yes",
         "Device": "70b84d85f3696638",
@@ -339,6 +338,7 @@
         "Operating Temperature": "-55℃~+155℃",
         "Name": "RC0603FR-0747KL",
         "Description": "电阻类型:厚膜电阻;阻值:47kΩ;精度:±1%;功率:100mW;工作电压:75V;温度系数:±100ppm/℃;",
+        "Unique ID": "R5",
         "Reuse Block": "",
         "Group ID": "",
         "Channel ID": "$1I6",
@@ -376,7 +376,6 @@
     },
     "R6": {
       "props": {
-        "Unique ID": "R6",
         "Add into BOM": "yes",
         "Convert to PCB": "yes",
         "Device": "70b84d85f3696638",
@@ -404,6 +403,7 @@
         "Operating Temperature": "-55℃~+155℃",
         "Name": "RC0603FR-0747KL",
         "Description": "电阻类型:厚膜电阻;阻值:47kΩ;精度:±1%;功率:100mW;工作电压:75V;温度系数:±100ppm/℃;",
+        "Unique ID": "R6",
         "Reuse Block": "",
         "Group ID": "",
         "Channel ID": "$1I7",
@@ -441,7 +441,6 @@
     },
     "R7": {
       "props": {
-        "Unique ID": "R7",
         "Add into BOM": "yes",
         "Convert to PCB": "yes",
         "Device": "70b84d85f3696638",
@@ -469,6 +468,7 @@
         "Operating Temperature": "-55℃~+155℃",
         "Name": "RC0603FR-0747KL",
         "Description": "电阻类型:厚膜电阻;阻值:47kΩ;精度:±1%;功率:100mW;工作电压:75V;温度系数:±100ppm/℃;",
+        "Unique ID": "R7",
         "Reuse Block": "",
         "Group ID": "",
         "Channel ID": "$1I8",
@@ -506,7 +506,6 @@
     },
     "R1": {
       "props": {
-        "Unique ID": "R1",
         "Add into BOM": "yes",
         "Convert to PCB": "yes",
         "Device": "1f7a2dba9531bc30",
@@ -534,6 +533,7 @@
         "Operating Temperature": "-55℃~+155℃",
         "Name": "RC0603FR-072K2L",
         "Description": "电阻类型:厚膜电阻;阻值:2.2kΩ;精度:±1%;功率:100mW;工作电压:75V;温度系数:±100ppm/℃;",
+        "Unique ID": "R1",
         "Reuse Block": "",
         "Group ID": "",
         "Channel ID": "$1I9",
@@ -571,7 +571,6 @@
     },
     "D1": {
       "props": {
-        "Unique ID": "D1",
         "Add into BOM": "yes",
         "Convert to PCB": "yes",
         "Device": "8e0ca6caf537fb29",
@@ -606,6 +605,7 @@
         "Operating Temperature": "-40℃~+85℃",
         "Name": "APG1608SYKC/T",
         "Description": "灯头类型:-;发光颜色:黄色;正向压降(Vf):2.05V;功率:75mW;正向电流:20mA;波长:590nm;二极管配置:独立二极管;透镜颜色:无色透明透镜;色温:-;发光强度:120mcd;发光角度:120°;载带方式:-;工作温度:-40℃~+85℃;",
+        "Unique ID": "D1",
         "Reuse Block": "",
         "Group ID": "",
         "Channel ID": "$1I10",
@@ -643,7 +643,6 @@
     },
     "R2": {
       "props": {
-        "Unique ID": "R2",
         "Add into BOM": "yes",
         "Convert to PCB": "yes",
         "Device": "1f7a2dba9531bc30",
@@ -671,6 +670,7 @@
         "Operating Temperature": "-55℃~+155℃",
         "Name": "RC0603FR-072K2L",
         "Description": "电阻类型:厚膜电阻;阻值:2.2kΩ;精度:±1%;功率:100mW;工作电压:75V;温度系数:±100ppm/℃;",
+        "Unique ID": "R2",
         "Reuse Block": "",
         "Group ID": "",
         "Channel ID": "$1I11",
@@ -708,7 +708,6 @@
     },
     "D2": {
       "props": {
-        "Unique ID": "D2",
         "Add into BOM": "yes",
         "Convert to PCB": "yes",
         "Device": "8e0ca6caf537fb29",
@@ -743,6 +742,7 @@
         "Operating Temperature": "-40℃~+85℃",
         "Name": "APG1608SYKC/T",
         "Description": "灯头类型:-;发光颜色:黄色;正向压降(Vf):2.05V;功率:75mW;正向电流:20mA;波长:590nm;二极管配置:独立二极管;透镜颜色:无色透明透镜;色温:-;发光强度:120mcd;发光角度:120°;载带方式:-;工作温度:-40℃~+85℃;",
+        "Unique ID": "D2",
         "Reuse Block": "",
         "Group ID": "",
         "Channel ID": "$1I12",
@@ -780,7 +780,6 @@
     },
     "R3": {
       "props": {
-        "Unique ID": "R3",
         "Add into BOM": "yes",
         "Convert to PCB": "yes",
         "Device": "1f7a2dba9531bc30",
@@ -808,6 +807,7 @@
         "Operating Temperature": "-55℃~+155℃",
         "Name": "RC0603FR-072K2L",
         "Description": "电阻类型:厚膜电阻;阻值:2.2kΩ;精度:±1%;功率:100mW;工作电压:75V;温度系数:±100ppm/℃;",
+        "Unique ID": "R3",
         "Reuse Block": "",
         "Group ID": "",
         "Channel ID": "$1I13",
@@ -845,7 +845,6 @@
     },
     "D3": {
       "props": {
-        "Unique ID": "D3",
         "Add into BOM": "yes",
         "Convert to PCB": "yes",
         "Device": "8e0ca6caf537fb29",
@@ -880,6 +879,7 @@
         "Operating Temperature": "-40℃~+85℃",
         "Name": "APG1608SYKC/T",
         "Description": "灯头类型:-;发光颜色:黄色;正向压降(Vf):2.05V;功率:75mW;正向电流:20mA;波长:590nm;二极管配置:独立二极管;透镜颜色:无色透明透镜;色温:-;发光强度:120mcd;发光角度:120°;载带方式:-;工作温度:-40℃~+85℃;",
+        "Unique ID": "D3",
         "Reuse Block": "",
         "Group ID": "",
         "Channel ID": "$1I14",
@@ -917,7 +917,6 @@
     },
     "R4": {
       "props": {
-        "Unique ID": "R4",
         "Add into BOM": "yes",
         "Convert to PCB": "yes",
         "Device": "1f7a2dba9531bc30",
@@ -945,6 +944,7 @@
         "Operating Temperature": "-55℃~+155℃",
         "Name": "RC0603FR-072K2L",
         "Description": "电阻类型:厚膜电阻;阻值:2.2kΩ;精度:±1%;功率:100mW;工作电压:75V;温度系数:±100ppm/℃;",
+        "Unique ID": "R4",
         "Reuse Block": "",
         "Group ID": "",
         "Channel ID": "$1I15",
@@ -982,7 +982,6 @@
     },
     "D4": {
       "props": {
-        "Unique ID": "D4",
         "Add into BOM": "yes",
         "Convert to PCB": "yes",
         "Device": "8e0ca6caf537fb29",
@@ -1017,6 +1016,7 @@
         "Operating Temperature": "-40℃~+85℃",
         "Name": "APG1608SYKC/T",
         "Description": "灯头类型:-;发光颜色:黄色;正向压降(Vf):2.05V;功率:75mW;正向电流:20mA;波长:590nm;二极管配置:独立二极管;透镜颜色:无色透明透镜;色温:-;发光强度:120mcd;发光角度:120°;载带方式:-;工作温度:-40℃~+85℃;",
+        "Unique ID": "D4",
         "Reuse Block": "",
         "Group ID": "",
         "Channel ID": "$1I16",
@@ -1087,6 +1087,12 @@
           "TrackPhysics": ""
         }
       },
+      "ANT_LB": {
+        "net": "ANT_LB",
+        "ruleMap": {
+          "TrackPhysics": ""
+        }
+      },
       "GND": {
         "net": "GND",
         "ruleMap": {
@@ -1113,12 +1119,6 @@
       },
       "VOUT": {
         "net": "VOUT",
-        "ruleMap": {
-          "TrackPhysics": ""
-        }
-      },
-      "ANT_LB": {
-        "net": "ANT_LB",
         "ruleMap": {
           "TrackPhysics": ""
         }

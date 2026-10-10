@@ -1,0 +1,860 @@
+{
+  "schema_version": 1,
+  "status": "candidate_only_not_applied",
+  "description": "Four 0603 current-limit resistor components shifted 7.9 mil toward core center; connected copper endpoint corrections evaluated from saved core/panel snapshots.",
+  "source_files": [
+    "eda/native/core-source.jsonl",
+    "eda/native/panel-source.jsonl",
+    "eda/core-pads.json",
+    "electrical/native-copper-audit.json"
+  ],
+  "units": {
+    "coordinate": "mil",
+    "coordinate_grid_mil": 0.1,
+    "clearance": "mm",
+    "panel_xy_translation_mil": [
+      1968.5039370078741,
+      1968.5039370078741
+    ],
+    "panel_xy_translation_mm": [
+      50.0,
+      50.0
+    ]
+  },
+  "component_moves": [
+    {
+      "ref": "R1",
+      "core_component_id": "e25abbd50c954f9a",
+      "panel_component_id": "ad6ab953596758c4",
+      "dx_mil": 7.9,
+      "old_core_xy_mil": [
+        -137.7953,
+        0
+      ],
+      "candidate_core_xy_mil": [
+        -129.9,
+        0
+      ],
+      "old_panel_xy_mil": [
+        1830.7087,
+        1968.5039
+      ],
+      "candidate_panel_xy_mil": [
+        1838.6039,
+        1968.5039
+      ],
+      "pcb_side": "Top",
+      "actual_x_delta_mil": 7.8953
+    },
+    {
+      "ref": "R3",
+      "core_component_id": "a3880816cb907cd4",
+      "panel_component_id": "ad7cec338e0de3be",
+      "dx_mil": 7.9,
+      "old_core_xy_mil": [
+        -137.7953,
+        0
+      ],
+      "candidate_core_xy_mil": [
+        -129.9,
+        0
+      ],
+      "old_panel_xy_mil": [
+        1830.7087,
+        1968.5039
+      ],
+      "candidate_panel_xy_mil": [
+        1838.6039,
+        1968.5039
+      ],
+      "pcb_side": "Bottom",
+      "actual_x_delta_mil": 7.8953
+    },
+    {
+      "ref": "R2",
+      "core_component_id": "d9fff5ffff2f73f3",
+      "panel_component_id": "bf28374ca5e64db0",
+      "dx_mil": -7.9,
+      "old_core_xy_mil": [
+        137.7953,
+        157.4803
+      ],
+      "candidate_core_xy_mil": [
+        129.9,
+        157.4803
+      ],
+      "old_panel_xy_mil": [
+        2106.2992,
+        2125.9843
+      ],
+      "candidate_panel_xy_mil": [
+        2098.4039,
+        2125.9843
+      ],
+      "pcb_side": "Top",
+      "actual_x_delta_mil": -7.8953
+    },
+    {
+      "ref": "R4",
+      "core_component_id": "1968272a10277b12",
+      "panel_component_id": "c7c545773a7281b9",
+      "dx_mil": -7.9,
+      "old_core_xy_mil": [
+        137.7953,
+        -157.4803
+      ],
+      "candidate_core_xy_mil": [
+        129.9,
+        -157.4803
+      ],
+      "old_panel_xy_mil": [
+        2106.2992,
+        1811.0236
+      ],
+      "candidate_panel_xy_mil": [
+        2098.4039,
+        1811.0236
+      ],
+      "pcb_side": "Bottom",
+      "actual_x_delta_mil": -7.8953
+    }
+  ],
+  "pad_centers": [
+    {
+      "ref": "R1",
+      "component_id": "e25abbd50c954f9a",
+      "pad_number": "2",
+      "pad_primitive_id": "e25abbd50c954f9ae7",
+      "net": "LED1_A",
+      "old_center_mil": [
+        -108.1,
+        0
+      ],
+      "candidate_center_mil": [
+        -100.2,
+        0
+      ]
+    },
+    {
+      "ref": "R1",
+      "component_id": "e25abbd50c954f9a",
+      "pad_number": "1",
+      "pad_primitive_id": "e25abbd50c954f9ae8",
+      "net": "VOUT",
+      "old_center_mil": [
+        -167.5,
+        0
+      ],
+      "candidate_center_mil": [
+        -159.6,
+        0
+      ]
+    },
+    {
+      "ref": "R2",
+      "component_id": "d9fff5ffff2f73f3",
+      "pad_number": "2",
+      "pad_primitive_id": "d9fff5ffff2f73f3e7",
+      "net": "LED2_A",
+      "old_center_mil": [
+        167.5,
+        157.5
+      ],
+      "candidate_center_mil": [
+        159.6,
+        157.5
+      ]
+    },
+    {
+      "ref": "R2",
+      "component_id": "d9fff5ffff2f73f3",
+      "pad_number": "1",
+      "pad_primitive_id": "d9fff5ffff2f73f3e8",
+      "net": "VOUT",
+      "old_center_mil": [
+        108.1,
+        157.5
+      ],
+      "candidate_center_mil": [
+        100.2,
+        157.5
+      ]
+    },
+    {
+      "ref": "R3",
+      "component_id": "a3880816cb907cd4",
+      "pad_number": "2",
+      "pad_primitive_id": "a3880816cb907cd4e7",
+      "net": "LED3_A",
+      "old_center_mil": [
+        -108.1,
+        0
+      ],
+      "candidate_center_mil": [
+        -100.2,
+        0
+      ]
+    },
+    {
+      "ref": "R3",
+      "component_id": "a3880816cb907cd4",
+      "pad_number": "1",
+      "pad_primitive_id": "a3880816cb907cd4e8",
+      "net": "VOUT",
+      "old_center_mil": [
+        -167.5,
+        0
+      ],
+      "candidate_center_mil": [
+        -159.6,
+        0
+      ]
+    },
+    {
+      "ref": "R4",
+      "component_id": "1968272a10277b12",
+      "pad_number": "2",
+      "pad_primitive_id": "1968272a10277b12e7",
+      "net": "LED4_A",
+      "old_center_mil": [
+        167.5,
+        -157.5
+      ],
+      "candidate_center_mil": [
+        159.6,
+        -157.5
+      ]
+    },
+    {
+      "ref": "R4",
+      "component_id": "1968272a10277b12",
+      "pad_number": "1",
+      "pad_primitive_id": "1968272a10277b12e8",
+      "net": "VOUT",
+      "old_center_mil": [
+        108.1,
+        -157.5
+      ],
+      "candidate_center_mil": [
+        100.2,
+        -157.5
+      ]
+    }
+  ],
+  "route_endpoint_updates": [
+    {
+      "core_line_id": "855dbb4190bc17c5",
+      "panel_line_id": "39ce2c1f114d5820",
+      "net": "LED1_A",
+      "layer_id": 1,
+      "width_mil": 8,
+      "old_core": {
+        "start": [
+          -108.1,
+          0
+        ],
+        "end": [
+          -108.1,
+          35
+        ]
+      },
+      "new_core": {
+        "start": [
+          -100.2,
+          0
+        ],
+        "end": [
+          -108.1,
+          35
+        ]
+      },
+      "old_panel": {
+        "start": [
+          1860.4039,
+          1968.5039
+        ],
+        "end": [
+          1860.4039,
+          2003.5039
+        ]
+      },
+      "new_panel": {
+        "start": [
+          1868.3039,
+          1968.5039
+        ],
+        "end": [
+          1860.4039,
+          2003.5039
+        ]
+      }
+    },
+    {
+      "core_line_id": "d8566c105a709015",
+      "panel_line_id": "402ffe5489aa7fbc",
+      "net": "VOUT",
+      "layer_id": 1,
+      "width_mil": 8,
+      "old_core": {
+        "start": [
+          -170,
+          0
+        ],
+        "end": [
+          -145,
+          0
+        ]
+      },
+      "new_core": {
+        "start": [
+          -162.1,
+          0
+        ],
+        "end": [
+          -145,
+          0
+        ]
+      },
+      "old_panel": {
+        "start": [
+          1798.5039,
+          1968.5039
+        ],
+        "end": [
+          1823.5039,
+          1968.5039
+        ]
+      },
+      "new_panel": {
+        "start": [
+          1806.4039,
+          1968.5039
+        ],
+        "end": [
+          1823.5039,
+          1968.5039
+        ]
+      }
+    },
+    {
+      "core_line_id": "fca0f3c07e2998fd",
+      "panel_line_id": "06ddf05d55edffe6",
+      "net": "LED2_A",
+      "layer_id": 1,
+      "width_mil": 8,
+      "old_core": {
+        "start": [
+          167.5,
+          157.5
+        ],
+        "end": [
+          167.5,
+          195
+        ]
+      },
+      "new_core": {
+        "start": [
+          159.6,
+          157.5
+        ],
+        "end": [
+          159.6,
+          195
+        ]
+      },
+      "old_panel": {
+        "start": [
+          2136.0039,
+          2126.0039
+        ],
+        "end": [
+          2136.0039,
+          2163.5039
+        ]
+      },
+      "new_panel": {
+        "start": [
+          2128.1039,
+          2126.0039
+        ],
+        "end": [
+          2128.1039,
+          2163.5039
+        ]
+      }
+    },
+    {
+      "core_line_id": "fa66c787dcab9acb",
+      "panel_line_id": "79ae13b602406784",
+      "net": "LED2_A",
+      "layer_id": 1,
+      "width_mil": 8,
+      "old_core": {
+        "start": [
+          167.5,
+          195
+        ],
+        "end": [
+          265.7,
+          195
+        ]
+      },
+      "new_core": {
+        "start": [
+          159.6,
+          195
+        ],
+        "end": [
+          265.7,
+          195
+        ]
+      },
+      "old_panel": {
+        "start": [
+          2136.0039,
+          2163.5039
+        ],
+        "end": [
+          2234.2039,
+          2163.5039
+        ]
+      },
+      "new_panel": {
+        "start": [
+          2128.1039,
+          2163.5039
+        ],
+        "end": [
+          2234.2039,
+          2163.5039
+        ]
+      }
+    },
+    {
+      "core_line_id": "d599106028222c88",
+      "panel_line_id": "0a90eaeb217eac8f",
+      "net": "VOUT",
+      "layer_id": 1,
+      "width_mil": 8,
+      "old_core": {
+        "start": [
+          108.1,
+          157.5
+        ],
+        "end": [
+          110,
+          155
+        ]
+      },
+      "new_core": {
+        "start": [
+          100.2,
+          157.5
+        ],
+        "end": [
+          110,
+          155
+        ]
+      },
+      "old_panel": {
+        "start": [
+          2076.6039,
+          2126.0039
+        ],
+        "end": [
+          2078.5039,
+          2123.5039
+        ]
+      },
+      "new_panel": {
+        "start": [
+          2068.7039,
+          2126.0039
+        ],
+        "end": [
+          2078.5039,
+          2123.5039
+        ]
+      }
+    },
+    {
+      "core_line_id": "bd4da56d9ec4ee85",
+      "panel_line_id": "5d85336e232c1ce0",
+      "net": "LED3_A",
+      "layer_id": 2,
+      "width_mil": 8,
+      "old_core": {
+        "start": [
+          -108.1,
+          0
+        ],
+        "end": [
+          -108.1,
+          35
+        ]
+      },
+      "new_core": {
+        "start": [
+          -100.2,
+          0
+        ],
+        "end": [
+          -108.1,
+          35
+        ]
+      },
+      "old_panel": {
+        "start": [
+          1860.4039,
+          1968.5039
+        ],
+        "end": [
+          1860.4039,
+          2003.5039
+        ]
+      },
+      "new_panel": {
+        "start": [
+          1868.3039,
+          1968.5039
+        ],
+        "end": [
+          1860.4039,
+          2003.5039
+        ]
+      }
+    },
+    {
+      "core_line_id": "86326e2392e0929e",
+      "panel_line_id": "4eb2ab5ce1ca2234",
+      "net": "VOUT",
+      "layer_id": 2,
+      "width_mil": 8,
+      "old_core": {
+        "start": [
+          -167.5,
+          0
+        ],
+        "end": [
+          -145,
+          0
+        ]
+      },
+      "new_core": {
+        "start": [
+          -159.6,
+          0
+        ],
+        "end": [
+          -145,
+          0
+        ]
+      },
+      "old_panel": {
+        "start": [
+          1801.0039,
+          1968.5039
+        ],
+        "end": [
+          1823.5039,
+          1968.5039
+        ]
+      },
+      "new_panel": {
+        "start": [
+          1808.9039,
+          1968.5039
+        ],
+        "end": [
+          1823.5039,
+          1968.5039
+        ]
+      }
+    },
+    {
+      "core_line_id": "16ec07e2a8817c04",
+      "panel_line_id": "d6a63becab77c6e6",
+      "net": "LED4_A",
+      "layer_id": 2,
+      "width_mil": 8,
+      "old_core": {
+        "start": [
+          167.5,
+          -157.5
+        ],
+        "end": [
+          167.5,
+          -195
+        ]
+      },
+      "new_core": {
+        "start": [
+          159.6,
+          -157.5
+        ],
+        "end": [
+          159.6,
+          -195
+        ]
+      },
+      "old_panel": {
+        "start": [
+          2136.0039,
+          1811.0039
+        ],
+        "end": [
+          2136.0039,
+          1773.5039
+        ]
+      },
+      "new_panel": {
+        "start": [
+          2128.1039,
+          1811.0039
+        ],
+        "end": [
+          2128.1039,
+          1773.5039
+        ]
+      }
+    },
+    {
+      "core_line_id": "9b8a7f3c4ef9e7a5",
+      "panel_line_id": "5bf4f55f12677627",
+      "net": "LED4_A",
+      "layer_id": 2,
+      "width_mil": 8,
+      "old_core": {
+        "start": [
+          167.5,
+          -195
+        ],
+        "end": [
+          265.7,
+          -195
+        ]
+      },
+      "new_core": {
+        "start": [
+          159.6,
+          -195
+        ],
+        "end": [
+          265.7,
+          -195
+        ]
+      },
+      "old_panel": {
+        "start": [
+          2136.0039,
+          1773.5039
+        ],
+        "end": [
+          2234.2039,
+          1773.5039
+        ]
+      },
+      "new_panel": {
+        "start": [
+          2128.1039,
+          1773.5039
+        ],
+        "end": [
+          2234.2039,
+          1773.5039
+        ]
+      }
+    },
+    {
+      "core_line_id": "f770d078045b270c",
+      "panel_line_id": "7c638c3ecf37a69c",
+      "net": "VOUT",
+      "layer_id": 2,
+      "width_mil": 8,
+      "old_core": {
+        "start": [
+          108.1,
+          -157.5
+        ],
+        "end": [
+          110,
+          -155
+        ]
+      },
+      "new_core": {
+        "start": [
+          100.2,
+          -157.5
+        ],
+        "end": [
+          110,
+          -155
+        ]
+      },
+      "old_panel": {
+        "start": [
+          2076.6039,
+          1811.0039
+        ],
+        "end": [
+          2078.5039,
+          1813.5039
+        ]
+      },
+      "new_panel": {
+        "start": [
+          2068.7039,
+          1811.0039
+        ],
+        "end": [
+          2078.5039,
+          1813.5039
+        ]
+      }
+    }
+  ],
+  "route_foreign_clearance": [
+    {
+      "core_line_id": "855dbb4190bc17c5",
+      "candidate_min_alien_copper_gap_mm": 0.2739087,
+      "nearest_id": "892c3036e4a96ae3",
+      "nearest_net": [
+        "GND"
+      ]
+    },
+    {
+      "core_line_id": "fca0f3c07e2998fd",
+      "candidate_min_alien_copper_gap_mm": 0.69469,
+      "nearest_id": "D2.1",
+      "nearest_net": [
+        "GND"
+      ]
+    },
+    {
+      "core_line_id": "fa66c787dcab9acb",
+      "candidate_min_alien_copper_gap_mm": 0.45085,
+      "nearest_id": "D2.1",
+      "nearest_net": [
+        "GND"
+      ]
+    },
+    {
+      "core_line_id": "bd4da56d9ec4ee85",
+      "candidate_min_alien_copper_gap_mm": 0.73348677,
+      "nearest_id": "95d88a8b6125c7c7@L2",
+      "nearest_net": [
+        "VOUT"
+      ]
+    },
+    {
+      "core_line_id": "16ec07e2a8817c04",
+      "candidate_min_alien_copper_gap_mm": 0.69469,
+      "nearest_id": "D4.1",
+      "nearest_net": [
+        "GND"
+      ]
+    },
+    {
+      "core_line_id": "9b8a7f3c4ef9e7a5",
+      "candidate_min_alien_copper_gap_mm": 0.45085,
+      "nearest_id": "D4.1",
+      "nearest_net": [
+        "GND"
+      ]
+    },
+    {
+      "core_line_id": "d599106028222c88",
+      "candidate_min_alien_copper_gap_mm": 0.75448171,
+      "nearest_id": "R2.2",
+      "nearest_net": [
+        "LED2_A"
+      ]
+    },
+    {
+      "core_line_id": "d8566c105a709015",
+      "candidate_min_alien_copper_gap_mm": 0.62611,
+      "nearest_id": "D1.2",
+      "nearest_net": [
+        "LED1_A"
+      ]
+    },
+    {
+      "core_line_id": "f770d078045b270c",
+      "candidate_min_alien_copper_gap_mm": 0.75448171,
+      "nearest_id": "R4.2",
+      "nearest_net": [
+        "LED4_A"
+      ]
+    },
+    {
+      "core_line_id": "86326e2392e0929e",
+      "candidate_min_alien_copper_gap_mm": 0.63246,
+      "nearest_id": "R3.2",
+      "nearest_net": [
+        "LED3_A"
+      ]
+    }
+  ],
+  "clearance_check": {
+    "baseline_global_min_different_net_gap_mm": 0.18669,
+    "candidate_global_min_different_net_gap_mm": 0.20140041,
+    "candidate_minimum_pair": {
+      "a": "cb8a9d528b7a2e53",
+      "a_kind": "line",
+      "a_nets": [
+        "GND"
+      ],
+      "b": "bac9380629f99f8f@L2",
+      "b_kind": "via_ring",
+      "b_nets": [
+        "ANT_LB"
+      ],
+      "layer": 2,
+      "gap_mm": 0.20140041000000017
+    },
+    "global_improvement_mm": 0.01471041,
+    "required_clearance_mm": 0.15239999999999998,
+    "candidate_same_layer_violations": 0,
+    "candidate_min_drill_to_foreign_copper_mm": 0.32640016,
+    "candidate_drill_clearance_violations": 0,
+    "candidate_pad_pair_gaps": [
+      {
+        "pads": [
+          "D1.2",
+          "R1.1"
+        ],
+        "old_gap_mm": 0.18669,
+        "candidate_gap_mm": 0.38735
+      },
+      {
+        "pads": [
+          "D2.1",
+          "R2.2"
+        ],
+        "old_gap_mm": 0.19177,
+        "candidate_gap_mm": 0.39243
+      },
+      {
+        "pads": [
+          "D3.2",
+          "R3.1"
+        ],
+        "old_gap_mm": 0.19177,
+        "candidate_gap_mm": 0.39243
+      },
+      {
+        "pads": [
+          "D4.1",
+          "R4.2"
+        ],
+        "old_gap_mm": 0.19177,
+        "candidate_gap_mm": 0.39243
+      }
+    ],
+    "all_native_pads_connected": true,
+    "disconnected_nets": {},
+    "core_panel_translation_match": true,
+    "core_panel_translation_mismatches": {}
+  },
+  "recommendation": "Geometrically viable but optional: the four target pad gaps improve to approximately 0.387–0.392 mm, while the global minimum improves only 0.01471 mm because an unchanged Bottom GND trace-to-ANT_LB via-ring gap becomes limiting at 0.20140 mm. Keep as a candidate if soldering margin is desired; not needed to meet the current 0.1524 mm rule."
+}

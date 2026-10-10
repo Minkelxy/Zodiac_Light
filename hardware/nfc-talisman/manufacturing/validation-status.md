@@ -2,6 +2,12 @@
 
 This is a reviewable first-pass design draft, not a manufacturing release.
 
+## Current layout and BOM review v3 — 2026-10-10
+
+This section supersedes earlier snapshot and drift notes below. The schematic was reorganized into functional blocks, all 36 pin connections were preserved, and four current-limit resistors were moved about 0.20 mm inward with 10 corrected routes on both core and panel. Save/reopen native checks report schematic ERC 0 errors / 1 existing ATTRMATCHCODE warning, core DRC empty and panel DRC empty. Fresh source, netlist, pad, native project, Gerber and PnP exports were archived together. Native copper audit now reports minimum different-net copper clearance **0.20140041 mm**, all 11 nets connected, and matching +50 mm core/panel copper. Native netlist, CAM, star-aperture and color-file checks pass for this refreshed revision. See `design-review-v3.md`, `draft/export-manifest.json` and `eda/check-summary.json` for current evidence.
+
+`bom-ready.csv` and `bom-review.md` document 14 fitted parts for four LEDs / 12 for two LEDs; CT2 is excluded. C1's specified Murata part is marked NRND in native library metadata; a same-spec CCTC alternative is listed with Qty 0 and has not replaced native C1. Manual horse artwork/window, official color-compositing/process preview and physical RF/phone/optical acceptance remain pending. The entries below retain earlier review history.
+
 ## Automation archive review — 2026-10-10 10:52 CST
 
 Re-ran the offline native copper, netlist and manufacturing CAM audits; all reported geometric/connectivity checks passed. `scripts/audit_delivery_integrity.py` verified 39 archived hash/size, check-log/native-source, ZIP CRC and CAM layer-content checks, with no failures; report: `draft/delivery-integrity.json`. Retained CAM layers equal the raw export byte-for-byte, and the review ZIP excludes the duplicate PTH program. This run did not inspect live/unsaved EasyEDA state or execute fresh native ERC/DRC. Added `sample-test-plan.md` to organize the pending physical test matrix and the horse optical decision gate. No physical results or manufacturing release were asserted.
@@ -12,7 +18,7 @@ Re-ran the offline native copper, netlist and manufacturing CAM audits; all repo
 - After all routing and fill changes were saved, both PCB documents were closed and reopened before fresh DRC. Core PCB and panel DRC each returned an empty `drc` array. The core contains 15 components, 38 pads, 126 copper lines, 10 vias and 1 fill. The earlier panel snapshot contained 15 components, 146 pads, 126 copper lines, 10 vias, 1 fill and 88 polylines; the newer refined panel count is recorded below. TP1 (VOUT) and TP2 (GND) are Top free pads at core-relative (80,115) mil and (235,115) mil; panel copies use +50 mm X/Y translation. Each has 0.8 mm circular copper and 0.9 mm mask opening, with no hole or paste opening, and is excluded from BOM/PnP. The 10 vias have 0.30 mm drill / 0.55 mm copper diameter and pass the native rules on both documents.
 - The prior netlist mismatch is resolved. SCH/core each have 15 components and 36 pads with matching nets. Applying the native `setNetlist` dialog's `Population=Fit` and `PCB Side=Top` attributes for U1 and D1 cleared it; copying Channel ID alone did not. L1 is a virtual coil element, not the root cause.
 - The coil fill's bridge-copper configuration survived native save/reopen: `isBridgingCopper=true`, `networkList=['ANT_LA','ANT_LB']`. The separate offline clearance audit covered only the old 19-track snapshot; it is not a substitute for the current native DRC or CAM review.
-- The native copper audit reports 11 nets passing, minimum different-net copper spacing 0.18669 mm, via-to-adjacent-coil-turn gap 0.20199 mm, and core/panel copper identical after a +50 mm coordinate translation.
+- Before v3, the native copper audit reported minimum different-net copper spacing 0.18669 mm. The current v3 value is 0.20140041 mm; the coil's adjacent-turn gap and +50 mm core/panel relation remain verified.
 
 ## Electrical assembly review
 

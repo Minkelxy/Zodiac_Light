@@ -100,7 +100,12 @@ def main():
     manifest=json.loads(manifest_path.read_text(encoding='utf-8'))
     additions=[target,DRAFT/'four-led-bom.csv',DRAFT/'four-led-panel-pnp.csv',DRAFT/'two-led-bom.csv',DRAFT/'two-led-panel-pnp.csv',DRAFT/'assembly-variants.json',DRAFT/'cam-audit.json',DRAFT/'cam-package-manifest.json',ROOT/'electrical/native-copper-audit.json',ROOT/'electrical/native-netlist-audit.json',ROOT/'eda/check-summary.json']
     additions += [DRAFT/'star-face-audit.json',DRAFT/'star-color-audit.json',ROOT/'artwork/sagittarius-color-print-candidate.png',ROOT/'artwork/sagittarius-linework-review.json']
+    additions += [ROOT/'eda/schematic-review.svg',ROOT/'eda/schematic-review.png',ROOT/'eda/layout-review-v3.json',ROOT/'eda/layout-application-v3.json',ROOT/'geometry/core-layout-review-v3.svg',ROOT/'geometry/core-layout-review-v3.png',ROOT/'manufacturing/bom-ready.csv',ROOT/'manufacturing/bom-review.md',ROOT/'manufacturing/design-review-v3.md']
     manifest['derived_files']=[file_info(path) for path in additions]
+    manifest['layout_review']='v3 applied to schematic, core and panel; electrical identities preserved; native ERC 0 errors/1 existing ATTRMATCHCODE warning, both PCB DRC empty'
+    sourcing_note='C1 current Murata C162182 is marked NRND in native metadata; same-spec CCTC C7393865 is Qty 0 alternate, not yet synchronized to native C1.'
+    manifest['sourcing_note']=sourcing_note
+    if sourcing_note not in manifest['pending']:manifest['pending'].append(sourcing_note)
     manifest['cam_drill_note']='The raw EDA ZIP includes duplicate PTH programs. The review ZIP retains exactly one PTH file and one NPTH file; retained manufacturing-layer bytes are unchanged.'
     manifest_path.write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     print(json.dumps(info,ensure_ascii=False,indent=2))

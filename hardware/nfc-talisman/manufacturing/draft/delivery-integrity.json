@@ -1,5 +1,5 @@
 {
-  "checked_at_utc": "2026-10-10T03:56:14.335680+00:00",
+  "checked_at_utc": "2026-10-10T06:15:31.245092+00:00",
   "status": "archived_draft_integrity_pass",
   "passed": true,
   "checks": [
@@ -77,6 +77,42 @@
     },
     {
       "path": "artwork/sagittarius-linework-review.json",
+      "passed": true
+    },
+    {
+      "path": "eda/schematic-review.svg",
+      "passed": true
+    },
+    {
+      "path": "eda/schematic-review.png",
+      "passed": true
+    },
+    {
+      "path": "eda/layout-review-v3.json",
+      "passed": true
+    },
+    {
+      "path": "eda/layout-application-v3.json",
+      "passed": true
+    },
+    {
+      "path": "geometry/core-layout-review-v3.svg",
+      "passed": true
+    },
+    {
+      "path": "geometry/core-layout-review-v3.png",
+      "passed": true
+    },
+    {
+      "path": "manufacturing/bom-ready.csv",
+      "passed": true
+    },
+    {
+      "path": "manufacturing/bom-review.md",
+      "passed": true
+    },
+    {
+      "path": "manufacturing/design-review-v3.md",
       "passed": true
     },
     {

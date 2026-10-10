@@ -2,7 +2,7 @@
   "schema": "easyeda-check-summary/v1",
   "snapshot_status": "current_draft",
   "snapshot_note": "Current native/log snapshot for review; this is not manufacturing release. Regenerate after any source, native project, or check-log change.",
-  "generated_at_utc": "2026-10-10T03:47:03+00:00",
+  "generated_at_utc": "2026-10-10T05:57:29+00:00",
   "checks": {
     "schematic_erc": {
       "status": "completed_with_findings",
@@ -22,14 +22,14 @@
         {
           "path": "eda/native/schematic-source.jsonl",
           "status": "present",
-          "size_bytes": 263439,
-          "sha256": "f68983fedcdb9d26c98a86fdae7f43ec533463307713489cc31582ccee596973"
+          "size_bytes": 238161,
+          "sha256": "e26eb0012a07676bf06a86e7be3aa13f076cfe7852e4c9e6a4da897a88ec8a16"
         },
         {
           "path": "eda/native/schematic-netlist.json",
           "status": "present",
           "size_bytes": 37178,
-          "sha256": "0f7774ef284b54a3d5d8c95eca907674a83ae497edcd439cee319a1c9bcba926"
+          "sha256": "31986494de17b09b386c0fc0aeb50cc01387a9f5a3320fe688026f5c4e08baf7"
         }
       ],
       "erc_findings": [
@@ -76,8 +76,8 @@
         {
           "path": "eda/native/core-source.jsonl",
           "status": "present",
-          "size_bytes": 105234,
-          "sha256": "68f0145ebe19c457b804dbc0a2442a2d0f57902f70794e9a54b175005f5a98ac"
+          "size_bytes": 105220,
+          "sha256": "f9f087c51f7f6af979cfcaa37604e5ee54addaa6ccabf67fca3f46b538326e93"
         },
         {
           "path": "eda/native/core-netlist.json",
@@ -112,7 +112,7 @@
           "path": "eda/native/panel-source.jsonl",
           "status": "present",
           "size_bytes": 240439,
-          "sha256": "ab2c9b47595f17fed91e0a9963caa1feed33cde3dca1982c6ed54322ccca7f47"
+          "sha256": "3de99158186b06c76a53f8dcdf9e889a68c2440653eadbecec5c4ec13ed8251c"
         },
         {
           "path": "eda/native/panel-netlist.json",
@@ -126,7 +126,7 @@
   "native_project": {
     "path": "eda/native/nfc-talisman-current.epro2",
     "status": "present",
-    "size_bytes": 186748,
-    "sha256": "b03f193656124011737287f7fe9b47f258f364c792c2a46d23c39e1744fa8ddc"
+    "size_bytes": 195717,
+    "sha256": "a112c7ba85464c3434b8a8e59977fb62a4e4744eb201a8bfa366b8001f285a1d"
   }
 }

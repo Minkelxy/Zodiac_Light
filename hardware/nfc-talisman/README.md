@@ -4,6 +4,8 @@
 
 ## 先看这些
 
+- [`manufacturing/design-review-v3.md`](manufacturing/design-review-v3.md)：最新原理图整理、PCB 布局调整、板框检查和 BOM 结论。
+- [`eda/schematic-review.png`](eda/schematic-review.png)：实际原理图预览；[`geometry/core-layout-review-v3.png`](geometry/core-layout-review-v3.png) 为两面布局预览；[`manufacturing/bom-ready.csv`](manufacturing/bom-ready.csv) 为汇总物料表，C1 状态见 [`manufacturing/bom-review.md`](manufacturing/bom-review.md)。
 - [`electrical/source-index.md`](electrical/source-index.md)：电路来源与交接资料。
 - [`electrical/assembly.md`](electrical/assembly.md)：器件与电路装配说明。
 - [`geometry/README.md`](geometry/README.md)：机械几何定义及检查入口。

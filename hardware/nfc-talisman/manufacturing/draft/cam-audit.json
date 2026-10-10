@@ -2,11 +2,11 @@
   "scope": "Read-only geometric and export consistency check. Not CAM/manufacturing release or electrical/assembly acceptance.",
   "inputs": {
     "zip_path": "manufacturing/draft/nfc-talisman-panel-draft.zip",
-    "zip_sha256": "6ec0dbed56204dfafa776a43e777ecd64c8cbd8ee49ce3ef5338d71d5c9cbae7",
-    "zip_bytes": 628904,
+    "zip_sha256": "c896e9fc71a24b6f806aa5824ebf6bf4011a14cc3614170ff5e89f9a49165aa0",
+    "zip_bytes": 629343,
     "zip_crc_error_member": null,
-    "native_panel_sha256": "ab2c9b47595f17fed91e0a9963caa1feed33cde3dca1982c6ed54322ccca7f47",
-    "component_pads_sha256": "13f0e1132d8d5e1573bd3f5c0182a2596e4c94532ae407004968d093ffc66941",
+    "native_panel_sha256": "3de99158186b06c76a53f8dcdf9e889a68c2440653eadbecec5c4ec13ed8251c",
+    "component_pads_sha256": "097ebeed742e7021f8603556bc68901a41c9c466027d537e5985899a41caf759",
     "zip_members": [
       "Drill_NPTH_Through.DRL",
       "Drill_PTH_Through.DRL",
@@ -45,7 +45,7 @@
           55.206999,
           53.936999
         ],
-        "sha256": "9c2fba6495db79a5a9124137f086e360d8d29d5adc2982b97eaddff2aef16687"
+        "sha256": "22e1f5564ff192f2e2e146f092746b644e4d7302327bd00fa644d71c19e47748"
       },
       "Drill_PTH_Through_Via.DRL": {
         "tools_mm": {
@@ -61,7 +61,7 @@
           55.206999,
           53.936999
         ],
-        "sha256": "ce50e8d49221554f17dc3b253c961574f08aea8af6d3a2a0f21130df2090d437"
+        "sha256": "8e355b6d163e37f8f33197086d16350508ea3e7c3234709c4fb75d890aa507e8"
       },
       "Drill_NPTH_Through.DRL": {
         "tools_mm": {
@@ -79,7 +79,7 @@
           98.0,
           95.000001
         ],
-        "sha256": "1a8bd772ab5888a2aff6a6c52196a920e2810dca93f1304fe83fffcb7ad3e5fa"
+        "sha256": "c14a2df194eb378d2f2e362eece144a0e02f3e9d19e3ef86dbd58b7f6581aa72"
       }
     },
     "native_source_correspondence": {
@@ -635,7 +635,7 @@
         "designator": "R1",
         "source_match": true,
         "side_matches": true,
-        "position_delta_mm": 1e-06,
+        "position_delta_mm": 0.000461,
         "rotation_deg": 0.0,
         "native_rotation_deg": 0,
         "native_side": "T"
@@ -644,7 +644,7 @@
         "designator": "R2",
         "source_match": true,
         "side_matches": true,
-        "position_delta_mm": 1e-06,
+        "position_delta_mm": 0.000459,
         "rotation_deg": 0.0,
         "native_rotation_deg": 0,
         "native_side": "T"
@@ -662,7 +662,7 @@
         "designator": "R3",
         "source_match": true,
         "side_matches": true,
-        "position_delta_mm": 1e-06,
+        "position_delta_mm": 0.000461,
         "rotation_deg": 0.0,
         "native_rotation_deg": 0,
         "native_side": "B"
@@ -680,7 +680,7 @@
         "designator": "R4",
         "source_match": true,
         "side_matches": true,
-        "position_delta_mm": 1e-06,
+        "position_delta_mm": 0.000459,
         "rotation_deg": 0.0,
         "native_rotation_deg": 0,
         "native_side": "B"

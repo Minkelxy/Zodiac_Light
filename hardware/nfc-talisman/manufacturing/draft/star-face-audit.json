@@ -5,9 +5,9 @@
     "artwork_sha256": "10c357ce4abb7a86e7ef3dd1e72a409b25f693f2d0fa57e25a9643409b50f95b",
     "geometry_semantic_sha256": "63df37e59d5f244adbce61ccb0b0feb010cdfd5552a07493648660db6e84b723",
     "artwork_semantic_sha256": "13222a410d8f40ce8cd63c79541b7cacc663838eddb8c22ff19cfdf0f8f22e5c",
-    "native_panel_sha256": "ab2c9b47595f17fed91e0a9963caa1feed33cde3dca1982c6ed54322ccca7f47",
-    "manufacturing_zip_sha256": "6ec0dbed56204dfafa776a43e777ecd64c8cbd8ee49ce3ef5338d71d5c9cbae7",
-    "manufacturing_zip_bytes": 628904,
+    "native_panel_sha256": "3de99158186b06c76a53f8dcdf9e889a68c2440653eadbecec5c4ec13ed8251c",
+    "manufacturing_zip_sha256": "c896e9fc71a24b6f806aa5824ebf6bf4011a14cc3614170ff5e89f9a49165aa0",
+    "manufacturing_zip_bytes": 629343,
     "zip_crc_error_member": null,
     "zip_members": [
       "Drill_NPTH_Through.DRL",

@@ -9,9 +9,9 @@
     "coil_centerline_review": "electrical/antenna-geometry-review.json:proposal_geometry"
   },
   "source_sha256": {
-    "eda\\native\\core-source.jsonl": "68f0145ebe19c457b804dbc0a2442a2d0f57902f70794e9a54b175005f5a98ac",
-    "eda\\native\\panel-source.jsonl": "ab2c9b47595f17fed91e0a9963caa1feed33cde3dca1982c6ed54322ccca7f47",
-    "eda\\core-pads.json": "13f0e1132d8d5e1573bd3f5c0182a2596e4c94532ae407004968d093ffc66941",
+    "eda\\native\\core-source.jsonl": "f9f087c51f7f6af979cfcaa37604e5ee54addaa6ccabf67fca3f46b538326e93",
+    "eda\\native\\panel-source.jsonl": "3de99158186b06c76a53f8dcdf9e889a68c2440653eadbecec5c4ec13ed8251c",
+    "eda\\core-pads.json": "097ebeed742e7021f8603556bc68901a41c9c466027d537e5985899a41caf759",
     "electrical\\antenna-coil-fill-candidate.json": "a0d7b3e7c78b2c2f1449361083b596fdac7ad76ec349fa7302267d6cd654b890",
     "electrical\\antenna-geometry-review.json": "d91ec2997e581e1c8069bc71aaf73c40029a83c075e2da4d45b0145b5b4d59b4"
   },
@@ -48,18 +48,18 @@
     "outside_items": [],
     "required_same_layer_alien_net_clearance_mm": 0.15239999999999998,
     "minimum_same_layer_copper_gap": {
-      "a": "D1.2",
-      "a_kind": "pad",
+      "a": "cb8a9d528b7a2e53",
+      "a_kind": "line",
       "a_nets": [
-        "LED1_A"
+        "GND"
       ],
-      "b": "R1.1",
-      "b_kind": "pad",
+      "b": "bac9380629f99f8f@L2",
+      "b_kind": "via_ring",
       "b_nets": [
-        "VOUT"
+        "ANT_LB"
       ],
-      "layer": 1,
-      "gap_mm": 0.18669
+      "layer": 2,
+      "gap_mm": 0.20140041
     },
     "same_layer_clearance_violations": [],
     "required_drill_edge_to_alien_copper_mm": 0.1759966,

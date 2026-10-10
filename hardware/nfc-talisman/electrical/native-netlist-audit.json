@@ -4,11 +4,11 @@
   "filter": "Include components where props['Convert to PCB'] != 'no' (case-insensitive).",
   "pcb_envelope_rule": "For core and panel, parse the first native JSON string only.",
   "input_sha256": {
-    "schematic_netlist": "0f7774ef284b54a3d5d8c95eca907674a83ae497edcd439cee319a1c9bcba926",
+    "schematic_netlist": "31986494de17b09b386c0fc0aeb50cc01387a9f5a3320fe688026f5c4e08baf7",
     "core_netlist": "8d78d767a990a8a1a1b675739d28d19f246644c105045e577d5bfb5e8e19788b",
     "panel_netlist": "8d78d767a990a8a1a1b675739d28d19f246644c105045e577d5bfb5e8e19788b",
-    "core_source": "68f0145ebe19c457b804dbc0a2442a2d0f57902f70794e9a54b175005f5a98ac",
-    "panel_source": "ab2c9b47595f17fed91e0a9963caa1feed33cde3dca1982c6ed54322ccca7f47"
+    "core_source": "f9f087c51f7f6af979cfcaa37604e5ee54addaa6ccabf67fca3f46b538326e93",
+    "panel_source": "3de99158186b06c76a53f8dcdf9e889a68c2440653eadbecec5c4ec13ed8251c"
   },
   "groups": {
     "schematic": {

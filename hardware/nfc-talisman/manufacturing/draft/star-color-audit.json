@@ -8,9 +8,9 @@
   },
   "source_sha256": {
     "artwork/sagittarius-color-print-candidate.png": "cdd50b75d9e39df0b7d6eb6d34ff55ce432a0ad7ed339f604b6241c19cde191b",
-    "eda/native/nfc-talisman-current.epro2": "b03f193656124011737287f7fe9b47f258f364c792c2a46d23c39e1744fa8ddc",
-    "eda/native/panel-source.jsonl": "ab2c9b47595f17fed91e0a9963caa1feed33cde3dca1982c6ed54322ccca7f47",
-    "manufacturing/draft/nfc-talisman-panel-draft.zip": "6ec0dbed56204dfafa776a43e777ecd64c8cbd8ee49ce3ef5338d71d5c9cbae7"
+    "eda/native/nfc-talisman-current.epro2": "a112c7ba85464c3434b8a8e59977fb62a4e4744eb201a8bfa366b8001f285a1d",
+    "eda/native/panel-source.jsonl": "3de99158186b06c76a53f8dcdf9e889a68c2440653eadbecec5c4ec13ed8251c",
+    "manufacturing/draft/nfc-talisman-panel-draft.zip": "c896e9fc71a24b6f806aa5824ebf6bf4011a14cc3614170ff5e89f9a49165aa0"
   },
   "native_object_id": "5c3603bb4caf2f18",
   "native_blob_reference": "9e2f24982d6b7d1065f53d8c1e9ce18d32c8696f01688e9f922a8f7d044018ac",
@@ -36,23 +36,23 @@
   "color_export_files": [
     {
       "name": "Fabrication_ColorfulTopSilkscreen.FCTS",
-      "bytes": 460035,
-      "sha256": "7c320cbaddb63507e6539360ef99799dd2862338cd40e2aac1a6928055942127"
+      "bytes": 460126,
+      "sha256": "bf19fe2152cf10ac056d1ab9bbc1d0f205670a1778aabb550b63dc9347bc0051"
     },
     {
       "name": "Fabrication_ColorfulBottomSilkscreen.FCBS",
-      "bytes": 87638,
-      "sha256": "447c47c85307766b87d2eb7b344a08eefe4a58b72cac2f1611f5028306a8f478"
+      "bytes": 87917,
+      "sha256": "2a492b3d5f93a249cccdf8f52e633779f4d7eb123119aaa51358e4bafe771bb3"
     },
     {
       "name": "Fabrication_ColorfulBoardOutlineLayer.FCBO",
       "bytes": 22920,
-      "sha256": "981c766b299175962a7f4be88c37b98309926064ec228aba855e455a6597d548"
+      "sha256": "d2be1e19a381118ea3a5b4c4786526577dec10cd6151083df7669f8578329391"
     },
     {
       "name": "Fabrication_ColorfulBoardOutlineMark.FCBM",
       "bytes": 26772,
-      "sha256": "741c4693eabc74a96bb7f089a9a69c9f9622266a18a062dc04e3e4878f589d84"
+      "sha256": "ad4ad205ac1bb3c4436c7226eb6b061e2b58de4b92b000a5cb68e9c67d4d898c"
     }
   ],
   "limitations": [

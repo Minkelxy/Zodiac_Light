@@ -1,7 +1,7 @@
 {
   "path": "manufacturing/draft/nfc-talisman-panel-cam-review.zip",
-  "bytes": 609400,
-  "sha256": "5d5efa41d6ef8160b85dd2dc5e0a7de6ff00cc750bdea486e3a62bc8a85ad70e",
+  "bytes": 609856,
+  "sha256": "6b2d0da3e3f29df6277a79c948c00646f0b1a0ca6be9543cf69e9f7493325fd7",
   "zip_entries": [
     "Gerber_TopLayer.GTL",
     "Gerber_BottomLayer.GBL",
@@ -20,7 +20,7 @@
     "Fabrication_ColorfulBoardOutlineMark.FCBM"
   ],
   "status": "draft_CAM_review_only",
-  "source_sha256": "6ec0dbed56204dfafa776a43e777ecd64c8cbd8ee49ce3ef5338d71d5c9cbae7",
+  "source_sha256": "c896e9fc71a24b6f806aa5824ebf6bf4011a14cc3614170ff5e89f9a49165aa0",
   "excluded_duplicate_drill": "Drill_PTH_Through_Via.DRL",
   "other_excluded_reference_files": [
     "Gerber_DocumentLayer.GDL",

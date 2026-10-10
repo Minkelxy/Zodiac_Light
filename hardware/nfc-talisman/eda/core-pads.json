@@ -782,7 +782,7 @@
         "primitiveType": "ComponentPad",
         "layer": 1,
         "padNumber": "2",
-        "x": -108.1,
+        "x": -100.2,
         "y": 0,
         "rotation": 0,
         "pad": [
@@ -815,7 +815,7 @@
         "primitiveType": "ComponentPad",
         "layer": 1,
         "padNumber": "1",
-        "x": -167.5,
+        "x": -159.6,
         "y": 0,
         "rotation": 0,
         "pad": [
@@ -854,7 +854,7 @@
         "primitiveType": "ComponentPad",
         "layer": 1,
         "padNumber": "2",
-        "x": 167.5,
+        "x": 159.6,
         "y": 157.5,
         "rotation": 0,
         "pad": [
@@ -887,7 +887,7 @@
         "primitiveType": "ComponentPad",
         "layer": 1,
         "padNumber": "1",
-        "x": 108.1,
+        "x": 100.2,
         "y": 157.5,
         "rotation": 0,
         "pad": [
@@ -998,7 +998,7 @@
         "primitiveType": "ComponentPad",
         "layer": 2,
         "padNumber": "2",
-        "x": -108.1,
+        "x": -100.2,
         "y": 0,
         "rotation": 0,
         "pad": [
@@ -1031,7 +1031,7 @@
         "primitiveType": "ComponentPad",
         "layer": 2,
         "padNumber": "1",
-        "x": -167.5,
+        "x": -159.6,
         "y": 0,
         "rotation": 0,
         "pad": [
@@ -1142,7 +1142,7 @@
         "primitiveType": "ComponentPad",
         "layer": 2,
         "padNumber": "2",
-        "x": 167.5,
+        "x": 159.6,
         "y": -157.5,
         "rotation": 0,
         "pad": [
@@ -1175,7 +1175,7 @@
         "primitiveType": "ComponentPad",
         "layer": 2,
         "padNumber": "1",
-        "x": 108.1,
+        "x": 100.2,
         "y": -157.5,
         "rotation": 0,
         "pad": [

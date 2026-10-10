@@ -6,8 +6,8 @@
   "files": [
     {
       "path": "manufacturing/draft/nfc-talisman-panel-draft.zip",
-      "bytes": 628904,
-      "sha256": "6ec0dbed56204dfafa776a43e777ecd64c8cbd8ee49ce3ef5338d71d5c9cbae7",
+      "bytes": 629343,
+      "sha256": "c896e9fc71a24b6f806aa5824ebf6bf4011a14cc3614170ff5e89f9a49165aa0",
       "zip_entries": [
         "Gerber_TopLayer.GTL",
         "Gerber_BottomLayer.GBL",
@@ -37,13 +37,13 @@
     },
     {
       "path": "manufacturing/draft/nfc-talisman-panel-pnp-all.csv",
-      "bytes": 3334,
-      "sha256": "be2d59372f8b0087cd419f912f2ea40d497f0f463c3da89dc5ada519fbf182bc"
+      "bytes": 3350,
+      "sha256": "7d863156d5e3337f1cb4896ac84e9bb42d670704c181411127aa00aa51f20370"
     },
     {
       "path": "eda/native/nfc-talisman-current.epro2",
-      "bytes": 186748,
-      "sha256": "b03f193656124011737287f7fe9b47f258f364c792c2a46d23c39e1744fa8ddc",
+      "bytes": 195717,
+      "sha256": "a112c7ba85464c3434b8a8e59977fb62a4e4744eb201a8bfa366b8001f285a1d",
       "zip_entries": [
         "IMAGE/",
         "project2.json",
@@ -56,13 +56,14 @@
     "CAM color pixel/alpha and vector/image compositing review for dark Sagittarius face",
     "CAM review of slots, tabs and 3 mm assembly rails",
     "LED physical polarity and rotation review",
-    "Bare-core and five-layer RF tuning, VOUT, Android/iPhone and optical acceptance"
+    "Bare-core and five-layer RF tuning, VOUT, Android/iPhone and optical acceptance",
+    "C1 current Murata C162182 is marked NRND in native metadata; same-spec CCTC C7393865 is Qty 0 alternate, not yet synchronized to native C1."
   ],
   "derived_files": [
     {
       "path": "manufacturing/draft/nfc-talisman-panel-cam-review.zip",
-      "bytes": 609400,
-      "sha256": "5d5efa41d6ef8160b85dd2dc5e0a7de6ff00cc750bdea486e3a62bc8a85ad70e",
+      "bytes": 609856,
+      "sha256": "6b2d0da3e3f29df6277a79c948c00646f0b1a0ca6be9543cf69e9f7493325fd7",
       "zip_entries": [
         "Gerber_TopLayer.GTL",
         "Gerber_BottomLayer.GBL",
@@ -88,8 +89,8 @@
     },
     {
       "path": "manufacturing/draft/four-led-panel-pnp.csv",
-      "bytes": 2612,
-      "sha256": "cf3b1cd167921cb367fc5dcc4096b714de309422e1a3bff3e713706c032af036"
+      "bytes": 2628,
+      "sha256": "2212e094e7029b08a778017d33ff73cd4045fc0f33d78cc79dd5356023c23ef5"
     },
     {
       "path": "manufacturing/draft/two-led-bom.csv",
@@ -98,8 +99,8 @@
     },
     {
       "path": "manufacturing/draft/two-led-panel-pnp.csv",
-      "bytes": 2294,
-      "sha256": "b0662abbcccc8a7f9fddd3f39b484bb75364390f2a2c1ae7f78384bcd3b8c43d"
+      "bytes": 2310,
+      "sha256": "cdbcf7fd419e7d3ef34be8da7a955101b89fd4bb741014ba829dcae04215148e"
     },
     {
       "path": "manufacturing/draft/assembly-variants.json",
@@ -108,38 +109,38 @@
     },
     {
       "path": "manufacturing/draft/cam-audit.json",
-      "bytes": 25300,
-      "sha256": "01c9b452b2aeac15edc28fc81ab57c5f37e0ce14ba7d02dd81f1f9b6892876d5"
+      "bytes": 25312,
+      "sha256": "c0d0e1917eadcb57c45b3d03bfaafcbbe94c1c5987e9f31c5c668ba49c700c7e"
     },
     {
       "path": "manufacturing/draft/cam-package-manifest.json",
       "bytes": 1349,
-      "sha256": "e416c06ce252cd9a5110e04ac8f3b6ef66a0845be395567a5394c9f5432f70ea"
+      "sha256": "551f69e8498ddd71aa2df63c69a7e4df2dac615a66cee0ac03fc28862bf19f24"
     },
     {
       "path": "electrical/native-copper-audit.json",
-      "bytes": 11941,
-      "sha256": "4fb96e3fa0dffaca6d09265e3e2db6be4822712cc64402b12c94f2bb3c060b3e"
+      "bytes": 11976,
+      "sha256": "138ad01336ab815a3dc895d7de80d5ae41489c6dca3b0f2539968b9ea253e3bb"
     },
     {
       "path": "electrical/native-netlist-audit.json",
       "bytes": 6922,
-      "sha256": "aafce3424bb25e7a853fabeb0992bf90dc0d497bc5d45b9905e8445651baf038"
+      "sha256": "95eb4d321dd925e8fd743436cfbf9a3b6c18d308a4615e27b8c599040fc6c34e"
     },
     {
       "path": "eda/check-summary.json",
       "bytes": 4107,
-      "sha256": "a48a41775fe61a334d8e44120aae6c547387b0a9c0bdf81eabfa93131f36c6fc"
+      "sha256": "007fde8d505d29cea9152317ebce0f8ff9cd91eb16356804e53822bceb08e212"
     },
     {
       "path": "manufacturing/draft/star-face-audit.json",
       "bytes": 54116,
-      "sha256": "af1f85f032db535e0853eaa8c095eb077be5832f17d4eac073c9932021044bb9"
+      "sha256": "f2587ebbbe3bd325bcd1b9dd5a39da290810a80f51fe817df94613b88efc2be1"
     },
     {
       "path": "manufacturing/draft/star-color-audit.json",
       "bytes": 2421,
-      "sha256": "78b20fcaebe5d0274a3886c8782c1669247a71dffdde1ac9febb85f9fcbadccd"
+      "sha256": "342696e56f141fbde607777dcf15eab6ea192c5c5e5de4d4cd0bf84da58f540b"
     },
     {
       "path": "artwork/sagittarius-color-print-candidate.png",
@@ -150,7 +151,54 @@
       "path": "artwork/sagittarius-linework-review.json",
       "bytes": 1063,
       "sha256": "0221abe37f461bc2e08453bc60a04b71703455e6f569fdfca485ce5a816d9bcd"
+    },
+    {
+      "path": "eda/schematic-review.svg",
+      "bytes": 122338,
+      "sha256": "92f6e608980d7f928e91c46abc7865762595886ebce45de447b57579309fc8d3"
+    },
+    {
+      "path": "eda/schematic-review.png",
+      "bytes": 578347,
+      "sha256": "e35aacfa844796dc873c1789b1c8338d9f63f7b8d76c50dfa5213d6d7d2c21a0"
+    },
+    {
+      "path": "eda/layout-review-v3.json",
+      "bytes": 4412,
+      "sha256": "ccb4fa229ca1bcc430b5363decdd5ac927fdd4d92fc44a532fe25b6ef3e619ea"
+    },
+    {
+      "path": "eda/layout-application-v3.json",
+      "bytes": 1570,
+      "sha256": "938cfe259817e92a141483530c00c8b4d8a9ba9013aade92ded6e5b251ef0f3a"
+    },
+    {
+      "path": "geometry/core-layout-review-v3.svg",
+      "bytes": 123421,
+      "sha256": "eb0ad89712142e91d664a5c606d74b34b44bbedf162d1b74662e3e28dcd0cf03"
+    },
+    {
+      "path": "geometry/core-layout-review-v3.png",
+      "bytes": 459647,
+      "sha256": "fb6aa6572f4feb800b940025c37704c54e8b50b10c2f69cbde43d182f1598777"
+    },
+    {
+      "path": "manufacturing/bom-ready.csv",
+      "bytes": 2032,
+      "sha256": "b1a34d0801bae1bf738e1e9da50f6a74367f59cefed957942b5cf4a9821303e9"
+    },
+    {
+      "path": "manufacturing/bom-review.md",
+      "bytes": 5408,
+      "sha256": "77b7c068db7fa26c7df38fc2232663a6e55cfee5418817a47102f68afb9fa485"
+    },
+    {
+      "path": "manufacturing/design-review-v3.md",
+      "bytes": 4154,
+      "sha256": "420a85768a92dcb776d1144fcfe569d16ff460e8c2d0c9d9b49a8f241c999543"
     }
   ],
+  "layout_review": "v3 applied to schematic, core and panel; electrical identities preserved; native ERC 0 errors/1 existing ATTRMATCHCODE warning, both PCB DRC empty",
+  "sourcing_note": "C1 current Murata C162182 is marked NRND in native metadata; same-spec CCTC C7393865 is Qty 0 alternate, not yet synchronized to native C1.",
   "cam_drill_note": "The raw EDA ZIP includes duplicate PTH programs. The review ZIP retains exactly one PTH file and one NPTH file; retained manufacturing-layer bytes are unchanged."
 }

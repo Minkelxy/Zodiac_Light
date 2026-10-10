@@ -1,0 +1,75 @@
+{
+  "status": "applied_saved_reopened",
+  "changes": [
+    {
+      "name": "core",
+      "uuid": "eb14b9eaec4f920c",
+      "drc": [],
+      "netlistContractUnchanged": true,
+      "actual": [
+        {
+          "ref": "R1",
+          "id": "e25abbd50c954f9a",
+          "x": -129.9,
+          "y": 0
+        },
+        {
+          "ref": "R2",
+          "id": "d9fff5ffff2f73f3",
+          "x": 129.9,
+          "y": 157.4803
+        },
+        {
+          "ref": "R3",
+          "id": "a3880816cb907cd4",
+          "x": -129.9,
+          "y": 0
+        },
+        {
+          "ref": "R4",
+          "id": "1968272a10277b12",
+          "x": 129.9,
+          "y": -157.4803
+        }
+      ],
+      "movedComponents": 4,
+      "correctedRoutes": 10,
+      "savedReopened": true
+    },
+    {
+      "name": "panel",
+      "uuid": "4a4719695b24dc2b",
+      "drc": [],
+      "netlistContractUnchanged": true,
+      "actual": [
+        {
+          "ref": "R1",
+          "id": "ad6ab953596758c4",
+          "x": 1838.6039,
+          "y": 1968.5039000000002
+        },
+        {
+          "ref": "R2",
+          "id": "bf28374ca5e64db0",
+          "x": 2098.4039,
+          "y": 2125.9843
+        },
+        {
+          "ref": "R3",
+          "id": "ad7cec338e0de3be",
+          "x": 1838.6039,
+          "y": 1968.5039000000002
+        },
+        {
+          "ref": "R4",
+          "id": "c7c545773a7281b9",
+          "x": 2098.4039,
+          "y": 1811.0236
+        }
+      ],
+      "movedComponents": 4,
+      "correctedRoutes": 10,
+      "savedReopened": true
+    }
+  ]
+}
