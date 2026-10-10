@@ -6,6 +6,8 @@
 
 每张为 **1024×1024 RGBA**，图案最长边约 **820 px**，等比缩放、居中放置，四周至少约 100 px 透明留白。只含动物图案，不含石质底座、边框、阴影、文字或棋盘格。预览用棋盘格另见 [总览 JPG](restored-contact-sheet.jpg)，它不属于透明图案文件。
 
+2026-10-10 羊图修订：恢复源图连续的薄荷绿头部和两道空心耳线，纠正上一版误拆头部为散点的问题；身体中央仍透明。两步原生 ImageGen 修复的输入、原稿及完整提示词见 [修订记录](raw/sheep-revision.json)，其他十一张成品保持原文件内容。
+
 | 生肖 | 文件 | 主要保留特征 |
 |---|---|---|
 | 鼠 | [rat-restored.png](rat-restored.png) | 灰色右向奔跑、长回弯尾与分段肢体 |
@@ -15,7 +17,7 @@
 | 龙 | [dragon-restored.png](dragon-restored.png) | 红色左向东方龙、弯身与分段爪尾 |
 | 蛇 | [snake-restored.png](snake-restored.png) | 绿色左向蛇头、盘绕曲线及原有断口 |
 | 马 | [horse-restored.png](horse-restored.png) | 紫色左向马头、六块主分段及锯齿鬃毛 |
-| 羊 | [sheep-restored.png](sheep-restored.png) | 青绿右向羊轮廓、身体内部透明 |
+| 羊 | [sheep-restored.png](sheep-restored.png) | 薄荷绿右向羊头、空心耳线、背/尾与四腿笔画，躯干中央透明 |
 | 猴 | [monkey-restored.png](monkey-restored.png) | 赭色坐姿猴、左侧大卷尾 |
 | 鸡 | [rooster-restored.png](rooster-restored.png) | 红色右向单鸡、左侧尾羽及分段脚 |
 | 狗 | [dog-restored.png](dog-restored.png) | 黄色右向站姿狗、上卷尾与分段腿 |

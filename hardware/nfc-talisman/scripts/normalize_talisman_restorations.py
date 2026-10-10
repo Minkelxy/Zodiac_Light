@@ -26,7 +26,7 @@ REVIEW_NOTES = {
     'dragon': '主要红色片段与环绕关系保留；尖端、内扇形与下方片段仍比源图夸张，多次生成后尚未精确匹配。',
     'snake': '保留左上头部、S形颈部和分开的盘绕笔画；色带更宽、曲线更规整。',
     'horse': '保留左向紫色六块主分段；面部紫块来自源图着色片段，大块未着色头颈内部透明。',
-    'sheep': '已纠正初稿实心脸部；头部和身体内部透明，分散头部细笔仍需对照。',
+    'sheep': '2026-10-10 修正：恢复原有连续薄荷绿羊头、尖耳/鼻梁/颊侧及两道空心耳线；背线接回头后，中央躯干透明。环线、轮廓曲率与右腿内缝仍有重建差异。',
     'monkey': '坐姿、左侧卷尾及肢体空隙保留；卷尾和躯干笔画仍明显偏粗。',
     'rooster': '单鸡、右上头冠/左尾/右下身体/下方脚保留；部分红块扩大。',
     'dog': '右向站姿、四腿、卷尾及透明躯干保留；胸颈小片和线宽需对照。',
@@ -86,7 +86,7 @@ def normalize(item):
     assert abs((final_bounds[1]+final_bounds[3])/2-CANVAS/2) <= 3
     source_path = ROOT / item['path']
     assert sha(source_path) == item['sha256'], f'Source bytes changed: {ident}'
-    return {
+    record = {
         'id': ident, 'animal_en': item['animal_en'], 'animal_zh': item['animal_zh'],
         'path': output.relative_to(ROOT).as_posix(),
         'source_path': item['path'], 'source_page': item['file_page'],
@@ -105,6 +105,18 @@ def normalize(item):
                           'uniform_scale': scale, 'resized_dimensions': list(resized_size),
                           'placement_xy': list(offset)},
     }
+    revision_path = OUT / 'raw' / f'{ident}-revision.json'
+    if revision_path.is_file():
+        revision = json.loads(revision_path.read_text(encoding='utf-8'))
+        for step in revision['steps']:
+            for key in ('inputs', 'output', 'prompt'):
+                paths = step[key] if isinstance(step[key], list) else [step[key]]
+                for path in paths:
+                    assert (ROOT / path).is_file(), f'Missing revision provenance: {path}'
+        record['revision_path'] = revision_path.relative_to(ROOT).as_posix()
+        record['revision_sha256'] = sha(revision_path)
+        record['revision_label'] = revision['label']
+    return record
 
 
 def contact_sheet(items):

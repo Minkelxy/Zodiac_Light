@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-10-10T12:42:59.409654+00:00",
+  "generated_utc": "2026-10-10T13:05:10.642918+00:00",
   "title": "十二符咒 · 修复正视透明 PNG · v1",
   "tool": "Native ImageGen; separate reference-guided restoration for each animal",
   "method": "Reconstruct original motif, rectify the talisman face plane; preserve animal pose. Pillow performs transparent-margin crop, uniform resize and canvas placement only.",
@@ -440,56 +440,59 @@
       "source_page": "https://jackiechanadventures.fandom.com/wiki/File:Sheep_Talisman.png",
       "source_sha256": "e1d2d7bce49639cf4e05bcc333e014db5f313292ebbfdfc7ec47015248a2c791",
       "native_path": "talisman-restored-v1/raw/sheep-native.png",
-      "native_sha256": "ffe7e92eb05a9b4ebf729d681b7dbee2d63fbd933af7c87b3e434dc0bc16308e",
+      "native_sha256": "bf62267e655a653315ccd07eb8be4b5cad9432ba296ba25396dc7ed8de48f130",
       "native_dimensions": [
         1254,
         1254
       ],
       "prompt_path": "talisman-restored-v1/raw/sheep-prompt.txt",
-      "prompt_sha256": "873339d4228395fc4684347ee3589a7b0aaf11c59d05729e2cd8af2c7597602b",
-      "output_sha256": "2777cf6144dbae2ffbf3a07a58bf8f2747e98e3f2baec33c594cb1856a039c77",
+      "prompt_sha256": "2e620affb35058c857a65955aace9b07f32ea00e98a6568df691c9cedaec6b86",
+      "output_sha256": "f936be7f6a83b9385d4ddbdc704670069073a8741c1bc5acf2daf31f600d41e9",
       "dimensions": [
         1024,
         1024
       ],
-      "bytes": 214798,
+      "bytes": 239004,
       "visible_bounds_xyxy": [
-        104,
-        208,
+        103,
+        213,
         920,
-        815
+        809
       ],
       "visual_status": "reviewed_draft",
-      "visual_note": "已纠正初稿实心脸部；头部和身体内部透明，分散头部细笔仍需对照。",
+      "visual_note": "2026-10-10 修正：恢复原有连续薄荷绿羊头、尖耳/鼻梁/颊侧及两道空心耳线；背线接回头后，中央躯干透明。环线、轮廓曲率与右腿内缝仍有重建差异。",
       "alpha_nonzero_bounds_xyxy": [
         102,
-        206,
+        212,
         922,
-        817
+        811
       ],
       "normalization": {
         "native_core_bounds_alpha_ge_8": [
+          98,
           274,
-          379,
-          1088,
-          985
+          1212,
+          1087
         ],
         "crop_bounds_xyxy": [
+          96,
           272,
-          377,
-          1090,
-          987
+          1214,
+          1089
         ],
-        "uniform_scale": 1.0024449877750612,
+        "uniform_scale": 0.7334525939177102,
         "resized_dimensions": [
           820,
-          611
+          599
         ],
         "placement_xy": [
           102,
-          206
+          212
         ]
-      }
+      },
+      "revision_path": "talisman-restored-v1/raw/sheep-revision.json",
+      "revision_sha256": "ac45642ac56a398fdfaabd38c24cf9bc9a5d2b6d30b635c908384f1fdc6f986b",
+      "revision_label": "羊头已修正 · 2026-10-10"
     },
     {
       "id": "monkey",

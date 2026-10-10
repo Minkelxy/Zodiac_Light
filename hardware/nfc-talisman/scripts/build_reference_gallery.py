@@ -82,11 +82,16 @@ def main():
                 if hashlib.sha256((ROOT/display_path).read_bytes()).hexdigest() != restore['output_sha256']:
                     raise ValueError('Restoration bytes changed: ' + item['id'])
                 assert restore['dimensions'] == [1024, 1024]
+                # Changed artwork gets a new URL so previously open galleries
+                # do not reuse the older PNG from their browser cache.
+                display_path += '?v=' + restore['output_sha256'][:12]
                 display_caption = 'v1 修复正视稿 · 1024 × 1024 · 透明'
                 restore_attribute = f' data-restored="{esc(display_path)}"'
                 restore_link = link(display_path, '修复 PNG') + ' '
                 if restore.get('visual_status') == 'needs_refinement':
                     review_warning = '<p class="review-warning">待精修：' + esc(restore['visual_note']) + '</p>'
+                if restore.get('revision_label'):
+                    review_warning += '<p class="revision-note">' + esc(restore['revision_label']) + '</p>'
             fronts.append(f'''<article class="card pattern-card" data-original="{esc(path)}" data-pattern="{esc(pattern_path)}"{restore_attribute} data-caption="{esc(caption)}" data-name="{esc(item['animal_zh'])}">
 <a class="image talisman-pattern" href="{esc(display_path)}"><img src="{esc(display_path)}" alt="{esc(item['animal_zh'])}{esc(display_caption)}" loading="lazy"></a>
 <h3>{esc(item['animal_zh'])} · {esc(item['animal_en'])}</h3><p class="image-caption">{esc(display_caption)}</p>

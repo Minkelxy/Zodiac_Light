@@ -1,0 +1,32 @@
+{
+  "date": "2026-10-10",
+  "label": "羊头已修正 · 2026-10-10",
+  "tool": "Native ImageGen",
+  "problem": "Earlier prompt wrongly required the whole head to be transparent and split the source's connected mint head into floating fragments.",
+  "steps": [
+    {
+      "name": "Restore original painted head",
+      "inputs": [
+        "talisman-restored-v1/raw/sheep-source-detail.png",
+        "talisman-restored-v1/raw/sheep-pattern-detail.png",
+        "talisman-restored-v1/raw/sheep-revision-base.png"
+      ],
+      "output": "talisman-restored-v1/raw/sheep-head-rebuild-input.png",
+      "prompt": "talisman-restored-v1/raw/sheep-head-rebuild-prompt.txt"
+    },
+    {
+      "name": "Correct two hollow ear/horn loops and back connection",
+      "inputs": [
+        "talisman-restored-v1/raw/sheep-head-rebuild-input.png",
+        "talisman-restored-v1/raw/sheep-source-detail.png",
+        "talisman-restored-v1/raw/sheep-pattern-detail.png"
+      ],
+      "output": "talisman-restored-v1/raw/sheep-native.png",
+      "prompt": "talisman-restored-v1/raw/sheep-prompt.txt"
+    }
+  ],
+  "review": "Independent visual review confirms main head structure corrected. Loop curvature, outline interpretation and right paired-leg gap remain draft differences.",
+  "previous_asset": "talisman-restored-v1/raw/sheep-revision-base.png",
+  "previous_prompt": "talisman-restored-v1/raw/sheep-revision-base-prompt.txt",
+  "guide_method": "Original image cropped and nearest-neighbor enlarged 9× only; source-pixel pattern enlarged 9× uniformly on zero-RGB transparent canvas. No anatomy drawn with Python."
+}

@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-10-10T12:47:46.814661+00:00",
+  "generated_utc": "2026-10-10T13:06:41.780525+00:00",
   "talisman_png_count": 12,
   "talisman_pattern_png_count": 12,
   "talisman_restored_png_count": 12,
@@ -7,13 +7,13 @@
   "files": [
     {
       "path": "index.html",
-      "bytes": 23341,
-      "sha256": "889428fa9b48c99ff3500ee2f1431de2f23d136406c0c8d89763a796145aed1c"
+      "bytes": 24119,
+      "sha256": "a24dea64e6e6a40a818bd5d846c26359f9ad094ea60789421d783d8cda0b9abd"
     },
     {
       "path": "README.md",
-      "bytes": 7580,
-      "sha256": "cc4d0523db6659487db8a3d841116a1d80442fe9bc765bb94a23e40255f096fc"
+      "bytes": 7831,
+      "sha256": "1cfe3b4404058ec2c4a53ccd77871ae956e55ae4c9f6c1dbab98816e92db5eef"
     },
     {
       "path": "source-talisman/Dog_Talisman.png",
@@ -312,8 +312,8 @@
     },
     {
       "path": "talisman-restored-v1/manifest.json",
-      "bytes": 22229,
-      "sha256": "94431b1b36b75fd7c37249c708b8a034286a80db489b150b366f027b617420f8"
+      "bytes": 22559,
+      "sha256": "2bdac8438e89544b5fa7f94e0a74b914168fcb653fbe157da77ec6dc19b5b9ba"
     },
     {
       "path": "talisman-restored-v1/monkey-restored.png",
@@ -332,8 +332,8 @@
     },
     {
       "path": "talisman-restored-v1/prompts.json",
-      "bytes": 22268,
-      "sha256": "8d3c11eca5ef53d37bca86b2ae75496c80c1bc5945c94e3100031d1377eaad12"
+      "bytes": 22056,
+      "sha256": "2a021b4acb8f49738f6eb4e6aa8d3d1a1967596c373a2c400084933b3811739e"
     },
     {
       "path": "talisman-restored-v1/rabbit-restored.png",
@@ -451,14 +451,49 @@
       "sha256": "04d3d4f9c46a281d6885d28e5048eeafd5ea7559fbe4fb1a23ab44ddf2589279"
     },
     {
+      "path": "talisman-restored-v1/raw/sheep-head-rebuild-input.png",
+      "bytes": 408781,
+      "sha256": "3c0e3e6194ab85f862ca801b83f39363726182b14bf49cbd763587e63fa3c3d9"
+    },
+    {
+      "path": "talisman-restored-v1/raw/sheep-head-rebuild-prompt.txt",
+      "bytes": 2078,
+      "sha256": "7e468f77212a8a41e427115b056a69a279710ba4f09d5acdffde088a2b6d0422"
+    },
+    {
       "path": "talisman-restored-v1/raw/sheep-native.png",
-      "bytes": 246124,
-      "sha256": "ffe7e92eb05a9b4ebf729d681b7dbee2d63fbd933af7c87b3e434dc0bc16308e"
+      "bytes": 401857,
+      "sha256": "bf62267e655a653315ccd07eb8be4b5cad9432ba296ba25396dc7ed8de48f130"
+    },
+    {
+      "path": "talisman-restored-v1/raw/sheep-pattern-detail.png",
+      "bytes": 15134,
+      "sha256": "8866817fe9ab87d6ebd1128cd57120258336adbbdfdf6ebbdc4e24173ed54584"
     },
     {
       "path": "talisman-restored-v1/raw/sheep-prompt.txt",
+      "bytes": 1300,
+      "sha256": "2e620affb35058c857a65955aace9b07f32ea00e98a6568df691c9cedaec6b86"
+    },
+    {
+      "path": "talisman-restored-v1/raw/sheep-revision-base-prompt.txt",
       "bytes": 1513,
       "sha256": "873339d4228395fc4684347ee3589a7b0aaf11c59d05729e2cd8af2c7597602b"
+    },
+    {
+      "path": "talisman-restored-v1/raw/sheep-revision-base.png",
+      "bytes": 214798,
+      "sha256": "2777cf6144dbae2ffbf3a07a58bf8f2747e98e3f2baec33c594cb1856a039c77"
+    },
+    {
+      "path": "talisman-restored-v1/raw/sheep-revision.json",
+      "bytes": 1609,
+      "sha256": "ac45642ac56a398fdfaabd38c24cf9bc9a5d2b6d30b635c908384f1fdc6f986b"
+    },
+    {
+      "path": "talisman-restored-v1/raw/sheep-source-detail.png",
+      "bytes": 32752,
+      "sha256": "01c9c72efe138a9dca2214a6152d6d5708d8562146a924534386a7794fa0b2cb"
     },
     {
       "path": "talisman-restored-v1/raw/snake-native.png",
@@ -482,13 +517,13 @@
     },
     {
       "path": "talisman-restored-v1/README.md",
-      "bytes": 3599,
-      "sha256": "97a660d74f2a6c755747a5a98af9d6ebf3f5304303b8a418ba921ffc72374aa6"
+      "bytes": 3954,
+      "sha256": "b79375aa12d0622c83474ec4e3b124c87005b1e88dc4391eb379f16cebc3a6d8"
     },
     {
       "path": "talisman-restored-v1/restored-contact-sheet.jpg",
-      "bytes": 569205,
-      "sha256": "5176ff8456fd44b21a6d25c19c2b89118b07d3fad5b3b8ccc2940f5d508d8336"
+      "bytes": 570504,
+      "sha256": "2ff99f7c92237ca152afd6ba19753b419ae05b942e1ac5fada42426a8a359935"
     },
     {
       "path": "talisman-restored-v1/rooster-restored.png",
@@ -497,8 +532,8 @@
     },
     {
       "path": "talisman-restored-v1/sheep-restored.png",
-      "bytes": 214798,
-      "sha256": "2777cf6144dbae2ffbf3a07a58bf8f2747e98e3f2baec33c594cb1856a039c77"
+      "bytes": 239004,
+      "sha256": "f936be7f6a83b9385d4ddbdc704670069073a8741c1bc5acf2daf31f600d41e9"
     },
     {
       "path": "talisman-restored-v1/snake-restored.png",
@@ -513,12 +548,12 @@
     {
       "path": "talisman-restored-v1/validation.json",
       "bytes": 733,
-      "sha256": "5d1a2cedb631632728b44258b5822986e303463ed9bf0ef28aa97d3b4fb91954"
+      "sha256": "b6694949f9214e4cccee6686bf2b149950bd883f2ea17dc7aa4be15c940436bc"
     },
     {
       "path": "talisman-restored-v1/visual-review.md",
-      "bytes": 2832,
-      "sha256": "6e345264b633adcf2582d02267ff74f84dada89e9541435ea5683c650b08b7cf"
+      "bytes": 3145,
+      "sha256": "f289dfd6d4b2dece9b30a1c4c21ffae7e81d9069a97e2c7f9cbb6c6f441c78c4"
     },
     {
       "path": "zodiac-modern/Aqr/aqr-modern-dark.png",

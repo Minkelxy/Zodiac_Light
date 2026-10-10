@@ -16,6 +16,8 @@
 
 [修复版说明与十二张下载](talisman-restored-v1/README.md)、[总览 JPG](talisman-restored-v1/restored-contact-sheet.jpg)、[完整提示词](talisman-restored-v1/prompts.json)、[清单](talisman-restored-v1/manifest.json)、[文件/布局检查](talisman-restored-v1/validation.json)。生成原稿和提示词均归档在 `raw/`。这属于低分辨率参考图的修复重建，不能保证精确恢复原图中已丢失的细节；可用索引三种显示方式并排核对。
 
+2026-10-10 已修正羊图：恢复被误拆为散点的连续薄荷绿羊头及两道空心耳线，并保留透明躯干。索引和两份下载包同步采用修订稿；详见 [羊图修订记录](talisman-restored-v1/raw/sheep-revision.json)。
+
 ### 原像素透明图案（对照版）
 
 `talisman-patterns/` 保留十二张 `*-pattern.png`，只保留动物图案，石质底座、侧面厚度和八边形外框设为透明。源图的原始画布、颜色和朝向均保留；马图仍为左向紫色图案。索引中的棋盘格仅是网页预览背景，不包含在 PNG 中。
