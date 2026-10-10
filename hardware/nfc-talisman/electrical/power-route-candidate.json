@@ -1,0 +1,2390 @@
+{
+  "status": "draft_offline_route_candidate",
+  "draft": true,
+  "sources": [
+    "eda/core-pads.json",
+    "eda/logs/22-audit-core-tracks.json",
+    "electrical/antenna-geometry-review.json:proposal_geometry",
+    "electrical/antenna-coil-fill-candidate.json"
+  ],
+  "constraints": {
+    "required_clearance_mm": 0.1524,
+    "route_clearance_target_mm": 0.2,
+    "coordinate_grid_mil": 0.1,
+    "coordinates_quantized_before_audit": true,
+    "trace_width_mm": 0.2032,
+    "via_drill_mm": 0.2,
+    "via_diameter_mm": 0.45,
+    "board_outline": "reviewed 37 mm octagon"
+  },
+  "connectivity": {
+    "VOUT": {
+      "connected": true,
+      "pins": [
+        "U1.6",
+        "U1.7",
+        "C1.1",
+        "R1.1",
+        "R2.1",
+        "R3.1",
+        "R4.1",
+        "R5.1",
+        "R6.1",
+        "R7.1"
+      ],
+      "disconnected": []
+    },
+    "GND": {
+      "connected": true,
+      "pins": [
+        "U1.2",
+        "C1.2",
+        "D1.1",
+        "D2.1",
+        "D3.1",
+        "D4.1"
+      ],
+      "disconnected": []
+    },
+    "ANT_LA": {
+      "connected": true,
+      "pins": [
+        "U1.1",
+        "CT1.1",
+        "CT2.1"
+      ],
+      "disconnected": []
+    },
+    "ANT_LB": {
+      "connected": true,
+      "pins": [
+        "U1.8",
+        "CT1.2",
+        "CT2.2"
+      ],
+      "disconnected": []
+    }
+  },
+  "routing_records": [
+    {
+      "net": "ANT_LA",
+      "pins": [
+        {
+          "pin": "U1.1",
+          "role": "seed"
+        },
+        {
+          "pin": "CT2.1",
+          "role": "routed",
+          "path_nodes": 17,
+          "layer_changes": 0
+        },
+        {
+          "pin": "CT1.1",
+          "role": "routed",
+          "path_nodes": 17,
+          "layer_changes": 0
+        }
+      ]
+    },
+    {
+      "net": "ANT_LB",
+      "pins": [
+        {
+          "pin": "U1.8",
+          "role": "seed"
+        },
+        {
+          "pin": "CT2.2",
+          "role": "routed",
+          "path_nodes": 16,
+          "layer_changes": 0
+        },
+        {
+          "pin": "CT1.2",
+          "role": "routed",
+          "path_nodes": 19,
+          "layer_changes": 0
+        }
+      ]
+    },
+    {
+      "net": "VOUT",
+      "pins": [
+        {
+          "pin": "U1.6",
+          "role": "seed"
+        },
+        {
+          "pin": "U1.7",
+          "role": "routed",
+          "path_nodes": 5,
+          "layer_changes": 0
+        },
+        {
+          "pin": "C1.1",
+          "role": "routed",
+          "path_nodes": 12,
+          "layer_changes": 0
+        },
+        {
+          "pin": "R6.1",
+          "role": "routed",
+          "path_nodes": 56,
+          "layer_changes": 0
+        },
+        {
+          "pin": "R7.1",
+          "role": "routed",
+          "path_nodes": 34,
+          "layer_changes": 0
+        },
+        {
+          "pin": "R5.1",
+          "role": "routed",
+          "path_nodes": 21,
+          "layer_changes": 0
+        },
+        {
+          "pin": "R1.1",
+          "role": "routed",
+          "path_nodes": 15,
+          "layer_changes": 0
+        },
+        {
+          "pin": "R2.1",
+          "role": "routed",
+          "path_nodes": 27,
+          "layer_changes": 0
+        },
+        {
+          "pin": "R4.1",
+          "role": "routed",
+          "path_nodes": 11,
+          "layer_changes": 1
+        },
+        {
+          "pin": "R3.1",
+          "role": "routed",
+          "path_nodes": 12,
+          "layer_changes": 1
+        }
+      ]
+    },
+    {
+      "net": "GND",
+      "pins": [
+        {
+          "pin": "U1.2",
+          "role": "seed"
+        },
+        {
+          "pin": "C1.2",
+          "role": "routed",
+          "path_nodes": 41,
+          "layer_changes": 2
+        },
+        {
+          "pin": "D2.1",
+          "role": "routed",
+          "path_nodes": 26,
+          "layer_changes": 1
+        },
+        {
+          "pin": "D4.1",
+          "role": "routed",
+          "path_nodes": 32,
+          "layer_changes": 0
+        },
+        {
+          "pin": "D1.1",
+          "role": "routed",
+          "path_nodes": 47,
+          "layer_changes": 0
+        },
+        {
+          "pin": "D3.1",
+          "role": "routed",
+          "path_nodes": 8,
+          "layer_changes": 1
+        }
+      ]
+    }
+  ],
+  "tracks": [
+    {
+      "id": "ANT_LA_L1_1",
+      "net": "ANT_LA",
+      "layer": 1,
+      "width_mm": 0.2032,
+      "start_mm": [
+        -0.254,
+        2.54
+      ],
+      "end_mm": [
+        -0.22098,
+        2.49936
+      ],
+      "start_native_mil": [
+        -10.0,
+        100.0
+      ],
+      "end_native_mil": [
+        -8.7,
+        98.4
+      ],
+      "to_pin": null
+    },
+    {
+      "id": "ANT_LA_L1_2",
+      "net": "ANT_LA",
+      "layer": 1,
+      "width_mm": 0.2032,
+      "start_mm": [
+        -0.254,
+        1.778
+      ],
+      "end_mm": [
+        -0.254,
+        2.54
+      ],
+      "start_native_mil": [
+        -10.0,
+        70.0
+      ],
+      "end_native_mil": [
+        -10.0,
+        100.0
+      ],
+      "to_pin": null
+    },
+    {
+      "id": "ANT_LA_L1_3",
+      "net": "ANT_LA",
+      "layer": 1,
+      "width_mm": 0.2032,
+      "start_mm": [
+        -0.381,
+        1.651
+      ],
+      "end_mm": [
+        -0.254,
+        1.778
+      ],
+      "start_native_mil": [
+        -15.0,
+        65.0
+      ],
+      "end_native_mil": [
+        -10.0,
+        70.0
+      ],
+      "to_pin": null
+    },
+    {
+      "id": "ANT_LA_L1_4",
+      "net": "ANT_LA",
+      "layer": 1,
+      "width_mm": 0.2032,
+      "start_mm": [
+        -0.381,
+        1.524
+      ],
+      "end_mm": [
+        -0.381,
+        1.651
+      ],
+      "start_native_mil": [
+        -15.0,
+        60.0
+      ],
+      "end_native_mil": [
+        -15.0,
+        65.0
+      ],
+      "to_pin": null
+    },
+    {
+      "id": "ANT_LA_L1_5",
+      "net": "ANT_LA",
+      "layer": 1,
+      "width_mm": 0.2032,
+      "start_mm": [
+        -0.508,
+        1.397
+      ],
+      "end_mm": [
+        -0.381,
+        1.524
+      ],
+      "start_native_mil": [
+        -20.0,
+        55.0
+      ],
+      "end_native_mil": [
+        -15.0,
+        60.0
+      ],
+      "to_pin": null
+    },
+    {
+      "id": "ANT_LA_L1_6",
+      "net": "ANT_LA",
+      "layer": 1,
+      "width_mm": 0.2032,
+      "start_mm": [
+        -0.508,
+        0.762
+      ],
+      "end_mm": [
+        -0.508,
+        1.397
+      ],
+      "start_native_mil": [
+        -20.0,
+        30.0
+      ],
+      "end_native_mil": [
+        -20.0,
+        55.0
+      ],
+      "to_pin": null
+    },
+    {
+      "id": "ANT_LA_L1_7",
+      "net": "ANT_LA",
+      "layer": 1,
+      "width_mm": 0.2032,
+      "start_mm": [
+        -0.635,
+        0.635
+      ],
+      "end_mm": [
+        -0.508,
+        0.762
+      ],
+      "start_native_mil": [
+        -25.0,
+        25.0
+      ],
+      "end_native_mil": [
+        -20.0,
+        30.0
+      ],
+      "to_pin": null
+    },
+    {
+      "id": "ANT_LA_L1_8",
+      "net": "ANT_LA",
+      "layer": 1,
+      "width_mm": 0.2032,
+      "start_mm": [
+        -0.635,
+        0.508
+      ],
+      "end_mm": [
+        -0.635,
+        0.635
+      ],
+      "start_native_mil": [
+        -25.0,
+        20.0
+      ],
+      "end_native_mil": [
+        -25.0,
+        25.0
+      ],
+      "to_pin": null
+    },
+    {
+      "id": "ANT_LA_L1_9",
+      "net": "ANT_LA",
+      "layer": 1,
+      "width_mm": 0.2032,
+      "start_mm": [
+        -2.21996,
+        2.49936
+      ],
+      "end_mm": [
+        -2.159,
+        2.54
+      ],
+      "start_native_mil": [
+        -87.4,
+        98.4
+      ],
+      "end_native_mil": [
+        -85.0,
+        100.0
+      ],
+      "to_pin": null
+    },
+    {
+      "id": "ANT_LA_L1_10",
+      "net": "ANT_LA",
+      "layer": 1,
+      "width_mm": 0.2032,
+      "start_mm": [
+        -2.159,
+        2.159
+      ],
+      "end_mm": [
+        -2.159,
+        2.54
+      ],
+      "start_native_mil": [
+        -85.0,
+        85.0
+      ],
+      "end_native_mil": [
+        -85.0,
+        100.0
+      ],
+      "to_pin": null
+    },
+    {
+      "id": "ANT_LA_L1_11",
+      "net": "ANT_LA",
+      "layer": 1,
+      "width_mm": 0.2032,
+      "start_mm": [
+        -2.159,
+        2.159
+      ],
+      "end_mm": [
+        -1.905,
+        1.905
+      ],
+      "start_native_mil": [
+        -85.0,
+        85.0
+      ],
+      "end_native_mil": [
+        -75.0,
+        75.0
+      ],
+      "to_pin": null
+    },
+    {
+      "id": "ANT_LA_L1_12",
+      "net": "ANT_LA",
+      "layer": 1,
+      "width_mm": 0.2032,
+      "start_mm": [
+        -1.905,
+        1.905
+      ],
+      "end_mm": [
+        -1.143,
+        1.905
+      ],
+      "start_native_mil": [
+        -75.0,
+        75.0
+      ],
+      "end_native_mil": [
+        -45.0,
+        75.0
+      ],
+      "to_pin": null
+    },
+    {
+      "id": "ANT_LA_L1_13",
+      "net": "ANT_LA",
+      "layer": 1,
+      "width_mm": 0.2032,
+      "start_mm": [
+        -1.143,
+        1.905
+      ],
+      "end_mm": [
+        -0.635,
+        1.397
+      ],
+      "start_native_mil": [
+        -45.0,
+        75.0
+      ],
+      "end_native_mil": [
+        -25.0,
+        55.0
+      ],
+      "to_pin": null
+    },
+    {
+      "id": "ANT_LA_L1_14",
+      "net": "ANT_LA",
+      "layer": 1,
+      "width_mm": 0.2032,
+      "start_mm": [
+        -0.635,
+        1.397
+      ],
+      "end_mm": [
+        -0.508,
+        1.397
+      ],
+      "start_native_mil": [
+        -25.0,
+        55.0
+      ],
+      "end_native_mil": [
+        -20.0,
+        55.0
+      ],
+      "to_pin": null
+    },
+    {
+      "id": "ANT_LB_L1_15",
+      "net": "ANT_LB",
+      "layer": 1,
+      "width_mm": 0.2032,
+      "start_mm": [
+        0.61976,
+        2.49936
+      ],
+      "end_mm": [
+        0.635,
+        2.54
+      ],
+      "start_native_mil": [
+        24.4,
+        98.4
+      ],
+      "end_native_mil": [
+        25.0,
+        100.0
+      ],
+      "to_pin": null
+    },
+    {
+      "id": "ANT_LB_L1_16",
+      "net": "ANT_LB",
+      "layer": 1,
+      "width_mm": 0.2032,
+      "start_mm": [
+        0.635,
+        1.397
+      ],
+      "end_mm": [
+        0.635,
+        2.54
+      ],
+      "start_native_mil": [
+        25.0,
+        55.0
+      ],
+      "end_native_mil": [
+        25.0,
+        100.0
+      ],
+      "to_pin": null
+    },
+    {
+      "id": "ANT_LB_L1_17",
+      "net": "ANT_LB",
+      "layer": 1,
+      "width_mm": 0.2032,
+      "start_mm": [
+        0.0,
+        0.762
+      ],
+      "end_mm": [
+        0.635,
+        1.397
+      ],
+      "start_native_mil": [
+        0.0,
+        30.0
+      ],
+      "end_native_mil": [
+        25.0,
+        55.0
+      ],
+      "to_pin": null
+    },
+    {
+      "id": "ANT_LB_L1_18",
+      "net": "ANT_LB",
+      "layer": 1,
+      "width_mm": 0.2032,
+      "start_mm": [
+        0.0,
+        0.635
+      ],
+      "end_mm": [
+        0.0,
+        0.762
+      ],
+      "start_native_mil": [
+        0.0,
+        25.0
+      ],
+      "end_native_mil": [
+        0.0,
+        30.0
+      ],
+      "to_pin": null
+    },
+    {
+      "id": "ANT_LB_L1_19",
+      "net": "ANT_LB",
+      "layer": 1,
+      "width_mm": 0.2032,
+      "start_mm": [
+        -1.397,
+        2.54
+      ],
+      "end_mm": [
+        -1.37922,
+        2.49936
+      ],
+      "start_native_mil": [
+        -55.0,
+        100.0
+      ],
+      "end_native_mil": [
+        -54.3,
+        98.4
+      ],
+      "to_pin": null
+    },
+    {
+      "id": "ANT_LB_L1_20",
+      "net": "ANT_LB",
+      "layer": 1,
+      "width_mm": 0.2032,
+      "start_mm": [
+        -1.397,
+        2.54
+      ],
+      "end_mm": [
+        -1.27,
+        2.54
+      ],
+      "start_native_mil": [
+        -55.0,
+        100.0
+      ],
+      "end_native_mil": [
+        -50.0,
+        100.0
+      ],
+      "to_pin": null
+    },
+    {
+      "id": "ANT_LB_L1_21",
+      "net": "ANT_LB",
+      "layer": 1,
+      "width_mm": 0.2032,
+      "start_mm": [
+        -1.27,
+        2.54
+      ],
+      "end_mm": [
+        -0.635,
+        3.175
+      ],
+      "start_native_mil": [
+        -50.0,
+        100.0
+      ],
+      "end_native_mil": [
+        -25.0,
+        125.0
+      ],
+      "to_pin": null
+    },
+    {
+      "id": "ANT_LB_L1_22",
+      "net": "ANT_LB",
+      "layer": 1,
+      "width_mm": 0.2032,
+      "start_mm": [
+        -0.635,
+        3.175
+      ],
+      "end_mm": [
+        0.254,
+        3.175
+      ],
+      "start_native_mil": [
+        -25.0,
+        125.0
+      ],
+      "end_native_mil": [
+        10.0,
+        125.0
+      ],
+      "to_pin": null
+    },
+    {
+      "id": "ANT_LB_L1_23",
+      "net": "ANT_LB",
+      "layer": 1,
+      "width_mm": 0.2032,
+      "start_mm": [
+        0.254,
+        3.175
+      ],
+      "end_mm": [
+        0.508,
+        2.921
+      ],
+      "start_native_mil": [
+        10.0,
+        125.0
+      ],
+      "end_native_mil": [
+        20.0,
+        115.0
+      ],
+      "to_pin": null
+    },
+    {
+      "id": "ANT_LB_L1_24",
+      "net": "ANT_LB",
+      "layer": 1,
+      "width_mm": 0.2032,
+      "start_mm": [
+        0.508,
+        2.667
+      ],
+      "end_mm": [
+        0.508,
+        2.921
+      ],
+      "start_native_mil": [
+        20.0,
+        105.0
+      ],
+      "end_native_mil": [
+        20.0,
+        115.0
+      ],
+      "to_pin": null
+    },
+    {
+      "id": "ANT_LB_L1_25",
+      "net": "ANT_LB",
+      "layer": 1,
+      "width_mm": 0.2032,
+      "start_mm": [
+        0.508,
+        2.667
+      ],
+      "end_mm": [
+        0.635,
+        2.54
+      ],
+      "start_native_mil": [
+        20.0,
+        105.0
+      ],
+      "end_native_mil": [
+        25.0,
+        100.0
+      ],
+      "to_pin": null
+    },
+    {
+      "id": "GND_L1_26",
+      "net": "GND",
+      "layer": 1,
+      "width_mm": 0.2032,
+      "start_mm": [
+        -1.143,
+        0.0
+      ],
+      "end_mm": [
+        -0.635,
+        0.0
+      ],
+      "start_native_mil": [
+        -45.0,
+        0.0
+      ],
+      "end_native_mil": [
+        -25.0,
+        0.0
+      ],
+      "to_pin": null
+    },
+    {
+      "id": "GND_L1_27",
+      "net": "GND",
+      "layer": 1,
+      "width_mm": 0.2032,
+      "start_mm": [
+        5.207,
+        3.937
+      ],
+      "end_mm": [
+        5.25018,
+        4.0005
+      ],
+      "start_native_mil": [
+        205.0,
+        155.0
+      ],
+      "end_native_mil": [
+        206.7,
+        157.5
+      ],
+      "to_pin": null
+    },
+    {
+      "id": "GND_L1_28",
+      "net": "GND",
+      "layer": 1,
+      "width_mm": 0.2032,
+      "start_mm": [
+        -6.7437,
+        0.0
+      ],
+      "end_mm": [
+        -6.731,
+        0.0
+      ],
+      "start_native_mil": [
+        -265.5,
+        0.0
+      ],
+      "end_native_mil": [
+        -265.0,
+        0.0
+      ],
+      "to_pin": null
+    },
+    {
+      "id": "GND_L1_29",
+      "net": "GND",
+      "layer": 1,
+      "width_mm": 0.2032,
+      "start_mm": [
+        -6.731,
+        0.0
+      ],
+      "end_mm": [
+        -6.731,
+        0.127
+      ],
+      "start_native_mil": [
+        -265.0,
+        0.0
+      ],
+      "end_native_mil": [
+        -265.0,
+        5.0
+      ],
+      "to_pin": null
+    },
+    {
+      "id": "GND_L1_30",
+      "net": "GND",
+      "layer": 1,
+      "width_mm": 0.2032,
+      "start_mm": [
+        -6.731,
+        0.127
+      ],
+      "end_mm": [
+        -5.461,
+        1.397
+      ],
+      "start_native_mil": [
+        -265.0,
+        5.0
+      ],
+      "end_native_mil": [
+        -215.0,
+        55.0
+      ],
+      "to_pin": null
+    },
+    {
+      "id": "GND_L1_31",
+      "net": "GND",
+      "layer": 1,
+      "width_mm": 0.2032,
+      "start_mm": [
+        -5.461,
+        1.397
+      ],
+      "end_mm": [
+        -2.54,
+        1.397
+      ],
+      "start_native_mil": [
+        -215.0,
+        55.0
+      ],
+      "end_native_mil": [
+        -100.0,
+        55.0
+      ],
+      "to_pin": null
+    },
+    {
+      "id": "GND_L1_32",
+      "net": "GND",
+      "layer": 1,
+      "width_mm": 0.2032,
+      "start_mm": [
+        -2.54,
+        1.397
+      ],
+      "end_mm": [
+        -2.286,
+        1.143
+      ],
+      "start_native_mil": [
+        -100.0,
+        55.0
+      ],
+      "end_native_mil": [
+        -90.0,
+        45.0
+      ],
+      "to_pin": null
+    },
+    {
+      "id": "GND_L1_33",
+      "net": "GND",
+      "layer": 1,
+      "width_mm": 0.2032,
+      "start_mm": [
+        -2.286,
+        1.016
+      ],
+      "end_mm": [
+        -2.286,
+        1.143
+      ],
+      "start_native_mil": [
+        -90.0,
+        40.0
+      ],
+      "end_native_mil": [
+        -90.0,
+        45.0
+      ],
+      "to_pin": null
+    },
+    {
+      "id": "GND_L1_34",
+      "net": "GND",
+      "layer": 1,
+      "width_mm": 0.2032,
+      "start_mm": [
+        -2.286,
+        1.016
+      ],
+      "end_mm": [
+        -1.905,
+        0.635
+      ],
+      "start_native_mil": [
+        -90.0,
+        40.0
+      ],
+      "end_native_mil": [
+        -75.0,
+        25.0
+      ],
+      "to_pin": null
+    },
+    {
+      "id": "GND_L1_35",
+      "net": "GND",
+      "layer": 1,
+      "width_mm": 0.2032,
+      "start_mm": [
+        -1.905,
+        0.635
+      ],
+      "end_mm": [
+        -1.778,
+        0.635
+      ],
+      "start_native_mil": [
+        -75.0,
+        25.0
+      ],
+      "end_native_mil": [
+        -70.0,
+        25.0
+      ],
+      "to_pin": null
+    },
+    {
+      "id": "GND_L1_36",
+      "net": "GND",
+      "layer": 1,
+      "width_mm": 0.2032,
+      "start_mm": [
+        -1.778,
+        0.635
+      ],
+      "end_mm": [
+        -1.143,
+        0.0
+      ],
+      "start_native_mil": [
+        -70.0,
+        25.0
+      ],
+      "end_native_mil": [
+        -45.0,
+        0.0
+      ],
+      "to_pin": null
+    },
+    {
+      "id": "GND_L1_37",
+      "net": "GND",
+      "layer": 1,
+      "width_mm": 0.2032,
+      "start_mm": [
+        -7.112,
+        -0.381
+      ],
+      "end_mm": [
+        -6.731,
+        0.0
+      ],
+      "start_native_mil": [
+        -280.0,
+        -15.0
+      ],
+      "end_native_mil": [
+        -265.0,
+        0.0
+      ],
+      "to_pin": null
+    },
+    {
+      "id": "GND_L2_38",
+      "net": "GND",
+      "layer": 2,
+      "width_mm": 0.2032,
+      "start_mm": [
+        2.921,
+        0.0
+      ],
+      "end_mm": [
+        2.921,
+        0.254
+      ],
+      "start_native_mil": [
+        115.0,
+        0.0
+      ],
+      "end_native_mil": [
+        115.0,
+        10.0
+      ],
+      "to_pin": null
+    },
+    {
+      "id": "GND_L2_39",
+      "net": "GND",
+      "layer": 2,
+      "width_mm": 0.2032,
+      "start_mm": [
+        1.397,
+        1.778
+      ],
+      "end_mm": [
+        2.921,
+        0.254
+      ],
+      "start_native_mil": [
+        55.0,
+        70.0
+      ],
+      "end_native_mil": [
+        115.0,
+        10.0
+      ],
+      "to_pin": null
+    },
+    {
+      "id": "GND_L2_40",
+      "net": "GND",
+      "layer": 2,
+      "width_mm": 0.2032,
+      "start_mm": [
+        0.635,
+        1.778
+      ],
+      "end_mm": [
+        1.397,
+        1.778
+      ],
+      "start_native_mil": [
+        25.0,
+        70.0
+      ],
+      "end_native_mil": [
+        55.0,
+        70.0
+      ],
+      "to_pin": null
+    },
+    {
+      "id": "GND_L2_41",
+      "net": "GND",
+      "layer": 2,
+      "width_mm": 0.2032,
+      "start_mm": [
+        -1.143,
+        0.0
+      ],
+      "end_mm": [
+        0.635,
+        1.778
+      ],
+      "start_native_mil": [
+        -45.0,
+        0.0
+      ],
+      "end_native_mil": [
+        25.0,
+        70.0
+      ],
+      "to_pin": null
+    },
+    {
+      "id": "GND_L2_42",
+      "net": "GND",
+      "layer": 2,
+      "width_mm": 0.2032,
+      "start_mm": [
+        5.08,
+        3.937
+      ],
+      "end_mm": [
+        5.207,
+        3.937
+      ],
+      "start_native_mil": [
+        200.0,
+        155.0
+      ],
+      "end_native_mil": [
+        205.0,
+        155.0
+      ],
+      "to_pin": null
+    },
+    {
+      "id": "GND_L2_43",
+      "net": "GND",
+      "layer": 2,
+      "width_mm": 0.2032,
+      "start_mm": [
+        2.159,
+        1.016
+      ],
+      "end_mm": [
+        5.08,
+        3.937
+      ],
+      "start_native_mil": [
+        85.0,
+        40.0
+      ],
+      "end_native_mil": [
+        200.0,
+        155.0
+      ],
+      "to_pin": null
+    },
+    {
+      "id": "GND_L2_44",
+      "net": "GND",
+      "layer": 2,
+      "width_mm": 0.2032,
+      "start_mm": [
+        5.207,
+        -3.937
+      ],
+      "end_mm": [
+        5.25018,
+        -4.0005
+      ],
+      "start_native_mil": [
+        205.0,
+        -155.0
+      ],
+      "end_native_mil": [
+        206.7,
+        -157.5
+      ],
+      "to_pin": null
+    },
+    {
+      "id": "GND_L2_45",
+      "net": "GND",
+      "layer": 2,
+      "width_mm": 0.2032,
+      "start_mm": [
+        5.207,
+        -3.937
+      ],
+      "end_mm": [
+        5.207,
+        -3.556
+      ],
+      "start_native_mil": [
+        205.0,
+        -155.0
+      ],
+      "end_native_mil": [
+        205.0,
+        -140.0
+      ],
+      "to_pin": null
+    },
+    {
+      "id": "GND_L2_46",
+      "net": "GND",
+      "layer": 2,
+      "width_mm": 0.2032,
+      "start_mm": [
+        4.064,
+        -2.413
+      ],
+      "end_mm": [
+        5.207,
+        -3.556
+      ],
+      "start_native_mil": [
+        160.0,
+        -95.0
+      ],
+      "end_native_mil": [
+        205.0,
+        -140.0
+      ],
+      "to_pin": null
+    },
+    {
+      "id": "GND_L2_47",
+      "net": "GND",
+      "layer": 2,
+      "width_mm": 0.2032,
+      "start_mm": [
+        4.064,
+        -2.413
+      ],
+      "end_mm": [
+        4.064,
+        -1.143
+      ],
+      "start_native_mil": [
+        160.0,
+        -95.0
+      ],
+      "end_native_mil": [
+        160.0,
+        -45.0
+      ],
+      "to_pin": null
+    },
+    {
+      "id": "GND_L2_48",
+      "net": "GND",
+      "layer": 2,
+      "width_mm": 0.2032,
+      "start_mm": [
+        2.921,
+        0.0
+      ],
+      "end_mm": [
+        4.064,
+        -1.143
+      ],
+      "start_native_mil": [
+        115.0,
+        0.0
+      ],
+      "end_native_mil": [
+        160.0,
+        -45.0
+      ],
+      "to_pin": null
+    },
+    {
+      "id": "GND_L2_49",
+      "net": "GND",
+      "layer": 2,
+      "width_mm": 0.2032,
+      "start_mm": [
+        -6.74878,
+        0.0
+      ],
+      "end_mm": [
+        -6.731,
+        0.0
+      ],
+      "start_native_mil": [
+        -265.7,
+        0.0
+      ],
+      "end_native_mil": [
+        -265.0,
+        0.0
+      ],
+      "to_pin": null
+    },
+    {
+      "id": "GND_L2_50",
+      "net": "GND",
+      "layer": 2,
+      "width_mm": 0.2032,
+      "start_mm": [
+        -7.112,
+        -0.381
+      ],
+      "end_mm": [
+        -6.731,
+        0.0
+      ],
+      "start_native_mil": [
+        -280.0,
+        -15.0
+      ],
+      "end_native_mil": [
+        -265.0,
+        0.0
+      ],
+      "to_pin": null
+    },
+    {
+      "id": "VOUT_L1_51",
+      "net": "VOUT",
+      "layer": 1,
+      "width_mm": 0.2032,
+      "start_mm": [
+        0.59944,
+        0.50038
+      ],
+      "end_mm": [
+        0.635,
+        0.508
+      ],
+      "start_native_mil": [
+        23.6,
+        19.7
+      ],
+      "end_native_mil": [
+        25.0,
+        20.0
+      ],
+      "to_pin": null
+    },
+    {
+      "id": "VOUT_L1_52",
+      "net": "VOUT",
+      "layer": 1,
+      "width_mm": 0.2032,
+      "start_mm": [
+        0.635,
+        0.0
+      ],
+      "end_mm": [
+        0.635,
+        0.508
+      ],
+      "start_native_mil": [
+        25.0,
+        0.0
+      ],
+      "end_native_mil": [
+        25.0,
+        20.0
+      ],
+      "to_pin": null
+    },
+    {
+      "id": "VOUT_L1_53",
+      "net": "VOUT",
+      "layer": 1,
+      "width_mm": 0.2032,
+      "start_mm": [
+        0.635,
+        0.0
+      ],
+      "end_mm": [
+        2.08026,
+        0.0
+      ],
+      "start_native_mil": [
+        25.0,
+        0.0
+      ],
+      "end_native_mil": [
+        81.9,
+        0.0
+      ],
+      "to_pin": null
+    },
+    {
+      "id": "VOUT_L1_54",
+      "net": "VOUT",
+      "layer": 1,
+      "width_mm": 0.2032,
+      "start_mm": [
+        1.74752,
+        -1.80086
+      ],
+      "end_mm": [
+        1.778,
+        -1.778
+      ],
+      "start_native_mil": [
+        68.8,
+        -70.9
+      ],
+      "end_native_mil": [
+        70.0,
+        -70.0
+      ],
+      "to_pin": null
+    },
+    {
+      "id": "VOUT_L1_55",
+      "net": "VOUT",
+      "layer": 1,
+      "width_mm": 0.2032,
+      "start_mm": [
+        1.778,
+        -1.778
+      ],
+      "end_mm": [
+        2.54,
+        -2.54
+      ],
+      "start_native_mil": [
+        70.0,
+        -70.0
+      ],
+      "end_native_mil": [
+        100.0,
+        -100.0
+      ],
+      "to_pin": null
+    },
+    {
+      "id": "VOUT_L1_56",
+      "net": "VOUT",
+      "layer": 1,
+      "width_mm": 0.2032,
+      "start_mm": [
+        2.54,
+        -2.54
+      ],
+      "end_mm": [
+        3.937,
+        -2.54
+      ],
+      "start_native_mil": [
+        100.0,
+        -100.0
+      ],
+      "end_native_mil": [
+        155.0,
+        -100.0
+      ],
+      "to_pin": null
+    },
+    {
+      "id": "VOUT_L1_57",
+      "net": "VOUT",
+      "layer": 1,
+      "width_mm": 0.2032,
+      "start_mm": [
+        3.937,
+        -2.54
+      ],
+      "end_mm": [
+        4.064,
+        -2.413
+      ],
+      "start_native_mil": [
+        155.0,
+        -100.0
+      ],
+      "end_native_mil": [
+        160.0,
+        -95.0
+      ],
+      "to_pin": null
+    },
+    {
+      "id": "VOUT_L1_58",
+      "net": "VOUT",
+      "layer": 1,
+      "width_mm": 0.2032,
+      "start_mm": [
+        4.064,
+        -2.413
+      ],
+      "end_mm": [
+        4.064,
+        -1.143
+      ],
+      "start_native_mil": [
+        160.0,
+        -95.0
+      ],
+      "end_native_mil": [
+        160.0,
+        -45.0
+      ],
+      "to_pin": null
+    },
+    {
+      "id": "VOUT_L1_59",
+      "net": "VOUT",
+      "layer": 1,
+      "width_mm": 0.2032,
+      "start_mm": [
+        3.556,
+        -0.635
+      ],
+      "end_mm": [
+        4.064,
+        -1.143
+      ],
+      "start_native_mil": [
+        140.0,
+        -25.0
+      ],
+      "end_native_mil": [
+        160.0,
+        -45.0
+      ],
+      "to_pin": null
+    },
+    {
+      "id": "VOUT_L1_60",
+      "net": "VOUT",
+      "layer": 1,
+      "width_mm": 0.2032,
+      "start_mm": [
+        3.556,
+        -0.635
+      ],
+      "end_mm": [
+        3.556,
+        0.508
+      ],
+      "start_native_mil": [
+        140.0,
+        -25.0
+      ],
+      "end_native_mil": [
+        140.0,
+        20.0
+      ],
+      "to_pin": null
+    },
+    {
+      "id": "VOUT_L1_61",
+      "net": "VOUT",
+      "layer": 1,
+      "width_mm": 0.2032,
+      "start_mm": [
+        3.429,
+        0.635
+      ],
+      "end_mm": [
+        3.556,
+        0.508
+      ],
+      "start_native_mil": [
+        135.0,
+        25.0
+      ],
+      "end_native_mil": [
+        140.0,
+        20.0
+      ],
+      "to_pin": null
+    },
+    {
+      "id": "VOUT_L1_62",
+      "net": "VOUT",
+      "layer": 1,
+      "width_mm": 0.2032,
+      "start_mm": [
+        2.413,
+        0.635
+      ],
+      "end_mm": [
+        3.429,
+        0.635
+      ],
+      "start_native_mil": [
+        95.0,
+        25.0
+      ],
+      "end_native_mil": [
+        135.0,
+        25.0
+      ],
+      "to_pin": null
+    },
+    {
+      "id": "VOUT_L1_63",
+      "net": "VOUT",
+      "layer": 1,
+      "width_mm": 0.2032,
+      "start_mm": [
+        2.286,
+        0.508
+      ],
+      "end_mm": [
+        2.413,
+        0.635
+      ],
+      "start_native_mil": [
+        90.0,
+        20.0
+      ],
+      "end_native_mil": [
+        95.0,
+        25.0
+      ],
+      "to_pin": null
+    },
+    {
+      "id": "VOUT_L1_64",
+      "net": "VOUT",
+      "layer": 1,
+      "width_mm": 0.2032,
+      "start_mm": [
+        2.286,
+        0.254
+      ],
+      "end_mm": [
+        2.286,
+        0.508
+      ],
+      "start_native_mil": [
+        90.0,
+        10.0
+      ],
+      "end_native_mil": [
+        90.0,
+        20.0
+      ],
+      "to_pin": null
+    },
+    {
+      "id": "VOUT_L1_65",
+      "net": "VOUT",
+      "layer": 1,
+      "width_mm": 0.2032,
+      "start_mm": [
+        2.032,
+        0.0
+      ],
+      "end_mm": [
+        2.286,
+        0.254
+      ],
+      "start_native_mil": [
+        80.0,
+        0.0
+      ],
+      "end_native_mil": [
+        90.0,
+        10.0
+      ],
+      "to_pin": null
+    },
+    {
+      "id": "VOUT_L1_66",
+      "net": "VOUT",
+      "layer": 1,
+      "width_mm": 0.2032,
+      "start_mm": [
+        -0.762,
+        -3.556
+      ],
+      "end_mm": [
+        -0.75438,
+        -3.50012
+      ],
+      "start_native_mil": [
+        -30.0,
+        -140.0
+      ],
+      "end_native_mil": [
+        -29.7,
+        -137.8
+      ],
+      "to_pin": null
+    },
+    {
+      "id": "VOUT_L1_67",
+      "net": "VOUT",
+      "layer": 1,
+      "width_mm": 0.2032,
+      "start_mm": [
+        -0.762,
+        -3.556
+      ],
+      "end_mm": [
+        -0.635,
+        -3.556
+      ],
+      "start_native_mil": [
+        -30.0,
+        -140.0
+      ],
+      "end_native_mil": [
+        -25.0,
+        -140.0
+      ],
+      "to_pin": null
+    },
+    {
+      "id": "VOUT_L1_68",
+      "net": "VOUT",
+      "layer": 1,
+      "width_mm": 0.2032,
+      "start_mm": [
+        -0.635,
+        -3.556
+      ],
+      "end_mm": [
+        0.127,
+        -4.318
+      ],
+      "start_native_mil": [
+        -25.0,
+        -140.0
+      ],
+      "end_native_mil": [
+        5.0,
+        -170.0
+      ],
+      "to_pin": null
+    },
+    {
+      "id": "VOUT_L1_69",
+      "net": "VOUT",
+      "layer": 1,
+      "width_mm": 0.2032,
+      "start_mm": [
+        0.127,
+        -4.318
+      ],
+      "end_mm": [
+        1.397,
+        -4.318
+      ],
+      "start_native_mil": [
+        5.0,
+        -170.0
+      ],
+      "end_native_mil": [
+        55.0,
+        -170.0
+      ],
+      "to_pin": null
+    },
+    {
+      "id": "VOUT_L1_70",
+      "net": "VOUT",
+      "layer": 1,
+      "width_mm": 0.2032,
+      "start_mm": [
+        1.397,
+        -4.318
+      ],
+      "end_mm": [
+        1.651,
+        -4.064
+      ],
+      "start_native_mil": [
+        55.0,
+        -170.0
+      ],
+      "end_native_mil": [
+        65.0,
+        -160.0
+      ],
+      "to_pin": null
+    },
+    {
+      "id": "VOUT_L1_71",
+      "net": "VOUT",
+      "layer": 1,
+      "width_mm": 0.2032,
+      "start_mm": [
+        1.651,
+        -4.064
+      ],
+      "end_mm": [
+        1.651,
+        -2.921
+      ],
+      "start_native_mil": [
+        65.0,
+        -160.0
+      ],
+      "end_native_mil": [
+        65.0,
+        -115.0
+      ],
+      "to_pin": null
+    },
+    {
+      "id": "VOUT_L1_72",
+      "net": "VOUT",
+      "layer": 1,
+      "width_mm": 0.2032,
+      "start_mm": [
+        1.651,
+        -2.921
+      ],
+      "end_mm": [
+        2.286,
+        -2.286
+      ],
+      "start_native_mil": [
+        65.0,
+        -115.0
+      ],
+      "end_native_mil": [
+        90.0,
+        -90.0
+      ],
+      "to_pin": null
+    },
+    {
+      "id": "VOUT_L1_73",
+      "net": "VOUT",
+      "layer": 1,
+      "width_mm": 0.2032,
+      "start_mm": [
+        -3.302,
+        -1.778
+      ],
+      "end_mm": [
+        -3.25374,
+        -1.80086
+      ],
+      "start_native_mil": [
+        -130.0,
+        -70.0
+      ],
+      "end_native_mil": [
+        -128.1,
+        -70.9
+      ],
+      "to_pin": null
+    },
+    {
+      "id": "VOUT_L1_74",
+      "net": "VOUT",
+      "layer": 1,
+      "width_mm": 0.2032,
+      "start_mm": [
+        -3.302,
+        -1.778
+      ],
+      "end_mm": [
+        -3.175,
+        -1.778
+      ],
+      "start_native_mil": [
+        -130.0,
+        -70.0
+      ],
+      "end_native_mil": [
+        -125.0,
+        -70.0
+      ],
+      "to_pin": null
+    },
+    {
+      "id": "VOUT_L1_75",
+      "net": "VOUT",
+      "layer": 1,
+      "width_mm": 0.2032,
+      "start_mm": [
+        -3.175,
+        -1.778
+      ],
+      "end_mm": [
+        -1.778,
+        -3.175
+      ],
+      "start_native_mil": [
+        -125.0,
+        -70.0
+      ],
+      "end_native_mil": [
+        -70.0,
+        -125.0
+      ],
+      "to_pin": null
+    },
+    {
+      "id": "VOUT_L1_76",
+      "net": "VOUT",
+      "layer": 1,
+      "width_mm": 0.2032,
+      "start_mm": [
+        -1.778,
+        -3.175
+      ],
+      "end_mm": [
+        -1.143,
+        -3.175
+      ],
+      "start_native_mil": [
+        -70.0,
+        -125.0
+      ],
+      "end_native_mil": [
+        -45.0,
+        -125.0
+      ],
+      "to_pin": null
+    },
+    {
+      "id": "VOUT_L1_77",
+      "net": "VOUT",
+      "layer": 1,
+      "width_mm": 0.2032,
+      "start_mm": [
+        -1.143,
+        -3.175
+      ],
+      "end_mm": [
+        -0.762,
+        -3.556
+      ],
+      "start_native_mil": [
+        -45.0,
+        -125.0
+      ],
+      "end_native_mil": [
+        -30.0,
+        -140.0
+      ],
+      "to_pin": null
+    },
+    {
+      "id": "VOUT_L1_78",
+      "net": "VOUT",
+      "layer": 1,
+      "width_mm": 0.2032,
+      "start_mm": [
+        -4.318,
+        0.0
+      ],
+      "end_mm": [
+        -4.2545,
+        0.0
+      ],
+      "start_native_mil": [
+        -170.0,
+        0.0
+      ],
+      "end_native_mil": [
+        -167.5,
+        0.0
+      ],
+      "to_pin": null
+    },
+    {
+      "id": "VOUT_L1_79",
+      "net": "VOUT",
+      "layer": 1,
+      "width_mm": 0.2032,
+      "start_mm": [
+        -4.318,
+        -0.508
+      ],
+      "end_mm": [
+        -4.318,
+        0.0
+      ],
+      "start_native_mil": [
+        -170.0,
+        -20.0
+      ],
+      "end_native_mil": [
+        -170.0,
+        0.0
+      ],
+      "to_pin": null
+    },
+    {
+      "id": "VOUT_L1_80",
+      "net": "VOUT",
+      "layer": 1,
+      "width_mm": 0.2032,
+      "start_mm": [
+        -4.318,
+        -0.508
+      ],
+      "end_mm": [
+        -3.302,
+        -1.524
+      ],
+      "start_native_mil": [
+        -170.0,
+        -20.0
+      ],
+      "end_native_mil": [
+        -130.0,
+        -60.0
+      ],
+      "to_pin": null
+    },
+    {
+      "id": "VOUT_L1_81",
+      "net": "VOUT",
+      "layer": 1,
+      "width_mm": 0.2032,
+      "start_mm": [
+        -3.302,
+        -1.778
+      ],
+      "end_mm": [
+        -3.302,
+        -1.524
+      ],
+      "start_native_mil": [
+        -130.0,
+        -70.0
+      ],
+      "end_native_mil": [
+        -130.0,
+        -60.0
+      ],
+      "to_pin": null
+    },
+    {
+      "id": "VOUT_L1_82",
+      "net": "VOUT",
+      "layer": 1,
+      "width_mm": 0.2032,
+      "start_mm": [
+        2.74574,
+        4.0005
+      ],
+      "end_mm": [
+        2.794,
+        3.937
+      ],
+      "start_native_mil": [
+        108.1,
+        157.5
+      ],
+      "end_native_mil": [
+        110.0,
+        155.0
+      ],
+      "to_pin": null
+    },
+    {
+      "id": "VOUT_L1_83",
+      "net": "VOUT",
+      "layer": 1,
+      "width_mm": 0.2032,
+      "start_mm": [
+        2.794,
+        0.635
+      ],
+      "end_mm": [
+        2.794,
+        3.937
+      ],
+      "start_native_mil": [
+        110.0,
+        25.0
+      ],
+      "end_native_mil": [
+        110.0,
+        155.0
+      ],
+      "to_pin": null
+    },
+    {
+      "id": "VOUT_L1_84",
+      "net": "VOUT",
+      "layer": 1,
+      "width_mm": 0.2032,
+      "start_mm": [
+        1.651,
+        -3.937
+      ],
+      "end_mm": [
+        2.54,
+        -3.937
+      ],
+      "start_native_mil": [
+        65.0,
+        -155.0
+      ],
+      "end_native_mil": [
+        100.0,
+        -155.0
+      ],
+      "to_pin": null
+    },
+    {
+      "id": "VOUT_L1_85",
+      "net": "VOUT",
+      "layer": 1,
+      "width_mm": 0.2032,
+      "start_mm": [
+        -4.318,
+        0.0
+      ],
+      "end_mm": [
+        -3.683,
+        0.0
+      ],
+      "start_native_mil": [
+        -170.0,
+        0.0
+      ],
+      "end_native_mil": [
+        -145.0,
+        0.0
+      ],
+      "to_pin": null
+    },
+    {
+      "id": "VOUT_L2_86",
+      "net": "VOUT",
+      "layer": 2,
+      "width_mm": 0.2032,
+      "start_mm": [
+        2.74574,
+        -4.0005
+      ],
+      "end_mm": [
+        2.794,
+        -3.937
+      ],
+      "start_native_mil": [
+        108.1,
+        -157.5
+      ],
+      "end_native_mil": [
+        110.0,
+        -155.0
+      ],
+      "to_pin": null
+    },
+    {
+      "id": "VOUT_L2_87",
+      "net": "VOUT",
+      "layer": 2,
+      "width_mm": 0.2032,
+      "start_mm": [
+        2.54,
+        -3.937
+      ],
+      "end_mm": [
+        2.794,
+        -3.937
+      ],
+      "start_native_mil": [
+        100.0,
+        -155.0
+      ],
+      "end_native_mil": [
+        110.0,
+        -155.0
+      ],
+      "to_pin": null
+    },
+    {
+      "id": "VOUT_L2_88",
+      "net": "VOUT",
+      "layer": 2,
+      "width_mm": 0.2032,
+      "start_mm": [
+        -4.2545,
+        0.0
+      ],
+      "end_mm": [
+        -3.683,
+        0.0
+      ],
+      "start_native_mil": [
+        -167.5,
+        0.0
+      ],
+      "end_native_mil": [
+        -145.0,
+        0.0
+      ],
+      "to_pin": null
+    }
+  ],
+  "vias": [
+    {
+      "id": "VOUT_via_1",
+      "net": "VOUT",
+      "x_mm": 2.54,
+      "y_mm": -3.937,
+      "x_native_mil": 100.0,
+      "y_native_mil": -155.0,
+      "drill_mm": 0.2,
+      "diameter_mm": 0.45
+    },
+    {
+      "id": "VOUT_via_2",
+      "net": "VOUT",
+      "x_mm": -3.683,
+      "y_mm": 0.0,
+      "x_native_mil": -145.0,
+      "y_native_mil": 0.0,
+      "drill_mm": 0.2,
+      "diameter_mm": 0.45
+    },
+    {
+      "id": "GND_via_3",
+      "net": "GND",
+      "x_mm": 2.921,
+      "y_mm": 0.0,
+      "x_native_mil": 115.0,
+      "y_native_mil": 0.0,
+      "drill_mm": 0.2,
+      "diameter_mm": 0.45
+    },
+    {
+      "id": "GND_via_4",
+      "net": "GND",
+      "x_mm": -1.143,
+      "y_mm": 0.0,
+      "x_native_mil": -45.0,
+      "y_native_mil": 0.0,
+      "drill_mm": 0.2,
+      "diameter_mm": 0.45
+    },
+    {
+      "id": "GND_via_5",
+      "net": "GND",
+      "x_mm": 5.207,
+      "y_mm": 3.937,
+      "x_native_mil": 205.0,
+      "y_native_mil": 155.0,
+      "drill_mm": 0.2,
+      "diameter_mm": 0.45
+    },
+    {
+      "id": "GND_via_6",
+      "net": "GND",
+      "x_mm": -7.112,
+      "y_mm": -0.381,
+      "x_native_mil": -280.0,
+      "y_native_mil": -15.0,
+      "drill_mm": 0.2,
+      "diameter_mm": 0.45
+    }
+  ],
+  "geometry_audit": {
+    "all_candidate_copper_inside_outline": true,
+    "outside_copper": [],
+    "minimum_edge_clearance_mm_by_pair_type": {
+      "track_to_pad": 0.20574,
+      "track_to_track": 0.27353698,
+      "via_to_pad": 0.27354092,
+      "via_to_track": 0.2514,
+      "via_to_via": 0.80903177,
+      "track_to_coil_fill": 7.53794142,
+      "via_to_coil_fill": 7.41454142
+    },
+    "required_clearance_mm": 0.1524,
+    "minimum_pair_by_type": {
+      "track_to_pad": {
+        "track": "VOUT_L1_56",
+        "pad": "R6.2",
+        "net": "VOUT",
+        "pad_net": "SDA",
+        "gap_mm": 0.20574
+      },
+      "track_to_track": {
+        "track": "ANT_LA_L1_4",
+        "other": "antenna-129",
+        "net": "ANT_LA",
+        "other_net": "ANT_LB",
+        "gap_mm": 0.27353698
+      },
+      "via_to_pad": {
+        "via": "GND_via_4",
+        "pad": "U1.1",
+        "net": "GND",
+        "pad_net": "ANT_LA",
+        "gap_mm": 0.27354092
+      },
+      "via_to_track": {
+        "via": "U1_LB_breakout",
+        "track": "GND_L2_40",
+        "net": "ANT_LB",
+        "track_net": "GND",
+        "gap_mm": 0.2514
+      },
+      "via_to_via": {
+        "via": "GND_via_4",
+        "other_via": "U1_LA_breakout",
+        "net": "GND",
+        "other_net": "ANT_LA",
+        "gap_mm": 0.80903177
+      },
+      "track_to_coil_fill": {
+        "track": "GND_L1_37",
+        "fill": "antenna-coil-fill",
+        "net": "GND",
+        "fill_net": "ANT_LA|ANT_LB bridge candidate",
+        "gap_mm": 7.53794142
+      },
+      "via_to_coil_fill": {
+        "via": "GND_via_6",
+        "fill": "antenna-coil-fill",
+        "net": "GND",
+        "fill_net": "ANT_LA|ANT_LB bridge candidate",
+        "gap_mm": 7.41454142
+      }
+    },
+    "route_clearance_target_mm": 0.2,
+    "all_checked_clearances_meet_route_target": true,
+    "coordinates_on_native_0_1_mil_grid": true,
+    "violations": {
+      "track_to_pad": [],
+      "track_to_track": [],
+      "via_to_pad": [],
+      "via_to_track": [],
+      "via_to_via": [],
+      "track_to_coil_fill": [],
+      "via_to_coil_fill": []
+    },
+    "minimum_overall_checked_gap_mm": 0.20574
+  },
+  "segment_merge": {
+    "before": 88,
+    "after": 88,
+    "merged_count_reduction": 0
+  },
+  "notes": [
+    "Draft geometry only; no live EDA operation or API assumptions were used.",
+    "The antenna coil fill remains a geometry candidate with bridge_enabled=false; this report checks the reviewed launch and bottom-return geometry.",
+    "Connectivity is geometric against saved snapshots and candidates; native DRC, bridge-fill semantics, RF behavior, and final live-board state remain unverified."
+  ]
+}

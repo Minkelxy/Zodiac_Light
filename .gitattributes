@@ -3,3 +3,14 @@
 *.png binary
 # HTTP snapshots must retain their exact bytes for recorded SHA-256 checks.
 data/sources/** -text -whitespace
+# Hardware snapshots and export tables are byte-checksummed audit artifacts.
+# Keep their exact bytes so a checkout does not invalidate recorded SHA-256.
+hardware/nfc-talisman/eda/native/** -text -whitespace
+hardware/nfc-talisman/eda/check-summary.json -text -whitespace
+hardware/nfc-talisman/eda/core-pads.json -text -whitespace
+hardware/nfc-talisman/electrical/*candidate.json -text -whitespace
+hardware/nfc-talisman/electrical/*audit.json -text -whitespace
+hardware/nfc-talisman/electrical/antenna-geometry-review.json -text -whitespace
+hardware/nfc-talisman/electrical/via-size-review.json -text -whitespace
+hardware/nfc-talisman/electrical/BOM.csv -text -whitespace
+hardware/nfc-talisman/manufacturing/draft/** -text -whitespace

@@ -1,0 +1,212 @@
+{
+  "status": "draft_offline_testpoint_candidate",
+  "draft": true,
+  "units": {
+    "coordinates": "native mil",
+    "coordinate_grid_mil": 0.1,
+    "geometry": "mm"
+  },
+  "pads": [
+    {
+      "ref": "TP1",
+      "net": "VOUT",
+      "xy": [
+        80.0,
+        115.0
+      ],
+      "anchor": "R2.1",
+      "segment_mil": [
+        [
+          92.2,
+          140.5
+        ],
+        [
+          80.0,
+          115.0
+        ]
+      ],
+      "layer": "TOP",
+      "pad": {
+        "shape": "round",
+        "copper_diameter_mm": 0.8,
+        "center_mil": [
+          80.0,
+          115.0
+        ],
+        "solder_paste": false,
+        "drill": false
+      },
+      "route": {
+        "width_mm": 0.2032,
+        "segments_mil": [
+          [
+            [
+              92.2,
+              140.5
+            ],
+            [
+              80.0,
+              115.0
+            ]
+          ]
+        ]
+      },
+      "audit": {
+        "coordinate_grid_mil": 0.1,
+        "center_radius_from_origin_mm": 3.558267134,
+        "entire_pad_within_30mm_diameter_inner_circle": true,
+        "pad_inside_37mm_outline": true,
+        "route_inside_37mm_outline": true,
+        "minimum_pad_to_all_existing_top_copper_mm": 0.2604,
+        "closest_existing_copper_to_pad": {
+          "id": "4f30b77742823283",
+          "kind": "line",
+          "nets": [
+            "VOUT"
+          ]
+        },
+        "minimum_pad_to_alien_top_component_pad_mm": 0.771843769,
+        "closest_alien_pad": {
+          "id": "CT2.2",
+          "net": "ANT_LB"
+        },
+        "minimum_route_to_alien_top_copper_mm": 1.070246471,
+        "closest_alien_copper_to_route": {
+          "id": "CT2.2",
+          "kind": "pad",
+          "nets": [
+            "ANT_LB"
+          ]
+        },
+        "minimum_route_to_alien_component_pad_mm": 1.070246471,
+        "closest_alien_pad_to_route": {
+          "id": "CT2.2",
+          "net": "ANT_LB"
+        },
+        "route_touches_intended_same_net_anchor": true,
+        "route_overlapping_existing_copper": [
+          {
+            "id": "R2.1",
+            "kind": "pad",
+            "nets": [
+              "VOUT"
+            ],
+            "gap_mm": 0.0
+          }
+        ],
+        "passes_required_0_2mm_clearance": true
+      }
+    },
+    {
+      "ref": "TP2",
+      "net": "GND",
+      "xy": [
+        235.0,
+        115.0
+      ],
+      "anchor": "D2.1",
+      "segment_mil": [
+        [
+          222.4,
+          141.7
+        ],
+        [
+          235.0,
+          115.0
+        ]
+      ],
+      "layer": "TOP",
+      "pad": {
+        "shape": "round",
+        "copper_diameter_mm": 0.8,
+        "center_mil": [
+          235.0,
+          115.0
+        ],
+        "solder_paste": false,
+        "drill": false
+      },
+      "route": {
+        "width_mm": 0.2032,
+        "segments_mil": [
+          [
+            [
+              222.4,
+              141.7
+            ],
+            [
+              235.0,
+              115.0
+            ]
+          ]
+        ]
+      },
+      "audit": {
+        "coordinate_grid_mil": 0.1,
+        "center_radius_from_origin_mm": 6.64538953,
+        "entire_pad_within_30mm_diameter_inner_circle": true,
+        "pad_inside_37mm_outline": true,
+        "route_inside_37mm_outline": true,
+        "minimum_pad_to_all_existing_top_copper_mm": 0.350515008,
+        "closest_existing_copper_to_pad": {
+          "id": "D2.1",
+          "kind": "pad",
+          "nets": [
+            "GND"
+          ]
+        },
+        "minimum_pad_to_alien_top_component_pad_mm": 0.378369335,
+        "closest_alien_pad": {
+          "id": "D2.2",
+          "net": "LED2_A"
+        },
+        "minimum_route_to_alien_top_copper_mm": 0.531784325,
+        "closest_alien_copper_to_route": {
+          "id": "D2.2",
+          "kind": "pad",
+          "nets": [
+            "LED2_A"
+          ]
+        },
+        "minimum_route_to_alien_component_pad_mm": 0.531784325,
+        "closest_alien_pad_to_route": {
+          "id": "D2.2",
+          "net": "LED2_A"
+        },
+        "route_touches_intended_same_net_anchor": true,
+        "route_overlapping_existing_copper": [
+          {
+            "id": "D2.1",
+            "kind": "pad",
+            "nets": [
+              "GND"
+            ],
+            "gap_mm": 0.0
+          }
+        ],
+        "passes_required_0_2mm_clearance": true
+      }
+    }
+  ],
+  "audit": {
+    "source_sha256": {
+      "eda\\native\\core-source.jsonl": "5ce873128b442b261ecd33189754bba57153090816bcbd4e2ff69d03117ea766",
+      "eda\\core-pads.json": "13f0e1132d8d5e1573bd3f5c0182a2596e4c94532ae407004968d093ffc66941"
+    },
+    "existing_core_copper_counts": {
+      "LINE": 124,
+      "VIA": 10,
+      "FILL": 1,
+      "component_pads": 36
+    },
+    "required_copper_clearance_mm": 0.2,
+    "tests_are_top_only_no_vias_no_drills": true,
+    "testpoint_to_testpoint_net_separation": {
+      "gap_mm": 3.104170656,
+      "required_mm": 0.2,
+      "passed": true
+    },
+    "candidate_checks_passed": true,
+    "definition": "Geometry-only proposal. Free SMD round copper pad diameter 0.8 mm, solder paste disabled; one 0.2032 mm Top trace segment from an existing same-net component pad edge. No EDA API fields are assumed."
+  }
+}

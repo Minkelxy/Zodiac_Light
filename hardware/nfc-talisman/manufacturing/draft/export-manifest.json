@@ -1,0 +1,126 @@
+{
+  "date": "2026-10-10",
+  "status": "draft_not_released",
+  "project_uuid": "c051e4069a83472198ecce7729fbd257",
+  "files": [
+    {
+      "path": "manufacturing/draft/nfc-talisman-panel-draft.zip",
+      "bytes": 45106,
+      "sha256": "9136b99867b2425efa7d22f9eddc2747f1a04c111adea250765e61a7b4ad12ee",
+      "zip_entries": [
+        "Gerber_TopLayer.GTL",
+        "Gerber_BottomLayer.GBL",
+        "Gerber_TopSilkscreenLayer.GTO",
+        "Gerber_BottomSilkscreenLayer.GBO",
+        "Gerber_TopSolderMaskLayer.GTS",
+        "Gerber_BottomSolderMaskLayer.GBS",
+        "Gerber_TopPasteMaskLayer.GTP",
+        "Gerber_BottomPasteMaskLayer.GBP",
+        "Gerber_BoardOutlineLayer.GKO",
+        "Gerber_DocumentLayer.GDL",
+        "Gerber_DrillDrawingLayer.GDD",
+        "Drill_PTH_Through.DRL",
+        "Drill_NPTH_Through.DRL",
+        "Drill_PTH_Through_Via.DRL",
+        "PCB下单必读.txt"
+      ]
+    },
+    {
+      "path": "manufacturing/draft/nfc-talisman-panel-bom-all.csv",
+      "bytes": 723,
+      "sha256": "8f8db16f302abe3dc8054f4903c2f77dfd0e83da3e39c319c35a8b3af5bd61ac"
+    },
+    {
+      "path": "manufacturing/draft/nfc-talisman-panel-pnp-all.csv",
+      "bytes": 3334,
+      "sha256": "be2d59372f8b0087cd419f912f2ea40d497f0f463c3da89dc5ada519fbf182bc"
+    },
+    {
+      "path": "eda/native/nfc-talisman-current.epro2",
+      "bytes": 96069,
+      "sha256": "bc68aca27f9d3547b8e51a93a06bf07212c9afdc7ceb05838a6391f075fabd4b",
+      "zip_entries": [
+        "IMAGE/",
+        "project2.json",
+        "37mm双面NFC符咒首版.epru"
+      ]
+    }
+  ],
+  "pending": [
+    "Manual faithful horse artwork and front optical window design",
+    "CAM review of slots, tabs and 3 mm assembly rails",
+    "LED physical polarity and rotation review",
+    "Bare-core and five-layer RF tuning, VOUT, Android/iPhone and optical acceptance"
+  ],
+  "derived_files": [
+    {
+      "path": "manufacturing/draft/nfc-talisman-panel-cam-review.zip",
+      "bytes": 26051,
+      "sha256": "8d142698c0522ddeb68105fa0515f5644b1817e3b95cb7e8c75d887fdccaf900",
+      "zip_entries": [
+        "Gerber_TopLayer.GTL",
+        "Gerber_BottomLayer.GBL",
+        "Gerber_TopSilkscreenLayer.GTO",
+        "Gerber_BottomSilkscreenLayer.GBO",
+        "Gerber_TopSolderMaskLayer.GTS",
+        "Gerber_BottomSolderMaskLayer.GBS",
+        "Gerber_TopPasteMaskLayer.GTP",
+        "Gerber_BottomPasteMaskLayer.GBP",
+        "Gerber_BoardOutlineLayer.GKO",
+        "Drill_PTH_Through.DRL",
+        "Drill_NPTH_Through.DRL"
+      ]
+    },
+    {
+      "path": "manufacturing/draft/four-led-bom.csv",
+      "bytes": 3124,
+      "sha256": "5537b51f703cab8ea9aa1bec53c5f2c7f1fb00e5381848a83b7fe7fd32e506c1"
+    },
+    {
+      "path": "manufacturing/draft/four-led-panel-pnp.csv",
+      "bytes": 2612,
+      "sha256": "cf3b1cd167921cb367fc5dcc4096b714de309422e1a3bff3e713706c032af036"
+    },
+    {
+      "path": "manufacturing/draft/two-led-bom.csv",
+      "bytes": 2687,
+      "sha256": "9c8134e011eaaedd110359fd282f9e0903ccdebd0e54cbb41fd50b3e12d7a2ab"
+    },
+    {
+      "path": "manufacturing/draft/two-led-panel-pnp.csv",
+      "bytes": 2294,
+      "sha256": "b0662abbcccc8a7f9fddd3f39b484bb75364390f2a2c1ae7f78384bcd3b8c43d"
+    },
+    {
+      "path": "manufacturing/draft/assembly-variants.json",
+      "bytes": 1482,
+      "sha256": "edd151b03564e94c01c2239718954e6d74857c1646e1ea00ad03f86623858f2f"
+    },
+    {
+      "path": "manufacturing/draft/cam-audit.json",
+      "bytes": 25093,
+      "sha256": "b73a414919f5eed70e31fe4d0925704ce73638a9895b89dcf60f83904bd78700"
+    },
+    {
+      "path": "manufacturing/draft/cam-package-manifest.json",
+      "bytes": 968,
+      "sha256": "cfae4dde4d77fc771c9280ed4b3d8c92ccf0c11375e47815fcc51af717bab5ef"
+    },
+    {
+      "path": "electrical/native-copper-audit.json",
+      "bytes": 11941,
+      "sha256": "612e3d162b59ff88e1dd4a5e925062adc45e069a89107a8438df77ce4fd34659"
+    },
+    {
+      "path": "electrical/native-netlist-audit.json",
+      "bytes": 6922,
+      "sha256": "0f2dbbd6305c49593333ace6afe110b7b5f825ecb97eb2e7156223d5d5a6ae8f"
+    },
+    {
+      "path": "eda/check-summary.json",
+      "bytes": 4105,
+      "sha256": "5f5fc838fc38b2feb60413639ef289229f102dfa25ca5c9ddd953c2ef344c535"
+    }
+  ],
+  "cam_drill_note": "The raw EDA ZIP includes duplicate PTH programs. The review ZIP retains exactly one PTH file and one NPTH file; retained manufacturing-layer bytes are unchanged."
+}

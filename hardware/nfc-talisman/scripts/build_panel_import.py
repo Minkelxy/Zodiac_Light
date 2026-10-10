@@ -85,6 +85,7 @@ const poly=(pts,center=[0,0])=>{
   const first=xy(pts[0][0]+center[0],pts[0][1]+center[1]);
   const src=[first[0],first[1],'L'];
   for(const p of pts.slice(1)){const q=xy(p[0]+center[0],p[1]+center[1]);src.push(q[0],q[1]);}
+  src.push(first[0],first[1]);
   const result=eda.pcb_MathPolygon.createPolygon(src);
   if(!result)throw Error('createPolygon failed');
   return result;

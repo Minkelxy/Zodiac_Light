@@ -1,0 +1,53 @@
+{
+  "source_coordinate_file": "nfc-talisman-panel-pnp-all.csv",
+  "coordinate_convention": "native panel mm, unmirrored data coordinates, origin lower-left; native bottom rotations retained for assembly review",
+  "native_CT2_library_placeholder": "Native all-parts BOM retains the 47pF/C60137 library placeholder; CT2 is excluded from every assembly variant. Do not fit it before RF measurement.",
+  "variants": {
+    "four-led": {
+      "fit_count": 14,
+      "excluded": [
+        "CT2"
+      ],
+      "fit_designators": [
+        "U1",
+        "C1",
+        "CT1",
+        "R5",
+        "R6",
+        "R7",
+        "R1",
+        "D1",
+        "R2",
+        "D2",
+        "R3",
+        "D3",
+        "R4",
+        "D4"
+      ],
+      "notes": "R2 and R4 may remain fitted in two-LED variant; open LED branches draw no current. Library LED pad polarity and native rotation still need physical assembly review."
+    },
+    "two-led": {
+      "fit_count": 12,
+      "excluded": [
+        "CT2",
+        "D2",
+        "D4"
+      ],
+      "fit_designators": [
+        "U1",
+        "C1",
+        "CT1",
+        "R5",
+        "R6",
+        "R7",
+        "R1",
+        "D1",
+        "R2",
+        "R3",
+        "D3",
+        "R4"
+      ],
+      "notes": "R2 and R4 may remain fitted in two-LED variant; open LED branches draw no current. Library LED pad polarity and native rotation still need physical assembly review."
+    }
+  }
+}

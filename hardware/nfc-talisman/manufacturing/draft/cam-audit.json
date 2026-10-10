@@ -1,0 +1,964 @@
+{
+  "scope": "Read-only geometric and export consistency check. Not CAM/manufacturing release or electrical/assembly acceptance.",
+  "inputs": {
+    "zip_path": "manufacturing/draft/nfc-talisman-panel-draft.zip",
+    "zip_sha256": "9136b99867b2425efa7d22f9eddc2747f1a04c111adea250765e61a7b4ad12ee",
+    "zip_bytes": 45106,
+    "zip_crc_error_member": null,
+    "native_panel_sha256": "7ad67a2797a1aa788609353028992b1cfd289629e290dadab5f3c72a4476aea6",
+    "component_pads_sha256": "13f0e1132d8d5e1573bd3f5c0182a2596e4c94532ae407004968d093ffc66941",
+    "zip_members": [
+      "Drill_NPTH_Through.DRL",
+      "Drill_PTH_Through.DRL",
+      "Drill_PTH_Through_Via.DRL",
+      "Gerber_BoardOutlineLayer.GKO",
+      "Gerber_BottomLayer.GBL",
+      "Gerber_BottomPasteMaskLayer.GBP",
+      "Gerber_BottomSilkscreenLayer.GBO",
+      "Gerber_BottomSolderMaskLayer.GBS",
+      "Gerber_DocumentLayer.GDL",
+      "Gerber_DrillDrawingLayer.GDD",
+      "Gerber_TopLayer.GTL",
+      "Gerber_TopPasteMaskLayer.GTP",
+      "Gerber_TopSilkscreenLayer.GTO",
+      "Gerber_TopSolderMaskLayer.GTS",
+      "PCB下单必读.txt"
+    ]
+  },
+  "drill": {
+    "files": {
+      "Drill_PTH_Through.DRL": {
+        "tools_mm": {
+          "01": 0.299999
+        },
+        "hit_count": 10,
+        "hole_counts_by_tool_mm": {
+          "0.299999": 10
+        },
+        "bbox_mm": [
+          33.024999,
+          46.062999,
+          55.206999,
+          53.936999
+        ],
+        "sha256": "351f6ebeeb5d1bae5a69c3f0e3e3d1e8fcefddf35dbf595f300fa5e0de203739"
+      },
+      "Drill_PTH_Through_Via.DRL": {
+        "tools_mm": {
+          "01": 0.299999
+        },
+        "hit_count": 10,
+        "hole_counts_by_tool_mm": {
+          "0.299999": 10
+        },
+        "bbox_mm": [
+          33.024999,
+          46.062999,
+          55.206999,
+          53.936999
+        ],
+        "sha256": "0ef07377d0138d58b196b42d8437f6cefc83e0bc6becde3d5b630a231f82c784"
+      },
+      "Drill_NPTH_Through.DRL": {
+        "tools_mm": {
+          "01": 0.599999,
+          "02": 0.800001
+        },
+        "hit_count": 108,
+        "hole_counts_by_tool_mm": {
+          "0.599999": 100,
+          "0.800001": 8
+        },
+        "bbox_mm": [
+          2.000001,
+          5.0,
+          98.0,
+          95.000001
+        ],
+        "sha256": "ecdc816b732883a8c4f41dcda64599cacc306f133236aef7deeda1e253e87f6a"
+      }
+    },
+    "native_source_correspondence": {
+      "Drill_PTH_Through.DRL": {
+        "native_count": 10,
+        "export_count": 10,
+        "maximum_diameter_position_vector_delta_mm": 6.000000038660266e-07,
+        "passes_0_003mm": true
+      },
+      "Drill_NPTH_Through.DRL": {
+        "native_count": 108,
+        "export_count": 108,
+        "maximum_diameter_position_vector_delta_mm": 6.590902855037746e-07,
+        "passes_0_003mm": true
+      }
+    },
+    "pth_files_have_identical_tool_and_hit_lists": true,
+    "cam_note": "The two named PTH exports are identical data; select one rather than importing both as separate drill operations."
+  },
+  "outline": {
+    "d02_path_count": 22,
+    "expected_route_count_from_project_notes": 22,
+    "envelope_mm": [
+      0.0,
+      0.0,
+      100.000001,
+      100.000001
+    ],
+    "envelope_is_100x100_with_1um_export_rounding": true,
+    "all_paths_explicitly_closed": true,
+    "paths": [
+      {
+        "path_index": 0,
+        "point_count": 211,
+        "start_mm": [
+          100.000001,
+          100.000001
+        ],
+        "end_mm": [
+          100.000001,
+          100.000001
+        ],
+        "endpoint_gap_mm": 0.0,
+        "explicitly_closed": true
+      },
+      {
+        "path_index": 1,
+        "point_count": 28,
+        "start_mm": [
+          40.978353,
+          84.456412
+        ],
+        "end_mm": [
+          40.978353,
+          84.456412
+        ],
+        "endpoint_gap_mm": 0.0,
+        "explicitly_closed": true
+      },
+      {
+        "path_index": 2,
+        "point_count": 28,
+        "start_mm": [
+          71.543588,
+          96.978353
+        ],
+        "end_mm": [
+          71.543588,
+          96.978353
+        ],
+        "endpoint_gap_mm": 0.0,
+        "explicitly_closed": true
+      },
+      {
+        "path_index": 3,
+        "point_count": 34,
+        "start_mm": [
+          28.456412,
+          56.021648
+        ],
+        "end_mm": [
+          28.456412,
+          56.021648
+        ],
+        "endpoint_gap_mm": 0.0,
+        "explicitly_closed": true
+      },
+      {
+        "path_index": 4,
+        "point_count": 33,
+        "start_mm": [
+          70.725909,
+          56.33706
+        ],
+        "end_mm": [
+          70.725909,
+          56.33706
+        ],
+        "endpoint_gap_mm": 0.0,
+        "explicitly_closed": true
+      },
+      {
+        "path_index": 5,
+        "point_count": 33,
+        "start_mm": [
+          29.274092,
+          43.662938
+        ],
+        "end_mm": [
+          29.274092,
+          43.662938
+        ],
+        "endpoint_gap_mm": 0.0,
+        "explicitly_closed": true
+      },
+      {
+        "path_index": 6,
+        "point_count": 34,
+        "start_mm": [
+          57.956412,
+          29.521648
+        ],
+        "end_mm": [
+          57.956412,
+          29.521648
+        ],
+        "endpoint_gap_mm": 0.0,
+        "explicitly_closed": true
+      },
+      {
+        "path_index": 7,
+        "point_count": 28,
+        "start_mm": [
+          28.456412,
+          3.021648
+        ],
+        "end_mm": [
+          28.456412,
+          3.021648
+        ],
+        "endpoint_gap_mm": 0.0,
+        "explicitly_closed": true
+      },
+      {
+        "path_index": 8,
+        "point_count": 28,
+        "start_mm": [
+          59.021647,
+          15.543588
+        ],
+        "end_mm": [
+          59.021647,
+          15.543588
+        ],
+        "endpoint_gap_mm": 0.0,
+        "explicitly_closed": true
+      },
+      {
+        "path_index": 9,
+        "point_count": 73,
+        "start_mm": [
+          73.701011,
+          91.5
+        ],
+        "end_mm": [
+          73.701011,
+          91.5
+        ],
+        "endpoint_gap_mm": 0.0,
+        "explicitly_closed": true
+      },
+      {
+        "path_index": 10,
+        "point_count": 73,
+        "start_mm": [
+          14.701009,
+          38.499999
+        ],
+        "end_mm": [
+          14.701009,
+          38.499999
+        ],
+        "endpoint_gap_mm": 0.0,
+        "explicitly_closed": true
+      },
+      {
+        "path_index": 11,
+        "point_count": 35,
+        "start_mm": [
+          82.258479,
+          31.082605
+        ],
+        "end_mm": [
+          82.258479,
+          31.082605
+        ],
+        "endpoint_gap_mm": 0.0,
+        "explicitly_closed": true
+      },
+      {
+        "path_index": 12,
+        "point_count": 35,
+        "start_mm": [
+          92.833393,
+          24.035083
+        ],
+        "end_mm": [
+          92.833393,
+          24.035083
+        ],
+        "endpoint_gap_mm": 0.0,
+        "explicitly_closed": true
+      },
+      {
+        "path_index": 13,
+        "point_count": 38,
+        "start_mm": [
+          88.763673,
+          25.816611
+        ],
+        "end_mm": [
+          88.763673,
+          25.816611
+        ],
+        "endpoint_gap_mm": 0.0,
+        "explicitly_closed": true
+      },
+      {
+        "path_index": 14,
+        "point_count": 35,
+        "start_mm": [
+          87.094868,
+          17.992659
+        ],
+        "end_mm": [
+          87.094868,
+          17.992659
+        ],
+        "endpoint_gap_mm": 0.0,
+        "explicitly_closed": true
+      },
+      {
+        "path_index": 15,
+        "point_count": 35,
+        "start_mm": [
+          70.923983,
+          16.842471
+        ],
+        "end_mm": [
+          70.923983,
+          16.842471
+        ],
+        "endpoint_gap_mm": 0.0,
+        "explicitly_closed": true
+      },
+      {
+        "path_index": 16,
+        "point_count": 35,
+        "start_mm": [
+          73.366125,
+          23.852688
+        ],
+        "end_mm": [
+          73.366125,
+          23.852688
+        ],
+        "endpoint_gap_mm": 0.0,
+        "explicitly_closed": true
+      },
+      {
+        "path_index": 17,
+        "point_count": 35,
+        "start_mm": [
+          83.792855,
+          24.60737
+        ],
+        "end_mm": [
+          83.792855,
+          24.60737
+        ],
+        "endpoint_gap_mm": 0.0,
+        "explicitly_closed": true
+      },
+      {
+        "path_index": 18,
+        "point_count": 35,
+        "start_mm": [
+          79.643686,
+          30.647909
+        ],
+        "end_mm": [
+          79.643686,
+          30.647909
+        ],
+        "endpoint_gap_mm": 0.0,
+        "explicitly_closed": true
+      },
+      {
+        "path_index": 19,
+        "point_count": 40,
+        "start_mm": [
+          67.478092,
+          18.622267
+        ],
+        "end_mm": [
+          67.478092,
+          18.622267
+        ],
+        "endpoint_gap_mm": 0.0,
+        "explicitly_closed": true
+      },
+      {
+        "path_index": 20,
+        "point_count": 37,
+        "start_mm": [
+          68.968892,
+          23.557667
+        ],
+        "end_mm": [
+          68.968892,
+          23.557667
+        ],
+        "endpoint_gap_mm": 0.0,
+        "explicitly_closed": true
+      },
+      {
+        "path_index": 21,
+        "point_count": 42,
+        "start_mm": [
+          71.502059,
+          25.262505
+        ],
+        "end_mm": [
+          71.502059,
+          25.262505
+        ],
+        "endpoint_gap_mm": 0.0,
+        "explicitly_closed": true
+      }
+    ],
+    "change_from_previous_draft": "The previous raw ZIP (SHA-256 78ef0995f64812634271edd8af048dd5621596030b41360e23f7aef56f66a274) had 22 native polygon paths without explicit last=first closure. This export explicitly closes all 22 paths.",
+    "cam_note": "Contour closure and nominal envelope pass geometry checks. CAM still needs to confirm milling compensation, intended tabs/slots, and that the outer contour plus 21 internal contours match the board shop's routing interpretation."
+  },
+  "antenna_copper": {
+    "top_gerber_reflected_flag": false,
+    "bottom_gerber_reflected_flag": false,
+    "top_fill_candidate_vertex_count": 258,
+    "top_fill_gerber_point_count_including_close": 259,
+    "top_fill_vertex_order_aligned": true,
+    "top_fill_max_vertex_delta_mm": 3.2005780762107054e-06,
+    "bottom_native_antenna_segment_count": 6,
+    "bottom_gerber_d01_segment_count": 29,
+    "bottom_native_antenna_segments_best_match": [
+      {
+        "net": "ANT_LA",
+        "source_segment_mm": [
+          [
+            33.024999,
+            49.999999
+          ],
+          [
+            34.4,
+            54.5
+          ]
+        ],
+        "best_gerber_error_mm": 0.0
+      },
+      {
+        "net": "ANT_LA",
+        "source_segment_mm": [
+          [
+            34.4,
+            54.5
+          ],
+          [
+            45.999999,
+            54.5
+          ]
+        ],
+        "best_gerber_error_mm": 0.0
+      },
+      {
+        "net": "ANT_LA",
+        "source_segment_mm": [
+          [
+            45.999999,
+            54.5
+          ],
+          [
+            48.475999,
+            51.199999
+          ]
+        ],
+        "best_gerber_error_mm": 0.0
+      },
+      {
+        "net": "ANT_LB",
+        "source_segment_mm": [
+          [
+            35.232998,
+            49.999999
+          ],
+          [
+            37.0,
+            45.499998
+          ]
+        ],
+        "best_gerber_error_mm": 0.0
+      },
+      {
+        "net": "ANT_LB",
+        "source_segment_mm": [
+          [
+            37.0,
+            45.499998
+          ],
+          [
+            51.0,
+            45.499998
+          ]
+        ],
+        "best_gerber_error_mm": 0.0
+      },
+      {
+        "net": "ANT_LB",
+        "source_segment_mm": [
+          [
+            51.0,
+            45.499998
+          ],
+          [
+            51.0,
+            51.199999
+          ]
+        ],
+        "best_gerber_error_mm": 0.0
+      }
+    ],
+    "all_bottom_antenna_segments_match_within_0_001mm": true,
+    "limitation": "Gerber carries no net names; geometric correspondence does not prove final RF tuning or assembled-stack behavior."
+  },
+  "bom_pnp": {
+    "bom_all_designators": [
+      "C1",
+      "CT1",
+      "CT2",
+      "D1",
+      "D2",
+      "D3",
+      "D4",
+      "R1",
+      "R2",
+      "R3",
+      "R4",
+      "R5",
+      "R6",
+      "R7",
+      "U1"
+    ],
+    "pnp_all_designators": [
+      "C1",
+      "CT1",
+      "CT2",
+      "D1",
+      "D2",
+      "D3",
+      "D4",
+      "R1",
+      "R2",
+      "R3",
+      "R4",
+      "R5",
+      "R6",
+      "R7",
+      "U1"
+    ],
+    "bom_pnp_designator_sets_equal": true,
+    "coordinate_unit": "mm (PnP Mid X/Mid Y values include mm suffix; checked against native panel coordinates converted from mil)",
+    "native_pnp_checks": [
+      {
+        "designator": "U1",
+        "source_match": true,
+        "side_matches": true,
+        "position_delta_mm": 1e-06,
+        "rotation_deg": 0.0,
+        "native_rotation_deg": 0,
+        "native_side": "T"
+      },
+      {
+        "designator": "D1",
+        "source_match": true,
+        "side_matches": true,
+        "position_delta_mm": 0.000401,
+        "rotation_deg": 0.0,
+        "native_rotation_deg": 0,
+        "native_side": "T"
+      },
+      {
+        "designator": "C1",
+        "source_match": true,
+        "side_matches": true,
+        "position_delta_mm": 1e-06,
+        "rotation_deg": 0.0,
+        "native_rotation_deg": 0,
+        "native_side": "T"
+      },
+      {
+        "designator": "CT1",
+        "source_match": true,
+        "side_matches": true,
+        "position_delta_mm": 1e-06,
+        "rotation_deg": 0.0,
+        "native_rotation_deg": 0,
+        "native_side": "T"
+      },
+      {
+        "designator": "CT2",
+        "source_match": true,
+        "side_matches": true,
+        "position_delta_mm": 1e-06,
+        "rotation_deg": 0.0,
+        "native_rotation_deg": 0,
+        "native_side": "T"
+      },
+      {
+        "designator": "R5",
+        "source_match": true,
+        "side_matches": true,
+        "position_delta_mm": 1e-06,
+        "rotation_deg": 0.0,
+        "native_rotation_deg": 0,
+        "native_side": "T"
+      },
+      {
+        "designator": "R6",
+        "source_match": true,
+        "side_matches": true,
+        "position_delta_mm": 1e-06,
+        "rotation_deg": 0.0,
+        "native_rotation_deg": 0,
+        "native_side": "T"
+      },
+      {
+        "designator": "R7",
+        "source_match": true,
+        "side_matches": true,
+        "position_delta_mm": 1e-06,
+        "rotation_deg": 0.0,
+        "native_rotation_deg": 0,
+        "native_side": "T"
+      },
+      {
+        "designator": "R1",
+        "source_match": true,
+        "side_matches": true,
+        "position_delta_mm": 1e-06,
+        "rotation_deg": 0.0,
+        "native_rotation_deg": 0,
+        "native_side": "T"
+      },
+      {
+        "designator": "R2",
+        "source_match": true,
+        "side_matches": true,
+        "position_delta_mm": 1e-06,
+        "rotation_deg": 0.0,
+        "native_rotation_deg": 0,
+        "native_side": "T"
+      },
+      {
+        "designator": "D2",
+        "source_match": true,
+        "side_matches": true,
+        "position_delta_mm": 1e-06,
+        "rotation_deg": 0.0,
+        "native_rotation_deg": 0,
+        "native_side": "T"
+      },
+      {
+        "designator": "R3",
+        "source_match": true,
+        "side_matches": true,
+        "position_delta_mm": 1e-06,
+        "rotation_deg": 0.0,
+        "native_rotation_deg": 0,
+        "native_side": "B"
+      },
+      {
+        "designator": "D3",
+        "source_match": true,
+        "side_matches": true,
+        "position_delta_mm": 1e-06,
+        "rotation_deg": 0.0,
+        "native_rotation_deg": 0,
+        "native_side": "B"
+      },
+      {
+        "designator": "R4",
+        "source_match": true,
+        "side_matches": true,
+        "position_delta_mm": 1e-06,
+        "rotation_deg": 0.0,
+        "native_rotation_deg": 0,
+        "native_side": "B"
+      },
+      {
+        "designator": "D4",
+        "source_match": true,
+        "side_matches": true,
+        "position_delta_mm": 1e-06,
+        "rotation_deg": 0.0,
+        "native_rotation_deg": 0,
+        "native_side": "B"
+      }
+    ],
+    "population_exceptions_to_all_parts": {
+      "CT2": {
+        "population": "DNP",
+        "variant_fit": [],
+        "variant_excluded": [
+          "four-led",
+          "two-led"
+        ]
+      },
+      "D2": {
+        "population": "Fit",
+        "variant_fit": [
+          "four-led"
+        ],
+        "variant_excluded": [
+          "two-led"
+        ]
+      },
+      "D4": {
+        "population": "Fit",
+        "variant_fit": [
+          "four-led"
+        ],
+        "variant_excluded": [
+          "two-led"
+        ]
+      }
+    },
+    "variant_counts": {
+      "four-led": {
+        "fit_count": 14,
+        "excluded": [
+          "CT2"
+        ]
+      },
+      "two-led": {
+        "fit_count": 12,
+        "excluded": [
+          "CT2",
+          "D2",
+          "D4"
+        ]
+      }
+    },
+    "cam_note": "Use the selected filtered assembly variant, not the all-parts exports. PnP coordinates are mm native panel coordinates; bottom-side rotation convention still needs assembler confirmation."
+  },
+  "testpoints": {
+    "summary": {
+      "status": "checked_pass",
+      "pass": true,
+      "present_count": 2,
+      "expected_count": 2,
+      "failures": []
+    },
+    "details": {
+      "status": "checked_pass",
+      "pass": true,
+      "expected_designators": [
+        "TP1",
+        "TP2"
+      ],
+      "present_designators": [
+        "TP1",
+        "TP2"
+      ],
+      "required_net_by_designator": {
+        "TP1": "VOUT",
+        "TP2": "GND"
+      },
+      "points": [
+        {
+          "designator": "TP1",
+          "source": {
+            "pad_type": "TEST",
+            "pad_shape": "ELLIPSE",
+            "pad_number": "TP1",
+            "net": "VOUT",
+            "layer_id": 1,
+            "center_mm": [
+              52.031999,
+              52.920999
+            ],
+            "size_mm": [
+              0.800001,
+              0.800001
+            ]
+          },
+          "gtl_copper": {
+            "pass": true,
+            "matching_center_flashes": 1,
+            "selected": {
+              "aperture": "11",
+              "aperture_shape": "C",
+              "center_mm": [
+                52.031999,
+                52.920999
+              ],
+              "size_mm": [
+                0.800001,
+                0.800001
+              ],
+              "center_error_mm": 8e-08,
+              "size_error_mm": 6e-08,
+              "other_center_flashes": 0,
+              "other_copper_gerber_objects_intersecting_pad": [
+                {
+                  "kind": "stroke",
+                  "aperture": "20",
+                  "center_mm": null
+                }
+              ],
+              "other_flash_or_region_overlap_count": 0
+            }
+          },
+          "gts_mask": {
+            "pass": true,
+            "centered_opening_count": 1,
+            "selected": {
+              "aperture": "12",
+              "aperture_shape": "C",
+              "center_mm": [
+                52.031999,
+                52.920999
+              ],
+              "opening_size_mm": [
+                0.900001,
+                0.900001
+              ],
+              "opening_minus_copper_mm": [
+                0.1,
+                0.1
+              ],
+              "other_mask_objects_intersecting_pad": []
+            }
+          },
+          "native_other_copper": {
+            "pass": true,
+            "overlapping_native_objects": [
+              {
+                "type": "LINE",
+                "id": "aa26257f2071750b",
+                "net": "VOUT",
+                "intersection_area_mm2": 0.09657878
+              }
+            ]
+          },
+          "gtp_no_paste": {
+            "pass": true,
+            "overlapping_paste_objects": []
+          },
+          "excluded_from_bom_pnp": {
+            "pass": true,
+            "in_pnp": false,
+            "in_bom": false
+          },
+          "pass": true
+        },
+        {
+          "designator": "TP2",
+          "source": {
+            "pad_type": "TEST",
+            "pad_shape": "ELLIPSE",
+            "pad_number": "TP2",
+            "net": "GND",
+            "layer_id": 1,
+            "center_mm": [
+              55.968999,
+              52.920999
+            ],
+            "size_mm": [
+              0.800001,
+              0.800001
+            ]
+          },
+          "gtl_copper": {
+            "pass": true,
+            "matching_center_flashes": 1,
+            "selected": {
+              "aperture": "11",
+              "aperture_shape": "C",
+              "center_mm": [
+                55.968999,
+                52.920999
+              ],
+              "size_mm": [
+                0.800001,
+                0.800001
+              ],
+              "center_error_mm": 8e-08,
+              "size_error_mm": 6e-08,
+              "other_center_flashes": 0,
+              "other_copper_gerber_objects_intersecting_pad": [
+                {
+                  "kind": "stroke",
+                  "aperture": "20",
+                  "center_mm": null
+                }
+              ],
+              "other_flash_or_region_overlap_count": 0
+            }
+          },
+          "gts_mask": {
+            "pass": true,
+            "centered_opening_count": 1,
+            "selected": {
+              "aperture": "12",
+              "aperture_shape": "C",
+              "center_mm": [
+                55.968999,
+                52.920999
+              ],
+              "opening_size_mm": [
+                0.900001,
+                0.900001
+              ],
+              "opening_minus_copper_mm": [
+                0.1,
+                0.1
+              ],
+              "other_mask_objects_intersecting_pad": []
+            }
+          },
+          "native_other_copper": {
+            "pass": true,
+            "overlapping_native_objects": [
+              {
+                "type": "LINE",
+                "id": "62c3f53ab2c03094",
+                "net": "GND",
+                "intersection_area_mm2": 0.0965788
+              }
+            ]
+          },
+          "gtp_no_paste": {
+            "pass": true,
+            "overlapping_paste_objects": []
+          },
+          "excluded_from_bom_pnp": {
+            "pass": true,
+            "in_pnp": false,
+            "in_bom": false
+          },
+          "pass": true
+        }
+      ],
+      "failures": [],
+      "checks": {
+        "GTL": "Each free pad has a centered D03 copper flash with size matching native source within 0.003 mm; other Gerber copper overlaps are counted.",
+        "native_copper": "No alien-net or unassigned native top copper primitive/component pad overlaps the exposed test surface.",
+        "GTS": "A centered D03 mask opening covers the copper pad and is no more than 0.30 mm larger in either dimension; no unrelated opening overlaps it.",
+        "GTP": "No paste flash, stroke, or G36 region intersects the free pad.",
+        "BOM_PnP": "TP1/TP2 are excluded from component BOM and PnP lists."
+      },
+      "geometry_note": "Gerber aperture macros are approximated by their bounding boxes for overlap tests; this is conservative at rounded corners."
+    }
+  },
+  "findings": [
+    {
+      "severity": "action_before_release",
+      "finding": "PTH drill export files are byte-different but contain the same tool and 10 hit locations; using both duplicates all plated holes."
+    },
+    {
+      "severity": "verified_geometry_with_cam_followup",
+      "finding": "The current GKO has 22 explicitly closed paths and a 100x100 mm envelope, consistent with one outer contour and 21 internal contours; CAM must still verify routing compensation and tabs/slots."
+    },
+    {
+      "severity": "assembly_variant_required",
+      "finding": "All-parts BOM/PnP are not population-filtered; CT2 is excluded in both variants, and D2/D4 differ between the four-LED and two-LED variants."
+    }
+  ]
+}

@@ -13,7 +13,7 @@ CLEARANCE_MM = 0.1524  # 6 mil
 
 
 def main() -> None:
-    live = json.loads((ROOT / "eda/logs/22-audit-core-tracks.json").read_text(encoding="utf-8"))
+    live = json.loads((ROOT / "eda/native/core-initial-tracks.json").read_text(encoding="utf-8"))
     routes = live["result"]["lines"]
     components = json.loads((ROOT / "eda/core-pads.json").read_text(encoding="utf-8"))
     pads = []
@@ -52,7 +52,7 @@ def main() -> None:
     closest_line = min(line_checks, key=lambda x: x["gap_mm"])
     violations = [x for x in pad_checks if x["gap_mm"] < CLEARANCE_MM - 1e-9] + [x for x in line_checks if x["gap_mm"] < CLEARANCE_MM - 1e-9]
     summary = {
-        "snapshot": "eda/logs/22-audit-core-tracks.json",
+        "snapshot": "eda/native/core-initial-tracks.json",
         "pad_source": "eda/core-pads.json",
         "route_count": len(lines),
         "different_net_track_to_pad_pairs_checked": len(pad_checks),

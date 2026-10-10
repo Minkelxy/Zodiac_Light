@@ -1,5 +1,5 @@
 {
-  "snapshot": "eda/logs/22-audit-core-tracks.json",
+  "snapshot": "eda/native/core-initial-tracks.json",
   "pad_source": "eda/core-pads.json",
   "route_count": 19,
   "different_net_track_to_pad_pairs_checked": 374,

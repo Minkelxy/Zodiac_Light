@@ -1,0 +1,258 @@
+{
+  "status": "native_netlist_audit",
+  "read_only": true,
+  "filter": "Include components where props['Convert to PCB'] != 'no' (case-insensitive).",
+  "pcb_envelope_rule": "For core and panel, parse the first native JSON string only.",
+  "input_sha256": {
+    "schematic_netlist": "0f7774ef284b54a3d5d8c95eca907674a83ae497edcd439cee319a1c9bcba926",
+    "core_netlist": "8d78d767a990a8a1a1b675739d28d19f246644c105045e577d5bfb5e8e19788b",
+    "panel_netlist": "8d78d767a990a8a1a1b675739d28d19f246644c105045e577d5bfb5e8e19788b",
+    "core_source": "a1816656be6a6926021640aaea19774ea9046d6ef4ee81666ea2a74ff5b33e5c",
+    "panel_source": "7ad67a2797a1aa788609353028992b1cfd289629e290dadab5f3c72a4476aea6"
+  },
+  "groups": {
+    "schematic": {
+      "component_count": 15,
+      "pin_count": 36,
+      "excluded_convert_to_pcb_no": [],
+      "net_count": 11,
+      "duplicate_pin_keys": [],
+      "pins_without_net": []
+    },
+    "core": {
+      "component_count": 15,
+      "pin_count": 36,
+      "excluded_convert_to_pcb_no": [],
+      "net_count": 11,
+      "duplicate_pin_keys": [],
+      "pins_without_net": []
+    },
+    "panel": {
+      "component_count": 15,
+      "pin_count": 36,
+      "excluded_convert_to_pcb_no": [],
+      "net_count": 11,
+      "duplicate_pin_keys": [],
+      "pins_without_net": []
+    }
+  },
+  "expected_inventory_checks": {
+    "schematic": {
+      "expected": {
+        "component_count": 15,
+        "pin_count": 36
+      },
+      "actual": {
+        "component_count": 15,
+        "pin_count": 36
+      },
+      "passed": true
+    },
+    "core": {
+      "expected": {
+        "component_count": 15,
+        "pin_count": 36
+      },
+      "actual": {
+        "component_count": 15,
+        "pin_count": 36
+      },
+      "passed": true
+    },
+    "panel": {
+      "expected": {
+        "component_count": 15,
+        "pin_count": 36
+      },
+      "actual": {
+        "component_count": 15,
+        "pin_count": 36
+      },
+      "passed": true
+    }
+  },
+  "comparisons": {
+    "schematic_vs_core": {
+      "group": "schematic_vs_core",
+      "passed": true,
+      "left": {
+        "component_count": 15,
+        "pin_count": 36,
+        "excluded_convert_to_pcb_no": [],
+        "net_count": 11,
+        "duplicate_pin_keys": [],
+        "pins_without_net": []
+      },
+      "right": {
+        "component_count": 15,
+        "pin_count": 36,
+        "excluded_convert_to_pcb_no": [],
+        "net_count": 11,
+        "duplicate_pin_keys": [],
+        "pins_without_net": []
+      },
+      "diffs": {
+        "components_only_in_left": [],
+        "components_only_in_right": [],
+        "pins_only_in_left": [],
+        "pins_only_in_right": [],
+        "net_mismatches": []
+      }
+    },
+    "core_vs_panel": {
+      "group": "core_vs_panel",
+      "passed": true,
+      "left": {
+        "component_count": 15,
+        "pin_count": 36,
+        "excluded_convert_to_pcb_no": [],
+        "net_count": 11,
+        "duplicate_pin_keys": [],
+        "pins_without_net": []
+      },
+      "right": {
+        "component_count": 15,
+        "pin_count": 36,
+        "excluded_convert_to_pcb_no": [],
+        "net_count": 11,
+        "duplicate_pin_keys": [],
+        "pins_without_net": []
+      },
+      "diffs": {
+        "components_only_in_left": [],
+        "components_only_in_right": [],
+        "pins_only_in_left": [],
+        "pins_only_in_right": [],
+        "net_mismatches": []
+      }
+    }
+  },
+  "free_testpoints_from_native_source": {
+    "passed": true,
+    "entries": {
+      "TP1": {
+        "expected": {
+          "net": "VOUT",
+          "x": 80.0,
+          "y": 115.0
+        },
+        "core_source": {
+          "id": "25e7dbd61a2b90ee",
+          "net": "VOUT",
+          "layerId": 1,
+          "center_mil": [
+            80.0,
+            115.0
+          ],
+          "expected_center_mil": [
+            80.0,
+            115.0
+          ],
+          "center_matches_expected": true,
+          "pad_shape": "ELLIPSE",
+          "pad_size_mil": [
+            31.4961,
+            31.4961
+          ],
+          "hole": null,
+          "topPasteExpansion": -1000,
+          "passed": true,
+          "errors": [],
+          "source": "core"
+        },
+        "panel_source": {
+          "id": "a93c2eb85c2bb0e5",
+          "net": "VOUT",
+          "layerId": 1,
+          "center_mil": [
+            2048.5039,
+            2083.5039
+          ],
+          "expected_center_mil": [
+            2048.503937007874,
+            2083.503937007874
+          ],
+          "center_matches_expected": true,
+          "pad_shape": "ELLIPSE",
+          "pad_size_mil": [
+            31.4961,
+            31.4961
+          ],
+          "hole": null,
+          "topPasteExpansion": -1000,
+          "passed": true,
+          "errors": [],
+          "source": "panel"
+        },
+        "panel_translation": {
+          "dx_mil": 1968.5039000000002,
+          "dy_mil": 1968.5039000000002,
+          "matches_50mm_xy_panel_offset": true
+        }
+      },
+      "TP2": {
+        "expected": {
+          "net": "GND",
+          "x": 235.0,
+          "y": 115.0
+        },
+        "core_source": {
+          "id": "b9c3452505fe17b5",
+          "net": "GND",
+          "layerId": 1,
+          "center_mil": [
+            235.0,
+            115.0
+          ],
+          "expected_center_mil": [
+            235.0,
+            115.0
+          ],
+          "center_matches_expected": true,
+          "pad_shape": "ELLIPSE",
+          "pad_size_mil": [
+            31.4961,
+            31.4961
+          ],
+          "hole": null,
+          "topPasteExpansion": -1000,
+          "passed": true,
+          "errors": [],
+          "source": "core"
+        },
+        "panel_source": {
+          "id": "5cd06536c90eaf75",
+          "net": "GND",
+          "layerId": 1,
+          "center_mil": [
+            2203.5039,
+            2083.5039
+          ],
+          "expected_center_mil": [
+            2203.503937007874,
+            2083.503937007874
+          ],
+          "center_matches_expected": true,
+          "pad_shape": "ELLIPSE",
+          "pad_size_mil": [
+            31.4961,
+            31.4961
+          ],
+          "hole": null,
+          "topPasteExpansion": -1000,
+          "passed": true,
+          "errors": [],
+          "source": "panel"
+        },
+        "panel_translation": {
+          "dx_mil": 1968.5039000000002,
+          "dy_mil": 1968.5039000000002,
+          "matches_50mm_xy_panel_offset": true
+        }
+      }
+    },
+    "errors": [],
+    "note": "Free PAD test points are checked from PCB source and are intentionally not treated as BOM components."
+  },
+  "all_groups_passed": true
+}

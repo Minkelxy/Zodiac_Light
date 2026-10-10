@@ -1,0 +1,481 @@
+{
+  "status": "offline_geometry_review_complete",
+  "source_files": {
+    "live_saved_source": "hardware/nfc-talisman/eda/logs/35-core-bridge-drc.json.result.source",
+    "source_sha256": "24fbca8d8138a20704928a2271f029e75b66900e0129d159d25341c0d4c46542",
+    "saved_pad_snapshot": "hardware/nfc-talisman/eda/core-pads.json",
+    "pad_snapshot_sha256": "13f0e1132d8d5e1573bd3f5c0182a2596e4c94532ae407004968d093ffc66941",
+    "saved_fill_candidate_used_only_for_crosscheck": "hardware/nfc-talisman/electrical/antenna-coil-fill-candidate.json",
+    "fill_candidate_sha256": "a0d7b3e7c78b2c2f1449361083b596fdac7ad76ec349fa7302267d6cd654b890"
+  },
+  "method": {
+    "scenario": "all 10 existing through vias enlarged in place; centers/tracks/pads unchanged",
+    "via_copper_diameter_mm": 0.55,
+    "via_drill_mm": 0.3,
+    "source_counts": {
+      "tracks": 124,
+      "vias": 10,
+      "saved_pads": 36
+    },
+    "copper_clearance_requirement_mm": 0.1524,
+    "copper_clearance_requirement_mil": 6,
+    "different_net_hole_clearance_requirement_mm": 0.175997,
+    "different_net_hole_clearance_requirement_mil": 6.929,
+    "via_hole_clearance_interpretation": "drill-edge to foreign-net copper; also checked drill-edge-to-drill-edge for different-net vias",
+    "clearance_formula": "via annulus edge: center-to-object distance − 0.275mm − object copper radius; hole edge: distance − 0.150mm − object copper radius",
+    "source_fill": {
+      "id": "fd7a9f3f102f4a3b",
+      "net": "ANT_LA",
+      "layer": 1,
+      "bridging": true,
+      "networkList": [
+        "ANT_LA",
+        "ANT_LB"
+      ],
+      "npoints": 259
+    },
+    "fill_matches_candidate": true,
+    "fill_vertex_count_source": 259,
+    "centerline_note": "All routes, vias, bridge fill, and outline are parsed from saved native source; pads from existing saved snapshot."
+  },
+  "results": {
+    "copper_rule_pass": true,
+    "minimum_foreign_net_copper_gap_mm": 0.2014,
+    "minimum_foreign_net_copper_gap_mil": 7.929,
+    "minimum_copper_object": {
+      "object": "cb8a9d528b7a2e53",
+      "net": "GND",
+      "layer": 2,
+      "width_mm": 0.2032,
+      "kind": "track",
+      "via": "U1_LB_breakout"
+    },
+    "copper_margin_over_6mil_mm": 0.049,
+    "copper_margin_over_6mil_mil": 1.929,
+    "hole_rule_pass": true,
+    "minimum_drill_edge_to_foreign_copper_mm": 0.3264,
+    "minimum_drill_edge_to_foreign_copper_mil": 12.85,
+    "minimum_hole_clearance_object": {
+      "object": "cb8a9d528b7a2e53",
+      "net": "GND",
+      "layer": 2,
+      "width_mm": 0.2032,
+      "kind": "track",
+      "via": "U1_LB_breakout"
+    },
+    "hole_margin_over_6p929mil_mm": 0.150403,
+    "hole_margin_over_6p929mil_mil": 5.921,
+    "minimum_different_net_hole_to_hole_gap_mm": 0.959032,
+    "minimum_different_net_hole_to_hole_gap_mil": 37.757,
+    "minimum_hole_pair": {
+      "a": "GND left",
+      "b_id": "4784cda28c2ff3a1",
+      "net_a": "GND",
+      "net_b": "ANT_LA"
+    },
+    "fill_to_foreign_top_copper": {
+      "min_gap_mm": 6.560794,
+      "min_gap_mil": 258.299,
+      "object": {
+        "kind": "track",
+        "object": "fa66c787dcab9acb",
+        "net": "LED2_A"
+      },
+      "passes_6mil": true
+    }
+  },
+  "per_via": [
+    {
+      "label": "VOUT local",
+      "id": "2a33e01d0c26e8af",
+      "net": "VOUT",
+      "position_mm": [
+        2.54,
+        -3.937
+      ],
+      "new_via": {
+        "diameter_mm": 0.55,
+        "drill_mm": 0.3
+      },
+      "min_foreign_copper": {
+        "gap_mm": 1.03564,
+        "gap_mil": 40.773,
+        "object_kind": "pad",
+        "object": "R4.2",
+        "object_net": "LED4_A",
+        "object_layer": 2
+      },
+      "min_hole_to_foreign_copper": {
+        "gap_mm": 1.16064,
+        "gap_mil": 45.694,
+        "object_kind": "pad",
+        "object": "R4.2",
+        "object_net": "LED4_A",
+        "object_layer": 2
+      },
+      "closest_foreign_tuning_pad": {
+        "pad": "CT2.2",
+        "net": "ANT_LB",
+        "gap_mm": 6.113018,
+        "gap_mil": 240.67
+      },
+      "via_to_fill_edge_copper_gap_mm": 10.205803,
+      "center_inside_fill": false,
+      "outline_edge_clearance_mm": 13.645071
+    },
+    {
+      "label": "VOUT left",
+      "id": "95d88a8b6125c7c7",
+      "net": "VOUT",
+      "position_mm": [
+        -3.683,
+        0.0
+      ],
+      "new_via": {
+        "diameter_mm": 0.55,
+        "drill_mm": 0.3
+      },
+      "min_foreign_copper": {
+        "gap_mm": 0.2584,
+        "gap_mil": 10.173,
+        "object_kind": "pad",
+        "object": "R1.2",
+        "object_net": "LED1_A",
+        "object_layer": 1
+      },
+      "min_hole_to_foreign_copper": {
+        "gap_mm": 0.3834,
+        "gap_mil": 15.094,
+        "object_kind": "pad",
+        "object": "R1.2",
+        "object_net": "LED1_A",
+        "object_layer": 1
+      },
+      "closest_foreign_tuning_pad": {
+        "pad": "CT1.1",
+        "net": "ANT_LA",
+        "gap_mm": 2.262475,
+        "gap_mil": 89.074
+      },
+      "via_to_fill_edge_copper_gap_mm": 10.784003,
+      "center_inside_fill": false,
+      "outline_edge_clearance_mm": 14.542001
+    },
+    {
+      "label": "GND right",
+      "id": "bdb88813cb687371",
+      "net": "GND",
+      "position_mm": [
+        2.921,
+        0.0
+      ],
+      "new_via": {
+        "diameter_mm": 0.55,
+        "drill_mm": 0.3
+      },
+      "min_foreign_copper": {
+        "gap_mm": 0.2584,
+        "gap_mil": 10.173,
+        "object_kind": "track",
+        "object": "7427c43ad659ffab",
+        "object_net": "VOUT",
+        "object_layer": 1
+      },
+      "min_hole_to_foreign_copper": {
+        "gap_mm": 0.3834,
+        "gap_mil": 15.094,
+        "object_kind": "track",
+        "object": "7427c43ad659ffab",
+        "object_net": "VOUT",
+        "object_layer": 1
+      },
+      "closest_foreign_tuning_pad": {
+        "pad": "CT2.2",
+        "net": "ANT_LB",
+        "gap_mm": 2.753957,
+        "gap_mil": 108.423
+      },
+      "via_to_fill_edge_copper_gap_mm": 11.796835,
+      "center_inside_fill": false,
+      "outline_edge_clearance_mm": 15.304001
+    },
+    {
+      "label": "GND left",
+      "id": "91c72dd890cefc91",
+      "net": "GND",
+      "position_mm": [
+        -1.143,
+        0.0
+      ],
+      "new_via": {
+        "diameter_mm": 0.55,
+        "drill_mm": 0.3
+      },
+      "min_foreign_copper": {
+        "gap_mm": 0.223541,
+        "gap_mil": 8.801,
+        "object_kind": "pad",
+        "object": "U1.1",
+        "object_net": "ANT_LA",
+        "object_layer": 1
+      },
+      "min_hole_to_foreign_copper": {
+        "gap_mm": 0.348541,
+        "gap_mil": 13.722,
+        "object_kind": "pad",
+        "object": "U1.1",
+        "object_net": "ANT_LA",
+        "object_layer": 1
+      },
+      "closest_foreign_tuning_pad": {
+        "pad": "CT1.2",
+        "net": "ANT_LB",
+        "gap_mm": 1.95385,
+        "gap_mil": 76.923
+      },
+      "via_to_fill_edge_copper_gap_mm": 13.324003,
+      "center_inside_fill": false,
+      "outline_edge_clearance_mm": 17.082001
+    },
+    {
+      "label": "GND upper-right",
+      "id": "daa8390199b6f7cd",
+      "net": "GND",
+      "position_mm": [
+        5.207,
+        3.937
+      ],
+      "new_via": {
+        "diameter_mm": 0.55,
+        "drill_mm": 0.3
+      },
+      "min_foreign_copper": {
+        "gap_mm": 0.27364,
+        "gap_mil": 10.773,
+        "object_kind": "pad",
+        "object": "R2.2",
+        "object_net": "LED2_A",
+        "object_layer": 1
+      },
+      "min_hole_to_foreign_copper": {
+        "gap_mm": 0.39864,
+        "gap_mil": 15.694,
+        "object_kind": "pad",
+        "object": "R2.2",
+        "object_net": "LED2_A",
+        "object_layer": 1
+      },
+      "closest_foreign_tuning_pad": {
+        "pad": "CT2.2",
+        "net": "ANT_LB",
+        "gap_mm": 4.216347,
+        "gap_mil": 165.998
+      },
+      "via_to_fill_edge_copper_gap_mm": 8.194048,
+      "center_inside_fill": false,
+      "outline_edge_clearance_mm": 11.759217
+    },
+    {
+      "label": "GND left-bottom",
+      "id": "94a7b870a63a1dab",
+      "net": "GND",
+      "position_mm": [
+        -7.112,
+        -0.381
+      ],
+      "new_via": {
+        "diameter_mm": 0.55,
+        "drill_mm": 0.3
+      },
+      "min_foreign_copper": {
+        "gap_mm": 1.18677,
+        "gap_mil": 46.723,
+        "object_kind": "pad",
+        "object": "D3.2",
+        "object_net": "LED3_A",
+        "object_layer": 2
+      },
+      "min_hole_to_foreign_copper": {
+        "gap_mm": 1.31177,
+        "gap_mil": 51.644,
+        "object_kind": "pad",
+        "object": "D3.2",
+        "object_net": "LED3_A",
+        "object_layer": 2
+      },
+      "closest_foreign_tuning_pad": {
+        "pad": "CT1.1",
+        "net": "ANT_LA",
+        "gap_mm": 5.050231,
+        "gap_mil": 198.828
+      },
+      "via_to_fill_edge_copper_gap_mm": 7.364542,
+      "center_inside_fill": false,
+      "outline_edge_clearance_mm": 11.113001
+    },
+    {
+      "label": "U1_LA_breakout",
+      "id": "4784cda28c2ff3a1",
+      "net": "ANT_LA",
+      "position_mm": [
+        -1.524,
+        1.2
+      ],
+      "new_via": {
+        "diameter_mm": 0.55,
+        "drill_mm": 0.3
+      },
+      "min_foreign_copper": {
+        "gap_mm": 0.242868,
+        "gap_mil": 9.562,
+        "object_kind": "track",
+        "object": "c285d80c7af8e9c3",
+        "object_net": "GND",
+        "object_layer": 1
+      },
+      "min_hole_to_foreign_copper": {
+        "gap_mm": 0.367868,
+        "gap_mil": 14.483,
+        "object_kind": "track",
+        "object": "c285d80c7af8e9c3",
+        "object_net": "GND",
+        "object_layer": 1
+      },
+      "closest_foreign_tuning_pad": {
+        "pad": "CT1.2",
+        "net": "ANT_LB",
+        "gap_mm": 0.75385,
+        "gap_mil": 29.679
+      },
+      "via_to_fill_edge_copper_gap_mm": 12.602197,
+      "center_inside_fill": false,
+      "outline_edge_clearance_mm": 16.298842
+    },
+    {
+      "label": "U1_LB_breakout",
+      "id": "bac9380629f99f8f",
+      "net": "ANT_LB",
+      "position_mm": [
+        1.000001,
+        1.2
+      ],
+      "new_via": {
+        "diameter_mm": 0.55,
+        "drill_mm": 0.3
+      },
+      "min_foreign_copper": {
+        "gap_mm": 0.2014,
+        "gap_mil": 7.929,
+        "object_kind": "track",
+        "object": "cb8a9d528b7a2e53",
+        "object_net": "GND",
+        "object_layer": 2
+      },
+      "min_hole_to_foreign_copper": {
+        "gap_mm": 0.3264,
+        "gap_mil": 12.85,
+        "object_kind": "track",
+        "object": "cb8a9d528b7a2e53",
+        "object_net": "GND",
+        "object_layer": 2
+      },
+      "closest_foreign_tuning_pad": {
+        "pad": "CT2.1",
+        "net": "ANT_LA",
+        "gap_mm": 1.139555,
+        "gap_mil": 44.864
+      },
+      "via_to_fill_edge_copper_gap_mm": 13.098688,
+      "center_inside_fill": false,
+      "outline_edge_clearance_mm": 16.669366
+    },
+    {
+      "label": "coil_outer_terminal",
+      "id": "cd3b85c3f88732c1",
+      "net": "ANT_LA",
+      "position_mm": [
+        -16.975,
+        0.0
+      ],
+      "new_via": {
+        "diameter_mm": 0.55,
+        "drill_mm": 0.3
+      },
+      "min_foreign_copper": {
+        "gap_mm": 1.657999,
+        "gap_mil": 65.276,
+        "object_kind": "via-copper",
+        "object": "fbbdc816f6222cda",
+        "object_net": "ANT_LB",
+        "object_layer": "through"
+      },
+      "min_hole_to_foreign_copper": {
+        "gap_mm": 1.782999,
+        "gap_mil": 70.197,
+        "object_kind": "hole-to-copper-via",
+        "object": "fbbdc816f6222cda",
+        "object_net": "ANT_LB",
+        "object_layer": "through"
+      },
+      "closest_foreign_tuning_pad": {
+        "pad": "CT1.2",
+        "net": "ANT_LB",
+        "gap_mm": 15.231609,
+        "gap_mil": 599.67
+      },
+      "via_to_fill_edge_copper_gap_mm": -0.274533,
+      "center_inside_fill": false,
+      "outline_edge_clearance_mm": 1.250001
+    },
+    {
+      "label": "coil_inner_terminal",
+      "id": "fbbdc816f6222cda",
+      "net": "ANT_LB",
+      "position_mm": [
+        -14.767001,
+        0.0
+      ],
+      "new_via": {
+        "diameter_mm": 0.55,
+        "drill_mm": 0.3
+      },
+      "min_foreign_copper": {
+        "gap_mm": 1.657999,
+        "gap_mil": 65.276,
+        "object_kind": "via-copper",
+        "object": "cd3b85c3f88732c1",
+        "object_net": "ANT_LA",
+        "object_layer": "through"
+      },
+      "min_hole_to_foreign_copper": {
+        "gap_mm": 1.782999,
+        "gap_mil": 70.197,
+        "object_kind": "hole-to-copper-via",
+        "object": "cd3b85c3f88732c1",
+        "object_net": "ANT_LA",
+        "object_layer": "through"
+      },
+      "closest_foreign_tuning_pad": {
+        "pad": "CT1.1",
+        "net": "ANT_LA",
+        "gap_mm": 12.222213,
+        "gap_mil": 481.189
+      },
+      "via_to_fill_edge_copper_gap_mm": -0.27447,
+      "center_inside_fill": false,
+      "outline_edge_clearance_mm": 3.458
+    }
+  ],
+  "native_drc_context": {
+    "physical_error": "10 Via Size entries; current 17.7165mil diameter and 7.874mil drill are below source rule minima 19.7mil OD and 11.8mil drill",
+    "connection_errors": 14,
+    "spacing_errors_reported": 0,
+    "note": "This is a geometric recalculation, not a new native DRC. It does not clear the current connection errors."
+  },
+  "limitations": [
+    "Uses saved pad snapshot; not refreshed from live EDA.",
+    "No copper shape/rounding/manufacturing tolerance allowance beyond saved native coordinates and 8mil/other source widths.",
+    "The two coil-end vias intentionally overlap the bridged antenna fill at their terminal points; unrelated fill clearances are checked separately.",
+    "Does not modify source/live EDA or validate fabrication capability."
+  ]
+}

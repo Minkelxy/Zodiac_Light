@@ -57,7 +57,7 @@ def pads():
     return out
 
 def existing_routes():
-    snapshot=ROOT/'eda/logs/22-audit-core-tracks.json'
+    snapshot=ROOT/'eda/native/core-initial-tracks.json'
     raw=json.loads(snapshot.read_text(encoding='utf-8'))
     if not raw.get('success'):
         raise RuntimeError('Native core-track snapshot is not a successful bridge result')
@@ -177,7 +177,7 @@ def proposal(base):
 
 def main():
     base=evaluate();suggested=proposal(base);live=existing_routes()
-    report={'helper_sha256':hashlib.sha256(HELPER.read_bytes()).hexdigest(),'core_pads_sha256':hashlib.sha256(PAD_FILE.read_bytes()).hexdigest(),'live_routes_sha256':hashlib.sha256((ROOT/'eda/logs/22-audit-core-tracks.json').read_bytes()).hexdigest(),'offline_JS_preview_valid':True,'apply':base['apply'],'layer_ids':[1,2,11],'coordinate_units':'geometry evaluated in mm; proposal track/via outputs remain native mil','baseline':review(base,live),'proposal':review(suggested,live),'proposal_geometry':suggested,'coil_fill_geometry':review_fill(live)}
+    report={'helper_sha256':hashlib.sha256(HELPER.read_bytes()).hexdigest(),'core_pads_sha256':hashlib.sha256(PAD_FILE.read_bytes()).hexdigest(),'live_routes_sha256':hashlib.sha256((ROOT/'eda/native/core-initial-tracks.json').read_bytes()).hexdigest(),'offline_JS_preview_valid':True,'apply':base['apply'],'layer_ids':[1,2,11],'coordinate_units':'geometry evaluated in mm; proposal track/via outputs remain native mil','baseline':review(base,live),'proposal':review(suggested,live),'proposal_geometry':suggested,'coil_fill_geometry':review_fill(live)}
     dest=ROOT/'electrical/antenna-geometry-review.json';dest.write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     print(json.dumps({'report':str(dest),'baseline_violation_count':len(report['baseline']['violations']),'proposal_violation_count':len(report['proposal']['violations']),'baseline_safe':report['baseline']['geometry_safe_under_stated_rules'],'proposal_geometry_safe':report['proposal']['geometry_safe_under_stated_rules'],'baseline_checks':report['baseline']['checks'],'proposal_checks':report['proposal']['checks']}))
 

@@ -1,0 +1,132 @@
+{
+  "schema": "easyeda-check-summary/v1",
+  "snapshot_status": "current_draft",
+  "snapshot_note": "Current native/log snapshot for review; this is not manufacturing release. Regenerate after any source, native project, or check-log change.",
+  "generated_at_utc": "2026-10-10T02:33:16+00:00",
+  "checks": {
+    "schematic_erc": {
+      "status": "completed_with_findings",
+      "file": "24-schematic-erc-current.json",
+      "raw_count": 1,
+      "counts": {
+        "warn": 1
+      },
+      "document_uuid": "293c7786afd689e8",
+      "source_log": {
+        "path": "eda/logs/24-schematic-erc-current.json",
+        "status": "present",
+        "size_bytes": 2161,
+        "sha256": "05f3394d826e025bacdedef538dbf34fe2c161d2788c086893b336ab2b97e87a"
+      },
+      "source_native": [
+        {
+          "path": "eda/native/schematic-source.jsonl",
+          "status": "present",
+          "size_bytes": 263439,
+          "sha256": "49dc2da282faf50989e1233dc8eee3a94e6a2d327fa324403fc1ebdb7abacc51"
+        },
+        {
+          "path": "eda/native/schematic-netlist.json",
+          "status": "present",
+          "size_bytes": 37178,
+          "sha256": "0f7774ef284b54a3d5d8c95eca907674a83ae497edcd439cee319a1c9bcba926"
+        }
+      ],
+      "erc_findings": [
+        {
+          "type": "warn",
+          "rule": "ATTRMATCHCODE",
+          "primitive_count": 11,
+          "references": [
+            "C1",
+            "CT1",
+            "CT2",
+            "R1",
+            "R2",
+            "R3",
+            "R4",
+            "R5",
+            "R6",
+            "R7",
+            "U1"
+          ]
+        }
+      ]
+    },
+    "core_pcb_drc": {
+      "status": "completed_clean",
+      "file": "25-core-pcb-drc-current.json",
+      "drc_group_count": 0,
+      "finding_groups": [],
+      "counts": {
+        "components": 15,
+        "pads": 38,
+        "lines": 126,
+        "vias": 10,
+        "fills": 1
+      },
+      "document_uuid": "eb14b9eaec4f920c",
+      "source_log": {
+        "path": "eda/logs/25-core-pcb-drc-current.json",
+        "status": "present",
+        "size_bytes": 486,
+        "sha256": "9f2e31db11720364688082e33f8d9ab9be6c1edeec82ab9470ed712650cc3b54"
+      },
+      "source_native": [
+        {
+          "path": "eda/native/core-source.jsonl",
+          "status": "present",
+          "size_bytes": 105234,
+          "sha256": "a1816656be6a6926021640aaea19774ea9046d6ef4ee81666ea2a74ff5b33e5c"
+        },
+        {
+          "path": "eda/native/core-netlist.json",
+          "status": "present",
+          "size_bytes": 75608,
+          "sha256": "8d78d767a990a8a1a1b675739d28d19f246644c105045e577d5bfb5e8e19788b"
+        }
+      ]
+    },
+    "panel_pcb_drc": {
+      "status": "completed_clean",
+      "file": "26-panel-pcb-drc-current.json",
+      "drc_group_count": 0,
+      "finding_groups": [],
+      "counts": {
+        "components": 15,
+        "pads": 146,
+        "lines": 126,
+        "vias": 10,
+        "fills": 1,
+        "polylines": 88
+      },
+      "document_uuid": "4a4719695b24dc2b",
+      "source_log": {
+        "path": "eda/logs/26-panel-pcb-drc-current.json",
+        "status": "present",
+        "size_bytes": 511,
+        "sha256": "4e524e39acda8260df3a4177e0dd8b3b3cd17a6597176885d379b4f11babdbce"
+      },
+      "source_native": [
+        {
+          "path": "eda/native/panel-source.jsonl",
+          "status": "present",
+          "size_bytes": 223698,
+          "sha256": "7ad67a2797a1aa788609353028992b1cfd289629e290dadab5f3c72a4476aea6"
+        },
+        {
+          "path": "eda/native/panel-netlist.json",
+          "status": "present",
+          "size_bytes": 75608,
+          "sha256": "8d78d767a990a8a1a1b675739d28d19f246644c105045e577d5bfb5e8e19788b"
+        }
+      ]
+    }
+  },
+  "native_project": {
+    "path": "eda/native/nfc-talisman-current.epro2",
+    "status": "present",
+    "size_bytes": 96069,
+    "sha256": "bc68aca27f9d3547b8e51a93a06bf07212c9afdc7ceb05838a6391f075fabd4b"
+  }
+}
