@@ -1,0 +1,206 @@
+{
+  "date": "2026-10-11",
+  "status": "optical_geometry_review_only_not_manufacturing_or_photometric_validation",
+  "coordinate_convention": "Exterior face X right, Y down; front=(native X,-native Y), rear=(-native X,-native Y), flip about common vertical datum. Native core is mil/Y-up; geometry is mm/Y-down.",
+  "native_core_centers_mm": {
+    "D1": [
+      -5.994,
+      0.0
+    ],
+    "D2": [
+      6.0,
+      4.0
+    ],
+    "D3": [
+      -6.0,
+      0.0
+    ],
+    "D4": [
+      6.0,
+      -4.0
+    ]
+  },
+  "rear_exterior_centers_mm": {
+    "D3": [
+      6.0,
+      -0.0
+    ],
+    "D4": [
+      -6.0,
+      4.0
+    ]
+  },
+  "front_exterior_centers_mm": {
+    "D1": [
+      -5.994,
+      -0.0
+    ],
+    "D2": [
+      6.0,
+      -4.0
+    ]
+  },
+  "star_nearest_source_distances": [
+    {
+      "name": "sigma",
+      "hip": 92855,
+      "center_exterior_mm": [
+        -9.908088235294118,
+        -1.9209558823529411
+      ],
+      "source_distances_mm": {
+        "D3": 16.023649484554056,
+        "D4": 7.094425432380989
+      },
+      "nearest_source": "D4",
+      "nearest_distance_mm": 7.094425432380989
+    },
+    {
+      "name": "phi",
+      "hip": 92041,
+      "center_exterior_mm": [
+        -5.459558823529412,
+        -2.729779411764706
+      ],
+      "source_distances_mm": {
+        "D3": 11.780203057113459,
+        "D4": 6.751444852491726
+      },
+      "nearest_source": "D4",
+      "nearest_distance_mm": 6.751444852491726
+    },
+    {
+      "name": "lambda",
+      "hip": 90496,
+      "center_exterior_mm": [
+        1.2132352941176472,
+        -8.795955882352942
+      ],
+      "source_distances_mm": {
+        "D3": 10.014087888259235,
+        "D4": 14.68901801862287
+      },
+      "nearest_source": "D3",
+      "nearest_distance_mm": 10.014087888259235
+    },
+    {
+      "name": "delta",
+      "hip": 89931,
+      "center_exterior_mm": [
+        6.875,
+        -1.3143382352941178
+      ],
+      "source_distances_mm": {
+        "D3": 1.5789585164772555,
+        "D4": 13.92866884806689
+      },
+      "nearest_source": "D3",
+      "nearest_distance_mm": 1.5789585164772555
+    },
+    {
+      "name": "gamma2",
+      "hip": 88635,
+      "center_exterior_mm": [
+        13.75,
+        -2.729779411764706
+      ],
+      "source_distances_mm": {
+        "D3": 8.216702236109963,
+        "D4": 20.86510078890136
+      },
+      "nearest_source": "D3",
+      "nearest_distance_mm": 8.216702236109963
+    },
+    {
+      "name": "epsilon",
+      "hip": 90185,
+      "center_exterior_mm": [
+        8.694852941176471,
+        8.795955882352942
+      ],
+      "source_distances_mm": {
+        "D3": 9.199514783882181,
+        "D4": 15.457680802380368
+      },
+      "nearest_source": "D3",
+      "nearest_distance_mm": 9.199514783882181
+    },
+    {
+      "name": "zeta",
+      "hip": 93506,
+      "center_exterior_mm": [
+        -10.514705882352942,
+        6.976102941176471
+      ],
+      "source_distances_mm": {
+        "D3": 17.927674769096907,
+        "D4": 5.407379949719781
+      },
+      "nearest_source": "D4",
+      "nearest_distance_mm": 5.407379949719781
+    },
+    {
+      "name": "tau",
+      "hip": 93864,
+      "center_exterior_mm": [
+        -13.75,
+        3.943014705882353
+      ],
+      "source_distances_mm": {
+        "D3": 20.139758314607565,
+        "D4": 7.750209501926104
+      },
+      "nearest_source": "D4",
+      "nearest_distance_mm": 7.750209501926104
+    }
+  ],
+  "current_star_nearest_min_mm": 1.5789585164772555,
+  "current_star_nearest_max_mm": 10.014087888259235,
+  "unconstrained_star_only_two_center_minimax": {
+    "radius_mm": 9.558372797631133,
+    "centers_and_cluster_radius_mm": [
+      [
+        [
+          4.954044117647059,
+          0.0
+        ],
+        9.558372797631133
+      ],
+      [
+        [
+          -8.670704994596264,
+          1.7671343471771903
+        ],
+        5.525730095409858
+      ]
+    ],
+    "mask": 60,
+    "worst_distance_reduction_percent": 4.550739874795728,
+    "scope": "Eight star centers only. No pads, resistors, traces, antenna, slots, die geometry, materials or brightness constraints. Not an approved placement."
+  },
+  "opening_area_mm2": {
+    "stars": 4.0212385965949355,
+    "slots": 66.36256225545738,
+    "slot_to_star_ratio": 16.5030153424995,
+    "slots_fraction": 0.9428669871772393
+  },
+  "point_source_straight_bore_model": {
+    "equation": "d_max=R*(1+2*h/t)",
+    "R_mm": 0.4,
+    "t_mm_nominal": 1,
+    "h_mm_example": 0.75,
+    "d_max_mm_example": 1,
+    "h_mm_alternative_example": 1,
+    "d_max_mm_alternative_example": 1.2,
+    "limitations": "Ideal point source and straight cylindrical bore only; finite luminous area, optical center, adhesive/actual gap, thickness tolerance, chamfers, FR-4 and bore scattering, diffuser/guide, reflection and phone RF are not modeled."
+  },
+  "led_primary_source": "https://www.kingbrightusa.com/images/catalog/SPEC/APG1608SYKC-T.pdf",
+  "led_source_revision": "V15B, 2025-03-13; p1: 120deg full half-intensity viewing angle, not cutoff; nominal height .25mm, tolerance .1mm.",
+  "source_sha256": {
+    "geometry/design.json": "3c677d826508b96cc74d04c815f9a35a69bd39f6a7b3d6d455734b9061138391",
+    "manufacturing/draft/four-led-panel-pnp.csv": "2212e094e7029b08a778017d33ff73cd4045fc0f33d78cc79dd5356023c23ef5",
+    "artwork/reference-collection/talisman-single-ink-v1/horse-single-ink.png": "c732fa1d57448ed367c3a7d841f3674c9f5a4565fe4e5d2999c4e43b0d17c728",
+    "scripts/build_panel_import.py": "b5fdad68875b87be7096f4172a05fe0da2ab61590568ec5d0f95e03e95987ab5"
+  },
+  "no_native_or_manufacturing_changes": true
+}

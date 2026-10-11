@@ -1,5 +1,7 @@
 # PCB 板框与元器件布局复核 v3
 
+2026-10-11 光学更正：下文 LED 至星孔/槽的距离段落混用了原生 Y-up 与图案 Y-down，不能继续作为照明覆盖依据。统一后盖外侧坐标后，八星到最近后面 LED 的中心距约 1.58–10.01 mm；孔壁遮挡也需纳入评估。请以 [最新星图/LED 复核](../manufacturing/star-led-review-v1/README.md) 为准。该更正不改变现有 PCB 或原生铜几何。
+
 复核日期：2026-10-10（只读）。依据 `geometry/design.json`、`geometry/validation.json`、`eda/native/core-source.jsonl`、`eda/native/panel-source.jsonl`、`eda/core-pads.json`、`electrical/native-copper-audit.json`、`electrical/BOM.csv` 及制造说明。坐标以核心板中心为原点；原生 PCB 坐标是 mil，报告中的换算值为 mm。未修改现有设计文件。
 
 ## 结论

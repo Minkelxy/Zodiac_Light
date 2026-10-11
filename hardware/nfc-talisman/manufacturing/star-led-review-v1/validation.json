@@ -1,0 +1,62 @@
+{
+  "status": "pass",
+  "checks": [
+    "SVG XML valid",
+    "PNP centers read without mutation",
+    "source hashes unchanged"
+  ],
+  "svg_dimensions_mm": [
+    297,
+    210
+  ],
+  "rendering_and_visual_review": "SVG rendered with configured sharp/libvips runtime; PNG visually reviewed: all three cards, distance table, horse overlay and cross-section readable without overlap. h values explicitly labeled as assumptions.",
+  "scope": "Artifact/source integrity only, no optical or PCB validation.",
+  "rendered_png_size_px": [
+    4157,
+    2940
+  ],
+  "artifact_sha256": {
+    "README.md": "a2c603f9448c17bdb5e85755f004c652959aef04fcdcced1a846cd88737d3b07",
+    "led-overlay-review.svg": "a448e1240b0dcb4230a9eef8aeb704a28bae4a4a2995959d1c8c50a658765d7a",
+    "led-overlay-review.png": "ee7e58d32527965df8d490e3a74c41c6fa019884bc712a6c79fd1b89111bf72c",
+    "metrics.json": "5a21668c2093684fa3f1c41b912e4df64089ab7cffa7c59486601af424aec09f"
+  },
+  "manufacturing_baseline_sha_check": {
+    "file_count": 28,
+    "all_match": true,
+    "reference": "../draft/export-manifest.json"
+  },
+  "animal_source_sha_check": {
+    "file_count": 12,
+    "all_match": true,
+    "reference": "../../artwork/reference-collection/talisman-single-ink-v1/manifest.json"
+  },
+  "independent_style_review": {
+    "source_sha_unchanged": true,
+    "all_8_holes_and_11_slots_match_source": true,
+    "nominal_board_inset_mm": 0.2,
+    "inset_symmetric_difference_from_exact_polygon_mm2": 1.232896396174965e-05,
+    "A4_SVG_mm": [
+      210,
+      297
+    ],
+    "A4_three_faces_mm": [
+      37,
+      37
+    ],
+    "actual_PNG_visual_review": "Root inspected corrected B and A4 PNGs; canvas/aspect ratio, border symmetry and text placement appropriate for review. Fine typography requires physical-size print confirmation."
+  },
+  "style_artifact_sha256": {
+    "A-current-day.png": "7307309e43de96dae161ea71cc77e7e61a870a59303503c36da16db2ac730371",
+    "A-current-day.svg": "df8cb484be0e77817fecd70a718f9179976c83be2c0f57ec8aedd9fa71d640e7",
+    "A4-style-study-1to1.png": "4d017b10a6ffb897e30ec743df3d5ad622bdc83fc5a9638fe898c2bd8a59c0d4",
+    "A4-style-study-1to1.svg": "5eeb347bbd19c6492cbf43af4f8eb62c5a2da38e4e78e4414a869ac453300360",
+    "B-soft-type-day.png": "1fc141bd8839b51d7736b0efe603631c9c6c8800bb22a7cf31d887249272f972",
+    "B-soft-type-day.svg": "b5a56fda278458f0e5ae6fa0d238b4afd6e26bf53a5fe5510a89afa7a5fbc127",
+    "index.html": "1e7ee604480405dd815a45b0fe2cebc22688357b9634150315c56aeb529aa801",
+    "night-shape-only.png": "dc96973f1b5557c246eebb884e9e466ccb243faa9d5a1b1b2e45b76a95d42a67",
+    "night-shape-only.svg": "109e8e647de97d371d97f99d5d15e1f5088b402f4f3333323d2e02d4fc59f3d6",
+    "README.md": "e4016c40849fc5b2862bb991fdf7f9d69e6fccbaccd0462e454b2455492e0403",
+    "validation.json": "13edcf0783da0ecdabf2adffcf5dfff3601e65bece19672335a46ebc7bce7ad8"
+  }
+}

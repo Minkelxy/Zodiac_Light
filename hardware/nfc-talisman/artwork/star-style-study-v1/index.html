@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>射手座 37 mm 风格校样</title>
+  <style>
+    :root { color-scheme: light; font-family: system-ui, "Microsoft YaHei", sans-serif; color: #202b36; background: #f4f5f6; }
+    body { margin: 0 auto; max-width: 1120px; padding: 24px; }
+    h1 { margin: 0 0 8px; font-size: 1.55rem; }
+    p { line-height: 1.6; }
+    .notice { padding: 12px 16px; background: #fff7dc; border-left: 4px solid #c7953d; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(310px, 1fr)); gap: 18px; align-items: start; }
+    article { background: white; border: 1px solid #d9dee3; border-radius: 10px; padding: 14px; }
+    article img { display: block; width: 100%; height: auto; background: #eee; }
+    h2 { margin: 2px 0 8px; font-size: 1.08rem; }
+    .links { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 10px; }
+    a { color: #075ca8; }
+    .wide { margin-top: 18px; }
+    .wide img { max-width: 720px; border: 1px solid #d9dee3; }
+    footer { margin-top: 20px; font-size: .93rem; }
+  </style>
+</head>
+<body>
+  <h1>射手座 · 37 mm 独立风格校样</h1>
+  <p>白色阻焊底示意、深色底、浅色线；复用现有 8 个星孔和 11 条分离槽。屏幕图用于比较排版，不代表实物透光或供应商 CAM 结果。</p>
+  <p class="notice"><strong>B 版仅为印刷候选。</strong>目前 SAGITTARIUS / AD ASTRA 仍是系统字体文字；正式使用前须转成矢量轮廓并核对字号、笔画、丝印、alpha 与 CAM。该候选尚未制造验证。</p>
+  <section class="grid">
+    <article><h2>A · 当前字样 · 日间</h2><img src="A-current-day.png" alt="当前折线字样与深色日间星图校样"><div class="links"><a href="A-current-day.svg">打开 37 mm SVG</a><a href="A-current-day.png">打开 PNG</a></div></article>
+    <article><h2>B · 柔和字体候选 · 日间</h2><img src="B-soft-type-day.png" alt="SAGITTARIUS 与 AD ASTRA 柔和字体候选"><div class="links"><a href="B-soft-type-day.svg">打开 37 mm SVG</a><a href="B-soft-type-day.png">打开 PNG</a></div></article>
+    <article><h2>夜间形状示意</h2><img src="night-shape-only.png" alt="标示星孔和槽形状的夜间示意"><p>浅色表示开口位置；不表示亮度或均匀性。</p><div class="links"><a href="night-shape-only.svg">打开 SVG</a><a href="night-shape-only.png">打开 PNG</a></div></article>
+  </section>
+  <section class="wide"><h2>A4 · 210 × 297 mm · 1:1 校样页</h2><p>三个图案各有 10 mm 标尺。打印 SVG 时选 A4 与 100% / 实际大小，不要“适合页面”。</p><a href="A4-style-study-1to1.svg">打开 A4 SVG</a> · <a href="A4-style-study-1to1.png">打开 A4 PNG</a><img src="A4-style-study-1to1.png" alt="包含三个毫米尺寸校样和标尺的A4页面"></section>
+  <footer><a href="README.md">中文审查说明</a> · <a href="validation.json">尺寸与范围校验</a></footer>
+</body>
+</html>

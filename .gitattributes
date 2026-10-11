@@ -23,3 +23,5 @@ hardware/nfc-talisman/artwork/production-study-v1/** -text -whitespace
 hardware/nfc-talisman/manufacturing/first-article-v1/** -text -whitespace
 hardware/nfc-talisman/manufacturing/bom-erc-closeout-v1/** -text -whitespace
 hardware/nfc-talisman/manufacturing/improvement-review-v1/** -text -whitespace
+hardware/nfc-talisman/manufacturing/star-led-review-v1/** -text -whitespace
+hardware/nfc-talisman/artwork/star-style-study-v1/** -text -whitespace

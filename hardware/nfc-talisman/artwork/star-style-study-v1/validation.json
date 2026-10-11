@@ -1,0 +1,91 @@
+{
+  "status": "geometry_and_source_hash_pass",
+  "source": "artwork/sagittarius_face.svg",
+  "source_sha256_before_generation": "09e536d8f9157cdcf2494c6cde459d49930a54bd02cdddaa2dda52ead09f457d",
+  "source_sha256_after_generation": "09e536d8f9157cdcf2494c6cde459d49930a54bd02cdddaa2dda52ead09f457d",
+  "source_artwork_unchanged": true,
+  "output_scope": "artwork/star-style-study-v1/ only",
+  "board_size_mm": [
+    37,
+    37
+  ],
+  "orientation": "exterior rear view; 0 degrees; not mirrored",
+  "star_holes": 8,
+  "isolated_slots": 11,
+  "slot_width_mm": 1.0,
+  "daytime_clearance_mm": 0.2,
+  "daytime_aperture_fill": "#17232f",
+  "board_substrate": "white soldermask is simulated where 0.20 mm transparent print buffers reveal the base; candidate finish route: white soldermask plus colored silkscreen",
+  "geometry_comparison": {
+    "A-current-day.svg": {
+      "star_hole_count": 8,
+      "slot_count": 11,
+      "star_centers_and_diameters_match": true,
+      "slot_centerlines_and_widths_match": true
+    },
+    "B-soft-type-day.svg": {
+      "star_hole_count": 8,
+      "slot_count": 11,
+      "star_centers_and_diameters_match": true,
+      "slot_centerlines_and_widths_match": true
+    },
+    "night-shape-only.svg": {
+      "star_hole_count": 8,
+      "slot_count": 11,
+      "star_centers_and_diameters_match": true,
+      "slot_centerlines_and_widths_match": true
+    }
+  },
+  "variants": {
+    "A-current-day.svg": "existing AD ASTRA / FORTIS ET LIBER vector lettering",
+    "B-soft-type-day.svg": "printing candidate only; SAGITTARIUS / AD ASTRA live text; requires outline conversion and print validation",
+    "night-shape-only.svg": "shape schematic only; no light-intensity prediction"
+  },
+  "page": {
+    "file": "A4-style-study-1to1.svg",
+    "size_mm": [
+      210,
+      297
+    ],
+    "root_size_is_1to1": true,
+    "three_nested_faces_are_37mm": true,
+    "each_scale_bar_mm": 10
+  },
+  "design_checks": {
+    "all_variants_have_source_star_count": true,
+    "all_variants_have_source_slot_count": true,
+    "added_stars": 0,
+    "animal_raster_images_in_candidate_svg": 0,
+    "active_artwork_source_sha_unchanged": true,
+    "copper_layer_geometry_in_candidates": 0
+  },
+  "limitations": [
+    "Daytime white reveals approximate a 0.20 mm transparent print buffer around apertures; production ink spreading and registration are not represented.",
+    "The standard font in B is live SVG text and can render differently across systems until converted to outlines.",
+    "Night schematic indicates aperture geometry, not NFC output, optical transmission, brightness or uniformity.",
+    "This study is not manufacturing release or supplier CAM approval."
+  ],
+  "png_renders": {
+    "rasterizer": "sharp",
+    "individual_target_dpi": 1098.4,
+    "a4_target_dpi": 300.0,
+    "dimensions_px": {
+      "A-current-day.png": [
+        1600,
+        1600
+      ],
+      "B-soft-type-day.png": [
+        1600,
+        1600
+      ],
+      "night-shape-only.png": [
+        1600,
+        1600
+      ],
+      "A4-style-study-1to1.png": [
+        2480,
+        3508
+      ]
+    }
+  }
+}
