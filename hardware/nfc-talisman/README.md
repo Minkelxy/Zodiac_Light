@@ -4,8 +4,9 @@
 
 ## 先看这些
 
+- 2026-10-11 推进资料：[`manufacturing/improvement-review-2026-10-11.md`](manufacturing/improvement-review-2026-10-11.md) 汇总本轮校样、光路、装配、BOM/ERC 的结论；[`artwork/production-study-v1/index.html`](artwork/production-study-v1/index.html) 为实际尺寸打印入口；[`manufacturing/first-article-v1/README.md`](manufacturing/first-article-v1/README.md) 为首件记录包；[`manufacturing/material-and-finish-baseline.md`](manufacturing/material-and-finish-baseline.md) 统一当前外观与材料评审口径。它们是评审资料，当前制造草案仍未放行。
 - [`manufacturing/design-review-v3.md`](manufacturing/design-review-v3.md)：最新原理图整理、PCB 布局调整、板框检查和 BOM 结论。
-- [`eda/schematic-review.png`](eda/schematic-review.png)：实际原理图预览；[`geometry/core-layout-review-v3.png`](geometry/core-layout-review-v3.png) 为两面布局预览；[`manufacturing/bom-ready.csv`](manufacturing/bom-ready.csv) 为汇总物料表，C1 状态见 [`manufacturing/bom-review.md`](manufacturing/bom-review.md)。
+- [`eda/schematic-review.png`](eda/schematic-review.png)：实际原理图预览；[`geometry/core-layout-review-v3.png`](geometry/core-layout-review-v3.png) 为两面布局预览；最新汇总物料与 C1 状态见 [`current-bom-ready.csv`](manufacturing/bom-erc-closeout-v1/current-bom-ready.csv) 和 [`current-bom-review.md`](manufacturing/bom-erc-closeout-v1/current-bom-review.md)。旧 `manufacturing/bom-ready.csv` / `bom-review.md` 保留为 2026-10-10 manifest 的冻结快照。
 - [`electrical/source-index.md`](electrical/source-index.md)：电路来源与交接资料。
 - [`electrical/assembly.md`](electrical/assembly.md)：器件与电路装配说明。
 - [`geometry/README.md`](geometry/README.md)：机械几何定义及检查入口。
@@ -61,4 +62,4 @@ python hardware/nfc-talisman/scripts/archive_check_summary.py
 
 2026-10-11 原生 ImageGen 已恢复，完成十二张独立的 [单色风格重绘候选与复核](artwork/reference-collection/talisman-monochrome-v1/README.md)。每张保留原主色，用透明留白、同色内线和少量排线表达转折；羊保留连续头，猪补回长下弧，马保留六块紫色。用户随后批准仅统一 RGB，完成 [十二张严格单色 PNG](artwork/reference-collection/talisman-single-ink-v1/README.md) 与 [下载包](artwork/talisman-single-ink-v1.zip)：1024×1024、等比居中，12/12颜色唯一性通过，12/12 alpha 与原生候选逐字节一致。图库支持五种对照并默认显示单色版，来源、准确提示词、原生稿与输出哈希已归档。牛脸、龙角等局部仍有造型精修待办，不将颜色通过解释为原作准确还原通过；前一日403保留为历史。未更改EDA、PCB或制造几何，马图仍由用户手动导入。
 
-本轮交付文档只修正制造入口过时的最小异网铜距（当前 **0.20140041 mm**）并明确 C1 的 NRND 采购冻结/候选替代料同步要求。核对已有三项 ERC/DRC 日志哈希与摘要一致，未重新运行客户端检查。原制造草案、实物 RF/手机/光路与 CAM 放行待办继续保留。
+2026-10-11 最新推进：已完成十二图实际尺寸校样、马面光路候选、首件装配与测试空模板，并在原生工程重新只读检查 ERC（0 错误、1 条属性匹配警告）。C1 候选的最大高度和推荐焊盘与当前设计有差异，继续保持 Qty 0 / HOLD；原生 PCB 与制造草案没有修改。详情见 [推进报告](manufacturing/improvement-review-2026-10-11.md) 与 [归档评审包](manufacturing/improvement-review-v1.zip)。实物 RF、手机读写、光路及 CAM 待办继续保留。

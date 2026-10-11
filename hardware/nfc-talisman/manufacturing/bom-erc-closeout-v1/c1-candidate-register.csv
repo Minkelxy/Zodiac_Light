@@ -1,0 +1,2 @@
+﻿Qty,Ref,Value,Footprint,MPN,LCSC,Disposition,Native status,Evidence / open checks
+0,C1,150nF 16V X7R ±10%,0402 (1005 metric),TCC0402X7R154K160AT,C7393865,HOLD; review candidate only,Not synchronized; native remains Murata GRM155R71C154KA12D / C162182,"CCTC DRAAW108K/1-2022 p.16: 0402*2 (>=100nF) max body 1.20x0.70x0.70mm; termination e=0.15-0.30mm. p.34 recommended reflow A=0.35-0.45mm; current native gap ~0.3404mm. Check cover clearance, assembly process, pad/termination evidence before adoption."

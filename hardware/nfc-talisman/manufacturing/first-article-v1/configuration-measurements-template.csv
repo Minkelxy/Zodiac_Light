@@ -1,0 +1,10 @@
+﻿record_id,sample_id,date_local,operator,source_manifest_sha256,structure_stage,led_mode,installed_led_designators,CT1_pF_actual,CT2_status_or_pF,resonance_kHz_measured,resonance_method_and_coupling,phone_read_range_measured_mm,read_range_method_and_orientation,user_target_read_range_mm_optional,VOUT_min_V,VOUT_max_V,VOUT_measurement_condition,probe_model_and_grounding,front_light_evidence_path,back_light_evidence_path,dark_scene_setup,horse_form_visible_yes_no,eight_stars_visible_yes_no,scan_flicker_observation,adhesive_type,adhesive_thickness_mm_measured,cure_condition,fixture_fit_observation,alignment_or_obstruction_notes,photo_or_waveform_paths,reviewer_result_unassessed_pass_fail,notes
+bare_board-off_all_leds_DNP_diagnostic,,,,,bare_board,off_all_leds_DNP_diagnostic,,,DNP (record actual if changed),,,,,,,,,,,,,,,,,,,,,,UNASSESSED,
+bare_board-two_LED_D1_D3,,,,,bare_board,two_LED_D1_D3,,,DNP (record actual if changed),,,,,,,,,,,,,,,,,,,,,,UNASSESSED,
+bare_board-four_LED_D1_D2_D3_D4_default,,,,,bare_board,four_LED_D1_D2_D3_D4_default,,,DNP (record actual if changed),,,,,,,,,,,,,,,,,,,,,,UNASSESSED,
+dry_stack-off_all_leds_DNP_diagnostic,,,,,dry_stack,off_all_leds_DNP_diagnostic,,,DNP (record actual if changed),,,,,,,,,,,,,,,,,,,,,,UNASSESSED,
+dry_stack-two_LED_D1_D3,,,,,dry_stack,two_LED_D1_D3,,,DNP (record actual if changed),,,,,,,,,,,,,,,,,,,,,,UNASSESSED,
+dry_stack-four_LED_D1_D2_D3_D4_default,,,,,dry_stack,four_LED_D1_D2_D3_D4_default,,,DNP (record actual if changed),,,,,,,,,,,,,,,,,,,,,,UNASSESSED,
+bonded_stack-off_all_leds_DNP_diagnostic,,,,,bonded_stack,off_all_leds_DNP_diagnostic,,,DNP (record actual if changed),,,,,,,,,,,,,,,,,,,,,,UNASSESSED,
+bonded_stack-two_LED_D1_D3,,,,,bonded_stack,two_LED_D1_D3,,,DNP (record actual if changed),,,,,,,,,,,,,,,,,,,,,,UNASSESSED,
+bonded_stack-four_LED_D1_D2_D3_D4_default,,,,,bonded_stack,four_LED_D1_D2_D3_D4_default,,,DNP (record actual if changed),,,,,,,,,,,,,,,,,,,,,,UNASSESSED,

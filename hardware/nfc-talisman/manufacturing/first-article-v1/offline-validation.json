@@ -1,0 +1,152 @@
+{
+  "status": "offline_document_validation_only_no_manufacturing_or_physical_acceptance",
+  "generated_local_date": "2026-10-11",
+  "source_manifest": {
+    "path": "manufacturing/draft/export-manifest.json",
+    "sha256": "0502b61de164754eaa18710f60f39209344761dc1b1052caecbf729ee7e68722",
+    "manifest_status": "draft_not_released",
+    "manifest_date": "2026-10-10"
+  },
+  "assembly_svg": {
+    "path": "manufacturing/first-article-v1/assembly-acceptance.svg",
+    "xml_well_formed": true,
+    "declared_dimensions_mm": [
+      297,
+      210
+    ],
+    "browser_rendered_png": "manufacturing/first-article-v1/assembly-acceptance.png",
+    "renderer": "Configured Playwright Chromium runtime",
+    "png_format": "PNG",
+    "png_dimensions_px": [
+      1188,
+      840
+    ],
+    "visual_review": "Re-rendered and visually reviewed after stack-order wording correction: captions now show layer sequence without implying assembly proceeds L1→L5; step 1 matches actual build order L5, L4, L3 (Top toward horse face), L2, L1. Bottom cover arrow points down/out. Dimension arrows, regular 37:30 across-flats octagon, 3.5 mm ring, TP1/TP2 coordinates and remaining page text are legible without overlap."
+  },
+  "csv_templates": [
+    {
+      "file": "configuration-measurements-template.csv",
+      "data_rows": 9,
+      "expected_rows": 9,
+      "row_count_ok": true,
+      "observation_result_columns": [
+        "resonance_kHz_measured",
+        "VOUT_min_V",
+        "VOUT_max_V",
+        "VOUT_measurement_condition",
+        "front_light_evidence_path",
+        "back_light_evidence_path",
+        "horse_form_visible_yes_no",
+        "eight_stars_visible_yes_no",
+        "adhesive_thickness_mm_measured",
+        "alignment_or_obstruction_notes",
+        "photo_or_waveform_paths"
+      ],
+      "nonblank_observation_results": 0,
+      "observation_results_blank_ok": true
+    },
+    {
+      "file": "phone-contact-trials-template.csv",
+      "data_rows": 360,
+      "expected_rows": 360,
+      "row_count_ok": true,
+      "observation_result_columns": [
+        "continuous_read_success_yes_no",
+        "tap_flicker_observed_yes_no",
+        "VOUT_at_this_condition_V_optional",
+        "front_light_evidence_path_optional",
+        "back_light_evidence_path_optional",
+        "NDEF_log_or_photo_path"
+      ],
+      "nonblank_observation_results": 0,
+      "observation_results_blank_ok": true
+    },
+    {
+      "file": "ndef-content-validation-template.csv",
+      "data_rows": 4,
+      "expected_rows": 4,
+      "row_count_ok": true,
+      "observation_result_columns": [
+        "tag_is_new_blank_chip_yes_no",
+        "format_result_or_not_applicable",
+        "URL_write_success_yes_no",
+        "URL_readback_match_yes_no",
+        "text_rewrite_success_yes_no",
+        "text_readback_match_yes_no",
+        "NDEF_log_or_photo_path"
+      ],
+      "nonblank_observation_results": 0,
+      "observation_results_blank_ok": true
+    }
+  ],
+  "matrix_note": "360 contact rows are a complete optional matrix, not a requirement to execute every combination. First pass B4/S4. If unstable continue B2/S2, then all-LED-DNP no-load diagnosis. Validate URL and text rewriting once per phone and face, then 10 independent re-touch reads; no write/erase per read. Bond only after dry-stack acceptance.",
+  "manifest_hash_baseline_checks": [
+    {
+      "path": "manufacturing/draft/nfc-talisman-panel-draft.zip",
+      "manifest_bytes": 629343,
+      "actual_bytes": 629343,
+      "manifest_sha256": "c896e9fc71a24b6f806aa5824ebf6bf4011a14cc3614170ff5e89f9a49165aa0",
+      "actual_sha256": "c896e9fc71a24b6f806aa5824ebf6bf4011a14cc3614170ff5e89f9a49165aa0",
+      "matches_manifest": true
+    },
+    {
+      "path": "manufacturing/draft/nfc-talisman-panel-cam-review.zip",
+      "manifest_bytes": 609856,
+      "actual_bytes": 609856,
+      "manifest_sha256": "6b2d0da3e3f29df6277a79c948c00646f0b1a0ca6be9543cf69e9f7493325fd7",
+      "actual_sha256": "6b2d0da3e3f29df6277a79c948c00646f0b1a0ca6be9543cf69e9f7493325fd7",
+      "matches_manifest": true
+    },
+    {
+      "path": "manufacturing/draft/four-led-bom.csv",
+      "manifest_bytes": 3124,
+      "actual_bytes": 3124,
+      "manifest_sha256": "5537b51f703cab8ea9aa1bec53c5f2c7f1fb00e5381848a83b7fe7fd32e506c1",
+      "actual_sha256": "5537b51f703cab8ea9aa1bec53c5f2c7f1fb00e5381848a83b7fe7fd32e506c1",
+      "matches_manifest": true
+    },
+    {
+      "path": "manufacturing/draft/four-led-panel-pnp.csv",
+      "manifest_bytes": 2628,
+      "actual_bytes": 2628,
+      "manifest_sha256": "2212e094e7029b08a778017d33ff73cd4045fc0f33d78cc79dd5356023c23ef5",
+      "actual_sha256": "2212e094e7029b08a778017d33ff73cd4045fc0f33d78cc79dd5356023c23ef5",
+      "matches_manifest": true
+    },
+    {
+      "path": "manufacturing/draft/two-led-bom.csv",
+      "manifest_bytes": 2687,
+      "actual_bytes": 2687,
+      "manifest_sha256": "9c8134e011eaaedd110359fd282f9e0903ccdebd0e54cbb41fd50b3e12d7a2ab",
+      "actual_sha256": "9c8134e011eaaedd110359fd282f9e0903ccdebd0e54cbb41fd50b3e12d7a2ab",
+      "matches_manifest": true
+    },
+    {
+      "path": "manufacturing/draft/two-led-panel-pnp.csv",
+      "manifest_bytes": 2310,
+      "actual_bytes": 2310,
+      "manifest_sha256": "cdbcf7fd419e7d3ef34be8da7a955101b89fd4bb741014ba829dcae04215148e",
+      "actual_sha256": "cdbcf7fd419e7d3ef34be8da7a955101b89fd4bb741014ba829dcae04215148e",
+      "matches_manifest": true
+    },
+    {
+      "path": "manufacturing/draft/assembly-variants.json",
+      "manifest_bytes": 1482,
+      "actual_bytes": 1482,
+      "manifest_sha256": "edd151b03564e94c01c2239718954e6d74857c1646e1ea00ad03f86623858f2f",
+      "actual_sha256": "edd151b03564e94c01c2239718954e6d74857c1646e1ea00ad03f86623858f2f",
+      "matches_manifest": true
+    },
+    {
+      "path": "manufacturing/draft/star-face-audit.json",
+      "manifest_bytes": 54116,
+      "actual_bytes": 54116,
+      "manifest_sha256": "f2587ebbbe3bd325bcd1b9dd5a39da290810a80f51fe817df94613b88efc2be1",
+      "actual_sha256": "f2587ebbbe3bd325bcd1b9dd5a39da290810a80f51fe817df94613b88efc2be1",
+      "matches_manifest": true
+    }
+  ],
+  "all_template_row_and_blank_observation_checks_pass": true,
+  "all_manifest_baseline_checks_match": true,
+  "release_state": "not manufactured; no physical prototype testing; no supplier CAM review; not released"
+}

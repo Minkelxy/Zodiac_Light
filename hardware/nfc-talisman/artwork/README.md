@@ -2,7 +2,9 @@
 
 马头图案目前留给用户在嘉立创EDA中手动导入。本项目不再生成马形矢量，也没有把早先的探索稿放进制造板；旧稿已移到 `artwork/archive/exploratory-horse-v1/`，不可用于生产。
 
-马面按用户参考图保持原构图：灰色八边形底座、深色内场、紫色马首侧面剪影，马口朝右；不增加鬃毛造型、符号、边饰或文字。`horse-import-guide.svg` 只显示底座与图像放置范围，是定位指南，不是可制造图案。原动画截图和宣传图可从 [Horse Talisman Gallery](https://jackiechanadventures.fandom.com/wiki/Horse_Talisman/Gallery) 对照；链接仅作视觉参考，图片版权仍归权利人。
+马面按用户参考图保持原构图：灰色八边形底座、深色内场、紫色马首侧面剪影，当前单色正视稿马口朝左；不增加鬃毛造型、符号、边饰或文字。方向与 [horse-single-ink.png](reference-collection/talisman-single-ink-v1/horse-single-ink.png) 一致，不镜像。`horse-import-guide.svg` 只显示底座与图像放置范围，是定位指南，不是可制造图案。原动画截图和宣传图可从 [Horse Talisman Gallery](https://jackiechanadventures.fandom.com/wiki/Horse_Talisman/Gallery) 对照；链接仅作视觉参考，图片版权仍归权利人。
+
+2026-10-11 新增 [实际尺寸校样与光路候选](production-study-v1/index.html)：保留 37 mm 画布基线，并提供十二款共用缩放的 30 mm 光腔适配候选。源 PNG 不改像素；图案细节、散点、印刷套准及出光效果继续分开审阅，校样不是制造文件。
 
 ## 手动导入位置
 

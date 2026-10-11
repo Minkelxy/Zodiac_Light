@@ -1,0 +1,1439 @@
+{
+  "generated_local_date": "2026-10-11",
+  "scope": "layout and visual-size study only; not manufacturing output",
+  "source_manifest": "artwork/reference-collection/talisman-single-ink-v1/manifest.json",
+  "source_geometry": "geometry/design.json",
+  "reference_dimensions_mm": {
+    "outer_octagon_across_flats": 37.0,
+    "antenna_outer_coil_envelope_across_flats": 34.0,
+    "spacer_window_across_flats": 30.0,
+    "orientation": "flat top and bottom",
+    "values_checked_against_geometry_parameters": {
+      "outer": 37,
+      "inner": 30
+    }
+  },
+  "proof_layout": {
+    "pages": 2,
+    "paper": "A4 portrait",
+    "animals": 12,
+    "raster_placement_mm_each": [
+      37.0,
+      37.0
+    ],
+    "print_scale": "100% / actual size",
+    "tile_overlap": false,
+    "tile_boxes_mm": [
+      {
+        "id": "rat",
+        "page": 1,
+        "placement_mm": [
+          16.5,
+          40.0,
+          37.0,
+          37.0
+        ],
+        "card_box_mm": [
+          14.0,
+          32.0,
+          58.0,
+          106.0
+        ]
+      },
+      {
+        "id": "ox",
+        "page": 1,
+        "placement_mm": [
+          83.5,
+          40.0,
+          37.0,
+          37.0
+        ],
+        "card_box_mm": [
+          81.0,
+          32.0,
+          58.0,
+          106.0
+        ]
+      },
+      {
+        "id": "tiger",
+        "page": 1,
+        "placement_mm": [
+          150.5,
+          40.0,
+          37.0,
+          37.0
+        ],
+        "card_box_mm": [
+          148.0,
+          32.0,
+          58.0,
+          106.0
+        ]
+      },
+      {
+        "id": "rabbit",
+        "page": 1,
+        "placement_mm": [
+          16.5,
+          159.0,
+          37.0,
+          37.0
+        ],
+        "card_box_mm": [
+          14.0,
+          151.0,
+          58.0,
+          106.0
+        ]
+      },
+      {
+        "id": "dragon",
+        "page": 1,
+        "placement_mm": [
+          83.5,
+          159.0,
+          37.0,
+          37.0
+        ],
+        "card_box_mm": [
+          81.0,
+          151.0,
+          58.0,
+          106.0
+        ]
+      },
+      {
+        "id": "snake",
+        "page": 1,
+        "placement_mm": [
+          150.5,
+          159.0,
+          37.0,
+          37.0
+        ],
+        "card_box_mm": [
+          148.0,
+          151.0,
+          58.0,
+          106.0
+        ]
+      },
+      {
+        "id": "horse",
+        "page": 2,
+        "placement_mm": [
+          16.5,
+          40.0,
+          37.0,
+          37.0
+        ],
+        "card_box_mm": [
+          14.0,
+          32.0,
+          58.0,
+          106.0
+        ]
+      },
+      {
+        "id": "sheep",
+        "page": 2,
+        "placement_mm": [
+          83.5,
+          40.0,
+          37.0,
+          37.0
+        ],
+        "card_box_mm": [
+          81.0,
+          32.0,
+          58.0,
+          106.0
+        ]
+      },
+      {
+        "id": "monkey",
+        "page": 2,
+        "placement_mm": [
+          150.5,
+          40.0,
+          37.0,
+          37.0
+        ],
+        "card_box_mm": [
+          148.0,
+          32.0,
+          58.0,
+          106.0
+        ]
+      },
+      {
+        "id": "rooster",
+        "page": 2,
+        "placement_mm": [
+          16.5,
+          159.0,
+          37.0,
+          37.0
+        ],
+        "card_box_mm": [
+          14.0,
+          151.0,
+          58.0,
+          106.0
+        ]
+      },
+      {
+        "id": "dog",
+        "page": 2,
+        "placement_mm": [
+          83.5,
+          159.0,
+          37.0,
+          37.0
+        ],
+        "card_box_mm": [
+          81.0,
+          151.0,
+          58.0,
+          106.0
+        ]
+      },
+      {
+        "id": "pig",
+        "page": 2,
+        "placement_mm": [
+          150.5,
+          159.0,
+          37.0,
+          37.0
+        ],
+        "card_box_mm": [
+          148.0,
+          151.0,
+          58.0,
+          106.0
+        ]
+      }
+    ],
+    "all_embedded_image_bytes_match_original": true,
+    "all_proof_rasters_37mm_square": true,
+    "print_svg_checks": [
+      {
+        "file": "proof-a4-page-1.svg",
+        "xml_well_formed": true,
+        "embedded_png_count": 6,
+        "all_images_data_uri": true,
+        "embedded_png_bytes_exact_source": true,
+        "A4_portrait_page_size": true,
+        "proof_placement_expected_mm": 37.0,
+        "proof_placements_match_expected_square": true
+      },
+      {
+        "file": "proof-a4-page-2.svg",
+        "xml_well_formed": true,
+        "embedded_png_count": 6,
+        "all_images_data_uri": true,
+        "embedded_png_bytes_exact_source": true,
+        "A4_portrait_page_size": true,
+        "proof_placement_expected_mm": 37.0,
+        "proof_placements_match_expected_square": true
+      },
+      {
+        "file": "light-window-candidate/proof-a4-page-1.svg",
+        "xml_well_formed": true,
+        "embedded_png_count": 6,
+        "all_images_data_uri": true,
+        "embedded_png_bytes_exact_source": true,
+        "A4_portrait_page_size": true,
+        "proof_placement_expected_mm": 28.17,
+        "proof_placements_match_expected_square": true
+      },
+      {
+        "file": "light-window-candidate/proof-a4-page-2.svg",
+        "xml_well_formed": true,
+        "embedded_png_count": 6,
+        "all_images_data_uri": true,
+        "embedded_png_bytes_exact_source": true,
+        "A4_portrait_page_size": true,
+        "proof_placement_expected_mm": 28.17,
+        "proof_placements_match_expected_square": true
+      }
+    ],
+    "portable_html_checks": [
+      {
+        "file": "index.html",
+        "references_are_local": true,
+        "all_references_exist": true
+      },
+      {
+        "file": "print.html",
+        "references_are_local": true,
+        "all_references_exist": true
+      },
+      {
+        "file": "light-window-candidate/index.html",
+        "references_are_local": true,
+        "all_references_exist": true
+      },
+      {
+        "file": "light-window-candidate/print.html",
+        "references_are_local": true,
+        "all_references_exist": true
+      }
+    ]
+  },
+  "alpha_visibility_audit_read_only": {
+    "rat": {
+      "canvas_px": [
+        1024,
+        1024
+      ],
+      "canvas_placement_mm": [
+        37.0,
+        37.0
+      ],
+      "alpha_gt_0_bbox": {
+        "xyxy_px": [
+          102,
+          237,
+          922,
+          786
+        ],
+        "size_px": [
+          820,
+          549
+        ],
+        "local_bbox_mm_when_canvas_is_37mm": [
+          -14.8145,
+          -9.9365,
+          14.8145,
+          9.9004
+        ]
+      },
+      "alpha_ge_128_main_shape_bbox": {
+        "xyxy_px": [
+          104,
+          239,
+          920,
+          784
+        ],
+        "size_px": [
+          816,
+          545
+        ],
+        "local_bbox_mm_when_canvas_is_37mm": [
+          -14.7422,
+          -9.8643,
+          14.7422,
+          9.8281
+        ]
+      },
+      "outside_outline_pixel_counts_at_37mm_canvas": {
+        "alpha_gt_0": {
+          "37": 0,
+          "30": 30
+        },
+        "alpha_ge_128": {
+          "37": 0,
+          "30": 0
+        }
+      },
+      "any_alpha_visible_bbox_local_mm": [
+        -14.7964,
+        -9.9185,
+        14.7964,
+        9.8823
+      ],
+      "alpha_ge_128_main_shape_bbox_local_mm": [
+        -14.7241,
+        -9.8462,
+        14.7241,
+        9.8101
+      ],
+      "threshold_note": "Pixel-center point-in-outline audit; alpha>=128 is a review threshold, not a processing step.",
+      "audit_is_read_only": true
+    },
+    "ox": {
+      "canvas_px": [
+        1024,
+        1024
+      ],
+      "canvas_placement_mm": [
+        37.0,
+        37.0
+      ],
+      "alpha_gt_0_bbox": {
+        "xyxy_px": [
+          104,
+          102,
+          920,
+          922
+        ],
+        "size_px": [
+          816,
+          820
+        ],
+        "local_bbox_mm_when_canvas_is_37mm": [
+          -14.7422,
+          -14.8145,
+          14.7422,
+          14.8145
+        ]
+      },
+      "alpha_ge_128_main_shape_bbox": {
+        "xyxy_px": [
+          106,
+          104,
+          918,
+          920
+        ],
+        "size_px": [
+          812,
+          816
+        ],
+        "local_bbox_mm_when_canvas_is_37mm": [
+          -14.6699,
+          -14.7422,
+          14.6699,
+          14.7422
+        ]
+      },
+      "outside_outline_pixel_counts_at_37mm_canvas": {
+        "alpha_gt_0": {
+          "37": 0,
+          "30": 21886
+        },
+        "alpha_ge_128": {
+          "37": 0,
+          "30": 20019
+        }
+      },
+      "any_alpha_visible_bbox_local_mm": [
+        -14.7241,
+        -14.7964,
+        14.7241,
+        14.7964
+      ],
+      "alpha_ge_128_main_shape_bbox_local_mm": [
+        -14.6519,
+        -14.7241,
+        14.6519,
+        14.7241
+      ],
+      "threshold_note": "Pixel-center point-in-outline audit; alpha>=128 is a review threshold, not a processing step.",
+      "audit_is_read_only": true
+    },
+    "tiger": {
+      "canvas_px": [
+        1024,
+        1024
+      ],
+      "canvas_placement_mm": [
+        37.0,
+        37.0
+      ],
+      "alpha_gt_0_bbox": {
+        "xyxy_px": [
+          102,
+          104,
+          922,
+          919
+        ],
+        "size_px": [
+          820,
+          815
+        ],
+        "local_bbox_mm_when_canvas_is_37mm": [
+          -14.8145,
+          -14.7422,
+          14.8145,
+          14.7061
+        ]
+      },
+      "alpha_ge_128_main_shape_bbox": {
+        "xyxy_px": [
+          104,
+          106,
+          920,
+          916
+        ],
+        "size_px": [
+          816,
+          810
+        ],
+        "local_bbox_mm_when_canvas_is_37mm": [
+          -14.7422,
+          -14.6699,
+          14.7422,
+          14.5977
+        ]
+      },
+      "outside_outline_pixel_counts_at_37mm_canvas": {
+        "alpha_gt_0": {
+          "37": 4,
+          "30": 4315
+        },
+        "alpha_ge_128": {
+          "37": 0,
+          "30": 2927
+        }
+      },
+      "any_alpha_visible_bbox_local_mm": [
+        -14.7964,
+        -14.7241,
+        14.7964,
+        14.688
+      ],
+      "alpha_ge_128_main_shape_bbox_local_mm": [
+        -14.7241,
+        -14.6519,
+        14.7241,
+        14.5796
+      ],
+      "threshold_note": "Pixel-center point-in-outline audit; alpha>=128 is a review threshold, not a processing step.",
+      "audit_is_read_only": true
+    },
+    "rabbit": {
+      "canvas_px": [
+        1024,
+        1024
+      ],
+      "canvas_placement_mm": [
+        37.0,
+        37.0
+      ],
+      "alpha_gt_0_bbox": {
+        "xyxy_px": [
+          102,
+          218,
+          922,
+          806
+        ],
+        "size_px": [
+          820,
+          588
+        ],
+        "local_bbox_mm_when_canvas_is_37mm": [
+          -14.8145,
+          -10.623,
+          14.8145,
+          10.623
+        ]
+      },
+      "alpha_ge_128_main_shape_bbox": {
+        "xyxy_px": [
+          104,
+          220,
+          920,
+          804
+        ],
+        "size_px": [
+          816,
+          584
+        ],
+        "local_bbox_mm_when_canvas_is_37mm": [
+          -14.7422,
+          -10.5508,
+          14.7422,
+          10.5508
+        ]
+      },
+      "outside_outline_pixel_counts_at_37mm_canvas": {
+        "alpha_gt_0": {
+          "37": 0,
+          "30": 0
+        },
+        "alpha_ge_128": {
+          "37": 0,
+          "30": 0
+        }
+      },
+      "any_alpha_visible_bbox_local_mm": [
+        -14.7964,
+        -10.605,
+        14.7964,
+        10.605
+      ],
+      "alpha_ge_128_main_shape_bbox_local_mm": [
+        -14.7241,
+        -10.5327,
+        14.7241,
+        10.5327
+      ],
+      "threshold_note": "Pixel-center point-in-outline audit; alpha>=128 is a review threshold, not a processing step.",
+      "audit_is_read_only": true
+    },
+    "dragon": {
+      "canvas_px": [
+        1024,
+        1024
+      ],
+      "canvas_placement_mm": [
+        37.0,
+        37.0
+      ],
+      "alpha_gt_0_bbox": {
+        "xyxy_px": [
+          187,
+          102,
+          836,
+          922
+        ],
+        "size_px": [
+          649,
+          820
+        ],
+        "local_bbox_mm_when_canvas_is_37mm": [
+          -11.7432,
+          -14.8145,
+          11.707,
+          14.8145
+        ]
+      },
+      "alpha_ge_128_main_shape_bbox": {
+        "xyxy_px": [
+          189,
+          105,
+          834,
+          920
+        ],
+        "size_px": [
+          645,
+          815
+        ],
+        "local_bbox_mm_when_canvas_is_37mm": [
+          -11.6709,
+          -14.7061,
+          11.6348,
+          14.7422
+        ]
+      },
+      "outside_outline_pixel_counts_at_37mm_canvas": {
+        "alpha_gt_0": {
+          "37": 0,
+          "30": 1682
+        },
+        "alpha_ge_128": {
+          "37": 0,
+          "30": 1258
+        }
+      },
+      "any_alpha_visible_bbox_local_mm": [
+        -11.7251,
+        -14.7964,
+        11.689,
+        14.7964
+      ],
+      "alpha_ge_128_main_shape_bbox_local_mm": [
+        -11.6528,
+        -14.688,
+        11.6167,
+        14.7241
+      ],
+      "threshold_note": "Pixel-center point-in-outline audit; alpha>=128 is a review threshold, not a processing step.",
+      "audit_is_read_only": true
+    },
+    "snake": {
+      "canvas_px": [
+        1024,
+        1024
+      ],
+      "canvas_placement_mm": [
+        37.0,
+        37.0
+      ],
+      "alpha_gt_0_bbox": {
+        "xyxy_px": [
+          102,
+          124,
+          922,
+          899
+        ],
+        "size_px": [
+          820,
+          775
+        ],
+        "local_bbox_mm_when_canvas_is_37mm": [
+          -14.8145,
+          -14.0195,
+          14.8145,
+          13.9834
+        ]
+      },
+      "alpha_ge_128_main_shape_bbox": {
+        "xyxy_px": [
+          104,
+          126,
+          920,
+          896
+        ],
+        "size_px": [
+          816,
+          770
+        ],
+        "local_bbox_mm_when_canvas_is_37mm": [
+          -14.7422,
+          -13.9473,
+          14.7422,
+          13.875
+        ]
+      },
+      "outside_outline_pixel_counts_at_37mm_canvas": {
+        "alpha_gt_0": {
+          "37": 0,
+          "30": 6554
+        },
+        "alpha_ge_128": {
+          "37": 0,
+          "30": 4468
+        }
+      },
+      "any_alpha_visible_bbox_local_mm": [
+        -14.7964,
+        -14.0015,
+        14.7964,
+        13.9653
+      ],
+      "alpha_ge_128_main_shape_bbox_local_mm": [
+        -14.7241,
+        -13.9292,
+        14.7241,
+        13.8569
+      ],
+      "threshold_note": "Pixel-center point-in-outline audit; alpha>=128 is a review threshold, not a processing step.",
+      "audit_is_read_only": true
+    },
+    "horse": {
+      "canvas_px": [
+        1024,
+        1024
+      ],
+      "canvas_placement_mm": [
+        37.0,
+        37.0
+      ],
+      "alpha_gt_0_bbox": {
+        "xyxy_px": [
+          102,
+          156,
+          922,
+          868
+        ],
+        "size_px": [
+          820,
+          712
+        ],
+        "local_bbox_mm_when_canvas_is_37mm": [
+          -14.8145,
+          -12.8633,
+          14.8145,
+          12.8633
+        ]
+      },
+      "alpha_ge_128_main_shape_bbox": {
+        "xyxy_px": [
+          105,
+          158,
+          919,
+          864
+        ],
+        "size_px": [
+          814,
+          706
+        ],
+        "local_bbox_mm_when_canvas_is_37mm": [
+          -14.7061,
+          -12.791,
+          14.7061,
+          12.7188
+        ]
+      },
+      "outside_outline_pixel_counts_at_37mm_canvas": {
+        "alpha_gt_0": {
+          "37": 0,
+          "30": 172
+        },
+        "alpha_ge_128": {
+          "37": 0,
+          "30": 12
+        }
+      },
+      "any_alpha_visible_bbox_local_mm": [
+        -14.7964,
+        -12.8452,
+        14.7964,
+        12.8452
+      ],
+      "alpha_ge_128_main_shape_bbox_local_mm": [
+        -14.688,
+        -12.7729,
+        14.688,
+        12.7007
+      ],
+      "threshold_note": "Pixel-center point-in-outline audit; alpha>=128 is a review threshold, not a processing step.",
+      "audit_is_read_only": true
+    },
+    "sheep": {
+      "canvas_px": [
+        1024,
+        1024
+      ],
+      "canvas_placement_mm": [
+        37.0,
+        37.0
+      ],
+      "alpha_gt_0_bbox": {
+        "xyxy_px": [
+          102,
+          214,
+          922,
+          809
+        ],
+        "size_px": [
+          820,
+          595
+        ],
+        "local_bbox_mm_when_canvas_is_37mm": [
+          -14.8145,
+          -10.7676,
+          14.8145,
+          10.7314
+        ]
+      },
+      "alpha_ge_128_main_shape_bbox": {
+        "xyxy_px": [
+          104,
+          216,
+          920,
+          807
+        ],
+        "size_px": [
+          816,
+          591
+        ],
+        "local_bbox_mm_when_canvas_is_37mm": [
+          -14.7422,
+          -10.6953,
+          14.7422,
+          10.6592
+        ]
+      },
+      "outside_outline_pixel_counts_at_37mm_canvas": {
+        "alpha_gt_0": {
+          "37": 0,
+          "30": 942
+        },
+        "alpha_ge_128": {
+          "37": 0,
+          "30": 316
+        }
+      },
+      "any_alpha_visible_bbox_local_mm": [
+        -14.7964,
+        -10.7495,
+        14.7964,
+        10.7134
+      ],
+      "alpha_ge_128_main_shape_bbox_local_mm": [
+        -14.7241,
+        -10.6772,
+        14.7241,
+        10.6411
+      ],
+      "threshold_note": "Pixel-center point-in-outline audit; alpha>=128 is a review threshold, not a processing step.",
+      "audit_is_read_only": true
+    },
+    "monkey": {
+      "canvas_px": [
+        1024,
+        1024
+      ],
+      "canvas_placement_mm": [
+        37.0,
+        37.0
+      ],
+      "alpha_gt_0_bbox": {
+        "xyxy_px": [
+          106,
+          102,
+          918,
+          922
+        ],
+        "size_px": [
+          812,
+          820
+        ],
+        "local_bbox_mm_when_canvas_is_37mm": [
+          -14.6699,
+          -14.8145,
+          14.6699,
+          14.8145
+        ]
+      },
+      "alpha_ge_128_main_shape_bbox": {
+        "xyxy_px": [
+          108,
+          105,
+          916,
+          920
+        ],
+        "size_px": [
+          808,
+          815
+        ],
+        "local_bbox_mm_when_canvas_is_37mm": [
+          -14.5977,
+          -14.7061,
+          14.5977,
+          14.7422
+        ]
+      },
+      "outside_outline_pixel_counts_at_37mm_canvas": {
+        "alpha_gt_0": {
+          "37": 253,
+          "30": 26709
+        },
+        "alpha_ge_128": {
+          "37": 0,
+          "30": 20106
+        }
+      },
+      "any_alpha_visible_bbox_local_mm": [
+        -14.6519,
+        -14.7964,
+        14.6519,
+        14.7964
+      ],
+      "alpha_ge_128_main_shape_bbox_local_mm": [
+        -14.5796,
+        -14.688,
+        14.5796,
+        14.7241
+      ],
+      "threshold_note": "Pixel-center point-in-outline audit; alpha>=128 is a review threshold, not a processing step.",
+      "audit_is_read_only": true
+    },
+    "rooster": {
+      "canvas_px": [
+        1024,
+        1024
+      ],
+      "canvas_placement_mm": [
+        37.0,
+        37.0
+      ],
+      "alpha_gt_0_bbox": {
+        "xyxy_px": [
+          102,
+          109,
+          922,
+          914
+        ],
+        "size_px": [
+          820,
+          805
+        ],
+        "local_bbox_mm_when_canvas_is_37mm": [
+          -14.8145,
+          -14.5615,
+          14.8145,
+          14.5254
+        ]
+      },
+      "alpha_ge_128_main_shape_bbox": {
+        "xyxy_px": [
+          105,
+          111,
+          920,
+          911
+        ],
+        "size_px": [
+          815,
+          800
+        ],
+        "local_bbox_mm_when_canvas_is_37mm": [
+          -14.7061,
+          -14.4893,
+          14.7422,
+          14.417
+        ]
+      },
+      "outside_outline_pixel_counts_at_37mm_canvas": {
+        "alpha_gt_0": {
+          "37": 2,
+          "30": 12654
+        },
+        "alpha_ge_128": {
+          "37": 0,
+          "30": 11198
+        }
+      },
+      "any_alpha_visible_bbox_local_mm": [
+        -14.7964,
+        -14.5435,
+        14.7964,
+        14.5073
+      ],
+      "alpha_ge_128_main_shape_bbox_local_mm": [
+        -14.688,
+        -14.4712,
+        14.7241,
+        14.3989
+      ],
+      "threshold_note": "Pixel-center point-in-outline audit; alpha>=128 is a review threshold, not a processing step.",
+      "audit_is_read_only": true
+    },
+    "dog": {
+      "canvas_px": [
+        1024,
+        1024
+      ],
+      "canvas_placement_mm": [
+        37.0,
+        37.0
+      ],
+      "alpha_gt_0_bbox": {
+        "xyxy_px": [
+          108,
+          102,
+          915,
+          922
+        ],
+        "size_px": [
+          807,
+          820
+        ],
+        "local_bbox_mm_when_canvas_is_37mm": [
+          -14.5977,
+          -14.8145,
+          14.5615,
+          14.8145
+        ]
+      },
+      "alpha_ge_128_main_shape_bbox": {
+        "xyxy_px": [
+          111,
+          105,
+          913,
+          919
+        ],
+        "size_px": [
+          802,
+          814
+        ],
+        "local_bbox_mm_when_canvas_is_37mm": [
+          -14.4893,
+          -14.7061,
+          14.4893,
+          14.7061
+        ]
+      },
+      "outside_outline_pixel_counts_at_37mm_canvas": {
+        "alpha_gt_0": {
+          "37": 36,
+          "30": 17586
+        },
+        "alpha_ge_128": {
+          "37": 0,
+          "30": 14160
+        }
+      },
+      "any_alpha_visible_bbox_local_mm": [
+        -14.5796,
+        -14.7964,
+        14.5435,
+        14.7964
+      ],
+      "alpha_ge_128_main_shape_bbox_local_mm": [
+        -14.4712,
+        -14.688,
+        14.4712,
+        14.688
+      ],
+      "threshold_note": "Pixel-center point-in-outline audit; alpha>=128 is a review threshold, not a processing step.",
+      "audit_is_read_only": true
+    },
+    "pig": {
+      "canvas_px": [
+        1024,
+        1024
+      ],
+      "canvas_placement_mm": [
+        37.0,
+        37.0
+      ],
+      "alpha_gt_0_bbox": {
+        "xyxy_px": [
+          145,
+          102,
+          878,
+          922
+        ],
+        "size_px": [
+          733,
+          820
+        ],
+        "local_bbox_mm_when_canvas_is_37mm": [
+          -13.2607,
+          -14.8145,
+          13.2246,
+          14.8145
+        ]
+      },
+      "alpha_ge_128_main_shape_bbox": {
+        "xyxy_px": [
+          147,
+          104,
+          876,
+          919
+        ],
+        "size_px": [
+          729,
+          815
+        ],
+        "local_bbox_mm_when_canvas_is_37mm": [
+          -13.1885,
+          -14.7422,
+          13.1523,
+          14.7061
+        ]
+      },
+      "outside_outline_pixel_counts_at_37mm_canvas": {
+        "alpha_gt_0": {
+          "37": 315,
+          "30": 9192
+        },
+        "alpha_ge_128": {
+          "37": 213,
+          "30": 4623
+        }
+      },
+      "any_alpha_visible_bbox_local_mm": [
+        -13.2427,
+        -14.7964,
+        13.2065,
+        14.7964
+      ],
+      "alpha_ge_128_main_shape_bbox_local_mm": [
+        -13.1704,
+        -14.7241,
+        13.1343,
+        14.688
+      ],
+      "threshold_note": "Pixel-center point-in-outline audit; alpha>=128 is a review threshold, not a processing step.",
+      "audit_is_read_only": true
+    }
+  },
+  "light_window_candidate": {
+    "uniform_canvas_placement_mm": [
+      28.17,
+      28.17
+    ],
+    "target": "all alpha>=128 pixel centers within ideal AF30 with at least 0.5 mm nominal inset",
+    "animals_inside": 12,
+    "per_animal_alpha_ge_128_ink_bbox_and_containment": {
+      "rat": {
+        "individual_max_canvas_mm_for_0_5mm_inset": 36.43681,
+        "common_png_canvas_placement_mm": [
+          28.17,
+          28.17
+        ],
+        "alpha_ge_128_ink_bbox_local_mm": [
+          -11.2102,
+          -7.4964,
+          11.2102,
+          7.4689
+        ],
+        "alpha_ge_128_ink_bbox_size_mm": [
+          22.4205,
+          14.9653
+        ],
+        "minimum_ideal_af30_edge_clearance_mm": 3.7898,
+        "alpha_ge_128_pixels_outside_af30_with_0_5mm_inset": 0,
+        "main_shape_inside_af30_with_0_5mm_inset": true
+      },
+      "ox": {
+        "individual_max_canvas_mm_for_0_5mm_inset": 30.565128,
+        "common_png_canvas_placement_mm": [
+          28.17,
+          28.17
+        ],
+        "alpha_ge_128_ink_bbox_local_mm": [
+          -11.1552,
+          -11.2102,
+          11.1552,
+          11.2102
+        ],
+        "alpha_ge_128_ink_bbox_size_mm": [
+          22.3104,
+          22.4205
+        ],
+        "minimum_ideal_af30_edge_clearance_mm": 1.6362,
+        "alpha_ge_128_pixels_outside_af30_with_0_5mm_inset": 0,
+        "main_shape_inside_af30_with_0_5mm_inset": true
+      },
+      "tiger": {
+        "individual_max_canvas_mm_for_0_5mm_inset": 31.81552,
+        "common_png_canvas_placement_mm": [
+          28.17,
+          28.17
+        ],
+        "alpha_ge_128_ink_bbox_local_mm": [
+          -11.2102,
+          -11.1552,
+          11.2102,
+          11.1002
+        ],
+        "alpha_ge_128_ink_bbox_size_mm": [
+          22.4205,
+          22.2554
+        ],
+        "minimum_ideal_af30_edge_clearance_mm": 2.1615,
+        "alpha_ge_128_pixels_outside_af30_with_0_5mm_inset": 0,
+        "main_shape_inside_af30_with_0_5mm_inset": true
+      },
+      "rabbit": {
+        "individual_max_canvas_mm_for_0_5mm_inset": 36.43681,
+        "common_png_canvas_placement_mm": [
+          28.17,
+          28.17
+        ],
+        "alpha_ge_128_ink_bbox_local_mm": [
+          -11.2102,
+          -8.0191,
+          11.2102,
+          8.0191
+        ],
+        "alpha_ge_128_ink_bbox_size_mm": [
+          22.4205,
+          16.0382
+        ],
+        "minimum_ideal_af30_edge_clearance_mm": 3.7898,
+        "alpha_ge_128_pixels_outside_af30_with_0_5mm_inset": 0,
+        "main_shape_inside_af30_with_0_5mm_inset": true
+      },
+      "dragon": {
+        "individual_max_canvas_mm_for_0_5mm_inset": 33.225068,
+        "common_png_canvas_placement_mm": [
+          28.17,
+          28.17
+        ],
+        "alpha_ge_128_ink_bbox_local_mm": [
+          -8.8719,
+          -11.1827,
+          8.8444,
+          11.2102
+        ],
+        "alpha_ge_128_ink_bbox_size_mm": [
+          17.7163,
+          22.3929
+        ],
+        "minimum_ideal_af30_edge_clearance_mm": 2.7061,
+        "alpha_ge_128_pixels_outside_af30_with_0_5mm_inset": 0,
+        "main_shape_inside_af30_with_0_5mm_inset": true
+      },
+      "snake": {
+        "individual_max_canvas_mm_for_0_5mm_inset": 32.964275,
+        "common_png_canvas_placement_mm": [
+          28.17,
+          28.17
+        ],
+        "alpha_ge_128_ink_bbox_local_mm": [
+          -11.2102,
+          -10.605,
+          11.2102,
+          10.55
+        ],
+        "alpha_ge_128_ink_bbox_size_mm": [
+          22.4205,
+          21.155
+        ],
+        "minimum_ideal_af30_edge_clearance_mm": 2.6089,
+        "alpha_ge_128_pixels_outside_af30_with_0_5mm_inset": 0,
+        "main_shape_inside_af30_with_0_5mm_inset": true
+      },
+      "horse": {
+        "individual_max_canvas_mm_for_0_5mm_inset": 35.410191,
+        "common_png_canvas_placement_mm": [
+          28.17,
+          28.17
+        ],
+        "alpha_ge_128_ink_bbox_local_mm": [
+          -11.1827,
+          -9.7247,
+          11.1827,
+          9.6697
+        ],
+        "alpha_ge_128_ink_bbox_size_mm": [
+          22.3654,
+          19.3944
+        ],
+        "minimum_ideal_af30_edge_clearance_mm": 3.4648,
+        "alpha_ge_128_pixels_outside_af30_with_0_5mm_inset": 0,
+        "main_shape_inside_af30_with_0_5mm_inset": true
+      },
+      "sheep": {
+        "individual_max_canvas_mm_for_0_5mm_inset": 33.490021,
+        "common_png_canvas_placement_mm": [
+          28.17,
+          28.17
+        ],
+        "alpha_ge_128_ink_bbox_local_mm": [
+          -11.2102,
+          -8.1291,
+          11.2102,
+          8.1016
+        ],
+        "alpha_ge_128_ink_bbox_size_mm": [
+          22.4205,
+          16.2308
+        ],
+        "minimum_ideal_af30_edge_clearance_mm": 2.8034,
+        "alpha_ge_128_pixels_outside_af30_with_0_5mm_inset": 0,
+        "main_shape_inside_af30_with_0_5mm_inset": true
+      },
+      "monkey": {
+        "individual_max_canvas_mm_for_0_5mm_inset": 30.565128,
+        "common_png_canvas_placement_mm": [
+          28.17,
+          28.17
+        ],
+        "alpha_ge_128_ink_bbox_local_mm": [
+          -11.1002,
+          -11.1827,
+          11.1002,
+          11.2102
+        ],
+        "alpha_ge_128_ink_bbox_size_mm": [
+          22.2004,
+          22.3929
+        ],
+        "minimum_ideal_af30_edge_clearance_mm": 1.6362,
+        "alpha_ge_128_pixels_outside_af30_with_0_5mm_inset": 0,
+        "main_shape_inside_af30_with_0_5mm_inset": true
+      },
+      "rooster": {
+        "individual_max_canvas_mm_for_0_5mm_inset": 29.368172,
+        "common_png_canvas_placement_mm": [
+          28.17,
+          28.17
+        ],
+        "alpha_ge_128_ink_bbox_local_mm": [
+          -11.1827,
+          -11.0177,
+          11.2102,
+          10.9626
+        ],
+        "alpha_ge_128_ink_bbox_size_mm": [
+          22.3929,
+          21.9803
+        ],
+        "minimum_ideal_af30_edge_clearance_mm": 1.0916,
+        "alpha_ge_128_pixels_outside_af30_with_0_5mm_inset": 0,
+        "main_shape_inside_af30_with_0_5mm_inset": true
+      },
+      "dog": {
+        "individual_max_canvas_mm_for_0_5mm_inset": 29.368172,
+        "common_png_canvas_placement_mm": [
+          28.17,
+          28.17
+        ],
+        "alpha_ge_128_ink_bbox_local_mm": [
+          -11.0177,
+          -11.1827,
+          11.0177,
+          11.1827
+        ],
+        "alpha_ge_128_ink_bbox_size_mm": [
+          22.0353,
+          22.3654
+        ],
+        "minimum_ideal_af30_edge_clearance_mm": 1.0916,
+        "alpha_ge_128_pixels_outside_af30_with_0_5mm_inset": 0,
+        "main_shape_inside_af30_with_0_5mm_inset": true
+      },
+      "pig": {
+        "individual_max_canvas_mm_for_0_5mm_inset": 28.185561,
+        "common_png_canvas_placement_mm": [
+          28.17,
+          28.17
+        ],
+        "alpha_ge_128_ink_bbox_local_mm": [
+          -10.0273,
+          -11.2102,
+          9.9998,
+          11.1827
+        ],
+        "alpha_ge_128_ink_bbox_size_mm": [
+          20.0271,
+          22.3929
+        ],
+        "minimum_ideal_af30_edge_clearance_mm": 0.508,
+        "alpha_ge_128_pixels_outside_af30_with_0_5mm_inset": 0,
+        "main_shape_inside_af30_with_0_5mm_inset": true
+      }
+    },
+    "pages": [
+      "light-window-candidate/proof-a4-page-1.svg",
+      "light-window-candidate/proof-a4-page-2.svg"
+    ],
+    "source_png_bytes_modified": false
+  },
+  "optics_concept": {
+    "file": "horse-optical-zones-concept.svg",
+    "planar_comparison": [
+      "full FR-4 with copper and solder-mask windows, optionally paired with non-metal diffuser",
+      "separate practical apertures plus non-metal diffuser"
+    ],
+    "horse_shaped_milling_created": false,
+    "manufacturing_geometry_created": false,
+    "process_thresholds": "pending supplier/process review and physical samples"
+  },
+  "horse_png": {
+    "path": "artwork/reference-collection/talisman-single-ink-v1/horse-single-ink.png",
+    "mode": "RGBA",
+    "dimensions_px": [
+      1024,
+      1024
+    ],
+    "sha256_before": "c732fa1d57448ed367c3a7d841f3674c9f5a4565fe4e5d2999c4e43b0d17c728",
+    "sha256_after": "c732fa1d57448ed367c3a7d841f3674c9f5a4565fe4e5d2999c4e43b0d17c728",
+    "unchanged": true,
+    "visual_manual_review_required": [
+      "small scattered alpha pixels around primary contour",
+      "fine transparent gaps and narrow islands"
+    ]
+  },
+  "single_ink_source_hashes_before": {
+    "rat": "388ea11b4b0ae6565ab7e2e43508e193ddbe97b99cd300efc45f8cc0b1b5da0c",
+    "ox": "4a3ae5335c1822fa063b2a3245b74bf8ea31874addb0b6b8abd87b701520792f",
+    "tiger": "462e8beb2e45e33490ab2d5d98d106b48c1f111ffa1cdd0218a9b3daa37b40fb",
+    "rabbit": "f0fad039213ad37549658c6048a02e8421b6560a4ec93633cc1f446516e9d052",
+    "dragon": "8160779614610904414b618cdf664aa7b043c909906e801f44ce2e9742a6adba",
+    "snake": "45edc71977712929173bdae0f626a40364369b3582664eda9890f66b7ce6de8d",
+    "horse": "c732fa1d57448ed367c3a7d841f3674c9f5a4565fe4e5d2999c4e43b0d17c728",
+    "sheep": "404af3e8122304576cf144057226dbbae1c8d3cea18da25c1edc81cb31959dea",
+    "monkey": "2a65ca768ca9269d14375cdd772398aafb87169703c5a631c8aefa7d90be8a8a",
+    "rooster": "cc914dcb4710b4b6f06950ef9c62325ed7ced1e2c57ff1da55a36df2de48bd23",
+    "dog": "abfe2b67f8b82f3e5ff8a489b2eb2809e2933e1301a589a6933088ecda31999f",
+    "pig": "84766e8e12593e08a31e5dae10572d754b6c65d0d56ea2146ebda82b88c02c6f"
+  },
+  "single_ink_source_hashes_after": {
+    "rat": "388ea11b4b0ae6565ab7e2e43508e193ddbe97b99cd300efc45f8cc0b1b5da0c",
+    "ox": "4a3ae5335c1822fa063b2a3245b74bf8ea31874addb0b6b8abd87b701520792f",
+    "tiger": "462e8beb2e45e33490ab2d5d98d106b48c1f111ffa1cdd0218a9b3daa37b40fb",
+    "rabbit": "f0fad039213ad37549658c6048a02e8421b6560a4ec93633cc1f446516e9d052",
+    "dragon": "8160779614610904414b618cdf664aa7b043c909906e801f44ce2e9742a6adba",
+    "snake": "45edc71977712929173bdae0f626a40364369b3582664eda9890f66b7ce6de8d",
+    "horse": "c732fa1d57448ed367c3a7d841f3674c9f5a4565fe4e5d2999c4e43b0d17c728",
+    "sheep": "404af3e8122304576cf144057226dbbae1c8d3cea18da25c1edc81cb31959dea",
+    "monkey": "2a65ca768ca9269d14375cdd772398aafb87169703c5a631c8aefa7d90be8a8a",
+    "rooster": "cc914dcb4710b4b6f06950ef9c62325ed7ced1e2c57ff1da55a36df2de48bd23",
+    "dog": "abfe2b67f8b82f3e5ff8a489b2eb2809e2933e1301a589a6933088ecda31999f",
+    "pig": "84766e8e12593e08a31e5dae10572d754b6c65d0d56ea2146ebda82b88c02c6f"
+  },
+  "all_single_ink_sources_unchanged": true,
+  "checks_pass": true
+}

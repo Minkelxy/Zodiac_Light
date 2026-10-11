@@ -1,0 +1,421 @@
+{
+  "review_date_local": "2026-10-11",
+  "generated_utc": "2026-10-11T03:40:49.601684+00:00",
+  "status": "review_only_not_manufacturing_release",
+  "scope": "Actual-size artwork proofs, optical candidates, first-article templates and BOM/ERC review. No physical or supplier acceptance is implied.",
+  "manufacturing_baseline_manifest_sha256": "0502b61de164754eaa18710f60f39209344761dc1b1052caecbf729ee7e68722",
+  "preserved_manufacturing_baseline": [
+    {
+      "path": "manufacturing/draft/nfc-talisman-panel-draft.zip",
+      "sha256": "c896e9fc71a24b6f806aa5824ebf6bf4011a14cc3614170ff5e89f9a49165aa0",
+      "matches_baseline": true
+    },
+    {
+      "path": "manufacturing/draft/nfc-talisman-panel-bom-all.csv",
+      "sha256": "8f8db16f302abe3dc8054f4903c2f77dfd0e83da3e39c319c35a8b3af5bd61ac",
+      "matches_baseline": true
+    },
+    {
+      "path": "manufacturing/draft/nfc-talisman-panel-pnp-all.csv",
+      "sha256": "7d863156d5e3337f1cb4896ac84e9bb42d670704c181411127aa00aa51f20370",
+      "matches_baseline": true
+    },
+    {
+      "path": "eda/native/nfc-talisman-current.epro2",
+      "sha256": "a112c7ba85464c3434b8a8e59977fb62a4e4744eb201a8bfa366b8001f285a1d",
+      "matches_baseline": true
+    },
+    {
+      "path": "manufacturing/draft/nfc-talisman-panel-cam-review.zip",
+      "sha256": "6b2d0da3e3f29df6277a79c948c00646f0b1a0ca6be9543cf69e9f7493325fd7",
+      "matches_baseline": true
+    },
+    {
+      "path": "manufacturing/draft/four-led-bom.csv",
+      "sha256": "5537b51f703cab8ea9aa1bec53c5f2c7f1fb00e5381848a83b7fe7fd32e506c1",
+      "matches_baseline": true
+    },
+    {
+      "path": "manufacturing/draft/four-led-panel-pnp.csv",
+      "sha256": "2212e094e7029b08a778017d33ff73cd4045fc0f33d78cc79dd5356023c23ef5",
+      "matches_baseline": true
+    },
+    {
+      "path": "manufacturing/draft/two-led-bom.csv",
+      "sha256": "9c8134e011eaaedd110359fd282f9e0903ccdebd0e54cbb41fd50b3e12d7a2ab",
+      "matches_baseline": true
+    },
+    {
+      "path": "manufacturing/draft/two-led-panel-pnp.csv",
+      "sha256": "cdbcf7fd419e7d3ef34be8da7a955101b89fd4bb741014ba829dcae04215148e",
+      "matches_baseline": true
+    },
+    {
+      "path": "manufacturing/draft/assembly-variants.json",
+      "sha256": "edd151b03564e94c01c2239718954e6d74857c1646e1ea00ad03f86623858f2f",
+      "matches_baseline": true
+    },
+    {
+      "path": "manufacturing/draft/cam-audit.json",
+      "sha256": "c0d0e1917eadcb57c45b3d03bfaafcbbe94c1c5987e9f31c5c668ba49c700c7e",
+      "matches_baseline": true
+    },
+    {
+      "path": "manufacturing/draft/cam-package-manifest.json",
+      "sha256": "551f69e8498ddd71aa2df63c69a7e4df2dac615a66cee0ac03fc28862bf19f24",
+      "matches_baseline": true
+    },
+    {
+      "path": "electrical/native-copper-audit.json",
+      "sha256": "138ad01336ab815a3dc895d7de80d5ae41489c6dca3b0f2539968b9ea253e3bb",
+      "matches_baseline": true
+    },
+    {
+      "path": "electrical/native-netlist-audit.json",
+      "sha256": "95eb4d321dd925e8fd743436cfbf9a3b6c18d308a4615e27b8c599040fc6c34e",
+      "matches_baseline": true
+    },
+    {
+      "path": "eda/check-summary.json",
+      "sha256": "007fde8d505d29cea9152317ebce0f8ff9cd91eb16356804e53822bceb08e212",
+      "matches_baseline": true
+    },
+    {
+      "path": "manufacturing/draft/star-face-audit.json",
+      "sha256": "f2587ebbbe3bd325bcd1b9dd5a39da290810a80f51fe817df94613b88efc2be1",
+      "matches_baseline": true
+    },
+    {
+      "path": "manufacturing/draft/star-color-audit.json",
+      "sha256": "342696e56f141fbde607777dcf15eab6ea192c5c5e5de4d4cd0bf84da58f540b",
+      "matches_baseline": true
+    },
+    {
+      "path": "artwork/sagittarius-color-print-candidate.png",
+      "sha256": "cdd50b75d9e39df0b7d6eb6d34ff55ce432a0ad7ed339f604b6241c19cde191b",
+      "matches_baseline": true
+    },
+    {
+      "path": "artwork/sagittarius-linework-review.json",
+      "sha256": "0221abe37f461bc2e08453bc60a04b71703455e6f569fdfca485ce5a816d9bcd",
+      "matches_baseline": true
+    },
+    {
+      "path": "eda/schematic-review.svg",
+      "sha256": "92f6e608980d7f928e91c46abc7865762595886ebce45de447b57579309fc8d3",
+      "matches_baseline": true
+    },
+    {
+      "path": "eda/schematic-review.png",
+      "sha256": "e35aacfa844796dc873c1789b1c8338d9f63f7b8d76c50dfa5213d6d7d2c21a0",
+      "matches_baseline": true
+    },
+    {
+      "path": "eda/layout-review-v3.json",
+      "sha256": "ccb4fa229ca1bcc430b5363decdd5ac927fdd4d92fc44a532fe25b6ef3e619ea",
+      "matches_baseline": true
+    },
+    {
+      "path": "eda/layout-application-v3.json",
+      "sha256": "938cfe259817e92a141483530c00c8b4d8a9ba9013aade92ded6e5b251ef0f3a",
+      "matches_baseline": true
+    },
+    {
+      "path": "geometry/core-layout-review-v3.svg",
+      "sha256": "eb0ad89712142e91d664a5c606d74b34b44bbedf162d1b74662e3e28dcd0cf03",
+      "matches_baseline": true
+    },
+    {
+      "path": "geometry/core-layout-review-v3.png",
+      "sha256": "fb6aa6572f4feb800b940025c37704c54e8b50b10c2f69cbde43d182f1598777",
+      "matches_baseline": true
+    },
+    {
+      "path": "manufacturing/bom-ready.csv",
+      "sha256": "b1a34d0801bae1bf738e1e9da50f6a74367f59cefed957942b5cf4a9821303e9",
+      "matches_baseline": true
+    },
+    {
+      "path": "manufacturing/bom-review.md",
+      "sha256": "77b7c068db7fa26c7df38fc2232663a6e55cfee5418817a47102f68afb9fa485",
+      "matches_baseline": true
+    },
+    {
+      "path": "manufacturing/design-review-v3.md",
+      "sha256": "420a85768a92dcb776d1144fcfe569d16ff460e8c2d0c9d9b49a8f241c999543",
+      "matches_baseline": true
+    }
+  ],
+  "files": [
+    {
+      "path": "artwork/horse-import-guide.md",
+      "bytes": 2714,
+      "sha256": "2262aff7447c04c20e07846b6b58ea2f31b0503e933a89e48e34c7e8d1198155"
+    },
+    {
+      "path": "artwork/production-study-v1/horse-optical-zones-concept.png",
+      "bytes": 265927,
+      "sha256": "8bbb968e078ad410261035f678981887b91b0728aa37e4048c7fbe667984c188"
+    },
+    {
+      "path": "artwork/production-study-v1/horse-optical-zones-concept.svg",
+      "bytes": 215453,
+      "sha256": "6e8dc81e0a3bf962174bda1f126c2a3bf52c8e63bb43aa949ace18c306ee17ba"
+    },
+    {
+      "path": "artwork/production-study-v1/index.html",
+      "bytes": 1760,
+      "sha256": "fc2dd7c4bbe9345ebbc1983572ac7b254b1e00e69f0848b6b14cf9911f226e1e"
+    },
+    {
+      "path": "artwork/production-study-v1/light-window-candidate/index.html",
+      "bytes": 582,
+      "sha256": "14f0f6cb7c815f40d94165ab4c63542ffd892499f5d1715a97e4a34d9de3c8fa"
+    },
+    {
+      "path": "artwork/production-study-v1/light-window-candidate/print.html",
+      "bytes": 582,
+      "sha256": "14f0f6cb7c815f40d94165ab4c63542ffd892499f5d1715a97e4a34d9de3c8fa"
+    },
+    {
+      "path": "artwork/production-study-v1/light-window-candidate/proof-a4-page-1.png",
+      "bytes": 649216,
+      "sha256": "7d4851ed9677d6ac8e89cce9783ef72419ab19eec6f7208c06b994c5420c80a8"
+    },
+    {
+      "path": "artwork/production-study-v1/light-window-candidate/proof-a4-page-1.svg",
+      "bytes": 1030576,
+      "sha256": "c0e81a25c0fc47ccf92249436a4bc69e1b552a04bd5411db0c497de9d430f5e8"
+    },
+    {
+      "path": "artwork/production-study-v1/light-window-candidate/proof-a4-page-2.png",
+      "bytes": 626123,
+      "sha256": "60095c2094f65c89ec4046147b4787ebc4d09ebcfe3201e20642dc7f9e062903"
+    },
+    {
+      "path": "artwork/production-study-v1/light-window-candidate/proof-a4-page-2.svg",
+      "bytes": 930717,
+      "sha256": "f174a9e00479cb5815dbad22aa6814ce2e34c58c3bc92317f1993704eb321ec9"
+    },
+    {
+      "path": "artwork/production-study-v1/light-window-candidate/README.md",
+      "bytes": 400,
+      "sha256": "7f166e13a8a60b445176a5eca31cb9109e344a79442f3e5e2874ad5a7bb9ac41"
+    },
+    {
+      "path": "artwork/production-study-v1/optical-zones-notes.md",
+      "bytes": 1336,
+      "sha256": "86d93e3398eda2b1e06ace08a03c7e24005e6a57e58a7ca2243bf9ccd852c272"
+    },
+    {
+      "path": "artwork/production-study-v1/overview-12up.jpg",
+      "bytes": 648958,
+      "sha256": "0bd3153ecba0173bad9a24d35cc07c8f8fe257706ce1d6762391d3abed3eea69"
+    },
+    {
+      "path": "artwork/production-study-v1/print.html",
+      "bytes": 712,
+      "sha256": "f62b01ed032fba43ade2c34be9199e47279a95e0a59f9feed6b59f62ca0e1324"
+    },
+    {
+      "path": "artwork/production-study-v1/proof-a4-page-1.png",
+      "bytes": 718966,
+      "sha256": "22206d1acf87de38a41ced74c9113c142e0c3e65372a1da0e26102f3ace33f64"
+    },
+    {
+      "path": "artwork/production-study-v1/proof-a4-page-1.svg",
+      "bytes": 1030596,
+      "sha256": "53a9ab487a4f84182ee8117fb566394d97023c5d70888dceaaa26817bd44d474"
+    },
+    {
+      "path": "artwork/production-study-v1/proof-a4-page-2.png",
+      "bytes": 685622,
+      "sha256": "ba4b7d0be3a53c4a478b0278b71283bd4230a3ec787d41d633412f842988fd50"
+    },
+    {
+      "path": "artwork/production-study-v1/proof-a4-page-2.svg",
+      "bytes": 930737,
+      "sha256": "204e9f1d665ef738368a618fc9508b68923a22f3b1ecf3f7eed3b7b009aa2e04"
+    },
+    {
+      "path": "artwork/production-study-v1/README.md",
+      "bytes": 3708,
+      "sha256": "70f563902e513dee9f8d05a1c35efeccd1fae9c19844fcb5b9063243e45f64f2"
+    },
+    {
+      "path": "artwork/production-study-v1/validation.json",
+      "bytes": 34953,
+      "sha256": "5d490929a9553580f90cf2661e74dc544f04f16ed6ab8f865b8aeb2e0266d9ab"
+    },
+    {
+      "path": "artwork/README.md",
+      "bytes": 4173,
+      "sha256": "cf3e05a358d5e9e90c25114feb2d81d3f0b9e6e6aa5ac09f7f913547a7447797"
+    },
+    {
+      "path": "electrical/assembly.md",
+      "bytes": 8425,
+      "sha256": "883bb625deee4ca7a60692fb7a45b074bb0b3f9eb89b85bcb89d7d9c586e997f"
+    },
+    {
+      "path": "geometry/assembly-notes.md",
+      "bytes": 3494,
+      "sha256": "0bb73d1eb38681e4d91ec67b7c83251a1d17584fca9c62208ce7a765538bcc68"
+    },
+    {
+      "path": "manufacturing/bom-erc-closeout-v1/baseline-manifest.json",
+      "bytes": 11609,
+      "sha256": "d783e4888d1badef902a567cc4e1c6bea027104b06fd9b2e92cc940740c96732"
+    },
+    {
+      "path": "manufacturing/bom-erc-closeout-v1/c1-alternative-comparison.md",
+      "bytes": 4537,
+      "sha256": "9563eaff9dee2c9bad710c65dd685a2e68fa95de40c2d7f23ff63de6a522ac9d"
+    },
+    {
+      "path": "manufacturing/bom-erc-closeout-v1/c1-candidate-register.csv",
+      "bytes": 510,
+      "sha256": "2921791c7cc41aabdf114a49be73d7016e7a0258af1429fbf1544a2d19f289f2"
+    },
+    {
+      "path": "manufacturing/bom-erc-closeout-v1/candidate-pnp-gate.csv",
+      "bytes": 378,
+      "sha256": "2f139e3f015adc827f4d2ba86da2449fffe54240f2f4b7046b1c41c432ce03df"
+    },
+    {
+      "path": "manufacturing/bom-erc-closeout-v1/current-bom-ready.csv",
+      "bytes": 2150,
+      "sha256": "9904aaf33b08df2c99a9ddc8ddbc39eccdcfa96bc586d2bd2ff18c1e9e3e8385"
+    },
+    {
+      "path": "manufacturing/bom-erc-closeout-v1/current-bom-review.md",
+      "bytes": 6127,
+      "sha256": "2ad4bd735fe6016f250d2b2dd25c55c1cf80f041aa4f9bb5f20b69e8296cc731"
+    },
+    {
+      "path": "manufacturing/bom-erc-closeout-v1/erc-attribution.md",
+      "bytes": 2942,
+      "sha256": "11a743eb33b693a3fd84844b36a3015df8b41cafec3d52444764f9d36623431d"
+    },
+    {
+      "path": "manufacturing/bom-erc-closeout-v1/fresh-live-erc.json",
+      "bytes": 2592,
+      "sha256": "6a94497f93f913f3019de24c0e324eba9d8daf52b7605de8b412e48b3d2ed375"
+    },
+    {
+      "path": "manufacturing/bom-erc-closeout-v1/legacy-four-led-bom.csv",
+      "bytes": 3271,
+      "sha256": "bae8a337b1285c8e9dd3099f2df86af7985dc470d9281cfe0f0caa07a3b27e3b"
+    },
+    {
+      "path": "manufacturing/bom-erc-closeout-v1/legacy-four-led-panel-pnp.csv",
+      "bytes": 2628,
+      "sha256": "2212e094e7029b08a778017d33ff73cd4045fc0f33d78cc79dd5356023c23ef5"
+    },
+    {
+      "path": "manufacturing/bom-erc-closeout-v1/legacy-two-led-bom.csv",
+      "bytes": 2834,
+      "sha256": "251648f0a6fcbd6fa32ecb245c50d6169709be5fc0c035d2dc04cf9ad2f000a9"
+    },
+    {
+      "path": "manufacturing/bom-erc-closeout-v1/legacy-two-led-panel-pnp.csv",
+      "bytes": 2310,
+      "sha256": "cdbcf7fd419e7d3ef34be8da7a955101b89fd4bb741014ba829dcae04215148e"
+    },
+    {
+      "path": "manufacturing/bom-erc-closeout-v1/README.md",
+      "bytes": 3066,
+      "sha256": "76dddec49ef7dee6a1a34355bf9b4eed246f6644ef5ed133c68a767ec23df863"
+    },
+    {
+      "path": "manufacturing/bom-erc-closeout-v1/validation.json",
+      "bytes": 1132,
+      "sha256": "0a926eb546505043c5a3550b154be788a333b65757e26d13756d76826352f7a5"
+    },
+    {
+      "path": "manufacturing/bom-ready.csv",
+      "bytes": 2032,
+      "sha256": "b1a34d0801bae1bf738e1e9da50f6a74367f59cefed957942b5cf4a9821303e9"
+    },
+    {
+      "path": "manufacturing/bom-review.md",
+      "bytes": 5408,
+      "sha256": "77b7c068db7fa26c7df38fc2232663a6e55cfee5418817a47102f68afb9fa485"
+    },
+    {
+      "path": "manufacturing/first-article-v1/assembly-acceptance.png",
+      "bytes": 105097,
+      "sha256": "2195b4196ee99ec932ee8c89d629595a6c50f135f190ec11eb75101bd1094ae9"
+    },
+    {
+      "path": "manufacturing/first-article-v1/assembly-acceptance.svg",
+      "bytes": 4828,
+      "sha256": "067c501fcabf896477ae2e0c624538a816757976f185c7d6a957e5f29835e979"
+    },
+    {
+      "path": "manufacturing/first-article-v1/cam-process-checklist.md",
+      "bytes": 6152,
+      "sha256": "cb4df2e4fad85287f2e574d3710a149d2541978d9b0ffaa94909667445941f05"
+    },
+    {
+      "path": "manufacturing/first-article-v1/configuration-measurements-template.csv",
+      "bytes": 1972,
+      "sha256": "e06d707fc301940702338d674a865f5d6da761f17fd7961e0fb2e9bfd534801b"
+    },
+    {
+      "path": "manufacturing/first-article-v1/ndef-content-validation-template.csv",
+      "bytes": 925,
+      "sha256": "b5a1d81577a2bad44dc90bed54726823a4dafb9c420e78c72e294cbf065c70a6"
+    },
+    {
+      "path": "manufacturing/first-article-v1/offline-validation.json",
+      "bytes": 6503,
+      "sha256": "bd1642069708622f5b1ced72a7f797fc74c1454a71435b5be029b6b159bad6b8"
+    },
+    {
+      "path": "manufacturing/first-article-v1/phone-contact-trials-template.csv",
+      "bytes": 76478,
+      "sha256": "1e91d98605f27758b140b65a04774966c057059e1989fac71d2ca934b89a2624"
+    },
+    {
+      "path": "manufacturing/first-article-v1/README.md",
+      "bytes": 2069,
+      "sha256": "ee0bed90aef450c2aef73c1409931f681ea56f8c7c36433cbbbf1c6470f41951"
+    },
+    {
+      "path": "manufacturing/improvement-review-2026-10-11.md",
+      "bytes": 5578,
+      "sha256": "11b679ebf60374fc54768fbf65173cd0c0ab4511c1183cfaf5b19dcdac464a02"
+    },
+    {
+      "path": "manufacturing/material-and-finish-baseline.md",
+      "bytes": 4074,
+      "sha256": "0b4bbdd0db2d31f55d52e4c320555e195c54291cebb84a7ed25a2fa1c0ec3dda"
+    },
+    {
+      "path": "manufacturing/sample-test-plan.md",
+      "bytes": 3699,
+      "sha256": "8ea74ff1c02d49be2b5694c0da4124baa7ac7710b7cb971fa31f1e951accf65d"
+    },
+    {
+      "path": "README.md",
+      "bytes": 11071,
+      "sha256": "bd8c0d556881cbb2de89de0c6863558a8436c3fb20e9d46053c268e3c71ea42b"
+    },
+    {
+      "path": "scripts/build_art_production_study.py",
+      "bytes": 35447,
+      "sha256": "bfb4a26d14b842fcb17dd10945afe1827cfccd8bfd67895945e2a8e8f4253115"
+    },
+    {
+      "path": "scripts/build_improvement_review_pack.py",
+      "bytes": 5124,
+      "sha256": "8fe73de762de1f46ac05a33e839a171d015d85a57491d9a4b077e29cf26ecd43"
+    },
+    {
+      "path": "manufacturing/improvement-review-v1/README.md",
+      "bytes": 1108,
+      "sha256": "cf5be9eac116b144a423c4f370789d845dc79333428f8be440c7421640c7aa10"
+    }
+  ]
+}

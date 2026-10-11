@@ -1,0 +1,2 @@
+﻿Ref,Native_MPN,Native_LCSC,Native_footprint,Panel_Mid_X,Panel_Mid_Y,Native_pad_X,Native_pad_Y,Candidate_MPN,Candidate_LCSC,Candidate_PnP_status,Release_status
+C1,GRM155R71C154KA12D,C162182,C0402,52.5mm,50mm,52.08mm,50mm,TCC0402X7R154K160AT,C7393865,NOT GENERATED: candidate not synced or fit-cleared; legacy coordinates are contextual only,HOLD — do not use for assembly

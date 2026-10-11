@@ -1,0 +1,10 @@
+{
+  "status": "pass",
+  "files": 55,
+  "zip_crc_verified": true,
+  "zip_matches_disk": true,
+  "manufacturing_baseline_unchanged": true,
+  "zip_sha256": "2b8072a229c5e63da0195b0c127c8c71b9baeec57251430cedfcac6d39a65597",
+  "zip_bytes": 6234113,
+  "scope": "Package integrity only; no manufacturing, visual fidelity or physical acceptance."
+}

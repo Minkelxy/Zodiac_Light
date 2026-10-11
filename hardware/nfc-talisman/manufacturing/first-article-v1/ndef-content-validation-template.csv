@@ -1,0 +1,5 @@
+﻿record_id,sample_id,date_local,operator,structure_stage,led_mode,phone_family,phone_model,OS_version,NFC_app_and_version,tested_face,tag_is_new_blank_chip_yes_no,initial_format_required_yes_no_if_new_only,format_result_or_not_applicable,URL_write_success_yes_no,URL_readback_match_yes_no,URL_test_identifier_or_redacted,text_rewrite_success_yes_no,text_readback_match_yes_no,text_test_identifier_or_redacted,method_or_app_notes,NDEF_log_or_photo_path,notes
+Android-horse_front-content-validation,,,,,,Android,,,,horse_front,,Only if confirmed new blank chip,,,,,,,,,,
+Android-sagittarius_back-content-validation,,,,,,Android,,,,sagittarius_back,,Only if confirmed new blank chip,,,,,,,,,,
+iPhone-horse_front-content-validation,,,,,,iPhone,,,,horse_front,,Only if confirmed new blank chip,,,,,,,,,,
+iPhone-sagittarius_back-content-validation,,,,,,iPhone,,,,sagittarius_back,,Only if confirmed new blank chip,,,,,,,,,,

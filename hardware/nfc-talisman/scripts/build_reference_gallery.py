@@ -233,6 +233,8 @@ nav a,.links a{padding:3px 8px;border:1px solid #384454;border-radius:6px;font-s
         body = body.replace('<h2 id="talismans">十二符咒 · 单色重绘候选</h2>', '<h2 id="talismans">十二符咒 · 单色正视图案</h2>')
         body = body.replace('<button type="button" data-mode="monochrome" aria-pressed="true">单色重绘候选</button>', '<button type="button" data-mode="ink" aria-pressed="true">单色正视版</button><button type="button" data-mode="monochrome" aria-pressed="false">原生单色候选</button>')
         body = body.replace('<a href="../talisman-monochrome-v1.zip">十二张单色候选 ZIP</a>', '<a href="../talisman-single-ink-v1.zip">十二张单色 PNG ZIP</a><a href="../talisman-monochrome-v1.zip">原生候选 ZIP</a>')
+    if (ROOT.parent / 'production-study-v1/index.html').is_file():
+        body = body.replace('<a href="README.md">说明与来源</a>', '<a href="README.md">说明与来源</a><a href="../production-study-v1/index.html">37 mm 校样与光路</a>')
     body += '\n'.join(fronts) + '</div><h2 id="zodiac">十二星座 · Stellarium Modern</h2>'
     body += '<p>暗底浅线预览；透明 SVG 只含星点与连线。北上、东左，按实际星位等比投影。IAU / Sky &amp; Telescope 原星图作为另一种画法对照。</p><div class="grid">'
     body += '\n'.join(charts) + '</div><h2 id="sagittarius">射手座八星茶壶</h2>'

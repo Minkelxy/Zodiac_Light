@@ -1,0 +1,310 @@
+{
+  "date": "2026-10-11",
+  "native_modified": false,
+  "draft_files_unchanged": true,
+  "draft_before": {
+    "manufacturing/draft/artwork-package-integrity.json": {
+      "bytes": 342,
+      "sha256": "b98083f2ed3a6bb76abce9e47293a50ef65a77453e4b8fd1b8c042f7450868c2"
+    },
+    "manufacturing/draft/assembly-variants.json": {
+      "bytes": 1482,
+      "sha256": "edd151b03564e94c01c2239718954e6d74857c1646e1ea00ad03f86623858f2f"
+    },
+    "manufacturing/draft/cam-audit.json": {
+      "bytes": 25312,
+      "sha256": "c0d0e1917eadcb57c45b3d03bfaafcbbe94c1c5987e9f31c5c668ba49c700c7e"
+    },
+    "manufacturing/draft/cam-package-manifest.json": {
+      "bytes": 1349,
+      "sha256": "551f69e8498ddd71aa2df63c69a7e4df2dac615a66cee0ac03fc28862bf19f24"
+    },
+    "manufacturing/draft/delivery-integrity.json": {
+      "bytes": 5312,
+      "sha256": "f37871237c8646e7eba20f896602ac92874d9324c068db056a286a95125cf41c"
+    },
+    "manufacturing/draft/export-manifest.json": {
+      "bytes": 7854,
+      "sha256": "0502b61de164754eaa18710f60f39209344761dc1b1052caecbf729ee7e68722"
+    },
+    "manufacturing/draft/four-led-bom.csv": {
+      "bytes": 3124,
+      "sha256": "5537b51f703cab8ea9aa1bec53c5f2c7f1fb00e5381848a83b7fe7fd32e506c1"
+    },
+    "manufacturing/draft/four-led-panel-pnp.csv": {
+      "bytes": 2628,
+      "sha256": "2212e094e7029b08a778017d33ff73cd4045fc0f33d78cc79dd5356023c23ef5"
+    },
+    "manufacturing/draft/nfc-talisman-panel-bom-all.csv": {
+      "bytes": 723,
+      "sha256": "8f8db16f302abe3dc8054f4903c2f77dfd0e83da3e39c319c35a8b3af5bd61ac"
+    },
+    "manufacturing/draft/nfc-talisman-panel-cam-review.zip": {
+      "bytes": 609856,
+      "sha256": "6b2d0da3e3f29df6277a79c948c00646f0b1a0ca6be9543cf69e9f7493325fd7"
+    },
+    "manufacturing/draft/nfc-talisman-panel-draft.zip": {
+      "bytes": 629343,
+      "sha256": "c896e9fc71a24b6f806aa5824ebf6bf4011a14cc3614170ff5e89f9a49165aa0"
+    },
+    "manufacturing/draft/nfc-talisman-panel-pnp-all.csv": {
+      "bytes": 3350,
+      "sha256": "7d863156d5e3337f1cb4896ac84e9bb42d670704c181411127aa00aa51f20370"
+    },
+    "manufacturing/draft/README.md": {
+      "bytes": 3214,
+      "sha256": "1fa660a353dee692c4ca9e98e923727cc404722cb2415c7d5367ad4e2d9af672"
+    },
+    "manufacturing/draft/star-color-audit.json": {
+      "bytes": 2421,
+      "sha256": "342696e56f141fbde607777dcf15eab6ea192c5c5e5de4d4cd0bf84da58f540b"
+    },
+    "manufacturing/draft/star-face-audit.json": {
+      "bytes": 54116,
+      "sha256": "f2587ebbbe3bd325bcd1b9dd5a39da290810a80f51fe817df94613b88efc2be1"
+    },
+    "manufacturing/draft/two-led-bom.csv": {
+      "bytes": 2687,
+      "sha256": "9c8134e011eaaedd110359fd282f9e0903ccdebd0e54cbb41fd50b3e12d7a2ab"
+    },
+    "manufacturing/draft/two-led-panel-pnp.csv": {
+      "bytes": 2310,
+      "sha256": "cdbcf7fd419e7d3ef34be8da7a955101b89fd4bb741014ba829dcae04215148e"
+    }
+  },
+  "draft_after": {
+    "manufacturing/draft/artwork-package-integrity.json": {
+      "bytes": 342,
+      "sha256": "b98083f2ed3a6bb76abce9e47293a50ef65a77453e4b8fd1b8c042f7450868c2"
+    },
+    "manufacturing/draft/assembly-variants.json": {
+      "bytes": 1482,
+      "sha256": "edd151b03564e94c01c2239718954e6d74857c1646e1ea00ad03f86623858f2f"
+    },
+    "manufacturing/draft/cam-audit.json": {
+      "bytes": 25312,
+      "sha256": "c0d0e1917eadcb57c45b3d03bfaafcbbe94c1c5987e9f31c5c668ba49c700c7e"
+    },
+    "manufacturing/draft/cam-package-manifest.json": {
+      "bytes": 1349,
+      "sha256": "551f69e8498ddd71aa2df63c69a7e4df2dac615a66cee0ac03fc28862bf19f24"
+    },
+    "manufacturing/draft/delivery-integrity.json": {
+      "bytes": 5312,
+      "sha256": "f37871237c8646e7eba20f896602ac92874d9324c068db056a286a95125cf41c"
+    },
+    "manufacturing/draft/export-manifest.json": {
+      "bytes": 7854,
+      "sha256": "0502b61de164754eaa18710f60f39209344761dc1b1052caecbf729ee7e68722"
+    },
+    "manufacturing/draft/four-led-bom.csv": {
+      "bytes": 3124,
+      "sha256": "5537b51f703cab8ea9aa1bec53c5f2c7f1fb00e5381848a83b7fe7fd32e506c1"
+    },
+    "manufacturing/draft/four-led-panel-pnp.csv": {
+      "bytes": 2628,
+      "sha256": "2212e094e7029b08a778017d33ff73cd4045fc0f33d78cc79dd5356023c23ef5"
+    },
+    "manufacturing/draft/nfc-talisman-panel-bom-all.csv": {
+      "bytes": 723,
+      "sha256": "8f8db16f302abe3dc8054f4903c2f77dfd0e83da3e39c319c35a8b3af5bd61ac"
+    },
+    "manufacturing/draft/nfc-talisman-panel-cam-review.zip": {
+      "bytes": 609856,
+      "sha256": "6b2d0da3e3f29df6277a79c948c00646f0b1a0ca6be9543cf69e9f7493325fd7"
+    },
+    "manufacturing/draft/nfc-talisman-panel-draft.zip": {
+      "bytes": 629343,
+      "sha256": "c896e9fc71a24b6f806aa5824ebf6bf4011a14cc3614170ff5e89f9a49165aa0"
+    },
+    "manufacturing/draft/nfc-talisman-panel-pnp-all.csv": {
+      "bytes": 3350,
+      "sha256": "7d863156d5e3337f1cb4896ac84e9bb42d670704c181411127aa00aa51f20370"
+    },
+    "manufacturing/draft/README.md": {
+      "bytes": 3214,
+      "sha256": "1fa660a353dee692c4ca9e98e923727cc404722cb2415c7d5367ad4e2d9af672"
+    },
+    "manufacturing/draft/star-color-audit.json": {
+      "bytes": 2421,
+      "sha256": "342696e56f141fbde607777dcf15eab6ea192c5c5e5de4d4cd0bf84da58f540b"
+    },
+    "manufacturing/draft/star-face-audit.json": {
+      "bytes": 54116,
+      "sha256": "f2587ebbbe3bd325bcd1b9dd5a39da290810a80f51fe817df94613b88efc2be1"
+    },
+    "manufacturing/draft/two-led-bom.csv": {
+      "bytes": 2687,
+      "sha256": "9c8134e011eaaedd110359fd282f9e0903ccdebd0e54cbb41fd50b3e12d7a2ab"
+    },
+    "manufacturing/draft/two-led-panel-pnp.csv": {
+      "bytes": 2310,
+      "sha256": "cdbcf7fd419e7d3ef34be8da7a955101b89fd4bb741014ba829dcae04215148e"
+    }
+  },
+  "tracked_native_and_drc_sources": {
+    "eda/native/schematic-source.jsonl": {
+      "bytes": 238161,
+      "sha256": "e26eb0012a07676bf06a86e7be3aa13f076cfe7852e4c9e6a4da897a88ec8a16"
+    },
+    "eda/native/core-source.jsonl": {
+      "bytes": 105220,
+      "sha256": "f9f087c51f7f6af979cfcaa37604e5ee54addaa6ccabf67fca3f46b538326e93"
+    },
+    "eda/native/panel-source.jsonl": {
+      "bytes": 240439,
+      "sha256": "3de99158186b06c76a53f8dcdf9e889a68c2440653eadbecec5c4ec13ed8251c"
+    },
+    "eda/native/core-netlist.json": {
+      "bytes": 75608,
+      "sha256": "8d78d767a990a8a1a1b675739d28d19f246644c105045e577d5bfb5e8e19788b"
+    },
+    "eda/native/panel-netlist.json": {
+      "bytes": 75608,
+      "sha256": "8d78d767a990a8a1a1b675739d28d19f246644c105045e577d5bfb5e8e19788b"
+    },
+    "eda/logs/25-core-pcb-drc-current.json": {
+      "bytes": 486,
+      "sha256": "9f2e31db11720364688082e33f8d9ab9be6c1edeec82ab9470ed712650cc3b54"
+    },
+    "eda/logs/26-panel-pcb-drc-current.json": {
+      "bytes": 512,
+      "sha256": "14516d1f3f0ce6b4843bc5d7b67c440c62c867bc61674210f17bce63b9d1a258"
+    },
+    "eda/logs/24-schematic-erc-current.json": {
+      "bytes": 2161,
+      "sha256": "05f3394d826e025bacdedef538dbf34fe2c161d2788c086893b336ab2b97e87a"
+    }
+  },
+  "notes": "Draft inventory was hashed immediately before creating this package and after all edits; all paths match. Native source snapshots and current DRC/ERC log files were not edited. Fresh live ERC evidence is separately normalized in fresh-live-erc.json; no native exports were generated because no native edits occurred.",
+  "native_source_before": {
+    "eda/native/schematic-source.jsonl": {
+      "bytes": 238161,
+      "sha256": "e26eb0012a07676bf06a86e7be3aa13f076cfe7852e4c9e6a4da897a88ec8a16"
+    },
+    "eda/native/core-source.jsonl": {
+      "bytes": 105220,
+      "sha256": "f9f087c51f7f6af979cfcaa37604e5ee54addaa6ccabf67fca3f46b538326e93"
+    },
+    "eda/native/panel-source.jsonl": {
+      "bytes": 240439,
+      "sha256": "3de99158186b06c76a53f8dcdf9e889a68c2440653eadbecec5c4ec13ed8251c"
+    },
+    "eda/native/schematic-netlist.json": {
+      "bytes": 37178,
+      "sha256": "31986494de17b09b386c0fc0aeb50cc01387a9f5a3320fe688026f5c4e08baf7"
+    },
+    "eda/native/core-netlist.json": {
+      "bytes": 75608,
+      "sha256": "8d78d767a990a8a1a1b675739d28d19f246644c105045e577d5bfb5e8e19788b"
+    },
+    "eda/native/panel-netlist.json": {
+      "bytes": 75608,
+      "sha256": "8d78d767a990a8a1a1b675739d28d19f246644c105045e577d5bfb5e8e19788b"
+    },
+    "eda/logs/24-schematic-erc-current.json": {
+      "bytes": 2161,
+      "sha256": "05f3394d826e025bacdedef538dbf34fe2c161d2788c086893b336ab2b97e87a"
+    },
+    "eda/logs/25-core-pcb-drc-current.json": {
+      "bytes": 486,
+      "sha256": "9f2e31db11720364688082e33f8d9ab9be6c1edeec82ab9470ed712650cc3b54"
+    },
+    "eda/logs/26-panel-pcb-drc-current.json": {
+      "bytes": 512,
+      "sha256": "14516d1f3f0ce6b4843bc5d7b67c440c62c867bc61674210f17bce63b9d1a258"
+    }
+  },
+  "native_source_after": {
+    "eda/native/schematic-source.jsonl": {
+      "bytes": 238161,
+      "sha256": "e26eb0012a07676bf06a86e7be3aa13f076cfe7852e4c9e6a4da897a88ec8a16"
+    },
+    "eda/native/core-source.jsonl": {
+      "bytes": 105220,
+      "sha256": "f9f087c51f7f6af979cfcaa37604e5ee54addaa6ccabf67fca3f46b538326e93"
+    },
+    "eda/native/panel-source.jsonl": {
+      "bytes": 240439,
+      "sha256": "3de99158186b06c76a53f8dcdf9e889a68c2440653eadbecec5c4ec13ed8251c"
+    },
+    "eda/native/schematic-netlist.json": {
+      "bytes": 37178,
+      "sha256": "31986494de17b09b386c0fc0aeb50cc01387a9f5a3320fe688026f5c4e08baf7"
+    },
+    "eda/native/core-netlist.json": {
+      "bytes": 75608,
+      "sha256": "8d78d767a990a8a1a1b675739d28d19f246644c105045e577d5bfb5e8e19788b"
+    },
+    "eda/native/panel-netlist.json": {
+      "bytes": 75608,
+      "sha256": "8d78d767a990a8a1a1b675739d28d19f246644c105045e577d5bfb5e8e19788b"
+    },
+    "eda/logs/24-schematic-erc-current.json": {
+      "bytes": 2161,
+      "sha256": "05f3394d826e025bacdedef538dbf34fe2c161d2788c086893b336ab2b97e87a"
+    },
+    "eda/logs/25-core-pcb-drc-current.json": {
+      "bytes": 486,
+      "sha256": "9f2e31db11720364688082e33f8d9ab9be6c1edeec82ab9470ed712650cc3b54"
+    },
+    "eda/logs/26-panel-pcb-drc-current.json": {
+      "bytes": 512,
+      "sha256": "14516d1f3f0ce6b4843bc5d7b67c440c62c867bc61674210f17bce63b9d1a258"
+    }
+  },
+  "native_source_hashes_identical": true,
+  "observed_live_c1_geometry": {
+    "core_component_id": "8574f2192f5f7beb",
+    "panel_component_id": "bffeb4af3da38a40",
+    "core_pads": [
+      {
+        "pad": 2,
+        "x_mil": 115.0,
+        "y_mil": 0.0,
+        "net": "GND",
+        "shape": "RECT",
+        "size_mil": [
+          19.7,
+          21.3
+        ]
+      },
+      {
+        "pad": 1,
+        "x_mil": 81.9,
+        "y_mil": 0.0,
+        "net": "VOUT",
+        "shape": "RECT",
+        "size_mil": [
+          19.7,
+          21.3
+        ]
+      }
+    ],
+    "panel_pads": [
+      {
+        "pad": 2,
+        "x_mil": 2083.5,
+        "y_mil": 1968.5,
+        "net": "GND",
+        "shape": "RECT",
+        "size_mil": [
+          19.7,
+          21.3
+        ]
+      },
+      {
+        "pad": 1,
+        "x_mil": 2050.4,
+        "y_mil": 1968.5,
+        "net": "VOUT",
+        "shape": "RECT",
+        "size_mil": [
+          19.7,
+          21.3
+        ]
+      }
+    ],
+    "invariant_summary": "Core and panel C1 pad net assignment, shape, dimensions, and relative placement observed identical; this review made no native edits."
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "observed_date": "2026-10-11",
+  "observation": "Fresh read-only verbose live ERC was run on the current schematic in the verified project window; result is consistent with persisted current log.",
+  "project_uuid": "c051e4069a83472198ecce7729fbd257",
+  "schematic_uuid": "293c7786afd689e8",
+  "call": "eda.sch_Drc.check(true,false,true)",
+  "result": {
+    "errors": 0,
+    "warning_groups": 1,
+    "counts": {
+      "warn": 1
+    },
+    "rule_groups": [
+      {
+        "rule": "ATTRMATCHCODE",
+        "type": "warn",
+        "instances": [
+          {
+            "ref": "U1",
+            "primitiveId": "81d3a86f2b3ef5bb",
+            "sheet": "293c7786afd689e8"
+          },
+          {
+            "ref": "C1",
+            "primitiveId": "6eb4453d3b6d81b0",
+            "sheet": "293c7786afd689e8"
+          },
+          {
+            "ref": "CT1",
+            "primitiveId": "abd0c004cbbf24f0",
+            "sheet": "293c7786afd689e8"
+          },
+          {
+            "ref": "CT2",
+            "primitiveId": "0f4ed6a9665212d4",
+            "sheet": "293c7786afd689e8"
+          },
+          {
+            "ref": "R5",
+            "primitiveId": "a512898f224d89ed",
+            "sheet": "293c7786afd689e8"
+          },
+          {
+            "ref": "R6",
+            "primitiveId": "59a1288f4b13115a",
+            "sheet": "293c7786afd689e8"
+          },
+          {
+            "ref": "R7",
+            "primitiveId": "be7343184fec4dc0",
+            "sheet": "293c7786afd689e8"
+          },
+          {
+            "ref": "R1",
+            "primitiveId": "6c535c670f7e7636",
+            "sheet": "293c7786afd689e8"
+          },
+          {
+            "ref": "R2",
+            "primitiveId": "c551c62343b401ca",
+            "sheet": "293c7786afd689e8"
+          },
+          {
+            "ref": "R3",
+            "primitiveId": "6be0466992f7320e",
+            "sheet": "293c7786afd689e8"
+          },
+          {
+            "ref": "R4",
+            "primitiveId": "f996871cb15265bd",
+            "sheet": "293c7786afd689e8"
+          }
+        ]
+      }
+    ]
+  },
+  "trigger_field": "unknown; API omits compared attribute details",
+  "persisted_matching_response": "eda/logs/24-schematic-erc-current.json",
+  "observed_time_local": null,
+  "time_precision": "date only; exact time was not captured at the ERC call",
+  "evidence_source": "Read-only live EasyEDA bridge invocation of eda.sch_Drc.check(true,false,true); matching persisted response: eda/logs/24-schematic-erc-current.json"
+}
