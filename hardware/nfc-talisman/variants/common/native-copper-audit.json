@@ -1,0 +1,429 @@
+{
+  "status": "current_two_variant_snapshot_audit",
+  "units": "mm",
+  "read_only": true,
+  "source_sha256": {
+    "variants\\common\\eda\\native\\core-source.jsonl": "a58f0160078fa02009a2c8b7c1fb0fcf4983b7ad1ff7c531fa9db1161a0554da",
+    "variants\\common\\eda\\core-pads.json": "6c98312831b763d2138c2849254e16fa819f6fd3a21d9977617f18a572a1c3b0",
+    "variants\\common\\eda\\native\\horse-sagittarius-panel-source.jsonl": "5525624ce2b736479eb3415070be41d30127be6bcc96b43537090b1ce85dbf59",
+    "variants\\common\\eda\\native\\snake-leo-panel-source.jsonl": "d6e85a82e2ade982b874b363b3eb75a2c96ceb873fdcb4b4cf38afaf07a8d46b"
+  },
+  "minimum_copper_gap": {
+    "a": "cb8a9d528b7a2e53",
+    "a_kind": "line",
+    "a_nets": [
+      "GND"
+    ],
+    "b": "bac9380629f99f8f@L2",
+    "b_kind": "via_ring",
+    "b_nets": [
+      "ANT_LB"
+    ],
+    "layer": 2,
+    "gap_mm": 0.20140041000000017
+  },
+  "copper_violations": [],
+  "minimum_drill_gap": {
+    "via": "bac9380629f99f8f",
+    "via_net": "ANT_LB",
+    "other_copper": "cb8a9d528b7a2e53",
+    "other_nets": [
+      "GND"
+    ],
+    "layer": 2,
+    "gap_mm": 0.32640016000000005
+  },
+  "drill_violations": [],
+  "outside_copper": [],
+  "connectivity": {
+    "ANT_LA": {
+      "pad_count": 3,
+      "copper_node_count": 28,
+      "pad_components": [
+        [
+          "CT1.1",
+          "CT2.1",
+          "U1.1"
+        ]
+      ],
+      "all_pads_connected": true,
+      "unconnected_pads": []
+    },
+    "ANT_LB": {
+      "pad_count": 3,
+      "copper_node_count": 26,
+      "pad_components": [
+        [
+          "CT1.2",
+          "CT2.2",
+          "U1.8"
+        ]
+      ],
+      "all_pads_connected": true,
+      "unconnected_pads": []
+    },
+    "FD": {
+      "pad_count": 2,
+      "copper_node_count": 3,
+      "pad_components": [
+        [
+          "R7.2",
+          "U1.4"
+        ]
+      ],
+      "all_pads_connected": true,
+      "unconnected_pads": []
+    },
+    "GND": {
+      "pad_count": 7,
+      "copper_node_count": 41,
+      "pad_components": [
+        [
+          "C1.2",
+          "D1.1",
+          "D2.1",
+          "D3.1",
+          "D4.1",
+          "TP2",
+          "U1.2"
+        ]
+      ],
+      "all_pads_connected": true,
+      "unconnected_pads": []
+    },
+    "LED1_A": {
+      "pad_count": 2,
+      "copper_node_count": 5,
+      "pad_components": [
+        [
+          "D1.2",
+          "R1.2"
+        ]
+      ],
+      "all_pads_connected": true,
+      "unconnected_pads": []
+    },
+    "LED2_A": {
+      "pad_count": 2,
+      "copper_node_count": 5,
+      "pad_components": [
+        [
+          "D2.2",
+          "R2.2"
+        ]
+      ],
+      "all_pads_connected": true,
+      "unconnected_pads": []
+    },
+    "LED3_A": {
+      "pad_count": 2,
+      "copper_node_count": 5,
+      "pad_components": [
+        [
+          "D3.2",
+          "R3.2"
+        ]
+      ],
+      "all_pads_connected": true,
+      "unconnected_pads": []
+    },
+    "LED4_A": {
+      "pad_count": 2,
+      "copper_node_count": 5,
+      "pad_components": [
+        [
+          "D4.2",
+          "R4.2"
+        ]
+      ],
+      "all_pads_connected": true,
+      "unconnected_pads": []
+    },
+    "SCL": {
+      "pad_count": 2,
+      "copper_node_count": 3,
+      "pad_components": [
+        [
+          "R5.2",
+          "U1.3"
+        ]
+      ],
+      "all_pads_connected": true,
+      "unconnected_pads": []
+    },
+    "SDA": {
+      "pad_count": 2,
+      "copper_node_count": 7,
+      "pad_components": [
+        [
+          "R6.2",
+          "U1.5"
+        ]
+      ],
+      "all_pads_connected": true,
+      "unconnected_pads": []
+    },
+    "VOUT": {
+      "pad_count": 11,
+      "copper_node_count": 57,
+      "pad_components": [
+        [
+          "C1.1",
+          "R1.1",
+          "R2.1",
+          "R3.1",
+          "R4.1",
+          "R5.1",
+          "R6.1",
+          "R7.1",
+          "TP1",
+          "U1.6",
+          "U1.7"
+        ]
+      ],
+      "all_pads_connected": true,
+      "unconnected_pads": []
+    }
+  },
+  "via_contacts": [
+    {
+      "via": "2a33e01d0c26e8af",
+      "net": "VOUT",
+      "top_contacts": [
+        "87c096afdadb8b43"
+      ],
+      "bottom_contacts": [
+        "4b84eb87b80c9175",
+        "R4.1",
+        "f770d078045b270c"
+      ],
+      "has_both_layer_contacts": true
+    },
+    {
+      "via": "95d88a8b6125c7c7",
+      "net": "VOUT",
+      "top_contacts": [
+        "R1.1",
+        "d8566c105a709015"
+      ],
+      "bottom_contacts": [
+        "86326e2392e0929e",
+        "R3.1"
+      ],
+      "has_both_layer_contacts": true
+    },
+    {
+      "via": "bdb88813cb687371",
+      "net": "GND",
+      "top_contacts": [
+        "C1.2"
+      ],
+      "bottom_contacts": [
+        "2161ce83a3c4bee1",
+        "3cadcf5ca6610f41",
+        "ff5ec588318ac7c6"
+      ],
+      "has_both_layer_contacts": true
+    },
+    {
+      "via": "91c72dd890cefc91",
+      "net": "GND",
+      "top_contacts": [
+        "00f37a94025ae21e",
+        "22371649827dc71f"
+      ],
+      "bottom_contacts": [
+        "c5d788cadcf30824"
+      ],
+      "has_both_layer_contacts": true
+    },
+    {
+      "via": "daa8390199b6f7cd",
+      "net": "GND",
+      "top_contacts": [
+        "5e1d88265be10c98",
+        "e5a7c0a94d657bca"
+      ],
+      "bottom_contacts": [
+        "a73fadad68a4be76",
+        "bd26e4cbbf54b5ea"
+      ],
+      "has_both_layer_contacts": true
+    },
+    {
+      "via": "94a7b870a63a1dab",
+      "net": "GND",
+      "top_contacts": [
+        "4d1742d5cc988826",
+        "D1.1"
+      ],
+      "bottom_contacts": [
+        "714cdc25aa2f1c59",
+        "D3.1"
+      ],
+      "has_both_layer_contacts": true
+    },
+    {
+      "via": "4784cda28c2ff3a1",
+      "net": "ANT_LA",
+      "top_contacts": [
+        "0aca916b67cda352"
+      ],
+      "bottom_contacts": [
+        "b8e2bf731c7d9e8b"
+      ],
+      "has_both_layer_contacts": true
+    },
+    {
+      "via": "bac9380629f99f8f",
+      "net": "ANT_LB",
+      "top_contacts": [
+        "4e8c4668006418da"
+      ],
+      "bottom_contacts": [
+        "1c7076f8386e09bf"
+      ],
+      "has_both_layer_contacts": true
+    },
+    {
+      "via": "cd3b85c3f88732c1",
+      "net": "ANT_LA",
+      "top_contacts": [
+        "fd7a9f3f102f4a3b"
+      ],
+      "bottom_contacts": [
+        "aa2dd7606db883d2"
+      ],
+      "has_both_layer_contacts": true
+    },
+    {
+      "via": "fbbdc816f6222cda",
+      "net": "ANT_LB",
+      "top_contacts": [
+        "fd7a9f3f102f4a3b"
+      ],
+      "bottom_contacts": [
+        "1c92c8ea5f3f3b5f"
+      ],
+      "has_both_layer_contacts": true
+    }
+  ],
+  "coil": {
+    "fill_count": 1,
+    "actual_type": "Polygon",
+    "actual_valid_simple_polygon": true,
+    "actual_is_single_connected_component": true,
+    "actual_vertex_count_excluding_closure": 258,
+    "candidate_vertex_count": 258,
+    "candidate_turn_count": 4,
+    "actual_area_mm2": 105.18493502,
+    "candidate_area_mm2": 105.18494613,
+    "symmetric_difference_area_mm2": 0.0004327,
+    "bridge_enabled": true,
+    "actual_bridge_nets": [
+      "ANT_LA",
+      "ANT_LB"
+    ],
+    "candidate_bridge_nets": [
+      "ANT_LA",
+      "ANT_LB"
+    ],
+    "bridge_matches_candidate": true,
+    "simple_polygon_no_self_intersection": true,
+    "candidate_spiral_centerline_segment_count": 128,
+    "terminal_via_to_other_turn_clearance": [
+      {
+        "via": "cd3b85c3f88732c1",
+        "name": "coil_outer_terminal",
+        "net": "ANT_LA",
+        "native_diameter_mm": 0.5499989,
+        "intentional_terminal_segment_index": 0,
+        "closest_other_turn_segment_index": 31,
+        "center_distance_mm": 0.60199303,
+        "via_ring_to_other_turn_copper_gap_mm": 0.20199358,
+        "required_gap_mm": 0.15239999999999998,
+        "passes_6mil_other_turn_gap": true
+      },
+      {
+        "via": "fbbdc816f6222cda",
+        "name": "coil_inner_terminal",
+        "net": "ANT_LB",
+        "native_diameter_mm": 0.5499989,
+        "intentional_terminal_segment_index": 127,
+        "closest_other_turn_segment_index": 96,
+        "center_distance_mm": 0.60199206,
+        "via_ring_to_other_turn_copper_gap_mm": 0.20199261,
+        "required_gap_mm": 0.15239999999999998,
+        "passes_6mil_other_turn_gap": true
+      }
+    ],
+    "all_terminal_vias_clear_of_other_turns": true,
+    "matches_4turn_candidate_within_native_quantization": true
+  },
+  "panels": {
+    "horse-sagittarius-panel": {
+      "passed": true,
+      "offset_mm": [
+        50.0,
+        50.0
+      ],
+      "core_counts": {
+        "LINE": 125,
+        "VIA": 10,
+        "FILL": 1,
+        "PAD": 2
+      },
+      "panel_counts": {
+        "LINE": 125,
+        "VIA": 10,
+        "FILL": 1,
+        "PAD": 2
+      },
+      "mismatches": {},
+      "fill_bridge_networks": [
+        [
+          "ANT_LA",
+          "ANT_LB"
+        ]
+      ]
+    },
+    "snake-leo-panel": {
+      "passed": true,
+      "offset_mm": [
+        50.0,
+        50.0
+      ],
+      "core_counts": {
+        "LINE": 125,
+        "VIA": 10,
+        "FILL": 1,
+        "PAD": 2
+      },
+      "panel_counts": {
+        "LINE": 125,
+        "VIA": 10,
+        "FILL": 1,
+        "PAD": 2
+      },
+      "mismatches": {},
+      "fill_bridge_networks": [
+        [
+          "ANT_LA",
+          "ANT_LB"
+        ]
+      ]
+    }
+  },
+  "summary": {
+    "copper_and_drill_clearance_pass": true,
+    "board_boundary_pass": true,
+    "all_pads_connected": true,
+    "all_vias_contact_both_layers": true,
+    "coil_unchanged": true,
+    "panels_match_core": true
+  },
+  "limitations": [
+    "Geometry and saved network connectivity only. Native DRC is recorded separately.",
+    "Neither LED brightness nor NFC reading performance has been physically measured."
+  ]
+}

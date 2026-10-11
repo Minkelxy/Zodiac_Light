@@ -1,0 +1,101 @@
+{
+  "status": "candidate_geometry_checked_with_documented_print_only_edges",
+  "constellation": "Leo",
+  "source": "Stellarium Modern CON modern Leo archived in zodiac-modern manifest",
+  "star_count": 9,
+  "source_edge_count": 10,
+  "physical_slot_count": 8,
+  "print_only_source_edges": [
+    {
+      "edge_index": 8,
+      "hip_a": 48455,
+      "hip_b": 47908,
+      "star_distance_mm": 2.548898,
+      "reason": "1mm capsule plus Ø0.8 star holes cannot leave the requested 1.03mm material webs at this chart scale"
+    },
+    {
+      "edge_index": 6,
+      "hip_a": 50583,
+      "hip_b": 50335,
+      "star_distance_mm": 3.359282,
+      "reason": "1mm capsule plus Ø0.8 star holes cannot leave the requested 1.03mm material webs at this chart scale"
+    }
+  ],
+  "chart_coordinate_scale_mm_per_px": 0.034375,
+  "constellation_bbox_mm": [
+    27.5,
+    13.173188
+  ],
+  "nominal_board_across_flats_mm": 37,
+  "inner_window_across_flats_mm": 30,
+  "star_hole_diameter_mm": 0.8,
+  "slot_width_mm": 1.0,
+  "target_shared_star_web_mm": 1.03,
+  "star_local_setbacks_mm": {
+    "47908": 1.93,
+    "48455": 1.93,
+    "49583": 1.93,
+    "49669": 1.93,
+    "50335": 1.93,
+    "50583": 1.93,
+    "54872": 2.163278,
+    "54879": 1.93,
+    "57632": 4.148844
+  },
+  "star_incident_angles_deg": {
+    "47908": [],
+    "48455": [],
+    "49583": [
+      133.197
+    ],
+    "49669": [
+      78.122
+    ],
+    "50335": [],
+    "50583": [
+      140.179
+    ],
+    "54872": [
+      145.492,
+      89.528,
+      55.964
+    ],
+    "54879": [
+      165.312,
+      95.714,
+      98.974
+    ],
+    "57632": [
+      28.322
+    ]
+  },
+  "minimum_shared_star_slot_separation_mm": 1.030001,
+  "minimum_nonincident_slot_gap_mm": 4.029712,
+  "minimum_hole_to_slot_web_mm": 1.03,
+  "minimum_hole_to_slot_pair": [
+    54879,
+    "leo_01"
+  ],
+  "all_cutouts_inside_AF37": true,
+  "all_cutouts_inside_AF30_window": true,
+  "snake_png_sha256_before_build": "45edc71977712929173bdae0f626a40364369b3582664eda9890f66b7ce6de8d",
+  "source_sha256": {
+    "zodiac_modern_manifest": "20125799560fdb0a91fbc3f9ceb4a75648b1109b0c777a1c7b93ff820fc30f1f",
+    "stellarium_modern_index": "1f2f5ffd6c9e25a7d0dcfdbf1f756e2db03dd3b8ed4ec016a2839b09f6b0fe1e",
+    "hipparcos_zodiac_tsv": "49390ff7042926dfe7206485a0acc39c69843e4d4cbbc348b90dfc5e03c4ac1b",
+    "snake_single_ink_png": "45edc71977712929173bdae0f626a40364369b3582664eda9890f66b7ce6de8d"
+  },
+  "source_manifest_recorded_sha256": {
+    "stellarium_modern_index": "1f2f5ffd6c9e25a7d0dcfdbf1f756e2db03dd3b8ed4ec016a2839b09f6b0fe1e",
+    "hipparcos_zodiac_tsv": "49390ff7042926dfe7206485a0acc39c69843e4d4cbbc348b90dfc5e03c4ac1b"
+  },
+  "notes": [
+    "The complete 9-star, 10-edge Stellarium Modern Leo topology is retained in the artwork; physical apertures include only edges that satisfy the requested material webs.",
+    "Slots are independent rounded 1.0mm capsules; Ø0.8mm holes remain separate.",
+    "Shared-star endpoint setbacks are computed from the narrowest incident angle, preserving >=1.03mm nominal webs for physical slots.",
+    "Review artwork is a presentation candidate, not a manufacturing release.",
+    "Original snake PNG is used byte-for-byte as a composite input and is not copied or altered."
+  ],
+  "snake_png_sha256_after_build": "45edc71977712929173bdae0f626a40364369b3582664eda9890f66b7ce6de8d",
+  "snake_input_unchanged": true
+}

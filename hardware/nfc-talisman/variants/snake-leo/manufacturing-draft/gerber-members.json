@@ -1,0 +1,97 @@
+[
+  {
+    "name": "Gerber_TopLayer.GTL",
+    "size": 15833,
+    "sha256": "e534afed33941e57075003a0737dd1acadc538253271347beb1401bc8ebd17a7"
+  },
+  {
+    "name": "Gerber_BottomLayer.GBL",
+    "size": 5416,
+    "sha256": "6da6caf0d82c014455d506e559e07f8b46def23f96e326926115613815e642a8"
+  },
+  {
+    "name": "Gerber_TopSilkscreenLayer.GTO",
+    "size": 41878,
+    "sha256": "82cbb30f0552545c235a8c219949b9eb2cc59d45cbb761ebb42139ebb90d2b0f"
+  },
+  {
+    "name": "Gerber_BottomSilkscreenLayer.GBO",
+    "size": 5514,
+    "sha256": "b8cdd1549aef2a8c6038c12b1771b0ce192feab78f0f642321c834a05d89c4f8"
+  },
+  {
+    "name": "Gerber_TopSolderMaskLayer.GTS",
+    "size": 27646,
+    "sha256": "956f60974f5d18c3545957bbf4506e2e626daa5221fc6505d86f3da2583e6e26"
+  },
+  {
+    "name": "Gerber_BottomSolderMaskLayer.GBS",
+    "size": 26753,
+    "sha256": "67a4412155a7bec22c2d15783eba79fb2d1dd50ea882f4b67bb8d0fae88c9b27"
+  },
+  {
+    "name": "Gerber_TopPasteMaskLayer.GTP",
+    "size": 4807,
+    "sha256": "6f7c01e1971b71620a2547c701b1ae60b039f3bad902a0316597abd6b795b640"
+  },
+  {
+    "name": "Gerber_BottomPasteMaskLayer.GBP",
+    "size": 2191,
+    "sha256": "1919c834e77d85124294a3d5aeec88ffdf38c6259edd2d114b4db6aac42fe904"
+  },
+  {
+    "name": "Gerber_BoardOutlineLayer.GKO",
+    "size": 43325,
+    "sha256": "a42dfa7156e6e914a2ce0d01de87ff654fc92fad2eed23c03a3e75cb22c88a5f"
+  },
+  {
+    "name": "Gerber_DocumentLayer.GDL",
+    "size": 2459,
+    "sha256": "e49e1960f384fa961cefa2fa1159cd28e8b4d3421afed8df68c463e0097fa593"
+  },
+  {
+    "name": "Gerber_DrillDrawingLayer.GDD",
+    "size": 83994,
+    "sha256": "73070a7dfb6c9439b341a3b8068d499eeffaa28f464ba9512c6afc31693c762a"
+  },
+  {
+    "name": "Fabrication_ColorfulBoardOutlineMark.FCBM",
+    "size": 43594,
+    "sha256": "c36c88809408d1a236e0f8d0cbf47971be02125b3dab126d88e756b628a360cd"
+  },
+  {
+    "name": "Drill_PTH_Through.DRL",
+    "size": 396,
+    "sha256": "d2d8d5c95dd6bd2fc188cd91e5868c52b605f43b134eaca61b26bba30bbcbdd3"
+  },
+  {
+    "name": "Drill_NPTH_Through.DRL",
+    "size": 2055,
+    "sha256": "eccaba91ef0b39ce4b2389626ece4e79fe793aa6144eea2ce6f11cadfff61bc3"
+  },
+  {
+    "name": "Drill_PTH_Through_Via.DRL",
+    "size": 400,
+    "sha256": "f13b6f21f5e2f7e3cc3b98c2ec169d0003fc75dfe45a96134122cfec1494ccbf"
+  },
+  {
+    "name": "Fabrication_ColorfulTopSilkscreen.FCTS",
+    "size": 868462,
+    "sha256": "9753ed6468228f718cc0a3209ab5f601842fa571f80e57bfa74ee2e7f49f7628"
+  },
+  {
+    "name": "Fabrication_ColorfulBottomSilkscreen.FCBS",
+    "size": 126161,
+    "sha256": "d9cfc418d53df02b020d5cf808b5aedec0d7066b75165a8a3be712702768c75d"
+  },
+  {
+    "name": "Fabrication_ColorfulBoardOutlineLayer.FCBO",
+    "size": 35498,
+    "sha256": "ef02d5159d171fcd499c854b99b14596d90d978aecc35651a64c1a2e228a7295"
+  },
+  {
+    "name": "PCB下单必读.txt",
+    "size": 94,
+    "sha256": "dcb3ee1c645c17a009d70726ad9ab708b68a074556fabcf75a4a059d3b43ec59"
+  }
+]

@@ -1,0 +1,139 @@
+{
+  "status": "37mm_cover_objects_rendered",
+  "variant": "snake-leo",
+  "canvas_mm": [
+    37,
+    37
+  ],
+  "canvas_pixels": [
+    1821,
+    1821
+  ],
+  "png_dpi": 1250,
+  "octagon_across_flats_mm": 37,
+  "octagon_clip_points_mm_from_top_left": [
+    [
+      10.837049,
+      0.0
+    ],
+    [
+      26.162951,
+      0.0
+    ],
+    [
+      37.0,
+      10.837049
+    ],
+    [
+      37.0,
+      26.162951
+    ],
+    [
+      26.162951,
+      37.0
+    ],
+    [
+      10.837049,
+      37.0
+    ],
+    [
+      0.0,
+      26.162951
+    ],
+    [
+      0.0,
+      10.837049
+    ]
+  ],
+  "outside_octagon": "transparent, antialiased at the edge",
+  "orientation": "exterior view of the snake outer face, 0 degrees, not mirrored; image orientation kept byte-exact from the approved source",
+  "input_sha256": {
+    "approved_snake_single_ink_png": "45edc71977712929173bdae0f626a40364369b3582664eda9890f66b7ce6de8d",
+    "leo_artwork_source_svg": "d43899004ab89a328d7e36d84f9fa30a4b0a660505af9cc60508bbeabfbe8c98",
+    "leo_physical_geometry_json": "341a0a0c643e3ce31f24800456e8682798f96e7560482f37f41c94f673fd9759",
+    "snake_geometry_design_json": "3c677d826508b96cc74d04c815f9a35a69bd39f6a7b3d6d455734b9061138391"
+  },
+  "files": {
+    "front-snake-37mm.png": {
+      "sha256": "014a8183f046b3230f6e66f34af58a8b19c58ac91a72e271f86398462a68c4f9",
+      "svg_sha256": "1cc887f1b3ec5986e9f40836d2486626d909b13a8461100b21d4252777fb5516",
+      "dimensions_px": [
+        1821,
+        1821
+      ],
+      "dpi": 1250,
+      "physical_size_mm_from_png_metadata": [
+        37.00272,
+        37.00272
+      ],
+      "alpha_at_four_corners": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "transparent_outside_af37": true
+    },
+    "rear-leo-37mm.png": {
+      "sha256": "e7ed3bea3f8248d5f5775a0d1607c49984a03965baf1d322a3f7a062cedfd2bf",
+      "svg_sha256": "26b6315e4144a75b95ca2553e285bc143bdc51683cf339fa6128ea8fbd3465ab",
+      "dimensions_px": [
+        1821,
+        1821
+      ],
+      "dpi": 1250,
+      "physical_size_mm_from_png_metadata": [
+        37.00272,
+        37.00272
+      ],
+      "alpha_at_four_corners": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "transparent_outside_af37": true
+    }
+  },
+  "preview": {
+    "file": "cover-review-preview.png",
+    "sha256": "591b5ad963a9b6306f33c6fd031884e86db17a75ad2ee7997d7d3f29191ad259",
+    "dimensions_px": [
+      1860,
+      1000
+    ]
+  },
+  "render": "Configured Sharp runtime at 300 input DPI; embedded approved animal PNG is preserved as source bytes inside SVG and composited without raster edits.",
+  "font_outline_validation": {
+    "font_file": "C:\\Windows\\Fonts\\georgia.ttf",
+    "font_sha256": "38dffcaf1fac89492f7c56c600a14daf36ae42f7c21985cd4134ae113124a58f",
+    "font_family": "Georgia Regular",
+    "live_text_nodes": 0,
+    "outlined_texts": [
+      {
+        "text": "LEO",
+        "baseline_mm": -14.2,
+        "font_size_mm": 1.52,
+        "letter_spacing_mm": 0.055,
+        "glyph_paths": 3
+      },
+      {
+        "text": "AD ASTRA",
+        "baseline_mm": 14.63,
+        "font_size_mm": 1.62,
+        "letter_spacing_mm": 0.09,
+        "glyph_paths": 7
+      }
+    ],
+    "svg_path_count": 28,
+    "cutout_mask": {
+      "mask_id": "physical-apertures-and-020mm-substrate-reveal",
+      "physical_slots": 8,
+      "physical_holes": 9,
+      "reveal_mm": 0.2,
+      "meaning": "alpha-clear substrate reveal around real apertures; not printed white ink"
+    }
+  },
+  "aperture_rendering": "Physical holes and slots plus 0.20mm reveal are alpha clear; the reveal exposes substrate/white soldermask and is not printed white ink or a mechanical border.",
+  "input_unchanged_after_render": true
+}

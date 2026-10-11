@@ -1,0 +1,15 @@
+﻿Designator,Value,Manufacturer Part,Supplier Part,Footprint,Population,Sourcing,Quantity
+C1,150nF,GRM155R71C154KA12D,C162182,C0402,Fit,HOLD - existing NRND Murata; alternate needs fit review,1
+CT1,47pF,CC0402JRNPO9BN470,C60137,C0402,Fit,Designated; stock not rechecked,1
+D1,,APG1608SYKC/T,C5875720,LED0603-RD,Fit,Designated; stock not rechecked,1
+D2,,APG1608SYKC/T,C5875720,LED0603-RD,Fit,Designated; stock not rechecked,1
+D3,,APG1608SYKC/T,C5875720,LED0603-RD,Fit,Designated; stock not rechecked,1
+D4,,APG1608SYKC/T,C5875720,LED0603-RD,Fit,Designated; stock not rechecked,1
+R1,2.2kΩ,RC0603FR-072K2L,C114662,R0603,Fit,Designated; stock not rechecked,1
+R2,2.2kΩ,RC0603FR-072K2L,C114662,R0603,Fit,Designated; stock not rechecked,1
+R3,2.2kΩ,RC0603FR-072K2L,C114662,R0603,Fit,Designated; stock not rechecked,1
+R4,2.2kΩ,RC0603FR-072K2L,C114662,R0603,Fit,Designated; stock not rechecked,1
+R5,47kΩ,RC0603FR-0747KL,C105579,R0603,Fit,Designated; stock not rechecked,1
+R6,47kΩ,RC0603FR-0747KL,C105579,R0603,Fit,Designated; stock not rechecked,1
+R7,47kΩ,RC0603FR-0747KL,C105579,R0603,Fit,Designated; stock not rechecked,1
+U1,13.56MHz,NT3H2111W0FHKH,C710403,XQFN-8_L1.6-W1.6-P0.50-BL_NT3H2111W0FHKH,Fit,Designated; stock not rechecked,1

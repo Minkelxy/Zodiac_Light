@@ -1,0 +1,15 @@
+﻿Designator,Device,Footprint,Mid X,Mid Y,Ref X,Ref Y,Pad X,Pad Y,Pins,Layer,Rotation,SMD,Comment,Value,Type,Supplier,Datasheet
+U1,NT3H2111W0FHKH,XQFN-8_L1.6-W1.6-P0.50-BL_NT3H2111W0FHKH,50mm,50mm,50mm,50mm,49.4mm,50.5mm,8,T,0,Yes,NT3H2111W0FHKH,13.56MHz,,LCSC,https://www.nxp.com/docs/en/data-sheet/NT3H2111_2211.pdf
+D1,APG1608SYKC/T,LED0603-RD,44mm,50mm,44mm,50mm,43.251mm,50mm,2,T,0,Yes,APG1608SYKC/T,,,LCSC,https://item.szlcsc.com/datasheet/APG1608SYKC%252FT/6809602.html
+C1,GRM155R71C154KA12D,C0402,52.5mm,50mm,52.5mm,50mm,52.08mm,50mm,2,T,0,Yes,GRM155R71C154KA12D,150nF,,LCSC,https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf
+CT1,CC0402JRNPO9BN470,C0402,48.2mm,52.5mm,48.2mm,52.5mm,47.78mm,52.5mm,2,T,0,Yes,CC0402JRNPO9BN470,47pF,,LCSC,https://atta.szlcsc.com/upload/public/pdf/source/20170505/1493957838062.pdf
+R5,RC0603FR-0747KL,R0603,47.5mm,48.2mm,47.5mm,48.2mm,46.747mm,48.2mm,2,T,0,Yes,RC0603FR-0747KL,47kΩ,厚膜电阻,LCSC,https://item.szlcsc.com/datasheet/RC0603FR-0747KL/106794.html
+R6,RC0603FR-0747KL,R0603,52.5mm,48.2mm,52.5mm,48.2mm,51.747mm,48.2mm,2,T,0,Yes,RC0603FR-0747KL,47kΩ,厚膜电阻,LCSC,https://item.szlcsc.com/datasheet/RC0603FR-0747KL/106794.html
+R7,RC0603FR-0747KL,R0603,50mm,46.5mm,50mm,46.5mm,49.247mm,46.5mm,2,T,0,Yes,RC0603FR-0747KL,47kΩ,厚膜电阻,LCSC,https://item.szlcsc.com/datasheet/RC0603FR-0747KL/106794.html
+R1,RC0603FR-072K2L,R0603,46.701mm,50mm,46.701mm,50mm,45.947mm,50mm,2,T,0,Yes,RC0603FR-072K2L,2.2kΩ,厚膜电阻,LCSC,https://item.szlcsc.com/datasheet/RC0603FR-072K2L/115906.html
+R2,RC0603FR-072K2L,R0603,53.299mm,54mm,53.299mm,54mm,52.546mm,54mm,2,T,0,Yes,RC0603FR-072K2L,2.2kΩ,厚膜电阻,LCSC,https://item.szlcsc.com/datasheet/RC0603FR-072K2L/115906.html
+D2,APG1608SYKC/T,LED0603-RD,56mm,50mm,56mm,50mm,55.251mm,50mm,2,T,0,Yes,APG1608SYKC/T,,,LCSC,https://item.szlcsc.com/datasheet/APG1608SYKC%252FT/6809602.html
+R3,RC0603FR-072K2L,R0603,46.701mm,50mm,46.701mm,50mm,45.947mm,50mm,2,B,0,Yes,RC0603FR-072K2L,2.2kΩ,厚膜电阻,LCSC,https://item.szlcsc.com/datasheet/RC0603FR-072K2L/115906.html
+D3,APG1608SYKC/T,LED0603-RD,44mm,50mm,44mm,50mm,43.251mm,50mm,2,B,0,Yes,APG1608SYKC/T,,,LCSC,https://item.szlcsc.com/datasheet/APG1608SYKC%252FT/6809602.html
+R4,RC0603FR-072K2L,R0603,53.299mm,46mm,53.299mm,46mm,52.546mm,46mm,2,B,0,Yes,RC0603FR-072K2L,2.2kΩ,厚膜电阻,LCSC,https://item.szlcsc.com/datasheet/RC0603FR-072K2L/115906.html
+D4,APG1608SYKC/T,LED0603-RD,56mm,50mm,56mm,50mm,55.251mm,50mm,2,B,0,Yes,APG1608SYKC/T,,,LCSC,https://item.szlcsc.com/datasheet/APG1608SYKC%252FT/6809602.html

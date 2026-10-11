@@ -1,0 +1,86 @@
+{
+  "status": "leo_geometry_integrated_saved_reopened",
+  "uuid": "fe8ee4534ee0b941",
+  "created": {
+    "stars": [
+      {
+        "hip": 47908,
+        "id": "be610972dde02ae1"
+      },
+      {
+        "hip": 48455,
+        "id": "f86e987315e1a367"
+      },
+      {
+        "hip": 49583,
+        "id": "375317216eceb2b8"
+      },
+      {
+        "hip": 49669,
+        "id": "9f5e3aa81b56651a"
+      },
+      {
+        "hip": 50335,
+        "id": "1895c77ecf4cac09"
+      },
+      {
+        "hip": 50583,
+        "id": "234101bbe64294a9"
+      },
+      {
+        "hip": 54872,
+        "id": "b14cccb8833a2b0e"
+      },
+      {
+        "hip": 54879,
+        "id": "3a74dd41d393fba8"
+      },
+      {
+        "hip": 57632,
+        "id": "81ed47ff5b62e983"
+      }
+    ],
+    "slots": [
+      {
+        "slot": "leo_01",
+        "id": "056121b4ddc969b0"
+      },
+      {
+        "slot": "leo_02",
+        "id": "cb1c64645ea67249"
+      },
+      {
+        "slot": "leo_03",
+        "id": "05d8f3fb5e34e5f6"
+      },
+      {
+        "slot": "leo_04",
+        "id": "5722ed790258908e"
+      },
+      {
+        "slot": "leo_05",
+        "id": "c6aa636386e15c54"
+      },
+      {
+        "slot": "leo_06",
+        "id": "1b063adffa8503ce"
+      },
+      {
+        "slot": "leo_08",
+        "id": "fbdb6c38b5872f99"
+      },
+      {
+        "slot": "leo_10",
+        "id": "e15c62c7fd0dc675"
+      }
+    ]
+  },
+  "removed": {
+    "stars": 8,
+    "slots": 11,
+    "silkscreen": 96
+  },
+  "protectedPrimitivesUnchanged": true,
+  "drcBefore": [],
+  "drc": []
+}

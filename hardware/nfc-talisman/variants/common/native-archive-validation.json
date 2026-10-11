@@ -1,0 +1,97 @@
+{
+  "status": "passed",
+  "nativeFile": "variants\\common\\eda\\native\\nfc-two-variants.epro2",
+  "sha256": "5fb68138ca77b31871d153081dc6205177e9c6f646d5b24e82393139415518a3",
+  "size": 952968,
+  "checks": {
+    "core": {
+      "uuid": "eb14b9eaec4f920c",
+      "componentCount": 15,
+      "ledAnchorMil": {
+        "D1": [
+          -236.2205,
+          0
+        ],
+        "D2": [
+          236.2205,
+          0
+        ],
+        "D3": [
+          -236.2205,
+          0
+        ],
+        "D4": [
+          236.2205,
+          0
+        ]
+      },
+      "starNpthCount": 0,
+      "outlineLoopCount": 1,
+      "embeddedCoverFiles": [],
+      "passed": true
+    },
+    "horse-sagittarius": {
+      "uuid": "4a4719695b24dc2b",
+      "componentCount": 15,
+      "ledAnchorMil": {
+        "D1": [
+          -236.2204999999999,
+          0.0
+        ],
+        "D2": [
+          236.22050000000013,
+          0.0
+        ],
+        "D3": [
+          -236.22039999999993,
+          0.0
+        ],
+        "D4": [
+          236.22050000000013,
+          0.0
+        ]
+      },
+      "starNpthCount": 8,
+      "outlineLoopCount": 22,
+      "embeddedCoverFiles": [
+        "front-horse-37mm.png",
+        "rear-sagittarius-37mm.png"
+      ],
+      "passed": true
+    },
+    "snake-leo": {
+      "uuid": "fe8ee4534ee0b941",
+      "componentCount": 15,
+      "ledAnchorMil": {
+        "D1": [
+          -236.2204999999999,
+          0.0
+        ],
+        "D2": [
+          236.22050000000013,
+          0.0
+        ],
+        "D3": [
+          -236.22039999999993,
+          0.0
+        ],
+        "D4": [
+          236.22050000000013,
+          0.0
+        ]
+      },
+      "starNpthCount": 9,
+      "outlineLoopCount": 19,
+      "embeddedCoverFiles": [
+        "front-snake-37mm.png",
+        "rear-leo-37mm.png"
+      ],
+      "passed": true
+    }
+  },
+  "nativeJournalTombstonesReplayed": 395,
+  "referencedCoverBlobsPresent": true,
+  "limitations": [
+    "Archive structure and saved primitive checks; not an import round-trip or a fabrication approval."
+  ]
+}

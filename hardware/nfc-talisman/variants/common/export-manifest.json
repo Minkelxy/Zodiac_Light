@@ -1,0 +1,578 @@
+{
+  "status": "two_variants_design_drafts_exported",
+  "project": "c051e4069a83472198ecce7729fbd257",
+  "erc": [
+    {
+      "type": "warn",
+      "rule": "ATTRMATCHCODE",
+      "primitives": [
+        {
+          "primitiveId": "81d3a86f2b3ef5bb",
+          "sheet": "293c7786afd689e8",
+          "name": "U1($1I2)"
+        },
+        {
+          "primitiveId": "6eb4453d3b6d81b0",
+          "sheet": "293c7786afd689e8",
+          "name": "C1($1I3)"
+        },
+        {
+          "primitiveId": "abd0c004cbbf24f0",
+          "sheet": "293c7786afd689e8",
+          "name": "CT1($1I4)"
+        },
+        {
+          "primitiveId": "0f4ed6a9665212d4",
+          "sheet": "293c7786afd689e8",
+          "name": "CT2($1I5)"
+        },
+        {
+          "primitiveId": "a512898f224d89ed",
+          "sheet": "293c7786afd689e8",
+          "name": "R5($1I6)"
+        },
+        {
+          "primitiveId": "59a1288f4b13115a",
+          "sheet": "293c7786afd689e8",
+          "name": "R6($1I7)"
+        },
+        {
+          "primitiveId": "be7343184fec4dc0",
+          "sheet": "293c7786afd689e8",
+          "name": "R7($1I8)"
+        },
+        {
+          "primitiveId": "6c535c670f7e7636",
+          "sheet": "293c7786afd689e8",
+          "name": "R1($1I9)"
+        },
+        {
+          "primitiveId": "c551c62343b401ca",
+          "sheet": "293c7786afd689e8",
+          "name": "R2($1I11)"
+        },
+        {
+          "primitiveId": "6be0466992f7320e",
+          "sheet": "293c7786afd689e8",
+          "name": "R3($1I13)"
+        },
+        {
+          "primitiveId": "f996871cb15265bd",
+          "sheet": "293c7786afd689e8",
+          "name": "R4($1I15)"
+        }
+      ]
+    }
+  ],
+  "pcbCatalog": [
+    {
+      "itemType": "PCB",
+      "uuid": "eb14b9eaec4f920c",
+      "name": "PCB1",
+      "parentProjectUuid": "c051e4069a83472198ecce7729fbd257",
+      "parentBoardName": "Board1"
+    },
+    {
+      "itemType": "PCB",
+      "uuid": "4a4719695b24dc2b",
+      "name": "Horse-Sagittarius-100",
+      "parentProjectUuid": "c051e4069a83472198ecce7729fbd257"
+    },
+    {
+      "itemType": "PCB",
+      "uuid": "fe8ee4534ee0b941",
+      "name": "ManufacturingPanel100_1",
+      "parentProjectUuid": "c051e4069a83472198ecce7729fbd257"
+    }
+  ],
+  "releaseStatus": "HOLD_CAM_C1_PHYSICAL_VALIDATION_PENDING",
+  "boards": [
+    {
+      "variant": "common",
+      "uuid": "eb14b9eaec4f920c",
+      "pcbInfo": {
+        "itemType": "PCB",
+        "uuid": "eb14b9eaec4f920c",
+        "name": "PCB1",
+        "parentProjectUuid": "c051e4069a83472198ecce7729fbd257",
+        "parentBoardName": "Board1"
+      },
+      "drc": [],
+      "savedReopened": true,
+      "lineCount": 125,
+      "viaCount": 10,
+      "parts": [
+        {
+          "ref": "U1",
+          "id": "c0b025df7b5b686b",
+          "x": 0,
+          "y": 0,
+          "layer": 1,
+          "rotation": 0
+        },
+        {
+          "ref": "D1",
+          "id": "40d42f6128be4796",
+          "x": -236.2205,
+          "y": 0,
+          "layer": 1,
+          "rotation": 0
+        },
+        {
+          "ref": "C1",
+          "id": "8574f2192f5f7beb",
+          "x": 98.4252,
+          "y": 0,
+          "layer": 1,
+          "rotation": 0
+        },
+        {
+          "ref": "CT1",
+          "id": "ca4b26d8ae05e7f5",
+          "x": -70.8661,
+          "y": 98.4252,
+          "layer": 1,
+          "rotation": 0
+        },
+        {
+          "ref": "CT2",
+          "id": "bd515f780006319c",
+          "x": 7.874,
+          "y": 98.4252,
+          "layer": 1,
+          "rotation": 0
+        },
+        {
+          "ref": "R5",
+          "id": "5a9c5d7aad5853ea",
+          "x": -98.4252,
+          "y": -70.8661,
+          "layer": 1,
+          "rotation": 0
+        },
+        {
+          "ref": "R6",
+          "id": "9d1474355800c4bd",
+          "x": 98.4252,
+          "y": -70.8661,
+          "layer": 1,
+          "rotation": 0
+        },
+        {
+          "ref": "R7",
+          "id": "3df77eb328edc7b5",
+          "x": 0,
+          "y": -137.7953,
+          "layer": 1,
+          "rotation": 0
+        },
+        {
+          "ref": "R1",
+          "id": "e25abbd50c954f9a",
+          "x": -129.9,
+          "y": 0,
+          "layer": 1,
+          "rotation": 0
+        },
+        {
+          "ref": "R2",
+          "id": "d9fff5ffff2f73f3",
+          "x": 129.9,
+          "y": 157.4803,
+          "layer": 1,
+          "rotation": 0
+        },
+        {
+          "ref": "D2",
+          "id": "aa8cc903ac6e55fc",
+          "x": 236.2205,
+          "y": 0,
+          "layer": 1,
+          "rotation": 0
+        },
+        {
+          "ref": "R3",
+          "id": "a3880816cb907cd4",
+          "x": -129.9,
+          "y": 0,
+          "layer": 2,
+          "rotation": 0
+        },
+        {
+          "ref": "D3",
+          "id": "7334220435ccfeb7",
+          "x": -236.2205,
+          "y": 0,
+          "layer": 2,
+          "rotation": 0
+        },
+        {
+          "ref": "R4",
+          "id": "1968272a10277b12",
+          "x": 129.9,
+          "y": -157.4803,
+          "layer": 2,
+          "rotation": 0
+        },
+        {
+          "ref": "D4",
+          "id": "d95eb73f14ed38ec",
+          "x": 236.2205,
+          "y": 0,
+          "layer": 2,
+          "rotation": 0
+        }
+      ]
+    },
+    {
+      "variant": "horse-sagittarius",
+      "uuid": "4a4719695b24dc2b",
+      "pcbInfo": {
+        "itemType": "PCB",
+        "uuid": "4a4719695b24dc2b",
+        "name": "Horse-Sagittarius-100",
+        "parentProjectUuid": "c051e4069a83472198ecce7729fbd257"
+      },
+      "drc": [],
+      "savedReopened": true,
+      "lineCount": 125,
+      "viaCount": 10,
+      "parts": [
+        {
+          "ref": "U1",
+          "id": "afbeea4587e61c7c",
+          "x": 1968.5039000000002,
+          "y": 1968.5039000000002,
+          "layer": 1,
+          "rotation": 0
+        },
+        {
+          "ref": "D1",
+          "id": "baa90f6e7ff9f45a",
+          "x": 1732.2834,
+          "y": 1968.5039000000002,
+          "layer": 1,
+          "rotation": 0
+        },
+        {
+          "ref": "C1",
+          "id": "bffeb4af3da38a40",
+          "x": 2066.9291,
+          "y": 1968.5039000000002,
+          "layer": 1,
+          "rotation": 0
+        },
+        {
+          "ref": "CT1",
+          "id": "a6093cc7253377cd",
+          "x": 1897.6378,
+          "y": 2066.9291,
+          "layer": 1,
+          "rotation": 0
+        },
+        {
+          "ref": "CT2",
+          "id": "5bee07d7392c76cc",
+          "x": 1976.378,
+          "y": 2066.9291,
+          "layer": 1,
+          "rotation": 0
+        },
+        {
+          "ref": "R5",
+          "id": "de2f96c76e929e9e",
+          "x": 1870.0787,
+          "y": 1897.6378,
+          "layer": 1,
+          "rotation": 0
+        },
+        {
+          "ref": "R6",
+          "id": "5957c9b0cbaec4ff",
+          "x": 2066.9291,
+          "y": 1897.6378,
+          "layer": 1,
+          "rotation": 0
+        },
+        {
+          "ref": "R7",
+          "id": "01ca009ec6720bd6",
+          "x": 1968.5039000000002,
+          "y": 1830.7087,
+          "layer": 1,
+          "rotation": 0
+        },
+        {
+          "ref": "R1",
+          "id": "ad6ab953596758c4",
+          "x": 1838.6039,
+          "y": 1968.5039000000002,
+          "layer": 1,
+          "rotation": 0
+        },
+        {
+          "ref": "R2",
+          "id": "bf28374ca5e64db0",
+          "x": 2098.4039,
+          "y": 2125.9843,
+          "layer": 1,
+          "rotation": 0
+        },
+        {
+          "ref": "D2",
+          "id": "cc333413d98268e4",
+          "x": 2204.7244,
+          "y": 1968.5039000000002,
+          "layer": 1,
+          "rotation": 0
+        },
+        {
+          "ref": "R3",
+          "id": "ad7cec338e0de3be",
+          "x": 1838.6039,
+          "y": 1968.5039000000002,
+          "layer": 2,
+          "rotation": 0
+        },
+        {
+          "ref": "D3",
+          "id": "3b1620da00776ace",
+          "x": 1732.2835,
+          "y": 1968.5039000000002,
+          "layer": 2,
+          "rotation": 0
+        },
+        {
+          "ref": "R4",
+          "id": "c7c545773a7281b9",
+          "x": 2098.4039,
+          "y": 1811.0236,
+          "layer": 2,
+          "rotation": 0
+        },
+        {
+          "ref": "D4",
+          "id": "83b02f15e0095b5e",
+          "x": 2204.7244,
+          "y": 1968.5039000000002,
+          "layer": 2,
+          "rotation": 0
+        }
+      ]
+    },
+    {
+      "variant": "snake-leo",
+      "uuid": "fe8ee4534ee0b941",
+      "pcbInfo": {
+        "itemType": "PCB",
+        "uuid": "fe8ee4534ee0b941",
+        "name": "ManufacturingPanel100_1",
+        "parentProjectUuid": "c051e4069a83472198ecce7729fbd257"
+      },
+      "drc": [],
+      "savedReopened": true,
+      "lineCount": 125,
+      "viaCount": 10,
+      "parts": [
+        {
+          "ref": "U1",
+          "id": "afbeea4587e61c7c",
+          "x": 1968.5039000000002,
+          "y": 1968.5039000000002,
+          "layer": 1,
+          "rotation": 0
+        },
+        {
+          "ref": "D1",
+          "id": "baa90f6e7ff9f45a",
+          "x": 1732.2834,
+          "y": 1968.5039000000002,
+          "layer": 1,
+          "rotation": 0
+        },
+        {
+          "ref": "C1",
+          "id": "bffeb4af3da38a40",
+          "x": 2066.9291,
+          "y": 1968.5039000000002,
+          "layer": 1,
+          "rotation": 0
+        },
+        {
+          "ref": "CT1",
+          "id": "a6093cc7253377cd",
+          "x": 1897.6378,
+          "y": 2066.9291,
+          "layer": 1,
+          "rotation": 0
+        },
+        {
+          "ref": "CT2",
+          "id": "5bee07d7392c76cc",
+          "x": 1976.378,
+          "y": 2066.9291,
+          "layer": 1,
+          "rotation": 0
+        },
+        {
+          "ref": "R5",
+          "id": "de2f96c76e929e9e",
+          "x": 1870.0787,
+          "y": 1897.6378,
+          "layer": 1,
+          "rotation": 0
+        },
+        {
+          "ref": "R6",
+          "id": "5957c9b0cbaec4ff",
+          "x": 2066.9291,
+          "y": 1897.6378,
+          "layer": 1,
+          "rotation": 0
+        },
+        {
+          "ref": "R7",
+          "id": "01ca009ec6720bd6",
+          "x": 1968.5039000000002,
+          "y": 1830.7087,
+          "layer": 1,
+          "rotation": 0
+        },
+        {
+          "ref": "R1",
+          "id": "ad6ab953596758c4",
+          "x": 1838.6039,
+          "y": 1968.5039000000002,
+          "layer": 1,
+          "rotation": 0
+        },
+        {
+          "ref": "R2",
+          "id": "bf28374ca5e64db0",
+          "x": 2098.4039,
+          "y": 2125.9843,
+          "layer": 1,
+          "rotation": 0
+        },
+        {
+          "ref": "D2",
+          "id": "cc333413d98268e4",
+          "x": 2204.7244,
+          "y": 1968.5039000000002,
+          "layer": 1,
+          "rotation": 0
+        },
+        {
+          "ref": "R3",
+          "id": "ad7cec338e0de3be",
+          "x": 1838.6039,
+          "y": 1968.5039000000002,
+          "layer": 2,
+          "rotation": 0
+        },
+        {
+          "ref": "D3",
+          "id": "3b1620da00776ace",
+          "x": 1732.2835,
+          "y": 1968.5039000000002,
+          "layer": 2,
+          "rotation": 0
+        },
+        {
+          "ref": "R4",
+          "id": "c7c545773a7281b9",
+          "x": 2098.4039,
+          "y": 1811.0236,
+          "layer": 2,
+          "rotation": 0
+        },
+        {
+          "ref": "D4",
+          "id": "83b02f15e0095b5e",
+          "x": 2204.7244,
+          "y": 1968.5039000000002,
+          "layer": 2,
+          "rotation": 0
+        }
+      ]
+    }
+  ],
+  "files": {
+    "variants\\common\\eda\\native\\nfc-two-variants.epro2": {
+      "size": 952968,
+      "sha256": "5fb68138ca77b31871d153081dc6205177e9c6f646d5b24e82393139415518a3"
+    },
+    "variants\\common\\eda\\native\\schematic-source.jsonl": {
+      "size": 237444,
+      "sha256": "db3066b1bd8f0acd14c82cdd5d2acce7d18aed74e2e2eaa703a77c1da48c1b0f"
+    },
+    "variants\\common\\eda\\native\\core-source.jsonl": {
+      "size": 104578,
+      "sha256": "a58f0160078fa02009a2c8b7c1fb0fcf4983b7ad1ff7c531fa9db1161a0554da"
+    },
+    "variants\\common\\eda\\core-pads.json": {
+      "size": 32159,
+      "sha256": "6c98312831b763d2138c2849254e16fa819f6fd3a21d9977617f18a572a1c3b0"
+    },
+    "variants\\common\\eda\\native\\core-netlist.json": {
+      "size": 113376,
+      "sha256": "d24b83a5ff430171d4f5d2318132611ebdf38e24ec7e905ac63f84d0d6d145ef"
+    },
+    "variants\\common\\eda\\native\\horse-sagittarius-panel-source.jsonl": {
+      "size": 248556,
+      "sha256": "5525624ce2b736479eb3415070be41d30127be6bcc96b43537090b1ce85dbf59"
+    },
+    "variants\\common\\eda\\horse-sagittarius-panel-pads.json": {
+      "size": 32299,
+      "sha256": "8e6cf1b515881149f59582fd68d05f6de4f033acb7ac1995ae48ab70b60ca81b"
+    },
+    "variants\\common\\eda\\native\\horse-sagittarius-panel-netlist.json": {
+      "size": 113376,
+      "sha256": "bc1d84a2155b61fc6e2a24b3dae897d38aa1818625ef5aab5756f45f76bbf9b1"
+    },
+    "variants\\horse-sagittarius\\manufacturing-draft\\horse-sagittarius-gerber.zip": {
+      "size": 886839,
+      "sha256": "b7d3629ddca2949aa222eabb1e1121f711276ffb4e440ab8dac1a515b66e6e13"
+    },
+    "variants\\horse-sagittarius\\manufacturing-draft\\bom-all.csv": {
+      "size": 720,
+      "sha256": "a145196133cab4cc8fda93d9ea2952b2a3e5ce3d815e6a6ada9788dff78f4b50"
+    },
+    "variants\\horse-sagittarius\\manufacturing-draft\\pnp-all.csv": {
+      "size": 3339,
+      "sha256": "c147f69055dee1a7a3b6e90dbab5b1bbba0a8413a30b749e565ba783cee32a36"
+    },
+    "variants\\horse-sagittarius\\manufacturing-draft\\gerber-members.json": {
+      "size": 3015,
+      "sha256": "3cf0ce4f03a08594722c84a562428712a952c40253739d8e4237b53dde74402e"
+    },
+    "variants\\common\\eda\\native\\snake-leo-panel-source.jsonl": {
+      "size": 260889,
+      "sha256": "d6e85a82e2ade982b874b363b3eb75a2c96ceb873fdcb4b4cf38afaf07a8d46b"
+    },
+    "variants\\common\\eda\\snake-leo-panel-pads.json": {
+      "size": 32299,
+      "sha256": "8e6cf1b515881149f59582fd68d05f6de4f033acb7ac1995ae48ab70b60ca81b"
+    },
+    "variants\\common\\eda\\native\\snake-leo-panel-netlist.json": {
+      "size": 113376,
+      "sha256": "975ed30003d890b66ae320e3a0a891a3643ed75c8a79a87f5a256281586bb2ab"
+    },
+    "variants\\snake-leo\\manufacturing-draft\\snake-leo-gerber.zip": {
+      "size": 1116447,
+      "sha256": "1987f574d939873bb1bba6ff89c5865a6cbc59bfddc9a77e4f2f6c8c1a5280ff"
+    },
+    "variants\\snake-leo\\manufacturing-draft\\bom-all.csv": {
+      "size": 720,
+      "sha256": "a145196133cab4cc8fda93d9ea2952b2a3e5ce3d815e6a6ada9788dff78f4b50"
+    },
+    "variants\\snake-leo\\manufacturing-draft\\pnp-all.csv": {
+      "size": 3339,
+      "sha256": "c147f69055dee1a7a3b6e90dbab5b1bbba0a8413a30b749e565ba783cee32a36"
+    },
+    "variants\\snake-leo\\manufacturing-draft\\gerber-members.json": {
+      "size": 3015,
+      "sha256": "22521ba53e1496a7a47f9d586349903c6f4fce65e00b8f2360ac3150d590a920"
+    }
+  }
+}

@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="37mm" height="37mm" viewBox="-18.5 -18.5 37 37">
+<title>Leo side, dark background and pale constellation lines</title>
+<rect x="-18.5" y="-18.5" width="37" height="37" fill="#17232f"/>
+<polygon points="-7.662951,-18.500000 7.662951,-18.500000 18.500000,-7.662951 18.500000,7.662951 7.662951,18.500000 -7.662951,18.500000 -18.500000,7.662951 -18.500000,-7.662951" fill="none" stroke="#59616a" stroke-width="0.14"/>
+<path id="leo_title_0_0" d="M -1.900,-17.000 L -1.900,-15.800" fill="none" stroke="#eee8d6" stroke-width="0.18" stroke-linecap="round"/>
+<path id="leo_title_0_1" d="M -1.900,-15.800 L -1.100,-15.800" fill="none" stroke="#eee8d6" stroke-width="0.18" stroke-linecap="round"/>
+<path id="leo_title_1_0" d="M -0.400,-15.800 L -0.400,-17.000" fill="none" stroke="#eee8d6" stroke-width="0.18" stroke-linecap="round"/>
+<path id="leo_title_1_1" d="M -0.400,-17.000 L 0.400,-17.000" fill="none" stroke="#eee8d6" stroke-width="0.18" stroke-linecap="round"/>
+<path id="leo_title_1_2" d="M -0.400,-16.400 L 0.400,-16.400" fill="none" stroke="#eee8d6" stroke-width="0.18" stroke-linecap="round"/>
+<path id="leo_title_1_3" d="M -0.400,-15.800 L 0.400,-15.800" fill="none" stroke="#eee8d6" stroke-width="0.18" stroke-linecap="round"/>
+<path id="leo_title_2_0" d="M 1.220,-17.000 L 1.780,-17.000" fill="none" stroke="#eee8d6" stroke-width="0.18" stroke-linecap="round"/>
+<path id="leo_title_2_1" d="M 1.900,-16.880 L 1.900,-15.920" fill="none" stroke="#eee8d6" stroke-width="0.18" stroke-linecap="round"/>
+<path id="leo_title_2_2" d="M 1.780,-15.800 L 1.220,-15.800" fill="none" stroke="#eee8d6" stroke-width="0.18" stroke-linecap="round"/>
+<path id="leo_title_2_3" d="M 1.100,-15.920 L 1.100,-16.880" fill="none" stroke="#eee8d6" stroke-width="0.18" stroke-linecap="round"/>
+<polyline id="latin_ad_astra_0_0_part1" points="-4.356000,-13.900000 -4.356000,-15.100000" fill="none" stroke="#eee8d6" stroke-width="0.18" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline id="latin_ad_astra_0_1_part1" points="-4.356000,-15.100000 -3.556000,-15.100000" fill="none" stroke="#eee8d6" stroke-width="0.18" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline id="latin_ad_astra_0_2_part1" points="-3.556000,-15.100000 -3.556000,-13.900000" fill="none" stroke="#eee8d6" stroke-width="0.18" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline id="latin_ad_astra_0_3_part1" points="-4.356000,-14.500000 -3.556000,-14.500000" fill="none" stroke="#eee8d6" stroke-width="0.18" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline id="latin_ad_astra_1_0_part1" points="-3.240000,-13.900000 -3.240000,-15.100000" fill="none" stroke="#eee8d6" stroke-width="0.18" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline id="latin_ad_astra_1_1_part1" points="-3.240000,-15.100000 -2.680000,-15.100000" fill="none" stroke="#eee8d6" stroke-width="0.18" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline id="latin_ad_astra_1_3_part1" points="-2.440000,-14.860000 -2.440000,-14.140000" fill="none" stroke="#eee8d6" stroke-width="0.18" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline id="latin_ad_astra_1_5_part1" points="-2.680000,-13.900000 -3.240000,-13.900000" fill="none" stroke="#eee8d6" stroke-width="0.18" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline id="latin_ad_astra_3_0_part1" points="-1.008000,-13.900000 -1.008000,-15.100000" fill="none" stroke="#eee8d6" stroke-width="0.18" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline id="latin_ad_astra_3_1_part1" points="-1.008000,-15.100000 -0.208000,-15.100000" fill="none" stroke="#eee8d6" stroke-width="0.18" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline id="latin_ad_astra_3_2_part1" points="-0.208000,-15.100000 -0.208000,-13.900000" fill="none" stroke="#eee8d6" stroke-width="0.18" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline id="latin_ad_astra_3_3_part1" points="-1.008000,-14.500000 -0.208000,-14.500000" fill="none" stroke="#eee8d6" stroke-width="0.18" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline id="latin_ad_astra_4_0_part1" points="0.908000,-15.100000 0.308000,-15.100000" fill="none" stroke="#eee8d6" stroke-width="0.18" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline id="latin_ad_astra_4_3_part1" points="0.108000,-14.700000 0.908000,-14.300000" fill="none" stroke="#eee8d6" stroke-width="0.18" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline id="latin_ad_astra_4_6_part1" points="0.708000,-13.900000 0.108000,-13.900000" fill="none" stroke="#eee8d6" stroke-width="0.18" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline id="latin_ad_astra_5_0_part1" points="1.224000,-15.100000 2.024000,-15.100000" fill="none" stroke="#eee8d6" stroke-width="0.18" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline id="latin_ad_astra_5_1_part1" points="1.624000,-15.100000 1.624000,-13.900000" fill="none" stroke="#eee8d6" stroke-width="0.18" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline id="latin_ad_astra_6_0_part1" points="2.340000,-13.900000 2.340000,-15.100000" fill="none" stroke="#eee8d6" stroke-width="0.18" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline id="latin_ad_astra_6_1_part1" points="2.340000,-15.100000 2.940000,-15.100000" fill="none" stroke="#eee8d6" stroke-width="0.18" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline id="latin_ad_astra_6_5_part1" points="2.940000,-14.500000 2.340000,-14.500000" fill="none" stroke="#eee8d6" stroke-width="0.18" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline id="latin_ad_astra_6_6_part1" points="2.740000,-14.500000 3.140000,-13.900000" fill="none" stroke="#eee8d6" stroke-width="0.18" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline id="latin_ad_astra_7_0_part1" points="3.456000,-13.900000 3.456000,-15.100000" fill="none" stroke="#eee8d6" stroke-width="0.18" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline id="latin_ad_astra_7_1_part1" points="3.456000,-15.100000 4.256000,-15.100000" fill="none" stroke="#eee8d6" stroke-width="0.18" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline id="latin_ad_astra_7_2_part1" points="4.256000,-15.100000 4.256000,-13.900000" fill="none" stroke="#eee8d6" stroke-width="0.18" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline id="latin_ad_astra_7_3_part1" points="3.456000,-14.500000 4.256000,-14.500000" fill="none" stroke="#eee8d6" stroke-width="0.18" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="constellation_edge_01" d="M -13.750000,3.484250 L -5.475044,3.217156" fill="none" stroke="#eee8d6" stroke-width="0.22" stroke-linecap="round"/>
+<path id="constellation_edge_02" d="M -5.475044,3.217156 L 9.308269,6.586594" fill="none" stroke="#eee8d6" stroke-width="0.22" stroke-linecap="round"/>
+<path id="constellation_edge_03" d="M 9.308269,6.586594 L 9.383000,2.132762" fill="none" stroke="#eee8d6" stroke-width="0.22" stroke-linecap="round"/>
+<path id="constellation_edge_04" d="M 9.383000,2.132762 L 6.543453,-0.624594" fill="none" stroke="#eee8d6" stroke-width="0.22" stroke-linecap="round"/>
+<path id="constellation_edge_05" d="M 6.543453,-0.624594 L -5.155528,-1.511950" fill="none" stroke="#eee8d6" stroke-width="0.22" stroke-linecap="round"/>
+<path id="constellation_edge_06" d="M -5.155528,-1.511950 L -13.750000,3.484250" fill="none" stroke="#eee8d6" stroke-width="0.22" stroke-linecap="round"/>
+<path id="constellation_edge_07" d="M 6.543453,-0.624594 L 7.176263,-3.923734" fill="none" stroke="#eee8d6" stroke-width="0.22" stroke-linecap="round"/>
+<path id="constellation_edge_08" d="M 7.176263,-3.923734 L 12.134650,-6.586594" fill="none" stroke="#eee8d6" stroke-width="0.22" stroke-linecap="round"/>
+<path id="constellation_edge_09" d="M 12.134650,-6.586594 L 13.750000,-4.614913" fill="none" stroke="#eee8d6" stroke-width="0.22" stroke-linecap="round"/>
+<path id="constellation_edge_10" d="M -5.155528,-1.511950 L -5.475044,3.217156" fill="none" stroke="#eee8d6" stroke-width="0.22" stroke-linecap="round"/>
+<circle id="constellation_star_HIP47908" cx="13.750000" cy="-4.614913" r="0.317" fill="#eee8d6"/>
+<circle id="constellation_star_HIP48455" cx="12.134650" cy="-6.586594" r="0.281" fill="#eee8d6"/>
+<circle id="constellation_star_HIP49583" cx="9.383000" cy="2.132762" r="0.297" fill="#eee8d6"/>
+<circle id="constellation_star_HIP49669" cx="9.308269" cy="6.586594" r="0.382" fill="#eee8d6"/>
+<circle id="constellation_star_HIP50335" cx="7.176263" cy="-3.923734" r="0.299" fill="#eee8d6"/>
+<circle id="constellation_star_HIP50583" cx="6.543453" cy="-0.624594" r="0.356" fill="#eee8d6"/>
+<circle id="constellation_star_HIP54872" cx="-5.155528" cy="-1.511950" r="0.334" fill="#eee8d6"/>
+<circle id="constellation_star_HIP54879" cx="-5.475044" cy="3.217156" r="0.303" fill="#eee8d6"/>
+<circle id="constellation_star_HIP57632" cx="-13.750000" cy="3.484250" r="0.350" fill="#eee8d6"/>
+</svg>

@@ -1,0 +1,138 @@
+{
+  "status": "37mm_cover_objects_rendered",
+  "variant": "horse-sagittarius",
+  "canvas_mm": [
+    37,
+    37
+  ],
+  "canvas_pixels": [
+    1821,
+    1821
+  ],
+  "png_dpi": 1250,
+  "octagon_across_flats_mm": 37,
+  "octagon_clip_points_mm_from_top_left": [
+    [
+      10.837049,
+      0.0
+    ],
+    [
+      26.162951,
+      0.0
+    ],
+    [
+      37.0,
+      10.837049
+    ],
+    [
+      37.0,
+      26.162951
+    ],
+    [
+      26.162951,
+      37.0
+    ],
+    [
+      10.837049,
+      37.0
+    ],
+    [
+      0.0,
+      26.162951
+    ],
+    [
+      0.0,
+      10.837049
+    ]
+  ],
+  "outside_octagon": "transparent, antialiased at the edge",
+  "orientation": "horse viewed from assembly outside, y-down, not mirrored; Sagittarius exterior rear view, 0 degrees, not mirrored",
+  "input_sha256": {
+    "approved_horse_single_ink_png": "c732fa1d57448ed367c3a7d841f3674c9f5a4565fe4e5d2999c4e43b0d17c728",
+    "sagittarius_B_soft_type_source_svg": "b5a56fda278458f0e5ae6fa0d238b4afd6e26bf53a5fe5510a89afa7a5fbc127",
+    "sagittarius_geometry_design_json": "3c677d826508b96cc74d04c815f9a35a69bd39f6a7b3d6d455734b9061138391"
+  },
+  "files": {
+    "front-horse-37mm.png": {
+      "sha256": "8f847c7cd56bfcf2c9826fce699cd0d193c609a723cf6503679b1c85415652db",
+      "svg_sha256": "e2515c519c438d0df35ea617b6f5f56bbcd0efe966925045a95b145abb0c30a9",
+      "dimensions_px": [
+        1821,
+        1821
+      ],
+      "dpi": 1250,
+      "physical_size_mm_from_png_metadata": [
+        37.00272,
+        37.00272
+      ],
+      "alpha_at_four_corners": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "transparent_outside_af37": true
+    },
+    "rear-sagittarius-37mm.png": {
+      "sha256": "c219434d807fc97dd32f869e9f0312eb3bdd2655b3abbfe84398700dec433245",
+      "svg_sha256": "1a29f5adeafa71ea0f5a204e0cb1c1246bed4954cd5ad8ccc0b2698783f69170",
+      "dimensions_px": [
+        1821,
+        1821
+      ],
+      "dpi": 1250,
+      "physical_size_mm_from_png_metadata": [
+        37.00272,
+        37.00272
+      ],
+      "alpha_at_four_corners": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "transparent_outside_af37": true
+    }
+  },
+  "preview": {
+    "file": "cover-review-preview.png",
+    "sha256": "79bd51335a5d414a2850d50bf73191071128b704ab651b6c899b4437581f2066",
+    "dimensions_px": [
+      1860,
+      1000
+    ]
+  },
+  "render": "Configured Sharp runtime at 300 input DPI; embedded approved animal PNG is preserved as source bytes inside SVG and composited without raster edits.",
+  "font_outline_validation": {
+    "font_file": "C:\\Windows\\Fonts\\georgia.ttf",
+    "font_sha256": "38dffcaf1fac89492f7c56c600a14daf36ae42f7c21985cd4134ae113124a58f",
+    "font_family": "Georgia Regular",
+    "live_text_nodes": 0,
+    "outlined_texts": [
+      {
+        "text": "SAGITTARIUS",
+        "baseline_mm": -14.2,
+        "font_size_mm": 1.52,
+        "letter_spacing_mm": 0.055,
+        "glyph_paths": 11
+      },
+      {
+        "text": "AD ASTRA",
+        "baseline_mm": 14.63,
+        "font_size_mm": 1.62,
+        "letter_spacing_mm": 0.09,
+        "glyph_paths": 7
+      }
+    ],
+    "svg_path_count": 29,
+    "cutout_mask": {
+      "mask_id": "physical-apertures-and-020mm-substrate-reveal",
+      "physical_slots": 11,
+      "physical_holes": 8,
+      "reveal_mm": 0.2,
+      "meaning": "alpha-clear substrate reveal around real apertures; not printed white ink"
+    }
+  },
+  "aperture_rendering": "Physical holes and slots plus 0.20mm reveal are alpha clear; the reveal exposes substrate/white soldermask and is not printed white ink or a mechanical border.",
+  "input_unchanged_after_render": true
+}

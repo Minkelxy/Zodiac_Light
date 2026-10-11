@@ -1,65 +1,11 @@
-# NFC 符咒硬件工程入口
+# 37 mm 双面 NFC 符咒
 
-这是 37 mm 双面 NFC 符咒的可审阅本地工程资料与离线生成工具。当前目录保存了原理图/网表交接数据、机械与图案源数据、预览、检查日志，以及从嘉立创EDA读取的部分原生源快照。`eda/native/*.jsonl` 是各文档源快照，`eda/native/*netlist.json` 是网表快照。原生项目备份 [`eda/native/nfc-talisman-before-routing.epro2`](eda/native/nfc-talisman-before-routing.epro2) 保存于本轮布线前；大小 81,585 字节，SHA-256 为 `7693e32ad0698fc63b5f0cbb01309796e909396d6653143ebdb65f4ab077eaa5`。当前原生项目见 [`eda/native/nfc-talisman-current.epro2`](eda/native/nfc-talisman-current.epro2)，其精确版本与导出 SHA-256 以 [`manufacturing/draft/export-manifest.json`](manufacturing/draft/export-manifest.json) 为准。活动项目名、核心板与拼板文档 UUID、实时状态以 [`eda/api-notes.md`](eda/api-notes.md) 为准。
+本目录存放硬件工程、评审记录和制造草案。当前项目目标与同步状态见[当前项目说明](../../docs/current-project.md)；各类详细资料及历史快照入口见[文档地图](../../docs/document-map.md)。
 
-## 先看这些
+当前原生工程已集成两款独立的 37 mm 双面 NFC 符咒：**马 + 射手座**与**蛇 + 狮子座**。两款共用核心电路，各有一块独立的 100×100 mm、五片拼板。对称 LED 已应用：Top D1/D2=(-6,0)/(+6,0) mm、Bottom D3/D4=(-6,0)/(+6,0) mm（核心板原生坐标）；R1–R4 保持原位。核心板和两块拼板保存重开 DRC 均为空。当前结论、UUID、审计与导出入口见[当前项目说明](../../docs/current-project.md)。项目仍处于 `HOLD_CAM_C1_PHYSICAL_VALIDATION_PENDING`：C1采购、正式 CAM 和首件光效/RF/NFC 验收未完成，记录模板仍待填写。
 
-- 2026-10-11 推进资料：[`manufacturing/improvement-review-2026-10-11.md`](manufacturing/improvement-review-2026-10-11.md) 汇总本轮校样、光路、装配、BOM/ERC 的结论；[`artwork/production-study-v1/index.html`](artwork/production-study-v1/index.html) 为实际尺寸打印入口；[`manufacturing/first-article-v1/README.md`](manufacturing/first-article-v1/README.md) 为首件记录包；[`manufacturing/material-and-finish-baseline.md`](manufacturing/material-and-finish-baseline.md) 统一当前外观与材料评审口径。它们是评审资料，当前制造草案仍未放行。
-- [`manufacturing/design-review-v3.md`](manufacturing/design-review-v3.md)：最新原理图整理、PCB 布局调整、板框检查和 BOM 结论。
-- [`eda/schematic-review.png`](eda/schematic-review.png)：实际原理图预览；[`geometry/core-layout-review-v3.png`](geometry/core-layout-review-v3.png) 为两面布局预览；最新汇总物料与 C1 状态见 [`current-bom-ready.csv`](manufacturing/bom-erc-closeout-v1/current-bom-ready.csv) 和 [`current-bom-review.md`](manufacturing/bom-erc-closeout-v1/current-bom-review.md)。旧 `manufacturing/bom-ready.csv` / `bom-review.md` 保留为 2026-10-10 manifest 的冻结快照。
-- [`electrical/source-index.md`](electrical/source-index.md)：电路来源与交接资料。
-- [`electrical/assembly.md`](electrical/assembly.md)：器件与电路装配说明。
-- [`geometry/README.md`](geometry/README.md)：机械几何定义及检查入口。
-- [`artwork/README.md`](artwork/README.md)：图案源数据与评审状态。
-- [`manufacturing/README.md`](manufacturing/README.md)：板材、层序、拼板和加工要求。
-- [`manufacturing/draft/export-manifest.json`](manufacturing/draft/export-manifest.json)：本轮制版草案文件清单及参数。
-- [`manufacturing/validation-status.md`](manufacturing/validation-status.md)：已有检查状态与未决事项。
-- [`manufacturing/acceptance-checklist.md`](manufacturing/acceptance-checklist.md)：样件、CAM 与制造放行清单。
-- [`eda/api-notes.md`](eda/api-notes.md)：本地与 live EDA 的边界、文档 UUID、近期 ERC/DRC 记录。
+## 重要边界
 
-## 离线环境与再生成
-
-在仓库根目录 `D:\星座灯` 执行。Python 3.11+ 是电气生成脚本要求；机械几何和预览生成依赖 Shapely 2.x 与 Pillow，依赖已列在本目录 [`requirements.txt`](requirements.txt)。
-
-```powershell
-python -m pip install -r hardware/nfc-talisman/requirements.txt
-python hardware/nfc-talisman/scripts/build_electrical.py
-python hardware/nfc-talisman/scripts/build_mechanical.py
-python hardware/nfc-talisman/scripts/build_star_face.py
-python hardware/nfc-talisman/scripts/build_mechanical.py --assembly-only
-python hardware/nfc-talisman/scripts/build_antenna_fill_candidate.py
-python hardware/nfc-talisman/scripts/validate_antenna_geometry.py
-python hardware/nfc-talisman/scripts/audit_existing_routes.py
-python hardware/nfc-talisman/scripts/summarize_checks.py
-python hardware/nfc-talisman/scripts/archive_check_summary.py
-```
-
-`build_mechanical.py` 从仓库根目录 `data/constellation.json` 读取星座源数据，重建本目录 `geometry/` 下的几何、验证结果与预览；`--assembly-only` 只重建装配辅助文件。`build_electrical.py` 重建 `electrical/` 下电气交接产物；只有明确需要下载器件资料时才加 `--download-sources`。天线填充候选与几何复核、已有走线审计均为离线步骤。生成会更新对应输出文件，需在提交前检查差异。
-
-射手座当前保留 8 个 Ø0.8 mm 星孔与 11 条 1 mm 独立槽，每个槽端分别优化，最短槽由 1.202 mm 延长到 1.489 mm；名义实材目标为 1.03 mm。新增 8 个细星环与 22 条细连接线，保留拉丁文字。已将深底浅线的 37×37 mm RGBA 图嵌入拼板；孔槽和板外透明。预览见 [`artwork/sagittarius-face-review.png`](artwork/sagittarius-face-review.png)，原生画布见 [`artwork/panel-native-render.png`](artwork/panel-native-render.png)。
-
-实际原生与 Gerber 核对见 [`manufacturing/draft/star-face-audit.json`](manufacturing/draft/star-face-audit.json)；彩印注册、原生嵌图和专用文件完整性见 [`manufacturing/draft/star-color-audit.json`](manufacturing/draft/star-color-audit.json)。普通线稿和原色图片叠放的最终颜色、透明区及刀补仍须官方加工预览确认。`build_star_face.py` 只更新本地源和候选图；`42-*`、`43-*` 是带备份/保护条件的阶段性实时修改，已执行后不能重复运行。
-
-## 嘉立创EDA桥接操作
-
-`scripts/*` 不是可以整体一键执行的 EDA 安装/导入程序。编号 `.js` 文件是针对具体活动文档与阶段编写的桥接片段；部分脚本会修改 live EDA 文档，执行前必须先读 [`eda/api-notes.md`](eda/api-notes.md) 和对应脚本，确认目标文档、操作内容及是否有 `APPLY` 开关。离线 Python 生成的中间文件也不会自动写入嘉立创EDA。
-
-尤其是 `build_panel_import.py` 会从机械、图案和电气数据编译桥接脚本输入；它本身不连接 EDA。`scripts/20-*`、`21-*` 等编号脚本属于按阶段执行的 live 文档操作；其所需阶段输入快照已保留在 `eda/native/`，`24-schematic-erc-current.js`、`25-core-pcb-drc-current.js`、`26-panel-pcb-drc-current.js` 则在客户端检查指定文档并写出日志。不要把脚本目录直接全选运行，也不要把已生成的几何/天线候选视为已写入 EDA。
-
-检查日志位于被 Git 忽略的 `eda/logs/`。生成最新三项检查的机器可读摘要：
-
-```powershell
-python hardware/nfc-talisman/scripts/summarize_checks.py
-python hardware/nfc-talisman/scripts/archive_check_summary.py
-```
-
-摘要对缺日志、读取失败、检查错误和 DRC/ERC 发现分别给出明确状态。当前核心板和拼板已完成布线；保存、关闭并重开后的原生 DRC 均返回空结果，天线桥接铜皮也已原生往返确认。面板原 22 条轮廓 GKO 未显式闭合造成的加工缺口已在生成器和 live 面板中修正；更新后保存、关闭并重开，DRC 仍为空。制造草案和导出清单见 [`manufacturing/draft/export-manifest.json`](manufacturing/draft/export-manifest.json)。`bom-all.csv`/`pnp-all.csv` 是包含 DNP 占位的原始导出，不可用于装配；推荐默认四灯配置为 14 件，另有移除 D2/D4 的两灯减载版本 12 件（R2/R4 保持 Fit）。仅 CT2 固定 DNP，默认仍为四灯。制造草案已通过只读 CAM 几何初检：22/22 条 GKO 闭合、10 个 PTH 与 108 个 NPTH、线圈/引出铜一致性、TP1/TP2 铜与阻焊开窗/无锡膏均通过。正式刀补、槽加工与工艺评审仍待完成；PTH 两个导出文件命中位置相同，正式CAM需择一避免重复钻孔。当前 Gerber 为 `colorSilkscreen=true`，已有射手座彩印专用文件；马图未包含，彩印合成效果待官方加工预览。裸板/叠装 RF、手机、马图光路和实物验收尚未完成。TP1/TP2已加入当前快照：核心板VOUT/GND顶层圆铜直径0.8 mm，阻焊开窗0.9 mm，无孔、无钢网开窗，且不进入BOM/PnP。
-
-
-当前 ERC/DRC 检查摘要与原生源文件哈希归档于 [`eda/check-summary.json`](eda/check-summary.json)，可用 `scripts/archive_check_summary.py` 重建；摘要标为 `current_draft`，并非制造放行。只读铜审计 `scripts/audit_native_copper.py` 与草案 CAM 审计 `scripts/audit_manufacturing_draft.py` 分别输出 `electrical/native-copper-audit.json` 和 `manufacturing/draft/cam-audit.json`。只有在 native 快照和导出 manifest 对应同一版设计后才运行/采信审计；这些本地离线审计不连接或修改 live 嘉立创EDA。
-
-2026-10-10：[十二符咒与十二星座素材索引](artwork/reference-collection/index.html)、[来源说明](artwork/reference-collection/README.md) 与 [ZIP整包](artwork/reference-collection.zip) 提供完整源 PNG、原像素透明版及 [十二张修复正视透明 PNG](artwork/reference-collection/talisman-restored-v1/README.md)。v1 修复稿使用原生 ImageGen 依据原图重建轮廓、校正图案承载平面，以保留动物姿态与分段留白为约束，统一 1024×1024、最长边约 820 px。**牛、猪、龙、虎、猴仍需精修**；逐张复核与文件/布局验证分别记录，不视为全部准确还原完成。索引默认显示修复稿，可切换两种原图作对照；原图、提示词、生成原稿和输出哈希均归档。星图保留原可编辑 SVG；本轮未改 EDA/制造设计，马图仍由用户手动导入。
-
-2026-10-11 原生 ImageGen 已恢复，完成十二张独立的 [单色风格重绘候选与复核](artwork/reference-collection/talisman-monochrome-v1/README.md)。每张保留原主色，用透明留白、同色内线和少量排线表达转折；羊保留连续头，猪补回长下弧，马保留六块紫色。用户随后批准仅统一 RGB，完成 [十二张严格单色 PNG](artwork/reference-collection/talisman-single-ink-v1/README.md) 与 [下载包](artwork/talisman-single-ink-v1.zip)：1024×1024、等比居中，12/12颜色唯一性通过，12/12 alpha 与原生候选逐字节一致。图库支持五种对照并默认显示单色版，来源、准确提示词、原生稿与输出哈希已归档。牛脸、龙角等局部仍有造型精修待办，不将颜色通过解释为原作准确还原通过；前一日403保留为历史。未更改EDA、PCB或制造几何，马图仍由用户手动导入。
-
-2026-10-11 最新推进：已完成十二图实际尺寸校样、马面光路候选、首件装配与测试空模板，并在原生工程重新只读检查 ERC（0 错误、1 条属性匹配警告）。C1 候选的最大高度和推荐焊盘与当前设计有差异，继续保持 Qty 0 / HOLD；原生 PCB 与制造草案没有修改。详情见 [推进报告](manufacturing/improvement-review-2026-10-11.md) 与 [归档评审包](manufacturing/improvement-review-v1.zip)。实物 RF、手机读写、光路及 CAM 待办继续保留。
+- 本目录有离线生成脚本和嘉立创EDA桥接脚本。请按[文档地图](../../docs/document-map.md)先读对应说明和脚本；不要把 Python/SVG 或编号脚本目录不加辨别地全部运行，部分编号脚本会改写活动 EDA 文档。
+- 当前原生工程和共同检查以 `variants/common/export-manifest.json`、`native-archive-validation.json`、`native-copper-audit.json`、`face-geometry-audit.json` 为入口；两款各自的 Gerber/BOM/PnP review 文件在 `variants/horse-sagittarius/manufacturing-draft/` 与 `variants/snake-leo/manufacturing-draft/`。
+- 根目录 `manufacturing/draft/` 与旧原生快照是历史版本，不是两款新版导出。当前新版仍是待 CAM、C1 采购和实物验收的草案，不能视为制造放行。

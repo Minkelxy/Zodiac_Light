@@ -1,0 +1,3167 @@
+{
+  "name": "core",
+  "uuid": "eb14b9eaec4f920c",
+  "doc": {
+    "documentType": 3,
+    "uuid": "eb14b9eaec4f920c",
+    "tabId": "eb14b9eaec4f920c@c051e4069a83472198ecce7729fbd257",
+    "parentProjectUuid": "c051e4069a83472198ecce7729fbd257"
+  },
+  "parts": [
+    {
+      "ref": "U1",
+      "id": "c0b025df7b5b686b",
+      "x": 0,
+      "y": 0,
+      "layer": 1
+    },
+    {
+      "ref": "D1",
+      "id": "40d42f6128be4796",
+      "x": -236,
+      "y": 0,
+      "layer": 1
+    },
+    {
+      "ref": "C1",
+      "id": "8574f2192f5f7beb",
+      "x": 98.4252,
+      "y": 0,
+      "layer": 1
+    },
+    {
+      "ref": "CT1",
+      "id": "ca4b26d8ae05e7f5",
+      "x": -70.8661,
+      "y": 98.4252,
+      "layer": 1
+    },
+    {
+      "ref": "CT2",
+      "id": "bd515f780006319c",
+      "x": 7.874,
+      "y": 98.4252,
+      "layer": 1
+    },
+    {
+      "ref": "R5",
+      "id": "5a9c5d7aad5853ea",
+      "x": -98.4252,
+      "y": -70.8661,
+      "layer": 1
+    },
+    {
+      "ref": "R6",
+      "id": "9d1474355800c4bd",
+      "x": 98.4252,
+      "y": -70.8661,
+      "layer": 1
+    },
+    {
+      "ref": "R7",
+      "id": "3df77eb328edc7b5",
+      "x": 0,
+      "y": -137.7953,
+      "layer": 1
+    },
+    {
+      "ref": "R1",
+      "id": "e25abbd50c954f9a",
+      "x": -129.9,
+      "y": 0,
+      "layer": 1
+    },
+    {
+      "ref": "R2",
+      "id": "d9fff5ffff2f73f3",
+      "x": 129.9,
+      "y": 157.4803,
+      "layer": 1
+    },
+    {
+      "ref": "D2",
+      "id": "aa8cc903ac6e55fc",
+      "x": 236.2205,
+      "y": 157.4803,
+      "layer": 1
+    },
+    {
+      "ref": "R3",
+      "id": "a3880816cb907cd4",
+      "x": -129.9,
+      "y": 0,
+      "layer": 2
+    },
+    {
+      "ref": "D3",
+      "id": "7334220435ccfeb7",
+      "x": -236.2205,
+      "y": 0,
+      "layer": 2
+    },
+    {
+      "ref": "R4",
+      "id": "1968272a10277b12",
+      "x": 129.9,
+      "y": -157.4803,
+      "layer": 2
+    },
+    {
+      "ref": "D4",
+      "id": "d95eb73f14ed38ec",
+      "x": 236.2205,
+      "y": -157.4803,
+      "layer": 2
+    }
+  ],
+  "lines": [
+    {
+      "id": "91b61d36f8ef93f3",
+      "net": "SCL",
+      "layer": 1,
+      "width": 8,
+      "start": [
+        -23.6,
+        -19.7
+      ],
+      "end": [
+        -68.8,
+        -70.9
+      ]
+    },
+    {
+      "id": "7e10129e9b16e637",
+      "net": "SDA",
+      "layer": 1,
+      "width": 8,
+      "start": [
+        23.6,
+        -19.7
+      ],
+      "end": [
+        48,
+        -19.7
+      ]
+    },
+    {
+      "id": "1ce8a33ae27af718",
+      "net": "SDA",
+      "layer": 1,
+      "width": 8,
+      "start": [
+        48,
+        -19.7
+      ],
+      "end": [
+        48,
+        -30
+      ]
+    },
+    {
+      "id": "7758685291e29674",
+      "net": "SDA",
+      "layer": 1,
+      "width": 8,
+      "start": [
+        48,
+        -30
+      ],
+      "end": [
+        100,
+        -30
+      ]
+    },
+    {
+      "id": "fee31e31d00143fe",
+      "net": "SDA",
+      "layer": 1,
+      "width": 8,
+      "start": [
+        100,
+        -30
+      ],
+      "end": [
+        100,
+        -70.9
+      ]
+    },
+    {
+      "id": "153aa235dd06b094",
+      "net": "SDA",
+      "layer": 1,
+      "width": 8,
+      "start": [
+        100,
+        -70.9
+      ],
+      "end": [
+        128.1,
+        -70.9
+      ]
+    },
+    {
+      "id": "f77876691d6b6957",
+      "net": "FD",
+      "layer": 1,
+      "width": 8,
+      "start": [
+        0,
+        -23.6
+      ],
+      "end": [
+        29.699999999999996,
+        -137.8
+      ]
+    },
+    {
+      "id": "855dbb4190bc17c5",
+      "net": "LED1_A",
+      "layer": 1,
+      "width": 8,
+      "start": [
+        -100.19999999999999,
+        0
+      ],
+      "end": [
+        -108.1,
+        35
+      ]
+    },
+    {
+      "id": "85684627362e2559",
+      "net": "LED1_A",
+      "layer": 1,
+      "width": 8,
+      "start": [
+        -108.1,
+        35
+      ],
+      "end": [
+        -206.5,
+        35
+      ]
+    },
+    {
+      "id": "cc3b2dc18a2814d1",
+      "net": "LED1_A",
+      "layer": 1,
+      "width": 8,
+      "start": [
+        -206.5,
+        35
+      ],
+      "end": [
+        -206.5,
+        0
+      ]
+    },
+    {
+      "id": "fca0f3c07e2998fd",
+      "net": "LED2_A",
+      "layer": 1,
+      "width": 8,
+      "start": [
+        159.6,
+        157.5
+      ],
+      "end": [
+        159.6,
+        195
+      ]
+    },
+    {
+      "id": "fa66c787dcab9acb",
+      "net": "LED2_A",
+      "layer": 1,
+      "width": 8,
+      "start": [
+        159.6,
+        195
+      ],
+      "end": [
+        265.7,
+        195
+      ]
+    },
+    {
+      "id": "64287cda6c26192f",
+      "net": "LED2_A",
+      "layer": 1,
+      "width": 8,
+      "start": [
+        265.7,
+        195
+      ],
+      "end": [
+        265.7,
+        157.5
+      ]
+    },
+    {
+      "id": "bd4da56d9ec4ee85",
+      "net": "LED3_A",
+      "layer": 2,
+      "width": 8,
+      "start": [
+        -100.19999999999999,
+        0
+      ],
+      "end": [
+        -108.1,
+        35
+      ]
+    },
+    {
+      "id": "ce5d28202ae76d85",
+      "net": "LED3_A",
+      "layer": 2,
+      "width": 8,
+      "start": [
+        -108.1,
+        35
+      ],
+      "end": [
+        -206.7,
+        35
+      ]
+    },
+    {
+      "id": "0637815e129cc84b",
+      "net": "LED3_A",
+      "layer": 2,
+      "width": 8,
+      "start": [
+        -206.7,
+        35
+      ],
+      "end": [
+        -206.7,
+        0
+      ]
+    },
+    {
+      "id": "16ec07e2a8817c04",
+      "net": "LED4_A",
+      "layer": 2,
+      "width": 8,
+      "start": [
+        159.6,
+        -157.5
+      ],
+      "end": [
+        159.6,
+        -195
+      ]
+    },
+    {
+      "id": "9b8a7f3c4ef9e7a5",
+      "net": "LED4_A",
+      "layer": 2,
+      "width": 8,
+      "start": [
+        159.6,
+        -195
+      ],
+      "end": [
+        265.7,
+        -195
+      ]
+    },
+    {
+      "id": "5b446c0a0f0ee4f2",
+      "net": "LED4_A",
+      "layer": 2,
+      "width": 8,
+      "start": [
+        265.7,
+        -195
+      ],
+      "end": [
+        265.7,
+        -157.5
+      ]
+    },
+    {
+      "id": "61bb177f55e8e44b",
+      "net": "ANT_LA",
+      "layer": 1,
+      "width": 8,
+      "start": [
+        -10,
+        100
+      ],
+      "end": [
+        -8.7,
+        98.4
+      ]
+    },
+    {
+      "id": "09b939f76755cae0",
+      "net": "ANT_LA",
+      "layer": 1,
+      "width": 8,
+      "start": [
+        -10,
+        70
+      ],
+      "end": [
+        -10,
+        100
+      ]
+    },
+    {
+      "id": "fa1051ab73e96402",
+      "net": "ANT_LA",
+      "layer": 1,
+      "width": 8,
+      "start": [
+        -15,
+        65
+      ],
+      "end": [
+        -10,
+        70
+      ]
+    },
+    {
+      "id": "bf4a97d95aa0ff35",
+      "net": "ANT_LA",
+      "layer": 1,
+      "width": 8,
+      "start": [
+        -15,
+        60
+      ],
+      "end": [
+        -15,
+        65
+      ]
+    },
+    {
+      "id": "44fd7c7aa1ebab49",
+      "net": "ANT_LA",
+      "layer": 1,
+      "width": 8,
+      "start": [
+        -20,
+        55
+      ],
+      "end": [
+        -15,
+        60
+      ]
+    },
+    {
+      "id": "51d8773e5b42eafb",
+      "net": "ANT_LA",
+      "layer": 1,
+      "width": 8,
+      "start": [
+        -20,
+        30
+      ],
+      "end": [
+        -20,
+        55
+      ]
+    },
+    {
+      "id": "742e748481e38f5a",
+      "net": "ANT_LA",
+      "layer": 1,
+      "width": 8,
+      "start": [
+        -25,
+        25
+      ],
+      "end": [
+        -20,
+        30
+      ]
+    },
+    {
+      "id": "f4153134593c6e8b",
+      "net": "ANT_LA",
+      "layer": 1,
+      "width": 8,
+      "start": [
+        -87.4,
+        98.4
+      ],
+      "end": [
+        -85,
+        100
+      ]
+    },
+    {
+      "id": "20ff94081e7a5c2e",
+      "net": "ANT_LA",
+      "layer": 1,
+      "width": 8,
+      "start": [
+        -85,
+        85
+      ],
+      "end": [
+        -85,
+        100
+      ]
+    },
+    {
+      "id": "3a3122330f92028c",
+      "net": "ANT_LA",
+      "layer": 1,
+      "width": 8,
+      "start": [
+        -85,
+        85
+      ],
+      "end": [
+        -75,
+        75
+      ]
+    },
+    {
+      "id": "6e44ba8f95291e03",
+      "net": "ANT_LA",
+      "layer": 1,
+      "width": 8,
+      "start": [
+        -75,
+        75
+      ],
+      "end": [
+        -45,
+        75
+      ]
+    },
+    {
+      "id": "408300022ec46e29",
+      "net": "ANT_LA",
+      "layer": 1,
+      "width": 8,
+      "start": [
+        -45,
+        75
+      ],
+      "end": [
+        -25,
+        55
+      ]
+    },
+    {
+      "id": "33e20b3e30ea9b20",
+      "net": "ANT_LA",
+      "layer": 1,
+      "width": 8,
+      "start": [
+        -25,
+        55
+      ],
+      "end": [
+        -20,
+        55
+      ]
+    },
+    {
+      "id": "20c2e89f17a984c5",
+      "net": "ANT_LB",
+      "layer": 1,
+      "width": 8,
+      "start": [
+        24.4,
+        98.4
+      ],
+      "end": [
+        25,
+        100
+      ]
+    },
+    {
+      "id": "9d05063601f71dba",
+      "net": "ANT_LB",
+      "layer": 1,
+      "width": 8,
+      "start": [
+        25,
+        55
+      ],
+      "end": [
+        25,
+        100
+      ]
+    },
+    {
+      "id": "384d44f39804e010",
+      "net": "ANT_LB",
+      "layer": 1,
+      "width": 8,
+      "start": [
+        -55,
+        100
+      ],
+      "end": [
+        -54.3,
+        98.4
+      ]
+    },
+    {
+      "id": "fd9bddfcf5f9b73c",
+      "net": "ANT_LB",
+      "layer": 1,
+      "width": 8,
+      "start": [
+        -55,
+        100
+      ],
+      "end": [
+        -50,
+        100
+      ]
+    },
+    {
+      "id": "33823c07146bb5a5",
+      "net": "ANT_LB",
+      "layer": 1,
+      "width": 8,
+      "start": [
+        -50,
+        100
+      ],
+      "end": [
+        -25,
+        125
+      ]
+    },
+    {
+      "id": "e37a4c591c546c04",
+      "net": "ANT_LB",
+      "layer": 1,
+      "width": 8,
+      "start": [
+        -25,
+        125
+      ],
+      "end": [
+        10,
+        125
+      ]
+    },
+    {
+      "id": "68afc5391a90b68d",
+      "net": "ANT_LB",
+      "layer": 1,
+      "width": 8,
+      "start": [
+        10,
+        125
+      ],
+      "end": [
+        20,
+        115
+      ]
+    },
+    {
+      "id": "a46ca052bd9648f7",
+      "net": "ANT_LB",
+      "layer": 1,
+      "width": 8,
+      "start": [
+        20,
+        105
+      ],
+      "end": [
+        20,
+        115
+      ]
+    },
+    {
+      "id": "cd12c651992658be",
+      "net": "ANT_LB",
+      "layer": 1,
+      "width": 8,
+      "start": [
+        20,
+        105
+      ],
+      "end": [
+        25,
+        100
+      ]
+    },
+    {
+      "id": "22371649827dc71f",
+      "net": "GND",
+      "layer": 1,
+      "width": 8,
+      "start": [
+        -45,
+        0
+      ],
+      "end": [
+        -25,
+        0
+      ]
+    },
+    {
+      "id": "5e1d88265be10c98",
+      "net": "GND",
+      "layer": 1,
+      "width": 8,
+      "start": [
+        205,
+        155
+      ],
+      "end": [
+        206.7,
+        157.5
+      ]
+    },
+    {
+      "id": "5ebe9313374ea1f3",
+      "net": "GND",
+      "layer": 1,
+      "width": 8,
+      "start": [
+        -265.5,
+        0
+      ],
+      "end": [
+        -265,
+        0
+      ]
+    },
+    {
+      "id": "b9d903df166feab7",
+      "net": "GND",
+      "layer": 1,
+      "width": 8,
+      "start": [
+        -265,
+        0
+      ],
+      "end": [
+        -265,
+        5
+      ]
+    },
+    {
+      "id": "fbdeb0a21de9771f",
+      "net": "GND",
+      "layer": 1,
+      "width": 8,
+      "start": [
+        -265,
+        5
+      ],
+      "end": [
+        -215,
+        55
+      ]
+    },
+    {
+      "id": "64bde1bedbdff3d3",
+      "net": "GND",
+      "layer": 1,
+      "width": 8,
+      "start": [
+        -215,
+        55
+      ],
+      "end": [
+        -100,
+        55
+      ]
+    },
+    {
+      "id": "fbd38fc4ac06ebf1",
+      "net": "GND",
+      "layer": 1,
+      "width": 8,
+      "start": [
+        -100,
+        55
+      ],
+      "end": [
+        -90,
+        45
+      ]
+    },
+    {
+      "id": "892c3036e4a96ae3",
+      "net": "GND",
+      "layer": 1,
+      "width": 8,
+      "start": [
+        -90,
+        40
+      ],
+      "end": [
+        -90,
+        45
+      ]
+    },
+    {
+      "id": "60e10af7ee015d28",
+      "net": "GND",
+      "layer": 1,
+      "width": 8,
+      "start": [
+        -90,
+        40
+      ],
+      "end": [
+        -75,
+        25
+      ]
+    },
+    {
+      "id": "c285d80c7af8e9c3",
+      "net": "GND",
+      "layer": 1,
+      "width": 8,
+      "start": [
+        -75,
+        25
+      ],
+      "end": [
+        -70,
+        25
+      ]
+    },
+    {
+      "id": "00f37a94025ae21e",
+      "net": "GND",
+      "layer": 1,
+      "width": 8,
+      "start": [
+        -70,
+        25
+      ],
+      "end": [
+        -45,
+        0
+      ]
+    },
+    {
+      "id": "4d1742d5cc988826",
+      "net": "GND",
+      "layer": 1,
+      "width": 8,
+      "start": [
+        -280,
+        -15
+      ],
+      "end": [
+        -265,
+        0
+      ]
+    },
+    {
+      "id": "3cadcf5ca6610f41",
+      "net": "GND",
+      "layer": 2,
+      "width": 8,
+      "start": [
+        115,
+        0
+      ],
+      "end": [
+        115,
+        10
+      ]
+    },
+    {
+      "id": "cb8a9d528b7a2e53",
+      "net": "GND",
+      "layer": 2,
+      "width": 8,
+      "start": [
+        25,
+        70
+      ],
+      "end": [
+        55,
+        70
+      ]
+    },
+    {
+      "id": "c5d788cadcf30824",
+      "net": "GND",
+      "layer": 2,
+      "width": 8,
+      "start": [
+        -45,
+        0
+      ],
+      "end": [
+        25,
+        70
+      ]
+    },
+    {
+      "id": "a73fadad68a4be76",
+      "net": "GND",
+      "layer": 2,
+      "width": 8,
+      "start": [
+        200,
+        155
+      ],
+      "end": [
+        205,
+        155
+      ]
+    },
+    {
+      "id": "bd26e4cbbf54b5ea",
+      "net": "GND",
+      "layer": 2,
+      "width": 8,
+      "start": [
+        85,
+        40
+      ],
+      "end": [
+        200,
+        155
+      ]
+    },
+    {
+      "id": "e4b0cd076425683e",
+      "net": "GND",
+      "layer": 2,
+      "width": 8,
+      "start": [
+        55,
+        70
+      ],
+      "end": [
+        85,
+        40
+      ]
+    },
+    {
+      "id": "ff5ec588318ac7c6",
+      "net": "GND",
+      "layer": 2,
+      "width": 8,
+      "start": [
+        85,
+        40
+      ],
+      "end": [
+        115,
+        10
+      ]
+    },
+    {
+      "id": "c90aea079bbd65d9",
+      "net": "GND",
+      "layer": 2,
+      "width": 8,
+      "start": [
+        205,
+        -155
+      ],
+      "end": [
+        206.7,
+        -157.5
+      ]
+    },
+    {
+      "id": "a869abe7f1391a34",
+      "net": "GND",
+      "layer": 2,
+      "width": 8,
+      "start": [
+        205,
+        -155
+      ],
+      "end": [
+        205,
+        -140
+      ]
+    },
+    {
+      "id": "5c6e1f85a0536e93",
+      "net": "GND",
+      "layer": 2,
+      "width": 8,
+      "start": [
+        160,
+        -95
+      ],
+      "end": [
+        205,
+        -140
+      ]
+    },
+    {
+      "id": "148152e3049f77d6",
+      "net": "GND",
+      "layer": 2,
+      "width": 8,
+      "start": [
+        160,
+        -95
+      ],
+      "end": [
+        160,
+        -45
+      ]
+    },
+    {
+      "id": "2161ce83a3c4bee1",
+      "net": "GND",
+      "layer": 2,
+      "width": 8,
+      "start": [
+        115,
+        0
+      ],
+      "end": [
+        160,
+        -45
+      ]
+    },
+    {
+      "id": "d61a49ee2a4d3c64",
+      "net": "GND",
+      "layer": 2,
+      "width": 8,
+      "start": [
+        -265.7,
+        0
+      ],
+      "end": [
+        -265,
+        0
+      ]
+    },
+    {
+      "id": "714cdc25aa2f1c59",
+      "net": "GND",
+      "layer": 2,
+      "width": 8,
+      "start": [
+        -280,
+        -15
+      ],
+      "end": [
+        -265,
+        0
+      ]
+    },
+    {
+      "id": "2d018cda77e16571",
+      "net": "VOUT",
+      "layer": 1,
+      "width": 8,
+      "start": [
+        23.6,
+        19.7
+      ],
+      "end": [
+        25,
+        20
+      ]
+    },
+    {
+      "id": "9e1addb73765714d",
+      "net": "VOUT",
+      "layer": 1,
+      "width": 8,
+      "start": [
+        25,
+        0
+      ],
+      "end": [
+        25,
+        20
+      ]
+    },
+    {
+      "id": "6331468b2effd7b0",
+      "net": "VOUT",
+      "layer": 1,
+      "width": 8,
+      "start": [
+        68.8,
+        -70.9
+      ],
+      "end": [
+        70,
+        -70
+      ]
+    },
+    {
+      "id": "5c7ab16efc8195ef",
+      "net": "VOUT",
+      "layer": 1,
+      "width": 8,
+      "start": [
+        100,
+        -100
+      ],
+      "end": [
+        155,
+        -100
+      ]
+    },
+    {
+      "id": "77f3b4357c6ca1be",
+      "net": "VOUT",
+      "layer": 1,
+      "width": 8,
+      "start": [
+        155,
+        -100
+      ],
+      "end": [
+        160,
+        -95
+      ]
+    },
+    {
+      "id": "32baec5e02c68847",
+      "net": "VOUT",
+      "layer": 1,
+      "width": 8,
+      "start": [
+        160,
+        -95
+      ],
+      "end": [
+        160,
+        -45
+      ]
+    },
+    {
+      "id": "5adb028967cfe1af",
+      "net": "VOUT",
+      "layer": 1,
+      "width": 8,
+      "start": [
+        140,
+        -25
+      ],
+      "end": [
+        160,
+        -45
+      ]
+    },
+    {
+      "id": "c9546ba58594b2a8",
+      "net": "VOUT",
+      "layer": 1,
+      "width": 8,
+      "start": [
+        140,
+        -25
+      ],
+      "end": [
+        140,
+        20
+      ]
+    },
+    {
+      "id": "627833b49939820e",
+      "net": "VOUT",
+      "layer": 1,
+      "width": 8,
+      "start": [
+        135,
+        25
+      ],
+      "end": [
+        140,
+        20
+      ]
+    },
+    {
+      "id": "bb2359593dc7ff9c",
+      "net": "VOUT",
+      "layer": 1,
+      "width": 8,
+      "start": [
+        90,
+        20
+      ],
+      "end": [
+        95,
+        25
+      ]
+    },
+    {
+      "id": "bf6591ab5abcf132",
+      "net": "VOUT",
+      "layer": 1,
+      "width": 8,
+      "start": [
+        90,
+        10
+      ],
+      "end": [
+        90,
+        20
+      ]
+    },
+    {
+      "id": "d5f57784b2ee5317",
+      "net": "VOUT",
+      "layer": 1,
+      "width": 8,
+      "start": [
+        80,
+        0
+      ],
+      "end": [
+        90,
+        10
+      ]
+    },
+    {
+      "id": "a3d6864c698cecc0",
+      "net": "VOUT",
+      "layer": 1,
+      "width": 8,
+      "start": [
+        25,
+        0
+      ],
+      "end": [
+        80,
+        0
+      ]
+    },
+    {
+      "id": "b1ea9ada32e83aaf",
+      "net": "VOUT",
+      "layer": 1,
+      "width": 8,
+      "start": [
+        80,
+        0
+      ],
+      "end": [
+        81.9,
+        0
+      ]
+    },
+    {
+      "id": "36812b655e0038b8",
+      "net": "VOUT",
+      "layer": 1,
+      "width": 8,
+      "start": [
+        -30,
+        -140
+      ],
+      "end": [
+        -29.699999999999996,
+        -137.8
+      ]
+    },
+    {
+      "id": "6ceaeb57361dd3d9",
+      "net": "VOUT",
+      "layer": 1,
+      "width": 8,
+      "start": [
+        -30,
+        -140
+      ],
+      "end": [
+        -25,
+        -140
+      ]
+    },
+    {
+      "id": "d0f2e850e6242edb",
+      "net": "VOUT",
+      "layer": 1,
+      "width": 8,
+      "start": [
+        -25,
+        -140
+      ],
+      "end": [
+        5,
+        -170
+      ]
+    },
+    {
+      "id": "ac51d7cb0e1f1e36",
+      "net": "VOUT",
+      "layer": 1,
+      "width": 8,
+      "start": [
+        5,
+        -170
+      ],
+      "end": [
+        55,
+        -170
+      ]
+    },
+    {
+      "id": "864f78d5a30d70c1",
+      "net": "VOUT",
+      "layer": 1,
+      "width": 8,
+      "start": [
+        55,
+        -170
+      ],
+      "end": [
+        65,
+        -160
+      ]
+    },
+    {
+      "id": "6158e529b9532913",
+      "net": "VOUT",
+      "layer": 1,
+      "width": 8,
+      "start": [
+        65,
+        -115
+      ],
+      "end": [
+        90,
+        -90
+      ]
+    },
+    {
+      "id": "3da08e589d3df630",
+      "net": "VOUT",
+      "layer": 1,
+      "width": 8,
+      "start": [
+        70,
+        -70
+      ],
+      "end": [
+        90,
+        -90
+      ]
+    },
+    {
+      "id": "e5ee31c7e4db2afc",
+      "net": "VOUT",
+      "layer": 1,
+      "width": 8,
+      "start": [
+        90,
+        -90
+      ],
+      "end": [
+        100,
+        -100
+      ]
+    },
+    {
+      "id": "8a9d29fceb9a7273",
+      "net": "VOUT",
+      "layer": 1,
+      "width": 8,
+      "start": [
+        -130,
+        -70
+      ],
+      "end": [
+        -128.1,
+        -70.9
+      ]
+    },
+    {
+      "id": "f6ac4676457aacbb",
+      "net": "VOUT",
+      "layer": 1,
+      "width": 8,
+      "start": [
+        -130,
+        -70
+      ],
+      "end": [
+        -125,
+        -70
+      ]
+    },
+    {
+      "id": "c8a5fbf7284286ed",
+      "net": "VOUT",
+      "layer": 1,
+      "width": 8,
+      "start": [
+        -125,
+        -70
+      ],
+      "end": [
+        -70,
+        -125
+      ]
+    },
+    {
+      "id": "0de97003374ca39a",
+      "net": "VOUT",
+      "layer": 1,
+      "width": 8,
+      "start": [
+        -70,
+        -125
+      ],
+      "end": [
+        -45,
+        -125
+      ]
+    },
+    {
+      "id": "3c566384c6de8673",
+      "net": "VOUT",
+      "layer": 1,
+      "width": 8,
+      "start": [
+        -45,
+        -125
+      ],
+      "end": [
+        -30,
+        -140
+      ]
+    },
+    {
+      "id": "561f7b4b104c5456",
+      "net": "VOUT",
+      "layer": 1,
+      "width": 8,
+      "start": [
+        -170,
+        -20
+      ],
+      "end": [
+        -170,
+        0
+      ]
+    },
+    {
+      "id": "dd585f53e5441a5c",
+      "net": "VOUT",
+      "layer": 1,
+      "width": 8,
+      "start": [
+        -170,
+        -20
+      ],
+      "end": [
+        -130,
+        -60
+      ]
+    },
+    {
+      "id": "42592ae7a94d4d9a",
+      "net": "VOUT",
+      "layer": 1,
+      "width": 8,
+      "start": [
+        -130,
+        -70
+      ],
+      "end": [
+        -130,
+        -60
+      ]
+    },
+    {
+      "id": "d599106028222c88",
+      "net": "VOUT",
+      "layer": 1,
+      "width": 8,
+      "start": [
+        100.19999999999999,
+        157.5
+      ],
+      "end": [
+        110,
+        155
+      ]
+    },
+    {
+      "id": "4f30b77742823283",
+      "net": "VOUT",
+      "layer": 1,
+      "width": 8,
+      "start": [
+        110,
+        25
+      ],
+      "end": [
+        110,
+        155
+      ]
+    },
+    {
+      "id": "9cb204acc5bd169f",
+      "net": "VOUT",
+      "layer": 1,
+      "width": 8,
+      "start": [
+        95,
+        25
+      ],
+      "end": [
+        110,
+        25
+      ]
+    },
+    {
+      "id": "7427c43ad659ffab",
+      "net": "VOUT",
+      "layer": 1,
+      "width": 8,
+      "start": [
+        110,
+        25
+      ],
+      "end": [
+        135,
+        25
+      ]
+    },
+    {
+      "id": "87c096afdadb8b43",
+      "net": "VOUT",
+      "layer": 1,
+      "width": 8,
+      "start": [
+        65,
+        -155
+      ],
+      "end": [
+        100,
+        -155
+      ]
+    },
+    {
+      "id": "fed9aceb1c6dd9ca",
+      "net": "VOUT",
+      "layer": 1,
+      "width": 8,
+      "start": [
+        65,
+        -160
+      ],
+      "end": [
+        65,
+        -155
+      ]
+    },
+    {
+      "id": "d88e6a05514665de",
+      "net": "VOUT",
+      "layer": 1,
+      "width": 8,
+      "start": [
+        65,
+        -155
+      ],
+      "end": [
+        65,
+        -115
+      ]
+    },
+    {
+      "id": "d8566c105a709015",
+      "net": "VOUT",
+      "layer": 1,
+      "width": 8,
+      "start": [
+        -162.10000000000002,
+        0
+      ],
+      "end": [
+        -145,
+        0
+      ]
+    },
+    {
+      "id": "f770d078045b270c",
+      "net": "VOUT",
+      "layer": 2,
+      "width": 8,
+      "start": [
+        100.19999999999999,
+        -157.5
+      ],
+      "end": [
+        110,
+        -155
+      ]
+    },
+    {
+      "id": "4b84eb87b80c9175",
+      "net": "VOUT",
+      "layer": 2,
+      "width": 8,
+      "start": [
+        100,
+        -155
+      ],
+      "end": [
+        110,
+        -155
+      ]
+    },
+    {
+      "id": "86326e2392e0929e",
+      "net": "VOUT",
+      "layer": 2,
+      "width": 8,
+      "start": [
+        -159.6,
+        0
+      ],
+      "end": [
+        -145,
+        0
+      ]
+    },
+    {
+      "id": "2753fdd2d8d50ba7",
+      "net": "ANT_LA",
+      "layer": 1,
+      "width": 9.8425,
+      "start": [
+        -23.6,
+        19.7
+      ],
+      "end": [
+        -25,
+        20.7594
+      ]
+    },
+    {
+      "id": "0aca916b67cda352",
+      "net": "ANT_LA",
+      "layer": 1,
+      "width": 9.8425,
+      "start": [
+        -25,
+        20.7594
+      ],
+      "end": [
+        -60,
+        47.2441
+      ]
+    },
+    {
+      "id": "b3b5a805e07bb9fb",
+      "net": "ANT_LA",
+      "layer": 1,
+      "width": 8,
+      "start": [
+        -25,
+        20
+      ],
+      "end": [
+        -25,
+        20.7594
+      ]
+    },
+    {
+      "id": "ad7b4583821380ee",
+      "net": "ANT_LA",
+      "layer": 1,
+      "width": 8,
+      "start": [
+        -25,
+        20.7594
+      ],
+      "end": [
+        -25,
+        25
+      ]
+    },
+    {
+      "id": "ede983fc27098357",
+      "net": "ANT_LB",
+      "layer": 1,
+      "width": 9.8425,
+      "start": [
+        0,
+        23.6
+      ],
+      "end": [
+        0,
+        30
+      ]
+    },
+    {
+      "id": "3196c2638a747a3a",
+      "net": "ANT_LB",
+      "layer": 1,
+      "width": 9.8425,
+      "start": [
+        0,
+        30
+      ],
+      "end": [
+        0,
+        47.2441
+      ]
+    },
+    {
+      "id": "4851da7d73fe85e9",
+      "net": "ANT_LB",
+      "layer": 1,
+      "width": 9.8425,
+      "start": [
+        0,
+        47.2441
+      ],
+      "end": [
+        17.2441,
+        47.2441
+      ]
+    },
+    {
+      "id": "4e8c4668006418da",
+      "net": "ANT_LB",
+      "layer": 1,
+      "width": 9.8425,
+      "start": [
+        17.2441,
+        47.2441
+      ],
+      "end": [
+        39.3701,
+        47.2441
+      ]
+    },
+    {
+      "id": "0fcfea1e65ec2914",
+      "net": "ANT_LB",
+      "layer": 1,
+      "width": 8,
+      "start": [
+        0,
+        30
+      ],
+      "end": [
+        17.2441,
+        47.2441
+      ]
+    },
+    {
+      "id": "6c6e412aaebd5cc2",
+      "net": "ANT_LB",
+      "layer": 1,
+      "width": 8,
+      "start": [
+        17.2441,
+        47.2441
+      ],
+      "end": [
+        25,
+        55
+      ]
+    },
+    {
+      "id": "aa2dd7606db883d2",
+      "net": "ANT_LA",
+      "layer": 2,
+      "width": 9.8425,
+      "start": [
+        -668.3071,
+        0
+      ],
+      "end": [
+        -614.1732,
+        177.16540000000003
+      ]
+    },
+    {
+      "id": "f532970f9a7e649f",
+      "net": "ANT_LA",
+      "layer": 2,
+      "width": 9.8425,
+      "start": [
+        -614.1732,
+        177.16540000000003
+      ],
+      "end": [
+        -157.4803,
+        177.16540000000003
+      ]
+    },
+    {
+      "id": "b8e2bf731c7d9e8b",
+      "net": "ANT_LA",
+      "layer": 2,
+      "width": 9.8425,
+      "start": [
+        -157.4803,
+        177.16540000000003
+      ],
+      "end": [
+        -60,
+        47.2441
+      ]
+    },
+    {
+      "id": "1c92c8ea5f3f3b5f",
+      "net": "ANT_LB",
+      "layer": 2,
+      "width": 9.8425,
+      "start": [
+        -581.378,
+        0
+      ],
+      "end": [
+        -511.81100000000004,
+        -177.16540000000003
+      ]
+    },
+    {
+      "id": "86427ca25c27e6c8",
+      "net": "ANT_LB",
+      "layer": 2,
+      "width": 9.8425,
+      "start": [
+        -511.81100000000004,
+        -177.16540000000003
+      ],
+      "end": [
+        39.3701,
+        -177.16540000000003
+      ]
+    },
+    {
+      "id": "1c7076f8386e09bf",
+      "net": "ANT_LB",
+      "layer": 2,
+      "width": 9.8425,
+      "start": [
+        39.3701,
+        -177.16540000000003
+      ],
+      "end": [
+        39.3701,
+        47.2441
+      ]
+    },
+    {
+      "id": "be92ff4f6b83580e",
+      "net": "VOUT",
+      "layer": 1,
+      "width": 8,
+      "start": [
+        92.2,
+        140.5
+      ],
+      "end": [
+        80,
+        115
+      ]
+    },
+    {
+      "id": "e5a7c0a94d657bca",
+      "net": "GND",
+      "layer": 1,
+      "width": 8,
+      "start": [
+        222.40000000000003,
+        141.7
+      ],
+      "end": [
+        235,
+        115
+      ]
+    }
+  ],
+  "pads": [
+    {
+      "ref": "U1",
+      "id": "c0b025df7b5b686b",
+      "pins": [
+        {
+          "async": true,
+          "primitiveType": "ComponentPad",
+          "layer": 1,
+          "padNumber": "8",
+          "x": 0,
+          "y": 23.6,
+          "rotation": 90,
+          "pad": [
+            "RECT",
+            15.7,
+            8.7,
+            0
+          ],
+          "net": "ANT_LB",
+          "hole": null,
+          "holeOffsetX": 0,
+          "holeOffsetY": 0,
+          "holeRotation": 0,
+          "metallization": true,
+          "padType": 0,
+          "specialPad": [],
+          "solderMaskAndPasteMaskExpansion": {
+            "topSolderMask": 2,
+            "bottomSolderMask": 2,
+            "topPasteMask": 0,
+            "bottomPasteMask": 0
+          },
+          "heatWelding": null,
+          "primitiveLock": false,
+          "primitiveId": "c0b025df7b5b686be12",
+          "parentComponentPrimitiveId": "c0b025df7b5b686b"
+        },
+        {
+          "async": true,
+          "primitiveType": "ComponentPad",
+          "layer": 1,
+          "padNumber": "7",
+          "x": 23.6,
+          "y": 19.7,
+          "rotation": 0,
+          "pad": [
+            "RECT",
+            15.7,
+            8.7,
+            0
+          ],
+          "net": "VOUT",
+          "hole": null,
+          "holeOffsetX": 0,
+          "holeOffsetY": 0,
+          "holeRotation": 0,
+          "metallization": true,
+          "padType": 0,
+          "specialPad": [],
+          "solderMaskAndPasteMaskExpansion": {
+            "topSolderMask": 2,
+            "bottomSolderMask": 2,
+            "topPasteMask": 0,
+            "bottomPasteMask": 0
+          },
+          "heatWelding": null,
+          "primitiveLock": false,
+          "primitiveId": "c0b025df7b5b686be13",
+          "parentComponentPrimitiveId": "c0b025df7b5b686b"
+        },
+        {
+          "async": true,
+          "primitiveType": "ComponentPad",
+          "layer": 1,
+          "padNumber": "6",
+          "x": 23.6,
+          "y": 0,
+          "rotation": 0,
+          "pad": [
+            "RECT",
+            15.7,
+            8.7,
+            0
+          ],
+          "net": "VOUT",
+          "hole": null,
+          "holeOffsetX": 0,
+          "holeOffsetY": 0,
+          "holeRotation": 0,
+          "metallization": true,
+          "padType": 0,
+          "specialPad": [],
+          "solderMaskAndPasteMaskExpansion": {
+            "topSolderMask": 2,
+            "bottomSolderMask": 2,
+            "topPasteMask": 0,
+            "bottomPasteMask": 0
+          },
+          "heatWelding": null,
+          "primitiveLock": false,
+          "primitiveId": "c0b025df7b5b686be14",
+          "parentComponentPrimitiveId": "c0b025df7b5b686b"
+        },
+        {
+          "async": true,
+          "primitiveType": "ComponentPad",
+          "layer": 1,
+          "padNumber": "5",
+          "x": 23.6,
+          "y": -19.7,
+          "rotation": 0,
+          "pad": [
+            "RECT",
+            15.7,
+            8.7,
+            0
+          ],
+          "net": "SDA",
+          "hole": null,
+          "holeOffsetX": 0,
+          "holeOffsetY": 0,
+          "holeRotation": 0,
+          "metallization": true,
+          "padType": 0,
+          "specialPad": [],
+          "solderMaskAndPasteMaskExpansion": {
+            "topSolderMask": 2,
+            "bottomSolderMask": 2,
+            "topPasteMask": 0,
+            "bottomPasteMask": 0
+          },
+          "heatWelding": null,
+          "primitiveLock": false,
+          "primitiveId": "c0b025df7b5b686be15",
+          "parentComponentPrimitiveId": "c0b025df7b5b686b"
+        },
+        {
+          "async": true,
+          "primitiveType": "ComponentPad",
+          "layer": 1,
+          "padNumber": "4",
+          "x": 0,
+          "y": -23.6,
+          "rotation": 90,
+          "pad": [
+            "RECT",
+            15.7,
+            8.7,
+            0
+          ],
+          "net": "FD",
+          "hole": null,
+          "holeOffsetX": 0,
+          "holeOffsetY": 0,
+          "holeRotation": 0,
+          "metallization": true,
+          "padType": 0,
+          "specialPad": [],
+          "solderMaskAndPasteMaskExpansion": {
+            "topSolderMask": 2,
+            "bottomSolderMask": 2,
+            "topPasteMask": 0,
+            "bottomPasteMask": 0
+          },
+          "heatWelding": null,
+          "primitiveLock": false,
+          "primitiveId": "c0b025df7b5b686be16",
+          "parentComponentPrimitiveId": "c0b025df7b5b686b"
+        },
+        {
+          "async": true,
+          "primitiveType": "ComponentPad",
+          "layer": 1,
+          "padNumber": "3",
+          "x": -23.6,
+          "y": -19.7,
+          "rotation": 0,
+          "pad": [
+            "RECT",
+            15.7,
+            8.7,
+            0
+          ],
+          "net": "SCL",
+          "hole": null,
+          "holeOffsetX": 0,
+          "holeOffsetY": 0,
+          "holeRotation": 0,
+          "metallization": true,
+          "padType": 0,
+          "specialPad": [],
+          "solderMaskAndPasteMaskExpansion": {
+            "topSolderMask": 2,
+            "bottomSolderMask": 2,
+            "topPasteMask": 0,
+            "bottomPasteMask": 0
+          },
+          "heatWelding": null,
+          "primitiveLock": false,
+          "primitiveId": "c0b025df7b5b686be17",
+          "parentComponentPrimitiveId": "c0b025df7b5b686b"
+        },
+        {
+          "async": true,
+          "primitiveType": "ComponentPad",
+          "layer": 1,
+          "padNumber": "2",
+          "x": -23.6,
+          "y": 0,
+          "rotation": 0,
+          "pad": [
+            "RECT",
+            15.7,
+            8.7,
+            0
+          ],
+          "net": "GND",
+          "hole": null,
+          "holeOffsetX": 0,
+          "holeOffsetY": 0,
+          "holeRotation": 0,
+          "metallization": true,
+          "padType": 0,
+          "specialPad": [],
+          "solderMaskAndPasteMaskExpansion": {
+            "topSolderMask": 2,
+            "bottomSolderMask": 2,
+            "topPasteMask": 0,
+            "bottomPasteMask": 0
+          },
+          "heatWelding": null,
+          "primitiveLock": false,
+          "primitiveId": "c0b025df7b5b686be18",
+          "parentComponentPrimitiveId": "c0b025df7b5b686b"
+        },
+        {
+          "async": true,
+          "primitiveType": "ComponentPad",
+          "layer": 1,
+          "padNumber": "1",
+          "x": -23.6,
+          "y": 19.7,
+          "rotation": 0,
+          "pad": [
+            "RECT",
+            15.7,
+            11,
+            0
+          ],
+          "net": "ANT_LA",
+          "hole": null,
+          "holeOffsetX": 0,
+          "holeOffsetY": 0,
+          "holeRotation": 0,
+          "metallization": true,
+          "padType": 0,
+          "specialPad": [],
+          "solderMaskAndPasteMaskExpansion": {
+            "topSolderMask": 2,
+            "bottomSolderMask": 2,
+            "topPasteMask": 0,
+            "bottomPasteMask": 0
+          },
+          "heatWelding": null,
+          "primitiveLock": false,
+          "primitiveId": "c0b025df7b5b686be19",
+          "parentComponentPrimitiveId": "c0b025df7b5b686b"
+        }
+      ]
+    },
+    {
+      "ref": "D1",
+      "id": "40d42f6128be4796",
+      "pins": [
+        {
+          "async": true,
+          "primitiveType": "ComponentPad",
+          "layer": 1,
+          "padNumber": "2",
+          "x": -206.5,
+          "y": 0,
+          "rotation": 90,
+          "pad": [
+            "RECT",
+            31.5,
+            31.5,
+            0
+          ],
+          "net": "LED1_A",
+          "hole": null,
+          "holeOffsetX": 0,
+          "holeOffsetY": 0,
+          "holeRotation": 0,
+          "metallization": true,
+          "padType": 0,
+          "specialPad": [],
+          "solderMaskAndPasteMaskExpansion": {
+            "topSolderMask": 2,
+            "bottomSolderMask": 2,
+            "topPasteMask": 0,
+            "bottomPasteMask": 0
+          },
+          "heatWelding": null,
+          "primitiveLock": false,
+          "primitiveId": "40d42f6128be4796e21",
+          "parentComponentPrimitiveId": "40d42f6128be4796"
+        },
+        {
+          "async": true,
+          "primitiveType": "ComponentPad",
+          "layer": 1,
+          "padNumber": "1",
+          "x": -265.5,
+          "y": 0,
+          "rotation": 90,
+          "pad": [
+            "RECT",
+            31.5,
+            31.5,
+            0
+          ],
+          "net": "GND",
+          "hole": null,
+          "holeOffsetX": 0,
+          "holeOffsetY": 0,
+          "holeRotation": 0,
+          "metallization": true,
+          "padType": 0,
+          "specialPad": [],
+          "solderMaskAndPasteMaskExpansion": {
+            "topSolderMask": 2,
+            "bottomSolderMask": 2,
+            "topPasteMask": 0,
+            "bottomPasteMask": 0
+          },
+          "heatWelding": null,
+          "primitiveLock": false,
+          "primitiveId": "40d42f6128be4796e22",
+          "parentComponentPrimitiveId": "40d42f6128be4796"
+        }
+      ]
+    },
+    {
+      "ref": "C1",
+      "id": "8574f2192f5f7beb",
+      "pins": [
+        {
+          "async": true,
+          "primitiveType": "ComponentPad",
+          "layer": 1,
+          "padNumber": "2",
+          "x": 115,
+          "y": 0,
+          "rotation": 0,
+          "pad": [
+            "RECT",
+            19.7,
+            21.3,
+            0
+          ],
+          "net": "GND",
+          "hole": null,
+          "holeOffsetX": 0,
+          "holeOffsetY": 0,
+          "holeRotation": 0,
+          "metallization": true,
+          "padType": 0,
+          "specialPad": [],
+          "solderMaskAndPasteMaskExpansion": {
+            "topSolderMask": 2,
+            "bottomSolderMask": 2,
+            "topPasteMask": 0,
+            "bottomPasteMask": 0
+          },
+          "heatWelding": null,
+          "primitiveLock": false,
+          "primitiveId": "8574f2192f5f7bebe17",
+          "parentComponentPrimitiveId": "8574f2192f5f7beb"
+        },
+        {
+          "async": true,
+          "primitiveType": "ComponentPad",
+          "layer": 1,
+          "padNumber": "1",
+          "x": 81.9,
+          "y": 0,
+          "rotation": 0,
+          "pad": [
+            "RECT",
+            19.7,
+            21.3,
+            0
+          ],
+          "net": "VOUT",
+          "hole": null,
+          "holeOffsetX": 0,
+          "holeOffsetY": 0,
+          "holeRotation": 0,
+          "metallization": true,
+          "padType": 0,
+          "specialPad": [],
+          "solderMaskAndPasteMaskExpansion": {
+            "topSolderMask": 2,
+            "bottomSolderMask": 2,
+            "topPasteMask": 0,
+            "bottomPasteMask": 0
+          },
+          "heatWelding": null,
+          "primitiveLock": false,
+          "primitiveId": "8574f2192f5f7bebe18",
+          "parentComponentPrimitiveId": "8574f2192f5f7beb"
+        }
+      ]
+    },
+    {
+      "ref": "CT1",
+      "id": "ca4b26d8ae05e7f5",
+      "pins": [
+        {
+          "async": true,
+          "primitiveType": "ComponentPad",
+          "layer": 1,
+          "padNumber": "2",
+          "x": -54.3,
+          "y": 98.4,
+          "rotation": 0,
+          "pad": [
+            "RECT",
+            19.7,
+            21.3,
+            0
+          ],
+          "net": "ANT_LB",
+          "hole": null,
+          "holeOffsetX": 0,
+          "holeOffsetY": 0,
+          "holeRotation": 0,
+          "metallization": true,
+          "padType": 0,
+          "specialPad": [],
+          "solderMaskAndPasteMaskExpansion": {
+            "topSolderMask": 2,
+            "bottomSolderMask": 2,
+            "topPasteMask": 0,
+            "bottomPasteMask": 0
+          },
+          "heatWelding": null,
+          "primitiveLock": false,
+          "primitiveId": "ca4b26d8ae05e7f5e17",
+          "parentComponentPrimitiveId": "ca4b26d8ae05e7f5"
+        },
+        {
+          "async": true,
+          "primitiveType": "ComponentPad",
+          "layer": 1,
+          "padNumber": "1",
+          "x": -87.4,
+          "y": 98.4,
+          "rotation": 0,
+          "pad": [
+            "RECT",
+            19.7,
+            21.3,
+            0
+          ],
+          "net": "ANT_LA",
+          "hole": null,
+          "holeOffsetX": 0,
+          "holeOffsetY": 0,
+          "holeRotation": 0,
+          "metallization": true,
+          "padType": 0,
+          "specialPad": [],
+          "solderMaskAndPasteMaskExpansion": {
+            "topSolderMask": 2,
+            "bottomSolderMask": 2,
+            "topPasteMask": 0,
+            "bottomPasteMask": 0
+          },
+          "heatWelding": null,
+          "primitiveLock": false,
+          "primitiveId": "ca4b26d8ae05e7f5e18",
+          "parentComponentPrimitiveId": "ca4b26d8ae05e7f5"
+        }
+      ]
+    },
+    {
+      "ref": "CT2",
+      "id": "bd515f780006319c",
+      "pins": [
+        {
+          "async": true,
+          "primitiveType": "ComponentPad",
+          "layer": 1,
+          "padNumber": "2",
+          "x": 24.4,
+          "y": 98.4,
+          "rotation": 0,
+          "pad": [
+            "RECT",
+            19.7,
+            21.3,
+            0
+          ],
+          "net": "ANT_LB",
+          "hole": null,
+          "holeOffsetX": 0,
+          "holeOffsetY": 0,
+          "holeRotation": 0,
+          "metallization": true,
+          "padType": 0,
+          "specialPad": [],
+          "solderMaskAndPasteMaskExpansion": {
+            "topSolderMask": 2,
+            "bottomSolderMask": 2,
+            "topPasteMask": 0,
+            "bottomPasteMask": 0
+          },
+          "heatWelding": null,
+          "primitiveLock": false,
+          "primitiveId": "bd515f780006319ce17",
+          "parentComponentPrimitiveId": "bd515f780006319c"
+        },
+        {
+          "async": true,
+          "primitiveType": "ComponentPad",
+          "layer": 1,
+          "padNumber": "1",
+          "x": -8.7,
+          "y": 98.4,
+          "rotation": 0,
+          "pad": [
+            "RECT",
+            19.7,
+            21.3,
+            0
+          ],
+          "net": "ANT_LA",
+          "hole": null,
+          "holeOffsetX": 0,
+          "holeOffsetY": 0,
+          "holeRotation": 0,
+          "metallization": true,
+          "padType": 0,
+          "specialPad": [],
+          "solderMaskAndPasteMaskExpansion": {
+            "topSolderMask": 2,
+            "bottomSolderMask": 2,
+            "topPasteMask": 0,
+            "bottomPasteMask": 0
+          },
+          "heatWelding": null,
+          "primitiveLock": false,
+          "primitiveId": "bd515f780006319ce18",
+          "parentComponentPrimitiveId": "bd515f780006319c"
+        }
+      ]
+    },
+    {
+      "ref": "R5",
+      "id": "5a9c5d7aad5853ea",
+      "pins": [
+        {
+          "async": true,
+          "primitiveType": "ComponentPad",
+          "layer": 1,
+          "padNumber": "2",
+          "x": -68.8,
+          "y": -70.9,
+          "rotation": 0,
+          "pad": [
+            "RECT",
+            31.8,
+            34,
+            0
+          ],
+          "net": "SCL",
+          "hole": null,
+          "holeOffsetX": 0,
+          "holeOffsetY": 0,
+          "holeRotation": 0,
+          "metallization": true,
+          "padType": 0,
+          "specialPad": [],
+          "solderMaskAndPasteMaskExpansion": {
+            "topSolderMask": 2,
+            "bottomSolderMask": 2,
+            "topPasteMask": -3937,
+            "bottomPasteMask": -3937
+          },
+          "heatWelding": null,
+          "primitiveLock": false,
+          "primitiveId": "5a9c5d7aad5853eae7",
+          "parentComponentPrimitiveId": "5a9c5d7aad5853ea"
+        },
+        {
+          "async": true,
+          "primitiveType": "ComponentPad",
+          "layer": 1,
+          "padNumber": "1",
+          "x": -128.1,
+          "y": -70.9,
+          "rotation": 0,
+          "pad": [
+            "RECT",
+            31.8,
+            34,
+            0
+          ],
+          "net": "VOUT",
+          "hole": null,
+          "holeOffsetX": 0,
+          "holeOffsetY": 0,
+          "holeRotation": 0,
+          "metallization": true,
+          "padType": 0,
+          "specialPad": [],
+          "solderMaskAndPasteMaskExpansion": {
+            "topSolderMask": 2,
+            "bottomSolderMask": 2,
+            "topPasteMask": -3937,
+            "bottomPasteMask": -3937
+          },
+          "heatWelding": null,
+          "primitiveLock": false,
+          "primitiveId": "5a9c5d7aad5853eae8",
+          "parentComponentPrimitiveId": "5a9c5d7aad5853ea"
+        }
+      ]
+    },
+    {
+      "ref": "R6",
+      "id": "9d1474355800c4bd",
+      "pins": [
+        {
+          "async": true,
+          "primitiveType": "ComponentPad",
+          "layer": 1,
+          "padNumber": "2",
+          "x": 128.1,
+          "y": -70.9,
+          "rotation": 0,
+          "pad": [
+            "RECT",
+            31.8,
+            34,
+            0
+          ],
+          "net": "SDA",
+          "hole": null,
+          "holeOffsetX": 0,
+          "holeOffsetY": 0,
+          "holeRotation": 0,
+          "metallization": true,
+          "padType": 0,
+          "specialPad": [],
+          "solderMaskAndPasteMaskExpansion": {
+            "topSolderMask": 2,
+            "bottomSolderMask": 2,
+            "topPasteMask": -3937,
+            "bottomPasteMask": -3937
+          },
+          "heatWelding": null,
+          "primitiveLock": false,
+          "primitiveId": "9d1474355800c4bde7",
+          "parentComponentPrimitiveId": "9d1474355800c4bd"
+        },
+        {
+          "async": true,
+          "primitiveType": "ComponentPad",
+          "layer": 1,
+          "padNumber": "1",
+          "x": 68.8,
+          "y": -70.9,
+          "rotation": 0,
+          "pad": [
+            "RECT",
+            31.8,
+            34,
+            0
+          ],
+          "net": "VOUT",
+          "hole": null,
+          "holeOffsetX": 0,
+          "holeOffsetY": 0,
+          "holeRotation": 0,
+          "metallization": true,
+          "padType": 0,
+          "specialPad": [],
+          "solderMaskAndPasteMaskExpansion": {
+            "topSolderMask": 2,
+            "bottomSolderMask": 2,
+            "topPasteMask": -3937,
+            "bottomPasteMask": -3937
+          },
+          "heatWelding": null,
+          "primitiveLock": false,
+          "primitiveId": "9d1474355800c4bde8",
+          "parentComponentPrimitiveId": "9d1474355800c4bd"
+        }
+      ]
+    },
+    {
+      "ref": "R7",
+      "id": "3df77eb328edc7b5",
+      "pins": [
+        {
+          "async": true,
+          "primitiveType": "ComponentPad",
+          "layer": 1,
+          "padNumber": "2",
+          "x": 29.7,
+          "y": -137.8,
+          "rotation": 0,
+          "pad": [
+            "RECT",
+            31.8,
+            34,
+            0
+          ],
+          "net": "FD",
+          "hole": null,
+          "holeOffsetX": 0,
+          "holeOffsetY": 0,
+          "holeRotation": 0,
+          "metallization": true,
+          "padType": 0,
+          "specialPad": [],
+          "solderMaskAndPasteMaskExpansion": {
+            "topSolderMask": 2,
+            "bottomSolderMask": 2,
+            "topPasteMask": -3937,
+            "bottomPasteMask": -3937
+          },
+          "heatWelding": null,
+          "primitiveLock": false,
+          "primitiveId": "3df77eb328edc7b5e7",
+          "parentComponentPrimitiveId": "3df77eb328edc7b5"
+        },
+        {
+          "async": true,
+          "primitiveType": "ComponentPad",
+          "layer": 1,
+          "padNumber": "1",
+          "x": -29.7,
+          "y": -137.8,
+          "rotation": 0,
+          "pad": [
+            "RECT",
+            31.8,
+            34,
+            0
+          ],
+          "net": "VOUT",
+          "hole": null,
+          "holeOffsetX": 0,
+          "holeOffsetY": 0,
+          "holeRotation": 0,
+          "metallization": true,
+          "padType": 0,
+          "specialPad": [],
+          "solderMaskAndPasteMaskExpansion": {
+            "topSolderMask": 2,
+            "bottomSolderMask": 2,
+            "topPasteMask": -3937,
+            "bottomPasteMask": -3937
+          },
+          "heatWelding": null,
+          "primitiveLock": false,
+          "primitiveId": "3df77eb328edc7b5e8",
+          "parentComponentPrimitiveId": "3df77eb328edc7b5"
+        }
+      ]
+    },
+    {
+      "ref": "R1",
+      "id": "e25abbd50c954f9a",
+      "pins": [
+        {
+          "async": true,
+          "primitiveType": "ComponentPad",
+          "layer": 1,
+          "padNumber": "2",
+          "x": -100.2,
+          "y": 0,
+          "rotation": 0,
+          "pad": [
+            "RECT",
+            31.8,
+            34,
+            0
+          ],
+          "net": "LED1_A",
+          "hole": null,
+          "holeOffsetX": 0,
+          "holeOffsetY": 0,
+          "holeRotation": 0,
+          "metallization": true,
+          "padType": 0,
+          "specialPad": [],
+          "solderMaskAndPasteMaskExpansion": {
+            "topSolderMask": 2,
+            "bottomSolderMask": 2,
+            "topPasteMask": -3937,
+            "bottomPasteMask": -3937
+          },
+          "heatWelding": null,
+          "primitiveLock": false,
+          "primitiveId": "e25abbd50c954f9ae7",
+          "parentComponentPrimitiveId": "e25abbd50c954f9a"
+        },
+        {
+          "async": true,
+          "primitiveType": "ComponentPad",
+          "layer": 1,
+          "padNumber": "1",
+          "x": -159.6,
+          "y": 0,
+          "rotation": 0,
+          "pad": [
+            "RECT",
+            31.8,
+            34,
+            0
+          ],
+          "net": "VOUT",
+          "hole": null,
+          "holeOffsetX": 0,
+          "holeOffsetY": 0,
+          "holeRotation": 0,
+          "metallization": true,
+          "padType": 0,
+          "specialPad": [],
+          "solderMaskAndPasteMaskExpansion": {
+            "topSolderMask": 2,
+            "bottomSolderMask": 2,
+            "topPasteMask": -3937,
+            "bottomPasteMask": -3937
+          },
+          "heatWelding": null,
+          "primitiveLock": false,
+          "primitiveId": "e25abbd50c954f9ae8",
+          "parentComponentPrimitiveId": "e25abbd50c954f9a"
+        }
+      ]
+    },
+    {
+      "ref": "R2",
+      "id": "d9fff5ffff2f73f3",
+      "pins": [
+        {
+          "async": true,
+          "primitiveType": "ComponentPad",
+          "layer": 1,
+          "padNumber": "2",
+          "x": 159.6,
+          "y": 157.5,
+          "rotation": 0,
+          "pad": [
+            "RECT",
+            31.8,
+            34,
+            0
+          ],
+          "net": "LED2_A",
+          "hole": null,
+          "holeOffsetX": 0,
+          "holeOffsetY": 0,
+          "holeRotation": 0,
+          "metallization": true,
+          "padType": 0,
+          "specialPad": [],
+          "solderMaskAndPasteMaskExpansion": {
+            "topSolderMask": 2,
+            "bottomSolderMask": 2,
+            "topPasteMask": -3937,
+            "bottomPasteMask": -3937
+          },
+          "heatWelding": null,
+          "primitiveLock": false,
+          "primitiveId": "d9fff5ffff2f73f3e7",
+          "parentComponentPrimitiveId": "d9fff5ffff2f73f3"
+        },
+        {
+          "async": true,
+          "primitiveType": "ComponentPad",
+          "layer": 1,
+          "padNumber": "1",
+          "x": 100.2,
+          "y": 157.5,
+          "rotation": 0,
+          "pad": [
+            "RECT",
+            31.8,
+            34,
+            0
+          ],
+          "net": "VOUT",
+          "hole": null,
+          "holeOffsetX": 0,
+          "holeOffsetY": 0,
+          "holeRotation": 0,
+          "metallization": true,
+          "padType": 0,
+          "specialPad": [],
+          "solderMaskAndPasteMaskExpansion": {
+            "topSolderMask": 2,
+            "bottomSolderMask": 2,
+            "topPasteMask": -3937,
+            "bottomPasteMask": -3937
+          },
+          "heatWelding": null,
+          "primitiveLock": false,
+          "primitiveId": "d9fff5ffff2f73f3e8",
+          "parentComponentPrimitiveId": "d9fff5ffff2f73f3"
+        }
+      ]
+    },
+    {
+      "ref": "D2",
+      "id": "aa8cc903ac6e55fc",
+      "pins": [
+        {
+          "async": true,
+          "primitiveType": "ComponentPad",
+          "layer": 1,
+          "padNumber": "2",
+          "x": 265.7,
+          "y": 157.5,
+          "rotation": 90,
+          "pad": [
+            "RECT",
+            31.5,
+            31.5,
+            0
+          ],
+          "net": "LED2_A",
+          "hole": null,
+          "holeOffsetX": 0,
+          "holeOffsetY": 0,
+          "holeRotation": 0,
+          "metallization": true,
+          "padType": 0,
+          "specialPad": [],
+          "solderMaskAndPasteMaskExpansion": {
+            "topSolderMask": 2,
+            "bottomSolderMask": 2,
+            "topPasteMask": 0,
+            "bottomPasteMask": 0
+          },
+          "heatWelding": null,
+          "primitiveLock": false,
+          "primitiveId": "aa8cc903ac6e55fce21",
+          "parentComponentPrimitiveId": "aa8cc903ac6e55fc"
+        },
+        {
+          "async": true,
+          "primitiveType": "ComponentPad",
+          "layer": 1,
+          "padNumber": "1",
+          "x": 206.7,
+          "y": 157.5,
+          "rotation": 90,
+          "pad": [
+            "RECT",
+            31.5,
+            31.5,
+            0
+          ],
+          "net": "GND",
+          "hole": null,
+          "holeOffsetX": 0,
+          "holeOffsetY": 0,
+          "holeRotation": 0,
+          "metallization": true,
+          "padType": 0,
+          "specialPad": [],
+          "solderMaskAndPasteMaskExpansion": {
+            "topSolderMask": 2,
+            "bottomSolderMask": 2,
+            "topPasteMask": 0,
+            "bottomPasteMask": 0
+          },
+          "heatWelding": null,
+          "primitiveLock": false,
+          "primitiveId": "aa8cc903ac6e55fce22",
+          "parentComponentPrimitiveId": "aa8cc903ac6e55fc"
+        }
+      ]
+    },
+    {
+      "ref": "R3",
+      "id": "a3880816cb907cd4",
+      "pins": [
+        {
+          "async": true,
+          "primitiveType": "ComponentPad",
+          "layer": 2,
+          "padNumber": "2",
+          "x": -100.2,
+          "y": 0,
+          "rotation": 0,
+          "pad": [
+            "RECT",
+            31.8,
+            34,
+            0
+          ],
+          "net": "LED3_A",
+          "hole": null,
+          "holeOffsetX": 0,
+          "holeOffsetY": 0,
+          "holeRotation": 0,
+          "metallization": true,
+          "padType": 0,
+          "specialPad": [],
+          "solderMaskAndPasteMaskExpansion": {
+            "topSolderMask": 2,
+            "bottomSolderMask": 2,
+            "topPasteMask": -3937,
+            "bottomPasteMask": -3937
+          },
+          "heatWelding": null,
+          "primitiveLock": false,
+          "primitiveId": "a3880816cb907cd4e7",
+          "parentComponentPrimitiveId": "a3880816cb907cd4"
+        },
+        {
+          "async": true,
+          "primitiveType": "ComponentPad",
+          "layer": 2,
+          "padNumber": "1",
+          "x": -159.6,
+          "y": 0,
+          "rotation": 0,
+          "pad": [
+            "RECT",
+            31.8,
+            34,
+            0
+          ],
+          "net": "VOUT",
+          "hole": null,
+          "holeOffsetX": 0,
+          "holeOffsetY": 0,
+          "holeRotation": 0,
+          "metallization": true,
+          "padType": 0,
+          "specialPad": [],
+          "solderMaskAndPasteMaskExpansion": {
+            "topSolderMask": 2,
+            "bottomSolderMask": 2,
+            "topPasteMask": -3937,
+            "bottomPasteMask": -3937
+          },
+          "heatWelding": null,
+          "primitiveLock": false,
+          "primitiveId": "a3880816cb907cd4e8",
+          "parentComponentPrimitiveId": "a3880816cb907cd4"
+        }
+      ]
+    },
+    {
+      "ref": "D3",
+      "id": "7334220435ccfeb7",
+      "pins": [
+        {
+          "async": true,
+          "primitiveType": "ComponentPad",
+          "layer": 2,
+          "padNumber": "2",
+          "x": -206.7,
+          "y": 0,
+          "rotation": -90,
+          "pad": [
+            "RECT",
+            31.5,
+            31.5,
+            0
+          ],
+          "net": "LED3_A",
+          "hole": null,
+          "holeOffsetX": 0,
+          "holeOffsetY": 0,
+          "holeRotation": 0,
+          "metallization": true,
+          "padType": 0,
+          "specialPad": [],
+          "solderMaskAndPasteMaskExpansion": {
+            "topSolderMask": 2,
+            "bottomSolderMask": 2,
+            "topPasteMask": 0,
+            "bottomPasteMask": 0
+          },
+          "heatWelding": null,
+          "primitiveLock": false,
+          "primitiveId": "7334220435ccfeb7e21",
+          "parentComponentPrimitiveId": "7334220435ccfeb7"
+        },
+        {
+          "async": true,
+          "primitiveType": "ComponentPad",
+          "layer": 2,
+          "padNumber": "1",
+          "x": -265.7,
+          "y": 0,
+          "rotation": -90,
+          "pad": [
+            "RECT",
+            31.5,
+            31.5,
+            0
+          ],
+          "net": "GND",
+          "hole": null,
+          "holeOffsetX": 0,
+          "holeOffsetY": 0,
+          "holeRotation": 0,
+          "metallization": true,
+          "padType": 0,
+          "specialPad": [],
+          "solderMaskAndPasteMaskExpansion": {
+            "topSolderMask": 2,
+            "bottomSolderMask": 2,
+            "topPasteMask": 0,
+            "bottomPasteMask": 0
+          },
+          "heatWelding": null,
+          "primitiveLock": false,
+          "primitiveId": "7334220435ccfeb7e22",
+          "parentComponentPrimitiveId": "7334220435ccfeb7"
+        }
+      ]
+    },
+    {
+      "ref": "R4",
+      "id": "1968272a10277b12",
+      "pins": [
+        {
+          "async": true,
+          "primitiveType": "ComponentPad",
+          "layer": 2,
+          "padNumber": "2",
+          "x": 159.6,
+          "y": -157.5,
+          "rotation": 0,
+          "pad": [
+            "RECT",
+            31.8,
+            34,
+            0
+          ],
+          "net": "LED4_A",
+          "hole": null,
+          "holeOffsetX": 0,
+          "holeOffsetY": 0,
+          "holeRotation": 0,
+          "metallization": true,
+          "padType": 0,
+          "specialPad": [],
+          "solderMaskAndPasteMaskExpansion": {
+            "topSolderMask": 2,
+            "bottomSolderMask": 2,
+            "topPasteMask": -3937,
+            "bottomPasteMask": -3937
+          },
+          "heatWelding": null,
+          "primitiveLock": false,
+          "primitiveId": "1968272a10277b12e7",
+          "parentComponentPrimitiveId": "1968272a10277b12"
+        },
+        {
+          "async": true,
+          "primitiveType": "ComponentPad",
+          "layer": 2,
+          "padNumber": "1",
+          "x": 100.2,
+          "y": -157.5,
+          "rotation": 0,
+          "pad": [
+            "RECT",
+            31.8,
+            34,
+            0
+          ],
+          "net": "VOUT",
+          "hole": null,
+          "holeOffsetX": 0,
+          "holeOffsetY": 0,
+          "holeRotation": 0,
+          "metallization": true,
+          "padType": 0,
+          "specialPad": [],
+          "solderMaskAndPasteMaskExpansion": {
+            "topSolderMask": 2,
+            "bottomSolderMask": 2,
+            "topPasteMask": -3937,
+            "bottomPasteMask": -3937
+          },
+          "heatWelding": null,
+          "primitiveLock": false,
+          "primitiveId": "1968272a10277b12e8",
+          "parentComponentPrimitiveId": "1968272a10277b12"
+        }
+      ]
+    },
+    {
+      "ref": "D4",
+      "id": "d95eb73f14ed38ec",
+      "pins": [
+        {
+          "async": true,
+          "primitiveType": "ComponentPad",
+          "layer": 2,
+          "padNumber": "2",
+          "x": 265.7,
+          "y": -157.5,
+          "rotation": -90,
+          "pad": [
+            "RECT",
+            31.5,
+            31.5,
+            0
+          ],
+          "net": "LED4_A",
+          "hole": null,
+          "holeOffsetX": 0,
+          "holeOffsetY": 0,
+          "holeRotation": 0,
+          "metallization": true,
+          "padType": 0,
+          "specialPad": [],
+          "solderMaskAndPasteMaskExpansion": {
+            "topSolderMask": 2,
+            "bottomSolderMask": 2,
+            "topPasteMask": 0,
+            "bottomPasteMask": 0
+          },
+          "heatWelding": null,
+          "primitiveLock": false,
+          "primitiveId": "d95eb73f14ed38ece21",
+          "parentComponentPrimitiveId": "d95eb73f14ed38ec"
+        },
+        {
+          "async": true,
+          "primitiveType": "ComponentPad",
+          "layer": 2,
+          "padNumber": "1",
+          "x": 206.7,
+          "y": -157.5,
+          "rotation": -90,
+          "pad": [
+            "RECT",
+            31.5,
+            31.5,
+            0
+          ],
+          "net": "GND",
+          "hole": null,
+          "holeOffsetX": 0,
+          "holeOffsetY": 0,
+          "holeRotation": 0,
+          "metallization": true,
+          "padType": 0,
+          "specialPad": [],
+          "solderMaskAndPasteMaskExpansion": {
+            "topSolderMask": 2,
+            "bottomSolderMask": 2,
+            "topPasteMask": 0,
+            "bottomPasteMask": 0
+          },
+          "heatWelding": null,
+          "primitiveLock": false,
+          "primitiveId": "d95eb73f14ed38ece22",
+          "parentComponentPrimitiveId": "d95eb73f14ed38ec"
+        }
+      ]
+    }
+  ],
+  "netlist": [
+    "{\n  \"version\": \"2.0.0\",\n  \"projectId\": \"c051e4069a83472198ecce7729fbd257\",\n  \"components\": {\n    \"U1\": {\n      \"props\": {\n        \"Footprint\": \"d2f121a33f29272e\",\n        \"Designator\": \"U1\",\n        \"LCSC Part Name\": \"NFC Forum T2T 带 I²C 接口、密码保护和能量收集\",\n        \"Supplier Part\": \"C710403\",\n        \"Manufacturer\": \"NXP(恩智浦)\",\n        \"Manufacturer Part\": \"NT3H2111W0FHKH\",\n        \"Supplier Footprint\": \"XQFN-8(1.6x1.6)\",\n        \"JLCPCB Part Class\": \"Extended Part\",\n        \"Datasheet\": \"https://www.nxp.com/docs/en/data-sheet/NT3H2111_2211.pdf\",\n        \"Supplier\": \"LCSC\",\n        \"Add into BOM\": \"yes\",\n        \"agreement\": \"ISO 14443A,NFC\",\n        \"Interface\": \"I2C\",\n        \"transmission rate\": \"106Kbit/s\",\n        \"Value\": \"13.56MHz\",\n        \"Voltage - Supply\": \"3.3V\",\n        \"Features\": \"能量采集；内置非易失性存储；数据校验\",\n        \"Name\": \"NT3H2111W0FHKH\",\n        \"Description\": \"协议:ISO 14443A,NFC;接口类型:I2C;传输速率:106Kbit/s;\",\n        \"Unique ID\": \"U1\",\n        \"Reuse Block\": \"\",\n        \"Group ID\": \"\",\n        \"Channel ID\": \"$1I2\",\n        \"Population\": \"Fit\",\n        \"PCB Side\": \"Top\",\n        \"DeviceName\": \"NT3H2111W0FHKH\",\n        \"FootprintName\": \"XQFN-8_L1.6-W1.6-P0.50-BL_NT3H2111W0FHKH\",\n        \"Device\": \"0826239021620644\",\n        \"PCB Layer\": \"TopLayer\",\n        \"Convert to PCB\": \"yes\"\n      },\n      \"footprintAttrKeys\": [\n        \"Footprint\",\n        \"Designator\"\n      ],\n      \"pinInfoMap\": {\n        \"1\": {\n          \"name\": \"\",\n          \"number\": \"1\",\n          \"net\": \"ANT_LA\",\n          \"pinClass\": \"\",\n          \"pinDifferentialPairClass\": \"\"\n        },\n        \"2\": {\n          \"name\": \"\",\n          \"number\": \"2\",\n          \"net\": \"GND\",\n          \"pinClass\": \"\",\n          \"pinDifferentialPairClass\": \"\"\n        },\n        \"3\": {\n          \"name\": \"\",\n          \"number\": \"3\",\n          \"net\": \"SCL\",\n          \"pinClass\": \"\",\n          \"pinDifferentialPairClass\": \"\"\n        },\n        \"4\": {\n          \"name\": \"\",\n          \"number\": \"4\",\n          \"net\": \"FD\",\n          \"pinClass\": \"\",\n          \"pinDifferentialPairClass\": \"\"\n        },\n        \"5\": {\n          \"name\": \"\",\n          \"number\": \"5\",\n          \"net\": \"SDA\",\n          \"pinClass\": \"\",\n          \"pinDifferentialPairClass\": \"\"\n        },\n        \"6\": {\n          \"name\": \"\",\n          \"number\": \"6\",\n          \"net\": \"VOUT\",\n          \"pinClass\": \"\",\n          \"pinDifferentialPairClass\": \"\"\n        },\n        \"7\": {\n          \"name\": \"\",\n          \"number\": \"7\",\n          \"net\": \"VOUT\",\n          \"pinClass\": \"\",\n          \"pinDifferentialPairClass\": \"\"\n        },\n        \"8\": {\n          \"name\": \"\",\n          \"number\": \"8\",\n          \"net\": \"ANT_LB\",\n          \"pinClass\": \"\",\n          \"pinDifferentialPairClass\": \"\"\n        }\n      },\n      \"altLibs\": {}\n    },\n    \"D1\": {\n      \"props\": {\n        \"Footprint\": \"1cf34bdc23243a80\",\n        \"Designator\": \"D1\",\n        \"LCSC Part Name\": \"1.6x0.8x0.25 mm 贴片式芯片LED灯\",\n        \"Supplier Part\": \"C5875720\",\n        \"Manufacturer\": \"Kingbright(今台)\",\n        \"Manufacturer Part\": \"APG1608SYKC/T\",\n        \"Supplier Footprint\": \"0603\",\n        \"JLCPCB Part Class\": \"Extended Part\",\n        \"Datasheet\": \"https://item.szlcsc.com/datasheet/APG1608SYKC%252FT/6809602.html\",\n        \"Supplier\": \"LCSC\",\n        \"Add into BOM\": \"yes\",\n        \"3D Model\": \"1f0d29a91be547639d425604e9b96ebb|0819f05c4eef4c71ace90d822a990e87\",\n        \"3D Model Title\": \"LED0603-RD\",\n        \"3D Model Transform\": \"63.7794,32.283,0,0,0,0,0,0,0\",\n        \"Lamp Holder Type\": \"-\",\n        \"Illumination Color\": \"黄色\",\n        \"Voltage - Forward(Vf)\": \"2.05V\",\n        \"Power(Watts)\": \"75mW\",\n        \"Forward Current\": \"20mA\",\n        \"Wavelength - Dominant\": \"590nm\",\n        \"Peak Wavelength\": \"590nm\",\n        \"Diode Configuration\": \"独立二极管\",\n        \"Lens Color\": \"无色透明透镜\",\n        \"Color Temperature\": \"-\",\n        \"Luminous Intensity\": \"120mcd\",\n        \"Viewing Angle\": \"120°\",\n        \"Mounting Style\": \"-\",\n        \"Operating Temperature\": \"-40℃~+85℃\",\n        \"Name\": \"APG1608SYKC/T\",\n        \"Description\": \"灯头类型:-;发光颜色:黄色;正向压降(Vf):2.05V;功率:75mW;正向电流:20mA;波长:590nm;二极管配置:独立二极管;透镜颜色:无色透明透镜;色温:-;发光强度:120mcd;发光角度:120°;载带方式:-;工作温度:-40℃~+85℃;\",\n        \"Unique ID\": \"D1\",\n        \"Reuse Block\": \"\",\n        \"Group ID\": \"\",\n        \"Channel ID\": \"$1I10\",\n        \"Population\": \"Fit\",\n        \"PCB Side\": \"Top\",\n        \"DeviceName\": \"APG1608SYKC/T\",\n        \"FootprintName\": \"LED0603-RD\",\n        \"Device\": \"8e0ca6caf537fb29\",\n        \"PCB Layer\": \"TopLayer\",\n        \"Convert to PCB\": \"yes\"\n      },\n      \"footprintAttrKeys\": [\n        \"Footprint\",\n        \"Designator\"\n      ],\n      \"pinInfoMap\": {\n        \"1\": {\n          \"name\": \"\",\n          \"number\": \"1\",\n          \"net\": \"GND\",\n          \"pinClass\": \"\",\n          \"pinDifferentialPairClass\": \"\"\n        },\n        \"2\": {\n          \"name\": \"\",\n          \"number\": \"2\",\n          \"net\": \"LED1_A\",\n          \"pinClass\": \"\",\n          \"pinDifferentialPairClass\": \"\"\n        }\n      },\n      \"altLibs\": {}\n    },\n    \"C1\": {\n      \"props\": {\n        \"Name\": \"GRM155R71C154KA12D\",\n        \"Designator\": \"C1\",\n        \"Footprint\": \"55bb05466da119d4\",\n        \"LCSC Part Name\": \"150nF ±10% 16V NRND物料(将要停产) 原厂不接订单\",\n        \"Supplier Part\": \"C162182\",\n        \"Manufacturer\": \"muRata(村田)\",\n        \"Manufacturer Part\": \"GRM155R71C154KA12D\",\n        \"Supplier Footprint\": \"0402\",\n        \"JLCPCB Part Class\": \"Extended Part\",\n        \"Datasheet\": \"https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf\",\n        \"Supplier\": \"LCSC\",\n        \"Add into BOM\": \"yes\",\n        \"3D Model\": \"36a51122f27c49738f86b3bfa98863e0|0819f05c4eef4c71ace90d822a990e87\",\n        \"3D Model Title\": \"C0402_L1.0-W0.5-H0.5\",\n        \"3D Model Transform\": \"39.37,19.685,0,0,0,0,0,0,0\",\n        \"Value\": \"150nF\",\n        \"Tolerance\": \"±10%\",\n        \"Voltage Rated\": \"16V\",\n        \"Temperature Coefficient\": \"X7R\",\n        \"Description\": \"容值:150nF;精度:±10%;额定电压:16V;材质(温度系数):X7R;\",\n        \"Unique ID\": \"C1\",\n        \"Reuse Block\": \"\",\n        \"Group ID\": \"\",\n        \"Channel ID\": \"$1I3\",\n        \"Population\": \"Fit\",\n        \"PCB Side\": \"Top\",\n        \"DeviceName\": \"GRM155R71C154KA12D\",\n        \"FootprintName\": \"C0402\",\n        \"Device\": \"3f1d0a7ba18d9857\",\n        \"PCB Layer\": \"TopLayer\",\n        \"Convert to PCB\": \"yes\"\n      },\n      \"footprintAttrKeys\": [\n        \"Name\",\n        \"Designator\"\n      ],\n      \"pinInfoMap\": {\n        \"1\": {\n          \"name\": \"\",\n          \"number\": \"1\",\n          \"net\": \"VOUT\",\n          \"pinClass\": \"\",\n          \"pinDifferentialPairClass\": \"\"\n        },\n        \"2\": {\n          \"name\": \"\",\n          \"number\": \"2\",\n          \"net\": \"GND\",\n          \"pinClass\": \"\",\n          \"pinDifferentialPairClass\": \"\"\n        }\n      },\n      \"altLibs\": {}\n    },\n    \"CT1\": {\n      \"props\": {\n        \"Name\": \"CC0402JRNPO9BN470\",\n        \"Designator\": \"CT1\",\n        \"Footprint\": \"55bb05466da119d4\",\n        \"LCSC Part Name\": \"47pF ±5% 50V\",\n        \"Supplier Part\": \"C60137\",\n        \"Manufacturer\": \"YAGEO(国巨)\",\n        \"Manufacturer Part\": \"CC0402JRNPO9BN470\",\n        \"Supplier Footprint\": \"0402\",\n        \"JLCPCB Part Class\": \"Extended Part\",\n        \"Datasheet\": \"https://atta.szlcsc.com/upload/public/pdf/source/20170505/1493957838062.pdf\",\n        \"Supplier\": \"LCSC\",\n        \"Add into BOM\": \"yes\",\n        \"3D Model\": \"36a51122f27c49738f86b3bfa98863e0|0819f05c4eef4c71ace90d822a990e87\",\n        \"3D Model Title\": \"C0402_L1.0-W0.5-H0.5\",\n        \"3D Model Transform\": \"39.37,19.685,0,0,0,0,0,0,0\",\n        \"Value\": \"47pF\",\n        \"Tolerance\": \"±5%\",\n        \"Voltage Rated\": \"50V\",\n        \"Temperature Coefficient\": \"NP0\",\n        \"Description\": \"容值:47pF;精度:±5%;额定电压:50V;材质(温度系数):NP0;\",\n        \"Unique ID\": \"CT1\",\n        \"Reuse Block\": \"\",\n        \"Group ID\": \"\",\n        \"Channel ID\": \"$1I4\",\n        \"Population\": \"Fit\",\n        \"PCB Side\": \"Top\",\n        \"DeviceName\": \"CC0402JRNPO9BN470\",\n        \"FootprintName\": \"C0402\",\n        \"Device\": \"f1f17454a90f1e99\",\n        \"PCB Layer\": \"TopLayer\",\n        \"Convert to PCB\": \"yes\"\n      },\n      \"footprintAttrKeys\": [\n        \"Name\",\n        \"Designator\"\n      ],\n      \"pinInfoMap\": {\n        \"1\": {\n          \"name\": \"\",\n          \"number\": \"1\",\n          \"net\": \"ANT_LA\",\n          \"pinClass\": \"\",\n          \"pinDifferentialPairClass\": \"\"\n        },\n        \"2\": {\n          \"name\": \"\",\n          \"number\": \"2\",\n          \"net\": \"ANT_LB\",\n          \"pinClass\": \"\",\n          \"pinDifferentialPairClass\": \"\"\n        }\n      },\n      \"altLibs\": {}\n    },\n    \"CT2\": {\n      \"props\": {\n        \"Name\": \"TUNE C0G DNP\",\n        \"Designator\": \"CT2\",\n        \"Footprint\": \"55bb05466da119d4\",\n        \"LCSC Part Name\": \"47pF ±5% 50V\",\n        \"Supplier Part\": \"C60137\",\n        \"Manufacturer\": \"YAGEO(国巨)\",\n        \"Manufacturer Part\": \"CC0402JRNPO9BN470\",\n        \"Supplier Footprint\": \"0402\",\n        \"JLCPCB Part Class\": \"Extended Part\",\n        \"Datasheet\": \"https://atta.szlcsc.com/upload/public/pdf/source/20170505/1493957838062.pdf\",\n        \"Supplier\": \"LCSC\",\n        \"Add into BOM\": \"yes\",\n        \"3D Model\": \"36a51122f27c49738f86b3bfa98863e0|0819f05c4eef4c71ace90d822a990e87\",\n        \"3D Model Title\": \"C0402_L1.0-W0.5-H0.5\",\n        \"3D Model Transform\": \"39.37,19.685,0,0,0,0,0,0,0\",\n        \"Value\": \"47pF\",\n        \"Tolerance\": \"±5%\",\n        \"Voltage Rated\": \"50V\",\n        \"Temperature Coefficient\": \"NP0\",\n        \"Description\": \"容值:47pF;精度:±5%;额定电压:50V;材质(温度系数):NP0;\",\n        \"Unique ID\": \"CT2\",\n        \"Reuse Block\": \"\",\n        \"Group ID\": \"\",\n        \"Channel ID\": \"$1I5\",\n        \"Population\": \"DNP\",\n        \"PCB Side\": \"Top\",\n        \"DeviceName\": \"CC0402JRNPO9BN470\",\n        \"FootprintName\": \"C0402\",\n        \"Device\": \"f1f17454a90f1e99\",\n        \"PCB Layer\": \"TopLayer\",\n        \"Convert to PCB\": \"yes\"\n      },\n      \"footprintAttrKeys\": [\n        \"Name\",\n        \"Designator\"\n      ],\n      \"pinInfoMap\": {\n        \"1\": {\n          \"name\": \"\",\n          \"number\": \"1\",\n          \"net\": \"ANT_LA\",\n          \"pinClass\": \"\",\n          \"pinDifferentialPairClass\": \"\"\n        },\n        \"2\": {\n          \"name\": \"\",\n          \"number\": \"2\",\n          \"net\": \"ANT_LB\",\n          \"pinClass\": \"\",\n          \"pinDifferentialPairClass\": \"\"\n        }\n      },\n      \"altLibs\": {}\n    },\n    \"R5\": {\n      \"props\": {\n        \"Footprint\": \"48e0f0c6de0d83c9\",\n        \"Designator\": \"R5\",\n        \"LCSC Part Name\": \"厚膜电阻 47kΩ ±1% 100mW\",\n        \"Supplier Part\": \"C105579\",\n        \"Manufacturer\": \"YAGEO(国巨)\",\n        \"Manufacturer Part\": \"RC0603FR-0747KL\",\n        \"Supplier Footprint\": \"0603\",\n        \"JLCPCB Part Class\": \"Extended Part\",\n        \"Datasheet\": \"https://item.szlcsc.com/datasheet/RC0603FR-0747KL/106794.html\",\n        \"Supplier\": \"LCSC\",\n        \"Add into BOM\": \"yes\",\n        \"3D Model\": \"fc143cca1e79419f9cd78b61e9279f08|0819f05c4eef4c71ace90d822a990e87\",\n        \"3D Model Title\": \"R0603\",\n        \"3D Model Transform\": \"31.8897,63.7794,0,90,0,0,0,0,0\",\n        \"Type\": \"厚膜电阻\",\n        \"Value\": \"47kΩ\",\n        \"Tolerance\": \"±1%\",\n        \"Power(Watts)\": \"100mW\",\n        \"Voltage-Supply(Max)\": \"75V\",\n        \"Temperature Coefficient\": \"±100ppm/℃\",\n        \"Operating Temperature\": \"-55℃~+155℃\",\n        \"Name\": \"RC0603FR-0747KL\",\n        \"Description\": \"电阻类型:厚膜电阻;阻值:47kΩ;精度:±1%;功率:100mW;工作电压:75V;温度系数:±100ppm/℃;\",\n        \"Unique ID\": \"R5\",\n        \"Reuse Block\": \"\",\n        \"Group ID\": \"\",\n        \"Channel ID\": \"$1I6\",\n        \"Population\": \"Fit\",\n        \"PCB Side\": \"Top\",\n        \"DeviceName\": \"RC0603FR-0747KL\",\n        \"FootprintName\": \"R0603\",\n        \"Device\": \"70b84d85f3696638\",\n        \"PCB Layer\": \"TopLayer\",\n        \"Convert to PCB\": \"yes\"\n      },\n      \"footprintAttrKeys\": [\n        \"Footprint\",\n        \"Designator\"\n      ],\n      \"pinInfoMap\": {\n        \"1\": {\n          \"name\": \"\",\n          \"number\": \"1\",\n          \"net\": \"VOUT\",\n          \"pinClass\": \"\",\n          \"pinDifferentialPairClass\": \"\"\n        },\n        \"2\": {\n          \"name\": \"\",\n          \"number\": \"2\",\n          \"net\": \"SCL\",\n          \"pinClass\": \"\",\n          \"pinDifferentialPairClass\": \"\"\n        }\n      },\n      \"altLibs\": {}\n    },\n    \"R6\": {\n      \"props\": {\n        \"Footprint\": \"48e0f0c6de0d83c9\",\n        \"Designator\": \"R6\",\n        \"LCSC Part Name\": \"厚膜电阻 47kΩ ±1% 100mW\",\n        \"Supplier Part\": \"C105579\",\n        \"Manufacturer\": \"YAGEO(国巨)\",\n        \"Manufacturer Part\": \"RC0603FR-0747KL\",\n        \"Supplier Footprint\": \"0603\",\n        \"JLCPCB Part Class\": \"Extended Part\",\n        \"Datasheet\": \"https://item.szlcsc.com/datasheet/RC0603FR-0747KL/106794.html\",\n        \"Supplier\": \"LCSC\",\n        \"Add into BOM\": \"yes\",\n        \"3D Model\": \"fc143cca1e79419f9cd78b61e9279f08|0819f05c4eef4c71ace90d822a990e87\",\n        \"3D Model Title\": \"R0603\",\n        \"3D Model Transform\": \"31.8897,63.7794,0,90,0,0,0,0,0\",\n        \"Type\": \"厚膜电阻\",\n        \"Value\": \"47kΩ\",\n        \"Tolerance\": \"±1%\",\n        \"Power(Watts)\": \"100mW\",\n        \"Voltage-Supply(Max)\": \"75V\",\n        \"Temperature Coefficient\": \"±100ppm/℃\",\n        \"Operating Temperature\": \"-55℃~+155℃\",\n        \"Name\": \"RC0603FR-0747KL\",\n        \"Description\": \"电阻类型:厚膜电阻;阻值:47kΩ;精度:±1%;功率:100mW;工作电压:75V;温度系数:±100ppm/℃;\",\n        \"Unique ID\": \"R6\",\n        \"Reuse Block\": \"\",\n        \"Group ID\": \"\",\n        \"Channel ID\": \"$1I7\",\n        \"Population\": \"Fit\",\n        \"PCB Side\": \"Top\",\n        \"DeviceName\": \"RC0603FR-0747KL\",\n        \"FootprintName\": \"R0603\",\n        \"Device\": \"70b84d85f3696638\",\n        \"PCB Layer\": \"TopLayer\",\n        \"Convert to PCB\": \"yes\"\n      },\n      \"footprintAttrKeys\": [\n        \"Footprint\",\n        \"Designator\"\n      ],\n      \"pinInfoMap\": {\n        \"1\": {\n          \"name\": \"\",\n          \"number\": \"1\",\n          \"net\": \"VOUT\",\n          \"pinClass\": \"\",\n          \"pinDifferentialPairClass\": \"\"\n        },\n        \"2\": {\n          \"name\": \"\",\n          \"number\": \"2\",\n          \"net\": \"SDA\",\n          \"pinClass\": \"\",\n          \"pinDifferentialPairClass\": \"\"\n        }\n      },\n      \"altLibs\": {}\n    },\n    \"R7\": {\n      \"props\": {\n        \"Footprint\": \"48e0f0c6de0d83c9\",\n        \"Designator\": \"R7\",\n        \"LCSC Part Name\": \"厚膜电阻 47kΩ ±1% 100mW\",\n        \"Supplier Part\": \"C105579\",\n        \"Manufacturer\": \"YAGEO(国巨)\",\n        \"Manufacturer Part\": \"RC0603FR-0747KL\",\n        \"Supplier Footprint\": \"0603\",\n        \"JLCPCB Part Class\": \"Extended Part\",\n        \"Datasheet\": \"https://item.szlcsc.com/datasheet/RC0603FR-0747KL/106794.html\",\n        \"Supplier\": \"LCSC\",\n        \"Add into BOM\": \"yes\",\n        \"3D Model\": \"fc143cca1e79419f9cd78b61e9279f08|0819f05c4eef4c71ace90d822a990e87\",\n        \"3D Model Title\": \"R0603\",\n        \"3D Model Transform\": \"31.8897,63.7794,0,90,0,0,0,0,0\",\n        \"Type\": \"厚膜电阻\",\n        \"Value\": \"47kΩ\",\n        \"Tolerance\": \"±1%\",\n        \"Power(Watts)\": \"100mW\",\n        \"Voltage-Supply(Max)\": \"75V\",\n        \"Temperature Coefficient\": \"±100ppm/℃\",\n        \"Operating Temperature\": \"-55℃~+155℃\",\n        \"Name\": \"RC0603FR-0747KL\",\n        \"Description\": \"电阻类型:厚膜电阻;阻值:47kΩ;精度:±1%;功率:100mW;工作电压:75V;温度系数:±100ppm/℃;\",\n        \"Unique ID\": \"R7\",\n        \"Reuse Block\": \"\",\n        \"Group ID\": \"\",\n        \"Channel ID\": \"$1I8\",\n        \"Population\": \"Fit\",\n        \"PCB Side\": \"Top\",\n        \"DeviceName\": \"RC0603FR-0747KL\",\n        \"FootprintName\": \"R0603\",\n        \"Device\": \"70b84d85f3696638\",\n        \"PCB Layer\": \"TopLayer\",\n        \"Convert to PCB\": \"yes\"\n      },\n      \"footprintAttrKeys\": [\n        \"Footprint\",\n        \"Designator\"\n      ],\n      \"pinInfoMap\": {\n        \"1\": {\n          \"name\": \"\",\n          \"number\": \"1\",\n          \"net\": \"VOUT\",\n          \"pinClass\": \"\",\n          \"pinDifferentialPairClass\": \"\"\n        },\n        \"2\": {\n          \"name\": \"\",\n          \"number\": \"2\",\n          \"net\": \"FD\",\n          \"pinClass\": \"\",\n          \"pinDifferentialPairClass\": \"\"\n        }\n      },\n      \"altLibs\": {}\n    },\n    \"R1\": {\n      \"props\": {\n        \"Footprint\": \"48e0f0c6de0d83c9\",\n        \"Designator\": \"R1\",\n        \"LCSC Part Name\": \"厚膜电阻 2.2kΩ ±1% 100mW\",\n        \"Supplier Part\": \"C114662\",\n        \"Manufacturer\": \"YAGEO(国巨)\",\n        \"Manufacturer Part\": \"RC0603FR-072K2L\",\n        \"Supplier Footprint\": \"0603\",\n        \"JLCPCB Part Class\": \"Extended Part\",\n        \"Datasheet\": \"https://item.szlcsc.com/datasheet/RC0603FR-072K2L/115906.html\",\n        \"Supplier\": \"LCSC\",\n        \"Add into BOM\": \"yes\",\n        \"3D Model\": \"fc143cca1e79419f9cd78b61e9279f08|0819f05c4eef4c71ace90d822a990e87\",\n        \"3D Model Title\": \"R0603\",\n        \"3D Model Transform\": \"31.8897,63.7794,0,90,0,0,0,0,0\",\n        \"Type\": \"厚膜电阻\",\n        \"Value\": \"2.2kΩ\",\n        \"Tolerance\": \"±1%\",\n        \"Power(Watts)\": \"100mW\",\n        \"Voltage-Supply(Max)\": \"75V\",\n        \"Temperature Coefficient\": \"±100ppm/℃\",\n        \"Operating Temperature\": \"-55℃~+155℃\",\n        \"Name\": \"RC0603FR-072K2L\",\n        \"Description\": \"电阻类型:厚膜电阻;阻值:2.2kΩ;精度:±1%;功率:100mW;工作电压:75V;温度系数:±100ppm/℃;\",\n        \"Unique ID\": \"R1\",\n        \"Reuse Block\": \"\",\n        \"Group ID\": \"\",\n        \"Channel ID\": \"$1I9\",\n        \"Population\": \"Fit\",\n        \"PCB Side\": \"Top\",\n        \"DeviceName\": \"RC0603FR-072K2L\",\n        \"FootprintName\": \"R0603\",\n        \"Device\": \"1f7a2dba9531bc30\",\n        \"PCB Layer\": \"TopLayer\",\n        \"Convert to PCB\": \"yes\"\n      },\n      \"footprintAttrKeys\": [\n        \"Footprint\",\n        \"Designator\"\n      ],\n      \"pinInfoMap\": {\n        \"1\": {\n          \"name\": \"\",\n          \"number\": \"1\",\n          \"net\": \"VOUT\",\n          \"pinClass\": \"\",\n          \"pinDifferentialPairClass\": \"\"\n        },\n        \"2\": {\n          \"name\": \"\",\n          \"number\": \"2\",\n          \"net\": \"LED1_A\",\n          \"pinClass\": \"\",\n          \"pinDifferentialPairClass\": \"\"\n        }\n      },\n      \"altLibs\": {}\n    },\n    \"R2\": {\n      \"props\": {\n        \"Footprint\": \"48e0f0c6de0d83c9\",\n        \"Designator\": \"R2\",\n        \"LCSC Part Name\": \"厚膜电阻 2.2kΩ ±1% 100mW\",\n        \"Supplier Part\": \"C114662\",\n        \"Manufacturer\": \"YAGEO(国巨)\",\n        \"Manufacturer Part\": \"RC0603FR-072K2L\",\n        \"Supplier Footprint\": \"0603\",\n        \"JLCPCB Part Class\": \"Extended Part\",\n        \"Datasheet\": \"https://item.szlcsc.com/datasheet/RC0603FR-072K2L/115906.html\",\n        \"Supplier\": \"LCSC\",\n        \"Add into BOM\": \"yes\",\n        \"3D Model\": \"fc143cca1e79419f9cd78b61e9279f08|0819f05c4eef4c71ace90d822a990e87\",\n        \"3D Model Title\": \"R0603\",\n        \"3D Model Transform\": \"31.8897,63.7794,0,90,0,0,0,0,0\",\n        \"Type\": \"厚膜电阻\",\n        \"Value\": \"2.2kΩ\",\n        \"Tolerance\": \"±1%\",\n        \"Power(Watts)\": \"100mW\",\n        \"Voltage-Supply(Max)\": \"75V\",\n        \"Temperature Coefficient\": \"±100ppm/℃\",\n        \"Operating Temperature\": \"-55℃~+155℃\",\n        \"Name\": \"RC0603FR-072K2L\",\n        \"Description\": \"电阻类型:厚膜电阻;阻值:2.2kΩ;精度:±1%;功率:100mW;工作电压:75V;温度系数:±100ppm/℃;\",\n        \"Unique ID\": \"R2\",\n        \"Reuse Block\": \"\",\n        \"Group ID\": \"\",\n        \"Channel ID\": \"$1I11\",\n        \"Population\": \"Fit\",\n        \"PCB Side\": \"Top\",\n        \"DeviceName\": \"RC0603FR-072K2L\",\n        \"FootprintName\": \"R0603\",\n        \"Device\": \"1f7a2dba9531bc30\",\n        \"PCB Layer\": \"TopLayer\",\n        \"Convert to PCB\": \"yes\"\n      },\n      \"footprintAttrKeys\": [\n        \"Footprint\",\n        \"Designator\"\n      ],\n      \"pinInfoMap\": {\n        \"1\": {\n          \"name\": \"\",\n          \"number\": \"1\",\n          \"net\": \"VOUT\",\n          \"pinClass\": \"\",\n          \"pinDifferentialPairClass\": \"\"\n        },\n        \"2\": {\n          \"name\": \"\",\n          \"number\": \"2\",\n          \"net\": \"LED2_A\",\n          \"pinClass\": \"\",\n          \"pinDifferentialPairClass\": \"\"\n        }\n      },\n      \"altLibs\": {}\n    },\n    \"D2\": {\n      \"props\": {\n        \"Footprint\": \"1cf34bdc23243a80\",\n        \"Designator\": \"D2\",\n        \"LCSC Part Name\": \"1.6x0.8x0.25 mm 贴片式芯片LED灯\",\n        \"Supplier Part\": \"C5875720\",\n        \"Manufacturer\": \"Kingbright(今台)\",\n        \"Manufacturer Part\": \"APG1608SYKC/T\",\n        \"Supplier Footprint\": \"0603\",\n        \"JLCPCB Part Class\": \"Extended Part\",\n        \"Datasheet\": \"https://item.szlcsc.com/datasheet/APG1608SYKC%252FT/6809602.html\",\n        \"Supplier\": \"LCSC\",\n        \"Add into BOM\": \"yes\",\n        \"3D Model\": \"1f0d29a91be547639d425604e9b96ebb|0819f05c4eef4c71ace90d822a990e87\",\n        \"3D Model Title\": \"LED0603-RD\",\n        \"3D Model Transform\": \"63.7794,32.283,0,0,0,0,0,0,0\",\n        \"Lamp Holder Type\": \"-\",\n        \"Illumination Color\": \"黄色\",\n        \"Voltage - Forward(Vf)\": \"2.05V\",\n        \"Power(Watts)\": \"75mW\",\n        \"Forward Current\": \"20mA\",\n        \"Wavelength - Dominant\": \"590nm\",\n        \"Peak Wavelength\": \"590nm\",\n        \"Diode Configuration\": \"独立二极管\",\n        \"Lens Color\": \"无色透明透镜\",\n        \"Color Temperature\": \"-\",\n        \"Luminous Intensity\": \"120mcd\",\n        \"Viewing Angle\": \"120°\",\n        \"Mounting Style\": \"-\",\n        \"Operating Temperature\": \"-40℃~+85℃\",\n        \"Name\": \"APG1608SYKC/T\",\n        \"Description\": \"灯头类型:-;发光颜色:黄色;正向压降(Vf):2.05V;功率:75mW;正向电流:20mA;波长:590nm;二极管配置:独立二极管;透镜颜色:无色透明透镜;色温:-;发光强度:120mcd;发光角度:120°;载带方式:-;工作温度:-40℃~+85℃;\",\n        \"Unique ID\": \"D2\",\n        \"Reuse Block\": \"\",\n        \"Group ID\": \"\",\n        \"Channel ID\": \"$1I12\",\n        \"Population\": \"Fit\",\n        \"PCB Side\": \"Top\",\n        \"DeviceName\": \"APG1608SYKC/T\",\n        \"FootprintName\": \"LED0603-RD\",\n        \"Device\": \"8e0ca6caf537fb29\",\n        \"PCB Layer\": \"TopLayer\",\n        \"Convert to PCB\": \"yes\"\n      },\n      \"footprintAttrKeys\": [\n        \"Footprint\",\n        \"Designator\"\n      ],\n      \"pinInfoMap\": {\n        \"1\": {\n          \"name\": \"\",\n          \"number\": \"1\",\n          \"net\": \"GND\",\n          \"pinClass\": \"\",\n          \"pinDifferentialPairClass\": \"\"\n        },\n        \"2\": {\n          \"name\": \"\",\n          \"number\": \"2\",\n          \"net\": \"LED2_A\",\n          \"pinClass\": \"\",\n          \"pinDifferentialPairClass\": \"\"\n        }\n      },\n      \"altLibs\": {}\n    },\n    \"R3\": {\n      \"props\": {\n        \"Footprint\": \"48e0f0c6de0d83c9\",\n        \"Designator\": \"R3\",\n        \"LCSC Part Name\": \"厚膜电阻 2.2kΩ ±1% 100mW\",\n        \"Supplier Part\": \"C114662\",\n        \"Manufacturer\": \"YAGEO(国巨)\",\n        \"Manufacturer Part\": \"RC0603FR-072K2L\",\n        \"Supplier Footprint\": \"0603\",\n        \"JLCPCB Part Class\": \"Extended Part\",\n        \"Datasheet\": \"https://item.szlcsc.com/datasheet/RC0603FR-072K2L/115906.html\",\n        \"Supplier\": \"LCSC\",\n        \"Add into BOM\": \"yes\",\n        \"3D Model\": \"fc143cca1e79419f9cd78b61e9279f08|0819f05c4eef4c71ace90d822a990e87\",\n        \"3D Model Title\": \"R0603\",\n        \"3D Model Transform\": \"31.8897,63.7794,0,90,0,0,0,0,0\",\n        \"Type\": \"厚膜电阻\",\n        \"Value\": \"2.2kΩ\",\n        \"Tolerance\": \"±1%\",\n        \"Power(Watts)\": \"100mW\",\n        \"Voltage-Supply(Max)\": \"75V\",\n        \"Temperature Coefficient\": \"±100ppm/℃\",\n        \"Operating Temperature\": \"-55℃~+155℃\",\n        \"Name\": \"RC0603FR-072K2L\",\n        \"Description\": \"电阻类型:厚膜电阻;阻值:2.2kΩ;精度:±1%;功率:100mW;工作电压:75V;温度系数:±100ppm/℃;\",\n        \"Unique ID\": \"R3\",\n        \"Reuse Block\": \"\",\n        \"Group ID\": \"\",\n        \"Channel ID\": \"$1I13\",\n        \"Population\": \"Fit\",\n        \"PCB Side\": \"Bottom\",\n        \"DeviceName\": \"RC0603FR-072K2L\",\n        \"FootprintName\": \"R0603\",\n        \"Device\": \"1f7a2dba9531bc30\",\n        \"PCB Layer\": \"BottomLayer\",\n        \"Convert to PCB\": \"yes\"\n      },\n      \"footprintAttrKeys\": [\n        \"Footprint\",\n        \"Designator\"\n      ],\n      \"pinInfoMap\": {\n        \"1\": {\n          \"name\": \"\",\n          \"number\": \"1\",\n          \"net\": \"VOUT\",\n          \"pinClass\": \"\",\n          \"pinDifferentialPairClass\": \"\"\n        },\n        \"2\": {\n          \"name\": \"\",\n          \"number\": \"2\",\n          \"net\": \"LED3_A\",\n          \"pinClass\": \"\",\n          \"pinDifferentialPairClass\": \"\"\n        }\n      },\n      \"altLibs\": {}\n    },\n    \"D3\": {\n      \"props\": {\n        \"Footprint\": \"1cf34bdc23243a80\",\n        \"Designator\": \"D3\",\n        \"LCSC Part Name\": \"1.6x0.8x0.25 mm 贴片式芯片LED灯\",\n        \"Supplier Part\": \"C5875720\",\n        \"Manufacturer\": \"Kingbright(今台)\",\n        \"Manufacturer Part\": \"APG1608SYKC/T\",\n        \"Supplier Footprint\": \"0603\",\n        \"JLCPCB Part Class\": \"Extended Part\",\n        \"Datasheet\": \"https://item.szlcsc.com/datasheet/APG1608SYKC%252FT/6809602.html\",\n        \"Supplier\": \"LCSC\",\n        \"Add into BOM\": \"yes\",\n        \"3D Model\": \"1f0d29a91be547639d425604e9b96ebb|0819f05c4eef4c71ace90d822a990e87\",\n        \"3D Model Title\": \"LED0603-RD\",\n        \"3D Model Transform\": \"63.7794,32.283,0,0,0,0,0,0,0\",\n        \"Lamp Holder Type\": \"-\",\n        \"Illumination Color\": \"黄色\",\n        \"Voltage - Forward(Vf)\": \"2.05V\",\n        \"Power(Watts)\": \"75mW\",\n        \"Forward Current\": \"20mA\",\n        \"Wavelength - Dominant\": \"590nm\",\n        \"Peak Wavelength\": \"590nm\",\n        \"Diode Configuration\": \"独立二极管\",\n        \"Lens Color\": \"无色透明透镜\",\n        \"Color Temperature\": \"-\",\n        \"Luminous Intensity\": \"120mcd\",\n        \"Viewing Angle\": \"120°\",\n        \"Mounting Style\": \"-\",\n        \"Operating Temperature\": \"-40℃~+85℃\",\n        \"Name\": \"APG1608SYKC/T\",\n        \"Description\": \"灯头类型:-;发光颜色:黄色;正向压降(Vf):2.05V;功率:75mW;正向电流:20mA;波长:590nm;二极管配置:独立二极管;透镜颜色:无色透明透镜;色温:-;发光强度:120mcd;发光角度:120°;载带方式:-;工作温度:-40℃~+85℃;\",\n        \"Unique ID\": \"D3\",\n        \"Reuse Block\": \"\",\n        \"Group ID\": \"\",\n        \"Channel ID\": \"$1I14\",\n        \"Population\": \"Fit\",\n        \"PCB Side\": \"Bottom\",\n        \"DeviceName\": \"APG1608SYKC/T\",\n        \"FootprintName\": \"LED0603-RD\",\n        \"Device\": \"8e0ca6caf537fb29\",\n        \"PCB Layer\": \"BottomLayer\",\n        \"Convert to PCB\": \"yes\"\n      },\n      \"footprintAttrKeys\": [\n        \"Footprint\",\n        \"Designator\"\n      ],\n      \"pinInfoMap\": {\n        \"1\": {\n          \"name\": \"\",\n          \"number\": \"1\",\n          \"net\": \"GND\",\n          \"pinClass\": \"\",\n          \"pinDifferentialPairClass\": \"\"\n        },\n        \"2\": {\n          \"name\": \"\",\n          \"number\": \"2\",\n          \"net\": \"LED3_A\",\n          \"pinClass\": \"\",\n          \"pinDifferentialPairClass\": \"\"\n        }\n      },\n      \"altLibs\": {}\n    },\n    \"R4\": {\n      \"props\": {\n        \"Footprint\": \"48e0f0c6de0d83c9\",\n        \"Designator\": \"R4\",\n        \"LCSC Part Name\": \"厚膜电阻 2.2kΩ ±1% 100mW\",\n        \"Supplier Part\": \"C114662\",\n        \"Manufacturer\": \"YAGEO(国巨)\",\n        \"Manufacturer Part\": \"RC0603FR-072K2L\",\n        \"Supplier Footprint\": \"0603\",\n        \"JLCPCB Part Class\": \"Extended Part\",\n        \"Datasheet\": \"https://item.szlcsc.com/datasheet/RC0603FR-072K2L/115906.html\",\n        \"Supplier\": \"LCSC\",\n        \"Add into BOM\": \"yes\",\n        \"3D Model\": \"fc143cca1e79419f9cd78b61e9279f08|0819f05c4eef4c71ace90d822a990e87\",\n        \"3D Model Title\": \"R0603\",\n        \"3D Model Transform\": \"31.8897,63.7794,0,90,0,0,0,0,0\",\n        \"Type\": \"厚膜电阻\",\n        \"Value\": \"2.2kΩ\",\n        \"Tolerance\": \"±1%\",\n        \"Power(Watts)\": \"100mW\",\n        \"Voltage-Supply(Max)\": \"75V\",\n        \"Temperature Coefficient\": \"±100ppm/℃\",\n        \"Operating Temperature\": \"-55℃~+155℃\",\n        \"Name\": \"RC0603FR-072K2L\",\n        \"Description\": \"电阻类型:厚膜电阻;阻值:2.2kΩ;精度:±1%;功率:100mW;工作电压:75V;温度系数:±100ppm/℃;\",\n        \"Unique ID\": \"R4\",\n        \"Reuse Block\": \"\",\n        \"Group ID\": \"\",\n        \"Channel ID\": \"$1I15\",\n        \"Population\": \"Fit\",\n        \"PCB Side\": \"Bottom\",\n        \"DeviceName\": \"RC0603FR-072K2L\",\n        \"FootprintName\": \"R0603\",\n        \"Device\": \"1f7a2dba9531bc30\",\n        \"PCB Layer\": \"BottomLayer\",\n        \"Convert to PCB\": \"yes\"\n      },\n      \"footprintAttrKeys\": [\n        \"Footprint\",\n        \"Designator\"\n      ],\n      \"pinInfoMap\": {\n        \"1\": {\n          \"name\": \"\",\n          \"number\": \"1\",\n          \"net\": \"VOUT\",\n          \"pinClass\": \"\",\n          \"pinDifferentialPairClass\": \"\"\n        },\n        \"2\": {\n          \"name\": \"\",\n          \"number\": \"2\",\n          \"net\": \"LED4_A\",\n          \"pinClass\": \"\",\n          \"pinDifferentialPairClass\": \"\"\n        }\n      },\n      \"altLibs\": {}\n    },\n    \"D4\": {\n      \"props\": {\n        \"Footprint\": \"1cf34bdc23243a80\",\n        \"Designator\": \"D4\",\n        \"LCSC Part Name\": \"1.6x0.8x0.25 mm 贴片式芯片LED灯\",\n        \"Supplier Part\": \"C5875720\",\n        \"Manufacturer\": \"Kingbright(今台)\",\n        \"Manufacturer Part\": \"APG1608SYKC/T\",\n        \"Supplier Footprint\": \"0603\",\n        \"JLCPCB Part Class\": \"Extended Part\",\n        \"Datasheet\": \"https://item.szlcsc.com/datasheet/APG1608SYKC%252FT/6809602.html\",\n        \"Supplier\": \"LCSC\",\n        \"Add into BOM\": \"yes\",\n        \"3D Model\": \"1f0d29a91be547639d425604e9b96ebb|0819f05c4eef4c71ace90d822a990e87\",\n        \"3D Model Title\": \"LED0603-RD\",\n        \"3D Model Transform\": \"63.7794,32.283,0,0,0,0,0,0,0\",\n        \"Lamp Holder Type\": \"-\",\n        \"Illumination Color\": \"黄色\",\n        \"Voltage - Forward(Vf)\": \"2.05V\",\n        \"Power(Watts)\": \"75mW\",\n        \"Forward Current\": \"20mA\",\n        \"Wavelength - Dominant\": \"590nm\",\n        \"Peak Wavelength\": \"590nm\",\n        \"Diode Configuration\": \"独立二极管\",\n        \"Lens Color\": \"无色透明透镜\",\n        \"Color Temperature\": \"-\",\n        \"Luminous Intensity\": \"120mcd\",\n        \"Viewing Angle\": \"120°\",\n        \"Mounting Style\": \"-\",\n        \"Operating Temperature\": \"-40℃~+85℃\",\n        \"Name\": \"APG1608SYKC/T\",\n        \"Description\": \"灯头类型:-;发光颜色:黄色;正向压降(Vf):2.05V;功率:75mW;正向电流:20mA;波长:590nm;二极管配置:独立二极管;透镜颜色:无色透明透镜;色温:-;发光强度:120mcd;发光角度:120°;载带方式:-;工作温度:-40℃~+85℃;\",\n        \"Unique ID\": \"D4\",\n        \"Reuse Block\": \"\",\n        \"Group ID\": \"\",\n        \"Channel ID\": \"$1I16\",\n        \"Population\": \"Fit\",\n        \"PCB Side\": \"Bottom\",\n        \"DeviceName\": \"APG1608SYKC/T\",\n        \"FootprintName\": \"LED0603-RD\",\n        \"Device\": \"8e0ca6caf537fb29\",\n        \"PCB Layer\": \"BottomLayer\",\n        \"Convert to PCB\": \"yes\"\n      },\n      \"footprintAttrKeys\": [\n        \"Footprint\",\n        \"Designator\"\n      ],\n      \"pinInfoMap\": {\n        \"1\": {\n          \"name\": \"\",\n          \"number\": \"1\",\n          \"net\": \"GND\",\n          \"pinClass\": \"\",\n          \"pinDifferentialPairClass\": \"\"\n        },\n        \"2\": {\n          \"name\": \"\",\n          \"number\": \"2\",\n          \"net\": \"LED4_A\",\n          \"pinClass\": \"\",\n          \"pinDifferentialPairClass\": \"\"\n        }\n      },\n      \"altLibs\": {}\n    }\n  },\n  \"designRule\": {\n    \"trackPhysics\": {\n      \"copperThickness1oz\": {\n        \"name\": \"copperThickness1oz\",\n        \"isDefault\": true,\n        \"unit\": \"mm\",\n        \"strokeValue\": {\n          \"1\": {\n            \"default\": 0.254,\n            \"min\": 0.127,\n            \"max\": 2.54\n          }\n        }\n      },\n      \"copperThickness2oz\": {\n        \"name\": \"copperThickness2oz\",\n        \"isDefault\": false,\n        \"unit\": \"mm\",\n        \"strokeValue\": {\n          \"1\": {\n            \"default\": 0.254,\n            \"min\": 0.20299934,\n            \"max\": 2.54\n          }\n        }\n      }\n    },\n    \"netRule\": {\n      \"ANT_LB\": {\n        \"net\": \"ANT_LB\",\n        \"ruleMap\": {\n          \"TrackPhysics\": \"\"\n        }\n      },\n      \"VOUT\": {\n        \"net\": \"VOUT\",\n        \"ruleMap\": {\n          \"TrackPhysics\": \"\"\n        }\n      },\n      \"SDA\": {\n        \"net\": \"SDA\",\n        \"ruleMap\": {\n          \"TrackPhysics\": \"\"\n        }\n      },\n      \"FD\": {\n        \"net\": \"FD\",\n        \"ruleMap\": {\n          \"TrackPhysics\": \"\"\n        }\n      },\n      \"SCL\": {\n        \"net\": \"SCL\",\n        \"ruleMap\": {\n          \"TrackPhysics\": \"\"\n        }\n      },\n      \"GND\": {\n        \"net\": \"GND\",\n        \"ruleMap\": {\n          \"TrackPhysics\": \"\"\n        }\n      },\n      \"ANT_LA\": {\n        \"net\": \"ANT_LA\",\n        \"ruleMap\": {\n          \"TrackPhysics\": \"\"\n        }\n      },\n      \"LED1_A\": {\n        \"net\": \"LED1_A\",\n        \"ruleMap\": {\n          \"TrackPhysics\": \"\"\n        }\n      },\n      \"LED2_A\": {\n        \"net\": \"LED2_A\",\n        \"ruleMap\": {\n          \"TrackPhysics\": \"\"\n        }\n      },\n      \"LED3_A\": {\n        \"net\": \"LED3_A\",\n        \"ruleMap\": {\n          \"TrackPhysics\": \"\"\n        }\n      },\n      \"LED4_A\": {\n        \"net\": \"LED4_A\",\n        \"ruleMap\": {\n          \"TrackPhysics\": \"\"\n        }\n      }\n    }\n  },\n  \"netClass\": {},\n  \"equalLengthNetGroup\": {},\n  \"differentialPair\": {},\n  \"differentialPairGroups\": {}\n}",
+    "{\n  \"version\": \"2.0.0\",\n  \"projectId\": \"c051e4069a83472198ecce7729fbd257\",\n  \"components\": {\n    \"U1\": {\n      \"props\": {\n        \"Footprint\": \"d2f121a33f29272e\",\n        \"Designator\": \"U1\",\n        \"LCSC Part Name\": \"NFC Forum T2T 带 I²C 接口、密码保护和能量收集\",\n        \"Supplier Part\": \"C710403\",\n        \"Manufacturer\": \"NXP(恩智浦)\",\n        \"Manufacturer Part\": \"NT3H2111W0FHKH\",\n        \"Supplier Footprint\": \"XQFN-8(1.6x1.6)\",\n        \"JLCPCB Part Class\": \"Extended Part\",\n        \"Datasheet\": \"https://www.nxp.com/docs/en/data-sheet/NT3H2111_2211.pdf\",\n        \"Supplier\": \"LCSC\",\n        \"Add into BOM\": \"yes\",\n        \"agreement\": \"ISO 14443A,NFC\",\n        \"Interface\": \"I2C\",\n        \"transmission rate\": \"106Kbit/s\",\n        \"Value\": \"13.56MHz\",\n        \"Voltage - Supply\": \"3.3V\",\n        \"Features\": \"能量采集；内置非易失性存储；数据校验\",\n        \"Name\": \"NT3H2111W0FHKH\",\n        \"Description\": \"协议:ISO 14443A,NFC;接口类型:I2C;传输速率:106Kbit/s;\",\n        \"Unique ID\": \"U1\",\n        \"Reuse Block\": \"\",\n        \"Group ID\": \"\",\n        \"Channel ID\": \"\",\n        \"Population\": \"Fit\",\n        \"PCB Side\": \"TOP\",\n        \"DeviceName\": \"NT3H2111W0FHKH\",\n        \"FootprintName\": \"XQFN-8_L1.6-W1.6-P0.50-BL_NT3H2111W0FHKH\",\n        \"Device\": \"0826239021620644\",\n        \"PCB Layer\": \"TopLayer\",\n        \"Convert to PCB\": \"yes\"\n      },\n      \"footprintAttrKeys\": [\n        \"Footprint\",\n        \"Designator\"\n      ],\n      \"pinInfoMap\": {\n        \"1\": {\n          \"name\": \"\",\n          \"number\": \"1\",\n          \"net\": \"ANT_LA\",\n          \"pinClass\": \"\",\n          \"pinDifferentialPairClass\": \"\"\n        },\n        \"2\": {\n          \"name\": \"\",\n          \"number\": \"2\",\n          \"net\": \"GND\",\n          \"pinClass\": \"\",\n          \"pinDifferentialPairClass\": \"\"\n        },\n        \"3\": {\n          \"name\": \"\",\n          \"number\": \"3\",\n          \"net\": \"SCL\",\n          \"pinClass\": \"\",\n          \"pinDifferentialPairClass\": \"\"\n        },\n        \"4\": {\n          \"name\": \"\",\n          \"number\": \"4\",\n          \"net\": \"FD\",\n          \"pinClass\": \"\",\n          \"pinDifferentialPairClass\": \"\"\n        },\n        \"5\": {\n          \"name\": \"\",\n          \"number\": \"5\",\n          \"net\": \"SDA\",\n          \"pinClass\": \"\",\n          \"pinDifferentialPairClass\": \"\"\n        },\n        \"6\": {\n          \"name\": \"\",\n          \"number\": \"6\",\n          \"net\": \"VOUT\",\n          \"pinClass\": \"\",\n          \"pinDifferentialPairClass\": \"\"\n        },\n        \"7\": {\n          \"name\": \"\",\n          \"number\": \"7\",\n          \"net\": \"VOUT\",\n          \"pinClass\": \"\",\n          \"pinDifferentialPairClass\": \"\"\n        },\n        \"8\": {\n          \"name\": \"\",\n          \"number\": \"8\",\n          \"net\": \"ANT_LB\",\n          \"pinClass\": \"\",\n          \"pinDifferentialPairClass\": \"\"\n        }\n      },\n      \"altLibs\": {}\n    },\n    \"D1\": {\n      \"props\": {\n        \"Footprint\": \"1cf34bdc23243a80\",\n        \"Designator\": \"D1\",\n        \"LCSC Part Name\": \"1.6x0.8x0.25 mm 贴片式芯片LED灯\",\n        \"Supplier Part\": \"C5875720\",\n        \"Manufacturer\": \"Kingbright(今台)\",\n        \"Manufacturer Part\": \"APG1608SYKC/T\",\n        \"Supplier Footprint\": \"0603\",\n        \"JLCPCB Part Class\": \"Extended Part\",\n        \"Datasheet\": \"https://item.szlcsc.com/datasheet/APG1608SYKC%252FT/6809602.html\",\n        \"Supplier\": \"LCSC\",\n        \"Add into BOM\": \"yes\",\n        \"3D Model\": \"1f0d29a91be547639d425604e9b96ebb|0819f05c4eef4c71ace90d822a990e87\",\n        \"3D Model Title\": \"LED0603-RD\",\n        \"3D Model Transform\": \"63.7794,32.283,0,0,0,0,0,0,0\",\n        \"Lamp Holder Type\": \"-\",\n        \"Illumination Color\": \"黄色\",\n        \"Voltage - Forward(Vf)\": \"2.05V\",\n        \"Power(Watts)\": \"75mW\",\n        \"Forward Current\": \"20mA\",\n        \"Wavelength - Dominant\": \"590nm\",\n        \"Peak Wavelength\": \"590nm\",\n        \"Diode Configuration\": \"独立二极管\",\n        \"Lens Color\": \"无色透明透镜\",\n        \"Color Temperature\": \"-\",\n        \"Luminous Intensity\": \"120mcd\",\n        \"Viewing Angle\": \"120°\",\n        \"Mounting Style\": \"-\",\n        \"Operating Temperature\": \"-40℃~+85℃\",\n        \"Name\": \"APG1608SYKC/T\",\n        \"Description\": \"灯头类型:-;发光颜色:黄色;正向压降(Vf):2.05V;功率:75mW;正向电流:20mA;波长:590nm;二极管配置:独立二极管;透镜颜色:无色透明透镜;色温:-;发光强度:120mcd;发光角度:120°;载带方式:-;工作温度:-40℃~+85℃;\",\n        \"Unique ID\": \"D1\",\n        \"Reuse Block\": \"\",\n        \"Group ID\": \"\",\n        \"Channel ID\": \"\",\n        \"Population\": \"Fit\",\n        \"PCB Side\": \"TOP\",\n        \"DeviceName\": \"APG1608SYKC/T\",\n        \"FootprintName\": \"LED0603-RD\",\n        \"Device\": \"8e0ca6caf537fb29\",\n        \"PCB Layer\": \"TopLayer\",\n        \"Convert to PCB\": \"yes\"\n      },\n      \"footprintAttrKeys\": [\n        \"Footprint\",\n        \"Designator\"\n      ],\n      \"pinInfoMap\": {\n        \"1\": {\n          \"name\": \"\",\n          \"number\": \"1\",\n          \"net\": \"GND\",\n          \"pinClass\": \"\",\n          \"pinDifferentialPairClass\": \"\"\n        },\n        \"2\": {\n          \"name\": \"\",\n          \"number\": \"2\",\n          \"net\": \"LED1_A\",\n          \"pinClass\": \"\",\n          \"pinDifferentialPairClass\": \"\"\n        }\n      },\n      \"altLibs\": {}\n    },\n    \"C1\": {\n      \"props\": {\n        \"Name\": \"GRM155R71C154KA12D\",\n        \"Designator\": \"C1\",\n        \"Footprint\": \"55bb05466da119d4\",\n        \"LCSC Part Name\": \"150nF ±10% 16V NRND物料(将要停产) 原厂不接订单\",\n        \"Supplier Part\": \"C162182\",\n        \"Manufacturer\": \"muRata(村田)\",\n        \"Manufacturer Part\": \"GRM155R71C154KA12D\",\n        \"Supplier Footprint\": \"0402\",\n        \"JLCPCB Part Class\": \"Extended Part\",\n        \"Datasheet\": \"https://atta.szlcsc.com/upload/public/pdf/source/20200305/C490387_23319AE8C154DEB24C505E6C82A8106A.pdf\",\n        \"Supplier\": \"LCSC\",\n        \"Add into BOM\": \"yes\",\n        \"3D Model\": \"36a51122f27c49738f86b3bfa98863e0|0819f05c4eef4c71ace90d822a990e87\",\n        \"3D Model Title\": \"C0402_L1.0-W0.5-H0.5\",\n        \"3D Model Transform\": \"39.37,19.685,0,0,0,0,0,0,0\",\n        \"Value\": \"150nF\",\n        \"Tolerance\": \"±10%\",\n        \"Voltage Rated\": \"16V\",\n        \"Temperature Coefficient\": \"X7R\",\n        \"Description\": \"容值:150nF;精度:±10%;额定电压:16V;材质(温度系数):X7R;\",\n        \"Unique ID\": \"C1\",\n        \"Reuse Block\": \"\",\n        \"Group ID\": \"\",\n        \"Channel ID\": \"\",\n        \"Population\": \"Fit\",\n        \"PCB Side\": \"TOP\",\n        \"DeviceName\": \"GRM155R71C154KA12D\",\n        \"FootprintName\": \"C0402\",\n        \"Device\": \"3f1d0a7ba18d9857\",\n        \"PCB Layer\": \"TopLayer\",\n        \"Convert to PCB\": \"yes\"\n      },\n      \"footprintAttrKeys\": [\n        \"Name\",\n        \"Designator\"\n      ],\n      \"pinInfoMap\": {\n        \"1\": {\n          \"name\": \"\",\n          \"number\": \"1\",\n          \"net\": \"VOUT\",\n          \"pinClass\": \"\",\n          \"pinDifferentialPairClass\": \"\"\n        },\n        \"2\": {\n          \"name\": \"\",\n          \"number\": \"2\",\n          \"net\": \"GND\",\n          \"pinClass\": \"\",\n          \"pinDifferentialPairClass\": \"\"\n        }\n      },\n      \"altLibs\": {}\n    },\n    \"CT1\": {\n      \"props\": {\n        \"Name\": \"CC0402JRNPO9BN470\",\n        \"Designator\": \"CT1\",\n        \"Footprint\": \"55bb05466da119d4\",\n        \"LCSC Part Name\": \"47pF ±5% 50V\",\n        \"Supplier Part\": \"C60137\",\n        \"Manufacturer\": \"YAGEO(国巨)\",\n        \"Manufacturer Part\": \"CC0402JRNPO9BN470\",\n        \"Supplier Footprint\": \"0402\",\n        \"JLCPCB Part Class\": \"Extended Part\",\n        \"Datasheet\": \"https://atta.szlcsc.com/upload/public/pdf/source/20170505/1493957838062.pdf\",\n        \"Supplier\": \"LCSC\",\n        \"Add into BOM\": \"yes\",\n        \"3D Model\": \"36a51122f27c49738f86b3bfa98863e0|0819f05c4eef4c71ace90d822a990e87\",\n        \"3D Model Title\": \"C0402_L1.0-W0.5-H0.5\",\n        \"3D Model Transform\": \"39.37,19.685,0,0,0,0,0,0,0\",\n        \"Value\": \"47pF\",\n        \"Tolerance\": \"±5%\",\n        \"Voltage Rated\": \"50V\",\n        \"Temperature Coefficient\": \"NP0\",\n        \"Description\": \"容值:47pF;精度:±5%;额定电压:50V;材质(温度系数):NP0;\",\n        \"Unique ID\": \"CT1\",\n        \"Reuse Block\": \"\",\n        \"Group ID\": \"\",\n        \"Channel ID\": \"\",\n        \"Population\": \"Fit\",\n        \"PCB Side\": \"TOP\",\n        \"DeviceName\": \"CC0402JRNPO9BN470\",\n        \"FootprintName\": \"C0402\",\n        \"Device\": \"f1f17454a90f1e99\",\n        \"PCB Layer\": \"TopLayer\",\n        \"Convert to PCB\": \"yes\"\n      },\n      \"footprintAttrKeys\": [\n        \"Name\",\n        \"Designator\"\n      ],\n      \"pinInfoMap\": {\n        \"1\": {\n          \"name\": \"\",\n          \"number\": \"1\",\n          \"net\": \"ANT_LA\",\n          \"pinClass\": \"\",\n          \"pinDifferentialPairClass\": \"\"\n        },\n        \"2\": {\n          \"name\": \"\",\n          \"number\": \"2\",\n          \"net\": \"ANT_LB\",\n          \"pinClass\": \"\",\n          \"pinDifferentialPairClass\": \"\"\n        }\n      },\n      \"altLibs\": {}\n    },\n    \"CT2\": {\n      \"props\": {\n        \"Name\": \"TUNE C0G DNP\",\n        \"Designator\": \"CT2\",\n        \"Footprint\": \"55bb05466da119d4\",\n        \"LCSC Part Name\": \"47pF ±5% 50V\",\n        \"Supplier Part\": \"C60137\",\n        \"Manufacturer\": \"YAGEO(国巨)\",\n        \"Manufacturer Part\": \"CC0402JRNPO9BN470\",\n        \"Supplier Footprint\": \"0402\",\n        \"JLCPCB Part Class\": \"Extended Part\",\n        \"Datasheet\": \"https://atta.szlcsc.com/upload/public/pdf/source/20170505/1493957838062.pdf\",\n        \"Supplier\": \"LCSC\",\n        \"Add into BOM\": \"yes\",\n        \"3D Model\": \"36a51122f27c49738f86b3bfa98863e0|0819f05c4eef4c71ace90d822a990e87\",\n        \"3D Model Title\": \"C0402_L1.0-W0.5-H0.5\",\n        \"3D Model Transform\": \"39.37,19.685,0,0,0,0,0,0,0\",\n        \"Value\": \"47pF\",\n        \"Tolerance\": \"±5%\",\n        \"Voltage Rated\": \"50V\",\n        \"Temperature Coefficient\": \"NP0\",\n        \"Description\": \"容值:47pF;精度:±5%;额定电压:50V;材质(温度系数):NP0;\",\n        \"Unique ID\": \"CT2\",\n        \"Reuse Block\": \"\",\n        \"Group ID\": \"\",\n        \"Channel ID\": \"\",\n        \"Population\": \"DNP\",\n        \"PCB Side\": \"TOP\",\n        \"DeviceName\": \"CC0402JRNPO9BN470\",\n        \"FootprintName\": \"C0402\",\n        \"Device\": \"f1f17454a90f1e99\",\n        \"PCB Layer\": \"TopLayer\",\n        \"Convert to PCB\": \"yes\"\n      },\n      \"footprintAttrKeys\": [\n        \"Name\",\n        \"Designator\"\n      ],\n      \"pinInfoMap\": {\n        \"1\": {\n          \"name\": \"\",\n          \"number\": \"1\",\n          \"net\": \"ANT_LA\",\n          \"pinClass\": \"\",\n          \"pinDifferentialPairClass\": \"\"\n        },\n        \"2\": {\n          \"name\": \"\",\n          \"number\": \"2\",\n          \"net\": \"ANT_LB\",\n          \"pinClass\": \"\",\n          \"pinDifferentialPairClass\": \"\"\n        }\n      },\n      \"altLibs\": {}\n    },\n    \"R5\": {\n      \"props\": {\n        \"Footprint\": \"48e0f0c6de0d83c9\",\n        \"Designator\": \"R5\",\n        \"LCSC Part Name\": \"厚膜电阻 47kΩ ±1% 100mW\",\n        \"Supplier Part\": \"C105579\",\n        \"Manufacturer\": \"YAGEO(国巨)\",\n        \"Manufacturer Part\": \"RC0603FR-0747KL\",\n        \"Supplier Footprint\": \"0603\",\n        \"JLCPCB Part Class\": \"Extended Part\",\n        \"Datasheet\": \"https://item.szlcsc.com/datasheet/RC0603FR-0747KL/106794.html\",\n        \"Supplier\": \"LCSC\",\n        \"Add into BOM\": \"yes\",\n        \"3D Model\": \"fc143cca1e79419f9cd78b61e9279f08|0819f05c4eef4c71ace90d822a990e87\",\n        \"3D Model Title\": \"R0603\",\n        \"3D Model Transform\": \"31.8897,63.7794,0,90,0,0,0,0,0\",\n        \"Type\": \"厚膜电阻\",\n        \"Value\": \"47kΩ\",\n        \"Tolerance\": \"±1%\",\n        \"Power(Watts)\": \"100mW\",\n        \"Voltage-Supply(Max)\": \"75V\",\n        \"Temperature Coefficient\": \"±100ppm/℃\",\n        \"Operating Temperature\": \"-55℃~+155℃\",\n        \"Name\": \"RC0603FR-0747KL\",\n        \"Description\": \"电阻类型:厚膜电阻;阻值:47kΩ;精度:±1%;功率:100mW;工作电压:75V;温度系数:±100ppm/℃;\",\n        \"Unique ID\": \"R5\",\n        \"Reuse Block\": \"\",\n        \"Group ID\": \"\",\n        \"Channel ID\": \"\",\n        \"Population\": \"Fit\",\n        \"PCB Side\": \"TOP\",\n        \"DeviceName\": \"RC0603FR-0747KL\",\n        \"FootprintName\": \"R0603\",\n        \"Device\": \"70b84d85f3696638\",\n        \"PCB Layer\": \"TopLayer\",\n        \"Convert to PCB\": \"yes\"\n      },\n      \"footprintAttrKeys\": [\n        \"Footprint\",\n        \"Designator\"\n      ],\n      \"pinInfoMap\": {\n        \"1\": {\n          \"name\": \"\",\n          \"number\": \"1\",\n          \"net\": \"VOUT\",\n          \"pinClass\": \"\",\n          \"pinDifferentialPairClass\": \"\"\n        },\n        \"2\": {\n          \"name\": \"\",\n          \"number\": \"2\",\n          \"net\": \"SCL\",\n          \"pinClass\": \"\",\n          \"pinDifferentialPairClass\": \"\"\n        }\n      },\n      \"altLibs\": {}\n    },\n    \"R6\": {\n      \"props\": {\n        \"Footprint\": \"48e0f0c6de0d83c9\",\n        \"Designator\": \"R6\",\n        \"LCSC Part Name\": \"厚膜电阻 47kΩ ±1% 100mW\",\n        \"Supplier Part\": \"C105579\",\n        \"Manufacturer\": \"YAGEO(国巨)\",\n        \"Manufacturer Part\": \"RC0603FR-0747KL\",\n        \"Supplier Footprint\": \"0603\",\n        \"JLCPCB Part Class\": \"Extended Part\",\n        \"Datasheet\": \"https://item.szlcsc.com/datasheet/RC0603FR-0747KL/106794.html\",\n        \"Supplier\": \"LCSC\",\n        \"Add into BOM\": \"yes\",\n        \"3D Model\": \"fc143cca1e79419f9cd78b61e9279f08|0819f05c4eef4c71ace90d822a990e87\",\n        \"3D Model Title\": \"R0603\",\n        \"3D Model Transform\": \"31.8897,63.7794,0,90,0,0,0,0,0\",\n        \"Type\": \"厚膜电阻\",\n        \"Value\": \"47kΩ\",\n        \"Tolerance\": \"±1%\",\n        \"Power(Watts)\": \"100mW\",\n        \"Voltage-Supply(Max)\": \"75V\",\n        \"Temperature Coefficient\": \"±100ppm/℃\",\n        \"Operating Temperature\": \"-55℃~+155℃\",\n        \"Name\": \"RC0603FR-0747KL\",\n        \"Description\": \"电阻类型:厚膜电阻;阻值:47kΩ;精度:±1%;功率:100mW;工作电压:75V;温度系数:±100ppm/℃;\",\n        \"Unique ID\": \"R6\",\n        \"Reuse Block\": \"\",\n        \"Group ID\": \"\",\n        \"Channel ID\": \"\",\n        \"Population\": \"Fit\",\n        \"PCB Side\": \"TOP\",\n        \"DeviceName\": \"RC0603FR-0747KL\",\n        \"FootprintName\": \"R0603\",\n        \"Device\": \"70b84d85f3696638\",\n        \"PCB Layer\": \"TopLayer\",\n        \"Convert to PCB\": \"yes\"\n      },\n      \"footprintAttrKeys\": [\n        \"Footprint\",\n        \"Designator\"\n      ],\n      \"pinInfoMap\": {\n        \"1\": {\n          \"name\": \"\",\n          \"number\": \"1\",\n          \"net\": \"VOUT\",\n          \"pinClass\": \"\",\n          \"pinDifferentialPairClass\": \"\"\n        },\n        \"2\": {\n          \"name\": \"\",\n          \"number\": \"2\",\n          \"net\": \"SDA\",\n          \"pinClass\": \"\",\n          \"pinDifferentialPairClass\": \"\"\n        }\n      },\n      \"altLibs\": {}\n    },\n    \"R7\": {\n      \"props\": {\n        \"Footprint\": \"48e0f0c6de0d83c9\",\n        \"Designator\": \"R7\",\n        \"LCSC Part Name\": \"厚膜电阻 47kΩ ±1% 100mW\",\n        \"Supplier Part\": \"C105579\",\n        \"Manufacturer\": \"YAGEO(国巨)\",\n        \"Manufacturer Part\": \"RC0603FR-0747KL\",\n        \"Supplier Footprint\": \"0603\",\n        \"JLCPCB Part Class\": \"Extended Part\",\n        \"Datasheet\": \"https://item.szlcsc.com/datasheet/RC0603FR-0747KL/106794.html\",\n        \"Supplier\": \"LCSC\",\n        \"Add into BOM\": \"yes\",\n        \"3D Model\": \"fc143cca1e79419f9cd78b61e9279f08|0819f05c4eef4c71ace90d822a990e87\",\n        \"3D Model Title\": \"R0603\",\n        \"3D Model Transform\": \"31.8897,63.7794,0,90,0,0,0,0,0\",\n        \"Type\": \"厚膜电阻\",\n        \"Value\": \"47kΩ\",\n        \"Tolerance\": \"±1%\",\n        \"Power(Watts)\": \"100mW\",\n        \"Voltage-Supply(Max)\": \"75V\",\n        \"Temperature Coefficient\": \"±100ppm/℃\",\n        \"Operating Temperature\": \"-55℃~+155℃\",\n        \"Name\": \"RC0603FR-0747KL\",\n        \"Description\": \"电阻类型:厚膜电阻;阻值:47kΩ;精度:±1%;功率:100mW;工作电压:75V;温度系数:±100ppm/℃;\",\n        \"Unique ID\": \"R7\",\n        \"Reuse Block\": \"\",\n        \"Group ID\": \"\",\n        \"Channel ID\": \"\",\n        \"Population\": \"Fit\",\n        \"PCB Side\": \"TOP\",\n        \"DeviceName\": \"RC0603FR-0747KL\",\n        \"FootprintName\": \"R0603\",\n        \"Device\": \"70b84d85f3696638\",\n        \"PCB Layer\": \"TopLayer\",\n        \"Convert to PCB\": \"yes\"\n      },\n      \"footprintAttrKeys\": [\n        \"Footprint\",\n        \"Designator\"\n      ],\n      \"pinInfoMap\": {\n        \"1\": {\n          \"name\": \"\",\n          \"number\": \"1\",\n          \"net\": \"VOUT\",\n          \"pinClass\": \"\",\n          \"pinDifferentialPairClass\": \"\"\n        },\n        \"2\": {\n          \"name\": \"\",\n          \"number\": \"2\",\n          \"net\": \"FD\",\n          \"pinClass\": \"\",\n          \"pinDifferentialPairClass\": \"\"\n        }\n      },\n      \"altLibs\": {}\n    },\n    \"R1\": {\n      \"props\": {\n        \"Footprint\": \"48e0f0c6de0d83c9\",\n        \"Designator\": \"R1\",\n        \"LCSC Part Name\": \"厚膜电阻 2.2kΩ ±1% 100mW\",\n        \"Supplier Part\": \"C114662\",\n        \"Manufacturer\": \"YAGEO(国巨)\",\n        \"Manufacturer Part\": \"RC0603FR-072K2L\",\n        \"Supplier Footprint\": \"0603\",\n        \"JLCPCB Part Class\": \"Extended Part\",\n        \"Datasheet\": \"https://item.szlcsc.com/datasheet/RC0603FR-072K2L/115906.html\",\n        \"Supplier\": \"LCSC\",\n        \"Add into BOM\": \"yes\",\n        \"3D Model\": \"fc143cca1e79419f9cd78b61e9279f08|0819f05c4eef4c71ace90d822a990e87\",\n        \"3D Model Title\": \"R0603\",\n        \"3D Model Transform\": \"31.8897,63.7794,0,90,0,0,0,0,0\",\n        \"Type\": \"厚膜电阻\",\n        \"Value\": \"2.2kΩ\",\n        \"Tolerance\": \"±1%\",\n        \"Power(Watts)\": \"100mW\",\n        \"Voltage-Supply(Max)\": \"75V\",\n        \"Temperature Coefficient\": \"±100ppm/℃\",\n        \"Operating Temperature\": \"-55℃~+155℃\",\n        \"Name\": \"RC0603FR-072K2L\",\n        \"Description\": \"电阻类型:厚膜电阻;阻值:2.2kΩ;精度:±1%;功率:100mW;工作电压:75V;温度系数:±100ppm/℃;\",\n        \"Unique ID\": \"R1\",\n        \"Reuse Block\": \"\",\n        \"Group ID\": \"\",\n        \"Channel ID\": \"\",\n        \"Population\": \"Fit\",\n        \"PCB Side\": \"TOP\",\n        \"DeviceName\": \"RC0603FR-072K2L\",\n        \"FootprintName\": \"R0603\",\n        \"Device\": \"1f7a2dba9531bc30\",\n        \"PCB Layer\": \"TopLayer\",\n        \"Convert to PCB\": \"yes\"\n      },\n      \"footprintAttrKeys\": [\n        \"Footprint\",\n        \"Designator\"\n      ],\n      \"pinInfoMap\": {\n        \"1\": {\n          \"name\": \"\",\n          \"number\": \"1\",\n          \"net\": \"VOUT\",\n          \"pinClass\": \"\",\n          \"pinDifferentialPairClass\": \"\"\n        },\n        \"2\": {\n          \"name\": \"\",\n          \"number\": \"2\",\n          \"net\": \"LED1_A\",\n          \"pinClass\": \"\",\n          \"pinDifferentialPairClass\": \"\"\n        }\n      },\n      \"altLibs\": {}\n    },\n    \"R2\": {\n      \"props\": {\n        \"Footprint\": \"48e0f0c6de0d83c9\",\n        \"Designator\": \"R2\",\n        \"LCSC Part Name\": \"厚膜电阻 2.2kΩ ±1% 100mW\",\n        \"Supplier Part\": \"C114662\",\n        \"Manufacturer\": \"YAGEO(国巨)\",\n        \"Manufacturer Part\": \"RC0603FR-072K2L\",\n        \"Supplier Footprint\": \"0603\",\n        \"JLCPCB Part Class\": \"Extended Part\",\n        \"Datasheet\": \"https://item.szlcsc.com/datasheet/RC0603FR-072K2L/115906.html\",\n        \"Supplier\": \"LCSC\",\n        \"Add into BOM\": \"yes\",\n        \"3D Model\": \"fc143cca1e79419f9cd78b61e9279f08|0819f05c4eef4c71ace90d822a990e87\",\n        \"3D Model Title\": \"R0603\",\n        \"3D Model Transform\": \"31.8897,63.7794,0,90,0,0,0,0,0\",\n        \"Type\": \"厚膜电阻\",\n        \"Value\": \"2.2kΩ\",\n        \"Tolerance\": \"±1%\",\n        \"Power(Watts)\": \"100mW\",\n        \"Voltage-Supply(Max)\": \"75V\",\n        \"Temperature Coefficient\": \"±100ppm/℃\",\n        \"Operating Temperature\": \"-55℃~+155℃\",\n        \"Name\": \"RC0603FR-072K2L\",\n        \"Description\": \"电阻类型:厚膜电阻;阻值:2.2kΩ;精度:±1%;功率:100mW;工作电压:75V;温度系数:±100ppm/℃;\",\n        \"Unique ID\": \"R2\",\n        \"Reuse Block\": \"\",\n        \"Group ID\": \"\",\n        \"Channel ID\": \"\",\n        \"Population\": \"Fit\",\n        \"PCB Side\": \"TOP\",\n        \"DeviceName\": \"RC0603FR-072K2L\",\n        \"FootprintName\": \"R0603\",\n        \"Device\": \"1f7a2dba9531bc30\",\n        \"PCB Layer\": \"TopLayer\",\n        \"Convert to PCB\": \"yes\"\n      },\n      \"footprintAttrKeys\": [\n        \"Footprint\",\n        \"Designator\"\n      ],\n      \"pinInfoMap\": {\n        \"1\": {\n          \"name\": \"\",\n          \"number\": \"1\",\n          \"net\": \"VOUT\",\n          \"pinClass\": \"\",\n          \"pinDifferentialPairClass\": \"\"\n        },\n        \"2\": {\n          \"name\": \"\",\n          \"number\": \"2\",\n          \"net\": \"LED2_A\",\n          \"pinClass\": \"\",\n          \"pinDifferentialPairClass\": \"\"\n        }\n      },\n      \"altLibs\": {}\n    },\n    \"D2\": {\n      \"props\": {\n        \"Footprint\": \"1cf34bdc23243a80\",\n        \"Designator\": \"D2\",\n        \"LCSC Part Name\": \"1.6x0.8x0.25 mm 贴片式芯片LED灯\",\n        \"Supplier Part\": \"C5875720\",\n        \"Manufacturer\": \"Kingbright(今台)\",\n        \"Manufacturer Part\": \"APG1608SYKC/T\",\n        \"Supplier Footprint\": \"0603\",\n        \"JLCPCB Part Class\": \"Extended Part\",\n        \"Datasheet\": \"https://item.szlcsc.com/datasheet/APG1608SYKC%252FT/6809602.html\",\n        \"Supplier\": \"LCSC\",\n        \"Add into BOM\": \"yes\",\n        \"3D Model\": \"1f0d29a91be547639d425604e9b96ebb|0819f05c4eef4c71ace90d822a990e87\",\n        \"3D Model Title\": \"LED0603-RD\",\n        \"3D Model Transform\": \"63.7794,32.283,0,0,0,0,0,0,0\",\n        \"Lamp Holder Type\": \"-\",\n        \"Illumination Color\": \"黄色\",\n        \"Voltage - Forward(Vf)\": \"2.05V\",\n        \"Power(Watts)\": \"75mW\",\n        \"Forward Current\": \"20mA\",\n        \"Wavelength - Dominant\": \"590nm\",\n        \"Peak Wavelength\": \"590nm\",\n        \"Diode Configuration\": \"独立二极管\",\n        \"Lens Color\": \"无色透明透镜\",\n        \"Color Temperature\": \"-\",\n        \"Luminous Intensity\": \"120mcd\",\n        \"Viewing Angle\": \"120°\",\n        \"Mounting Style\": \"-\",\n        \"Operating Temperature\": \"-40℃~+85℃\",\n        \"Name\": \"APG1608SYKC/T\",\n        \"Description\": \"灯头类型:-;发光颜色:黄色;正向压降(Vf):2.05V;功率:75mW;正向电流:20mA;波长:590nm;二极管配置:独立二极管;透镜颜色:无色透明透镜;色温:-;发光强度:120mcd;发光角度:120°;载带方式:-;工作温度:-40℃~+85℃;\",\n        \"Unique ID\": \"D2\",\n        \"Reuse Block\": \"\",\n        \"Group ID\": \"\",\n        \"Channel ID\": \"\",\n        \"Population\": \"Fit\",\n        \"PCB Side\": \"TOP\",\n        \"DeviceName\": \"APG1608SYKC/T\",\n        \"FootprintName\": \"LED0603-RD\",\n        \"Device\": \"8e0ca6caf537fb29\",\n        \"PCB Layer\": \"TopLayer\",\n        \"Convert to PCB\": \"yes\"\n      },\n      \"footprintAttrKeys\": [\n        \"Footprint\",\n        \"Designator\"\n      ],\n      \"pinInfoMap\": {\n        \"1\": {\n          \"name\": \"\",\n          \"number\": \"1\",\n          \"net\": \"GND\",\n          \"pinClass\": \"\",\n          \"pinDifferentialPairClass\": \"\"\n        },\n        \"2\": {\n          \"name\": \"\",\n          \"number\": \"2\",\n          \"net\": \"LED2_A\",\n          \"pinClass\": \"\",\n          \"pinDifferentialPairClass\": \"\"\n        }\n      },\n      \"altLibs\": {}\n    },\n    \"R3\": {\n      \"props\": {\n        \"Footprint\": \"48e0f0c6de0d83c9\",\n        \"Designator\": \"R3\",\n        \"LCSC Part Name\": \"厚膜电阻 2.2kΩ ±1% 100mW\",\n        \"Supplier Part\": \"C114662\",\n        \"Manufacturer\": \"YAGEO(国巨)\",\n        \"Manufacturer Part\": \"RC0603FR-072K2L\",\n        \"Supplier Footprint\": \"0603\",\n        \"JLCPCB Part Class\": \"Extended Part\",\n        \"Datasheet\": \"https://item.szlcsc.com/datasheet/RC0603FR-072K2L/115906.html\",\n        \"Supplier\": \"LCSC\",\n        \"Add into BOM\": \"yes\",\n        \"3D Model\": \"fc143cca1e79419f9cd78b61e9279f08|0819f05c4eef4c71ace90d822a990e87\",\n        \"3D Model Title\": \"R0603\",\n        \"3D Model Transform\": \"31.8897,63.7794,0,90,0,0,0,0,0\",\n        \"Type\": \"厚膜电阻\",\n        \"Value\": \"2.2kΩ\",\n        \"Tolerance\": \"±1%\",\n        \"Power(Watts)\": \"100mW\",\n        \"Voltage-Supply(Max)\": \"75V\",\n        \"Temperature Coefficient\": \"±100ppm/℃\",\n        \"Operating Temperature\": \"-55℃~+155℃\",\n        \"Name\": \"RC0603FR-072K2L\",\n        \"Description\": \"电阻类型:厚膜电阻;阻值:2.2kΩ;精度:±1%;功率:100mW;工作电压:75V;温度系数:±100ppm/℃;\",\n        \"Unique ID\": \"R3\",\n        \"Reuse Block\": \"\",\n        \"Group ID\": \"\",\n        \"Channel ID\": \"\",\n        \"Population\": \"Fit\",\n        \"PCB Side\": \"BOTTOM\",\n        \"DeviceName\": \"RC0603FR-072K2L\",\n        \"FootprintName\": \"R0603\",\n        \"Device\": \"1f7a2dba9531bc30\",\n        \"PCB Layer\": \"BottomLayer\",\n        \"Convert to PCB\": \"yes\"\n      },\n      \"footprintAttrKeys\": [\n        \"Footprint\",\n        \"Designator\"\n      ],\n      \"pinInfoMap\": {\n        \"1\": {\n          \"name\": \"\",\n          \"number\": \"1\",\n          \"net\": \"VOUT\",\n          \"pinClass\": \"\",\n          \"pinDifferentialPairClass\": \"\"\n        },\n        \"2\": {\n          \"name\": \"\",\n          \"number\": \"2\",\n          \"net\": \"LED3_A\",\n          \"pinClass\": \"\",\n          \"pinDifferentialPairClass\": \"\"\n        }\n      },\n      \"altLibs\": {}\n    },\n    \"D3\": {\n      \"props\": {\n        \"Footprint\": \"1cf34bdc23243a80\",\n        \"Designator\": \"D3\",\n        \"LCSC Part Name\": \"1.6x0.8x0.25 mm 贴片式芯片LED灯\",\n        \"Supplier Part\": \"C5875720\",\n        \"Manufacturer\": \"Kingbright(今台)\",\n        \"Manufacturer Part\": \"APG1608SYKC/T\",\n        \"Supplier Footprint\": \"0603\",\n        \"JLCPCB Part Class\": \"Extended Part\",\n        \"Datasheet\": \"https://item.szlcsc.com/datasheet/APG1608SYKC%252FT/6809602.html\",\n        \"Supplier\": \"LCSC\",\n        \"Add into BOM\": \"yes\",\n        \"3D Model\": \"1f0d29a91be547639d425604e9b96ebb|0819f05c4eef4c71ace90d822a990e87\",\n        \"3D Model Title\": \"LED0603-RD\",\n        \"3D Model Transform\": \"63.7794,32.283,0,0,0,0,0,0,0\",\n        \"Lamp Holder Type\": \"-\",\n        \"Illumination Color\": \"黄色\",\n        \"Voltage - Forward(Vf)\": \"2.05V\",\n        \"Power(Watts)\": \"75mW\",\n        \"Forward Current\": \"20mA\",\n        \"Wavelength - Dominant\": \"590nm\",\n        \"Peak Wavelength\": \"590nm\",\n        \"Diode Configuration\": \"独立二极管\",\n        \"Lens Color\": \"无色透明透镜\",\n        \"Color Temperature\": \"-\",\n        \"Luminous Intensity\": \"120mcd\",\n        \"Viewing Angle\": \"120°\",\n        \"Mounting Style\": \"-\",\n        \"Operating Temperature\": \"-40℃~+85℃\",\n        \"Name\": \"APG1608SYKC/T\",\n        \"Description\": \"灯头类型:-;发光颜色:黄色;正向压降(Vf):2.05V;功率:75mW;正向电流:20mA;波长:590nm;二极管配置:独立二极管;透镜颜色:无色透明透镜;色温:-;发光强度:120mcd;发光角度:120°;载带方式:-;工作温度:-40℃~+85℃;\",\n        \"Unique ID\": \"D3\",\n        \"Reuse Block\": \"\",\n        \"Group ID\": \"\",\n        \"Channel ID\": \"\",\n        \"Population\": \"Fit\",\n        \"PCB Side\": \"BOTTOM\",\n        \"DeviceName\": \"APG1608SYKC/T\",\n        \"FootprintName\": \"LED0603-RD\",\n        \"Device\": \"8e0ca6caf537fb29\",\n        \"PCB Layer\": \"BottomLayer\",\n        \"Convert to PCB\": \"yes\"\n      },\n      \"footprintAttrKeys\": [\n        \"Footprint\",\n        \"Designator\"\n      ],\n      \"pinInfoMap\": {\n        \"1\": {\n          \"name\": \"\",\n          \"number\": \"1\",\n          \"net\": \"GND\",\n          \"pinClass\": \"\",\n          \"pinDifferentialPairClass\": \"\"\n        },\n        \"2\": {\n          \"name\": \"\",\n          \"number\": \"2\",\n          \"net\": \"LED3_A\",\n          \"pinClass\": \"\",\n          \"pinDifferentialPairClass\": \"\"\n        }\n      },\n      \"altLibs\": {}\n    },\n    \"R4\": {\n      \"props\": {\n        \"Footprint\": \"48e0f0c6de0d83c9\",\n        \"Designator\": \"R4\",\n        \"LCSC Part Name\": \"厚膜电阻 2.2kΩ ±1% 100mW\",\n        \"Supplier Part\": \"C114662\",\n        \"Manufacturer\": \"YAGEO(国巨)\",\n        \"Manufacturer Part\": \"RC0603FR-072K2L\",\n        \"Supplier Footprint\": \"0603\",\n        \"JLCPCB Part Class\": \"Extended Part\",\n        \"Datasheet\": \"https://item.szlcsc.com/datasheet/RC0603FR-072K2L/115906.html\",\n        \"Supplier\": \"LCSC\",\n        \"Add into BOM\": \"yes\",\n        \"3D Model\": \"fc143cca1e79419f9cd78b61e9279f08|0819f05c4eef4c71ace90d822a990e87\",\n        \"3D Model Title\": \"R0603\",\n        \"3D Model Transform\": \"31.8897,63.7794,0,90,0,0,0,0,0\",\n        \"Type\": \"厚膜电阻\",\n        \"Value\": \"2.2kΩ\",\n        \"Tolerance\": \"±1%\",\n        \"Power(Watts)\": \"100mW\",\n        \"Voltage-Supply(Max)\": \"75V\",\n        \"Temperature Coefficient\": \"±100ppm/℃\",\n        \"Operating Temperature\": \"-55℃~+155℃\",\n        \"Name\": \"RC0603FR-072K2L\",\n        \"Description\": \"电阻类型:厚膜电阻;阻值:2.2kΩ;精度:±1%;功率:100mW;工作电压:75V;温度系数:±100ppm/℃;\",\n        \"Unique ID\": \"R4\",\n        \"Reuse Block\": \"\",\n        \"Group ID\": \"\",\n        \"Channel ID\": \"\",\n        \"Population\": \"Fit\",\n        \"PCB Side\": \"BOTTOM\",\n        \"DeviceName\": \"RC0603FR-072K2L\",\n        \"FootprintName\": \"R0603\",\n        \"Device\": \"1f7a2dba9531bc30\",\n        \"PCB Layer\": \"BottomLayer\",\n        \"Convert to PCB\": \"yes\"\n      },\n      \"footprintAttrKeys\": [\n        \"Footprint\",\n        \"Designator\"\n      ],\n      \"pinInfoMap\": {\n        \"1\": {\n          \"name\": \"\",\n          \"number\": \"1\",\n          \"net\": \"VOUT\",\n          \"pinClass\": \"\",\n          \"pinDifferentialPairClass\": \"\"\n        },\n        \"2\": {\n          \"name\": \"\",\n          \"number\": \"2\",\n          \"net\": \"LED4_A\",\n          \"pinClass\": \"\",\n          \"pinDifferentialPairClass\": \"\"\n        }\n      },\n      \"altLibs\": {}\n    },\n    \"D4\": {\n      \"props\": {\n        \"Footprint\": \"1cf34bdc23243a80\",\n        \"Designator\": \"D4\",\n        \"LCSC Part Name\": \"1.6x0.8x0.25 mm 贴片式芯片LED灯\",\n        \"Supplier Part\": \"C5875720\",\n        \"Manufacturer\": \"Kingbright(今台)\",\n        \"Manufacturer Part\": \"APG1608SYKC/T\",\n        \"Supplier Footprint\": \"0603\",\n        \"JLCPCB Part Class\": \"Extended Part\",\n        \"Datasheet\": \"https://item.szlcsc.com/datasheet/APG1608SYKC%252FT/6809602.html\",\n        \"Supplier\": \"LCSC\",\n        \"Add into BOM\": \"yes\",\n        \"3D Model\": \"1f0d29a91be547639d425604e9b96ebb|0819f05c4eef4c71ace90d822a990e87\",\n        \"3D Model Title\": \"LED0603-RD\",\n        \"3D Model Transform\": \"63.7794,32.283,0,0,0,0,0,0,0\",\n        \"Lamp Holder Type\": \"-\",\n        \"Illumination Color\": \"黄色\",\n        \"Voltage - Forward(Vf)\": \"2.05V\",\n        \"Power(Watts)\": \"75mW\",\n        \"Forward Current\": \"20mA\",\n        \"Wavelength - Dominant\": \"590nm\",\n        \"Peak Wavelength\": \"590nm\",\n        \"Diode Configuration\": \"独立二极管\",\n        \"Lens Color\": \"无色透明透镜\",\n        \"Color Temperature\": \"-\",\n        \"Luminous Intensity\": \"120mcd\",\n        \"Viewing Angle\": \"120°\",\n        \"Mounting Style\": \"-\",\n        \"Operating Temperature\": \"-40℃~+85℃\",\n        \"Name\": \"APG1608SYKC/T\",\n        \"Description\": \"灯头类型:-;发光颜色:黄色;正向压降(Vf):2.05V;功率:75mW;正向电流:20mA;波长:590nm;二极管配置:独立二极管;透镜颜色:无色透明透镜;色温:-;发光强度:120mcd;发光角度:120°;载带方式:-;工作温度:-40℃~+85℃;\",\n        \"Unique ID\": \"D4\",\n        \"Reuse Block\": \"\",\n        \"Group ID\": \"\",\n        \"Channel ID\": \"\",\n        \"Population\": \"Fit\",\n        \"PCB Side\": \"BOTTOM\",\n        \"DeviceName\": \"APG1608SYKC/T\",\n        \"FootprintName\": \"LED0603-RD\",\n        \"Device\": \"8e0ca6caf537fb29\",\n        \"PCB Layer\": \"BottomLayer\",\n        \"Convert to PCB\": \"yes\"\n      },\n      \"footprintAttrKeys\": [\n        \"Footprint\",\n        \"Designator\"\n      ],\n      \"pinInfoMap\": {\n        \"1\": {\n          \"name\": \"\",\n          \"number\": \"1\",\n          \"net\": \"GND\",\n          \"pinClass\": \"\",\n          \"pinDifferentialPairClass\": \"\"\n        },\n        \"2\": {\n          \"name\": \"\",\n          \"number\": \"2\",\n          \"net\": \"LED4_A\",\n          \"pinClass\": \"\",\n          \"pinDifferentialPairClass\": \"\"\n        }\n      },\n      \"altLibs\": {}\n    }\n  },\n  \"designRule\": {\n    \"trackPhysics\": {\n      \"copperThickness1oz\": {\n        \"name\": \"copperThickness1oz\",\n        \"isDefault\": true,\n        \"unit\": \"mm\",\n        \"strokeValue\": {\n          \"1\": {\n            \"default\": 0.254,\n            \"min\": 0.127,\n            \"max\": 2.54\n          }\n        }\n      },\n      \"copperThickness2oz\": {\n        \"name\": \"copperThickness2oz\",\n        \"isDefault\": false,\n        \"unit\": \"mm\",\n        \"strokeValue\": {\n          \"1\": {\n            \"default\": 0.254,\n            \"min\": 0.20299934,\n            \"max\": 2.54\n          }\n        }\n      }\n    },\n    \"netRule\": {\n      \"ANT_LB\": {\n        \"net\": \"ANT_LB\",\n        \"ruleMap\": {\n          \"TrackPhysics\": \"\"\n        }\n      },\n      \"VOUT\": {\n        \"net\": \"VOUT\",\n        \"ruleMap\": {\n          \"TrackPhysics\": \"\"\n        }\n      },\n      \"SDA\": {\n        \"net\": \"SDA\",\n        \"ruleMap\": {\n          \"TrackPhysics\": \"\"\n        }\n      },\n      \"FD\": {\n        \"net\": \"FD\",\n        \"ruleMap\": {\n          \"TrackPhysics\": \"\"\n        }\n      },\n      \"SCL\": {\n        \"net\": \"SCL\",\n        \"ruleMap\": {\n          \"TrackPhysics\": \"\"\n        }\n      },\n      \"GND\": {\n        \"net\": \"GND\",\n        \"ruleMap\": {\n          \"TrackPhysics\": \"\"\n        }\n      },\n      \"ANT_LA\": {\n        \"net\": \"ANT_LA\",\n        \"ruleMap\": {\n          \"TrackPhysics\": \"\"\n        }\n      },\n      \"LED1_A\": {\n        \"net\": \"LED1_A\",\n        \"ruleMap\": {\n          \"TrackPhysics\": \"\"\n        }\n      },\n      \"LED2_A\": {\n        \"net\": \"LED2_A\",\n        \"ruleMap\": {\n          \"TrackPhysics\": \"\"\n        }\n      },\n      \"LED3_A\": {\n        \"net\": \"LED3_A\",\n        \"ruleMap\": {\n          \"TrackPhysics\": \"\"\n        }\n      },\n      \"LED4_A\": {\n        \"net\": \"LED4_A\",\n        \"ruleMap\": {\n          \"TrackPhysics\": \"\"\n        }\n      }\n    }\n  },\n  \"netClass\": {},\n  \"equalLengthNetGroup\": {},\n  \"differentialPair\": {},\n  \"differentialPairGroups\": {}\n}"
+  ]
+}

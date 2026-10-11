@@ -1,0 +1,1075 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-10-11T07:08:21+00:00",
+  "scope": "read-only audit of saved native source snapshots, source geometry and cover PNG hashes; no live project access",
+  "leo": {
+    "status": "pass",
+    "panel_source": "variants\\common\\eda\\native\\snake-leo-panel-source.jsonl",
+    "panel_source_sha256": "d6e85a82e2ade982b874b363b3eb75a2c96ceb873fdcb4b4cf38afaf07a8d46b",
+    "geometry_sha256": "341a0a0c643e3ce31f24800456e8682798f96e7560482f37f41c94f673fd9759",
+    "integration_map_sha256": "54be846bdf3faf528c7be85790c33342d4c01d9577e920e584dbb4a826869f8f",
+    "native_orientation_transform": "x_mil=(79.5+localX_mm)/0.0254; y_mil=(23.5-localY_mm)/0.0254",
+    "native_stars": {
+      "expected": 9,
+      "matched": 9,
+      "all_0_8mm_round_npth": true,
+      "checks": [
+        {
+          "hip": 47908,
+          "native_id": "be610972dde02ae1",
+          "native_pad_num": "LEO_HIP_47908",
+          "present": true,
+          "native_center_mil": [
+            3671.2598,
+            1106.8863
+          ],
+          "center_error_mm": 1e-06,
+          "hole_type": "ROUND",
+          "diameter_mm": 0.800001,
+          "height_mm": 0.800001,
+          "plated": false,
+          "center_pass": true,
+          "round_0_8mm_npth_pass": true
+        },
+        {
+          "hip": 48455,
+          "native_id": "f86e987315e1a367",
+          "native_pad_num": "LEO_HIP_48455",
+          "present": true,
+          "native_center_mil": [
+            3607.6634,
+            1184.5116
+          ],
+          "center_error_mm": 1e-06,
+          "hole_type": "ROUND",
+          "diameter_mm": 0.800001,
+          "height_mm": 0.800001,
+          "plated": false,
+          "center_pass": true,
+          "round_0_8mm_npth_pass": true
+        },
+        {
+          "hip": 49583,
+          "native_id": "375317216eceb2b8",
+          "native_pad_num": "LEO_HIP_49583",
+          "present": true,
+          "native_center_mil": [
+            3499.3307,
+            841.2298
+          ],
+          "center_error_mm": 1e-06,
+          "hole_type": "ROUND",
+          "diameter_mm": 0.800001,
+          "height_mm": 0.800001,
+          "plated": false,
+          "center_pass": true,
+          "round_0_8mm_npth_pass": true
+        },
+        {
+          "hip": 49669,
+          "native_id": "9f5e3aa81b56651a",
+          "native_pad_num": "LEO_HIP_49669",
+          "present": true,
+          "native_center_mil": [
+            3496.3885,
+            665.8821
+          ],
+          "center_error_mm": 1e-06,
+          "hole_type": "ROUND",
+          "diameter_mm": 0.800001,
+          "height_mm": 0.800001,
+          "plated": false,
+          "center_pass": true,
+          "round_0_8mm_npth_pass": true
+        },
+        {
+          "hip": 50335,
+          "native_id": "1895c77ecf4cac09",
+          "native_pad_num": "LEO_HIP_50335",
+          "present": true,
+          "native_center_mil": [
+            3412.4513,
+            1079.6746
+          ],
+          "center_error_mm": 1e-06,
+          "hole_type": "ROUND",
+          "diameter_mm": 0.800001,
+          "height_mm": 0.800001,
+          "plated": false,
+          "center_pass": true,
+          "round_0_8mm_npth_pass": true
+        },
+        {
+          "hip": 50583,
+          "native_id": "234101bbe64294a9",
+          "native_pad_num": "LEO_HIP_50583",
+          "present": true,
+          "native_center_mil": [
+            3387.5375,
+            949.7872
+          ],
+          "center_error_mm": 1e-06,
+          "hole_type": "ROUND",
+          "diameter_mm": 0.800001,
+          "height_mm": 0.800001,
+          "plated": false,
+          "center_pass": true,
+          "round_0_8mm_npth_pass": true
+        },
+        {
+          "hip": 54872,
+          "native_id": "b14cccb8833a2b0e",
+          "native_pad_num": "LEO_HIP_54872",
+          "present": true,
+          "native_center_mil": [
+            2926.9477,
+            984.7224
+          ],
+          "center_error_mm": 1e-06,
+          "hole_type": "ROUND",
+          "diameter_mm": 0.800001,
+          "height_mm": 0.800001,
+          "plated": false,
+          "center_pass": true,
+          "round_0_8mm_npth_pass": true
+        },
+        {
+          "hip": 54879,
+          "native_id": "3a74dd41d393fba8",
+          "native_pad_num": "LEO_HIP_54879",
+          "present": true,
+          "native_center_mil": [
+            2914.3683,
+            798.5372
+          ],
+          "center_error_mm": 1e-06,
+          "hole_type": "ROUND",
+          "diameter_mm": 0.800001,
+          "height_mm": 0.800001,
+          "plated": false,
+          "center_pass": true,
+          "round_0_8mm_npth_pass": true
+        },
+        {
+          "hip": 57632,
+          "native_id": "81ed47ff5b62e983",
+          "native_pad_num": "LEO_HIP_57632",
+          "present": true,
+          "native_center_mil": [
+            2588.5827,
+            788.0217
+          ],
+          "center_error_mm": 1e-06,
+          "hole_type": "ROUND",
+          "diameter_mm": 0.800001,
+          "height_mm": 0.800001,
+          "plated": false,
+          "center_pass": true,
+          "round_0_8mm_npth_pass": true
+        }
+      ]
+    },
+    "native_slots": {
+      "expected": 8,
+      "matched": 8,
+      "polygon_hausdorff_tolerance_mm": 0.01,
+      "checks": [
+        {
+          "source_slot_id": "leo_01",
+          "native_id": "056121b4ddc969b0",
+          "present": true,
+          "native_path_closed": true,
+          "native_path_points": 130,
+          "nominal_slot_width_mm": 1.0,
+          "native_polygon_object_width_mm": 0.1,
+          "expected_polygon_area_mm2": 2.985505,
+          "native_polygon_area_mm2": 2.985506,
+          "polygon_hausdorff_error_mm": 1e-06,
+          "polygon_match_pass": true
+        },
+        {
+          "source_slot_id": "leo_02",
+          "native_id": "cb1c64645ea67249",
+          "present": true,
+          "native_path_closed": true,
+          "native_path_points": 130,
+          "nominal_slot_width_mm": 1.0,
+          "native_polygon_object_width_mm": 0.1,
+          "expected_polygon_area_mm2": 12.087519,
+          "native_polygon_area_mm2": 12.08753,
+          "polygon_hausdorff_error_mm": 2e-06,
+          "polygon_match_pass": true
+        },
+        {
+          "source_slot_id": "leo_03",
+          "native_id": "05d8f3fb5e34e5f6",
+          "present": true,
+          "native_path_closed": true,
+          "native_path_points": 130,
+          "nominal_slot_width_mm": 1.0,
+          "native_polygon_object_width_mm": 0.1,
+          "expected_polygon_area_mm2": 1.379542,
+          "native_polygon_area_mm2": 1.379543,
+          "polygon_hausdorff_error_mm": 2e-06,
+          "polygon_match_pass": true
+        },
+        {
+          "source_slot_id": "leo_04",
+          "native_id": "5722ed790258908e",
+          "present": true,
+          "native_path_closed": true,
+          "native_path_points": 130,
+          "nominal_slot_width_mm": 1.0,
+          "native_polygon_object_width_mm": 0.1,
+          "expected_polygon_area_mm2": 0.883117,
+          "native_polygon_area_mm2": 0.883117,
+          "polygon_hausdorff_error_mm": 2e-06,
+          "polygon_match_pass": true
+        },
+        {
+          "source_slot_id": "leo_05",
+          "native_id": "c6aa636386e15c54",
+          "present": true,
+          "native_path_closed": true,
+          "native_path_points": 130,
+          "nominal_slot_width_mm": 1.0,
+          "native_polygon_object_width_mm": 0.1,
+          "expected_polygon_area_mm2": 8.42439,
+          "native_polygon_area_mm2": 8.424387,
+          "polygon_hausdorff_error_mm": 2e-06,
+          "polygon_match_pass": true
+        },
+        {
+          "source_slot_id": "leo_06",
+          "native_id": "1b063adffa8503ce",
+          "present": true,
+          "native_path_closed": true,
+          "native_path_points": 130,
+          "nominal_slot_width_mm": 1.0,
+          "native_polygon_object_width_mm": 0.1,
+          "expected_polygon_area_mm2": 4.414136,
+          "native_polygon_area_mm2": 4.414135,
+          "polygon_hausdorff_error_mm": 2e-06,
+          "polygon_match_pass": true
+        },
+        {
+          "source_slot_id": "leo_08",
+          "native_id": "fbdb6c38b5872f99",
+          "present": true,
+          "native_path_closed": true,
+          "native_path_points": 130,
+          "nominal_slot_width_mm": 1.0,
+          "native_polygon_object_width_mm": 0.1,
+          "expected_polygon_area_mm2": 2.553265,
+          "native_polygon_area_mm2": 2.553265,
+          "polygon_hausdorff_error_mm": 2e-06,
+          "polygon_match_pass": true
+        },
+        {
+          "source_slot_id": "leo_10",
+          "native_id": "e15c62c7fd0dc675",
+          "present": true,
+          "native_path_closed": true,
+          "native_path_points": 130,
+          "nominal_slot_width_mm": 1.0,
+          "native_polygon_object_width_mm": 0.1,
+          "expected_polygon_area_mm2": 1.431693,
+          "native_polygon_area_mm2": 1.431693,
+          "polygon_hausdorff_error_mm": 2e-06,
+          "polygon_match_pass": true
+        }
+      ]
+    },
+    "logical_constellation_edges": 10,
+    "print_only_edges_without_physical_slot": [
+      {
+        "edge_index": 8,
+        "hip_a": 48455,
+        "hip_b": 47908
+      },
+      {
+        "edge_index": 6,
+        "hip_a": 50583,
+        "hip_b": 50335
+      }
+    ],
+    "native_mechanical_web": {
+      "minimum_clear_material_web_mm": 1.029999,
+      "limiting_apertures": [
+        "leo_01",
+        "leo_06"
+      ],
+      "minimum_web_acceptance_mm": 1.0,
+      "minimum_web_pass": true,
+      "apertures_used": 17
+    }
+  },
+  "horse_sagittarius": {
+    "status": "pass",
+    "board_id": "sagittarius5",
+    "panel_source": "variants\\common\\eda\\native\\horse-sagittarius-panel-source.jsonl",
+    "panel_source_sha256": "5525624ce2b736479eb3415070be41d30127be6bcc96b43537090b1ce85dbf59",
+    "design_sha256": "3c677d826508b96cc74d04c815f9a35a69bd39f6a7b3d6d455734b9061138391",
+    "native_coordinates_to_design": "source x_mm unchanged; source y_mm reflects to design y_down as 100-sourceY_mm",
+    "native_stars": {
+      "expected": 8,
+      "matched": 8,
+      "all_0_8mm_round_npth": true,
+      "checks": [
+        {
+          "id": "HIP_92855",
+          "present": true,
+          "native_id": "16993e4db105348b",
+          "native_pad_num": "HIP_92855",
+          "center_error_mm": 2e-06,
+          "diameter_mm": 0.800001,
+          "height_mm": 0.800001,
+          "hole_type": "ROUND",
+          "plated": false,
+          "center_pass": true,
+          "round_0_8mm_npth_pass": true
+        },
+        {
+          "id": "HIP_92041",
+          "present": true,
+          "native_id": "e4b07a3200ce31b1",
+          "native_pad_num": "HIP_92041",
+          "center_error_mm": 1e-06,
+          "diameter_mm": 0.800001,
+          "height_mm": 0.800001,
+          "hole_type": "ROUND",
+          "plated": false,
+          "center_pass": true,
+          "round_0_8mm_npth_pass": true
+        },
+        {
+          "id": "HIP_90496",
+          "present": true,
+          "native_id": "5e139d9341c12562",
+          "native_pad_num": "HIP_90496",
+          "center_error_mm": 1e-06,
+          "diameter_mm": 0.800001,
+          "height_mm": 0.800001,
+          "hole_type": "ROUND",
+          "plated": false,
+          "center_pass": true,
+          "round_0_8mm_npth_pass": true
+        },
+        {
+          "id": "HIP_89931",
+          "present": true,
+          "native_id": "583811ee086ee364",
+          "native_pad_num": "HIP_89931",
+          "center_error_mm": 2e-06,
+          "diameter_mm": 0.800001,
+          "height_mm": 0.800001,
+          "hole_type": "ROUND",
+          "plated": false,
+          "center_pass": true,
+          "round_0_8mm_npth_pass": true
+        },
+        {
+          "id": "HIP_88635",
+          "present": true,
+          "native_id": "6e51954ba44e1a67",
+          "native_pad_num": "HIP_88635",
+          "center_error_mm": 1e-06,
+          "diameter_mm": 0.800001,
+          "height_mm": 0.800001,
+          "hole_type": "ROUND",
+          "plated": false,
+          "center_pass": true,
+          "round_0_8mm_npth_pass": true
+        },
+        {
+          "id": "HIP_90185",
+          "present": true,
+          "native_id": "f99dd21c5c52818b",
+          "native_pad_num": "HIP_90185",
+          "center_error_mm": 1e-06,
+          "diameter_mm": 0.800001,
+          "height_mm": 0.800001,
+          "hole_type": "ROUND",
+          "plated": false,
+          "center_pass": true,
+          "round_0_8mm_npth_pass": true
+        },
+        {
+          "id": "HIP_93506",
+          "present": true,
+          "native_id": "dd15f875a51c441c",
+          "native_pad_num": "HIP_93506",
+          "center_error_mm": 1e-06,
+          "diameter_mm": 0.800001,
+          "height_mm": 0.800001,
+          "hole_type": "ROUND",
+          "plated": false,
+          "center_pass": true,
+          "round_0_8mm_npth_pass": true
+        },
+        {
+          "id": "HIP_93864",
+          "present": true,
+          "native_id": "4948ab040b66a5ef",
+          "native_pad_num": "HIP_93864",
+          "center_error_mm": 1e-06,
+          "diameter_mm": 0.800001,
+          "height_mm": 0.800001,
+          "hole_type": "ROUND",
+          "plated": false,
+          "center_pass": true,
+          "round_0_8mm_npth_pass": true
+        }
+      ]
+    },
+    "native_slots": {
+      "expected": 11,
+      "matched": 11,
+      "candidate_layer_11_polygons": 22,
+      "polygon_hausdorff_tolerance_mm": 0.01,
+      "checks": [
+        {
+          "source_slot_id": "e01",
+          "native_id": "a83e22ddb928ccf9",
+          "hausdorff_error_mm": 0.0024088827438388076,
+          "area_difference_mm2": 0.021945,
+          "expected_area_mm2": 5.657684728583048,
+          "native_area_mm2": 5.635739963600714,
+          "present": true,
+          "polygon_hausdorff_error_mm": 0.002409,
+          "polygon_match_pass": true,
+          "nominal_slot_width_mm": 1.0
+        },
+        {
+          "source_slot_id": "e03",
+          "native_id": "9adb8044ac0aad90",
+          "hausdorff_error_mm": 0.0024089176846722655,
+          "area_difference_mm2": 0.0107,
+          "expected_area_mm2": 7.677864457707479,
+          "native_area_mm2": 7.667164839729936,
+          "present": true,
+          "polygon_hausdorff_error_mm": 0.002409,
+          "polygon_match_pass": true,
+          "nominal_slot_width_mm": 1.0
+        },
+        {
+          "source_slot_id": "e05",
+          "native_id": "e1d75302a13f58df",
+          "hausdorff_error_mm": 0.0024088245890085927,
+          "area_difference_mm2": 0.007612,
+          "expected_area_mm2": 3.664410729943495,
+          "native_area_mm2": 3.656799126209741,
+          "present": true,
+          "polygon_hausdorff_error_mm": 0.002409,
+          "polygon_match_pass": true,
+          "nominal_slot_width_mm": 1.0
+        },
+        {
+          "source_slot_id": "e06",
+          "native_id": "edc7184636daca02",
+          "hausdorff_error_mm": 0.002408673194875806,
+          "area_difference_mm2": 0.021902,
+          "expected_area_mm2": 5.644919380662964,
+          "native_area_mm2": 5.623016907879158,
+          "present": true,
+          "polygon_hausdorff_error_mm": 0.002409,
+          "polygon_match_pass": true,
+          "nominal_slot_width_mm": 1.0
+        },
+        {
+          "source_slot_id": "e07",
+          "native_id": "15b8197e320259e4",
+          "hausdorff_error_mm": 0.0024090884800367055,
+          "area_difference_mm2": 0.018399,
+          "expected_area_mm2": 16.2206449294235,
+          "native_area_mm2": 16.20224597297549,
+          "present": true,
+          "polygon_hausdorff_error_mm": 0.002409,
+          "polygon_match_pass": true,
+          "nominal_slot_width_mm": 1.0
+        },
+        {
+          "source_slot_id": "e08",
+          "native_id": "e0dff31ba0707afe",
+          "hausdorff_error_mm": 0.0024088248960469467,
+          "area_difference_mm2": 0.022116,
+          "expected_area_mm2": 7.342450796811011,
+          "native_area_mm2": 7.320335120361814,
+          "present": true,
+          "polygon_hausdorff_error_mm": 0.002409,
+          "polygon_match_pass": true,
+          "nominal_slot_width_mm": 1.0
+        },
+        {
+          "source_slot_id": "e09",
+          "native_id": "f12af8039d05933c",
+          "hausdorff_error_mm": 0.0024082705718692704,
+          "area_difference_mm2": 0.011135,
+          "expected_area_mm2": 8.164687851669935,
+          "native_area_mm2": 8.153552506859137,
+          "present": true,
+          "polygon_hausdorff_error_mm": 0.002408,
+          "polygon_match_pass": true,
+          "nominal_slot_width_mm": 1.0
+        },
+        {
+          "source_slot_id": "e10",
+          "native_id": "24a015efa25c7b53",
+          "hausdorff_error_mm": 0.0024086388067301534,
+          "area_difference_mm2": 0.021079,
+          "expected_area_mm2": 5.417139701782977,
+          "native_area_mm2": 5.396061097475585,
+          "present": true,
+          "polygon_hausdorff_error_mm": 0.002409,
+          "polygon_match_pass": true,
+          "nominal_slot_width_mm": 1.0
+        },
+        {
+          "source_slot_id": "e12",
+          "native_id": "d63c39e618628033",
+          "hausdorff_error_mm": 0.0024083001991441868,
+          "area_difference_mm2": 0.003568,
+          "expected_area_mm2": 1.3598039660300016,
+          "native_area_mm2": 1.3562361385868102,
+          "present": true,
+          "polygon_hausdorff_error_mm": 0.002408,
+          "polygon_match_pass": true,
+          "nominal_slot_width_mm": 1.0
+        },
+        {
+          "source_slot_id": "e13",
+          "native_id": "24f4eea90e87064d",
+          "hausdorff_error_mm": 0.002408190029222219,
+          "area_difference_mm2": 0.007937,
+          "expected_area_mm2": 3.935533933775517,
+          "native_area_mm2": 3.9275965264750883,
+          "present": true,
+          "polygon_hausdorff_error_mm": 0.002408,
+          "polygon_match_pass": true,
+          "nominal_slot_width_mm": 1.0
+        },
+        {
+          "source_slot_id": "e14",
+          "native_id": "0517a2bec13e5d1c",
+          "hausdorff_error_mm": 0.00240884998387494,
+          "area_difference_mm2": 0.003485,
+          "expected_area_mm2": 1.2739405209540031,
+          "native_area_mm2": 1.2704559493765653,
+          "present": true,
+          "polygon_hausdorff_error_mm": 0.002409,
+          "polygon_match_pass": true,
+          "nominal_slot_width_mm": 1.0
+        }
+      ]
+    },
+    "native_mechanical_web": {
+      "minimum_clear_material_web_mm": 1.030699,
+      "limiting_apertures": [
+        "e01",
+        "e09"
+      ],
+      "minimum_web_acceptance_mm": 1.0,
+      "minimum_web_pass": true,
+      "apertures_used": 19
+    }
+  },
+  "gerber_exports": {
+    "snake_leo": {
+      "status": "pass",
+      "gerber_zip": "variants\\snake-leo\\manufacturing-draft\\snake-leo-gerber.zip",
+      "gerber_zip_sha256": "1987f574d939873bb1bba6ff89c5865a6cbc59bfddc9a77e4f2f6c8c1a5280ff",
+      "npth_member_sha256": "eccaba91ef0b39ce4b2389626ece4e79fe793aa6144eea2ce6f11cadfff61bc3",
+      "gko_member_sha256": "a42dfa7156e6e914a2ce0d01de87ff654fc92fad2eed23c03a3e75cb22c88a5f",
+      "npth_tool_diameters_mm": {
+        "01": 0.599999,
+        "02": 0.800001
+      },
+      "npth_0_8mm_holes": {
+        "expected": 9,
+        "candidate_count": 9,
+        "matched": 9,
+        "checks": [
+          {
+            "id": "HIP_47908",
+            "present": true,
+            "tool": "02",
+            "diameter_mm": 0.800001,
+            "center_error_mm": 1e-06,
+            "center_pass": true,
+            "diameter_pass": true
+          },
+          {
+            "id": "HIP_48455",
+            "present": true,
+            "tool": "02",
+            "diameter_mm": 0.800001,
+            "center_error_mm": 1e-06,
+            "center_pass": true,
+            "diameter_pass": true
+          },
+          {
+            "id": "HIP_49583",
+            "present": true,
+            "tool": "02",
+            "diameter_mm": 0.800001,
+            "center_error_mm": 1e-06,
+            "center_pass": true,
+            "diameter_pass": true
+          },
+          {
+            "id": "HIP_49669",
+            "present": true,
+            "tool": "02",
+            "diameter_mm": 0.800001,
+            "center_error_mm": 1e-06,
+            "center_pass": true,
+            "diameter_pass": true
+          },
+          {
+            "id": "HIP_50335",
+            "present": true,
+            "tool": "02",
+            "diameter_mm": 0.800001,
+            "center_error_mm": 1e-06,
+            "center_pass": true,
+            "diameter_pass": true
+          },
+          {
+            "id": "HIP_50583",
+            "present": true,
+            "tool": "02",
+            "diameter_mm": 0.800001,
+            "center_error_mm": 1e-06,
+            "center_pass": true,
+            "diameter_pass": true
+          },
+          {
+            "id": "HIP_54872",
+            "present": true,
+            "tool": "02",
+            "diameter_mm": 0.800001,
+            "center_error_mm": 1e-06,
+            "center_pass": true,
+            "diameter_pass": true
+          },
+          {
+            "id": "HIP_54879",
+            "present": true,
+            "tool": "02",
+            "diameter_mm": 0.800001,
+            "center_error_mm": 1e-06,
+            "center_pass": true,
+            "diameter_pass": true
+          },
+          {
+            "id": "HIP_57632",
+            "present": true,
+            "tool": "02",
+            "diameter_mm": 0.800001,
+            "center_error_mm": 1e-06,
+            "center_pass": true,
+            "diameter_pass": true
+          }
+        ]
+      },
+      "gko_cutout_routes": {
+        "expected": 8,
+        "candidate_closed_polygons": 19,
+        "matched": 8,
+        "checks": [
+          {
+            "id": "leo_01",
+            "present": true,
+            "gko_path_index": 11,
+            "polygon_hausdorff_error_mm": 2e-06,
+            "polygon_area_difference_mm2": 1e-06,
+            "polygon_match_pass": true
+          },
+          {
+            "id": "leo_02",
+            "present": true,
+            "gko_path_index": 12,
+            "polygon_hausdorff_error_mm": 2e-06,
+            "polygon_area_difference_mm2": 1.4e-05,
+            "polygon_match_pass": true
+          },
+          {
+            "id": "leo_03",
+            "present": true,
+            "gko_path_index": 13,
+            "polygon_hausdorff_error_mm": 2e-06,
+            "polygon_area_difference_mm2": 0.0,
+            "polygon_match_pass": true
+          },
+          {
+            "id": "leo_04",
+            "present": true,
+            "gko_path_index": 14,
+            "polygon_hausdorff_error_mm": 2e-06,
+            "polygon_area_difference_mm2": 0.0,
+            "polygon_match_pass": true
+          },
+          {
+            "id": "leo_05",
+            "present": true,
+            "gko_path_index": 15,
+            "polygon_hausdorff_error_mm": 2e-06,
+            "polygon_area_difference_mm2": 2e-06,
+            "polygon_match_pass": true
+          },
+          {
+            "id": "leo_06",
+            "present": true,
+            "gko_path_index": 16,
+            "polygon_hausdorff_error_mm": 2e-06,
+            "polygon_area_difference_mm2": 0.0,
+            "polygon_match_pass": true
+          },
+          {
+            "id": "leo_08",
+            "present": true,
+            "gko_path_index": 17,
+            "polygon_hausdorff_error_mm": 2e-06,
+            "polygon_area_difference_mm2": 0.0,
+            "polygon_match_pass": true
+          },
+          {
+            "id": "leo_10",
+            "present": true,
+            "gko_path_index": 18,
+            "polygon_hausdorff_error_mm": 2e-06,
+            "polygon_area_difference_mm2": 1e-06,
+            "polygon_match_pass": true
+          }
+        ]
+      },
+      "exported_geometry_material_web": {
+        "minimum_clear_material_web_mm": 1.029998,
+        "limiting_apertures": [
+          "HIP_50583",
+          "leo_05"
+        ],
+        "minimum_web_acceptance_mm": 1.0,
+        "minimum_web_pass": true,
+        "apertures_used": 17
+      },
+      "scope_note": "Matches NPTH drill coordinates and closed GKO route contours to intended face apertures; does not infer additional CAM/manufacturing properties."
+    },
+    "horse_sagittarius": {
+      "status": "pass",
+      "gerber_zip": "variants\\horse-sagittarius\\manufacturing-draft\\horse-sagittarius-gerber.zip",
+      "gerber_zip_sha256": "b7d3629ddca2949aa222eabb1e1121f711276ffb4e440ab8dac1a515b66e6e13",
+      "npth_member_sha256": "b31a277d579cf64aad25f3afecb15856aab288d9eeb18135b8ecd52e68064a6d",
+      "gko_member_sha256": "b23262b41e8c7fca4184f6fd264acf81ca4e6e3f204e94a860497036195161a0",
+      "npth_tool_diameters_mm": {
+        "01": 0.599999,
+        "02": 0.800001
+      },
+      "npth_0_8mm_holes": {
+        "expected": 8,
+        "candidate_count": 8,
+        "matched": 8,
+        "checks": [
+          {
+            "id": "HIP_92855",
+            "present": true,
+            "tool": "02",
+            "diameter_mm": 0.800001,
+            "center_error_mm": 1e-06,
+            "center_pass": true,
+            "diameter_pass": true
+          },
+          {
+            "id": "HIP_92041",
+            "present": true,
+            "tool": "02",
+            "diameter_mm": 0.800001,
+            "center_error_mm": 1e-06,
+            "center_pass": true,
+            "diameter_pass": true
+          },
+          {
+            "id": "HIP_90496",
+            "present": true,
+            "tool": "02",
+            "diameter_mm": 0.800001,
+            "center_error_mm": 1e-06,
+            "center_pass": true,
+            "diameter_pass": true
+          },
+          {
+            "id": "HIP_89931",
+            "present": true,
+            "tool": "02",
+            "diameter_mm": 0.800001,
+            "center_error_mm": 1e-06,
+            "center_pass": true,
+            "diameter_pass": true
+          },
+          {
+            "id": "HIP_88635",
+            "present": true,
+            "tool": "02",
+            "diameter_mm": 0.800001,
+            "center_error_mm": 1e-06,
+            "center_pass": true,
+            "diameter_pass": true
+          },
+          {
+            "id": "HIP_90185",
+            "present": true,
+            "tool": "02",
+            "diameter_mm": 0.800001,
+            "center_error_mm": 1e-06,
+            "center_pass": true,
+            "diameter_pass": true
+          },
+          {
+            "id": "HIP_93506",
+            "present": true,
+            "tool": "02",
+            "diameter_mm": 0.800001,
+            "center_error_mm": 1e-06,
+            "center_pass": true,
+            "diameter_pass": true
+          },
+          {
+            "id": "HIP_93864",
+            "present": true,
+            "tool": "02",
+            "diameter_mm": 0.800001,
+            "center_error_mm": 1e-06,
+            "center_pass": true,
+            "diameter_pass": true
+          }
+        ]
+      },
+      "gko_cutout_routes": {
+        "expected": 11,
+        "candidate_closed_polygons": 22,
+        "matched": 11,
+        "checks": [
+          {
+            "id": "e01",
+            "present": true,
+            "gko_path_index": 11,
+            "polygon_hausdorff_error_mm": 0.002409,
+            "polygon_area_difference_mm2": 0.021945,
+            "polygon_match_pass": true
+          },
+          {
+            "id": "e03",
+            "present": true,
+            "gko_path_index": 12,
+            "polygon_hausdorff_error_mm": 0.002409,
+            "polygon_area_difference_mm2": 0.010701,
+            "polygon_match_pass": true
+          },
+          {
+            "id": "e05",
+            "present": true,
+            "gko_path_index": 13,
+            "polygon_hausdorff_error_mm": 0.002409,
+            "polygon_area_difference_mm2": 0.007612,
+            "polygon_match_pass": true
+          },
+          {
+            "id": "e06",
+            "present": true,
+            "gko_path_index": 14,
+            "polygon_hausdorff_error_mm": 0.002409,
+            "polygon_area_difference_mm2": 0.021903,
+            "polygon_match_pass": true
+          },
+          {
+            "id": "e07",
+            "present": true,
+            "gko_path_index": 15,
+            "polygon_hausdorff_error_mm": 0.002409,
+            "polygon_area_difference_mm2": 0.018403,
+            "polygon_match_pass": true
+          },
+          {
+            "id": "e08",
+            "present": true,
+            "gko_path_index": 16,
+            "polygon_hausdorff_error_mm": 0.002409,
+            "polygon_area_difference_mm2": 0.022115,
+            "polygon_match_pass": true
+          },
+          {
+            "id": "e09",
+            "present": true,
+            "gko_path_index": 17,
+            "polygon_hausdorff_error_mm": 0.002408,
+            "polygon_area_difference_mm2": 0.011137,
+            "polygon_match_pass": true
+          },
+          {
+            "id": "e10",
+            "present": true,
+            "gko_path_index": 18,
+            "polygon_hausdorff_error_mm": 0.002409,
+            "polygon_area_difference_mm2": 0.021076,
+            "polygon_match_pass": true
+          },
+          {
+            "id": "e12",
+            "present": true,
+            "gko_path_index": 19,
+            "polygon_hausdorff_error_mm": 0.002408,
+            "polygon_area_difference_mm2": 0.003568,
+            "polygon_match_pass": true
+          },
+          {
+            "id": "e13",
+            "present": true,
+            "gko_path_index": 20,
+            "polygon_hausdorff_error_mm": 0.002408,
+            "polygon_area_difference_mm2": 0.007936,
+            "polygon_match_pass": true
+          },
+          {
+            "id": "e14",
+            "present": true,
+            "gko_path_index": 21,
+            "polygon_hausdorff_error_mm": 0.002409,
+            "polygon_area_difference_mm2": 0.003485,
+            "polygon_match_pass": true
+          }
+        ]
+      },
+      "exported_geometry_material_web": {
+        "minimum_clear_material_web_mm": 1.030017,
+        "limiting_apertures": [
+          "HIP_92855",
+          "e14"
+        ],
+        "minimum_web_acceptance_mm": 1.0,
+        "minimum_web_pass": true,
+        "apertures_used": 19
+      },
+      "scope_note": "Matches NPTH drill coordinates and closed GKO route contours to intended face apertures; does not infer additional CAM/manufacturing properties."
+    }
+  },
+  "cover_source_integrity": {
+    "status": "pass",
+    "original_art_inputs": [
+      {
+        "label": "snake",
+        "path": "artwork\\reference-collection\\talisman-single-ink-v1\\snake-single-ink.png",
+        "sha256": "45edc71977712929173bdae0f626a40364369b3582664eda9890f66b7ce6de8d",
+        "manifest_sha256": "45edc71977712929173bdae0f626a40364369b3582664eda9890f66b7ce6de8d",
+        "unchanged_from_artwork_manifest": true
+      },
+      {
+        "label": "horse",
+        "path": "artwork\\reference-collection\\talisman-single-ink-v1\\horse-single-ink.png",
+        "sha256": "c732fa1d57448ed367c3a7d841f3674c9f5a4565fe4e5d2999c4e43b0d17c728",
+        "manifest_sha256": "c732fa1d57448ed367c3a7d841f3674c9f5a4565fe4e5d2999c4e43b0d17c728",
+        "unchanged_from_artwork_manifest": true
+      },
+      {
+        "label": "Leo source SVG",
+        "path": "variants\\snake-leo\\leo-artwork.svg",
+        "sha256": "d43899004ab89a328d7e36d84f9fa30a4b0a660505af9cc60508bbeabfbe8c98",
+        "manifest_sha256": "d43899004ab89a328d7e36d84f9fa30a4b0a660505af9cc60508bbeabfbe8c98",
+        "unchanged_from_artwork_manifest": true
+      },
+      {
+        "label": "Sagittarius B source SVG",
+        "path": "artwork\\star-style-study-v1\\B-soft-type-day.svg",
+        "sha256": "b5a56fda278458f0e5ae6fa0d238b4afd6e26bf53a5fe5510a89afa7a5fbc127",
+        "manifest_sha256": "b5a56fda278458f0e5ae6fa0d238b4afd6e26bf53a5fe5510a89afa7a5fbc127",
+        "unchanged_from_artwork_manifest": true
+      }
+    ],
+    "four_cover_pngs": [
+      {
+        "variant": "snake_leo",
+        "file": "front-snake-37mm.png",
+        "sha256": "014a8183f046b3230f6e66f34af58a8b19c58ac91a72e271f86398462a68c4f9",
+        "manifest_sha256": "014a8183f046b3230f6e66f34af58a8b19c58ac91a72e271f86398462a68c4f9",
+        "unchanged_from_render_manifest": true
+      },
+      {
+        "variant": "snake_leo",
+        "file": "rear-leo-37mm.png",
+        "sha256": "e7ed3bea3f8248d5f5775a0d1607c49984a03965baf1d322a3f7a062cedfd2bf",
+        "manifest_sha256": "e7ed3bea3f8248d5f5775a0d1607c49984a03965baf1d322a3f7a062cedfd2bf",
+        "unchanged_from_render_manifest": true
+      },
+      {
+        "variant": "horse_sagittarius",
+        "file": "front-horse-37mm.png",
+        "sha256": "8f847c7cd56bfcf2c9826fce699cd0d193c609a723cf6503679b1c85415652db",
+        "manifest_sha256": "8f847c7cd56bfcf2c9826fce699cd0d193c609a723cf6503679b1c85415652db",
+        "unchanged_from_render_manifest": true
+      },
+      {
+        "variant": "horse_sagittarius",
+        "file": "rear-sagittarius-37mm.png",
+        "sha256": "c219434d807fc97dd32f869e9f0312eb3bdd2655b3abbfe84398700dec433245",
+        "manifest_sha256": "c219434d807fc97dd32f869e9f0312eb3bdd2655b3abbfe84398700dec433245",
+        "unchanged_from_render_manifest": true
+      }
+    ],
+    "native_cover_placements": [
+      {
+        "variant": "snake_leo",
+        "native_id": "68da0e6401829464",
+        "file": "front-snake-37mm.png",
+        "rotation_degrees": 0,
+        "mirror": false,
+        "native_blob_sha256": "7935a746fc5dcf074ef468666f220556cbb14b6469eccafaaeb90c38fc181672",
+        "import_input_sha256": "014a8183f046b3230f6e66f34af58a8b19c58ac91a72e271f86398462a68c4f9",
+        "matches_rendered_cover_png_sha256": true,
+        "unmirrored_zero_rotation": true
+      },
+      {
+        "variant": "snake_leo",
+        "native_id": "8e22f7bb33a389fa",
+        "file": "rear-leo-37mm.png",
+        "rotation_degrees": 0,
+        "mirror": false,
+        "native_blob_sha256": "424125c97b8bfc8cde3121382c52cc64bd0337f35e182c6f7f7efd1632ea895c",
+        "import_input_sha256": "e7ed3bea3f8248d5f5775a0d1607c49984a03965baf1d322a3f7a062cedfd2bf",
+        "matches_rendered_cover_png_sha256": true,
+        "unmirrored_zero_rotation": true
+      },
+      {
+        "variant": "horse_sagittarius",
+        "native_id": "beac1b1814839bd5",
+        "file": "front-horse-37mm.png",
+        "rotation_degrees": 0,
+        "mirror": false,
+        "native_blob_sha256": "a02318002c1128ab7bc7c47c4693abe55a5f73b37026be1a11426a154ca63dac",
+        "import_input_sha256": "8f847c7cd56bfcf2c9826fce699cd0d193c609a723cf6503679b1c85415652db",
+        "matches_rendered_cover_png_sha256": true,
+        "unmirrored_zero_rotation": true
+      },
+      {
+        "variant": "horse_sagittarius",
+        "native_id": "6ec3d7b06328f3a1",
+        "file": "rear-sagittarius-37mm.png",
+        "rotation_degrees": 0,
+        "mirror": false,
+        "native_blob_sha256": "8c4af26386953d30e99c789bcda5ab173771e0a3ac304b227c371a12318a9dfb",
+        "import_input_sha256": "c219434d807fc97dd32f869e9f0312eb3bdd2655b3abbfe84398700dec433245",
+        "matches_rendered_cover_png_sha256": true,
+        "unmirrored_zero_rotation": true
+      }
+    ],
+    "integration_hashes": {
+      "snake_leo": "225556efbd31755577d41e15077b8198186ffd095dbe33047fadb90ce0dd7d2b",
+      "horse_sagittarius": "b05b9eaf156ab9f0b437aec9cca598276b4705c2ac3221cceed5027ced99b675"
+    }
+  },
+  "tolerances": {
+    "native_center_error_mm": 0.01,
+    "hole_diameter_error_mm": 0.005,
+    "slot_polygon_hausdorff_mm": 0.01,
+    "minimum_material_web_mm": 1.0
+  },
+  "status": "pass"
+}

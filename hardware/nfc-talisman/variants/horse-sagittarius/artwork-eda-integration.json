@@ -1,0 +1,47 @@
+{
+  "variant": "horse-sagittarius",
+  "uuid": "4a4719695b24dc2b",
+  "status": "covers_integrated_saved_reopened",
+  "protectedGeometryUnchanged": true,
+  "created": [
+    {
+      "side": "front",
+      "id": "beac1b1814839bd5",
+      "fileName": "front-horse-37mm.png",
+      "inputSha256": "8f847c7cd56bfcf2c9826fce699cd0d193c609a723cf6503679b1c85415652db"
+    },
+    {
+      "side": "rear",
+      "id": "6ec3d7b06328f3a1",
+      "fileName": "rear-sagittarius-37mm.png",
+      "inputSha256": "c219434d807fc97dd32f869e9f0312eb3bdd2655b3abbfe84398700dec433245"
+    }
+  ],
+  "actual": [
+    {
+      "id": "beac1b1814839bd5",
+      "fileName": "front-horse-37mm.png",
+      "layer": 3,
+      "x": 78.7402,
+      "y": 3740.1575,
+      "width": 1456.6929,
+      "height": 1456.6929,
+      "mirror": false,
+      "rotation": 0,
+      "blob": "a02318002c1128ab7bc7c47c4693abe55a5f73b37026be1a11426a154ca63dac"
+    },
+    {
+      "id": "6ec3d7b06328f3a1",
+      "fileName": "rear-sagittarius-37mm.png",
+      "layer": 3,
+      "x": 2401.5748,
+      "y": 1653.5433,
+      "width": 1456.6929,
+      "height": 1456.6929,
+      "mirror": false,
+      "rotation": 0,
+      "blob": "8c4af26386953d30e99c789bcda5ab173771e0a3ac304b227c371a12318a9dfb"
+    }
+  ],
+  "drc": []
+}

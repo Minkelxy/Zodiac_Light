@@ -1,0 +1,190 @@
+{
+  "status": "passed",
+  "purpose": "Read-only visual review of saved symmetric core, AF37/AF30 references, and Sagittarius/Leo aperture locations; not a brightness prediction.",
+  "source_hashes_sha256": {
+    "variants/common/eda/native/core-source.jsonl": "a58f0160078fa02009a2c8b7c1fb0fcf4983b7ad1ff7c531fa9db1161a0554da",
+    "variants/common/eda/core-pads.json": "6c98312831b763d2138c2849254e16fa819f6fd3a21d9977617f18a572a1c3b0",
+    "electrical/BOM.csv": "3c207e354711f79c0a37f22457d025b789c0f8d8267e2adce0ba7b54980f7df7",
+    "geometry/design.json": "3c677d826508b96cc74d04c815f9a35a69bd39f6a7b3d6d455734b9061138391",
+    "variants/snake-leo/leo-geometry.json": "341a0a0c643e3ce31f24800456e8682798f96e7560482f37f41c94f673fd9759"
+  },
+  "saved_led_centers_native_core_mm": {
+    "D1": [
+      -6.000000699999999,
+      0.0
+    ],
+    "D2": [
+      6.000000699999999,
+      0.0
+    ],
+    "D3": [
+      -6.000000699999999,
+      0.0
+    ],
+    "D4": [
+      6.000000699999999,
+      0.0
+    ]
+  },
+  "pad_centroid_led_centers_native_core_mm": {
+    "D1": [
+      -5.999479999999999,
+      0.0
+    ],
+    "D2": [
+      5.999479999999999,
+      0.0
+    ],
+    "D3": [
+      -5.999479999999999,
+      0.0
+    ],
+    "D4": [
+      5.999479999999999,
+      0.0
+    ]
+  },
+  "pad_centroid_vs_component_anchor": {
+    "D1": {
+      "pad_centroid_native_mm": [
+        -5.999479999999999,
+        0.0
+      ],
+      "component_anchor_delta_mm": [
+        0.0005207000000000406,
+        0.0
+      ]
+    },
+    "D2": {
+      "pad_centroid_native_mm": [
+        5.999479999999999,
+        0.0
+      ],
+      "component_anchor_delta_mm": [
+        -0.0005207000000000406,
+        0.0
+      ]
+    },
+    "D3": {
+      "pad_centroid_native_mm": [
+        -5.999479999999999,
+        0.0
+      ],
+      "component_anchor_delta_mm": [
+        0.0005207000000000406,
+        0.0
+      ]
+    },
+    "D4": {
+      "pad_centroid_native_mm": [
+        5.999479999999999,
+        0.0
+      ],
+      "component_anchor_delta_mm": [
+        -0.0005207000000000406,
+        0.0
+      ]
+    }
+  },
+  "symmetric_led_checks": {
+    "D1": {
+      "native_mm": [
+        -6.000000699999999,
+        0.0
+      ],
+      "expected_native_mm": [
+        -6.000000699999999,
+        0.0
+      ],
+      "pass": true
+    },
+    "D2": {
+      "native_mm": [
+        6.000000699999999,
+        0.0
+      ],
+      "expected_native_mm": [
+        6.000000699999999,
+        0.0
+      ],
+      "pass": true
+    },
+    "D3": {
+      "native_mm": [
+        -6.000000699999999,
+        0.0
+      ],
+      "expected_native_mm": [
+        -6.000000699999999,
+        0.0
+      ],
+      "pass": true
+    },
+    "D4": {
+      "native_mm": [
+        6.000000699999999,
+        0.0
+      ],
+      "expected_native_mm": [
+        6.000000699999999,
+        0.0
+      ],
+      "pass": true
+    }
+  },
+  "physical_view_led_centers_mm": {
+    "top": {
+      "D1": [
+        -6.0,
+        0.0
+      ],
+      "D2": [
+        6.0,
+        0.0
+      ]
+    },
+    "bottom_exterior": {
+      "D3": [
+        6.0,
+        0.0
+      ],
+      "D4": [
+        -6.0,
+        0.0
+      ]
+    }
+  },
+  "core_counts": {
+    "component_footprints": 15,
+    "top_footprints": 11,
+    "bottom_footprints": 4,
+    "dnp_top_footprints": [
+      "CT2"
+    ],
+    "top_lines": 97,
+    "bottom_lines": 28,
+    "fills": 1,
+    "vias": 10,
+    "free_pads": 2
+  },
+  "aperture_counts": {
+    "sagittarius_stars": 8,
+    "sagittarius_slots": 11,
+    "leo_stars": 9,
+    "leo_slots": 8
+  },
+  "coordinate_convention": {
+    "core_native": "mil, +X right and +Y up; top physical view is direct, bottom physical exterior view mirrors X.",
+    "constellation": "board-center origin, mm, rear exterior view +X right and +Y down.",
+    "window": "AF37 is the saved core outline; dashed AF30 is an overlay registration reference, not a core cutout."
+  },
+  "outputs_sha256": {
+    "variants/common/layout-review/symmetric-core-layout-review.png": "8da3fe2056a9ac5e4428ba404685d9fade4d4630b675c3e322cf76327511c48b",
+    "variants/common/layout-review/symmetric-core-layout-review.svg": "cfcee48a70db975ebb53eba76c339cd13bdf9366ec5970af5e2ae527f64737ab"
+  },
+  "source_pngs_modified": false,
+  "limitations": [
+    "Position overlays show physical openings and nominal LED centers only.",
+    "No irradiance, material transmission, diffuser, or brightness uniformity is modeled."
+  ]
+}

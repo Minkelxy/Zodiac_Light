@@ -1,0 +1,47 @@
+{
+  "variant": "snake-leo",
+  "uuid": "fe8ee4534ee0b941",
+  "status": "covers_integrated_saved_reopened",
+  "protectedGeometryUnchanged": true,
+  "created": [
+    {
+      "side": "front",
+      "id": "68da0e6401829464",
+      "fileName": "front-snake-37mm.png",
+      "inputSha256": "014a8183f046b3230f6e66f34af58a8b19c58ac91a72e271f86398462a68c4f9"
+    },
+    {
+      "side": "rear",
+      "id": "8e22f7bb33a389fa",
+      "fileName": "rear-leo-37mm.png",
+      "inputSha256": "e7ed3bea3f8248d5f5775a0d1607c49984a03965baf1d322a3f7a062cedfd2bf"
+    }
+  ],
+  "actual": [
+    {
+      "id": "68da0e6401829464",
+      "fileName": "front-snake-37mm.png",
+      "layer": 3,
+      "x": 78.7402,
+      "y": 3740.1575,
+      "width": 1456.6929,
+      "height": 1456.6929,
+      "mirror": false,
+      "rotation": 0,
+      "blob": "7935a746fc5dcf074ef468666f220556cbb14b6469eccafaaeb90c38fc181672"
+    },
+    {
+      "id": "8e22f7bb33a389fa",
+      "fileName": "rear-leo-37mm.png",
+      "layer": 3,
+      "x": 2401.5748,
+      "y": 1653.5433,
+      "width": 1456.6929,
+      "height": 1456.6929,
+      "mirror": false,
+      "rotation": 0,
+      "blob": "424125c97b8bfc8cde3121382c52cc64bd0337f35e182c6f7f7efd1632ea895c"
+    }
+  ],
+  "drc": []
+}

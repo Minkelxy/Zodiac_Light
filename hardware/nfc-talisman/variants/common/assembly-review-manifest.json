@@ -1,0 +1,96 @@
+{
+  "status": "assembly_review_tables_prepared",
+  "releaseStatus": "HOLD_C1_CAM_PHYSICAL_VALIDATION",
+  "source": "variants/common/eda/native/core-netlist.json",
+  "coordinate_convention": "native unmirrored panel mm, lower-left origin, bottom rotations as exported",
+  "profiles": {
+    "four-led": {
+      "fit_count": 14,
+      "excluded": [
+        "CT2"
+      ],
+      "fit_designators": [
+        "U1",
+        "C1",
+        "CT1",
+        "R5",
+        "R6",
+        "R7",
+        "R1",
+        "D1",
+        "R2",
+        "D2",
+        "R3",
+        "D3",
+        "R4",
+        "D4"
+      ],
+      "notes": "R2 and R4 may remain fitted in two-LED variant; open LED branches draw no current. Library LED pad polarity and native rotation still need physical assembly review."
+    },
+    "two-led": {
+      "fit_count": 12,
+      "excluded": [
+        "CT2",
+        "D2",
+        "D4"
+      ],
+      "fit_designators": [
+        "U1",
+        "C1",
+        "CT1",
+        "R5",
+        "R6",
+        "R7",
+        "R1",
+        "D1",
+        "R2",
+        "R3",
+        "D3",
+        "R4"
+      ],
+      "notes": "R2 and R4 may remain fitted in two-LED variant; open LED branches draw no current. Library LED pad polarity and native rotation still need physical assembly review."
+    }
+  },
+  "files": {
+    "variants\\horse-sagittarius\\manufacturing-draft\\four-led-bom-review.csv": {
+      "sha256": "f1b041e72704fbf36a0503aa371d63f1d1b95e56986b82dae80a91ce734ecdbc",
+      "size": 1249
+    },
+    "variants\\horse-sagittarius\\manufacturing-draft\\four-led-pnp-review.csv": {
+      "sha256": "7983628a62b5f86ad638ed12091414d3d998586948ec0d187aa8ddcec5a186bd",
+      "size": 2620
+    },
+    "variants\\horse-sagittarius\\manufacturing-draft\\two-led-bom-review.csv": {
+      "sha256": "51d24d6aab4529f6452ae0c12a9a978393e5cc4060ad7e12c93a5970fa229122",
+      "size": 1095
+    },
+    "variants\\horse-sagittarius\\manufacturing-draft\\two-led-pnp-review.csv": {
+      "sha256": "1e12374fdeeea4ffcc41860d9a14d478f1527899062cc1b524a59210b90cd624",
+      "size": 2302
+    },
+    "variants\\horse-sagittarius\\manufacturing-draft\\README.md": {
+      "sha256": "71911d03f0bbe4c9c43572935b1bf99e7a102226fe8ee8fde3bf69ab44b46e0b",
+      "size": 1208
+    },
+    "variants\\snake-leo\\manufacturing-draft\\four-led-bom-review.csv": {
+      "sha256": "f1b041e72704fbf36a0503aa371d63f1d1b95e56986b82dae80a91ce734ecdbc",
+      "size": 1249
+    },
+    "variants\\snake-leo\\manufacturing-draft\\four-led-pnp-review.csv": {
+      "sha256": "7983628a62b5f86ad638ed12091414d3d998586948ec0d187aa8ddcec5a186bd",
+      "size": 2620
+    },
+    "variants\\snake-leo\\manufacturing-draft\\two-led-bom-review.csv": {
+      "sha256": "51d24d6aab4529f6452ae0c12a9a978393e5cc4060ad7e12c93a5970fa229122",
+      "size": 1095
+    },
+    "variants\\snake-leo\\manufacturing-draft\\two-led-pnp-review.csv": {
+      "sha256": "1e12374fdeeea4ffcc41860d9a14d478f1527899062cc1b524a59210b90cd624",
+      "size": 2302
+    },
+    "variants\\snake-leo\\manufacturing-draft\\README.md": {
+      "sha256": "71911d03f0bbe4c9c43572935b1bf99e7a102226fe8ee8fde3bf69ab44b46e0b",
+      "size": 1208
+    }
+  }
+}
