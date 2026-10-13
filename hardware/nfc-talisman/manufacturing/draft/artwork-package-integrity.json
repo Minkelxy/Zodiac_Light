@@ -1,0 +1,8 @@
+{
+  "run_time": "2026-10-10T19:44:48.653401+08:00",
+  "status": "pass",
+  "manifest_files_checked": 111,
+  "zip_crc_error": null,
+  "failures": [],
+  "scope": "Local manifest hashes and sizes, exact ZIP paths and byte equality, preserved horse source and transparent candidate. Does not validate PCB import, CAM or physical tests."
+}

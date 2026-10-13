@@ -1,4 +1,4 @@
-"""Run with python -m constellation_lamp from the project directory."""
+"""Run with python -m constellation_lamp from a checkout or installation."""
 
 from __future__ import annotations
 
@@ -14,6 +14,16 @@ from .effects import EFFECT_NAMES, EFFECT_LABELS, EFFECT_DESCRIPTIONS
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
+
+
+def _default_paths():
+    # Wheels bundle the authoring data beside the Python modules. Keep checkout
+    # commands using the editable source data, but never write installed outputs
+    # into site-packages (which may be shared or read-only).
+    packaged_data = Path(__file__).resolve().parent / "data"
+    if packaged_data.is_dir():
+        return packaged_data, Path.cwd() / "build"
+    return PROJECT_ROOT / "data", PROJECT_ROOT / "build"
 
 
 def _runtime(args, *, regenerate=False):
@@ -77,10 +87,11 @@ def _hardware_profile(args, runtime, *, transport=True):
 
 
 def main(argv=None) -> int:
+    data_dir, output_dir = _default_paths()
     parser = argparse.ArgumentParser(description="Sagittarius WS2812 layout and light-effect simulator")
     commands = parser.add_subparsers(dest="command", required=True)
     common = argparse.ArgumentParser(add_help=False)
-    common.add_argument("--data-dir", type=Path, default=PROJECT_ROOT / "data")
+    common.add_argument("--data-dir", type=Path, default=data_dir)
     common.add_argument("--layout", type=Path, help="Use a saved physical layout")
     common.add_argument("--width-mm", type=float, help="Regenerate geometry/wiring at this star-centre width")
     effect_args = argparse.ArgumentParser(add_help=False)
@@ -96,13 +107,13 @@ def main(argv=None) -> int:
     effect_args.add_argument("--current-limit-ma", type=float, help="Override the estimated current budget")
     commands.add_parser("validate", parents=[common], help="Read and validate the physical layout")
     layout_parser = commands.add_parser("layout", parents=[common], help="Regenerate an initial physical layout")
-    layout_parser.add_argument("--output", type=Path, default=PROJECT_ROOT / "build" / "layout.json")
+    layout_parser.add_argument("--output", type=Path, default=output_dir / "layout.json")
     build_parser = commands.add_parser("build", parents=[common, effect_args], help="Export full/compact tables, reports and all effect previews")
-    build_parser.add_argument("--output-dir", type=Path, default=PROJECT_ROOT / "build")
+    build_parser.add_argument("--output-dir", type=Path, default=output_dir)
     preview_parser = commands.add_parser("preview", parents=[common, effect_args], help="Open the interactive simulator")
     render_parser = commands.add_parser("render", parents=[common, effect_args], help="Save an offline preview PNG")
     render_parser.add_argument("--time-ms", type=float, default=1500)
-    render_parser.add_argument("--output", type=Path, default=PROJECT_ROOT / "build" / "preview.png")
+    render_parser.add_argument("--output", type=Path, default=output_dir / "preview.png")
     export_parser = commands.add_parser("export", parents=[common], help="Export MCU C constant tables")
     export_parser.add_argument("--compact", action="store_true", help="Export quantized SoA MCU tables")
     export_parser.add_argument("--output", type=Path)
@@ -144,12 +155,12 @@ def main(argv=None) -> int:
         if args.command == "export":
             if args.compact:
                 from .compact import export_compact_c, pack_runtime
-                output = args.output or PROJECT_ROOT / "build" / "constellation_compact.h"
+                output = args.output or output_dir / "constellation_compact.h"
                 export_compact_c(runtime, output)
                 print(f"Compact table storage: {pack_runtime(runtime)['metadata']['c_arrays_bytes']} bytes")
             else:
                 from .export import export_c
-                output = args.output or PROJECT_ROOT / "build" / "constellation_data.h"
+                output = args.output or output_dir / "constellation_data.h"
                 export_c(runtime, output)
             print(summary(runtime))
             print(f"C tables: {output.resolve()}")

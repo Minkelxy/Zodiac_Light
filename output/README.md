@@ -2,6 +2,8 @@
 
 2026-10-14 定稿：选用 **U1 紧凑短发与肩胸造型**，保留 R1 棱角、四腿和短尾；下方原星链作为星轨延伸。面部留白，手部、颈根与腰侧的细碎线已整理为直线刻画路径。
 
+本页属于 400 × 400 mm WS2812 亚克力灯的制作稿。37 mm NFC 双款的原生工程与制造草案见[项目状态](../docs/current-project.md#nfc-双款)；全仓库下载、检查及打包见[复现与交付指南](../docs/delivery.md)。U1 为当前选定打印稿，下面的 E/R/T/U 比较图和上一轮 T4 文件用于过程归档。
+
 ## 下载与打印
 
 | 资料 | 用途 | 打印页码 |
@@ -45,12 +47,18 @@
 - [make_u1_engraving_pdf.py](../scripts/make_u1_engraving_pdf.py)：U1 刻线母图、六张 A4 拼接页和制作清单，复用已有拼接框架。
 - [make_final_engraving_pdf.py](../scripts/make_final_engraving_pdf.py)：共用打印框架与上一轮 T4 母图；单独运行会重建上一轮 T4 文件。
 
-当前脚本使用 Windows 的 `C:/Windows/Fonts/simhei.ttf` 字体。在项目根目录运行：
+当前 PDF 脚本使用 ReportLab 和 Windows 的 `C:/Windows/Fonts/simhei.ttf` 字体；非 Windows 环境须先在脚本中配置等效中文字体。已有 PDF 可直接打印。生成 U1 的脚本还会写入 `tmp/pdfs/u1-vector-preview.pdf`，归档的 `U1-vector-preview.png` 是对此矢量页的渲染，未由该脚本自动重建。在项目根目录运行：
 
 ```powershell
-python -m pip install -r requirements.txt reportlab Pillow
+python -m pip install -r requirements.txt reportlab
 python scripts/make_a4_placement_pdf.py
 python scripts/make_u1_engraving_pdf.py
 ```
 
-重新生成会覆盖对应 PDF、SVG 和清单。先保存对这些文件的手工修改。源布局变更后应重新核对打印比例与刻线、灯条的配合关系。历史清单中的本机路径记录制作来源；实际文件位置按本页的仓库相对链接查找。
+重新生成会覆盖对应 PDF、SVG 和清单。先保存对这些文件的手工修改。源布局变更后应重新核对打印比例与刻线、灯条的配合关系，实际打印仍需重新测量校准尺。PDF 生成时的元数据可能变化，哈希以本次对应清单为准。历史清单中的本机路径记录制作来源；实际文件位置按本页的仓库相对链接查找。
+
+可用以下命令核对当前归档的布局来源、U1/定位 PDF 哈希及全项目资料；它不会覆盖制作稿：
+
+```powershell
+python scripts/check_project.py --output build/project-check.json
+```

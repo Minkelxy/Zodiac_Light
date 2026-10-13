@@ -1,0 +1,44 @@
+name: Project checks
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    env:
+      MPLBACKEND: Agg
+      PYTHONUTF8: '1'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+      - name: Install project and serial support
+        run: python -m pip install ".[serial]"
+      - name: Verify installed default scene outside checkout
+        working-directory: ${{ runner.temp }}
+        run: python -m constellation_lamp validate
+      - name: Enable MSVC for native verification
+        if: runner.os == 'Windows'
+        uses: ilammy/msvc-dev-cmd@v1
+      - name: Check full project
+        run: python scripts/check_project.py --output build/project-check.json
+      - name: Build saved layout and effects
+        run: python -m constellation_lamp build
+      - name: Upload validation and generated layout
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: project-check-${{ runner.os }}
+          path: build/

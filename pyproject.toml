@@ -13,4 +13,8 @@ dependencies = ["numpy>=1.24", "matplotlib>=3.6"]
 serial = ["pyserial>=3.5"]
 
 [tool.setuptools]
-packages = ["constellation_lamp"]
+packages = ["constellation_lamp", "constellation_lamp.data"]
+package-dir = { "constellation_lamp.data" = "data" }
+
+[tool.setuptools.package-data]
+"constellation_lamp.data" = ["*.json", "*.md", "sources/*.md", "sources/*/*.json", "sources/*/*.tsv", "sources/*/*.md", "sources/*/*.html"]

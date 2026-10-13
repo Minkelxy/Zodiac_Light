@@ -1,6 +1,6 @@
 # ESP32 / WS2812 参考驱动
 
-当前主工程是 [firmware-idf](../firmware-idf)，使用本机 **ESP-IDF 5.5.1** 原生 RMT/UART 驱动，目标为经典 ESP32 DevKit。GPIO18 输出灯带数据，板载 USB 转串口连接 UART0（GPIO1 TX / GPIO3 RX），电脑可生成九种灯效的 RGB 帧，Mode 4 也可由 ESP32 原生计算并脱机播放。实际开发板、灯珠和供电尚未实测，工程没有执行刷板。ESP32-C3/S3 等型号需要重新核对目标和引脚。
+当前灯带主工程是 [firmware-idf](../firmware-idf)，开发构建使用 **ESP-IDF 5.5.1** 原生 RMT/UART 驱动，目标为经典 ESP32 DevKit。GPIO18 输出灯带数据，板载 USB 转串口连接 UART0（GPIO1 TX / GPIO3 RX），电脑可生成九种灯效的 RGB 帧，Mode 4 也可由 ESP32 原生计算并脱机播放。实际开发板、灯珠和供电尚未实测，工程没有执行刷板。ESP32-C3/S3 等型号需要重新核对目标和引脚。37 mm NFC 的硬件另见[当前项目状态](current-project.md#nfc-双款)。
 
 固件默认上电发送全黑，只有完整有效帧才能更新显示；距上一有效帧达到 1000 ms 后发全黑，断流不会切到本地灯效。原生工程不依赖 Arduino、FastLED 或需要下载的组件。`firmware/` 保留 Arduino / PlatformIO 备选实现，当前没有完成它的框架下载和板端构建验证。
 
@@ -66,13 +66,15 @@ estimated_ma = N × idle_led_ma + sum(R + G + B) / 255 × channel_ma
 
 ## 编译与使用
 
-本机可直接离线编译，脚本从 Espressif 安装器记录选择当前 SDK、Python 和工具：
+接收者需先安装 ESP-IDF、对应 Python 环境、ESP32 工具链、CMake 与 Ninja。开发记录使用 ESP-IDF 5.5.1；源码 ZIP 不包含 SDK、工具或 `build/` 中的固件。工具齐备后，Windows 构建脚本可从 Espressif 安装器记录选择当前 SDK、Python 和工具：
 
 ```powershell
 .\scripts\build_idf.ps1 -Mode 0
 ```
 
-脚本先验证并从 `data/catalog.json`、`constellation.json`、`layout.json` 生成紧凑映射，同时从 `data/effects.json` 生成原生灯效预设。生成头、派生 Kconfig 和来源指纹保存到 ASCII 构建缓存；原始 JSON 是可编辑来源。源码路径保留为 `D:\星座灯`，使用 junction 和 CMake 处理中文路径，不修改 SDK 或系统配置。
+自动检测失败时，使用脚本的 `-IdfPath`、`-IdfPython` 和 `-ToolsPath` 指定本机实际安装位置。构建脚本只编译和归档，不执行刷板；检查报告及交付流程见[复现与交付指南](delivery.md)。
+
+脚本先验证并从 `data/catalog.json`、`constellation.json`、`layout.json` 生成紧凑映射，同时从 `data/effects.json` 生成原生灯效预设。生成头、派生 Kconfig 和来源指纹保存到 ASCII 构建缓存；原始 JSON 是可编辑来源。脚本按当前项目根目录建立 junction，再使用 CMake 处理中文源码路径；临时目录路径须为 ASCII，不修改 SDK 或系统配置。
 
 硬件配置从 `data/hardware.json` 同步；灯数由布局派生，错误 GPIO、无法满足的超时/带宽、电流低于待机估算等配置会在编译前拒绝。脚本保留其他 SDK 设置。`-Menuconfig` 可调其他 SDK 设置和模式；硬件来源字段会在构建前再次与 JSON 同步。显式 `-Mode` 优先于已有缓存，省略则保留当前缓存模式。
 
@@ -95,7 +97,7 @@ estimated_ma = N × idle_led_ma + sum(R + G + B) / 255 × channel_ma
 自行确认板型和端口后，可在已激活 ESP-IDF 的终端进入输出目录，按生成的地址烧录。示例 COM3 应换成真实端口；此命令写入设备，本文档中的构建脚本不会执行它：
 
 ```powershell
-Set-Location -LiteralPath 'D:\星座灯\build\esp-idf'
+Set-Location -LiteralPath '.\build\esp-idf'
 python -m esptool --chip esp32 --port COM3 --baud 460800 write_flash '@flash_args'
 ```
 

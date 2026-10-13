@@ -1,4 +1,19 @@
-# 人马座 WS2812 星座灯
+# 星座灯与 NFC 符咒
+
+本仓库包含 **40 cm 射手座 WS2812 星座灯**、其 **U1 亚克力刻线与灯条定位模板**，以及 **马 + 射手座 / 蛇 + 狮子座两款 37 mm NFC 符咒**的原生工程、制造草案和审计记录。
+
+| 从这里开始 | 当前交付内容 |
+|---|---|
+| [项目状态](docs/current-project.md) | 灯带与双款 NFC 的状态、证据和待验收事项 |
+| [40 cm 制作资料](output/README.md) | U1 刻线 PDF/SVG、六张 A4 拼接纸、灯条定位与裁切表 |
+| [NFC 双款工程](hardware/nfc-talisman/variants/common/eda/native/nfc-two-variants.epro2) | 共用核心板及两款各自 100 × 100 mm 五片拼板；[文件清单](hardware/nfc-talisman/variants/common/export-manifest.json) |
+| [文档地图](docs/document-map.md) | 当前资料、历史候选、单拼板旧输出的分类导航 |
+| [复现与交付指南](docs/delivery.md) | 安装、全项目检查、打包、校验与接收步骤 |
+| [GitHub 版本下载](https://github.com/Minkelxy/Zodiac_Light/releases) | 按提交归档的交付 ZIP 和 SHA-256 校验文件 |
+
+NFC 当前制造状态保持 **`HOLD_CAM_C1_PHYSICAL_VALIDATION_PENDING`**。原生归档、文件完整性、离线铜/孔槽审计与保存重开 DRC 的通过结果属于设计检查；正式 CAM、C1 选料、RF/NFC、点亮和实物首件验收仍待完成。灯带固件也尚未刷板或实物验收。
+
+## 40 cm WS2812 星座灯
 
 本项目按参考图建立 **21 颗恒星、24 条连线**，保存真实恒星资料、实际灯带布局和串接映射，并用 Python 播放灯效。默认采用 **200 灯/m、每 2 灯一个裁切单位**，每颗星共 **4 灯**，由两段各 2 灯的灯带组成两排。
 
@@ -19,7 +34,15 @@ python -m pip install -r requirements.txt
 python -m constellation_lamp preview
 ```
 
-如果当前 Python 已安装 NumPy 和 Matplotlib，可直接运行最后一条命令。预览采用 Matplotlib 桌面窗口；本机已检测到 TkAgg/Tk 支持。
+如果当前 Python 已安装 NumPy 和 Matplotlib，可直接运行最后一条命令。预览采用 Matplotlib 桌面窗口，需要可用的图形界面后端；无桌面环境可以使用后文的 `render` 和 `build` 导出静态图。
+
+安装完成后，在项目根目录运行全项目检查：
+
+```powershell
+python scripts/check_project.py --output build/project-check.json
+```
+
+检查包含软件测试、灯带数据和硬件预算验证、当前 NFC 快照审计、打印模板的来源与 PDF 哈希，以及入口文档链接。完整交付流程见[复现与交付指南](docs/delivery.md)。
 
 窗口提供播放/暂停（也可按空格）、九种灯效、速度和亮度调节，以及星名、灯珠编号、连线方向、背面导线的显示开关。鼠标移到灯珠上可以查看它的编号、归属、毫米位置、限流后的 RGB 值和边内进度。切换效果时载入该效果的完整预设，并同步亮度和速度滑杆；手动调参保留到下一次切换。预览按硬件预算计算电流和缩放比例，可用 `--hardware` 或 `--current-limit-ma` 调整。
 
@@ -149,7 +172,7 @@ python -m constellation_lamp stream --port COM3 --hardware build/esp-idf/hardwar
 
 COM3 只是示例，应使用设备的真实端口。驱动先握手发送黑屏，核对固件灯数、映射 SHA256 和串流模式，再逐帧等待固件 ACK；停止或异常退出会尝试确认黑屏并关闭端口，断流由固件超时关灯。校验包括 CRC、灯数、长度、串口带宽、WS2812 发帧时间和超时预算。协议不重复应用 gamma 或用户亮度。
 
-默认估算每灯待机 1 mA、每色通道满值 20 mA，RGB 会按 **2000 mA** 预算限幅。这些是可替换的计算参数，实际芯片版本的电流应实测；软件限幅不替代供电与布线设计。原生固件用同模型整数复核，满足预算的 RGB 保持原值。电源、共地、电平转换、注电位置、编译和烧录步骤见 [docs/hardware.md](docs/hardware.md)。本机 ESP-IDF 5.5.1 已编译成功，固件在 `build/esp-idf/`；未刷板或实物验收。Arduino / PlatformIO 实现保留于 `firmware/` 作为备选。
+默认估算每灯待机 1 mA、每色通道满值 20 mA，RGB 会按 **2000 mA** 预算限幅。这些是可替换的计算参数，实际芯片版本的电流应实测；软件限幅不替代供电与布线设计。原生固件用同模型整数复核，满足预算的 RGB 保持原值。电源、共地、电平转换、注电位置、编译和烧录步骤见 [docs/hardware.md](docs/hardware.md)。开发阶段已用 ESP-IDF 5.5.1 编译成功；接收者需安装 SDK 后重新构建，产物在 `build/esp-idf/`，此目录不包含在源码交付 ZIP 中。未刷板或实物验收。Arduino / PlatformIO 实现保留于 `firmware/` 作为备选。
 
 ## ESP32 脱机播放
 
@@ -174,4 +197,4 @@ python -m unittest discover -s tests -v
 
 刷新失败会保留旧的完整星表和来源快照。具体来源及许可见 [data/README.md](data/README.md)。测试覆盖四灯星点、PCB 面板边界、近邻位置微调、裁切量化、尺寸冲突、引用及归属检查、多段对象、反接、确定性灯效、预览控件和 C 导出一致性。没有 `panel` 的旧式模板继续支持原先按星点中心宽度生成的 2 灯直段布局。
 
-本机有 Visual Studio C/C++ 编译器。运行 `scripts/run_checks.cmd` 会初始化本机编译环境再执行全部测试，包括 C11/C++14 头文件编译与紧凑表的运行验证。在其他机器上，可直接运行 unittest；没有编译器时相应项会明确跳过。
+运行 `scripts/run_checks.cmd` 会在检测到默认安装路径的 Visual Studio 2022 Community 时初始化其编译环境，再执行软件测试，包括 C11/C++14 头文件编译与紧凑表的运行验证。其他安装可先进入编译器开发终端再运行 unittest；没有编译器时相应测试会明确跳过，检查报告应连同这些限制一起查阅。全项目交付检查使用 `scripts/check_project.py`。
