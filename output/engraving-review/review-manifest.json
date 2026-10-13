@@ -1,0 +1,63 @@
+{
+  "board_mm": [
+    400,
+    400
+  ],
+  "geometry": "straight polylines only",
+  "status": "review candidates, awaiting selection before A4 template",
+  "layout_sha256": "994858bd4a169c4ab39fa9f6ec4766fa2f692e0abf3c972d972260c7663478de",
+  "candidates": [
+    {
+      "id": "A",
+      "title": "折线弓箭符号",
+      "segments": 33,
+      "min_length_mm": 8.0,
+      "total_length_mm": 1826.1,
+      "bounds_mm": [
+        74,
+        55,
+        363,
+        345
+      ]
+    },
+    {
+      "id": "B",
+      "title": "人马射手轮廓",
+      "segments": 117,
+      "min_length_mm": 7.62,
+      "total_length_mm": 2982.3,
+      "bounds_mm": [
+        35,
+        48,
+        365,
+        360
+      ]
+    },
+    {
+      "id": "C",
+      "title": "人马射手几何细节",
+      "segments": 210,
+      "min_length_mm": 5.0,
+      "total_length_mm": 4811.0,
+      "bounds_mm": [
+        32,
+        51,
+        375,
+        355
+      ]
+    },
+    {
+      "id": "D",
+      "title": "弓箭手人物",
+      "segments": 79,
+      "min_length_mm": 9.0,
+      "total_length_mm": 2683.8,
+      "bounds_mm": [
+        95,
+        50,
+        362,
+        356
+      ]
+    }
+  ]
+}

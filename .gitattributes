@@ -1,6 +1,9 @@
 * text=auto eol=lf
 *.cmd text eol=crlf
 *.png binary
+*.pdf binary
+# Printed templates and design sources must retain their exact bytes and hashes.
+output/** -text -whitespace
 # HTTP snapshots must retain their exact bytes for recorded SHA-256 checks.
 data/sources/** -text -whitespace
 # Hardware snapshots and export tables are byte-checksummed audit artifacts.

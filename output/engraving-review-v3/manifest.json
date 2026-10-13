@@ -1,0 +1,38 @@
+{
+  "status": "art review before geometry and A4 fabrication template",
+  "engine": "built-in image_gen",
+  "base": "approved E left-up archery gesture",
+  "files": [
+    {
+      "id": "E1",
+      "source": "C:\\Users\\20177\\.codex\\generated_images\\01a130cb-7955-7920-8ee6-03effcef4eb0\\exec-39dc329a-e61e-45d4-83f0-431944fb83a0.png",
+      "file": "D:\\星座灯\\output\\engraving-review-v3\\E1.png"
+    },
+    {
+      "id": "E2",
+      "source": "C:\\Users\\20177\\.codex\\generated_images\\01a130cb-7955-7920-8ee6-03effcef4eb0\\exec-d71c4c31-957b-4ebb-b71e-65b5b01bffa0.png",
+      "file": "D:\\星座灯\\output\\engraving-review-v3\\E2.png"
+    },
+    {
+      "id": "E3",
+      "source": "C:\\Users\\20177\\.codex\\generated_images\\01a130cb-7955-7920-8ee6-03effcef4eb0\\exec-ade9c9c9-41b0-4304-b263-b49de0360af1.png",
+      "file": "D:\\星座灯\\output\\engraving-review-v3\\E3.png"
+    },
+    {
+      "id": "E4",
+      "source": "C:\\Users\\20177\\.codex\\generated_images\\01a130cb-7955-7920-8ee6-03effcef4eb0\\exec-2e2255ca-78d1-43ae-b588-20d7f3efee2c.png",
+      "file": "D:\\星座灯\\output\\engraving-review-v3\\E4.png"
+    },
+    {
+      "id": "E5",
+      "source": "C:\\Users\\20177\\.codex\\generated_images\\01a130cb-7955-7920-8ee6-03effcef4eb0\\exec-30aa5fbf-2741-4881-87bf-d7fa9208968f.png",
+      "file": "D:\\星座灯\\output\\engraving-review-v3\\E5.png"
+    },
+    {
+      "id": "E6",
+      "source": "C:\\Users\\20177\\.codex\\generated_images\\01a130cb-7955-7920-8ee6-03effcef4eb0\\exec-81fd50c9-2512-49ad-af12-3cf038e30da8.png",
+      "file": "D:\\星座灯\\output\\engraving-review-v3\\E6.png"
+    }
+  ],
+  "notes": "Final vector geometry must be straight segments, omit tonal fills, and lock data/layout.json; generated gold disk positions/count are not authoritative."
+}

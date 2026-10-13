@@ -1,0 +1,32 @@
+{
+  "pdf": "D:\\星座灯\\output\\pdf\\星座灯_E动作_优化对比_v4.pdf",
+  "stars": 21,
+  "edges": 24,
+  "board_mm": [
+    400,
+    400
+  ],
+  "layout_sha256": "994858bd4a169c4ab39fa9f6ec4766fa2f692e0abf3c972d972260c7663478de",
+  "art_registration_frames": {
+    "R1": [
+      24,
+      24,
+      1228,
+      1228
+    ],
+    "R2": [
+      28,
+      25,
+      1226,
+      1227
+    ],
+    "R3": [
+      25,
+      25,
+      1228,
+      1227
+    ]
+  },
+  "graph_layer": "native PDF vectors from saved JSON, identical coordinates in every variant",
+  "art_status": "bitmap art for review; exact straight vector fabrication paths pending selection"
+}

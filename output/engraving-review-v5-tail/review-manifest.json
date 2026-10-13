@@ -1,0 +1,9 @@
+{
+  "pdf": "D:\\星座灯\\output\\pdf\\星座灯_R1_马尾优化对比.pdf",
+  "base": "R1",
+  "scope": "tail alternatives only",
+  "layout_sha256": "994858bd4a169c4ab39fa9f6ec4766fa2f692e0abf3c972d972260c7663478de",
+  "stars_per_variant": 21,
+  "edges_per_variant": 24,
+  "status": "art review; exact vector carving geometry follows selection"
+}

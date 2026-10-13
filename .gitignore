@@ -6,5 +6,7 @@ __pycache__/
 firmware/.venv/
 *.egg-info/
 build/
+# PDF render checks and temporary authoring files.
+/tmp/
 # User-supplied artwork stays local; runtime uses the stored star coordinates.
 data/reference.png

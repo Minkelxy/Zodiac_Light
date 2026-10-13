@@ -1,0 +1,23 @@
+{
+  "engine": "built-in image_gen",
+  "files": [
+    {
+      "id": "R1",
+      "source": "C:\\Users\\20177\\.codex\\generated_images\\01a130cb-7955-7920-8ee6-03effcef4eb0\\exec-7f82180d-b0fd-4ad6-8d3e-55134edb09ee.png",
+      "file": "D:\\星座灯\\output\\engraving-review-v4\\R1-white.png"
+    },
+    {
+      "id": "R2",
+      "source": "C:\\Users\\20177\\.codex\\generated_images\\01a130cb-7955-7920-8ee6-03effcef4eb0\\exec-386b026c-eb18-4c0b-80c5-cfd154404ead.png",
+      "file": "D:\\星座灯\\output\\engraving-review-v4\\R2-white.png"
+    },
+    {
+      "id": "R3",
+      "source": "C:\\Users\\20177\\.codex\\generated_images\\01a130cb-7955-7920-8ee6-03effcef4eb0\\exec-000f9c64-c5c4-4247-a67e-791f1e1d9e23.png",
+      "file": "D:\\星座灯\\output\\engraving-review-v4\\R3-white.png"
+    }
+  ],
+  "prompts": "prompts.json",
+  "canonical_graph": "D:/星座灯/data/layout.json",
+  "registration": "registration-manifest.json"
+}
