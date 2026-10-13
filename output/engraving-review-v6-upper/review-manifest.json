@@ -1,0 +1,42 @@
+{
+  "pdf": "output/pdf/星座灯_上半身与头发重构对比_v6.pdf",
+  "status": "upper body and hair art review archived; U1 selected and fabrication completed",
+  "selected_variant": "U1",
+  "selected_date": "2026-10-14",
+  "fabrication_pdf": "output/pdf/星座灯_U1短发_400mm_A4刻线模板.pdf",
+  "preserved_design": "R1 angular style, four horse legs and T4 short tail",
+  "stars": 21,
+  "edges": 24,
+  "board_mm": [
+    400,
+    400
+  ],
+  "layout_sha256": "994858bd4a169c4ab39fa9f6ec4766fa2f692e0abf3c972d972260c7663478de",
+  "art_registration_frames": {
+    "T4": [
+      24,
+      22,
+      1228,
+      1229
+    ],
+    "U1": [
+      24,
+      22,
+      1228,
+      1229
+    ],
+    "U2": [
+      25,
+      22,
+      1228,
+      1230
+    ],
+    "U4": [
+      32,
+      32,
+      1222,
+      1222
+    ]
+  },
+  "graph_layer": "native PDF vectors from the saved layout; same star and edge coordinates in every panel"
+}

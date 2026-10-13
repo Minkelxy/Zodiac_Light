@@ -26,6 +26,8 @@ COLS = (0, 140, 280, 400)
 ROWS = (0, 200, 400)
 OVERLAP = 10
 FRAME = (24, 23, 1229, 1230)
+DESIGN_LABEL = 'R1 棱角风格 · T4 短尾与星轨 · 400 × 400 mm 亚克力'
+PDF_TITLE = '射手座 R1短尾星轨 - 400×400 mm A4刻线模板'
 
 # Centreline reconstruction from the approved T4. Deliberately removes tiny
 # finger/ankle slivers; these are design paths, never outlines of bitmap strokes.
@@ -150,7 +152,7 @@ def registration(runtime, segments):
 
 def guide(c,runtime,segments):
     text(c,15,20,'射手座 / 400 mm 刻线拼接模板',18)
-    text(c,15,29,'R1 棱角风格 · T4 短尾与星轨 · 400 × 400 mm 亚克力',10)
+    text(c,15,29,DESIGN_LABEL,10)
     line(c,15,34,195,34,width=.4)
     text(c,15,45,'打印：只需第 2-7 页，共六张 A4',12)
     text(c,15,54,'A4 纵向、单面、实际大小 / 100%；关闭适合页面与多页合一。',9)
@@ -254,7 +256,7 @@ def main():
     marks=registration(runtime,segments)
     OUT.mkdir(parents=True,exist_ok=True);GEOM.mkdir(parents=True,exist_ok=True)
     c=canvas.Canvas(str(PDF),pagesize=A4,pageCompression=1)
-    c.setTitle('射手座 R1短尾星轨 - 400×400 mm A4刻线模板')
+    c.setTitle(PDF_TITLE)
     c.setAuthor('Constellation Lamp Project')
     c.setSubject('Six A4 portrait tiles; 100% actual size; 10 mm overlap; black engraving, grey alignment guides')
     c.setViewerPreference('PrintScaling','None')
