@@ -1,0 +1,25 @@
+{
+  "date": "2026.10.14",
+  "source_commit": "91f0d9ed2dd4956cb88227d0ff1929c1583bdf27",
+  "kind": "project showcase; not 1:1 production templates",
+  "files": [
+    {
+      "path": "output/pdf/星座灯项目_一页成果速览.pdf",
+      "pages": 1,
+      "size": 567090,
+      "sha256": "6087c6fdac1a2878bfa55c984419da019f45d6644c9354be072b1c5ca15e4091"
+    },
+    {
+      "path": "output/pdf/星座灯_40cm成果展示册.pdf",
+      "pages": 6,
+      "size": 639478,
+      "sha256": "6bf64c7fac56c0a10c302880adda64f6ba59266891899167463f6b5b67018511"
+    },
+    {
+      "path": "output/pdf/NFC符咒_双款设计展示册.pdf",
+      "pages": 4,
+      "size": 1219078,
+      "sha256": "38ef8cc49e670580213143ce8a9820d09f465c30ef40f0c83a105d2650a300e2"
+    }
+  ]
+}
