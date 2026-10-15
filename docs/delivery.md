@@ -36,7 +36,7 @@ python scripts/check_project.py --output build/project-check.json
 
 若当前 PowerShell 策略不允许激活脚本，可直接用 `.\.venv\Scripts\python.exe` 替换后续命令中的 `python`。GUI 预览需要 Matplotlib 的可用桌面后端；静态渲染和布局构建不需要打开窗口。串口实播另需 `python -m pip install "pyserial>=3.5"`。
 
-[check_project.py](../scripts/check_project.py)运行全部 unittest、CLI 布局/硬件预算验证、当前 NFC 双款快照审计、U1/灯条定位模板的源文件与 PDF 哈希检查，以及入口文档的本地链接检查。报告记录各步骤结果；任一步骤失败即返回失败。可用 `--skip-tests` 跳过 unittest 进行资料复核，该结果应注明未运行软件测试。
+[check_project.py](../scripts/check_project.py)运行全部 unittest、CLI 布局/硬件预算验证、NFC 原彩色与普通绿白的保存快照/导出审计、U1/灯条定位模板的源文件与 PDF 哈希检查，以及入口文档的本地链接检查。报告记录各步骤结果；任一步骤失败即返回失败。可用 `--skip-tests` 跳过 unittest 进行资料复核，该结果应注明未运行软件测试。
 
 有主机 C/C++ 编译器时，软件测试会编译并运行协议、导出表和原生灯效比较。Windows 的 [run_checks.cmd](../scripts/run_checks.cmd)可初始化默认路径的 Visual Studio 2022 Community 后运行 unittest；其他编译器可在已配置的终端中运行检查。缺少编译器造成的跳过属于检查范围限制。全项目检查不会启动嘉立创EDA、运行新的原生 ERC/DRC、刷板或进行实体测试；其 NFC 结果核对的是已保存归档与导出证据。
 
@@ -44,13 +44,15 @@ python scripts/check_project.py --output build/project-check.json
 
 | 工作 | 命令或入口 | 产生或使用的资料 |
 |---|---|---|
+| NFC 十二选项完整工程 | [nfc-twelve-options.epro2](../hardware/nfc-talisman/variants/twelve-options/eda/native/nfc-twelve-options.epro2)、[四块盖板说明](../hardware/nfc-talisman/variants/twelve-options/README.md) | 保留原有五份 PCB，新增四块各五片盖板；12 星座与 12 生肖分别可选，复用现有核心 |
 | 灯带交互预览 | `python -m constellation_lamp preview` | 已保存的 21 星、24 边、268 灯布局与九种灯效 |
 | 灯带构建 | `python -m constellation_lamp build` | `build/` 内运行表、裁切/接线 CSV、C 头文件、静态图 |
 | 静态灯效 | `python -m constellation_lamp render --effect ripple --time-ms 2400 --output build/ripple.png` | 指定时刻的 PNG |
 | U1 与灯条打印 | [40 cm 制作资料](../output/README.md) | U1 PDF 第 2–7 页与定位 PDF 第 2–7 页；先实测 100 mm 校准尺 |
 | ESP32 构建 | [固件说明](hardware.md) | 安装 ESP-IDF/工具后运行 `scripts/build_idf.ps1`；固件输出到 `build/esp-idf/` |
-| NFC 当前原生工程 | [nfc-two-variants.epro2](../hardware/nfc-talisman/variants/common/eda/native/nfc-two-variants.epro2) | 嘉立创EDA原生项目归档，含共用核心和两款独立拼板 |
-| NFC 制造审阅 | [共同导出清单](../hardware/nfc-talisman/variants/common/export-manifest.json)、[装配审阅清单](../hardware/nfc-talisman/variants/common/assembly-review-manifest.json) | 版本对应的原生快照、Gerber 和两款四灯/两灯审阅表 |
+| NFC 原彩色原生工程 | [nfc-two-variants.epro2](../hardware/nfc-talisman/variants/common/eda/native/nfc-two-variants.epro2) | 原彩色 3 PCB 归档，含共用核心和两款独立拼板 |
+| NFC 普通绿白与全工程 | [绿白双款入口](../hardware/nfc-talisman/variants/standard-green-white/README.md)、[全 5 PCB 原生工程](../hardware/nfc-talisman/variants/standard-green-white/eda/native/nfc-color-and-green-white.epro2)、[独立导出清单](../hardware/nfc-talisman/variants/standard-green-white/export-manifest.json) | 含共用核心、两款原彩色拼板与两款绿白拼板；普通工程与制造导出状态以独立清单为准 |
+| NFC 制造审阅 | [原彩色导出清单](../hardware/nfc-talisman/variants/common/export-manifest.json)、[原彩色装配审阅清单](../hardware/nfc-talisman/variants/common/assembly-review-manifest.json)、[普通绿白入口](../hardware/nfc-talisman/variants/standard-green-white/README.md) | 按工艺版本选择原生快照、Gerber 和四灯/两灯审阅表，原彩色清单不覆盖为绿白版 |
 
 打印资料的再生成需要 ReportLab 和 Windows 黑体字体；具体依赖、输出覆盖范围见[制作资料的再生成说明](../output/README.md#重新生成)。现有 PDF 可直接下载打印。PDF 生成会包含生成时的元数据，重新生成后应使用本次同步更新的清单核对，不能要求它与旧 PDF 的字节哈希相同。
 

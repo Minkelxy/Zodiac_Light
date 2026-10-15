@@ -1,0 +1,122 @@
+{
+  "status": "passed",
+  "read_only": true,
+  "checks": [
+    {
+      "id": "standard_manifest",
+      "passed": true,
+      "detail": "Two variants; 13 recorded files; HOLD_CAM_C1_PHYSICAL_VALIDATION_PENDING"
+    },
+    {
+      "id": "standard_file:variants/standard-green-white/eda/native/base-copy-horse-sagittarius-source.jsonl",
+      "passed": true,
+      "detail": "209274 bytes; SHA-256 matches"
+    },
+    {
+      "id": "standard_file:variants/standard-green-white/eda/native/base-copy-snake-leo-source.jsonl",
+      "passed": true,
+      "detail": "221607 bytes; SHA-256 matches"
+    },
+    {
+      "id": "standard_file:variants/standard-green-white/eda/native/before-core-source.jsonl",
+      "passed": true,
+      "detail": "104578 bytes; SHA-256 matches"
+    },
+    {
+      "id": "standard_file:variants/standard-green-white/eda/native/before-horse-sagittarius-source.jsonl",
+      "passed": true,
+      "detail": "209274 bytes; SHA-256 matches"
+    },
+    {
+      "id": "standard_file:variants/standard-green-white/eda/native/before-snake-leo-source.jsonl",
+      "passed": true,
+      "detail": "221607 bytes; SHA-256 matches"
+    },
+    {
+      "id": "standard_file:variants/standard-green-white/eda/native/horse-sagittarius-source.jsonl",
+      "passed": true,
+      "detail": "381755 bytes; SHA-256 matches"
+    },
+    {
+      "id": "standard_file:variants/standard-green-white/eda/native/nfc-before-standard-copies.epro2",
+      "passed": true,
+      "detail": "932334 bytes; SHA-256 matches"
+    },
+    {
+      "id": "standard_file:variants/standard-green-white/eda/native/nfc-color-and-green-white.epro2",
+      "passed": true,
+      "detail": "1121683 bytes; SHA-256 matches"
+    },
+    {
+      "id": "standard_file:variants/standard-green-white/eda/native/snake-leo-source.jsonl",
+      "passed": true,
+      "detail": "404583 bytes; SHA-256 matches"
+    },
+    {
+      "id": "standard_file:variants/standard-green-white/manufacturing-draft/horse-sagittarius-green-white-gerber.members.json",
+      "passed": true,
+      "detail": "2331 bytes; SHA-256 matches"
+    },
+    {
+      "id": "standard_file:variants/standard-green-white/manufacturing-draft/horse-sagittarius-green-white-gerber.zip",
+      "passed": true,
+      "detail": "113108 bytes; SHA-256 matches"
+    },
+    {
+      "id": "standard_file:variants/standard-green-white/manufacturing-draft/snake-leo-green-white-gerber.members.json",
+      "passed": true,
+      "detail": "2331 bytes; SHA-256 matches"
+    },
+    {
+      "id": "standard_file:variants/standard-green-white/manufacturing-draft/snake-leo-green-white-gerber.zip",
+      "passed": true,
+      "detail": "122319 bytes; SHA-256 matches"
+    },
+    {
+      "id": "ordinary_artwork_sources",
+      "passed": true,
+      "detail": "Artwork hashes/source hashes match; import geometry equals both generated artifacts"
+    },
+    {
+      "id": "five_pcb_native_archive",
+      "passed": true,
+      "detail": "ZIP CRC and SHA/size pass; original core/color PCBs plus two ordinary PCBs present"
+    },
+    {
+      "id": "original_color_pcbs_retained",
+      "passed": true,
+      "detail": "Three original PCB primitive/OBJ baselines and four colored PNG bytes unchanged; colored delivery still passes"
+    },
+    {
+      "id": "ordinary_gerber:horse-sagittarius",
+      "passed": true,
+      "detail": "CRC and 15 hashes match; effective copper/paste/outline/drill/pad-mask commands unchanged; color Image mask proxy removed"
+    },
+    {
+      "id": "ordinary_native:horse-sagittarius",
+      "passed": true,
+      "detail": "55 silk / 19 mask SOLID fills match artifact paths within 0.001mil; reported native widths [0.2]mil; protected primitives unchanged"
+    },
+    {
+      "id": "ordinary_gerber:snake-leo",
+      "passed": true,
+      "detail": "CRC and 15 hashes match; effective copper/paste/outline/drill/pad-mask commands unchanged; color Image mask proxy removed"
+    },
+    {
+      "id": "ordinary_native:snake-leo",
+      "passed": true,
+      "detail": "42 silk / 17 mask SOLID fills match artifact paths within 0.001mil; reported native widths [0.2]mil; protected primitives unchanged"
+    }
+  ],
+  "checks_run": 21,
+  "errors": [],
+  "release_ready": false,
+  "release_status": "HOLD_CAM_C1_PHYSICAL_VALIDATION_PENDING",
+  "limitations": [
+    "Archived files and recorded DRC only; no live calls or new ERC/DRC run from this checker.",
+    "Both identical PTH programs remain in raw Gerber; select one during formal supplier CAM.",
+    "C1 sourcing/fit, supplier processing/color/slot approval and physical RF/NFC/optical acceptance remain pending.",
+    "Artwork requests zero outline width; this client normalizes native SOLID width to 0.2mil (0.00508mm). Verify final Gerber region contours independently before CAM approval.",
+    "Animal fine tips may be narrower than 0.15mm; ordinary green/white previews are design simulations."
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "pdf": "output/pdf/十二星座与生肖_拼板展示.pdf",
+  "pages": 5,
+  "pdf_sha256": "89d805a6b4284edeb827fad09c5a9e7fdaf32c00807b9230e342b3a72941c636",
+  "sources": {
+    "hardware/nfc-talisman/variants/twelve-options/design-manifest.json": "306bd41ced3568d03e9702fb0416c79d38efb00064185c5e96db8d223f0136b3",
+    "hardware/nfc-talisman/variants/twelve-options/export-manifest.json": "4608d65f908235e5ce622f77e0247d157ea6d2ee5269895e92ccc1868503331a",
+    "hardware/nfc-talisman/variants/twelve-options/artwork/constellations-a-100mm.png": "0a6f5225e79c404d9f65169febf89d71d7d9717ee6b97ec9005f0c502eacca02",
+    "hardware/nfc-talisman/variants/twelve-options/artwork/constellations-b-100mm.png": "d43f995abc7e923c20a89ef80bf6f72987a4df0b7cf0480b5164d956ff7f3b34",
+    "hardware/nfc-talisman/variants/twelve-options/artwork/zodiac-a-100mm.png": "1f5b11e3d9e04e3766124f35520535629a0798c43636905eace43bdb6334d381",
+    "hardware/nfc-talisman/variants/twelve-options/artwork/zodiac-b-100mm.png": "444e6f15ca19301f63bd163b8bd5d440855d6736cf56a1f8bfc518983624d1c3"
+  },
+  "status": "design showcase; passive covers; manufacturing HOLD",
+  "credits": "Constellation line patterns: Stellarium Modern, CC BY-SA 4.0; positions: ESA Hipparcos I/239. See twelve-options/sources and README."
+}

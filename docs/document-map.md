@@ -1,5 +1,7 @@
 # 项目文档地图
 
+最新扩展：[十二星座与十二生肖](../hardware/nfc-talisman/variants/twelve-options/README.md)、[全九 PCB 原生工程](../hardware/nfc-talisman/variants/twelve-options/eda/native/nfc-twelve-options.epro2)、[五页拼板展示 PDF](../output/pdf/十二星座与生肖_拼板展示.pdf)。四块新板各含五片盖板，均采用普通绿白工艺。
+
 从[总 README](../README.md)进入项目，从[当前项目状态](current-project.md)查看灯带、U1 制作稿和 NFC 双款的保存状态。安装、检查和打包见[复现与交付指南](delivery.md)。
 
 ## 灯带与亚克力制作
@@ -15,13 +17,14 @@
 
 ## NFC 当前双款及历史资料
 
-硬件目录的短入口是 [`hardware/nfc-talisman/README.md`](../hardware/nfc-talisman/README.md)。当前版本以 `variants/common/` 清单和两款 `manufacturing-draft/` 为准；其他目录中的旧描述按对应阶段阅读。
+硬件目录的短入口是 [`hardware/nfc-talisman/README.md`](../hardware/nfc-talisman/README.md)，工艺区别见[版本导航](../hardware/nfc-talisman/variants/README.md)。原彩色版以 `variants/common/` 清单和两款 `manufacturing-draft/` 为准；普通绿白版使用 `variants/standard-green-white/` 独立入口。其他目录中的旧描述按对应阶段阅读。
 
 | 主题 | 入口 | 用途与边界 |
 |---|---|---|
 | 项目状态 | [`docs/current-project.md`](current-project.md) | 当前双款目标、归档证据与实物待办；制造 HOLD 保持。 |
 | 星图与 LED 审阅 | [双款设计审阅](../hardware/nfc-talisman/variants/common/design-review.md) | 美观判断、槽与星孔的视觉取舍、对称 LED 布局及实物光效验证边界。 |
-| 两款共用工程与清单 | [`variants/common/export-manifest.json`](../hardware/nfc-talisman/variants/common/export-manifest.json)、[`variants/common/native-archive-validation.json`](../hardware/nfc-talisman/variants/common/native-archive-validation.json) | 共用核心和两拼板 UUID、保存重开 DRC、原生归档及当前版本文件清单。 |
+| 原彩色共用工程与清单 | [`variants/common/export-manifest.json`](../hardware/nfc-talisman/variants/common/export-manifest.json)、[`variants/common/native-archive-validation.json`](../hardware/nfc-talisman/variants/common/native-archive-validation.json) | 原彩色 3 PCB 归档：共用核心和两拼板 UUID、保存重开 DRC 及文件清单。 |
+| 普通绿白双款 | [standard-green-white/README.md](../hardware/nfc-talisman/variants/standard-green-white/README.md)、[全 5 PCB 集成工程](../hardware/nfc-talisman/variants/standard-green-white/eda/native/nfc-color-and-green-white.epro2)、[独立导出清单](../hardware/nfc-talisman/variants/standard-green-white/export-manifest.json)、[对比展示 PDF](../output/pdf/NFC符咒_绿白普通工艺展示.pdf) | 两款独立普通 PCB，绿阻焊/白丝印；保存重开 DRC 均为 0，普通 Gerber 已导出，独立文件/区域审计待完成。 |
 | 共用铜/面板几何审计 | [`native-copper-audit.json`](../hardware/nfc-talisman/variants/common/native-copper-audit.json)、[`face-geometry-audit.json`](../hardware/nfc-talisman/variants/common/face-geometry-audit.json)、[对称核心布局图](../hardware/nfc-talisman/variants/common/layout-review/symmetric-core-layout-review.png) | 当前两面、两拼板审计和 LED 对称布局图。 |
 | Horse + Sagittarius 当前包 | [`Horse–Sagittarius Gerber 与 BOM/PnP`](../hardware/nfc-talisman/variants/horse-sagittarius/manufacturing-draft/README.md)、[盖板预览](../hardware/nfc-talisman/variants/horse-sagittarius/artwork/cover-review-preview.png) | 当前候选盖板及该版本制造草案；仍待 CAM、C1 与实体验证。 |
 | Snake + Leo 当前包 | [`Snake–Leo Gerber 与 BOM/PnP`](../hardware/nfc-talisman/variants/snake-leo/manufacturing-draft/README.md)、[盖板预览](../hardware/nfc-talisman/variants/snake-leo/artwork/cover-review-preview.png) | 9 星/10 图案边、8 物理槽、2 短印线；当前候选盖板及该版本制造草案。 |

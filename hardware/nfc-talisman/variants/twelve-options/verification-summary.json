@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-15",
+  "full_software_tests": {
+    "command": "cmd /c scripts/run_checks.cmd",
+    "tests_passed": 185,
+    "failures": 0,
+    "native_compilation": "MSVC x64; no skipped tests"
+  },
+  "delivery_checks": {
+    "command": "python scripts/check_project.py --skip-tests --output build/project-check-20261015.json",
+    "checks_passed": 96,
+    "failures": 0,
+    "unittest_run_in_this_command": false
+  },
+  "new_passive_cover_pcbs": 4,
+  "covers_per_new_pcb": 5,
+  "ordinary_full_product_pcbs_added": 2,
+  "existing_color_pcbs_retained": true,
+  "new_native_drc_results": [
+    [],
+    [],
+    [],
+    []
+  ],
+  "new_npth_positions_and_diameters_verified": 543,
+  "release_ready": false,
+  "release_status": "HOLD_CAM_C1_PHYSICAL_VALIDATION_PENDING"
+}

@@ -1,0 +1,9 @@
+# Track concise creation/save/DRC evidence; native snapshots hold full sources.
+*
+!.gitignore
+!before-catalog.json
+!create-*.json
+!name-check-*.json
+!save-close-*.json
+!drc-*.json
+!green-preview-save-*.json

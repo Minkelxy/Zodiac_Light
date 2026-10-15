@@ -1,0 +1,23 @@
+{
+  "created_date": "2026-10-15",
+  "pdf": "output/pdf/NFC符咒_绿白普通工艺展示.pdf",
+  "pages": 3,
+  "purpose": "design comparison and ordinary process explanation; not a physical sample",
+  "manufacturing_release_status": "HOLD_CAM_C1_PHYSICAL_VALIDATION_PENDING",
+  "sources": {
+    "hardware/nfc-talisman/variants/horse-sagittarius/artwork/cover-review-preview.png": "79bd51335a5d414a2850d50bf73191071128b704ab651b6c899b4437581f2066",
+    "hardware/nfc-talisman/variants/snake-leo/artwork/cover-review-preview.png": "591b5ad963a9b6306f33c6fd031884e86db17a75ad2ee7997d7d3f29191ad259",
+    "hardware/nfc-talisman/variants/standard-green-white/artwork/horse-sagittarius-front-standard-green-white-37mm.png": "a2b3b05653a8a5bc585d6b010e16d8e59b3e765690a89c2b6954e88df2a853db",
+    "hardware/nfc-talisman/variants/standard-green-white/artwork/horse-sagittarius-rear-standard-green-white-37mm.png": "c3431470a0403fb28fca0405081c9259c23a341d2fb652c7130a6ffd8cb49a00",
+    "hardware/nfc-talisman/variants/standard-green-white/artwork/snake-leo-front-standard-green-white-37mm.png": "ccf5c339f3126d7ab0e0720b796388db37dcefb0279ed6810de77c54b1ec8867",
+    "hardware/nfc-talisman/variants/standard-green-white/artwork/snake-leo-rear-standard-green-white-37mm.png": "66b0f34218b94cf57c7059bfea7ce49ce216174229270fe3bdbbe0c8c2bf1847"
+  },
+  "process_evidence": {
+    "hardware/nfc-talisman/variants/standard-green-white/artwork/README.md": "ffbb08a7b8f5b3c05ce3cb61dcf253f9d291f1218cb0cbd82aad6d6dad23a54d",
+    "hardware/nfc-talisman/variants/standard-green-white/artwork/manifest.json": "b8bb9d0727dc2e6b674c8a038693ce5ca665a39da52396977840d47e980fbb84",
+    "hardware/nfc-talisman/variants/standard-green-white/export-manifest.json": "f61515f052fbb3fc3f5df782fb21a367e8307defc99ac87536052cb5713df063",
+    "hardware/nfc-talisman/variants/standard-green-white/artwork/horse-sagittarius-standard-layer-artwork.json": "89917ee2983a92335050726b6b1c10a71a83746f1f5732a7979012e1615de92c",
+    "hardware/nfc-talisman/variants/standard-green-white/artwork/snake-leo-standard-layer-artwork.json": "ba72423d36b80ac48f5e2f403a52a65ea30a77771a1958f5339435857945e4fb"
+  },
+  "pdf_sha256": "5d8e143be51ee7a141ccfa2b799c9a957880a334a85d30e1c17664dcea5944fd"
+}

@@ -1,0 +1,37 @@
+{
+  "success": true,
+  "result": [
+    {
+      "itemType": "PCB",
+      "uuid": "eb14b9eaec4f920c",
+      "name": "PCB1",
+      "parentProjectUuid": "c051e4069a83472198ecce7729fbd257",
+      "parentBoardName": "Board1"
+    },
+    {
+      "itemType": "PCB",
+      "uuid": "4a4719695b24dc2b",
+      "name": "Horse-Sagittarius-100",
+      "parentProjectUuid": "c051e4069a83472198ecce7729fbd257"
+    },
+    {
+      "itemType": "PCB",
+      "uuid": "fe8ee4534ee0b941",
+      "name": "ManufacturingPanel100_1",
+      "parentProjectUuid": "c051e4069a83472198ecce7729fbd257"
+    },
+    {
+      "itemType": "PCB",
+      "uuid": "7b9104396cd59877",
+      "name": "Horse-Sagittarius-GreenWhite-100-v1",
+      "parentProjectUuid": "c051e4069a83472198ecce7729fbd257"
+    },
+    {
+      "itemType": "PCB",
+      "uuid": "8bb2139a68d10671",
+      "name": "Snake-Leo-GreenWhite-100-v1",
+      "parentProjectUuid": "c051e4069a83472198ecce7729fbd257"
+    }
+  ],
+  "windowId": "f1b5161d-e6ed-421e-91f6-d8977ccc2327"
+}

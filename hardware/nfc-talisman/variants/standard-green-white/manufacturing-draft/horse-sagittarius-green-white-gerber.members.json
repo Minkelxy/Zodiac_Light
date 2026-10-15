@@ -1,0 +1,77 @@
+[
+  {
+    "name": "Gerber_TopLayer.GTL",
+    "size": 15816,
+    "sha256": "fe419d64d708286dad3a44c666f3d1ede5f34a8fc9cd07285da48f4ffa7af177"
+  },
+  {
+    "name": "Gerber_BottomLayer.GBL",
+    "size": 5390,
+    "sha256": "1f104a899367a2cb6759238879be5354f119d8c3bad7743b8410ce2adc6aaf31"
+  },
+  {
+    "name": "Gerber_TopSilkscreenLayer.GTO",
+    "size": 205329,
+    "sha256": "b85c9ba04ca839607ddb6891f51a7a254998a5f242d8ad2cf1e25da256a8c5ab"
+  },
+  {
+    "name": "Gerber_BottomSilkscreenLayer.GBO",
+    "size": 5514,
+    "sha256": "bf50c8131b013e238da9d9f97611c1dabd9d10026373330ef704507f1b88c141"
+  },
+  {
+    "name": "Gerber_TopSolderMaskLayer.GTS",
+    "size": 53660,
+    "sha256": "e16b8d03c6b2ce0f910369c63492b864577b37f2b2fb63146bf5b15845cf948b"
+  },
+  {
+    "name": "Gerber_BottomSolderMaskLayer.GBS",
+    "size": 4068,
+    "sha256": "be83b46afd6e1378e898a463fb729a481c2a0473adbd273bb60f24f39ab0618e"
+  },
+  {
+    "name": "Gerber_TopPasteMaskLayer.GTP",
+    "size": 4807,
+    "sha256": "5966d7147844644159b86e783e0cc921fc71547ee9be097569d2d2b53503760b"
+  },
+  {
+    "name": "Gerber_BottomPasteMaskLayer.GBP",
+    "size": 2191,
+    "sha256": "183798f899d4d59ac0446784e5376493349038245ed4cf0c02c2d5be9e6b292e"
+  },
+  {
+    "name": "Gerber_BoardOutlineLayer.GKO",
+    "size": 26503,
+    "sha256": "36d087c00525f919469c426b0eacf96a600196118894203332c9ca22b003886b"
+  },
+  {
+    "name": "Gerber_DocumentLayer.GDL",
+    "size": 2459,
+    "sha256": "d5efdbcf99f1b354dd7f618795d2eb54c567e5f349767927842b81c9d77433e2"
+  },
+  {
+    "name": "Gerber_DrillDrawingLayer.GDD",
+    "size": 84130,
+    "sha256": "02e09ab77c0a8506da1701174cd3474db7c5d6c63a841f0b0a42ea79078b014f"
+  },
+  {
+    "name": "Drill_PTH_Through.DRL",
+    "size": 396,
+    "sha256": "af559f78582e67b2741493f48ef94e77d76e51e9ad68cf03e0a2ab9859b3d935"
+  },
+  {
+    "name": "Drill_NPTH_Through.DRL",
+    "size": 2036,
+    "sha256": "f3a4afa7a014f097ec5bfacf9273c1a593ff04869641390fca5aeef307ab402e"
+  },
+  {
+    "name": "Drill_PTH_Through_Via.DRL",
+    "size": 400,
+    "sha256": "3ba8d3259a572b57fc84f46d12c2662010c6ec5671fc8ead1ea04cce7f58e54d"
+  },
+  {
+    "name": "PCB下单必读.txt",
+    "size": 94,
+    "sha256": "dcb3ee1c645c17a009d70726ad9ab708b68a074556fabcf75a4a059d3b43ec59"
+  }
+]

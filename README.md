@@ -2,11 +2,16 @@
 
 本仓库包含 **40 cm 射手座 WS2812 星座灯**、其 **U1 亚克力刻线与灯条定位模板**，以及 **马 + 射手座 / 蛇 + 狮子座两款 37 mm NFC 符咒**的原生工程、制造草案和审计记录。
 
+新增绿色阻焊、白色丝印版，以及四块各含五片的 100 × 100 mm 盖板拼板，补齐 **12 星座与 12 生肖**选项，复用现有 NFC 核心。
+
 | 从这里开始 | 当前交付内容 |
 |---|---|
+| [十二星座与十二生肖](hardware/nfc-talisman/variants/twelve-options/README.md) | 新增两块五星座、两块五生肖拼板；[全九 PCB 工程](hardware/nfc-talisman/variants/twelve-options/eda/native/nfc-twelve-options.epro2)、[五页展示 PDF](output/pdf/十二星座与生肖_拼板展示.pdf)；四板保存重开 DRC 均为 0 |
 | [项目状态](docs/current-project.md) | 灯带与双款 NFC 的状态、证据和待验收事项 |
 | [40 cm 制作资料](output/README.md) | U1 刻线 PDF/SVG、六张 A4 拼接纸、灯条定位与裁切表 |
-| [NFC 双款工程](hardware/nfc-talisman/variants/common/eda/native/nfc-two-variants.epro2) | 共用核心板及两款各自 100 × 100 mm 五片拼板；[文件清单](hardware/nfc-talisman/variants/common/export-manifest.json) |
+| [NFC 原彩色双款工程](hardware/nfc-talisman/variants/common/eda/native/nfc-two-variants.epro2) | 共用核心板及两款各自 100 × 100 mm 五片拼板；[原彩色文件清单](hardware/nfc-talisman/variants/common/export-manifest.json) |
+| [NFC 绿白普通工艺双款](hardware/nfc-talisman/variants/standard-green-white/README.md) | 独立马/蛇 PCB：绿色阻焊、白色丝印，无彩色喷印与装饰铜；两款保存重开 DRC 为 0，全 5 PCB 工程与普通 Gerber 已导出 |
+| [NFC 版本导航](hardware/nfc-talisman/variants/README.md) | 原彩色与普通绿白分别保存，按版本选择工程、图案和制造草案 |
 | [文档地图](docs/document-map.md) | 当前资料、历史候选、单拼板旧输出的分类导航 |
 | [复现与交付指南](docs/delivery.md) | 安装、全项目检查、打包、校验与接收步骤 |
 | [GitHub 版本下载](https://github.com/Minkelxy/Zodiac_Light/releases) | 按提交归档的交付 ZIP 和 SHA-256 校验文件 |

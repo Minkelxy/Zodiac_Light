@@ -1,0 +1,153 @@
+{
+  "schema_version": 1,
+  "process": {
+    "mask": "green",
+    "silk": "white",
+    "color_printing": false,
+    "decorative_copper": false
+  },
+  "existing_constellations": [
+    "sagittarius",
+    "leo"
+  ],
+  "existing_zodiac": [
+    "horse",
+    "snake"
+  ],
+  "panels": [
+    {
+      "key": "constellations-a",
+      "name": "Constellations-A-5x37-GreenWhite-100",
+      "covers": [
+        "aries",
+        "taurus",
+        "gemini",
+        "cancer",
+        "virgo"
+      ],
+      "geometry": "geometry/constellations-a.json",
+      "preview": "artwork/constellations-a-100mm.png",
+      "primitive_count": 356
+    },
+    {
+      "key": "constellations-b",
+      "name": "Constellations-B-5x37-GreenWhite-100",
+      "covers": [
+        "libra",
+        "scorpius",
+        "capricornus",
+        "aquarius",
+        "pisces"
+      ],
+      "geometry": "geometry/constellations-b.json",
+      "preview": "artwork/constellations-b-100mm.png",
+      "primitive_count": 367
+    },
+    {
+      "key": "zodiac-a",
+      "name": "Zodiac-A-5x37-GreenWhite-100",
+      "covers": [
+        "rat",
+        "ox",
+        "tiger",
+        "rabbit",
+        "dragon"
+      ],
+      "geometry": "geometry/zodiac-a.json",
+      "preview": "artwork/zodiac-a-100mm.png",
+      "primitive_count": 167
+    },
+    {
+      "key": "zodiac-b",
+      "name": "Zodiac-B-5x37-GreenWhite-100",
+      "covers": [
+        "goat",
+        "monkey",
+        "rooster",
+        "dog",
+        "pig"
+      ],
+      "geometry": "geometry/zodiac-b.json",
+      "preview": "artwork/zodiac-b-100mm.png",
+      "primitive_count": 165
+    }
+  ],
+  "cover_af_mm": 37,
+  "panel_mm": [
+    100,
+    100
+  ],
+  "routing_gap_mm": 1.0,
+  "tab_width_mm": 4.0,
+  "mousebite_diameter_mm": 0.4,
+  "release_status": "HOLD_CAM_PHYSICAL_VALIDATION_PENDING",
+  "role": "interchangeable passive covers; reuse existing NFC core",
+  "minimum_cover_to_cover_gap_mm": 4.012193308819756,
+  "minimum_outer_rail_mm": 1.5,
+  "files": {
+    "geometry/constellations-a.json": {
+      "size": 1908993,
+      "sha256": "99cd44d8c5dcf326408b121820a668bfbbc993c15b95b45f3ee7886520217a70"
+    },
+    "geometry/constellations-b.json": {
+      "size": 2134956,
+      "sha256": "f57d0f21c80dca97cc6c76c457c4e8140327ae64b18b4d9177b19b40ad2a4aaa"
+    },
+    "geometry/zodiac-a.json": {
+      "size": 457883,
+      "sha256": "59f8ad2a6234f50f42b38add875eca9b548e9d3efef7abab8e3085153de71826"
+    },
+    "geometry/zodiac-b.json": {
+      "size": 473903,
+      "sha256": "349ca34354cea2cfc63a76c732eabd4970eef426196ad1b4ecd4f99f5a46cfb1"
+    },
+    "artwork/constellations-a-100mm.png": {
+      "size": 277062,
+      "sha256": "0a6f5225e79c404d9f65169febf89d71d7d9717ee6b97ec9005f0c502eacca02"
+    },
+    "artwork/constellations-a-100mm.svg": {
+      "size": 826963,
+      "sha256": "7aaa29e7185c3b7572cf39554474f8ac8b05db474ade8bb3033a749d9de0fa05"
+    },
+    "artwork/constellations-b-100mm.png": {
+      "size": 309780,
+      "sha256": "d43f995abc7e923c20a89ef80bf6f72987a4df0b7cf0480b5164d956ff7f3b34"
+    },
+    "artwork/constellations-b-100mm.svg": {
+      "size": 922298,
+      "sha256": "38fcfc261d465c49f1504ea42e28ad69836df67e3b1b068c4d59315175be0aea"
+    },
+    "artwork/zodiac-a-100mm.png": {
+      "size": 231675,
+      "sha256": "1f5b11e3d9e04e3766124f35520535629a0798c43636905eace43bdb6334d381"
+    },
+    "artwork/zodiac-a-100mm.svg": {
+      "size": 249012,
+      "sha256": "75d4a7cddbbb339cd8a232035d74994537e991d8cbb5b2a73c6756a39d6a120a"
+    },
+    "artwork/zodiac-b-100mm.png": {
+      "size": 229770,
+      "sha256": "444e6f15ca19301f63bd163b8bd5d440855d6736cf56a1f8bfc518983624d1c3"
+    },
+    "artwork/zodiac-b-100mm.svg": {
+      "size": 255440,
+      "sha256": "ced335eec1d5a30321f4107a39d3ee42510876c52a8b6585982d39d9fc88b80d"
+    },
+    "sources/hipparcos-zodiac.tsv": {
+      "size": 7164,
+      "sha256": "580351e213782b3e615ba669596cdaff517d410bb1799502b80978c61a046eda"
+    },
+    "sources/sources.json": {
+      "size": 3234,
+      "sha256": "1e76547420403f3c1faaa3ea3d2d7c15adfc86b0f5937334f784655b492c1566"
+    },
+    "sources/stellarium-modern-description.md": {
+      "size": 53269,
+      "sha256": "4b58344f63168d7c816fdfef405103b5770fda2e1f4a4bf5c8871041ce042586"
+    },
+    "sources/stellarium-modern-index.json": {
+      "size": 205767,
+      "sha256": "1f2f5ffd6c9e25a7d0dcfdbf1f756e2db03dd3b8ed4ec016a2839b09f6b0fe1e"
+    }
+  }
+}

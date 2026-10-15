@@ -1,0 +1,95 @@
+{
+  "status": "passed",
+  "coordinate_tolerance_mm": 1e-05,
+  "design_manifest_sha256": "306bd41ced3568d03e9702fb0416c79d38efb00064185c5e96db8d223f0136b3",
+  "panels": {
+    "constellations-a": {
+      "gerber_sha256": "95b1fd54a5937ae3af157697526b84bf18ba7fbc1fef4a37bf6f5a294502d64f",
+      "silk": {
+        "boundary_error_mm": 2.281875820456719e-06,
+        "area_mm2": 104.7278289206835,
+        "negative_holes": 85,
+        "nominal_width_has_no_extra_stroke": true
+      },
+      "mask": {
+        "boundary_error_mm": 2.224166453146377e-06,
+        "area_mm2": 211.83824051820002,
+        "negative_holes": 0,
+        "nominal_width_has_no_extra_stroke": true
+      },
+      "status": "passed",
+      "connected_substrate": true,
+      "substrate_area_mm2": 9309.905757608363,
+      "actual_silk_mask_gap_mm": 0.15994923917042836,
+      "npth_positions_and_diameters_verified": 151,
+      "cover_count": 5
+    },
+    "constellations-b": {
+      "gerber_sha256": "655c3537fdce9af14595f6ec69b49ece453cdc447023cb797171ffc1a148ece4",
+      "silk": {
+        "boundary_error_mm": 2.333981575147139e-06,
+        "area_mm2": 130.2130663142419,
+        "negative_holes": 106,
+        "nominal_width_has_no_extra_stroke": true
+      },
+      "mask": {
+        "boundary_error_mm": 2.2000794962040922e-06,
+        "area_mm2": 195.609092143157,
+        "negative_holes": 0,
+        "nominal_width_has_no_extra_stroke": true
+      },
+      "status": "passed",
+      "connected_substrate": true,
+      "substrate_area_mm2": 9322.655367819296,
+      "actual_silk_mask_gap_mm": 0.15994918624572363,
+      "npth_positions_and_diameters_verified": 162,
+      "cover_count": 5
+    },
+    "zodiac-a": {
+      "gerber_sha256": "243a5f211e681cfdadc5c0953f05a91619b26ddfc70e58a18cd81eb99bc78415",
+      "silk": {
+        "boundary_error_mm": 2.2047660420298015e-06,
+        "area_mm2": 340.10750499675385,
+        "negative_holes": 29,
+        "nominal_width_has_no_extra_stroke": true
+      },
+      "mask": {
+        "boundary_error_mm": null,
+        "area_mm2": 0.0,
+        "negative_holes": 0,
+        "nominal_width_has_no_extra_stroke": true
+      },
+      "status": "passed",
+      "connected_substrate": true,
+      "substrate_area_mm2": 9438.743380690668,
+      "actual_silk_mask_gap_mm": null,
+      "npth_positions_and_diameters_verified": 100,
+      "cover_count": 5
+    },
+    "zodiac-b": {
+      "gerber_sha256": "51c70cabc14e7389e843516b5a39db3da08b6a5b631716df196a44e40343a060",
+      "silk": {
+        "boundary_error_mm": 2.1630396268113126e-06,
+        "area_mm2": 328.46236725487773,
+        "negative_holes": 24,
+        "nominal_width_has_no_extra_stroke": true
+      },
+      "mask": {
+        "boundary_error_mm": null,
+        "area_mm2": 0.0,
+        "negative_holes": 0,
+        "nominal_width_has_no_extra_stroke": true
+      },
+      "status": "passed",
+      "connected_substrate": true,
+      "substrate_area_mm2": 9438.743380690668,
+      "actual_silk_mask_gap_mm": null,
+      "npth_positions_and_diameters_verified": 100,
+      "cover_count": 5
+    }
+  },
+  "errors": [],
+  "limitations": [
+    "Ideal geometry and export consistency only. Router corner treatment, mousebite breakout force, laminate thickness and optical/stacking acceptance require supplier CAM and samples."
+  ]
+}

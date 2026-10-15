@@ -1,0 +1,314 @@
+{
+  "project": "c051e4069a83472198ecce7729fbd257",
+  "role": "passive interchangeable covers; reuse existing NFC core",
+  "existing": {
+    "eb14b9eaec4f920c": {
+      "path": "variants/twelve-options/eda/native/before-eb14b9eaec4f920c.jsonl",
+      "sha256": "6e890a1c57318676b0ccf2f999ea1663a2c913b8bbea6ba34c3a5ace3b2626b4",
+      "uuid": "eb14b9eaec4f920c",
+      "live_retained": true
+    },
+    "4a4719695b24dc2b": {
+      "path": "variants/twelve-options/eda/native/before-4a4719695b24dc2b.jsonl",
+      "sha256": "faeffc1a085a8e3120a9c8315713c0954e2e8a362b178cffd0ef493cec318f92",
+      "uuid": "4a4719695b24dc2b",
+      "live_retained": true
+    },
+    "fe8ee4534ee0b941": {
+      "path": "variants/twelve-options/eda/native/before-fe8ee4534ee0b941.jsonl",
+      "sha256": "5f86a590acd42e8ffa10f7c2ea23e928b16c26f12323999215c630d21d39c2d4",
+      "uuid": "fe8ee4534ee0b941",
+      "live_retained": true
+    },
+    "7b9104396cd59877": {
+      "path": "variants/twelve-options/eda/native/before-7b9104396cd59877.jsonl",
+      "sha256": "93ec182d71505a0bfc49bc47bb7f526022ebbed0856f5255b88af93cda9656c3",
+      "uuid": "7b9104396cd59877",
+      "live_retained": true
+    },
+    "8bb2139a68d10671": {
+      "path": "variants/twelve-options/eda/native/before-8bb2139a68d10671.jsonl",
+      "sha256": "c689fceae55b2780fa1de45080e42a3b5107d4714005e28a28d9365a306bfe12",
+      "uuid": "8bb2139a68d10671",
+      "live_retained": true
+    }
+  },
+  "boards": [
+    {
+      "key": "constellations-a",
+      "uuid": "da4d85d9f04979eb",
+      "requested_name": "Constellations-A-5x37-GreenWhite-100",
+      "status": "saved_reopened",
+      "blank_source": {
+        "path": "variants/twelve-options/eda/native/blank-constellations-a.jsonl",
+        "sha256": "09746330b68836e2a2aa6f98f3686f88e91a08e9dc152c306deb702aa6faddf7",
+        "uuid": "da4d85d9f04979eb"
+      },
+      "name": "Constellations-A-5x37-GreenWhite-100",
+      "source": {
+        "path": "variants/twelve-options/eda/native/constellations-a-source.jsonl",
+        "sha256": "57d2fb7d2cf70c7277847cead5d5997d77cad0928a87298e9ecddaad43c6ef09",
+        "uuid": "da4d85d9f04979eb"
+      },
+      "geometry": "geometry/constellations-a.json",
+      "cover_count": 5,
+      "drc": [],
+      "gerber": {
+        "path": "variants/twelve-options/manufacturing-draft/constellations-a-green-white-gerber.zip",
+        "size": 261290,
+        "sha256": "95b1fd54a5937ae3af157697526b84bf18ba7fbc1fef4a37bf6f5a294502d64f",
+        "members": {
+          "Gerber_TopLayer.GTL": {
+            "size": 4645,
+            "sha256": "2b964a24dfaf8a812625f748a3de42cd013d30f994ad95b867b80de943e227b4"
+          },
+          "Gerber_BottomLayer.GBL": {
+            "size": 4648,
+            "sha256": "c1d5f48b9550edc62b2ac9967eba5acc6a69e1d8c27c6ec422669f264936198b"
+          },
+          "Gerber_TopSilkscreenLayer.GTO": {
+            "size": 437569,
+            "sha256": "70218682bd13402902133d56f6b2f88fba4f5fb4f88bcac6bb994c5111a0d53f"
+          },
+          "Gerber_BottomSilkscreenLayer.GBO": {
+            "size": 630,
+            "sha256": "628a2e7814122694ae8697839aa94ba2bf4ce8e425c59ba3cd421ec62202ab86"
+          },
+          "Gerber_TopSolderMaskLayer.GTS": {
+            "size": 337070,
+            "sha256": "e4210d0d48035d2ff85b5448909decd351ab204047bf46b046d429462b5b9f76"
+          },
+          "Gerber_BottomSolderMaskLayer.GBS": {
+            "size": 4658,
+            "sha256": "e0f872a808e730258eb41192d0522841166fd0c7c72d2cf216f655b78586d29f"
+          },
+          "Gerber_BoardOutlineLayer.GKO": {
+            "size": 49877,
+            "sha256": "21e887ef581a906cd70fd9fbbf258e7d4bad7a8a5027840584d19338df9ca136"
+          },
+          "Gerber_DrillDrawingLayer.GDD": {
+            "size": 66855,
+            "sha256": "07b2f7625cddc11912a3faf263abb3a1d1fe9a7c8b77e87998a7d68c874cbcd9"
+          },
+          "Drill_NPTH_Through.DRL": {
+            "size": 3028,
+            "sha256": "4f94c25764c124ab5e1961db36f829fe3b41882d7a894382c5afc942dae9d3f5"
+          },
+          "PCB下单必读.txt": {
+            "size": 94,
+            "sha256": "dcb3ee1c645c17a009d70726ad9ab708b68a074556fabcf75a4a059d3b43ec59"
+          }
+        }
+      }
+    },
+    {
+      "key": "constellations-b",
+      "uuid": "9883f07d70af99ab",
+      "requested_name": "Constellations-B-5x37-GreenWhite-100",
+      "status": "saved_reopened",
+      "blank_source": {
+        "path": "variants/twelve-options/eda/native/blank-constellations-b.jsonl",
+        "sha256": "8baed2ff1586bc3427e5276245e0a0c17218393cf3e8ac75cf2c4db990eea9c0",
+        "uuid": "9883f07d70af99ab"
+      },
+      "name": "Constellations-B-5x37-GreenWhite-100",
+      "source": {
+        "path": "variants/twelve-options/eda/native/constellations-b-source.jsonl",
+        "sha256": "f1e492cd35e28fc66da2c06ff15df8684b6397845c80050adb9b1b6723e00bc3",
+        "uuid": "9883f07d70af99ab"
+      },
+      "geometry": "geometry/constellations-b.json",
+      "cover_count": 5,
+      "drc": [],
+      "gerber": {
+        "path": "variants/twelve-options/manufacturing-draft/constellations-b-green-white-gerber.zip",
+        "size": 290258,
+        "sha256": "655c3537fdce9af14595f6ec69b49ece453cdc447023cb797171ffc1a148ece4",
+        "members": {
+          "Gerber_TopLayer.GTL": {
+            "size": 4932,
+            "sha256": "a93d60a4cab14e7052215c35cee5cbf16de355d38ad57f220be177200f71c82b"
+          },
+          "Gerber_BottomLayer.GBL": {
+            "size": 4935,
+            "sha256": "f67c90e613bf65cdb6c681ede9162d8d349936443af5389d5da7427ad933742b"
+          },
+          "Gerber_TopSilkscreenLayer.GTO": {
+            "size": 528264,
+            "sha256": "a2b323ad1e7cd1dc892c8b8e0c248577d2ac4b4d0b485943f75eb7f333e8a01d"
+          },
+          "Gerber_BottomSilkscreenLayer.GBO": {
+            "size": 630,
+            "sha256": "fe814ace3ae17b4bce35576f8eca4f97b32bf52c2adaa76dc1747174fa411bdb"
+          },
+          "Gerber_TopSolderMaskLayer.GTS": {
+            "size": 368723,
+            "sha256": "9fa0d24e557297f9cd9984f7ce9a6e7f520fcca87bde9ac89b67cd226f788e68"
+          },
+          "Gerber_BottomSolderMaskLayer.GBS": {
+            "size": 4945,
+            "sha256": "1abda2c3f51518030296600d5f90a59733425fe80bbf2e7274a5ee6ca6c7f33d"
+          },
+          "Gerber_BoardOutlineLayer.GKO": {
+            "size": 37717,
+            "sha256": "9919a35b09abf6a5d3cb319e7e9c49451ddc3d820b1e09ec7647071dbc2a1b89"
+          },
+          "Gerber_DrillDrawingLayer.GDD": {
+            "size": 67574,
+            "sha256": "fde64aac285c0231aa91596cc58b56e67d41802962e91e45d20a4f2b68b5e2e3"
+          },
+          "Drill_NPTH_Through.DRL": {
+            "size": 3243,
+            "sha256": "992c930268c1540c3fd57566f625a0877655016900405659b3009c62fa6dbc3e"
+          },
+          "PCB下单必读.txt": {
+            "size": 94,
+            "sha256": "dcb3ee1c645c17a009d70726ad9ab708b68a074556fabcf75a4a059d3b43ec59"
+          }
+        }
+      }
+    },
+    {
+      "key": "zodiac-a",
+      "uuid": "abc3d3a5e6e4793c",
+      "requested_name": "Zodiac-A-5x37-GreenWhite-100",
+      "status": "saved_reopened",
+      "blank_source": {
+        "path": "variants/twelve-options/eda/native/blank-zodiac-a.jsonl",
+        "sha256": "9f3b9c59c92f9ff0d9342e71e8ed01dd81d03c6ff1edcc7039ea664fed7e2990",
+        "uuid": "abc3d3a5e6e4793c"
+      },
+      "name": "Zodiac-A-5x37-GreenWhite-100",
+      "source": {
+        "path": "variants/twelve-options/eda/native/zodiac-a-source.jsonl",
+        "sha256": "96188fa83382da2e7cd3c03a403675968113d664c51ebdbac9aea5b393318c71",
+        "uuid": "abc3d3a5e6e4793c"
+      },
+      "geometry": "geometry/zodiac-a.json",
+      "cover_count": 5,
+      "drc": [],
+      "gerber": {
+        "path": "variants/twelve-options/manufacturing-draft/zodiac-a-green-white-gerber.zip",
+        "size": 61226,
+        "sha256": "243a5f211e681cfdadc5c0953f05a91619b26ddfc70e58a18cd81eb99bc78415",
+        "members": {
+          "Gerber_TopLayer.GTL": {
+            "size": 3229,
+            "sha256": "b7f9466d78b890a82f2f17f5310fc4731a6d0ade68ea55cb834133d3d2259b96"
+          },
+          "Gerber_BottomLayer.GBL": {
+            "size": 3232,
+            "sha256": "b7b779016f8d7bfb9401fe868eac45b71428c50938e78bb90187960afe8f0c52"
+          },
+          "Gerber_TopSilkscreenLayer.GTO": {
+            "size": 139943,
+            "sha256": "b613839b0744aa001da4938e4e43495f2b62f0833df9d0ce13f7e18b6b68928a"
+          },
+          "Gerber_BottomSilkscreenLayer.GBO": {
+            "size": 630,
+            "sha256": "630166322debbfbd797b2c8459d57b9f5efd6d62aad227a57a949312f3245060"
+          },
+          "Gerber_TopSolderMaskLayer.GTS": {
+            "size": 3239,
+            "sha256": "4a31f2ee9de66957aeb3919a4972d9733a4151adb9c215640b600657895d67b6"
+          },
+          "Gerber_BottomSolderMaskLayer.GBS": {
+            "size": 3242,
+            "sha256": "1c0970bacfb3172901690f02a04b80b7e51a02b0a9f1749b69923da29bd20a2a"
+          },
+          "Gerber_BoardOutlineLayer.GKO": {
+            "size": 11587,
+            "sha256": "ef51023fed26b7fc0cf527faa26de1721b8700da796f145ba6cf90fa5f8408a2"
+          },
+          "Gerber_DrillDrawingLayer.GDD": {
+            "size": 40161,
+            "sha256": "a11c473282ccf929e59e4b03218ba31430026f902bc57bc3623d21536529a441"
+          },
+          "Drill_NPTH_Through.DRL": {
+            "size": 1914,
+            "sha256": "f8df5b13a9ec59734c0d8eb7154762db66fe5b62c650ec4d619f45520a872240"
+          },
+          "PCB下单必读.txt": {
+            "size": 94,
+            "sha256": "dcb3ee1c645c17a009d70726ad9ab708b68a074556fabcf75a4a059d3b43ec59"
+          }
+        }
+      }
+    },
+    {
+      "key": "zodiac-b",
+      "uuid": "215baefd4debbd14",
+      "requested_name": "Zodiac-B-5x37-GreenWhite-100",
+      "status": "saved_reopened",
+      "blank_source": {
+        "path": "variants/twelve-options/eda/native/blank-zodiac-b.jsonl",
+        "sha256": "cce4a2d9e5166a2fc3e5d3e3a64851bfb9fcc85204cc80d49e5103f4dddf9a0a",
+        "uuid": "215baefd4debbd14"
+      },
+      "name": "Zodiac-B-5x37-GreenWhite-100",
+      "source": {
+        "path": "variants/twelve-options/eda/native/zodiac-b-source.jsonl",
+        "sha256": "169bfdffa76d71246861a8d6484bb1b7f1e0fe6288dee545e3e7f432da8e0bd8",
+        "uuid": "215baefd4debbd14"
+      },
+      "geometry": "geometry/zodiac-b.json",
+      "cover_count": 5,
+      "drc": [],
+      "gerber": {
+        "path": "variants/twelve-options/manufacturing-draft/zodiac-b-green-white-gerber.zip",
+        "size": 64095,
+        "sha256": "51c70cabc14e7389e843516b5a39db3da08b6a5b631716df196a44e40343a060",
+        "members": {
+          "Gerber_TopLayer.GTL": {
+            "size": 3229,
+            "sha256": "d83fae7709a28c659473e8e340d787cfd35512ed1b13794f059061a4d7409b9e"
+          },
+          "Gerber_BottomLayer.GBL": {
+            "size": 3232,
+            "sha256": "ba754b7cdcdf33ca267cccbd2baf3695ba8c7932e84a8e0a38f6dd033d806ab3"
+          },
+          "Gerber_TopSilkscreenLayer.GTO": {
+            "size": 148017,
+            "sha256": "8a61c97883e3c96a287967d06dc5c45789984149dc4852118c60598ee79453ca"
+          },
+          "Gerber_BottomSilkscreenLayer.GBO": {
+            "size": 630,
+            "sha256": "8e32f62e61b36e91f8716db58a3edf84bd41e142f7220a6c9295e459a7a92b0a"
+          },
+          "Gerber_TopSolderMaskLayer.GTS": {
+            "size": 3239,
+            "sha256": "575b17704e2aff8eb8ea432057f1929259cad7cf2bd953901d6b0a7b41ef663c"
+          },
+          "Gerber_BottomSolderMaskLayer.GBS": {
+            "size": 3242,
+            "sha256": "14001dca15f835b5e7776ddcdcb6dde2d33e6d7ccf054db91f5af461e5045282"
+          },
+          "Gerber_BoardOutlineLayer.GKO": {
+            "size": 11587,
+            "sha256": "9912d6e228e60c911266bf67d204759cc6da11c8111186f20abcc0dc9142b8d8"
+          },
+          "Gerber_DrillDrawingLayer.GDD": {
+            "size": 40161,
+            "sha256": "d218e2fc8f51f54b44b7b982da20782125616ac6b3f76e1690cb9a989011b4fa"
+          },
+          "Drill_NPTH_Through.DRL": {
+            "size": 1914,
+            "sha256": "7b04efc10bb25bd8a88c2fd49e628c4870fa337f02cd1fc665c2b8d02f020621"
+          },
+          "PCB下单必读.txt": {
+            "size": 94,
+            "sha256": "dcb3ee1c645c17a009d70726ad9ab708b68a074556fabcf75a4a059d3b43ec59"
+          }
+        }
+      }
+    }
+  ],
+  "status": "four_five_cover_pcbs_saved_and_exported",
+  "native_project": {
+    "path": "variants/twelve-options/eda/native/nfc-twelve-options.epro2",
+    "size": 1759359,
+    "sha256": "f2c9389ca1b6c8b3be85d39fc625af992b001521c06c71b2897731e7e4c21eda"
+  },
+  "release_status": "HOLD_CAM_PHYSICAL_VALIDATION_PENDING",
+  "design_manifest_sha256": "306bd41ced3568d03e9702fb0416c79d38efb00064185c5e96db8d223f0136b3"
+}

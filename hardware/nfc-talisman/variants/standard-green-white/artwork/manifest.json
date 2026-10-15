@@ -1,0 +1,94 @@
+{
+  "schema_version": 1,
+  "version": "ordinary-green-white-v1",
+  "generator": "hardware/nfc-talisman/scripts/build_standard_layer_artwork.py",
+  "generator_sha256": "0e0acbe3b922190c0dd88e7c3c355d553ceab6794cd28b6e7d78de4c69484c36",
+  "variants": {
+    "horse-sagittarius": {
+      "geometry_json": "horse-sagittarius-standard-layer-artwork.json",
+      "silk_polygon_count": {
+        "front": 6,
+        "rear": 49
+      },
+      "mask_opening_polygon_count": {
+        "front": 0,
+        "rear": 19
+      },
+      "minimum_rear_silk_mask_gap_mm": 0.159914
+    },
+    "snake-leo": {
+      "geometry_json": "snake-leo-standard-layer-artwork.json",
+      "silk_polygon_count": {
+        "front": 5,
+        "rear": 37
+      },
+      "mask_opening_polygon_count": {
+        "front": 0,
+        "rear": 17
+      },
+      "minimum_rear_silk_mask_gap_mm": 0.159914
+    }
+  },
+  "files": {
+    "horse-sagittarius-front-standard-green-white-37mm.png": {
+      "sha256": "a2b3b05653a8a5bc585d6b010e16d8e59b3e765690a89c2b6954e88df2a853db",
+      "size": 122885
+    },
+    "horse-sagittarius-front-standard-green-white-37mm.svg": {
+      "sha256": "02a3b1209b74c76f2715158ceda0f759307d01991120dab99f9f75488b69279d",
+      "size": 13100
+    },
+    "horse-sagittarius-rear-standard-green-white-37mm.png": {
+      "sha256": "c3431470a0403fb28fca0405081c9259c23a341d2fb652c7130a6ffd8cb49a00",
+      "size": 330098
+    },
+    "horse-sagittarius-rear-standard-green-white-37mm.svg": {
+      "sha256": "ec8fdd0fc2447ee39ef6abcd57e5c37b95e8382ebf0d7e5a5d6084b5fe267319",
+      "size": 214219
+    },
+    "horse-sagittarius-standard-green-white-two-face-preview.png": {
+      "sha256": "4311f63947c0bb3d4b03cb028cc9dd5c971f67224ad9e280683281436f8ac88e",
+      "size": 250234
+    },
+    "horse-sagittarius-standard-layer-artwork.json": {
+      "sha256": "89917ee2983a92335050726b6b1c10a71a83746f1f5732a7979012e1615de92c",
+      "size": 1975554
+    },
+    "README.md": {
+      "size": 2863,
+      "sha256": "ffbb08a7b8f5b3c05ce3cb61dcf253f9d291f1218cb0cbd82aad6d6dad23a54d"
+    },
+    "snake-leo-front-standard-green-white-37mm.png": {
+      "sha256": "ccf5c339f3126d7ab0e0720b796388db37dcefb0279ed6810de77c54b1ec8867",
+      "size": 211342
+    },
+    "snake-leo-front-standard-green-white-37mm.svg": {
+      "sha256": "a44ce1a98d65ee499dcbac23963b679c212254e53668ee23dd8cd98c71d3e371",
+      "size": 28269
+    },
+    "snake-leo-rear-standard-green-white-37mm.png": {
+      "sha256": "66b0f34218b94cf57c7059bfea7ce49ce216174229270fe3bdbbe0c8c2bf1847",
+      "size": 254948
+    },
+    "snake-leo-rear-standard-green-white-37mm.svg": {
+      "sha256": "27008f4897982349aa28022de2a26051e2f98e797738a585cbfc201b72436bf9",
+      "size": 209613
+    },
+    "snake-leo-standard-green-white-two-face-preview.png": {
+      "sha256": "ea9ed827fcf2ddabc58f134f05f829a5832240fec28a79b56f8f2793e457ec70",
+      "size": 240886
+    },
+    "snake-leo-standard-layer-artwork.json": {
+      "sha256": "ba72423d36b80ac48f5e2f403a52a65ea30a77771a1958f5339435857945e4fb",
+      "size": 2154955
+    },
+    "source-horse-single-ink.png": {
+      "sha256": "c732fa1d57448ed367c3a7d841f3674c9f5a4565fe4e5d2999c4e43b0d17c728",
+      "size": 79007
+    },
+    "source-snake-single-ink.png": {
+      "sha256": "45edc71977712929173bdae0f626a40364369b3582664eda9890f66b7ce6de8d",
+      "size": 135886
+    }
+  }
+}

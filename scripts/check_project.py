@@ -57,7 +57,10 @@ def link_checks(root: Path) -> list[dict]:
     """Check local targets in maintained navigation documents, without network access."""
     checks = []
     entries = [root / "README.md", root / "output/README.md",
-               root / "hardware/nfc-talisman/README.md", *sorted((root / "docs").glob("*.md"))]
+               root / "hardware/nfc-talisman/README.md",
+               root / "hardware/nfc-talisman/variants/standard-green-white/README.md",
+               root / "hardware/nfc-talisman/variants/twelve-options/README.md",
+               *sorted((root / "docs").glob("*.md"))]
     pattern = re.compile(r"!?\[[^\]\n]*\]\((<[^>]+>|[^\s)]+)(?:\s+\"[^\"]*\")?\)")
     for entry in entries:
         if not entry.is_file():
@@ -92,6 +95,26 @@ def validate(root: Path = ROOT, *, run_tests: bool = True) -> dict:
     except (OSError, ValueError, ImportError, AttributeError) as exc:
         hardware = {"status": "failed", "errors": [str(exc)]}
         checks.append({"id": "hardware-checker", "passed": False, "detail": str(exc)})
+    try:
+        spec = importlib.util.spec_from_file_location(
+            "standard_hardware_delivery", hardware_path.with_name("check_standard_delivery.py"))
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        standard = module.validate(root)
+        checks.extend(standard["checks"])
+    except (OSError, ValueError, ImportError, AttributeError) as exc:
+        standard = {"status": "failed", "errors": [str(exc)]}
+        checks.append({"id": "standard-hardware-checker", "passed": False, "detail": str(exc)})
+    try:
+        spec = importlib.util.spec_from_file_location(
+            "twelve_hardware_delivery", hardware_path.with_name("check_twelve_options.py"))
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        twelve = module.validate(root)
+        checks.extend(twelve["checks"])
+    except (OSError, ValueError, ImportError, AttributeError) as exc:
+        twelve = {"status": "failed", "errors": [str(exc)]}
+        checks.append({"id": "twelve-hardware-checker", "passed": False, "detail": str(exc)})
     budget_code = (
         "from pathlib import Path; "
         "from constellation_lamp.model import read_json,compile_layout; "
@@ -116,7 +139,8 @@ def validate(root: Path = ROOT, *, run_tests: bool = True) -> dict:
     errors = [check for check in checks if not check["passed"]]
     return {"status": "passed" if not errors else "failed", "checks": checks, "errors": errors,
             "hardware_release_status": hardware.get("release_status"),
-            "limitations": hardware.get("limitations", []), "unittest_run": run_tests}
+            "limitations": hardware.get("limitations", []) + standard.get("limitations", []) + twelve.get("limitations", []),
+            "unittest_run": run_tests}
 
 
 def main() -> int:

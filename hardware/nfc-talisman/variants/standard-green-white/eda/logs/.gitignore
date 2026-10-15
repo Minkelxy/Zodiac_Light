@@ -1,0 +1,8 @@
+# Large local source/debug responses are duplicated by native snapshots.
+*
+!.gitignore
+!drc-*.json
+!apply-save-*.json
+!prepare-save-*.json
+!copy-*.json
+!catalog-after-ui-names.json

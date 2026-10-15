@@ -1,0 +1,10 @@
+{
+  "success": true,
+  "result": {
+    "itemType": "PCB",
+    "uuid": "abc3d3a5e6e4793c",
+    "name": "Zodiac-A-5x37-GreenWhite-100",
+    "parentProjectUuid": "c051e4069a83472198ecce7729fbd257"
+  },
+  "windowId": "f1b5161d-e6ed-421e-91f6-d8977ccc2327"
+}

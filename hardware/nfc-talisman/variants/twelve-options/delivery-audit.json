@@ -1,0 +1,70 @@
+{
+  "status": "passed",
+  "read_only": true,
+  "checks": [
+    {
+      "id": "twelve:coverage-and-source-hashes",
+      "passed": true,
+      "detail": "4 x 100 mm PCBs, 5 AF37 covers each; 12 unique constellations and 12 unique zodiac animals including existing options"
+    },
+    {
+      "id": "twelve:native-archive-and-existing-pcbs",
+      "passed": true,
+      "detail": "Native CRC/SHA pass; 9 PCB documents present; previous 5 PCB designs and color objects retained"
+    },
+    {
+      "id": "twelve:constellations-a:native",
+      "passed": true,
+      "detail": "356 owned primitives match final native source and archive; no decorative copper or image objects; saved/reopened DRC 0"
+    },
+    {
+      "id": "twelve:constellations-a:gerber",
+      "passed": true,
+      "detail": "Ordinary ZIP CRC/member hashes pass; 151 NPTH coordinates match expected hole count"
+    },
+    {
+      "id": "twelve:constellations-b:native",
+      "passed": true,
+      "detail": "367 owned primitives match final native source and archive; no decorative copper or image objects; saved/reopened DRC 0"
+    },
+    {
+      "id": "twelve:constellations-b:gerber",
+      "passed": true,
+      "detail": "Ordinary ZIP CRC/member hashes pass; 162 NPTH coordinates match expected hole count"
+    },
+    {
+      "id": "twelve:zodiac-a:native",
+      "passed": true,
+      "detail": "167 owned primitives match final native source and archive; no decorative copper or image objects; saved/reopened DRC 0"
+    },
+    {
+      "id": "twelve:zodiac-a:gerber",
+      "passed": true,
+      "detail": "Ordinary ZIP CRC/member hashes pass; 100 NPTH coordinates match expected hole count"
+    },
+    {
+      "id": "twelve:zodiac-b:native",
+      "passed": true,
+      "detail": "165 owned primitives match final native source and archive; no decorative copper or image objects; saved/reopened DRC 0"
+    },
+    {
+      "id": "twelve:zodiac-b:gerber",
+      "passed": true,
+      "detail": "Ordinary ZIP CRC/member hashes pass; 100 NPTH coordinates match expected hole count"
+    },
+    {
+      "id": "twelve:gerber-regions-and-mechanics",
+      "passed": true,
+      "detail": "Actual exported silk/mask regions and connected substrate independently checked; source-bound audit hashes match"
+    }
+  ],
+  "errors": [],
+  "checks_run": 11,
+  "release_ready": false,
+  "release_status": "HOLD_CAM_PHYSICAL_VALIDATION_PENDING",
+  "limitations": [
+    "Passive covers only; existing NFC core reused.",
+    "Supplier CAM, breakaway force, optical performance and stacking/NFC tests remain pending.",
+    "Mixed-design panel pricing and board thickness require supplier/order confirmation."
+  ]
+}
