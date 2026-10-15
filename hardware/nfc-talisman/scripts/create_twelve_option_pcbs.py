@@ -85,13 +85,45 @@ def verify_board(source,uuid,geometry):
  if any(k[0] in {'COMPONENT','OBJ','VIA','LINE','POUR'} for k in actual):raise ValueError('Passive cover PCB contains unexpected electrical/image primitives')
 
 
+def revise():
+ """Snapshot and guard the four existing generated boards before a revision."""
+ path=OUT/'pcb-state.json';state=json.loads(path.read_text(encoding='utf-8'))
+ if any(b['status']!='saved_reopened' for b in state['boards']):raise ValueError('Finish the current revision before starting another')
+ for board in state['boards']:
+  key,uuid=board['key'],board['uuid']
+  geometry=json.loads((OUT/'geometry'/f'{key}.json').read_text(encoding='utf-8'))
+  evidence,r=snapshot(uuid,'revision-v1-'+key)
+  verify_board(r['source'],uuid,geometry)
+  board['revision_baseline']=evidence
+  board['status']='revision_pending'
+ write(path,state)
+ print(json.dumps({'status':'four_revision_baselines_saved','boards':[b['key'] for b in state['boards']]}))
+
+
+def delete_geometry(uuid,source,name):
+ """Source imports are additive: explicitly delete only guarded owned IDs."""
+ groups={kind:[h['id'] for h,b in bridge.rows(source) if h['type']==kind] for kind in ('FILL','POLY','PAD')}
+ code=bridge.active(uuid)
+ for kind,api in [('FILL','Fill'),('POLY','Polyline'),('PAD','Pad')]:
+  if groups[kind]:code+=f"if(!await eda.pcb_Primitive{api}.delete({json.dumps(groups[kind])}))throw Error('Could not delete owned {kind}');"
+ bridge.execute(code+'return {deleted:true};',name)
+
+
 def apply():
  path=OUT/'pcb-state.json';state=json.loads(path.read_text(encoding='utf-8'))
  for board in state['boards']:
   if board['status']=='saved_reopened':continue
   if board['status'] not in ('blank_created','revision_pending'):raise ValueError('This board has already been applied')
   key,uuid=board['key'],board['uuid'];geometry=json.loads((OUT/'geometry'/f'{key}.json').read_text(encoding='utf-8'))
-  baseline=(HW/board['blank_source']['path']).read_text(encoding='utf-8')
+  prior=None
+  if board['status']=='revision_pending':
+   saved=board['revision_baseline'];p=HW/saved['path']
+   if digest(p)!=saved['sha256']:raise ValueError('Revision baseline changed')
+   prior=p.read_text(encoding='utf-8')
+   current=bridge.execute(bridge.active(uuid)+'return {source:await eda.sys_FileManager.getDocumentSource()};','revision-guard-'+key)['source']
+   if BASE._design_records(records(current,uuid))!=BASE._design_records(records(prior,uuid)):raise ValueError('Live cover changed since the revision baseline')
+   baseline='\n'.join(json.dumps(h,separators=(',',':'))+'||'+json.dumps(b,separators=(',',':'))+'|' for h,b in bridge.rows(prior) if h['type'] not in ('FILL','POLY','PAD'))+'\n'
+  else:baseline=(HW/board['blank_source']['path']).read_text(encoding='utf-8')
   info=bridge.execute(bridge.active(uuid)+f"return await eda.dmt_Pcb.getPcbInfo({json.dumps(uuid)});",'name-check-'+key)
   if info['name']!=board['requested_name']:raise ValueError('Name the new PCB in the UI: '+board['requested_name'])
   if any(h['type'] in('PAD','POLY','FILL','COMPONENT','OBJ') for h,b in bridge.rows(baseline)):raise ValueError('Blank PCB is not empty')
@@ -103,8 +135,22 @@ def apply():
   for entry in geometry['primitives']:
    original.append(json.dumps(entry['head'],separators=(',',':'))+'||'+json.dumps(entry['body'],separators=(',',':'))+'|')
   source='\n'.join(original)+'\n'
-  bridge.execute(bridge.active(uuid)+f"if(!await eda.sys_FileManager.setDocumentSource({json.dumps(source)}))throw Error('Cover import failed');return {{imported:true}};",'apply-'+key)
-  bridge.fresh_snapshot(uuid,'stable-'+key,lambda text:verify_board(text,uuid,geometry))
+  try:
+   if prior is not None:delete_geometry(uuid,prior,'delete-revision-'+key)
+   bridge.execute(bridge.active(uuid)+f"if(!await eda.sys_FileManager.setDocumentSource({json.dumps(source)}))throw Error('Cover import failed');return {{imported:true}};",'apply-'+key)
+   bridge.fresh_snapshot(uuid,'stable-'+key,lambda text:verify_board(text,uuid,geometry))
+  except Exception:
+   if prior is not None:
+    current=bridge.execute(bridge.active(uuid)+'return {source:await eda.sys_FileManager.getDocumentSource()};','rollback-read-'+key)['source']
+    allowed={h['id'] for h,b in bridge.rows(prior) if h['type'] in ('FILL','POLY','PAD')}|{r['head']['id'] for r in geometry['primitives']}
+    selected='\n'.join(json.dumps(h)+'||'+json.dumps(b)+'|' for h,b in bridge.rows(current) if h['type'] in ('FILL','POLY','PAD') and h['id'] in allowed)
+    delete_geometry(uuid,selected,'rollback-delete-'+key)
+    bridge.execute(bridge.active(uuid)+f"if(!await eda.sys_FileManager.setDocumentSource({json.dumps(prior)}))throw Error('Restore failed');return {{restored:true}};",'rollback-import-'+key)
+    def verify_prior(text):
+     if BASE._design_records(records(text,uuid))!=BASE._design_records(records(prior,uuid)):raise ValueError('Rollback geometry mismatch')
+    bridge.fresh_snapshot(uuid,'rollback-verified-'+key,verify_prior)
+    bridge.execute(bridge.active(uuid)+"if(!await eda.pcb_Document.save())throw Error('Rollback save failed');return {saved:true};",'rollback-save-'+key)
+   raise
   bridge.execute(bridge.active(uuid)+"if(!await eda.pcb_Document.save())throw Error('Save failed');if(!await eda.dmt_EditorControl.closeDocument(doc.tabId))throw Error('Close failed');return {saved:true,closed:true};",'save-close-'+key)
   evidence,r=snapshot(uuid,key+'-source');verify_board(r['source'],uuid,geometry)
   board.update(status='saved_reopened',name=r['info']['name'],source=evidence,geometry=f'geometry/{key}.json',cover_count=5)
@@ -117,6 +163,8 @@ def export():
  for board in state['boards']:
   if board['status']!='saved_reopened':raise ValueError('Unsaved cover PCB')
   key,uuid=board['key'],board['uuid']
+  geometry=json.loads((OUT/'geometry'/f'{key}.json').read_text(encoding='utf-8'))
+  bridge.fresh_snapshot(uuid,'pre-export-'+key,lambda text:verify_board(text,uuid,geometry))
   r=bridge.execute(bridge.active(uuid)+"const drc=await eda.pcb_Drc.check(true,false,true);return {drc};",'drc-'+key)
   board['drc']=r['drc'];write(state_path,state)
   if board['drc']!=[]:raise ValueError(key+' has DRC findings')
@@ -141,4 +189,4 @@ def export():
 
 
 if __name__=='__main__':
- p=argparse.ArgumentParser(description=__doc__);p.add_argument('stage',choices=['prepare','apply','export']);a=p.parse_args();globals()[a.stage]()
+ p=argparse.ArgumentParser(description=__doc__);p.add_argument('stage',choices=['prepare','revise','apply','export']);a=p.parse_args();globals()[a.stage]()

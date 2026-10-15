@@ -27,7 +27,7 @@
       ],
       "geometry": "geometry/constellations-a.json",
       "preview": "artwork/constellations-a-100mm.png",
-      "primitive_count": 356
+      "primitive_count": 368
     },
     {
       "key": "constellations-b",
@@ -41,7 +41,7 @@
       ],
       "geometry": "geometry/constellations-b.json",
       "preview": "artwork/constellations-b-100mm.png",
-      "primitive_count": 367
+      "primitive_count": 397
     },
     {
       "key": "zodiac-a",
@@ -55,7 +55,7 @@
       ],
       "geometry": "geometry/zodiac-a.json",
       "preview": "artwork/zodiac-a-100mm.png",
-      "primitive_count": 167
+      "primitive_count": 187
     },
     {
       "key": "zodiac-b",
@@ -69,7 +69,7 @@
       ],
       "geometry": "geometry/zodiac-b.json",
       "preview": "artwork/zodiac-b-100mm.png",
-      "primitive_count": 165
+      "primitive_count": 187
     }
   ],
   "cover_af_mm": 37,
@@ -86,56 +86,64 @@
   "minimum_outer_rail_mm": 1.5,
   "files": {
     "geometry/constellations-a.json": {
-      "size": 1908993,
-      "sha256": "99cd44d8c5dcf326408b121820a668bfbbc993c15b95b45f3ee7886520217a70"
+      "size": 2281311,
+      "sha256": "fc03d9c28764f9956bf9539c956224e63dd33c9865787436e07d850233ecb218"
     },
     "geometry/constellations-b.json": {
-      "size": 2134956,
-      "sha256": "f57d0f21c80dca97cc6c76c457c4e8140327ae64b18b4d9177b19b40ad2a4aaa"
+      "size": 2585981,
+      "sha256": "5a39f3df111653b4bac1e6346b373e60495447f6ec385950ee38a0b221af579e"
     },
     "geometry/zodiac-a.json": {
-      "size": 457883,
-      "sha256": "59f8ad2a6234f50f42b38add875eca9b548e9d3efef7abab8e3085153de71826"
+      "size": 3517860,
+      "sha256": "e42876da75531dffea28944183b30097999886f79b5426f2fffbde0c90051c88"
     },
     "geometry/zodiac-b.json": {
-      "size": 473903,
-      "sha256": "349ca34354cea2cfc63a76c732eabd4970eef426196ad1b4ecd4f99f5a46cfb1"
+      "size": 2773269,
+      "sha256": "618fe8c45896b68879c9a535ed4a105d5a61afe78919a496340f72e9ef0f11bf"
     },
     "artwork/constellations-a-100mm.png": {
-      "size": 277062,
-      "sha256": "0a6f5225e79c404d9f65169febf89d71d7d9717ee6b97ec9005f0c502eacca02"
+      "size": 287978,
+      "sha256": "af182282a5f4c62548ac73f00afdfa22779d62744e67af4dbac723866db7b288"
     },
     "artwork/constellations-a-100mm.svg": {
-      "size": 826963,
-      "sha256": "7aaa29e7185c3b7572cf39554474f8ac8b05db474ade8bb3033a749d9de0fa05"
+      "size": 951909,
+      "sha256": "b51fec0bfab8404cd332d84ba691645b6eacfa7775e2c100cd47af7331244e55"
     },
     "artwork/constellations-b-100mm.png": {
-      "size": 309780,
-      "sha256": "d43f995abc7e923c20a89ef80bf6f72987a4df0b7cf0480b5164d956ff7f3b34"
+      "size": 328053,
+      "sha256": "41bd6967471f17f0c4d70733cb0d5777d7b5e14b81d944f417038887ba2eabb2"
     },
     "artwork/constellations-b-100mm.svg": {
-      "size": 922298,
-      "sha256": "38fcfc261d465c49f1504ea42e28ad69836df67e3b1b068c4d59315175be0aea"
+      "size": 1072128,
+      "sha256": "acf37c9ea705150c70a13bc4386aa6160c75b7a6267ad002d25c70e5f0cafe36"
+    },
+    "artwork/slot-optimization-comparison.png": {
+      "size": 618191,
+      "sha256": "503c75f1874729eb31edbfec133ee1025b278f1999bd8ae3ba02badf3774bf90"
     },
     "artwork/zodiac-a-100mm.png": {
-      "size": 231675,
-      "sha256": "1f5b11e3d9e04e3766124f35520535629a0798c43636905eace43bdb6334d381"
+      "size": 446405,
+      "sha256": "9b3e867a4ecf960e40f6ca19e416fdfbfb34106a988a353f7d730f495aad9d73"
     },
     "artwork/zodiac-a-100mm.svg": {
-      "size": 249012,
-      "sha256": "75d4a7cddbbb339cd8a232035d74994537e991d8cbb5b2a73c6756a39d6a120a"
+      "size": 581103,
+      "sha256": "7863b847923d1d6b31339463ee4ac11a8a2c2e2c298907d96e6014de2f4ee55f"
     },
     "artwork/zodiac-b-100mm.png": {
-      "size": 229770,
-      "sha256": "444e6f15ca19301f63bd163b8bd5d440855d6736cf56a1f8bfc518983624d1c3"
+      "size": 355873,
+      "sha256": "79ee8a040c2397f5f46669fac38c4f9d2a61ca509629fc97718572e240947255"
     },
     "artwork/zodiac-b-100mm.svg": {
-      "size": 255440,
-      "sha256": "ced335eec1d5a30321f4107a39d3ee42510876c52a8b6585982d39d9fc88b80d"
+      "size": 485929,
+      "sha256": "d82e0016d947ceea85cc6d2ba4d2f2719d8ea8a61e8e4beaf513891ac187d615"
     },
     "sources/hipparcos-zodiac.tsv": {
       "size": 7164,
       "sha256": "580351e213782b3e615ba669596cdaff517d410bb1799502b80978c61a046eda"
+    },
+    "sources/slot-optimization.json": {
+      "size": 54028,
+      "sha256": "65f838b5897454da428524f768c9586280e36c6d413beb4b72e5a1c41ebd4335"
     },
     "sources/sources.json": {
       "size": 3234,

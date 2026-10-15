@@ -1,0 +1,281 @@
+{
+  "status": "passed",
+  "read_only": true,
+  "design_manifest_sha256": "0c32ebca438141c73e491be16a412ce8a2818c2a2dc1c0d3b1899b134d7bb941",
+  "slot_optimization_report_sha256": "65f838b5897454da428524f768c9586280e36c6d413beb4b72e5a1c41ebd4335",
+  "panels": {
+    "constellations-a": {
+      "covers": {
+        "aries": {
+          "mousebites": 20,
+          "bridge_width_mm": 4,
+          "mousebite_diameter_mm": 0.4,
+          "mousebite_pitch_mm": 0.72,
+          "routing_unchanged": true,
+          "hip_holes": 4,
+          "physical_slots": 2,
+          "minimum_star_to_slot_material_mm": 1.00504738408718,
+          "minimum_slot_to_slot_material_mm": 2.7787752158734045,
+          "minimum_slot_to_outer_edge_material_mm": 2.925709397496712,
+          "hip_positions_match_final": true,
+          "slot_shapes_and_HIP_edges_match": true,
+          "fr4_single_connected_component": true
+        },
+        "taurus": {
+          "mousebites": 20,
+          "bridge_width_mm": 4,
+          "mousebite_diameter_mm": 0.4,
+          "mousebite_pitch_mm": 0.72,
+          "routing_unchanged": true,
+          "hip_holes": 12,
+          "physical_slots": 5,
+          "minimum_star_to_slot_material_mm": 1.0050122346852606,
+          "minimum_slot_to_slot_material_mm": 2.782783296563919,
+          "minimum_slot_to_outer_edge_material_mm": 4.42074085728001,
+          "hip_positions_match_final": true,
+          "slot_shapes_and_HIP_edges_match": true,
+          "fr4_single_connected_component": true
+        },
+        "gemini": {
+          "mousebites": 20,
+          "bridge_width_mm": 4,
+          "mousebite_diameter_mm": 0.4,
+          "mousebite_pitch_mm": 0.72,
+          "routing_unchanged": true,
+          "hip_holes": 17,
+          "physical_slots": 8,
+          "minimum_star_to_slot_material_mm": 1.005000907398389,
+          "minimum_slot_to_slot_material_mm": 1.5483352400278974,
+          "minimum_slot_to_outer_edge_material_mm": 7.151579033999994,
+          "hip_positions_match_final": true,
+          "slot_shapes_and_HIP_edges_match": true,
+          "fr4_single_connected_component": true
+        },
+        "cancer": {
+          "mousebites": 20,
+          "bridge_width_mm": 4,
+          "mousebite_diameter_mm": 0.4,
+          "mousebite_pitch_mm": 0.72,
+          "routing_unchanged": true,
+          "hip_holes": 6,
+          "physical_slots": 4,
+          "minimum_star_to_slot_material_mm": 1.005002671156696,
+          "minimum_slot_to_slot_material_mm": 0.8046299040557264,
+          "minimum_slot_to_outer_edge_material_mm": 7.209124877005367,
+          "hip_positions_match_final": true,
+          "slot_shapes_and_HIP_edges_match": true,
+          "fr4_single_connected_component": true
+        },
+        "virgo": {
+          "mousebites": 20,
+          "bridge_width_mm": 4,
+          "mousebite_diameter_mm": 0.4,
+          "mousebite_pitch_mm": 0.72,
+          "routing_unchanged": true,
+          "hip_holes": 12,
+          "physical_slots": 7,
+          "minimum_star_to_slot_material_mm": 1.0050016710598138,
+          "minimum_slot_to_slot_material_mm": 0.9334875030264587,
+          "minimum_slot_to_outer_edge_material_mm": 3.7396342317999967,
+          "hip_positions_match_final": true,
+          "slot_shapes_and_HIP_edges_match": true,
+          "fr4_single_connected_component": true
+        }
+      },
+      "geometry_sha256": "fc03d9c28764f9956bf9539c956224e63dd33c9865787436e07d850233ecb218",
+      "passed": true,
+      "frame_mm": [
+        100,
+        100
+      ],
+      "mousebites": 100,
+      "panel_fr4_single_connected_component": true
+    },
+    "constellations-b": {
+      "covers": {
+        "libra": {
+          "mousebites": 20,
+          "bridge_width_mm": 4,
+          "mousebite_diameter_mm": 0.4,
+          "mousebite_pitch_mm": 0.72,
+          "routing_unchanged": true,
+          "hip_holes": 5,
+          "physical_slots": 5,
+          "minimum_star_to_slot_material_mm": 1.0050001024561617,
+          "minimum_slot_to_slot_material_mm": 0.8121844882040367,
+          "minimum_slot_to_outer_edge_material_mm": 6.965900226958309,
+          "hip_positions_match_final": true,
+          "slot_shapes_and_HIP_edges_match": true,
+          "fr4_single_connected_component": true
+        },
+        "scorpius": {
+          "mousebites": 20,
+          "bridge_width_mm": 4,
+          "mousebite_diameter_mm": 0.4,
+          "mousebite_pitch_mm": 0.72,
+          "routing_unchanged": true,
+          "hip_holes": 13,
+          "physical_slots": 4,
+          "minimum_star_to_slot_material_mm": 1.0050084722180996,
+          "minimum_slot_to_slot_material_mm": 0.8046421338609596,
+          "minimum_slot_to_outer_edge_material_mm": 5.014486043538154,
+          "hip_positions_match_final": true,
+          "slot_shapes_and_HIP_edges_match": true,
+          "fr4_single_connected_component": true
+        },
+        "capricornus": {
+          "mousebites": 20,
+          "bridge_width_mm": 4,
+          "mousebite_diameter_mm": 0.4,
+          "mousebite_pitch_mm": 0.72,
+          "routing_unchanged": true,
+          "hip_holes": 9,
+          "physical_slots": 7,
+          "minimum_star_to_slot_material_mm": 1.00500022510008,
+          "minimum_slot_to_slot_material_mm": 0.804819316796821,
+          "minimum_slot_to_outer_edge_material_mm": 5.995188459200001,
+          "hip_positions_match_final": true,
+          "slot_shapes_and_HIP_edges_match": true,
+          "fr4_single_connected_component": true
+        },
+        "aquarius": {
+          "mousebites": 20,
+          "bridge_width_mm": 4,
+          "mousebite_diameter_mm": 0.4,
+          "mousebite_pitch_mm": 0.72,
+          "routing_unchanged": true,
+          "hip_holes": 15,
+          "physical_slots": 6,
+          "minimum_star_to_slot_material_mm": 1.0050003121829578,
+          "minimum_slot_to_slot_material_mm": 1.415087182463202,
+          "minimum_slot_to_outer_edge_material_mm": 3.929725369800003,
+          "hip_positions_match_final": true,
+          "slot_shapes_and_HIP_edges_match": true,
+          "fr4_single_connected_component": true
+        },
+        "pisces": {
+          "mousebites": 20,
+          "bridge_width_mm": 4,
+          "mousebite_diameter_mm": 0.4,
+          "mousebite_pitch_mm": 0.72,
+          "routing_unchanged": true,
+          "hip_holes": 20,
+          "physical_slots": 3,
+          "minimum_star_to_slot_material_mm": 1.005001745441137,
+          "minimum_slot_to_slot_material_mm": 2.8023297313643143,
+          "minimum_slot_to_outer_edge_material_mm": 4.902708183399994,
+          "hip_positions_match_final": true,
+          "slot_shapes_and_HIP_edges_match": true,
+          "fr4_single_connected_component": true
+        }
+      },
+      "geometry_sha256": "5a39f3df111653b4bac1e6346b373e60495447f6ec385950ee38a0b221af579e",
+      "passed": true,
+      "frame_mm": [
+        100,
+        100
+      ],
+      "mousebites": 100,
+      "panel_fr4_single_connected_component": true
+    },
+    "zodiac-a": {
+      "covers": {
+        "rat": {
+          "mousebites": 20,
+          "bridge_width_mm": 4,
+          "mousebite_diameter_mm": 0.4,
+          "mousebite_pitch_mm": 0.72,
+          "routing_unchanged": true
+        },
+        "ox": {
+          "mousebites": 20,
+          "bridge_width_mm": 4,
+          "mousebite_diameter_mm": 0.4,
+          "mousebite_pitch_mm": 0.72,
+          "routing_unchanged": true
+        },
+        "tiger": {
+          "mousebites": 20,
+          "bridge_width_mm": 4,
+          "mousebite_diameter_mm": 0.4,
+          "mousebite_pitch_mm": 0.72,
+          "routing_unchanged": true
+        },
+        "rabbit": {
+          "mousebites": 20,
+          "bridge_width_mm": 4,
+          "mousebite_diameter_mm": 0.4,
+          "mousebite_pitch_mm": 0.72,
+          "routing_unchanged": true
+        },
+        "dragon": {
+          "mousebites": 20,
+          "bridge_width_mm": 4,
+          "mousebite_diameter_mm": 0.4,
+          "mousebite_pitch_mm": 0.72,
+          "routing_unchanged": true
+        }
+      },
+      "geometry_sha256": "e42876da75531dffea28944183b30097999886f79b5426f2fffbde0c90051c88",
+      "passed": true,
+      "frame_mm": [
+        100,
+        100
+      ],
+      "mousebites": 100,
+      "panel_fr4_single_connected_component": true
+    },
+    "zodiac-b": {
+      "covers": {
+        "goat": {
+          "mousebites": 20,
+          "bridge_width_mm": 4,
+          "mousebite_diameter_mm": 0.4,
+          "mousebite_pitch_mm": 0.72,
+          "routing_unchanged": true
+        },
+        "monkey": {
+          "mousebites": 20,
+          "bridge_width_mm": 4,
+          "mousebite_diameter_mm": 0.4,
+          "mousebite_pitch_mm": 0.72,
+          "routing_unchanged": true
+        },
+        "rooster": {
+          "mousebites": 20,
+          "bridge_width_mm": 4,
+          "mousebite_diameter_mm": 0.4,
+          "mousebite_pitch_mm": 0.72,
+          "routing_unchanged": true
+        },
+        "dog": {
+          "mousebites": 20,
+          "bridge_width_mm": 4,
+          "mousebite_diameter_mm": 0.4,
+          "mousebite_pitch_mm": 0.72,
+          "routing_unchanged": true
+        },
+        "pig": {
+          "mousebites": 20,
+          "bridge_width_mm": 4,
+          "mousebite_diameter_mm": 0.4,
+          "mousebite_pitch_mm": 0.72,
+          "routing_unchanged": true
+        }
+      },
+      "geometry_sha256": "618fe8c45896b68879c9a535ed4a105d5a61afe78919a496340f72e9ef0f11bf",
+      "passed": true,
+      "frame_mm": [
+        100,
+        100
+      ],
+      "mousebites": 100,
+      "panel_fr4_single_connected_component": true
+    }
+  },
+  "errors": [],
+  "limitations": [
+    "Offline generated physical primitives only; saved native documents and actual exported Gerber are checked separately.",
+    "No supplier cutter compensation, depanelization, FR-4 strength or optical acceptance is asserted."
+  ]
+}

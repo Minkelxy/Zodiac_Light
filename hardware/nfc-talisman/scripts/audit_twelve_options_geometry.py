@@ -12,6 +12,31 @@ HW=Path(__file__).resolve().parents[1]
 OUT=HW/'variants/twelve-options'
 
 
+def outline_contours(raw):
+ """Read the exporter's closed G01 router contours, without buffering stroke."""
+ text=raw.decode('utf-8-sig')
+ assert '%FSLAX36Y36*%' in text and '%MOMM*%' in text
+ assert not re.search(r'^G0[23]',text,re.M),'Unexpected arc interpolation'
+ contours=[];points=[]
+ for line in text.splitlines():
+  m=re.fullmatch(r'G01X(-?\d+)Y(-?\d+)D0([12])\*',line.strip())
+  if not m:continue
+  x,y=int(m[1])/1e6,int(m[2])/1e6
+  if m[3]=='2':
+   if points:
+    assert points[0]==points[-1] and len(points)>=4
+    contours.append(Polygon(points))
+   points=[(x,y)]
+  else:
+   assert points,'Router line without initial move'
+   points.append((x,y))
+ if points:
+  assert points[0]==points[-1] and len(points)>=4
+  contours.append(Polygon(points))
+ assert contours and all(p.is_valid for p in contours)
+ return contours
+
+
 def shape(path,complex=False):
  def ring(p):
   assert p[2]=='L';v=p[:2]+p[3:]
@@ -31,6 +56,17 @@ def audit():
    actual={}
    with zipfile.ZipFile(HW/board['gerber']['path']) as z:
     assert z.testzip() is None
+    actual_routes=outline_contours(z.read('Gerber_BoardOutlineLayer.GKO'))
+    expected_routes=[(e,shape(e['body']['path'])) for e in g['primitives'] if e['head']['type']=='POLY']
+    assert len(actual_routes)==len(expected_routes),'Router contour count changed'
+    unmatched=actual_routes.copy();matched_routes={};route_error=0.
+    for entry,expected_route in expected_routes:
+     selected=min(unmatched,key=lambda p:expected_route.boundary.hausdorff_distance(p.boundary))
+     error=expected_route.boundary.hausdorff_distance(selected.boundary)
+     assert error<.00001 and expected_route.symmetric_difference(selected).area<expected_route.length*.00001,'Gerber router contour differs'
+     route_error=max(route_error,error);matched_routes[entry['logical_id']]=selected
+     unmatched.remove(selected)
+    record['router_contours']={'count':len(actual_routes),'maximum_boundary_error_mm':route_error,'all_expected_contours_matched':True}
     for layer,file in[(3,'Gerber_TopSilkscreenLayer.GTO'),(5,'Gerber_TopSolderMaskLayer.GTS')]:
      regions=gerber.parse_regions(z.read(file));actual[layer]=GeometryCollection()
      for r in regions:
@@ -58,11 +94,15 @@ def audit():
     holes=[(x/xy_scale,y/xy_scale,d) for x,y,d in holes]
     for p in pad_points:
      assert any(max(abs(a-b) for a,b in zip(p,h))<.00002 for h in holes),'Excellon position/diameter differs'
-   cuts=[]
-   for entry in g['primitives']:
-    b=entry['body']
-    if entry['head']['type']=='POLY' and not entry['logical_id'].startswith('panel-frame'):cuts.append(shape(b['path']))
-    elif entry['head']['type']=='PAD':cuts.append(Point(b['centerX']*.0254,b['centerY']*.0254).buffer(b['hole']['width']*.0254/2,quad_segs=24))
+   cuts=[p for logical,p in matched_routes.items() if not logical.startswith('panel-frame')]
+   cuts.extend(Point(x,y).buffer(d/2,quad_segs=24) for x,y,d in holes)
+   slots=[p for logical,p in matched_routes.items() if ':light-slot:' in logical]
+   if slots:
+    drilled=[Point(x,y).buffer(d/2,quad_segs=32) for x,y,d in holes]
+    star_slot=min(s.distance(h) for s in slots for h in drilled)
+    slot_slot=min(a.distance(b) for i,a in enumerate(slots) for b in slots[i+1:])
+    assert star_slot>=1.-.00001 and slot_slot>=.8-.00001,'Exported light slots violate material webs'
+    record['slot_material']={'actual_slot_count':len(slots),'minimum_slot_to_any_npth_mm':star_slot,'minimum_slot_to_slot_mm':slot_slot,'required_hole_web_mm':1.,'required_slot_web_mm':.8}
    substrate=box(0,0,100,100).difference(unary_union(cuts))
    assert substrate.is_valid and substrate.geom_type=='Polygon','Floating material island or broken panel connection'
    gap=None if actual[5].is_empty else actual[3].distance(actual[5])

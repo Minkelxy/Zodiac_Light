@@ -3,6 +3,7 @@ from __future__ import annotations
 import hashlib
 import importlib.util
 import json
+import math
 from pathlib import Path
 import re
 import zipfile
@@ -12,6 +13,8 @@ BASE=importlib.util.module_from_spec(S);S.loader.exec_module(BASE)
 FOLDER='variants/twelve-options'
 STAR_SET={'aries','taurus','gemini','cancer','leo','virgo','libra','scorpius','sagittarius','capricornus','aquarius','pisces'}
 ANIMAL_SET={'rat','ox','tiger','rabbit','dragon','snake','horse','goat','monkey','rooster','dog','pig'}
+TALISMAN_COLLECTION='hardware/nfc-talisman/artwork/reference-collection/talisman-single-ink-v1'
+ANIMAL_SOURCE_ALIASES={'goat':'sheep'}
 
 
 def digest(data):return hashlib.sha256(data).hexdigest()
@@ -32,6 +35,34 @@ def contour_same(a,b):
  if len(a)!=len(b):return False
  n=len(a)
  return any(all(path_same(a[i],b[(j+direction*i)%n]) for i in range(n)) for j in range(n) if path_same(a[0],b[j]) for direction in(1,-1))
+
+
+def trace_paths(trace,center):
+ """Map recorded cover-local trace rings to the native paths used for printing."""
+ if trace.get('units')!='mm' or trace.get('coordinate_system')!='cover_top_left_x_right_y_down':
+  raise ValueError('Unexpected talisman trace coordinate system')
+ def ring(points):
+  if not isinstance(points,list) or len(points)<3:
+   raise ValueError('Talisman trace ring must have at least three points')
+  if any(not isinstance(p,list) or len(p)!=2 or any(not isinstance(n,(float,int)) or not math.isfinite(n) for n in p) for p in points):
+   raise ValueError('Invalid talisman trace coordinates')
+  points=[[(center[0]+x-18.5)/.0254,(center[1]+18.5-y)/.0254] for x,y in points]
+  if points[0]!=points[-1]:points.append(points[0])
+  return points[0]+['L']+[n for p in points[1:] for n in p]
+ polygons=trace.get('polygons')
+ if not isinstance(polygons,list) or not polygons:
+  raise ValueError('Talisman trace polygons are empty')
+ return [[ring(p['exterior']),*[ring(h) for h in p['holes']]] for p in polygons]
+
+
+def polygon_same(a,b):
+ if len(a)!=len(b) or not contour_same(a[0],b[0]):return False
+ remaining=list(b[1:])
+ for expected in a[1:]:
+  matches=[i for i,actual in enumerate(remaining) if contour_same(expected,actual)]
+  if not matches:return False
+  remaining.pop(matches[0])
+ return not remaining
 
 
 def validate(root):
@@ -60,6 +91,124 @@ def validate(root):
  check('coverage-and-source-hashes',manifest)
  if not state:return {'status':'failed','checks':checks,'errors':errors}
  m,d=state['m'],state['d']
+ def talisman_sources():
+  project=root.parents[1]
+  collection_path=project/TALISMAN_COLLECTION/'manifest.json'
+  collection=load(collection_path);items={a['id']:a for a in collection['files']}
+  seen=[]
+  def source(path_name,expected,label):
+   if not isinstance(expected,str) or not re.fullmatch('[0-9a-f]{64}',expected):
+    raise ValueError('Invalid '+label+' SHA-256')
+   path=BASE._relative(project,path_name)
+   if digest(path.read_bytes())!=expected:raise ValueError(label+' bytes changed: '+path_name)
+   return path
+  for panel in d['panels']:
+   if not panel['key'].startswith('zodiac'):continue
+   geometry=load(out/panel['geometry'])
+   for cover in geometry['covers']:
+    animal=cover['id'];details=cover['details'];canonical=ANIMAL_SOURCE_ALIASES.get(animal,animal)
+    expected=items[canonical]
+    if details.get('artwork_kind')!='project_talisman_single_ink_trace' or details.get('original_vector_art') is not False:
+     raise ValueError('Zodiac cover must trace an existing project talisman: '+animal)
+    if details.get('requested_animal_id')!=animal or details.get('source_id')!=canonical or details.get('source_collection')!='talisman-single-ink-v1':
+     raise ValueError('Incorrect talisman source mapping: '+animal)
+    if details.get('source_manifest')!=(collection_path.relative_to(project).as_posix()):
+     raise ValueError('Unexpected talisman source manifest: '+animal)
+    source(details['source_manifest'],details['source_manifest_sha256'],'Talisman collection manifest')
+    reference_root=project/'hardware/nfc-talisman/artwork/reference-collection'
+    for field,record_path,record_digest in [
+        ('source_png','path','output_sha256'),
+        ('source_candidate_png','candidate_path','candidate_sha256'),
+        ('source_original_reference','source_path','source_sha256')]:
+     path=(reference_root/expected[record_path]).resolve()
+     if details.get(field)!=path.relative_to(project).as_posix() or details.get(field+'_sha256')!=expected[record_digest]:
+      raise ValueError('Talisman provenance differs from the source collection: '+animal+' '+field)
+     source(details[field],details[field+'_sha256'],field)
+    if not re.fullmatch('[0-9a-f]{64}',details.get('source_alpha_sha256','')):
+     raise ValueError('Missing alpha fingerprint: '+animal)
+    if any(details.get('source_'+field)!=expected[field] for field in ('visual_status','visual_note')):
+     raise ValueError('Original visual review status was not retained: '+animal)
+    if details.get('trace',{}).get('alpha_threshold')!=128:
+     raise ValueError('Unexpected talisman alpha threshold: '+animal)
+    trace=details['trace_geometry']
+    encoded=json.dumps(trace,sort_keys=True,separators=(',',':'),ensure_ascii=True,allow_nan=False).encode('ascii')
+    if digest(encoded)!=details.get('geometry_sha256'):
+     raise ValueError('Recorded talisman trace fingerprint differs: '+animal)
+    available=[entry['body']['path'] for entry in geometry['primitives']
+               if entry['head']['type']=='FILL' and entry['body']['layerId']==3
+               and entry['logical_id'].startswith(animal+':silk:')]
+    for expected_path in trace_paths(trace,cover['center_native_mm']):
+     matches=[i for i,p in enumerate(available) if polygon_same(expected_path,p)]
+     if not matches:raise ValueError('Source talisman contour missing from native import geometry: '+animal)
+     available.pop(matches[0])
+    if details.get('star_holes')!=0 or details.get('animal_mask_openings')!=0 or cover.get('mask_polygons')!=0:
+     raise ValueError('Animal cover must not add holes or soldermask openings: '+animal)
+    seen.append(animal)
+   if any(e['head']['type']=='FILL' and e['body']['layerId']==5 for e in geometry['primitives']):
+    raise ValueError('Zodiac panel contains unexpected soldermask artwork')
+  if len(seen)!=10 or set(seen)!=ANIMAL_SET-{'horse','snake'}:
+   raise ValueError('Expected all ten added zodiac talisman sources exactly once')
+  return 'Ten existing talisman PNG/candidate/reference SHA chains and visual statuses match; traced contours are bound to printable geometry; goat maps to sheep'
+ check('talisman-artwork-provenance',talisman_sources)
+ def slot_optimization():
+  project=root.parents[1];report=load(out/'sources/slot-optimization.json')
+  if report.get('schema_version')!=1 or report.get('status')!='passed':
+   raise ValueError('Slot optimization report is not a passed schema 1 report')
+  module='hardware/nfc-talisman/scripts/constellation_slot_layout.py'
+  if report.get('module')!=module or digest((project/module).read_bytes())!=report.get('module_sha256'):
+   raise ValueError('Slot optimization module differs from the frozen report')
+  required_sources={f'hardware/nfc-talisman/{FOLDER}/sources/{name}' for name in ('stellarium-modern-index.json','hipparcos-zodiac.tsv')}
+  if set(report.get('source_sha256',{}))!=required_sources:
+   raise ValueError('Slot optimization must bind both frozen astronomical inputs')
+  for name,expected in report['source_sha256'].items():
+   if digest(BASE._relative(project,name).read_bytes())!=expected:
+    raise ValueError('Slot optimization source changed: '+name)
+  physical=load(out/'slot-layout-geometry-audit.json')
+  if physical.get('status')!='passed' or physical.get('errors') or physical.get('design_manifest_sha256')!=digest((out/'design-manifest.json').read_bytes()) or physical.get('slot_optimization_report_sha256')!=digest((out/'sources/slot-optimization.json').read_bytes()):
+   raise ValueError('Independent physical slot audit is stale or failed')
+  expected_names=STAR_SET-{'sagittarius','leo'}
+  if set(report['covers'])!=expected_names:raise ValueError('Expected all ten constellation slot records')
+  total_hips=total_edges=before_slots=after_slots=0;before_length=after_length=0.
+  for panel in d['panels']:
+   if not panel['key'].startswith('constellations'):continue
+   geometry=load(out/panel['geometry'])
+   for cover in geometry['covers']:
+    name=cover['id'];details=cover['details'];record=report['covers'][name];after=record['after'];layout=details['slot_layout']
+    if any(layout.get(k)!=v for k,v in after.items()):
+     raise ValueError('Slot report differs from final cover metadata: '+name)
+    hips=record['hip_ids'];edges={tuple(sorted(e)) for e in record['logical_edges']}
+    if hips!=details['hip_ids'] or edges!={tuple(sorted(e)) for e in details['edges']} or record['source_chains']!=details['source_chains']:
+     raise ValueError('Constellation source topology changed: '+name)
+    if after['hip_count']!=len(hips) or after['logical_edge_count']!=len(edges) or len(edges)!=len(record['logical_edges']):
+     raise ValueError('Incorrect constellation node/edge counts: '+name)
+    pads=[e for e in geometry['primitives'] if e['head']['type']=='PAD' and e['logical_id'].startswith(name+'_HIP')]
+    slots=[e for e in geometry['primitives'] if e['head']['type']=='POLY' and e['logical_id'].startswith(name+':light-slot:')]
+    if {e['logical_id'] for e in pads}!={f'{name}_HIP{hip}' for hip in hips} or len(pads)!=after['hip_count'] or len(slots)!=after['physical_slot_count']:
+     raise ValueError('Physical star/slot count differs from optimized metadata: '+name)
+    for pad in pads:
+     hip=pad['logical_id'].split('_HIP',1)[1];x,y=layout['star_positions_final_mm'][hip];cx,cy=cover['center_native_mm'];body=pad['body']
+     if abs(body['centerX']-(cx+x-18.5)/.0254)>.001 or abs(body['centerY']-(cy+18.5-y)/.0254)>.001:
+      raise ValueError('Optimized star position differs from native import geometry: '+name+' '+hip)
+    printed={tuple(sorted(e)) for e in layout['printed_only_edges']}
+    routed={tuple(sorted(e['edge'])) for e in layout['slots']}
+    if printed|routed!=edges or printed&routed or len(printed)!=after['printed_only_edge_count'] or len(routed)!=after['slotted_edge_count'] or len(layout['slots'])!=len(slots):
+     raise ValueError('Printed/routed edge accounting differs: '+name)
+    if not after['fr4_single_connected_component'] or not after['all_apertures_inside_board']:
+     raise ValueError('Optimized cover is disconnected or has external apertures: '+name)
+    for field,threshold in [('minimum_star_to_slot_material_mm',1.),('minimum_slot_to_slot_material_mm',.8),('minimum_slot_to_outer_edge_material_mm',1.),('minimum_slot_overall_length_mm',1.5)]:
+     value=after[field];allow_none=len(slots)<(2 if field=='minimum_slot_to_slot_material_mm' else 1)
+     if value is None and allow_none:continue
+     if not isinstance(value,(int,float)) or not math.isfinite(value) or value<threshold:
+      raise ValueError('Optimized material/slot threshold failed: '+name+' '+field)
+    total_hips+=len(hips);total_edges+=len(edges);before_slots+=record['before']['physical_slot_count'];after_slots+=len(slots)
+    before_length+=record['before']['total_centerline_length_mm'];after_length+=after['total_centerline_length_mm']
+  summary=report['summary']
+  if total_hips!=113 or total_edges!=109 or summary['hip_nodes']!=total_hips or summary['logical_edges']!=total_edges or summary['before_slots']!=before_slots or summary['after_slots']!=after_slots:
+   raise ValueError('Global slot/node/edge totals differ from the per-cover records')
+  if abs(summary['before_centerline_mm']-before_length)>1e-6 or abs(summary['after_centerline_mm']-after_length)>1e-6:
+   raise ValueError('Global slot centerline lengths differ from the per-cover records')
+  return f'Frozen module/source hashes, independent physical audit and 10 final layouts match; {total_hips} HIP nodes/{total_edges} logical edges, physical slots {before_slots} -> {after_slots}; recorded material minima and connected substrates pass'
+ check('slot-optimization-source-and-counts',slot_optimization)
  def archive():
   p=root/m['native_project']['path'];b=p.read_bytes();assert len(b)==m['native_project']['size'] and digest(b)==m['native_project']['sha256']
   with zipfile.ZipFile(p) as z:

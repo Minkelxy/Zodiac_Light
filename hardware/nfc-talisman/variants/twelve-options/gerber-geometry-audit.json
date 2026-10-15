@@ -1,56 +1,85 @@
 {
   "status": "passed",
   "coordinate_tolerance_mm": 1e-05,
-  "design_manifest_sha256": "306bd41ced3568d03e9702fb0416c79d38efb00064185c5e96db8d223f0136b3",
+  "design_manifest_sha256": "0c32ebca438141c73e491be16a412ce8a2818c2a2dc1c0d3b1899b134d7bb941",
   "panels": {
     "constellations-a": {
-      "gerber_sha256": "95b1fd54a5937ae3af157697526b84bf18ba7fbc1fef4a37bf6f5a294502d64f",
+      "gerber_sha256": "19dfa8d6d2065fb6929c8cfe07b42db1590c0bd542fcb6b00783d63414a060a5",
+      "router_contours": {
+        "count": 47,
+        "maximum_boundary_error_mm": 2.3425149691638475e-06,
+        "all_expected_contours_matched": true
+      },
       "silk": {
-        "boundary_error_mm": 2.281875820456719e-06,
-        "area_mm2": 104.7278289206835,
-        "negative_holes": 85,
+        "boundary_error_mm": 2.403002061010528e-06,
+        "area_mm2": 103.17618770693446,
+        "negative_holes": 84,
         "nominal_width_has_no_extra_stroke": true
       },
       "mask": {
-        "boundary_error_mm": 2.224166453146377e-06,
-        "area_mm2": 211.83824051820002,
+        "boundary_error_mm": 2.479734735892565e-06,
+        "area_mm2": 246.7707058217354,
         "negative_holes": 0,
         "nominal_width_has_no_extra_stroke": true
       },
+      "slot_material": {
+        "actual_slot_count": 26,
+        "minimum_slot_to_any_npth_mm": 1.004999544924776,
+        "minimum_slot_to_slot_mm": 0.8046301560655048,
+        "required_hole_web_mm": 1.0,
+        "required_slot_web_mm": 0.8
+      },
       "status": "passed",
       "connected_substrate": true,
-      "substrate_area_mm2": 9309.905757608363,
-      "actual_silk_mask_gap_mm": 0.15994923917042836,
+      "substrate_area_mm2": 9286.20964069281,
+      "actual_silk_mask_gap_mm": 0.1599760202479454,
       "npth_positions_and_diameters_verified": 151,
       "cover_count": 5
     },
     "constellations-b": {
-      "gerber_sha256": "655c3537fdce9af14595f6ec69b49ece453cdc447023cb797171ffc1a148ece4",
+      "gerber_sha256": "605ebc4b636d29897bc00a5fe028c416fa837828f0070452a8ed5dcc153b2efa",
+      "router_contours": {
+        "count": 46,
+        "maximum_boundary_error_mm": 2.1890549457948763e-06,
+        "all_expected_contours_matched": true
+      },
       "silk": {
-        "boundary_error_mm": 2.333981575147139e-06,
-        "area_mm2": 130.2130663142419,
+        "boundary_error_mm": 2.317523686789834e-06,
+        "area_mm2": 124.94393893467786,
         "negative_holes": 106,
         "nominal_width_has_no_extra_stroke": true
       },
       "mask": {
-        "boundary_error_mm": 2.2000794962040922e-06,
-        "area_mm2": 195.609092143157,
+        "boundary_error_mm": 2.2929103961351993e-06,
+        "area_mm2": 254.97136889779793,
         "negative_holes": 0,
         "nominal_width_has_no_extra_stroke": true
       },
+      "slot_material": {
+        "actual_slot_count": 25,
+        "minimum_slot_to_any_npth_mm": 1.0049983151260768,
+        "minimum_slot_to_slot_mm": 0.8046434372291916,
+        "required_hole_web_mm": 1.0,
+        "required_slot_web_mm": 0.8
+      },
       "status": "passed",
       "connected_substrate": true,
-      "substrate_area_mm2": 9322.655367819296,
-      "actual_silk_mask_gap_mm": 0.15994918624572363,
+      "substrate_area_mm2": 9283.394598709563,
+      "actual_silk_mask_gap_mm": 0.1599753408547079,
       "npth_positions_and_diameters_verified": 162,
       "cover_count": 5
     },
     "zodiac-a": {
-      "gerber_sha256": "243a5f211e681cfdadc5c0953f05a91619b26ddfc70e58a18cd81eb99bc78415",
+      "gerber_sha256": "98a090f724477cb3d2e73453859ac1f6834a3e320befd3be325838686071fac6",
+      "router_contours": {
+        "count": 21,
+        "maximum_boundary_error_mm": 1.9633520812157904e-06,
+        "all_expected_contours_matched": true
+      },
       "silk": {
-        "boundary_error_mm": 2.2047660420298015e-06,
-        "area_mm2": 340.10750499675385,
-        "negative_holes": 29,
+        "boundary_error_mm": 2.2987885630809882e-06,
+        "area_mm2": 881.4219048829532,
+        "negative_holes": 78,
         "nominal_width_has_no_extra_stroke": true
       },
       "mask": {
@@ -61,17 +90,22 @@
       },
       "status": "passed",
       "connected_substrate": true,
-      "substrate_area_mm2": 9438.743380690668,
+      "substrate_area_mm2": 9438.743077744051,
       "actual_silk_mask_gap_mm": null,
       "npth_positions_and_diameters_verified": 100,
       "cover_count": 5
     },
     "zodiac-b": {
-      "gerber_sha256": "51c70cabc14e7389e843516b5a39db3da08b6a5b631716df196a44e40343a060",
+      "gerber_sha256": "8bf4d6c8b9be0a270d4688b8a84f377a526cb3dc54628350f29c2378bf12f141",
+      "router_contours": {
+        "count": 21,
+        "maximum_boundary_error_mm": 1.9633520812157904e-06,
+        "all_expected_contours_matched": true
+      },
       "silk": {
-        "boundary_error_mm": 2.1630396268113126e-06,
-        "area_mm2": 328.46236725487773,
-        "negative_holes": 24,
+        "boundary_error_mm": 2.4249083722554585e-06,
+        "area_mm2": 715.0127572314376,
+        "negative_holes": 41,
         "nominal_width_has_no_extra_stroke": true
       },
       "mask": {
@@ -82,7 +116,7 @@
       },
       "status": "passed",
       "connected_substrate": true,
-      "substrate_area_mm2": 9438.743380690668,
+      "substrate_area_mm2": 9438.743077744051,
       "actual_silk_mask_gap_mm": null,
       "npth_positions_and_diameters_verified": 100,
       "cover_count": 5

@@ -1,7 +1,7 @@
 """Build four 100 mm panels of five interchangeable AF37 covers, offline.
 
-The ten new constellations use frozen Stellarium Modern/Hipparcos inputs. Ten
-original animal line drawings are defined here as editable vector paths.
+The ten new constellations use frozen Stellarium Modern/Hipparcos inputs with
+web-constrained light slots. Zodiac covers trace the existing project talismans.
 No live EasyEDA calls are made by this generator.
 """
 from __future__ import annotations
@@ -10,12 +10,9 @@ import hashlib
 import json
 import math
 from pathlib import Path
-import re
-import secrets
 
 import numpy as np
 from matplotlib.font_manager import FontProperties
-from matplotlib.path import Path as MPath
 from matplotlib.textpath import TextPath
 from shapely import affinity
 from shapely.geometry import GeometryCollection, LineString, Point, Polygon, box
@@ -23,6 +20,8 @@ from shapely.ops import unary_union
 
 import build_standard_layer_artwork as art
 import create_standard_layer_pcbs as native
+from constellation_slot_layout import optimize_slot_layout
+import talisman_cover_artwork
 
 HW = Path(__file__).resolve().parents[1]
 OUT = HW/'variants/twelve-options'
@@ -42,81 +41,6 @@ NAMES={k:('Constellations' if k.startswith('constellations') else 'Zodiac')+'-'+
 def write(path,data):
  path.parent.mkdir(parents=True,exist_ok=True)
  path.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
-
-
-def curve(d):
- """Flatten absolute M/L/Q/C/Z path commands into editable vector polylines."""
- ts=re.findall(r'[MLCQZ]|[-+]?(?:\d*\.\d+|\d+)',d)
- i=0;cmd=None;parts=[];pts=[];cur=None;start=None
- while i<len(ts):
-  if ts[i].isalpha():
-   cmd=ts[i];i+=1
-   if cmd=='Z':
-    pts.append(start);cur=start;parts.append(pts);pts=[];continue
-  n={'M':2,'L':2,'Q':4,'C':6}[cmd]
-  v=list(map(float,ts[i:i+n]));i+=n
-  if cmd=='M':
-   if pts:parts.append(pts)
-   cur=tuple(v);start=cur;pts=[cur];cmd='L'
-  elif cmd=='L':cur=tuple(v);pts.append(cur)
-  else:
-   p=np.array(cur);end=np.array(v[-2:]);a=np.array(v[:2])
-   for t in np.linspace(0,1,32)[1:]:
-    point=(1-t)**2*p+2*(1-t)*t*a+t*t*end if cmd=='Q' else (1-t)**3*p+3*(1-t)**2*t*a+3*(1-t)*t*t*np.array(v[2:4])+t**3*end
-    pts.append(tuple(point))
-   cur=tuple(end)
- if pts:parts.append(pts)
- return parts
-
-
-def stroke(d,w=.48):
- return unary_union([LineString(p).buffer(w/2,quad_segs=8) for p in curve(d)])
-
-
-def solid(d):
- return unary_union([Polygon(p).buffer(0) for p in curve(d) if len(p)>3])
-
-
-def ellipse(x,y,rx,ry):
- return affinity.scale(Point(x,y).buffer(1,quad_segs=32),rx,ry)
-
-
-def animal(name):
- """Original single-ink line drawings, in a 24 x 24 mm design square."""
- S=stroke;E=ellipse
- if name=='rat':
-  g=S('M 6 16 C 5 10 8 8 12 9 C 13 5 18 6 18 10 L 21 14 L 17 16 C 14 21 7 21 6 16 M 6 17 C 0 21 0 11 3 13 M 11 19 L 9 21 L 13 21 M 17 15 L 22 14 M 17 16 L 22 17')
-  g=g.union(E(14.8,11.5,.55,.55)).union(S('M 14 9 C 16 8 18 10 16 11',.35))
- elif name=='ox':
-  g=S('M 7 8 C 3 7 2 3 3 2 C 5 6 7 5 9 6 M 17 8 C 21 7 22 3 21 2 C 19 6 17 5 15 6 M 7 7 C 8 4 16 4 17 7 L 17 16 C 17 21 7 21 7 16 Z M 7 9 L 3 8 L 5 12 L 7 12 M 17 9 L 21 8 L 19 12 L 17 12 M 8 15 C 10 12 14 12 16 15 M 9 10 L 10.5 11 M 15 10 L 13.5 11')
-  g=g.union(E(10,16,.55,.7)).union(E(14,16,.55,.7))
- elif name=='tiger':
-  g=S('M 6 7 C 2 5 3 1 6 3 L 9 5 M 18 7 C 22 5 21 1 18 3 L 15 5 M 6 6 C 8 3 16 3 18 6 C 22 13 18 20 12 21 C 6 20 2 13 6 6 Z M 7 10 L 10 11 M 17 10 L 14 11 M 9 16 C 10 18 12 17 12 15 C 12 17 14 18 15 16 M 5 10 L 8 12 M 4 14 L 8 14 M 19 10 L 16 12 M 20 14 L 16 14 M 9 6 L 15 6 M 10 8 L 14 8 M 12 5 L 12 9',.5)
-  g=g.union(solid('M 10.7 13 L 13.3 13 L 12 15 Z'))
- elif name=='rabbit':
-  g=S('M 9 10 C 6 4 8 0 10 3 L 12 9 M 12 9 C 12 1 16 0 16 4 L 15 11 C 20 13 19 18 16 20 L 7 20 C 3 20 3 15 7 14 L 9 10 Z M 8 17 C 10 14 15 16 13 20 M 7 20 L 3 21 M 18 16 L 21 16')
-  g=g.union(E(14.8,12.4,.5,.5)).union(S('M 9 4 L 10.5 9 M 14.5 4 L 13.5 9',.32))
- elif name=='dragon':
-  g=S('M 8 8 L 5 3 L 10 5 L 12 1 L 13 6 L 17 5 L 16 8 L 21 10 L 19 13 L 14 13 C 11 16 19 16 18 20 C 17 24 6 23 5 19 C 3 15 7 12 8 8 M 10 14 C 6 18 10 21 14 20 M 16 9 L 18 10 M 20 12 L 22 15 L 17 15 M 13 8 L 15 9 M 8 9 L 4 10 L 7 12 M 6 13 L 2 14 L 5 16 M 5 17 L 2 19 L 6 20 M 14 16 L 12 18 M 13 22 L 11 20',.5)
-  g=g.union(S('M 18 12 C 24 9 24 17 20 18',.32)).union(E(15.5,10.4,.45,.45))
- elif name=='goat':
-  g=S('M 11 8 C 3 5 4 0 10 2 C 14 3 15 7 12 9 M 11 7 C 7 6 7 3 10 4 C 12 5 12 6 11 7 M 12 9 L 17 10 L 20 14 L 17 15 L 15 19 L 11 22 L 10 18 C 6 15 7 11 11 8 M 14 10 L 17 7 L 18 10 M 10 18 L 13 20 M 16 14 L 18 14')
-  g=g.union(E(14.8,12.3,.45,.45))
- elif name=='monkey':
-  g=S('M 5 8 C 1 5 0 13 5 14 M 19 8 C 23 5 24 13 19 14 M 5 11 C 4 3 9 1 12 4 C 15 1 20 3 19 11 C 21 16 18 21 12 21 C 6 21 3 16 5 11 Z M 12 8 C 8 5 6 10 8 13 C 4 18 9 20 12 18 C 15 20 20 18 16 13 C 18 10 16 5 12 8 Z M 9 15 C 11 17 13 17 15 15',.48)
-  g=g.union(E(9.3,10.8,.5,.6)).union(E(14.7,10.8,.5,.6)).union(E(12,13.3,.7,.45))
- elif name=='rooster':
-  g=S('M 13 8 C 11 4 12 1 14 3 C 15 0 17 2 17 4 C 21 3 20 7 18 8 L 22 10 L 18 12 C 18 18 15 20 10 19 C 5 18 5 13 8 11 C 5 7 2 4 2 8 C 0 8 2 14 6 15 M 8 12 C 4 8 4 3 6 6 L 10 10 M 10 13 C 15 10 17 15 12 17 M 10 19 L 9 23 L 6 23 M 14 19 L 15 23 L 18 23 M 17 12 C 20 16 16 16 16 13',.5)
-  g=g.union(E(16.5,8.5,.45,.45))
- elif name=='dog':
-  g=S('M 7 9 L 8 2 L 13 6 L 17 4 L 17 10 L 22 13 L 20 16 L 15 16 L 14 21 L 5 21 L 8 16 C 4 15 4 11 7 9 Z M 8 4 L 10 7 L 8 11 M 8 17 L 14 18 M 16 13 L 20 13',.5)
-  g=g.union(E(15.5,10.8,.5,.5)).union(E(21,13.4,.6,.6))
- elif name=='pig':
-  g=S('M 6 8 C 8 6 13 5 17 8 L 20 9 L 21 14 L 19 17 L 17 17 L 17 21 L 14 21 L 13 18 L 10 18 L 9 21 L 6 21 L 6 17 C 2 14 3 10 6 8 Z M 6 8 L 7 3 L 11 6 M 16 8 L 17 4 L 19 9 M 4 11 C 0 12 0 7 2 8 C 4 10 1 11 1 9 M 18 11 C 15 10 15 15 19 15',.5)
-  g=g.union(E(18.5,12.7,.35,.6)).union(E(14.3,9.8,.45,.5))
- else:raise KeyError(name)
- # Drawings use y-down local coordinates, exactly as the cover SVG.
- return affinity.translate(affinity.scale(g,1.1,1.1,origin=(12,12)),6.5,4)
 
 
 def label(value,y,size=1.55):
@@ -166,25 +90,20 @@ def star_cover(abbr,catalog,patterns):
      f=v/d*(2.35-d)*.28;force[i]+=f;force[j]-=f
   p+=force;p[:,0]=np.clip(p[:,0],4.2,32.8);p[:,1]=np.clip(p[:,1],8.2,29.4)
  positions={h:tuple(p[i]) for i,h in enumerate(hips)}
+ edges=sorted({tuple(sorted((a,b))) for chain in chains for a,b in zip(chain,chain[1:]) if a!=b})
+ layout=optimize_slot_layout(positions,edges)
+ positions,slots=layout.positions,layout.slots
+ p=np.array([positions[h] for h in hips])
  holes=unary_union([Point(v).buffer(.4,quad_segs=24) for v in positions.values()])
- slots=[];printed=[];edges=sorted({tuple(sorted((a,b))) for chain in chains for a,b in zip(chain,chain[1:]) if a!=b})
  silk=unary_union([Point(v).buffer(1,quad_segs=32).difference(Point(v).buffer(.8,quad_segs=32)) for v in positions.values()])
- for a,b in edges:
-  a1=np.array(positions[a]);b1=np.array(positions[b]);d=float(np.linalg.norm(b1-a1));u=(b1-a1)/d
-  silk=silk.union(LineString([a1,b1]).buffer(.11,quad_segs=8))
-  if d>=5.1:
-   slot=LineString([a1+u*1.9,b1-u*1.9]).buffer(.5,quad_segs=16)
-   # Avoid cutting through a nearby third star, intersecting other slots or
-   # leaving isolated material. Crowded links retain their white print only.
-   others=unary_union([Point(v).buffer(.9) for h,v in positions.items() if h not in (a,b)])
-   if not slot.intersects(others) and not any(slot.distance(s)<.8 for s in slots):slots.append(slot);continue
-  printed.append([a,b])
+ for a,b in edges:silk=silk.union(LineString([positions[a],positions[b]]).buffer(.11,quad_segs=8))
+ printed=layout.metadata['printed_only_edges']
  aperture=unary_union([holes,*slots]);mask=aperture.buffer(.2,quad_segs=12)
  silk=silk.difference(mask.buffer(.16,quad_segs=12))
  return silk,mask,positions,slots,{'hip_ids':hips,'source_chains':chains,'edges':edges,'printed_only_edges':printed,
   'maximum_layout_adjustment_mm':float(np.linalg.norm(p-before,axis=1).max()),
   'minimum_star_spacing_mm':min(float(np.linalg.norm(p[i]-p[j])) for i in range(len(p)) for j in range(i)),
-  'star_hole_diameter_mm':.8,'slot_width_mm':1.,'slot_end_inset_from_star_center_mm':1.9,
+  'star_hole_diameter_mm':.8,'slot_width_mm':1.,'slot_layout':layout.metadata,
   'coordinate_policy':'Hipparcos ICRS -> tangent plane, north up / east left; fit and recorded hole-spacing adjustment'}
 
 
@@ -245,8 +164,10 @@ def generate():
     for i,slot in enumerate(slots):poly(affinity.translate(affinity.scale(slot,1,-1,origin=(0,0)),center[0]-18.5,center[1]+18.5),name+f':light-slot:{i}')
     silk=silk.union(label(name.upper(),3.7)).union(label('AD ASTRA',32.1,1.45))
    else:
-    silk=animal(name).union(label(name.upper(),32.1,1.6));mask=GeometryCollection();details={'original_vector_art':True,'minimum_nominal_stroke_mm':.32,'star_holes':0,'animal_mask_openings':0}
+    silk,mask,details=talisman_cover_artwork.build_cover(name)
+    silk=silk.union(label(name.upper(),32.1,1.6))
    clip=affinity.translate(OCT,18.5,18.5).buffer(-1.2)
+   if not abbr and silk.difference(clip).area>1e-8:raise ValueError('Talisman/label would be cropped')
    silk=silk.intersection(clip)
    assert silk.is_valid and not silk.is_empty and silk.intersection(mask).area<1e-8
    if not mask.is_empty:assert silk.distance(mask)>.149

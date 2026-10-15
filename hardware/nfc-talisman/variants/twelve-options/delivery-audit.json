@@ -8,6 +8,16 @@
       "detail": "4 x 100 mm PCBs, 5 AF37 covers each; 12 unique constellations and 12 unique zodiac animals including existing options"
     },
     {
+      "id": "twelve:talisman-artwork-provenance",
+      "passed": true,
+      "detail": "Ten existing talisman PNG/candidate/reference SHA chains and visual statuses match; traced contours are bound to printable geometry; goat maps to sheep"
+    },
+    {
+      "id": "twelve:slot-optimization-source-and-counts",
+      "passed": true,
+      "detail": "Frozen module/source hashes, independent physical audit and 10 final layouts match; 113 HIP nodes/109 logical edges, physical slots 37 -> 51; recorded material minima and connected substrates pass"
+    },
+    {
       "id": "twelve:native-archive-and-existing-pcbs",
       "passed": true,
       "detail": "Native CRC/SHA pass; 9 PCB documents present; previous 5 PCB designs and color objects retained"
@@ -15,7 +25,7 @@
     {
       "id": "twelve:constellations-a:native",
       "passed": true,
-      "detail": "356 owned primitives match final native source and archive; no decorative copper or image objects; saved/reopened DRC 0"
+      "detail": "368 owned primitives match final native source and archive; no decorative copper or image objects; saved/reopened DRC 0"
     },
     {
       "id": "twelve:constellations-a:gerber",
@@ -25,7 +35,7 @@
     {
       "id": "twelve:constellations-b:native",
       "passed": true,
-      "detail": "367 owned primitives match final native source and archive; no decorative copper or image objects; saved/reopened DRC 0"
+      "detail": "397 owned primitives match final native source and archive; no decorative copper or image objects; saved/reopened DRC 0"
     },
     {
       "id": "twelve:constellations-b:gerber",
@@ -35,7 +45,7 @@
     {
       "id": "twelve:zodiac-a:native",
       "passed": true,
-      "detail": "167 owned primitives match final native source and archive; no decorative copper or image objects; saved/reopened DRC 0"
+      "detail": "187 owned primitives match final native source and archive; no decorative copper or image objects; saved/reopened DRC 0"
     },
     {
       "id": "twelve:zodiac-a:gerber",
@@ -45,7 +55,7 @@
     {
       "id": "twelve:zodiac-b:native",
       "passed": true,
-      "detail": "165 owned primitives match final native source and archive; no decorative copper or image objects; saved/reopened DRC 0"
+      "detail": "187 owned primitives match final native source and archive; no decorative copper or image objects; saved/reopened DRC 0"
     },
     {
       "id": "twelve:zodiac-b:gerber",
@@ -59,7 +69,7 @@
     }
   ],
   "errors": [],
-  "checks_run": 11,
+  "checks_run": 13,
   "release_ready": false,
   "release_status": "HOLD_CAM_PHYSICAL_VALIDATION_PENDING",
   "limitations": [

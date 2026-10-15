@@ -1,14 +1,15 @@
 {
-  "date": "2026-10-15",
+  "date": "2026-10-16",
   "full_software_tests": {
     "command": "cmd /c scripts/run_checks.cmd",
-    "tests_passed": 185,
+    "tests_passed": 189,
     "failures": 0,
-    "native_compilation": "MSVC x64; no skipped tests"
+    "native_compilation": "MSVC x64; no skipped tests",
+    "skipped": 0
   },
   "delivery_checks": {
-    "command": "python scripts/check_project.py --skip-tests --output build/project-check-20261015.json",
-    "checks_passed": 96,
+    "command": "python scripts/check_project.py --skip-tests --output build/project-check-20261016.json",
+    "checks_passed": 98,
     "failures": 0,
     "unittest_run_in_this_command": false
   },
@@ -24,5 +25,14 @@
   ],
   "new_npth_positions_and_diameters_verified": 543,
   "release_ready": false,
-  "release_status": "HOLD_CAM_C1_PHYSICAL_VALIDATION_PENDING"
+  "release_status": "HOLD_CAM_C1_PHYSICAL_VALIDATION_PENDING",
+  "revision": {
+    "constellation_light_slots_before": 37,
+    "constellation_light_slots_after": 51,
+    "slot_centerline_mm_before": 159.1531109063033,
+    "slot_centerline_mm_after": 211.0831193102381,
+    "zodiac_source_collection": "talisman-single-ink-v1",
+    "zodiac_covers_traced": 10,
+    "new_image_generation": false
+  }
 }

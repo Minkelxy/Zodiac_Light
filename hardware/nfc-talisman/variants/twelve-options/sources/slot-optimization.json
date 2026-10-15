@@ -1,0 +1,2149 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "module": "hardware/nfc-talisman/scripts/constellation_slot_layout.py",
+  "module_sha256": "ff48cef514b7c576af8843167e225afa43e4000799a2229b211c0dd14b69ab76",
+  "source_sha256": {
+    "hardware/nfc-talisman/variants/twelve-options/sources/stellarium-modern-index.json": "1f2f5ffd6c9e25a7d0dcfdbf1f756e2db03dd3b8ed4ec016a2839b09f6b0fe1e",
+    "hardware/nfc-talisman/variants/twelve-options/sources/hipparcos-zodiac.tsv": "580351e213782b3e615ba669596cdaff517d410bb1799502b80978c61a046eda"
+  },
+  "covers": {
+    "aries": {
+      "abbr": "Ari",
+      "hip_ids": [
+        8832,
+        8903,
+        9884,
+        13209
+      ],
+      "source_chains": [
+        [
+          13209,
+          9884,
+          8903,
+          8832
+        ]
+      ],
+      "logical_edges": [
+        [
+          8832,
+          8903
+        ],
+        [
+          8903,
+          9884
+        ],
+        [
+          9884,
+          13209
+        ]
+      ],
+      "before": {
+        "strategy": "legacy_fixed_5.1mm_threshold",
+        "hip_count": 4,
+        "logical_edge_count": 3,
+        "slotted_edge_count": 2,
+        "physical_slot_count": 2,
+        "printed_only_edge_count": 1,
+        "printed_only_edges": [
+          [
+            8832,
+            8903
+          ]
+        ],
+        "total_logical_edge_length_mm": 28.50139143081137,
+        "total_centerline_length_mm": 17.906052129113753,
+        "total_slot_overall_length_mm": 19.906052129113753,
+        "logical_edge_coverage_fraction": 0.6666666666666666,
+        "physical_line_coverage_fraction": 0.698423870898961,
+        "minimum_star_to_slot_material_mm": 1.0000474634757137,
+        "minimum_slot_to_slot_material_mm": 2.769140257180959,
+        "minimum_slot_to_outer_edge_material_mm": 3.3379234264420012,
+        "minimum_all_apertures_to_outer_edge_mm": 1.6336651148041652,
+        "minimum_star_to_star_material_mm": 2.1953450164655273,
+        "fr4_single_connected_component": true,
+        "all_apertures_inside_board": true,
+        "slot_width_mm": 1.0,
+        "minimum_slot_overall_length_mm": 4.841984311175606
+      },
+      "after": {
+        "hip_count": 4,
+        "logical_edge_count": 3,
+        "slotted_edge_count": 2,
+        "physical_slot_count": 2,
+        "printed_only_edge_count": 1,
+        "printed_only_edges": [
+          [
+            8832,
+            8903
+          ]
+        ],
+        "total_logical_edge_length_mm": 29.213926216581655,
+        "total_centerline_length_mm": 18.5237034323416,
+        "total_slot_overall_length_mm": 20.5237034323416,
+        "logical_edge_coverage_fraction": 0.6666666666666666,
+        "physical_line_coverage_fraction": 0.7025315009076891,
+        "minimum_star_to_slot_material_mm": 1.005047396015272,
+        "minimum_slot_to_slot_material_mm": 2.778775209410285,
+        "minimum_slot_to_outer_edge_material_mm": 2.9257094055816224,
+        "minimum_all_apertures_to_outer_edge_mm": 1.2167034418153713,
+        "minimum_star_to_star_material_mm": 2.270228448662838,
+        "fr4_single_connected_component": true,
+        "all_apertures_inside_board": true,
+        "slot_width_mm": 1.0,
+        "minimum_slot_overall_length_mm": 5.023033918954997,
+        "strategy": "uniform_scale_and_obstacle_trimmed_capsules",
+        "uniform_scale": 1.025,
+        "maximum_star_shift_mm": 0.42627512669389944,
+        "policy": {
+          "slot_width_mm": 1.0,
+          "star_hole_diameter_mm": 0.8,
+          "star_to_slot_web_mm": 1.0,
+          "slot_to_slot_web_mm": 0.8,
+          "slot_to_board_web_mm": 1.0,
+          "minimum_slot_overall_mm": 1.5,
+          "numerical_guard_mm": 0.005,
+          "max_uniform_scale": 1.1,
+          "chart_center_mm": [
+            18.5,
+            18.8
+          ],
+          "star_center_y_limits_mm": [
+            7.2,
+            30.4
+          ],
+          "scale_steps": 4,
+          "random_order_trials": 8,
+          "maximum_fragments_per_edge": 2
+        },
+        "trial_count": 24,
+        "delta_slotted_edges": 0,
+        "delta_centerline_length_mm": 0.617651303227845
+      }
+    },
+    "taurus": {
+      "abbr": "Tau",
+      "hip_ids": [
+        15900,
+        17847,
+        18724,
+        20205,
+        20455,
+        20648,
+        20889,
+        20894,
+        21421,
+        21881,
+        25428,
+        26451
+      ],
+      "source_chains": [
+        [
+          25428,
+          21881,
+          20889
+        ],
+        [
+          21421,
+          26451
+        ],
+        [
+          20205,
+          20455
+        ],
+        [
+          20205,
+          18724,
+          15900
+        ],
+        [
+          21421,
+          20889
+        ],
+        [
+          21421,
+          20894,
+          20205
+        ],
+        [
+          20889,
+          20648,
+          20455,
+          17847
+        ]
+      ],
+      "logical_edges": [
+        [
+          15900,
+          18724
+        ],
+        [
+          17847,
+          20455
+        ],
+        [
+          18724,
+          20205
+        ],
+        [
+          20205,
+          20455
+        ],
+        [
+          20205,
+          20894
+        ],
+        [
+          20455,
+          20648
+        ],
+        [
+          20648,
+          20889
+        ],
+        [
+          20889,
+          21421
+        ],
+        [
+          20889,
+          21881
+        ],
+        [
+          20894,
+          21421
+        ],
+        [
+          21421,
+          26451
+        ],
+        [
+          21881,
+          25428
+        ]
+      ],
+      "before": {
+        "strategy": "legacy_fixed_5.1mm_threshold",
+        "hip_count": 12,
+        "logical_edge_count": 12,
+        "slotted_edge_count": 4,
+        "physical_slot_count": 4,
+        "printed_only_edge_count": 8,
+        "printed_only_edges": [
+          [
+            18724,
+            20205
+          ],
+          [
+            20205,
+            20455
+          ],
+          [
+            20205,
+            20894
+          ],
+          [
+            20455,
+            20648
+          ],
+          [
+            20648,
+            20889
+          ],
+          [
+            20889,
+            21421
+          ],
+          [
+            20889,
+            21881
+          ],
+          [
+            20894,
+            21421
+          ]
+        ],
+        "total_logical_edge_length_mm": 56.45312930070483,
+        "total_centerline_length_mm": 19.267666300487917,
+        "total_slot_overall_length_mm": 23.267666300487917,
+        "logical_edge_coverage_fraction": 0.3333333333333333,
+        "physical_line_coverage_fraction": 0.4121590173779333,
+        "minimum_star_to_slot_material_mm": 1.0000122532549658,
+        "minimum_slot_to_slot_material_mm": 3.826929700429152,
+        "minimum_slot_to_outer_edge_material_mm": 5.787327905837578,
+        "minimum_all_apertures_to_outer_edge_mm": 4.179957297116534,
+        "minimum_star_to_star_material_mm": 1.4679823670899566,
+        "fr4_single_connected_component": true,
+        "all_apertures_inside_board": true,
+        "slot_width_mm": 1.0,
+        "minimum_slot_overall_length_mm": 3.709514093170486
+      },
+      "after": {
+        "hip_count": 12,
+        "logical_edge_count": 12,
+        "slotted_edge_count": 5,
+        "physical_slot_count": 5,
+        "printed_only_edge_count": 7,
+        "printed_only_edges": [
+          [
+            20205,
+            20455
+          ],
+          [
+            20205,
+            20894
+          ],
+          [
+            20455,
+            20648
+          ],
+          [
+            20648,
+            20889
+          ],
+          [
+            20889,
+            21421
+          ],
+          [
+            20889,
+            21881
+          ],
+          [
+            20894,
+            21421
+          ]
+        ],
+        "total_logical_edge_length_mm": 62.09844223077533,
+        "total_centerline_length_mm": 23.177930516026827,
+        "total_slot_overall_length_mm": 28.177930516026827,
+        "logical_edge_coverage_fraction": 0.4166666666666667,
+        "physical_line_coverage_fraction": 0.4537622765368201,
+        "minimum_star_to_slot_material_mm": 1.0050122358378835,
+        "minimum_slot_to_slot_material_mm": 2.7827832917994804,
+        "minimum_slot_to_outer_edge_material_mm": 4.420740845144171,
+        "minimum_all_apertures_to_outer_edge_mm": 2.809166230263782,
+        "minimum_star_to_star_material_mm": 1.6947613721425254,
+        "fr4_single_connected_component": true,
+        "all_apertures_inside_board": true,
+        "slot_width_mm": 1.0,
+        "minimum_slot_overall_length_mm": 1.50349758549011,
+        "strategy": "uniform_scale_and_obstacle_trimmed_capsules",
+        "uniform_scale": 1.1,
+        "maximum_star_shift_mm": 1.4195559055395266,
+        "policy": {
+          "slot_width_mm": 1.0,
+          "star_hole_diameter_mm": 0.8,
+          "star_to_slot_web_mm": 1.0,
+          "slot_to_slot_web_mm": 0.8,
+          "slot_to_board_web_mm": 1.0,
+          "minimum_slot_overall_mm": 1.5,
+          "numerical_guard_mm": 0.005,
+          "max_uniform_scale": 1.1,
+          "chart_center_mm": [
+            18.5,
+            18.8
+          ],
+          "star_center_y_limits_mm": [
+            7.2,
+            30.4
+          ],
+          "scale_steps": 4,
+          "random_order_trials": 8,
+          "maximum_fragments_per_edge": 2
+        },
+        "trial_count": 60,
+        "delta_slotted_edges": 1,
+        "delta_centerline_length_mm": 3.910264215538909
+      }
+    },
+    "gemini": {
+      "abbr": "Gem",
+      "hip_ids": [
+        28734,
+        29655,
+        30343,
+        30883,
+        31681,
+        32246,
+        32362,
+        33018,
+        34088,
+        34693,
+        35350,
+        35550,
+        36046,
+        36850,
+        36962,
+        37740,
+        37826
+      ],
+      "source_chains": [
+        [
+          31681,
+          34088,
+          35550,
+          35350,
+          32362
+        ],
+        [
+          35550,
+          36962,
+          37740
+        ],
+        [
+          36962,
+          37826
+        ],
+        [
+          36962,
+          36046,
+          34693,
+          36850
+        ],
+        [
+          34693,
+          33018
+        ],
+        [
+          34693,
+          32246,
+          30883
+        ],
+        [
+          32246,
+          30343,
+          29655,
+          28734
+        ]
+      ],
+      "logical_edges": [
+        [
+          28734,
+          29655
+        ],
+        [
+          29655,
+          30343
+        ],
+        [
+          30343,
+          32246
+        ],
+        [
+          30883,
+          32246
+        ],
+        [
+          31681,
+          34088
+        ],
+        [
+          32246,
+          34693
+        ],
+        [
+          32362,
+          35350
+        ],
+        [
+          33018,
+          34693
+        ],
+        [
+          34088,
+          35550
+        ],
+        [
+          34693,
+          36046
+        ],
+        [
+          34693,
+          36850
+        ],
+        [
+          35350,
+          35550
+        ],
+        [
+          35550,
+          36962
+        ],
+        [
+          36046,
+          36962
+        ],
+        [
+          36962,
+          37740
+        ],
+        [
+          36962,
+          37826
+        ]
+      ],
+      "before": {
+        "strategy": "legacy_fixed_5.1mm_threshold",
+        "hip_count": 17,
+        "logical_edge_count": 16,
+        "slotted_edge_count": 7,
+        "physical_slot_count": 7,
+        "printed_only_edge_count": 9,
+        "printed_only_edges": [
+          [
+            28734,
+            29655
+          ],
+          [
+            29655,
+            30343
+          ],
+          [
+            30343,
+            32246
+          ],
+          [
+            34088,
+            35550
+          ],
+          [
+            34693,
+            36046
+          ],
+          [
+            34693,
+            36850
+          ],
+          [
+            36046,
+            36962
+          ],
+          [
+            36962,
+            37740
+          ],
+          [
+            36962,
+            37826
+          ]
+        ],
+        "total_logical_edge_length_mm": 74.5772187539052,
+        "total_centerline_length_mm": 18.068980220924566,
+        "total_slot_overall_length_mm": 25.068980220924566,
+        "logical_edge_coverage_fraction": 0.4375,
+        "physical_line_coverage_fraction": 0.33614796367841004,
+        "minimum_star_to_slot_material_mm": 1.0000009062637445,
+        "minimum_slot_to_slot_material_mm": 1.5426723181972481,
+        "minimum_slot_to_outer_edge_material_mm": 7.942165385114534,
+        "minimum_all_apertures_to_outer_edge_mm": 5.799817992049923,
+        "minimum_star_to_star_material_mm": 1.5317843551059007,
+        "fr4_single_connected_component": true,
+        "all_apertures_inside_board": true,
+        "slot_width_mm": 1.0,
+        "minimum_slot_overall_length_mm": 2.329836028487584
+      },
+      "after": {
+        "hip_count": 17,
+        "logical_edge_count": 16,
+        "slotted_edge_count": 8,
+        "physical_slot_count": 8,
+        "printed_only_edge_count": 8,
+        "printed_only_edges": [
+          [
+            28734,
+            29655
+          ],
+          [
+            29655,
+            30343
+          ],
+          [
+            30343,
+            32246
+          ],
+          [
+            34088,
+            35550
+          ],
+          [
+            34693,
+            36046
+          ],
+          [
+            36046,
+            36962
+          ],
+          [
+            36962,
+            37740
+          ],
+          [
+            36962,
+            37826
+          ]
+        ],
+        "total_logical_edge_length_mm": 80.17051016044815,
+        "total_centerline_length_mm": 22.983589641909813,
+        "total_slot_overall_length_mm": 30.983589641909813,
+        "logical_edge_coverage_fraction": 0.5,
+        "physical_line_coverage_fraction": 0.3864711547912223,
+        "minimum_star_to_slot_material_mm": 1.0050009049755242,
+        "minimum_slot_to_slot_material_mm": 1.5483352318483756,
+        "minimum_slot_to_outer_edge_material_mm": 7.151579032515119,
+        "minimum_all_apertures_to_outer_edge_mm": 4.877304341453667,
+        "minimum_star_to_star_material_mm": 1.7066634839375034,
+        "fr4_single_connected_component": true,
+        "all_apertures_inside_board": true,
+        "slot_width_mm": 1.0,
+        "minimum_slot_overall_length_mm": 2.634435904415888,
+        "strategy": "uniform_scale_and_obstacle_trimmed_capsules",
+        "uniform_scale": 1.0750000000000002,
+        "maximum_star_shift_mm": 0.9225459428102774,
+        "policy": {
+          "slot_width_mm": 1.0,
+          "star_hole_diameter_mm": 0.8,
+          "star_to_slot_web_mm": 1.0,
+          "slot_to_slot_web_mm": 0.8,
+          "slot_to_board_web_mm": 1.0,
+          "minimum_slot_overall_mm": 1.5,
+          "numerical_guard_mm": 0.005,
+          "max_uniform_scale": 1.1,
+          "chart_center_mm": [
+            18.5,
+            18.8
+          ],
+          "star_center_y_limits_mm": [
+            7.2,
+            30.4
+          ],
+          "scale_steps": 4,
+          "random_order_trials": 8,
+          "maximum_fragments_per_edge": 2
+        },
+        "trial_count": 48,
+        "delta_slotted_edges": 1,
+        "delta_centerline_length_mm": 4.914609420985247
+      }
+    },
+    "cancer": {
+      "abbr": "Cnc",
+      "hip_ids": [
+        40526,
+        40843,
+        42806,
+        42911,
+        43103,
+        44066
+      ],
+      "source_chains": [
+        [
+          43103,
+          42806,
+          40843
+        ],
+        [
+          42806,
+          42911,
+          40526
+        ],
+        [
+          42911,
+          44066
+        ]
+      ],
+      "logical_edges": [
+        [
+          40526,
+          42911
+        ],
+        [
+          40843,
+          42806
+        ],
+        [
+          42806,
+          42911
+        ],
+        [
+          42806,
+          43103
+        ],
+        [
+          42911,
+          44066
+        ]
+      ],
+      "before": {
+        "strategy": "legacy_fixed_5.1mm_threshold",
+        "hip_count": 6,
+        "logical_edge_count": 5,
+        "slotted_edge_count": 3,
+        "physical_slot_count": 3,
+        "printed_only_edge_count": 2,
+        "printed_only_edges": [
+          [
+            42806,
+            42911
+          ],
+          [
+            42806,
+            43103
+          ]
+        ],
+        "total_logical_edge_length_mm": 37.74875118366758,
+        "total_centerline_length_mm": 15.45753701895467,
+        "total_slot_overall_length_mm": 18.457537018954667,
+        "logical_edge_coverage_fraction": 0.6,
+        "physical_line_coverage_fraction": 0.48895755330153884,
+        "minimum_star_to_slot_material_mm": 1.0000085800673464,
+        "minimum_slot_to_slot_material_mm": 1.0864881617180286,
+        "minimum_slot_to_outer_edge_material_mm": 8.33777052582765,
+        "minimum_all_apertures_to_outer_edge_mm": 6.552865161620407,
+        "minimum_star_to_star_material_mm": 2.5754075444105755,
+        "fr4_single_connected_component": true,
+        "all_apertures_inside_board": true,
+        "slot_width_mm": 1.0,
+        "minimum_slot_overall_length_mm": 4.491523039250261
+      },
+      "after": {
+        "hip_count": 6,
+        "logical_edge_count": 5,
+        "slotted_edge_count": 4,
+        "physical_slot_count": 4,
+        "printed_only_edge_count": 1,
+        "printed_only_edges": [
+          [
+            42806,
+            42911
+          ]
+        ],
+        "total_logical_edge_length_mm": 41.523626302034344,
+        "total_centerline_length_mm": 22.046104600585938,
+        "total_slot_overall_length_mm": 26.046104600585938,
+        "logical_edge_coverage_fraction": 0.8,
+        "physical_line_coverage_fraction": 0.6272598739602344,
+        "minimum_star_to_slot_material_mm": 1.0050026625850392,
+        "minimum_slot_to_slot_material_mm": 0.804629900327226,
+        "minimum_slot_to_outer_edge_material_mm": 7.209124861110573,
+        "minimum_all_apertures_to_outer_edge_mm": 5.4193648812180415,
+        "minimum_star_to_star_material_mm": 2.9129428660346908,
+        "fr4_single_connected_component": true,
+        "all_apertures_inside_board": true,
+        "slot_width_mm": 1.0,
+        "minimum_slot_overall_length_mm": 5.210675343175284,
+        "strategy": "uniform_scale_and_obstacle_trimmed_capsules",
+        "uniform_scale": 1.1,
+        "maximum_star_shift_mm": 1.186172189578467,
+        "policy": {
+          "slot_width_mm": 1.0,
+          "star_hole_diameter_mm": 0.8,
+          "star_to_slot_web_mm": 1.0,
+          "slot_to_slot_web_mm": 0.8,
+          "slot_to_board_web_mm": 1.0,
+          "minimum_slot_overall_mm": 1.5,
+          "numerical_guard_mm": 0.005,
+          "max_uniform_scale": 1.1,
+          "chart_center_mm": [
+            18.5,
+            18.8
+          ],
+          "star_center_y_limits_mm": [
+            7.2,
+            30.4
+          ],
+          "scale_steps": 4,
+          "random_order_trials": 8,
+          "maximum_fragments_per_edge": 2
+        },
+        "trial_count": 60,
+        "delta_slotted_edges": 1,
+        "delta_centerline_length_mm": 6.588567581631269
+      }
+    },
+    "virgo": {
+      "abbr": "Vir",
+      "hip_ids": [
+        57380,
+        60129,
+        61941,
+        63090,
+        63608,
+        65474,
+        66249,
+        68520,
+        69427,
+        69701,
+        71957,
+        72220
+      ],
+      "source_chains": [
+        [
+          57380,
+          60129,
+          61941,
+          65474,
+          69427,
+          69701,
+          71957
+        ],
+        [
+          65474,
+          66249,
+          68520,
+          72220
+        ],
+        [
+          66249,
+          63090,
+          63608
+        ],
+        [
+          63090,
+          61941
+        ]
+      ],
+      "logical_edges": [
+        [
+          57380,
+          60129
+        ],
+        [
+          60129,
+          61941
+        ],
+        [
+          61941,
+          63090
+        ],
+        [
+          61941,
+          65474
+        ],
+        [
+          63090,
+          63608
+        ],
+        [
+          63090,
+          66249
+        ],
+        [
+          65474,
+          66249
+        ],
+        [
+          65474,
+          69427
+        ],
+        [
+          66249,
+          68520
+        ],
+        [
+          68520,
+          72220
+        ],
+        [
+          69427,
+          69701
+        ],
+        [
+          69701,
+          71957
+        ]
+      ],
+      "before": {
+        "strategy": "legacy_fixed_5.1mm_threshold",
+        "hip_count": 12,
+        "logical_edge_count": 12,
+        "slotted_edge_count": 6,
+        "physical_slot_count": 6,
+        "printed_only_edge_count": 6,
+        "printed_only_edges": [
+          [
+            60129,
+            61941
+          ],
+          [
+            61941,
+            63090
+          ],
+          [
+            63090,
+            63608
+          ],
+          [
+            66249,
+            68520
+          ],
+          [
+            69427,
+            69701
+          ],
+          [
+            69701,
+            71957
+          ]
+        ],
+        "total_logical_edge_length_mm": 58.340022306619616,
+        "total_centerline_length_mm": 15.269273006987099,
+        "total_slot_overall_length_mm": 21.2692730069871,
+        "logical_edge_coverage_fraction": 0.5,
+        "physical_line_coverage_fraction": 0.3645743036435856,
+        "minimum_star_to_slot_material_mm": 1.0000016658742878,
+        "minimum_slot_to_slot_material_mm": 0.9292387127324381,
+        "minimum_slot_to_outer_edge_material_mm": 5.165776933614097,
+        "minimum_all_apertures_to_outer_edge_mm": 3.8000000000000043,
+        "minimum_star_to_star_material_mm": 1.5498990913782635,
+        "fr4_single_connected_component": true,
+        "all_apertures_inside_board": true,
+        "slot_width_mm": 1.0,
+        "minimum_slot_overall_length_mm": 2.7596143021215562
+      },
+      "after": {
+        "hip_count": 12,
+        "logical_edge_count": 12,
+        "slotted_edge_count": 7,
+        "physical_slot_count": 7,
+        "printed_only_edge_count": 5,
+        "printed_only_edges": [
+          [
+            60129,
+            61941
+          ],
+          [
+            61941,
+            63090
+          ],
+          [
+            66249,
+            68520
+          ],
+          [
+            69427,
+            69701
+          ],
+          [
+            69701,
+            71957
+          ]
+        ],
+        "total_logical_edge_length_mm": 64.17402453728158,
+        "total_centerline_length_mm": 19.772798763030693,
+        "total_slot_overall_length_mm": 26.772798763030693,
+        "logical_edge_coverage_fraction": 0.5833333333333334,
+        "physical_line_coverage_fraction": 0.41719058382378943,
+        "minimum_star_to_slot_material_mm": 1.0050016635063175,
+        "minimum_slot_to_slot_material_mm": 0.9334875023074857,
+        "minimum_slot_to_outer_edge_material_mm": 3.7396342374199563,
+        "minimum_all_apertures_to_outer_edge_mm": 2.3700000000000045,
+        "minimum_star_to_star_material_mm": 1.7848774213731586,
+        "fr4_single_connected_component": true,
+        "all_apertures_inside_board": true,
+        "slot_width_mm": 1.0,
+        "minimum_slot_overall_length_mm": 1.7565984553448875,
+        "strategy": "uniform_scale_and_obstacle_trimmed_capsules",
+        "uniform_scale": 1.1,
+        "maximum_star_shift_mm": 1.49332568544807,
+        "policy": {
+          "slot_width_mm": 1.0,
+          "star_hole_diameter_mm": 0.8,
+          "star_to_slot_web_mm": 1.0,
+          "slot_to_slot_web_mm": 0.8,
+          "slot_to_board_web_mm": 1.0,
+          "minimum_slot_overall_mm": 1.5,
+          "numerical_guard_mm": 0.005,
+          "max_uniform_scale": 1.1,
+          "chart_center_mm": [
+            18.5,
+            18.8
+          ],
+          "star_center_y_limits_mm": [
+            7.2,
+            30.4
+          ],
+          "scale_steps": 4,
+          "random_order_trials": 8,
+          "maximum_fragments_per_edge": 2
+        },
+        "trial_count": 60,
+        "delta_slotted_edges": 1,
+        "delta_centerline_length_mm": 4.503525756043594
+      }
+    },
+    "libra": {
+      "abbr": "Lib",
+      "hip_ids": [
+        72622,
+        73714,
+        74785,
+        76333,
+        77853
+      ],
+      "source_chains": [
+        [
+          77853,
+          76333,
+          74785,
+          72622,
+          73714,
+          76333
+        ]
+      ],
+      "logical_edges": [
+        [
+          72622,
+          73714
+        ],
+        [
+          72622,
+          74785
+        ],
+        [
+          73714,
+          76333
+        ],
+        [
+          74785,
+          76333
+        ],
+        [
+          76333,
+          77853
+        ]
+      ],
+      "before": {
+        "strategy": "legacy_fixed_5.1mm_threshold",
+        "hip_count": 5,
+        "logical_edge_count": 5,
+        "slotted_edge_count": 5,
+        "physical_slot_count": 5,
+        "printed_only_edge_count": 0,
+        "printed_only_edges": [],
+        "total_logical_edge_length_mm": 53.968233514879415,
+        "total_centerline_length_mm": 34.968233514879415,
+        "total_slot_overall_length_mm": 39.968233514879415,
+        "logical_edge_coverage_fraction": 1.0,
+        "physical_line_coverage_fraction": 0.7405881369798754,
+        "minimum_star_to_slot_material_mm": 1.0000001070586606,
+        "minimum_slot_to_slot_material_mm": 0.8074281177401408,
+        "minimum_slot_to_outer_edge_material_mm": 7.773293022050336,
+        "minimum_all_apertures_to_outer_edge_mm": 7.096615009626015,
+        "minimum_star_to_star_material_mm": 5.249611934473591,
+        "fr4_single_connected_component": true,
+        "all_apertures_inside_board": true,
+        "slot_width_mm": 1.0,
+        "minimum_slot_overall_length_mm": 3.2496117582256314
+      },
+      "after": {
+        "hip_count": 5,
+        "logical_edge_count": 5,
+        "slotted_edge_count": 5,
+        "physical_slot_count": 5,
+        "printed_only_edge_count": 0,
+        "printed_only_edges": [],
+        "total_logical_edge_length_mm": 58.01585102849539,
+        "total_centerline_length_mm": 38.96585102849539,
+        "total_slot_overall_length_mm": 43.96585102849539,
+        "logical_edge_coverage_fraction": 1.0,
+        "physical_line_coverage_fraction": 0.7578248056190864,
+        "minimum_star_to_slot_material_mm": 1.0050001069064805,
+        "minimum_slot_to_slot_material_mm": 0.8121844770437548,
+        "minimum_slot_to_outer_edge_material_mm": 6.9659002280547195,
+        "minimum_all_apertures_to_outer_edge_mm": 6.287271037924664,
+        "minimum_star_to_star_material_mm": 5.703332814486357,
+        "fr4_single_connected_component": true,
+        "all_apertures_inside_board": true,
+        "slot_width_mm": 1.0,
+        "minimum_slot_overall_length_mm": 3.6933326400925552,
+        "strategy": "uniform_scale_and_obstacle_trimmed_capsules",
+        "uniform_scale": 1.0750000000000002,
+        "maximum_star_shift_mm": 0.8684669406631181,
+        "policy": {
+          "slot_width_mm": 1.0,
+          "star_hole_diameter_mm": 0.8,
+          "star_to_slot_web_mm": 1.0,
+          "slot_to_slot_web_mm": 0.8,
+          "slot_to_board_web_mm": 1.0,
+          "minimum_slot_overall_mm": 1.5,
+          "numerical_guard_mm": 0.005,
+          "max_uniform_scale": 1.1,
+          "chart_center_mm": [
+            18.5,
+            18.8
+          ],
+          "star_center_y_limits_mm": [
+            7.2,
+            30.4
+          ],
+          "scale_steps": 4,
+          "random_order_trials": 8,
+          "maximum_fragments_per_edge": 2
+        },
+        "trial_count": 48,
+        "delta_slotted_edges": 0,
+        "delta_centerline_length_mm": 3.997617513615978
+      }
+    },
+    "scorpius": {
+      "abbr": "Sco",
+      "hip_ids": [
+        78265,
+        78401,
+        78820,
+        80763,
+        81266,
+        82396,
+        82514,
+        82671,
+        84143,
+        85927,
+        86228,
+        86670,
+        87073
+      ],
+      "source_chains": [
+        [
+          85927,
+          86670,
+          87073,
+          86228,
+          84143,
+          82671,
+          82514,
+          82396,
+          81266,
+          80763,
+          78401
+        ],
+        [
+          80763,
+          78265
+        ],
+        [
+          80763,
+          78820
+        ]
+      ],
+      "logical_edges": [
+        [
+          78265,
+          80763
+        ],
+        [
+          78401,
+          80763
+        ],
+        [
+          78820,
+          80763
+        ],
+        [
+          80763,
+          81266
+        ],
+        [
+          81266,
+          82396
+        ],
+        [
+          82396,
+          82514
+        ],
+        [
+          82514,
+          82671
+        ],
+        [
+          82671,
+          84143
+        ],
+        [
+          84143,
+          86228
+        ],
+        [
+          85927,
+          86670
+        ],
+        [
+          86228,
+          87073
+        ],
+        [
+          86670,
+          87073
+        ]
+      ],
+      "before": {
+        "strategy": "legacy_fixed_5.1mm_threshold",
+        "hip_count": 13,
+        "logical_edge_count": 12,
+        "slotted_edge_count": 2,
+        "physical_slot_count": 2,
+        "printed_only_edge_count": 10,
+        "printed_only_edges": [
+          [
+            78401,
+            80763
+          ],
+          [
+            78820,
+            80763
+          ],
+          [
+            80763,
+            81266
+          ],
+          [
+            82396,
+            82514
+          ],
+          [
+            82514,
+            82671
+          ],
+          [
+            82671,
+            84143
+          ],
+          [
+            84143,
+            86228
+          ],
+          [
+            85927,
+            86670
+          ],
+          [
+            86228,
+            87073
+          ],
+          [
+            86670,
+            87073
+          ]
+        ],
+        "total_logical_edge_length_mm": 48.24431619930672,
+        "total_centerline_length_mm": 3.8751911057867083,
+        "total_slot_overall_length_mm": 5.875191105786708,
+        "logical_edge_coverage_fraction": 0.16666666666666666,
+        "physical_line_coverage_fraction": 0.1217799643281323,
+        "minimum_star_to_slot_material_mm": 1.0000084859734817,
+        "minimum_slot_to_slot_material_mm": 4.462846836985209,
+        "minimum_slot_to_outer_edge_material_mm": 7.8733698923236695,
+        "minimum_all_apertures_to_outer_edge_mm": 4.425560144876677,
+        "minimum_star_to_star_material_mm": 1.5052989629910043,
+        "fr4_single_connected_component": true,
+        "all_apertures_inside_board": true,
+        "slot_width_mm": 1.0,
+        "minimum_slot_overall_length_mm": 2.7999277385124604
+      },
+      "after": {
+        "hip_count": 13,
+        "logical_edge_count": 12,
+        "slotted_edge_count": 4,
+        "physical_slot_count": 4,
+        "printed_only_edge_count": 8,
+        "printed_only_edges": [
+          [
+            80763,
+            81266
+          ],
+          [
+            82396,
+            82514
+          ],
+          [
+            82514,
+            82671
+          ],
+          [
+            82671,
+            84143
+          ],
+          [
+            84143,
+            86228
+          ],
+          [
+            85927,
+            86670
+          ],
+          [
+            86228,
+            87073
+          ],
+          [
+            86670,
+            87073
+          ]
+        ],
+        "total_logical_edge_length_mm": 51.862639914254736,
+        "total_centerline_length_mm": 6.30223124158304,
+        "total_slot_overall_length_mm": 10.30223124158304,
+        "logical_edge_coverage_fraction": 0.3333333333333333,
+        "physical_line_coverage_fraction": 0.19864455913960166,
+        "minimum_star_to_slot_material_mm": 1.0050084739112062,
+        "minimum_slot_to_slot_material_mm": 0.8046421463782726,
+        "minimum_slot_to_outer_edge_material_mm": 5.01448604487109,
+        "minimum_all_apertures_to_outer_edge_mm": 3.3840672531657274,
+        "minimum_star_to_star_material_mm": 1.6781963625188425,
+        "fr4_single_connected_component": true,
+        "all_apertures_inside_board": true,
+        "slot_width_mm": 1.0,
+        "minimum_slot_overall_length_mm": 1.7307164320248405,
+        "strategy": "uniform_scale_and_obstacle_trimmed_capsules",
+        "uniform_scale": 1.0750000000000002,
+        "maximum_star_shift_mm": 1.0451769463850553,
+        "policy": {
+          "slot_width_mm": 1.0,
+          "star_hole_diameter_mm": 0.8,
+          "star_to_slot_web_mm": 1.0,
+          "slot_to_slot_web_mm": 0.8,
+          "slot_to_board_web_mm": 1.0,
+          "minimum_slot_overall_mm": 1.5,
+          "numerical_guard_mm": 0.005,
+          "max_uniform_scale": 1.1,
+          "chart_center_mm": [
+            18.5,
+            18.8
+          ],
+          "star_center_y_limits_mm": [
+            7.2,
+            30.4
+          ],
+          "scale_steps": 4,
+          "random_order_trials": 8,
+          "maximum_fragments_per_edge": 2
+        },
+        "trial_count": 48,
+        "delta_slotted_edges": 2,
+        "delta_centerline_length_mm": 2.4270401357963314
+      }
+    },
+    "capricornus": {
+      "abbr": "Cap",
+      "hip_ids": [
+        100064,
+        100345,
+        102485,
+        102978,
+        104139,
+        105515,
+        105881,
+        106985,
+        107556
+      ],
+      "source_chains": [
+        [
+          100064,
+          100345,
+          104139,
+          105515,
+          106985,
+          107556
+        ],
+        [
+          105515,
+          105881,
+          104139
+        ],
+        [
+          100345,
+          102485
+        ],
+        [
+          104139,
+          102978
+        ]
+      ],
+      "logical_edges": [
+        [
+          100064,
+          100345
+        ],
+        [
+          100345,
+          102485
+        ],
+        [
+          100345,
+          104139
+        ],
+        [
+          102978,
+          104139
+        ],
+        [
+          104139,
+          105515
+        ],
+        [
+          104139,
+          105881
+        ],
+        [
+          105515,
+          105881
+        ],
+        [
+          105515,
+          106985
+        ],
+        [
+          106985,
+          107556
+        ]
+      ],
+      "before": {
+        "strategy": "legacy_fixed_5.1mm_threshold",
+        "hip_count": 9,
+        "logical_edge_count": 9,
+        "slotted_edge_count": 3,
+        "physical_slot_count": 3,
+        "printed_only_edge_count": 6,
+        "printed_only_edges": [
+          [
+            100064,
+            100345
+          ],
+          [
+            100345,
+            104139
+          ],
+          [
+            104139,
+            105515
+          ],
+          [
+            105515,
+            105881
+          ],
+          [
+            105515,
+            106985
+          ],
+          [
+            106985,
+            107556
+          ]
+        ],
+        "total_logical_edge_length_mm": 67.5978340163206,
+        "total_centerline_length_mm": 22.44641869891938,
+        "total_slot_overall_length_mm": 25.44641869891938,
+        "logical_edge_coverage_fraction": 0.3333333333333333,
+        "physical_line_coverage_fraction": 0.37643837364338745,
+        "minimum_star_to_slot_material_mm": 1.000000666297752,
+        "minimum_slot_to_slot_material_mm": 0.912831455348068,
+        "minimum_slot_to_outer_edge_material_mm": 6.907928574383856,
+        "minimum_all_apertures_to_outer_edge_mm": 4.089084023217545,
+        "minimum_star_to_star_material_mm": 1.5410383822086073,
+        "fr4_single_connected_component": true,
+        "all_apertures_inside_board": true,
+        "slot_width_mm": 1.0,
+        "minimum_slot_overall_length_mm": 5.3567610451953085
+      },
+      "after": {
+        "hip_count": 9,
+        "logical_edge_count": 9,
+        "slotted_edge_count": 7,
+        "physical_slot_count": 7,
+        "printed_only_edge_count": 2,
+        "printed_only_edges": [
+          [
+            100064,
+            100345
+          ],
+          [
+            106985,
+            107556
+          ]
+        ],
+        "total_logical_edge_length_mm": 74.3576174179527,
+        "total_centerline_length_mm": 39.90044842919524,
+        "total_slot_overall_length_mm": 46.90044842919524,
+        "logical_edge_coverage_fraction": 0.7777777777777778,
+        "physical_line_coverage_fraction": 0.6307416786309202,
+        "minimum_star_to_slot_material_mm": 1.0050002324697904,
+        "minimum_slot_to_slot_material_mm": 0.8048193217776126,
+        "minimum_slot_to_outer_edge_material_mm": 5.995188460662458,
+        "minimum_all_apertures_to_outer_edge_mm": 2.666779222103699,
+        "minimum_star_to_star_material_mm": 1.775126805879217,
+        "fr4_single_connected_component": true,
+        "all_apertures_inside_board": true,
+        "slot_width_mm": 1.0,
+        "minimum_slot_overall_length_mm": 2.1270490579912913,
+        "strategy": "uniform_scale_and_obstacle_trimmed_capsules",
+        "uniform_scale": 1.1,
+        "maximum_star_shift_mm": 1.486717165030987,
+        "policy": {
+          "slot_width_mm": 1.0,
+          "star_hole_diameter_mm": 0.8,
+          "star_to_slot_web_mm": 1.0,
+          "slot_to_slot_web_mm": 0.8,
+          "slot_to_board_web_mm": 1.0,
+          "minimum_slot_overall_mm": 1.5,
+          "numerical_guard_mm": 0.005,
+          "max_uniform_scale": 1.1,
+          "chart_center_mm": [
+            18.5,
+            18.8
+          ],
+          "star_center_y_limits_mm": [
+            7.2,
+            30.4
+          ],
+          "scale_steps": 4,
+          "random_order_trials": 8,
+          "maximum_fragments_per_edge": 2
+        },
+        "trial_count": 60,
+        "delta_slotted_edges": 4,
+        "delta_centerline_length_mm": 17.454029730275856
+      }
+    },
+    "aquarius": {
+      "abbr": "Aqr",
+      "hip_ids": [
+        102618,
+        106278,
+        109074,
+        109139,
+        110003,
+        110395,
+        110960,
+        111123,
+        111497,
+        112716,
+        112961,
+        113136,
+        114341,
+        114855,
+        115438
+      ],
+      "source_chains": [
+        [
+          106278,
+          109074,
+          110395,
+          110960,
+          111497,
+          112961,
+          114855,
+          115438
+        ],
+        [
+          109074,
+          110003,
+          109139
+        ],
+        [
+          110003,
+          111123,
+          112716,
+          113136,
+          114341
+        ],
+        [
+          102618,
+          106278
+        ]
+      ],
+      "logical_edges": [
+        [
+          102618,
+          106278
+        ],
+        [
+          106278,
+          109074
+        ],
+        [
+          109074,
+          110003
+        ],
+        [
+          109074,
+          110395
+        ],
+        [
+          109139,
+          110003
+        ],
+        [
+          110003,
+          111123
+        ],
+        [
+          110395,
+          110960
+        ],
+        [
+          110960,
+          111497
+        ],
+        [
+          111123,
+          112716
+        ],
+        [
+          111497,
+          112961
+        ],
+        [
+          112716,
+          113136
+        ],
+        [
+          112961,
+          114855
+        ],
+        [
+          113136,
+          114341
+        ],
+        [
+          114855,
+          115438
+        ]
+      ],
+      "before": {
+        "strategy": "legacy_fixed_5.1mm_threshold",
+        "hip_count": 15,
+        "logical_edge_count": 14,
+        "slotted_edge_count": 3,
+        "physical_slot_count": 3,
+        "printed_only_edge_count": 11,
+        "printed_only_edges": [
+          [
+            109074,
+            110003
+          ],
+          [
+            109074,
+            110395
+          ],
+          [
+            109139,
+            110003
+          ],
+          [
+            110003,
+            111123
+          ],
+          [
+            110395,
+            110960
+          ],
+          [
+            110960,
+            111497
+          ],
+          [
+            111123,
+            112716
+          ],
+          [
+            111497,
+            112961
+          ],
+          [
+            112716,
+            113136
+          ],
+          [
+            112961,
+            114855
+          ],
+          [
+            113136,
+            114341
+          ]
+        ],
+        "total_logical_edge_length_mm": 57.11944456518433,
+        "total_centerline_length_mm": 8.407145514903956,
+        "total_slot_overall_length_mm": 11.407145514903956,
+        "logical_edge_coverage_fraction": 0.21428571428571427,
+        "physical_line_coverage_fraction": 0.19970687043159527,
+        "minimum_star_to_slot_material_mm": 1.0000798756226148,
+        "minimum_slot_to_slot_material_mm": 2.7991717367403,
+        "minimum_slot_to_outer_edge_material_mm": 5.355369473990659,
+        "minimum_all_apertures_to_outer_edge_mm": 3.8000000000000043,
+        "minimum_star_to_star_material_mm": 1.507160271143642,
+        "fr4_single_connected_component": true,
+        "all_apertures_inside_board": true,
+        "slot_width_mm": 1.0,
+        "minimum_slot_overall_length_mm": 3.260025860125613
+      },
+      "after": {
+        "hip_count": 15,
+        "logical_edge_count": 14,
+        "slotted_edge_count": 6,
+        "physical_slot_count": 6,
+        "printed_only_edge_count": 8,
+        "printed_only_edges": [
+          [
+            109074,
+            110395
+          ],
+          [
+            110003,
+            111123
+          ],
+          [
+            110395,
+            110960
+          ],
+          [
+            110960,
+            111497
+          ],
+          [
+            111123,
+            112716
+          ],
+          [
+            112716,
+            113136
+          ],
+          [
+            112961,
+            114855
+          ],
+          [
+            113136,
+            114341
+          ]
+        ],
+        "total_logical_edge_length_mm": 62.831389021702755,
+        "total_centerline_length_mm": 14.483634692084628,
+        "total_slot_overall_length_mm": 20.483634692084628,
+        "logical_edge_coverage_fraction": 0.42857142857142855,
+        "physical_line_coverage_fraction": 0.32600957914537465,
+        "minimum_star_to_slot_material_mm": 1.0050003024810537,
+        "minimum_slot_to_slot_material_mm": 1.4150871763812922,
+        "minimum_slot_to_outer_edge_material_mm": 3.9297253817499604,
+        "minimum_all_apertures_to_outer_edge_mm": 2.3700000000000045,
+        "minimum_star_to_star_material_mm": 1.7378616840468875,
+        "fr4_single_connected_component": true,
+        "all_apertures_inside_board": true,
+        "slot_width_mm": 1.0,
+        "minimum_slot_overall_length_mm": 1.7766204407428807,
+        "strategy": "uniform_scale_and_obstacle_trimmed_capsules",
+        "uniform_scale": 1.1,
+        "maximum_star_shift_mm": 1.431993383231315,
+        "policy": {
+          "slot_width_mm": 1.0,
+          "star_hole_diameter_mm": 0.8,
+          "star_to_slot_web_mm": 1.0,
+          "slot_to_slot_web_mm": 0.8,
+          "slot_to_board_web_mm": 1.0,
+          "minimum_slot_overall_mm": 1.5,
+          "numerical_guard_mm": 0.005,
+          "max_uniform_scale": 1.1,
+          "chart_center_mm": [
+            18.5,
+            18.8
+          ],
+          "star_center_y_limits_mm": [
+            7.2,
+            30.4
+          ],
+          "scale_steps": 4,
+          "random_order_trials": 8,
+          "maximum_fragments_per_edge": 2
+        },
+        "trial_count": 60,
+        "delta_slotted_edges": 3,
+        "delta_centerline_length_mm": 6.076489177180672
+      }
+    },
+    "pisces": {
+      "abbr": "Psc",
+      "hip_ids": [
+        1645,
+        3760,
+        4889,
+        4906,
+        5742,
+        6193,
+        7007,
+        7097,
+        7884,
+        8198,
+        8833,
+        9487,
+        114971,
+        115227,
+        115738,
+        115830,
+        116771,
+        116928,
+        117245,
+        118268
+      ],
+      "source_chains": [
+        [
+          4889,
+          5742
+        ],
+        [
+          4889,
+          6193,
+          5742,
+          7097,
+          8198,
+          9487,
+          8833,
+          7884,
+          7007,
+          4906,
+          3760,
+          1645,
+          118268,
+          116771,
+          117245,
+          116928,
+          115738,
+          114971,
+          115227,
+          115830,
+          116771
+        ]
+      ],
+      "logical_edges": [
+        [
+          1645,
+          3760
+        ],
+        [
+          1645,
+          118268
+        ],
+        [
+          3760,
+          4906
+        ],
+        [
+          4889,
+          5742
+        ],
+        [
+          4889,
+          6193
+        ],
+        [
+          4906,
+          7007
+        ],
+        [
+          5742,
+          6193
+        ],
+        [
+          5742,
+          7097
+        ],
+        [
+          7007,
+          7884
+        ],
+        [
+          7097,
+          8198
+        ],
+        [
+          7884,
+          8833
+        ],
+        [
+          8198,
+          9487
+        ],
+        [
+          8833,
+          9487
+        ],
+        [
+          114971,
+          115227
+        ],
+        [
+          114971,
+          115738
+        ],
+        [
+          115227,
+          115830
+        ],
+        [
+          115738,
+          116928
+        ],
+        [
+          115830,
+          116771
+        ],
+        [
+          116771,
+          117245
+        ],
+        [
+          116771,
+          118268
+        ],
+        [
+          116928,
+          117245
+        ]
+      ],
+      "before": {
+        "strategy": "legacy_fixed_5.1mm_threshold",
+        "hip_count": 20,
+        "logical_edge_count": 21,
+        "slotted_edge_count": 2,
+        "physical_slot_count": 2,
+        "printed_only_edge_count": 19,
+        "printed_only_edges": [
+          [
+            1645,
+            3760
+          ],
+          [
+            1645,
+            118268
+          ],
+          [
+            3760,
+            4906
+          ],
+          [
+            4889,
+            5742
+          ],
+          [
+            4889,
+            6193
+          ],
+          [
+            4906,
+            7007
+          ],
+          [
+            5742,
+            6193
+          ],
+          [
+            7007,
+            7884
+          ],
+          [
+            7097,
+            8198
+          ],
+          [
+            7884,
+            8833
+          ],
+          [
+            8833,
+            9487
+          ],
+          [
+            114971,
+            115227
+          ],
+          [
+            114971,
+            115738
+          ],
+          [
+            115227,
+            115830
+          ],
+          [
+            115738,
+            116928
+          ],
+          [
+            115830,
+            116771
+          ],
+          [
+            116771,
+            117245
+          ],
+          [
+            116771,
+            118268
+          ],
+          [
+            116928,
+            117245
+          ]
+        ],
+        "total_logical_edge_length_mm": 61.63815202063197,
+        "total_centerline_length_mm": 3.4866133953458336,
+        "total_slot_overall_length_mm": 5.486613395345834,
+        "logical_edge_coverage_fraction": 0.09523809523809523,
+        "physical_line_coverage_fraction": 0.08901326881943694,
+        "minimum_star_to_slot_material_mm": 0.9638994451834287,
+        "minimum_slot_to_slot_material_mm": 6.912488338240179,
+        "minimum_slot_to_outer_edge_material_mm": 5.900343818656201,
+        "minimum_all_apertures_to_outer_edge_mm": 4.7553710386473655,
+        "minimum_star_to_star_material_mm": 1.4931414651570336,
+        "fr4_single_connected_component": true,
+        "all_apertures_inside_board": true,
+        "slot_width_mm": 1.0,
+        "minimum_slot_overall_length_mm": 2.445123831254768
+      },
+      "after": {
+        "hip_count": 20,
+        "logical_edge_count": 21,
+        "slotted_edge_count": 3,
+        "physical_slot_count": 3,
+        "printed_only_edge_count": 18,
+        "printed_only_edges": [
+          [
+            1645,
+            3760
+          ],
+          [
+            1645,
+            118268
+          ],
+          [
+            3760,
+            4906
+          ],
+          [
+            4889,
+            5742
+          ],
+          [
+            4889,
+            6193
+          ],
+          [
+            4906,
+            7007
+          ],
+          [
+            5742,
+            6193
+          ],
+          [
+            7007,
+            7884
+          ],
+          [
+            7884,
+            8833
+          ],
+          [
+            8833,
+            9487
+          ],
+          [
+            114971,
+            115227
+          ],
+          [
+            114971,
+            115738
+          ],
+          [
+            115227,
+            115830
+          ],
+          [
+            115738,
+            116928
+          ],
+          [
+            115830,
+            116771
+          ],
+          [
+            116771,
+            117245
+          ],
+          [
+            116771,
+            118268
+          ],
+          [
+            116928,
+            117245
+          ]
+        ],
+        "total_logical_edge_length_mm": 66.26101342217939,
+        "total_centerline_length_mm": 4.926826964984939,
+        "total_slot_overall_length_mm": 7.926826964984939,
+        "logical_edge_coverage_fraction": 0.14285714285714285,
+        "physical_line_coverage_fraction": 0.11963033095312743,
+        "minimum_star_to_slot_material_mm": 1.0050017491076249,
+        "minimum_slot_to_slot_material_mm": 2.8023297209831624,
+        "minimum_slot_to_outer_edge_material_mm": 4.902708195533946,
+        "minimum_all_apertures_to_outer_edge_mm": 3.7545238665459166,
+        "minimum_star_to_star_material_mm": 1.66511579087453,
+        "fr4_single_connected_component": true,
+        "all_apertures_inside_board": true,
+        "slot_width_mm": 1.0,
+        "minimum_slot_overall_length_mm": 1.6287175649881664,
+        "strategy": "uniform_scale_and_obstacle_trimmed_capsules",
+        "uniform_scale": 1.0750000000000002,
+        "maximum_star_shift_mm": 1.0396514155109386,
+        "policy": {
+          "slot_width_mm": 1.0,
+          "star_hole_diameter_mm": 0.8,
+          "star_to_slot_web_mm": 1.0,
+          "slot_to_slot_web_mm": 0.8,
+          "slot_to_board_web_mm": 1.0,
+          "minimum_slot_overall_mm": 1.5,
+          "numerical_guard_mm": 0.005,
+          "max_uniform_scale": 1.1,
+          "chart_center_mm": [
+            18.5,
+            18.8
+          ],
+          "star_center_y_limits_mm": [
+            7.2,
+            30.4
+          ],
+          "scale_steps": 4,
+          "random_order_trials": 8,
+          "maximum_fragments_per_edge": 2
+        },
+        "trial_count": 48,
+        "delta_slotted_edges": 1,
+        "delta_centerline_length_mm": 1.4402135696391056
+      }
+    }
+  },
+  "limitations": [
+    "Offline mechanical candidate, no live PCB modification or manufacturing release.",
+    "Short/dense links retain full printed topology; actual slot/tool compensation needs supplier CAM."
+  ],
+  "elapsed_seconds": 8.843999999808148,
+  "summary": {
+    "before_slots": 37,
+    "after_slots": 51,
+    "before_slotted_edges": 37,
+    "after_slotted_edges": 51,
+    "before_centerline_mm": 159.1531109063033,
+    "after_centerline_mm": 211.0831193102381,
+    "logical_edges": 109,
+    "hip_nodes": 113,
+    "minimum_star_slot_web_mm": 1.0050001069064805,
+    "minimum_slot_slot_web_mm": 0.804629900327226,
+    "minimum_slot_board_web_mm": 2.9257094055816224,
+    "minimum_slot_overall_length_mm": 1.50349758549011,
+    "all_fr4_single_connected": true
+  },
+  "previews": [
+    "hardware/nfc-talisman/variants/twelve-options/artwork/slot-optimization-comparison.png"
+  ]
+}
