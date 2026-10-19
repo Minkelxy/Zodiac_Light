@@ -2,72 +2,72 @@
   {
     "name": "Gerber_TopLayer.GTL",
     "size": 15842,
-    "sha256": "07749b22a15b0ec11141fb1cd63a03aafc3c324d5dce7a3988ab96bf7d9cc399"
+    "sha256": "7a032fdc488526e3aa07799b54258dd78a3670b52491705c6d9cc8681bc4a7bb"
   },
   {
     "name": "Gerber_BottomLayer.GBL",
     "size": 5416,
-    "sha256": "b1c5300515624ab8a0e4d302c69258797cf2dcc0577a1aa6459fad9259f29de5"
+    "sha256": "bf7173b7b6269182dca5eece3465ceb84b510550f36d7679ee51ce7df653c945"
   },
   {
     "name": "Gerber_TopSilkscreenLayer.GTO",
-    "size": 231407,
-    "sha256": "164678e964db0c393d73bba3a2e3992ee36e629e4de7f86f6fc0fd7496602a29"
+    "size": 467233,
+    "sha256": "9b2e396e1276a88b5eb105bc18eff789d8648b251116d2b6c49e7bb7d3aa4b29"
   },
   {
     "name": "Gerber_BottomSilkscreenLayer.GBO",
     "size": 5514,
-    "sha256": "3dc0a406cd85da75d9fdf6cfeb9a8fbcd809a7667c630a2d9478982274547fec"
+    "sha256": "a40b738eff07b2db29b7b6b546b342660343e9bcf28ea2cbfef3abda2baa6169"
   },
   {
     "name": "Gerber_TopSolderMaskLayer.GTS",
-    "size": 48476,
-    "sha256": "36796c9a5702e76396e6e71a8597e454a0d9c45049d23ebfd5b11791e58855f6"
+    "size": 48472,
+    "sha256": "b1ee7890660ea332cddba86e4d2197fda692b6d161aa4cb499b0253a34f42e84"
   },
   {
     "name": "Gerber_BottomSolderMaskLayer.GBS",
     "size": 4094,
-    "sha256": "da3d7f97953ee7473a160a23bc3a0ea18307e97127104f7f518e0060928c21cf"
+    "sha256": "986db659068295fdc6bb683c43461c74981ee44c8f15cc968da6222688f282fb"
   },
   {
     "name": "Gerber_TopPasteMaskLayer.GTP",
     "size": 4807,
-    "sha256": "1c25f3553fa82cf6ef6ef595bd7638bd5d78e9fc35a8bab5611d17d0f3c7e966"
+    "sha256": "ba75eb4385af3b0314e567d8c922d3b586874d66fac375dde4fd4a53afc334dd"
   },
   {
     "name": "Gerber_BottomPasteMaskLayer.GBP",
     "size": 2191,
-    "sha256": "c328feb9a41d8cf97a6aff6c849fc82b41a6cf20635e9aa0dafd61f198889c67"
+    "sha256": "8bc05a5c3c2f3dd03d77cdd114b59975d636470aadbd63a3e0e22582f59099a7"
   },
   {
     "name": "Gerber_BoardOutlineLayer.GKO",
     "size": 43325,
-    "sha256": "b29c4447cfe499ae6c570e31126b11e9d53c80c861f026b64f32f87ef8201f51"
+    "sha256": "cb9d829bc866383ac6fe4d673d6d9ac01ab47c4a217a61864fd6758279d2d488"
   },
   {
     "name": "Gerber_DocumentLayer.GDL",
     "size": 2459,
-    "sha256": "3d8468e89d4a0024b22a5ead6a242fbd8366ba4f7e123da7d89699cae9e1b507"
+    "sha256": "2c9494907885604d07645061625e3de29cb8f7ac3c25a9adc7912eed3948ef60"
   },
   {
     "name": "Gerber_DrillDrawingLayer.GDD",
     "size": 83994,
-    "sha256": "130a1fb39ae19490868f52087a56efa3bfd9e2eefa390dfac4bba2e3ef7ccf13"
+    "sha256": "7c308ade5fac39828ce18eae83ec6792c5e380240dcec8c3a62efaa5a7a8d33c"
   },
   {
     "name": "Drill_PTH_Through.DRL",
     "size": 396,
-    "sha256": "0b5de6ed85cf49100aee1a3b248e63316c393f2cad626348b83517dfed2d31fc"
+    "sha256": "1caba81c4fc85ec3097992d8dc45c6819ec4efdd447d906717ba70546e4efefc"
   },
   {
     "name": "Drill_NPTH_Through.DRL",
     "size": 2055,
-    "sha256": "0bc0ffe439c78a7957a209d6eb95f88e1094286917bd40327b8e5f21a6e13a17"
+    "sha256": "9a141dcc63d52ef6025375473afe524c0c05842e54fd70641934d408b788087f"
   },
   {
     "name": "Drill_PTH_Through_Via.DRL",
     "size": 400,
-    "sha256": "a8a4efed1be5374d25ec309ced9aeb3131dd0bd89214cfc08078de4ca932dc17"
+    "sha256": "3094099a976891bac2811dc1ad11007f9715941a7fbdf836f5e9cb9431ee6d89"
   },
   {
     "name": "PCB下单必读.txt",

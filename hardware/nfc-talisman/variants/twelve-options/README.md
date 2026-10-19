@@ -4,6 +4,8 @@
 
 本轮已优化新增十款星座的开槽，并将十款新增生肖改为项目已归档的严格单色符咒图。四块 PCB 的原生工程与普通 Gerber 已同步导出，保存重开后 DRC 均为 0；检查结论由清单中的源文件哈希绑定。
 
+2026-10-20 边框修订：四块选项拼板与马/蛇两块绿白整套拼板同步增加白色纹理边框、内外分界线；十二星座与十二生肖使用同一边缘语言。核心板和原彩色两板完整保留，两块既有绿白板有意更新丝印，电路、铜、天线、孔槽与阻焊保持保护基线。六板已保存重开且 DRC 均为 0；原生工程和普通 Gerber 已重新导出，旧版检查不替代本轮源文件哈希绑定的结果。
+
 | 拼板 | 五个选项 | PCB 名称 | 预览 |
 |---|---|---|---|
 | 星座 A | 白羊、金牛、双子、巨蟹、处女 | `Constellations-A-5x37-GreenWhite-100` | [图](artwork/constellations-a-100mm.png) |
@@ -17,13 +19,30 @@
 
 - [全部九份 PCB 的集成原生工程](eda/native/nfc-twelve-options.epro2)：包含共用核心、两份原彩色拼板、两份绿白双款拼板及四份新盖板拼板。
 - [五页拼板展示 PDF](../../../../output/pdf/十二星座与生肖_拼板展示.pdf)：用于分享与投屏，非 1:1 加工模板。
-- [导出清单](export-manifest.json)、[图案与来源清单](design-manifest.json)、[交付检查](delivery-audit.json)、[Gerber 几何与连接性检查](gerber-geometry-audit.json)、[离线孔槽与连板几何审计](slot-layout-geometry-audit.json)。
+- [导出清单](export-manifest.json)、[图案与来源清单](design-manifest.json)、[交付检查](delivery-audit.json)、[Gerber 几何与连接性检查](gerber-geometry-audit.json)、[离线孔槽与连板几何审计](slot-layout-geometry-audit.json)、[六板边框独立审计](border-artwork-audit.json)。
 - 四份独立 Gerber：[星座 A](manufacturing-draft/constellations-a-green-white-gerber.zip)、[星座 B](manufacturing-draft/constellations-b-green-white-gerber.zip)、[生肖 A](manufacturing-draft/zodiac-a-green-white-gerber.zip)、[生肖 B](manufacturing-draft/zodiac-b-green-white-gerber.zip)。
 - SVG 与 PNG 在 [artwork](artwork/)；原生导入几何在 [geometry](geometry/)；数据快照与请求参数在 [sources](sources/)。
 
-四份 PCB 均已保存、关闭、重开，重新运行的 DRC 返回空数组。原有五份 PCB 的设计几何与彩色对象已逐份比对保留。集成工程与 Gerber 仍保持 **`HOLD_CAM_PHYSICAL_VALIDATION_PENDING`**；盖板加工、拆板手感、叠装、NFC 与光效需要供应商 CAM 和首件确认。
+本轮四份选项 PCB 已保存、关闭、重开，DRC 返回空数组；两份整套绿白 PCB 也已保存重开且 DRC 为 0。核心板及两份原彩色设计/彩色对象严格保留，两份既有绿白板仅允许受控白色丝印更新，保护其电气和孔槽基线。保存重开及实际导出检查由两套当前清单共同绑定统一九板工程。集成工程与 Gerber 仍保持 **`HOLD_CAM_PHYSICAL_VALIDATION_PENDING`**；盖板加工、拆板手感、叠装、NFC 与光效需要供应商 CAM 和首件确认。
 
 ## 图案与加工参数
+
+新增边框由普通白色丝印形成：边缘纹理框区分外侧装饰带与内部符咒/星图，内外分界线建立统一轮廓。边框不成为装饰铜或透光槽，不新增去绿油开窗。线宽、位置及对板边、文字、原图和孔槽的避让以冻结后的几何与审计为准，展示图不是雕刻或铣槽路径。
+
+边框采用冻结模块 [`pcb_cover_border.py`](../../scripts/pcb_cover_border.py) 的 `af37-double-contour-ticks-v1`：
+
+| 丝印元素 | 名义位置与尺寸 |
+|---|---|
+| 外轮廓 | 中心线距外形内缩 0.70 mm，线宽 0.22 mm |
+| 内分界轮廓 | 中心线内缩 2.10 mm，线宽 0.24 mm |
+| 边缘短刻纹 | 中心线内缩 1.35 mm，刻纹中心线长 0.42 mm、宽 0.22 mm、节距 2.40 mm |
+| 八角点纹 | 名义直径 0.28 mm |
+
+这些是丝印几何参数，不是加工刀路。边框按现有主体、阻焊开窗及四向连接桥让位；图案/开窗避让目标不小于 0.20 mm，并加数值余量。实际保留的纹理数量、最小间距与局部修剪由每款 `border` 元数据和最终导出审计记录，不能把示例图的最小间距替代全部 24 个图案的检查。
+
+四块选项板的每片记录位于 `geometry/*.json` 的 `covers[].details.border`，包含模块版本、参数、各类纹理的提议/保留数量、几何 SHA-256、原图与开窗几何指纹及实际间距。边框图元以 `<款式>:border:<序号>` 独立归属，方便与原符咒/星图图元分别核对；同一几何文件受设计清单哈希绑定。
+
+[六板边框独立审计](border-artwork-audit.json)通过，覆盖 24 个图案、1,059 个独立边框丝印多边形；新增边框实算最小板边间距约 0.59 mm、主体间距约 0.336829 mm、开窗间距约 0.253552 mm，独立边框片之间约 0.22 mm。审计确认仅受控顶层丝印变化，孔槽、阻焊、铜、板框与拆板几何保留；这些检查不替代供应商 CAM 和实物验收。
 
 星图采用 [Stellarium Modern 连线](https://github.com/Stellarium/stellarium/tree/master/skycultures/modern)和 [ESA Hipparcos I/239 恒星坐标](https://cdsarc.cds.unistra.fr/viz-bin/cat/I/239)。保留十个星座的所有选用 HIP 星点及连线，共 113 个不同 HIP 编号；按北向上、东向左投影后适配 37 mm 盖板。过近星点作有记录的间距调整，具体偏移和仅印刷的连线见各款几何 JSON，不作为等角度天文测量图使用。
 

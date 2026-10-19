@@ -1,15 +1,15 @@
 {
-  "date": "2026-10-16",
+  "date": "2026-10-20",
   "full_software_tests": {
     "command": "cmd /c scripts/run_checks.cmd",
-    "tests_passed": 189,
+    "tests_passed": 196,
     "failures": 0,
     "native_compilation": "MSVC x64; no skipped tests",
     "skipped": 0
   },
   "delivery_checks": {
-    "command": "python scripts/check_project.py --skip-tests --output build/project-check-20261016.json",
-    "checks_passed": 98,
+    "command": "python scripts/check_project.py --skip-tests --output build/project-check-20261020.json",
+    "checks_passed": 106,
     "failures": 0,
     "unittest_run_in_this_command": false
   },
@@ -34,5 +34,15 @@
     "zodiac_source_collection": "talisman-single-ink-v1",
     "zodiac_covers_traced": 10,
     "new_image_generation": false
+  },
+  "border_revision": {
+    "faces": 24,
+    "green_white_pcbs_updated": 6,
+    "all_six_drc": [],
+    "white_silk_only": true,
+    "independent_audit": "border-artwork-audit.json",
+    "pdf_pages_visually_checked": 8,
+    "original_three_pcbs_retained": true,
+    "historical_five_pcb_snapshot_retained": true
   }
 }

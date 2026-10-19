@@ -5,7 +5,7 @@
     {
       "id": "standard_manifest",
       "passed": true,
-      "detail": "Two variants; 13 recorded files; HOLD_CAM_C1_PHYSICAL_VALIDATION_PENDING"
+      "detail": "Two variants; 16 recorded files; HOLD_CAM_C1_PHYSICAL_VALIDATION_PENDING"
     },
     {
       "id": "standard_file:variants/standard-green-white/eda/native/base-copy-horse-sagittarius-source.jsonl",
@@ -16,6 +16,21 @@
       "id": "standard_file:variants/standard-green-white/eda/native/base-copy-snake-leo-source.jsonl",
       "passed": true,
       "detail": "221607 bytes; SHA-256 matches"
+    },
+    {
+      "id": "standard_file:variants/standard-green-white/eda/native/before-border-export-manifest.json",
+      "passed": true,
+      "detail": "49102 bytes; SHA-256 matches"
+    },
+    {
+      "id": "standard_file:variants/standard-green-white/eda/native/before-border-horse-sagittarius-source.jsonl",
+      "passed": true,
+      "detail": "381755 bytes; SHA-256 matches"
+    },
+    {
+      "id": "standard_file:variants/standard-green-white/eda/native/before-border-snake-leo-source.jsonl",
+      "passed": true,
+      "detail": "404583 bytes; SHA-256 matches"
     },
     {
       "id": "standard_file:variants/standard-green-white/eda/native/before-core-source.jsonl",
@@ -35,7 +50,7 @@
     {
       "id": "standard_file:variants/standard-green-white/eda/native/horse-sagittarius-source.jsonl",
       "passed": true,
-      "detail": "381755 bytes; SHA-256 matches"
+      "detail": "576705 bytes; SHA-256 matches"
     },
     {
       "id": "standard_file:variants/standard-green-white/eda/native/nfc-before-standard-copies.epro2",
@@ -50,7 +65,7 @@
     {
       "id": "standard_file:variants/standard-green-white/eda/native/snake-leo-source.jsonl",
       "passed": true,
-      "detail": "404583 bytes; SHA-256 matches"
+      "detail": "601042 bytes; SHA-256 matches"
     },
     {
       "id": "standard_file:variants/standard-green-white/manufacturing-draft/horse-sagittarius-green-white-gerber.members.json",
@@ -60,7 +75,7 @@
     {
       "id": "standard_file:variants/standard-green-white/manufacturing-draft/horse-sagittarius-green-white-gerber.zip",
       "passed": true,
-      "detail": "113108 bytes; SHA-256 matches"
+      "detail": "170121 bytes; SHA-256 matches"
     },
     {
       "id": "standard_file:variants/standard-green-white/manufacturing-draft/snake-leo-green-white-gerber.members.json",
@@ -70,7 +85,7 @@
     {
       "id": "standard_file:variants/standard-green-white/manufacturing-draft/snake-leo-green-white-gerber.zip",
       "passed": true,
-      "detail": "122319 bytes; SHA-256 matches"
+      "detail": "179887 bytes; SHA-256 matches"
     },
     {
       "id": "ordinary_artwork_sources",
@@ -78,14 +93,24 @@
       "detail": "Artwork hashes/source hashes match; import geometry equals both generated artifacts"
     },
     {
-      "id": "five_pcb_native_archive",
+      "id": "uniform_border_independent_audit",
       "passed": true,
-      "detail": "ZIP CRC and SHA/size pass; original core/color PCBs plus two ordinary PCBs present"
+      "detail": "Independent 24-face border/clearance and six-panel physical/mask retention audit is source-hash bound"
+    },
+    {
+      "id": "shared_nine_pcb_native_archive",
+      "passed": true,
+      "detail": "ZIP CRC and SHA/size pass; original three, two revised ordinary and four added PCB documents share the exact nine-PCB archive"
     },
     {
       "id": "original_color_pcbs_retained",
       "passed": true,
       "detail": "Three original PCB primitive/OBJ baselines and four colored PNG bytes unchanged; colored delivery still passes"
+    },
+    {
+      "id": "ordinary_silk_revision:horse-sagittarius",
+      "passed": true,
+      "detail": "Historical ownership verified; 55 -> 142 Top-silk fills; 19 mask fills and all other physical primitives retained"
     },
     {
       "id": "ordinary_gerber:horse-sagittarius",
@@ -95,7 +120,12 @@
     {
       "id": "ordinary_native:horse-sagittarius",
       "passed": true,
-      "detail": "55 silk / 19 mask SOLID fills match artifact paths within 0.001mil; reported native widths [0.2]mil; protected primitives unchanged"
+      "detail": "142 silk / 19 mask SOLID fills match artifact paths within 0.001mil; reported native widths [0.2]mil; protected primitives unchanged"
+    },
+    {
+      "id": "ordinary_silk_revision:snake-leo",
+      "passed": true,
+      "detail": "Historical ownership verified; 42 -> 130 Top-silk fills; 17 mask fills and all other physical primitives retained"
     },
     {
       "id": "ordinary_gerber:snake-leo",
@@ -105,10 +135,10 @@
     {
       "id": "ordinary_native:snake-leo",
       "passed": true,
-      "detail": "42 silk / 17 mask SOLID fills match artifact paths within 0.001mil; reported native widths [0.2]mil; protected primitives unchanged"
+      "detail": "130 silk / 17 mask SOLID fills match artifact paths within 0.001mil; reported native widths [0.2]mil; protected primitives unchanged"
     }
   ],
-  "checks_run": 21,
+  "checks_run": 27,
   "errors": [],
   "release_ready": false,
   "release_status": "HOLD_CAM_C1_PHYSICAL_VALIDATION_PENDING",

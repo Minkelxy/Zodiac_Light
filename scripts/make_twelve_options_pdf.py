@@ -27,7 +27,21 @@ def verified_inputs():
   raise ValueError('Design changed after native export; refresh and validate the native delivery before creating the PDF')
  if len(d.get('panels',[]))!=4 or {p['key'] for p in d['panels']}!=set(CN):
   raise ValueError('Expected the four reviewed cover panels')
- sources=[design_path,export_path,Path(__file__).resolve(),SOURCE/'README.md']
+ native=(ROOT/'hardware/nfc-talisman'/m['native_project']['path']).resolve()
+ if not native.is_relative_to((SOURCE/'eda/native').resolve()):
+  raise ValueError('Current showcase requires the shared nine-PCB archive in twelve-options/eda/native')
+ sources=[design_path,export_path,Path(__file__).resolve(),SOURCE/'README.md',
+          native,
+          ROOT/'hardware/nfc-talisman/scripts/pcb_cover_border.py',
+          ROOT/'hardware/nfc-talisman/scripts/audit_cover_borders.py',
+          SOURCE/'border-artwork-audit.json',
+          ROOT/'hardware/nfc-talisman/variants/standard-green-white/export-manifest.json',
+          ROOT/'hardware/nfc-talisman/variants/standard-green-white/artwork/manifest.json']
+ for name in d['files']:
+  path=(SOURCE/name).resolve()
+  if not path.is_relative_to(SOURCE.resolve()):
+   raise ValueError('Declared design source leaves the twelve-options directory')
+  sources.append(path)
  for panel in d['panels']:
   for field in ('preview','geometry'):
    path=(SOURCE/panel[field]).resolve()
@@ -57,17 +71,17 @@ def verified_inputs():
 
 def main():
  d,m,snapshot=verified_inputs()
- s.DATE='2026.10.16';s.register_fonts();c=canvas.Canvas(str(OUTPUT),pagesize=(s.W,s.H),pageCompression=1)
+ s.DATE='2026.10.20';s.register_fonts();c=canvas.Canvas(str(OUTPUT),pagesize=(s.W,s.H),pageCompression=1)
  c.setTitle('十二星座与十二生肖 - 四块五片 100 mm 绿白 PCB 拼板')
  c.setAuthor('Zodiac Light Project')
- s.header(c,'十二星座 · 十二生肖','原有两款 + 新增十款；绿色阻焊、白色丝印，沿用 37 mm 八边形盖板',1,5,collection='NFC 盖板系列')
+ s.header(c,'十二星座 · 十二生肖','绿色阻焊、白色丝印；动物与星图加入纹理边框和内外分界线',1,5,collection='NFC 盖板系列')
  for i,p in enumerate(d['panels']):
   x=36+(i%2)*183;y=71+(1-i//2)*190
   s.image(c,SOURCE/p['preview'],x,y,174,174)
   s.text(c,CN[p['key']],x,y+179,10,'#147442',True)
  s.text(c,'12 星座 / 12 生肖',430,433,24,'#17442D',True)
  s.lines(c,'新增 4 块 100 × 100 mm PCB，\n每块包含 5 个不同的盖板。',430,396,365,15,'#17442D',24)
- s.lines(c,'原有星座：射手座、狮子座。\n原有生肖：马、蛇。\n新增十款分别覆盖其余选项。',430,310,360,12,leading=22)
+ s.lines(c,'原有星座：射手座、狮子座。\n原有生肖：马、蛇。\n六块绿白 PCB 同步边缘纹理与分界线。',430,310,360,12,leading=22)
  s.box(c,430,119,370,99,'#EEF4EF',8)
  s.lines(c,'盖板共用现有 NFC 核心设计。\n四块新 PCB 均已保存重开，DRC 为 0。\n效果图为几何预览，未制造或完成实物验收。',444,192,341,11,leading=22)
  s.text(c,'图示为展示比例，不是 1:1 加工或下单文件。',430,89,9,s.MUTED)
@@ -78,7 +92,8 @@ def main():
   s.text(c,'本板包含',482,444,17,'#17442D',True)
   s.lines(c,GROUPS[p['key']],482,412,313,16,'#17442D',leading=30)
   s.box(c,482,209,320,111,'#EEF4EF',8)
-  s.lines(c,'5 片独立盖板，可拆分取用。\n四向连接桥与邮票孔保留。\n无彩色喷印，无装饰铜。',496,294,288,11,leading=23)
+  mechanical_note='连接桥、邮票孔与光槽保留。' if p['key'].startswith('constellations') else '连接桥与邮票孔保留。'
+  s.lines(c,'白色纹理边框与内外分界线。\n'+mechanical_note+'\n无彩色喷印，无装饰铜。',496,294,288,11,leading=23)
   note='星点为 0.8 mm 非金属孔。开槽按孔槽间实材和连通要求优化，其余连线保留为白丝印；孔位调整与加工数据见各款几何记录。' if p['key'].startswith('constellations') else '生肖沿用项目归档符咒图，按源图透明轮廓转换为白色丝印；原图与处理参数可追溯，动物图案不做去绿油开窗。'
   s.lines(c,note,482,176,313,10.6,leading=19)
   if p['key'].startswith('constellations'):

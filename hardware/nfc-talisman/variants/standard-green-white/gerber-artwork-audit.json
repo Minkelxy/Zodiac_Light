@@ -2,17 +2,17 @@
   "status": "passed",
   "read_only": true,
   "coordinate_tolerance_mm": 1e-05,
-  "export_manifest_sha256": "f61515f052fbb3fc3f5df782fb21a367e8307defc99ac87536052cb5713df063",
+  "export_manifest_sha256": "6afae097dfc354e907e0cd09776aa25b40d28c3aa7accdafe92bc4de936880de",
   "variants": {
     "horse-sagittarius": {
-      "artwork_geometry_sha256": "89917ee2983a92335050726b6b1c10a71a83746f1f5732a7979012e1615de92c",
+      "artwork_geometry_sha256": "2dc55caea04fd6c8af5951cace46fe0b46bbd10b1d7310a42d0fdbedba36c52f",
       "faces": {
         "front": {
           "silk": {
-            "expected_area_mm2": 141.62014577642606,
-            "gerber_area_mm2": 141.62013607239348,
-            "symmetric_difference_mm2": 0.00010661536283324607,
-            "hausdorff_mm": 2.1362733402189026e-06,
+            "expected_area_mm2": 188.43223634537603,
+            "gerber_area_mm2": 188.43215709239792,
+            "symmetric_difference_mm2": 0.0003051340389984142,
+            "hausdorff_mm": 2.250497609717561e-06,
             "negative_hole_probes_checked": 0,
             "expected_union_holes": 0,
             "actual_union_holes": 0,
@@ -34,13 +34,13 @@
         },
         "rear": {
           "silk": {
-            "expected_area_mm2": 50.72932939922892,
-            "gerber_area_mm2": 50.729418500038,
-            "symmetric_difference_mm2": 0.00028859514839884237,
+            "expected_area_mm2": 71.73644904372415,
+            "gerber_area_mm2": 71.73656533047792,
+            "symmetric_difference_mm2": 0.0003861883005821084,
             "hausdorff_mm": 2.151063813790223e-06,
-            "negative_hole_probes_checked": 17,
-            "expected_union_holes": 17,
-            "actual_union_holes": 17,
+            "negative_hole_probes_checked": 16,
+            "expected_union_holes": 16,
+            "actual_union_holes": 16,
             "negative_holes_preserved": true,
             "nominal_fill_width_causes_no_extra_stroke": true
           },
@@ -58,13 +58,13 @@
           "actual_silk_mask_gap_mm": 0.15991174123516685
         }
       },
-      "gerber_sha256": "ba056c5c0e909a3c6dc45e557e530030dbc4a884b00c8a3f0d1e9e2255bddeb4",
+      "gerber_sha256": "37b966fcd30e144cc19a42e6c8f5595efd5b4432eb21191be89e3930b221909a",
       "silk_regions": {
-        "polygon_model_dark": 55,
+        "polygon_model_dark": 142,
         "polygon_model_clear": 0,
         "all_sections": {
           "Text": 16,
-          "PolygonModel": 55
+          "PolygonModel": 142
         }
       },
       "mask_regions": {
@@ -77,14 +77,14 @@
       "passed": true
     },
     "snake-leo": {
-      "artwork_geometry_sha256": "ba72423d36b80ac48f5e2f403a52a65ea30a77771a1958f5339435857945e4fb",
+      "artwork_geometry_sha256": "9ca531bd66589caa5c6348a8949774eeda43d0d9d4affc870ffd0ace2ffe4ab5",
       "faces": {
         "front": {
           "silk": {
-            "expected_area_mm2": 124.2253360884855,
-            "gerber_area_mm2": 124.2253429724755,
-            "symmetric_difference_mm2": 0.00020894044900527436,
-            "hausdorff_mm": 2.1268000011787083e-06,
+            "expected_area_mm2": 171.0374266574353,
+            "gerber_area_mm2": 171.03736399248004,
+            "symmetric_difference_mm2": 0.0004074591251702884,
+            "hausdorff_mm": 2.250497609717561e-06,
             "negative_hole_probes_checked": 12,
             "expected_union_holes": 12,
             "actual_union_holes": 12,
@@ -106,9 +106,9 @@
         },
         "rear": {
           "silk": {
-            "expected_area_mm2": 20.59897402492516,
-            "gerber_area_mm2": 20.5989667817241,
-            "symmetric_difference_mm2": 9.256987947554773e-05,
+            "expected_area_mm2": 67.41106505179252,
+            "gerber_area_mm2": 67.41118272894789,
+            "symmetric_difference_mm2": 0.00036447254882964684,
             "hausdorff_mm": 2.2156247721828144e-06,
             "negative_hole_probes_checked": 15,
             "expected_union_holes": 15,
@@ -130,13 +130,13 @@
           "actual_silk_mask_gap_mm": 0.15991189109281198
         }
       },
-      "gerber_sha256": "522e487bba702c8f451d91239103cc7425135adfa1342ffed4ba066762d0e9c7",
+      "gerber_sha256": "2ab391e51027527926b45295ea85e2a80ea7c05388d2fbd942f6fe7ad97a7b9d",
       "silk_regions": {
-        "polygon_model_dark": 42,
+        "polygon_model_dark": 130,
         "polygon_model_clear": 0,
         "all_sections": {
           "Text": 16,
-          "PolygonModel": 42
+          "PolygonModel": 130
         }
       },
       "mask_regions": {

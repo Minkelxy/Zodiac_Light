@@ -1,10 +1,10 @@
 {
   "status": "passed",
   "coordinate_tolerance_mm": 1e-05,
-  "design_manifest_sha256": "0c32ebca438141c73e491be16a412ce8a2818c2a2dc1c0d3b1899b134d7bb941",
+  "design_manifest_sha256": "51952947b367c45794eaa19186832a3df6f27c4bcb33952fa7f24057bf9692ed",
   "panels": {
     "constellations-a": {
-      "gerber_sha256": "19dfa8d6d2065fb6929c8cfe07b42db1590c0bd542fcb6b00783d63414a060a5",
+      "gerber_sha256": "c04f827f310b74299bc7b2d910ea14d42939b87f36e29c21e9b983686ead898e",
       "router_contours": {
         "count": 47,
         "maximum_boundary_error_mm": 2.3425149691638475e-06,
@@ -12,7 +12,7 @@
       },
       "silk": {
         "boundary_error_mm": 2.403002061010528e-06,
-        "area_mm2": 103.17618770693446,
+        "area_mm2": 335.2042720718265,
         "negative_holes": 84,
         "nominal_width_has_no_extra_stroke": true
       },
@@ -37,7 +37,7 @@
       "cover_count": 5
     },
     "constellations-b": {
-      "gerber_sha256": "605ebc4b636d29897bc00a5fe028c416fa837828f0070452a8ed5dcc153b2efa",
+      "gerber_sha256": "f6491c39abea60ca659a4b25278c94795f495cd5647256ab2c87dfc04d1a565b",
       "router_contours": {
         "count": 46,
         "maximum_boundary_error_mm": 2.1890549457948763e-06,
@@ -45,7 +45,7 @@
       },
       "silk": {
         "boundary_error_mm": 2.317523686789834e-06,
-        "area_mm2": 124.94393893467786,
+        "area_mm2": 358.5060244147244,
         "negative_holes": 106,
         "nominal_width_has_no_extra_stroke": true
       },
@@ -70,15 +70,15 @@
       "cover_count": 5
     },
     "zodiac-a": {
-      "gerber_sha256": "98a090f724477cb3d2e73453859ac1f6834a3e320befd3be325838686071fac6",
+      "gerber_sha256": "73c56541332ac4a0d633429ffe223b5b71fbbd4cd4ac39da0f74a8520d11da44",
       "router_contours": {
         "count": 21,
         "maximum_boundary_error_mm": 1.9633520812157904e-06,
         "all_expected_contours_matched": true
       },
       "silk": {
-        "boundary_error_mm": 2.2987885630809882e-06,
-        "area_mm2": 881.4219048829532,
+        "boundary_error_mm": 2.29679187091548e-06,
+        "area_mm2": 983.8749783988931,
         "negative_holes": 78,
         "nominal_width_has_no_extra_stroke": true
       },
@@ -96,15 +96,15 @@
       "cover_count": 5
     },
     "zodiac-b": {
-      "gerber_sha256": "8bf4d6c8b9be0a270d4688b8a84f377a526cb3dc54628350f29c2378bf12f141",
+      "gerber_sha256": "6348ba23e63e0aacd5ffa3dc00a1ac2830e6e5865860148091dc57dabbf28601",
       "router_contours": {
         "count": 21,
         "maximum_boundary_error_mm": 1.9633520812157904e-06,
         "all_expected_contours_matched": true
       },
       "silk": {
-        "boundary_error_mm": 2.4249083722554585e-06,
-        "area_mm2": 715.0127572314376,
+        "boundary_error_mm": 2.3965680368388724e-06,
+        "area_mm2": 849.6854503062855,
         "negative_holes": 41,
         "nominal_width_has_no_extra_stroke": true
       },

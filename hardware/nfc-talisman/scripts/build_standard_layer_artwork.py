@@ -226,6 +226,8 @@ def rear_geometry(source: Path, constellation: str):
         if node.attrib.get("stroke") != "#eee8d6":
             continue
         ident = node.attrib.get("id", "")
+        if 'outer_keyline' in ident:
+            continue  # Replaced by the shared textured octagonal frame.
         if ident.startswith("star_rim_"):
             continue  # Rebuilt outside the enlarged mask+silk keepout below.
         tag = node.tag.removeprefix(NAMESPACE)
@@ -368,6 +370,7 @@ def render_face(output: Path, stem: str, board, physical, mask, silk):
 
 
 def generate_variant(variant: str, output: Path):
+    from pcb_cover_border import build_border
     config = CONFIG[variant]
     source_dir = HARDWARE / "variants" / variant / "artwork"
     source_front = source_dir / f"front-{config['animal']}-37mm.svg"
@@ -397,6 +400,10 @@ def generate_variant(variant: str, output: Path):
         else:
             board, physical, mask, features, metadata = rear_geometry(source, config["constellation"])
         silk = unary_union([geometry for _, _, geometry in features])
+        border, border_metadata, _ = build_border(silk, mask, board=board)
+        features.append(('cover_border', 'textured_octagonal_border_and_inner_divider', border))
+        metadata['border'] = border_metadata
+        silk = silk.union(border)
         if not board.covers(silk) or not mask.is_empty and not board.covers(mask):
             raise ValueError("Generated artwork exceeds the original octagon")
         overlap = silk.intersection(mask).area
@@ -452,6 +459,8 @@ def main():
     args = parser.parse_args()
     results = [generate_variant(variant, args.output) for variant in CONFIG]
     manifest = {"schema_version": 1, "version": "ordinary-green-white-v1",
+                "border_generator": {"path": Path(__file__).with_name('pcb_cover_border.py').relative_to(PROJECT).as_posix(),
+                                     "sha256": sha256(Path(__file__).with_name('pcb_cover_border.py').read_bytes())},
                 "generator": Path(__file__).relative_to(PROJECT).as_posix(),
                 "generator_sha256": sha256(Path(__file__).read_bytes()),
                 "variants": {result["variant"]: {
@@ -461,7 +470,7 @@ def main():
                     "minimum_rear_silk_mask_gap_mm": result["faces"]["rear"]["minimum_silk_mask_gap_mm"],
                 } for result in results},
                 "files": {path.name: {"sha256": sha256(path.read_bytes()), "size": path.stat().st_size}
-                          for path in sorted(args.output.iterdir()) if path.is_file() and path.name != "manifest.json"}}
+                          for path in sorted(args.output.iterdir()) if path.is_file() and path.name not in ("manifest.json", "import-geometry.json")}}
     (args.output / "manifest.json").write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(json.dumps({"output": str(args.output), "variants": manifest["variants"]}, ensure_ascii=False, indent=2))
 

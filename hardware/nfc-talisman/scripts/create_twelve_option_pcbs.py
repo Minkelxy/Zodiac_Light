@@ -85,14 +85,16 @@ def verify_board(source,uuid,geometry):
  if any(k[0] in {'COMPONENT','OBJ','VIA','LINE','POUR'} for k in actual):raise ValueError('Passive cover PCB contains unexpected electrical/image primitives')
 
 
-def revise():
+def revise(revision_name='border-20261020'):
  """Snapshot and guard the four existing generated boards before a revision."""
  path=OUT/'pcb-state.json';state=json.loads(path.read_text(encoding='utf-8'))
  if any(b['status']!='saved_reopened' for b in state['boards']):raise ValueError('Finish the current revision before starting another')
  for board in state['boards']:
   key,uuid=board['key'],board['uuid']
   geometry=json.loads((OUT/'geometry'/f'{key}.json').read_text(encoding='utf-8'))
-  evidence,r=snapshot(uuid,'revision-v1-'+key)
+  import re
+  if not re.fullmatch('[a-z0-9-]{1,64}',revision_name):raise ValueError('Use a short revision name without path separators')
+  evidence,r=snapshot(uuid,'revision-'+revision_name+'-'+key)
   verify_board(r['source'],uuid,geometry)
   board['revision_baseline']=evidence
   board['status']='revision_pending'
@@ -189,4 +191,6 @@ def export():
 
 
 if __name__=='__main__':
- p=argparse.ArgumentParser(description=__doc__);p.add_argument('stage',choices=['prepare','revise','apply','export']);a=p.parse_args();globals()[a.stage]()
+ p=argparse.ArgumentParser(description=__doc__);p.add_argument('stage',choices=['prepare','revise','apply','export']);p.add_argument('--revision-name',default='border-20261020');a=p.parse_args()
+ if a.stage=='revise':revise(a.revision_name)
+ else:globals()[a.stage]()

@@ -1,0 +1,640 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "read_only": true,
+  "border_generator": {
+    "path": "hardware/nfc-talisman/scripts/pcb_cover_border.py",
+    "sha256": "c5e801731819e7ca2d0b681675553a583ce1ec3cbfb87deba40558fee99ff1d7"
+  },
+  "auditor": {
+    "path": "hardware/nfc-talisman/scripts/audit_cover_borders.py",
+    "size": 14938,
+    "sha256": "a39bdae9cb0f18c7b277cb464479121bed3ea5f55aeeb11a665ae2e4fe77e352"
+  },
+  "inputs": {
+    "variants/twelve-options/design-manifest.json": {
+      "size": 4900,
+      "sha256": "51952947b367c45794eaa19186832a3df6f27c4bcb33952fa7f24057bf9692ed"
+    },
+    "variants/standard-green-white/artwork/manifest.json": {
+      "size": 3542,
+      "sha256": "201b995cc61558346091c422f7016b0184a6b0b550f52c0f0a73c0aa75c8b915"
+    },
+    "variants/standard-green-white/artwork/horse-sagittarius-standard-layer-artwork.json": {
+      "size": 5142450,
+      "sha256": "2dc55caea04fd6c8af5951cace46fe0b46bbd10b1d7310a42d0fdbedba36c52f"
+    },
+    "variants/standard-green-white/eda/native/horse-sagittarius-source.jsonl": {
+      "size": 576705,
+      "sha256": "40632c3b414c5f18af261fa78b6fde504690879edf98acd16050680b9a072aef"
+    },
+    "variants/standard-green-white/eda/native/before-border-horse-sagittarius-source.jsonl": {
+      "size": 381755,
+      "sha256": "8face15e3fe09aca413ef54b90e84fd6550d6a69a374b1bf45475e1de8a0f1e5"
+    },
+    "variants/standard-green-white/eda/native/before-border-export-manifest.json": {
+      "size": 49102,
+      "sha256": "f61515f052fbb3fc3f5df782fb21a367e8307defc99ac87536052cb5713df063"
+    },
+    "variants/standard-green-white/artwork/snake-leo-standard-layer-artwork.json": {
+      "size": 5338118,
+      "sha256": "9ca531bd66589caa5c6348a8949774eeda43d0d9d4affc870ffd0ace2ffe4ab5"
+    },
+    "variants/standard-green-white/eda/native/snake-leo-source.jsonl": {
+      "size": 601042,
+      "sha256": "f258da0417399855a5233920fb2570e4f0b100fc8c75b12776391a231f3dd660"
+    },
+    "variants/standard-green-white/eda/native/before-border-snake-leo-source.jsonl": {
+      "size": 404583,
+      "sha256": "49d72551c669aa615002a3df512d3139afd093c8f697c3e2263009621970a331"
+    },
+    "variants/twelve-options/geometry/constellations-a.json": {
+      "size": 6019940,
+      "sha256": "bee18e5c4ae64330f2ebffa7896e81c029484d3bcc32ef0b15c7b561c085ea88"
+    },
+    "variants/twelve-options/eda/native/revision-border-20261020-constellations-a.jsonl": {
+      "size": 912186,
+      "sha256": "bed47740eb2e00b1407a5c7edb4acc35022044e6e5ee8de6941618a176803fc4"
+    },
+    "variants/twelve-options/eda/native/constellations-a-source.jsonl": {
+      "size": 1410440,
+      "sha256": "b8d18e9372383ff568ac32fe2d7d7cad829f6b6f104ab9d62a6f0dff7ba4d2ab"
+    },
+    "variants/twelve-options/geometry/constellations-b.json": {
+      "size": 6309230,
+      "sha256": "32a53b787a8036298f3bb9ede62071d21dd4838ffebfe9660b0e00a920e5053b"
+    },
+    "variants/twelve-options/eda/native/revision-border-20261020-constellations-b.jsonl": {
+      "size": 1021052,
+      "sha256": "a182ad03defc8eb6dc9c5ca34b6cff84d4a20b6c579e035ec60c4359d513cb85"
+    },
+    "variants/twelve-options/eda/native/constellations-b-source.jsonl": {
+      "size": 1517260,
+      "sha256": "dba2d2e1866a2feaa505663d1d4fc57d2b72739359ee4d2a9f144dace80eadbb"
+    },
+    "variants/twelve-options/geometry/zodiac-a.json": {
+      "size": 7104936,
+      "sha256": "78a2d41ff2896ae68ba7b29be5f2089c558535e9bbb83b9d814568d69dbf42ca"
+    },
+    "variants/twelve-options/eda/native/revision-border-20261020-zodiac-a.jsonl": {
+      "size": 557817,
+      "sha256": "56c7f14be68c57c298d0eaf77f68d566d096097586f5ae2a734fc3d9185dcebe"
+    },
+    "variants/twelve-options/eda/native/zodiac-a-source.jsonl": {
+      "size": 1035959,
+      "sha256": "757e4417614883b45dca5c817f98949380b5d198b12f1f4c435b035a3339f62f"
+    },
+    "variants/twelve-options/geometry/zodiac-b.json": {
+      "size": 6264006,
+      "sha256": "3f3e88b075d323a4992f1b0f55048cfd4c18f6f0619347d860203115b92f4d5e"
+    },
+    "variants/twelve-options/eda/native/revision-border-20261020-zodiac-b.jsonl": {
+      "size": 463600,
+      "sha256": "bb6140a47057f20728c7e1c86478539db219e797e073773d56e5e69130abdc37"
+    },
+    "variants/twelve-options/eda/native/zodiac-b-source.jsonl": {
+      "size": 929974,
+      "sha256": "f252c09d90097d438ceb9d09c877526d8a68948be3fe7b08470eca9fad57e95f"
+    }
+  },
+  "covers": {
+    "standard/horse-sagittarius/front": {
+      "passed": true,
+      "native_border_paths_match": true,
+      "geometry_sha256": "51e18df098ebc426acafc2b8021da1a6f3e7022411d9a2013d93b8908e4f158e",
+      "polygon_count": 44,
+      "native_polygon_count": 44,
+      "border_area_mm2": 46.81209057,
+      "holes": 0,
+      "canonical_symmetric_difference_mm2": 2.10696e-05,
+      "canonical_hausdorff_mm": 6.873e-07,
+      "actual_clearances_mm": {
+        "board_edge": 0.58999999,
+        "postage_holes": 1.07061974,
+        "cardinal_bridges": 0.51999999,
+        "existing_art": 3.58591416,
+        "aperture_mask": null,
+        "disconnected_features": 0.21999998
+      }
+    },
+    "standard/horse-sagittarius/rear": {
+      "passed": true,
+      "native_border_paths_match": true,
+      "geometry_sha256": "51e18df098ebc426acafc2b8021da1a6f3e7022411d9a2013d93b8908e4f158e",
+      "polygon_count": 44,
+      "native_polygon_count": 44,
+      "border_area_mm2": 46.81209103,
+      "holes": 0,
+      "canonical_symmetric_difference_mm2": 2.1322e-05,
+      "canonical_hausdorff_mm": 6.93e-07,
+      "actual_clearances_mm": {
+        "board_edge": 0.58999999,
+        "postage_holes": 1.07061974,
+        "cardinal_bridges": 0.51999999,
+        "existing_art": 0.81828124,
+        "aperture_mask": 1.93,
+        "disconnected_features": 0.21999998
+      }
+    },
+    "standard/snake-leo/front": {
+      "passed": true,
+      "native_border_paths_match": true,
+      "geometry_sha256": "51e18df098ebc426acafc2b8021da1a6f3e7022411d9a2013d93b8908e4f158e",
+      "polygon_count": 44,
+      "native_polygon_count": 44,
+      "border_area_mm2": 46.81209057,
+      "holes": 0,
+      "canonical_symmetric_difference_mm2": 2.10696e-05,
+      "canonical_hausdorff_mm": 6.873e-07,
+      "actual_clearances_mm": {
+        "board_edge": 0.58999999,
+        "postage_holes": 1.07061974,
+        "cardinal_bridges": 0.51999999,
+        "existing_art": 2.64402584,
+        "aperture_mask": null,
+        "disconnected_features": 0.21999998
+      }
+    },
+    "standard/snake-leo/rear": {
+      "passed": true,
+      "native_border_paths_match": true,
+      "geometry_sha256": "51e18df098ebc426acafc2b8021da1a6f3e7022411d9a2013d93b8908e4f158e",
+      "polygon_count": 44,
+      "native_polygon_count": 44,
+      "border_area_mm2": 46.81209103,
+      "holes": 0,
+      "canonical_symmetric_difference_mm2": 2.1322e-05,
+      "canonical_hausdorff_mm": 6.93e-07,
+      "actual_clearances_mm": {
+        "board_edge": 0.58999999,
+        "postage_holes": 1.07061974,
+        "cardinal_bridges": 0.51999999,
+        "existing_art": 1.20733711,
+        "aperture_mask": 1.93,
+        "disconnected_features": 0.21999998
+      }
+    },
+    "twelve/aries": {
+      "passed": true,
+      "native_border_paths_match": true,
+      "geometry_sha256": "ecbacd3bd9222e2a87e6094db394c4bf7cc86e1e121f5d219a46c34ad997b237",
+      "polygon_count": 45,
+      "native_polygon_count": 45,
+      "border_area_mm2": 45.93426475,
+      "holes": 0,
+      "canonical_symmetric_difference_mm2": 2.80022e-05,
+      "canonical_hausdorff_mm": 6.644e-07,
+      "actual_clearances_mm": {
+        "board_edge": 0.58999999,
+        "postage_holes": 1.07061976,
+        "cardinal_bridges": 0.52,
+        "existing_art": 0.33682925,
+        "aperture_mask": 0.25355209,
+        "disconnected_features": 0.21999998
+      }
+    },
+    "twelve/taurus": {
+      "passed": true,
+      "native_border_paths_match": true,
+      "geometry_sha256": "2499237636f1eb213feb7ce979ded6e6ca82022a992a241a41b26a5a5285f0a6",
+      "polygon_count": 45,
+      "native_polygon_count": 45,
+      "border_area_mm2": 46.39946777,
+      "holes": 0,
+      "canonical_symmetric_difference_mm2": 2.85686e-05,
+      "canonical_hausdorff_mm": 6.641e-07,
+      "actual_clearances_mm": {
+        "board_edge": 0.58999999,
+        "postage_holes": 1.07061976,
+        "cardinal_bridges": 0.52,
+        "existing_art": 0.34318372,
+        "aperture_mask": 0.74295785,
+        "disconnected_features": 0.21999998
+      }
+    },
+    "twelve/gemini": {
+      "passed": true,
+      "native_border_paths_match": true,
+      "geometry_sha256": "c204f28f7434ec935a946bfaf3adeceab7b272cc1f2b8b2835973626e1f84942",
+      "polygon_count": 44,
+      "native_polygon_count": 44,
+      "border_area_mm2": 46.81209,
+      "holes": 0,
+      "canonical_symmetric_difference_mm2": 2.5199e-05,
+      "canonical_hausdorff_mm": 6.454e-07,
+      "actual_clearances_mm": {
+        "board_edge": 0.58999999,
+        "postage_holes": 1.07061974,
+        "cardinal_bridges": 0.51999999,
+        "existing_art": 1.49455222,
+        "aperture_mask": 3.16156736,
+        "disconnected_features": 0.21999999
+      }
+    },
+    "twelve/cancer": {
+      "passed": true,
+      "native_border_paths_match": true,
+      "geometry_sha256": "c204f28f7434ec935a946bfaf3adeceab7b272cc1f2b8b2835973626e1f84942",
+      "polygon_count": 44,
+      "native_polygon_count": 44,
+      "border_area_mm2": 46.81209341,
+      "holes": 0,
+      "canonical_symmetric_difference_mm2": 2.92947e-05,
+      "canonical_hausdorff_mm": 6.647e-07,
+      "actual_clearances_mm": {
+        "board_edge": 0.58999999,
+        "postage_holes": 1.07061976,
+        "cardinal_bridges": 0.52,
+        "existing_art": 1.47999999,
+        "aperture_mask": 2.99947194,
+        "disconnected_features": 0.21999998
+      }
+    },
+    "twelve/virgo": {
+      "passed": true,
+      "native_border_paths_match": true,
+      "geometry_sha256": "5a653424c7ba1c1447843017cb26874d179d320c46766af59411f7e6ac6c5a3b",
+      "polygon_count": 44,
+      "native_polygon_count": 44,
+      "border_area_mm2": 46.06994473,
+      "holes": 0,
+      "canonical_symmetric_difference_mm2": 2.9028e-05,
+      "canonical_hausdorff_mm": 6.644e-07,
+      "actual_clearances_mm": {
+        "board_edge": 0.58999999,
+        "postage_holes": 1.07061976,
+        "cardinal_bridges": 0.52,
+        "existing_art": 0.40408868,
+        "aperture_mask": 0.80397796,
+        "disconnected_features": 0.21999998
+      }
+    },
+    "twelve/libra": {
+      "passed": true,
+      "native_border_paths_match": true,
+      "geometry_sha256": "c204f28f7434ec935a946bfaf3adeceab7b272cc1f2b8b2835973626e1f84942",
+      "polygon_count": 44,
+      "native_polygon_count": 44,
+      "border_area_mm2": 46.81209367,
+      "holes": 0,
+      "canonical_symmetric_difference_mm2": 2.90305e-05,
+      "canonical_hausdorff_mm": 6.644e-07,
+      "actual_clearances_mm": {
+        "board_edge": 0.58999999,
+        "postage_holes": 1.07061976,
+        "cardinal_bridges": 0.52,
+        "existing_art": 1.4866447,
+        "aperture_mask": 3.8673781,
+        "disconnected_features": 0.21999998
+      }
+    },
+    "twelve/scorpius": {
+      "passed": true,
+      "native_border_paths_match": true,
+      "geometry_sha256": "c204f28f7434ec935a946bfaf3adeceab7b272cc1f2b8b2835973626e1f84942",
+      "polygon_count": 44,
+      "native_polygon_count": 44,
+      "border_area_mm2": 46.81209393,
+      "holes": 0,
+      "canonical_symmetric_difference_mm2": 2.87663e-05,
+      "canonical_hausdorff_mm": 6.641e-07,
+      "actual_clearances_mm": {
+        "board_edge": 0.58999999,
+        "postage_holes": 1.07061976,
+        "cardinal_bridges": 0.52,
+        "existing_art": 0.56406724,
+        "aperture_mask": 0.96417432,
+        "disconnected_features": 0.21999998
+      }
+    },
+    "twelve/capricornus": {
+      "passed": true,
+      "native_border_paths_match": true,
+      "geometry_sha256": "77a2c4364a07ddb2d9f6f7cb63d8441bb1547cf87100d0504aadff3255a690e1",
+      "polygon_count": 45,
+      "native_polygon_count": 45,
+      "border_area_mm2": 46.31348364,
+      "holes": 0,
+      "canonical_symmetric_difference_mm2": 2.60522e-05,
+      "canonical_hausdorff_mm": 6.454e-07,
+      "actual_clearances_mm": {
+        "board_edge": 0.58999999,
+        "postage_holes": 1.07061974,
+        "cardinal_bridges": 0.51999999,
+        "existing_art": 0.36965421,
+        "aperture_mask": 0.76946129,
+        "disconnected_features": 0.21999999
+      }
+    },
+    "twelve/aquarius": {
+      "passed": true,
+      "native_border_paths_match": true,
+      "geometry_sha256": "c204f28f7434ec935a946bfaf3adeceab7b272cc1f2b8b2835973626e1f84942",
+      "polygon_count": 44,
+      "native_polygon_count": 44,
+      "border_area_mm2": 46.81209341,
+      "holes": 0,
+      "canonical_symmetric_difference_mm2": 2.92947e-05,
+      "canonical_hausdorff_mm": 6.647e-07,
+      "actual_clearances_mm": {
+        "board_edge": 0.58999999,
+        "postage_holes": 1.07061976,
+        "cardinal_bridges": 0.52,
+        "existing_art": 0.53152904,
+        "aperture_mask": 0.93142265,
+        "disconnected_features": 0.21999998
+      }
+    },
+    "twelve/pisces": {
+      "passed": true,
+      "native_border_paths_match": true,
+      "geometry_sha256": "c204f28f7434ec935a946bfaf3adeceab7b272cc1f2b8b2835973626e1f84942",
+      "polygon_count": 44,
+      "native_polygon_count": 44,
+      "border_area_mm2": 46.81209367,
+      "holes": 0,
+      "canonical_symmetric_difference_mm2": 2.90305e-05,
+      "canonical_hausdorff_mm": 6.644e-07,
+      "actual_clearances_mm": {
+        "board_edge": 0.58999999,
+        "postage_holes": 1.07061976,
+        "cardinal_bridges": 0.52,
+        "existing_art": 0.93452386,
+        "aperture_mask": 1.33463093,
+        "disconnected_features": 0.21999998
+      }
+    },
+    "twelve/rat": {
+      "passed": true,
+      "native_border_paths_match": true,
+      "geometry_sha256": "c204f28f7434ec935a946bfaf3adeceab7b272cc1f2b8b2835973626e1f84942",
+      "polygon_count": 44,
+      "native_polygon_count": 44,
+      "border_area_mm2": 46.81209367,
+      "holes": 0,
+      "canonical_symmetric_difference_mm2": 2.90305e-05,
+      "canonical_hausdorff_mm": 6.644e-07,
+      "actual_clearances_mm": {
+        "board_edge": 0.58999999,
+        "postage_holes": 1.07061976,
+        "cardinal_bridges": 0.52,
+        "existing_art": 0.78999999,
+        "aperture_mask": null,
+        "disconnected_features": 0.21999998
+      }
+    },
+    "twelve/ox": {
+      "passed": true,
+      "native_border_paths_match": true,
+      "geometry_sha256": "c204f28f7434ec935a946bfaf3adeceab7b272cc1f2b8b2835973626e1f84942",
+      "polygon_count": 44,
+      "native_polygon_count": 44,
+      "border_area_mm2": 46.81209393,
+      "holes": 0,
+      "canonical_symmetric_difference_mm2": 2.87663e-05,
+      "canonical_hausdorff_mm": 6.641e-07,
+      "actual_clearances_mm": {
+        "board_edge": 0.58999999,
+        "postage_holes": 1.07061976,
+        "cardinal_bridges": 0.52,
+        "existing_art": 0.78999992,
+        "aperture_mask": null,
+        "disconnected_features": 0.21999998
+      }
+    },
+    "twelve/tiger": {
+      "passed": true,
+      "native_border_paths_match": true,
+      "geometry_sha256": "c204f28f7434ec935a946bfaf3adeceab7b272cc1f2b8b2835973626e1f84942",
+      "polygon_count": 44,
+      "native_polygon_count": 44,
+      "border_area_mm2": 46.81209,
+      "holes": 0,
+      "canonical_symmetric_difference_mm2": 2.5199e-05,
+      "canonical_hausdorff_mm": 6.454e-07,
+      "actual_clearances_mm": {
+        "board_edge": 0.58999999,
+        "postage_holes": 1.07061974,
+        "cardinal_bridges": 0.51999999,
+        "existing_art": 0.78999994,
+        "aperture_mask": null,
+        "disconnected_features": 0.21999999
+      }
+    },
+    "twelve/rabbit": {
+      "passed": true,
+      "native_border_paths_match": true,
+      "geometry_sha256": "c204f28f7434ec935a946bfaf3adeceab7b272cc1f2b8b2835973626e1f84942",
+      "polygon_count": 44,
+      "native_polygon_count": 44,
+      "border_area_mm2": 46.81209341,
+      "holes": 0,
+      "canonical_symmetric_difference_mm2": 2.92947e-05,
+      "canonical_hausdorff_mm": 6.647e-07,
+      "actual_clearances_mm": {
+        "board_edge": 0.58999999,
+        "postage_holes": 1.07061976,
+        "cardinal_bridges": 0.52,
+        "existing_art": 1.09362039,
+        "aperture_mask": null,
+        "disconnected_features": 0.21999998
+      }
+    },
+    "twelve/dragon": {
+      "passed": true,
+      "native_border_paths_match": true,
+      "geometry_sha256": "c204f28f7434ec935a946bfaf3adeceab7b272cc1f2b8b2835973626e1f84942",
+      "polygon_count": 44,
+      "native_polygon_count": 44,
+      "border_area_mm2": 46.81209367,
+      "holes": 0,
+      "canonical_symmetric_difference_mm2": 2.90305e-05,
+      "canonical_hausdorff_mm": 6.644e-07,
+      "actual_clearances_mm": {
+        "board_edge": 0.58999999,
+        "postage_holes": 1.07061976,
+        "cardinal_bridges": 0.52,
+        "existing_art": 0.82499385,
+        "aperture_mask": null,
+        "disconnected_features": 0.21999998
+      }
+    },
+    "twelve/goat": {
+      "passed": true,
+      "native_border_paths_match": true,
+      "geometry_sha256": "c204f28f7434ec935a946bfaf3adeceab7b272cc1f2b8b2835973626e1f84942",
+      "polygon_count": 44,
+      "native_polygon_count": 44,
+      "border_area_mm2": 46.81209367,
+      "holes": 0,
+      "canonical_symmetric_difference_mm2": 2.90305e-05,
+      "canonical_hausdorff_mm": 6.644e-07,
+      "actual_clearances_mm": {
+        "board_edge": 0.58999999,
+        "postage_holes": 1.07061976,
+        "cardinal_bridges": 0.52,
+        "existing_art": 0.78999992,
+        "aperture_mask": null,
+        "disconnected_features": 0.21999998
+      }
+    },
+    "twelve/monkey": {
+      "passed": true,
+      "native_border_paths_match": true,
+      "geometry_sha256": "c204f28f7434ec935a946bfaf3adeceab7b272cc1f2b8b2835973626e1f84942",
+      "polygon_count": 44,
+      "native_polygon_count": 44,
+      "border_area_mm2": 46.81209393,
+      "holes": 0,
+      "canonical_symmetric_difference_mm2": 2.87663e-05,
+      "canonical_hausdorff_mm": 6.641e-07,
+      "actual_clearances_mm": {
+        "board_edge": 0.58999999,
+        "postage_holes": 1.07061976,
+        "cardinal_bridges": 0.52,
+        "existing_art": 0.78999992,
+        "aperture_mask": null,
+        "disconnected_features": 0.21999998
+      }
+    },
+    "twelve/rooster": {
+      "passed": true,
+      "native_border_paths_match": true,
+      "geometry_sha256": "c204f28f7434ec935a946bfaf3adeceab7b272cc1f2b8b2835973626e1f84942",
+      "polygon_count": 44,
+      "native_polygon_count": 44,
+      "border_area_mm2": 46.81209,
+      "holes": 0,
+      "canonical_symmetric_difference_mm2": 2.5199e-05,
+      "canonical_hausdorff_mm": 6.454e-07,
+      "actual_clearances_mm": {
+        "board_edge": 0.58999999,
+        "postage_holes": 1.07061974,
+        "cardinal_bridges": 0.51999999,
+        "existing_art": 0.78999994,
+        "aperture_mask": null,
+        "disconnected_features": 0.21999999
+      }
+    },
+    "twelve/dog": {
+      "passed": true,
+      "native_border_paths_match": true,
+      "geometry_sha256": "c204f28f7434ec935a946bfaf3adeceab7b272cc1f2b8b2835973626e1f84942",
+      "polygon_count": 44,
+      "native_polygon_count": 44,
+      "border_area_mm2": 46.81209341,
+      "holes": 0,
+      "canonical_symmetric_difference_mm2": 2.92947e-05,
+      "canonical_hausdorff_mm": 6.647e-07,
+      "actual_clearances_mm": {
+        "board_edge": 0.58999999,
+        "postage_holes": 1.07061976,
+        "cardinal_bridges": 0.52,
+        "existing_art": 0.78999999,
+        "aperture_mask": null,
+        "disconnected_features": 0.21999998
+      }
+    },
+    "twelve/pig": {
+      "passed": true,
+      "native_border_paths_match": true,
+      "geometry_sha256": "c204f28f7434ec935a946bfaf3adeceab7b272cc1f2b8b2835973626e1f84942",
+      "polygon_count": 44,
+      "native_polygon_count": 44,
+      "border_area_mm2": 46.81209367,
+      "holes": 0,
+      "canonical_symmetric_difference_mm2": 2.90305e-05,
+      "canonical_hausdorff_mm": 6.644e-07,
+      "actual_clearances_mm": {
+        "board_edge": 0.58999999,
+        "postage_holes": 1.07061976,
+        "cardinal_bridges": 0.52,
+        "existing_art": 0.78999992,
+        "aperture_mask": null,
+        "disconnected_features": 0.21999998
+      }
+    }
+  },
+  "physical_retention": {
+    "horse-sagittarius": {
+      "passed": true,
+      "detail": "Historical ownership verified; 55 -> 142 Top-silk fills; 19 mask fills and all other physical primitives retained",
+      "baseline": "variants/standard-green-white/eda/native/before-border-horse-sagittarius-source.jsonl",
+      "current": "variants/standard-green-white/eda/native/horse-sagittarius-source.jsonl"
+    },
+    "snake-leo": {
+      "passed": true,
+      "detail": "Historical ownership verified; 42 -> 130 Top-silk fills; 17 mask fills and all other physical primitives retained",
+      "baseline": "variants/standard-green-white/eda/native/before-border-snake-leo-source.jsonl",
+      "current": "variants/standard-green-white/eda/native/snake-leo-source.jsonl"
+    },
+    "constellations-a": {
+      "passed": true,
+      "baseline": "variants/twelve-options/eda/native/revision-border-20261020-constellations-a.jsonl",
+      "current": "variants/twelve-options/eda/native/constellations-a-source.jsonl",
+      "preserved_primitive_counts": {
+        "PAD": 151,
+        "POLY": 47,
+        "FILL": 77
+      },
+      "native_coordinate_tolerance_mil": 0.001,
+      "detail": "All non-Top-silk manufacturing primitives retain their properties and one-to-one geometry; generated IDs and closed-contour start/direction may differ; saved-native serialization tolerance 0.001mil"
+    },
+    "constellations-b": {
+      "passed": true,
+      "baseline": "variants/twelve-options/eda/native/revision-border-20261020-constellations-b.jsonl",
+      "current": "variants/twelve-options/eda/native/constellations-b-source.jsonl",
+      "preserved_primitive_counts": {
+        "PAD": 162,
+        "POLY": 46,
+        "FILL": 87
+      },
+      "native_coordinate_tolerance_mil": 0.001,
+      "detail": "All non-Top-silk manufacturing primitives retain their properties and one-to-one geometry; generated IDs and closed-contour start/direction may differ; saved-native serialization tolerance 0.001mil"
+    },
+    "zodiac-a": {
+      "passed": true,
+      "baseline": "variants/twelve-options/eda/native/revision-border-20261020-zodiac-a.jsonl",
+      "current": "variants/twelve-options/eda/native/zodiac-a-source.jsonl",
+      "preserved_primitive_counts": {
+        "PAD": 100,
+        "POLY": 21,
+        "FILL": 0
+      },
+      "native_coordinate_tolerance_mil": 0.001,
+      "detail": "All non-Top-silk manufacturing primitives retain their properties and one-to-one geometry; generated IDs and closed-contour start/direction may differ; saved-native serialization tolerance 0.001mil"
+    },
+    "zodiac-b": {
+      "passed": true,
+      "baseline": "variants/twelve-options/eda/native/revision-border-20261020-zodiac-b.jsonl",
+      "current": "variants/twelve-options/eda/native/zodiac-b-source.jsonl",
+      "preserved_primitive_counts": {
+        "PAD": 100,
+        "POLY": 21,
+        "FILL": 0
+      },
+      "native_coordinate_tolerance_mil": 0.001,
+      "detail": "All non-Top-silk manufacturing primitives retain their properties and one-to-one geometry; generated IDs and closed-contour start/direction may differ; saved-native serialization tolerance 0.001mil"
+    }
+  },
+  "errors": [],
+  "native_path_scope": "Offline import contours; standard saved native sources also checked. Final delivery checkers bind all import contours to reopened sources and shared native archive.",
+  "limitations": [
+    "Independent geometry evidence is separate from supplier CAM and physical sample acceptance.",
+    "Clearance values describe the added border. Existing source animal fine tips remain subject to CAM review."
+  ],
+  "summary": {
+    "faces": 24,
+    "panels": 6,
+    "separate_border_polygons": 1059,
+    "minimum_clearances_mm": {
+      "board_edge": 0.58999999,
+      "postage_holes": 1.07061974,
+      "cardinal_bridges": 0.51999999,
+      "existing_art": 0.33682925,
+      "aperture_mask": 0.25355209,
+      "disconnected_features": 0.21999998
+    },
+    "physical_changes": "Owned Top silk only; mask, copper, pads, holes, slots, board outlines and breakaway geometry retained"
+  }
+}

@@ -21,15 +21,130 @@
       "live_retained": true
     },
     "7b9104396cd59877": {
-      "path": "variants/twelve-options/eda/native/before-7b9104396cd59877.jsonl",
-      "sha256": "93ec182d71505a0bfc49bc47bb7f526022ebbed0856f5255b88af93cda9656c3",
+      "path": "variants/standard-green-white/eda/native/horse-sagittarius-source.jsonl",
+      "sha256": "40632c3b414c5f18af261fa78b6fde504690879edf98acd16050680b9a072aef",
       "uuid": "7b9104396cd59877",
+      "revision_before": {
+        "path": "variants/standard-green-white/eda/native/before-border-horse-sagittarius-source.jsonl",
+        "sha256": "8face15e3fe09aca413ef54b90e84fd6550d6a69a374b1bf45475e1de8a0f1e5",
+        "owned_silk_ids": [
+          "b633f038d69bbe7a",
+          "28c3ec0f9c3e3abd",
+          "e2f4ca1b91521930",
+          "945881467d0a5716",
+          "326b535d52047920",
+          "c9ae45d9d5922539",
+          "438a63485677cc86",
+          "59e7520c94fad9ba",
+          "4e5e1a2b027101cd",
+          "4e47d7576969d210",
+          "208779ea617f9be1",
+          "b95ae0f587c76f1f",
+          "891f5d5bf52a0042",
+          "8e913287d9ade7a2",
+          "88f64425109d897b",
+          "41cb961c41f60fcd",
+          "72e2dcc4f3233306",
+          "4895687b01992b7f",
+          "9ac17d7d025198b1",
+          "9ca7e15d4f2091d6",
+          "570ad6cac92d55f6",
+          "9f176efd85090365",
+          "4a686d13799d7dc3",
+          "fc00720ba9021cb7",
+          "a32a6290195b3e15",
+          "0d02b3e063434fb0",
+          "1728898211b5f9aa",
+          "39ff9643a269c840",
+          "fda8cfbbb4ec7f63",
+          "2da0bae20e46d244",
+          "c6892884e016a9a3",
+          "8b496ad93328067f",
+          "e5614c19e4124dc6",
+          "81be7a9605d2fd5e",
+          "e6eb900c3c4d65a5",
+          "0b68ba7d85244f10",
+          "59869f6b9613ec42",
+          "e12223012aeb6712",
+          "29ebcfda1f787a2e",
+          "58987271c0588aa5",
+          "d51d7db3592cb00a",
+          "4716f46b7fe5c6ca",
+          "35f6665e08750f69",
+          "2d9ee0749d467374",
+          "ab818d2346bf7abf",
+          "2fe0b86e5531f2b8",
+          "ab6747692998f1fc",
+          "84c2bdc0ab409284",
+          "f75c4033370f8576",
+          "09d5b7f8d8991b95",
+          "f574c7d99238dfb5",
+          "8be2c4491d0b77ff",
+          "ec12483f6c545389",
+          "4277c25326d11945",
+          "c1ae98375aea4992"
+        ],
+        "manifest_path": "variants/standard-green-white/eda/native/before-border-export-manifest.json",
+        "manifest_sha256": "f61515f052fbb3fc3f5df782fb21a367e8307defc99ac87536052cb5713df063"
+      },
+      "retention_policy": "owned_top_silk_revision_physical_and_mask_preserved",
       "live_retained": true
     },
     "8bb2139a68d10671": {
-      "path": "variants/twelve-options/eda/native/before-8bb2139a68d10671.jsonl",
-      "sha256": "c689fceae55b2780fa1de45080e42a3b5107d4714005e28a28d9365a306bfe12",
+      "path": "variants/standard-green-white/eda/native/snake-leo-source.jsonl",
+      "sha256": "f258da0417399855a5233920fb2570e4f0b100fc8c75b12776391a231f3dd660",
       "uuid": "8bb2139a68d10671",
+      "revision_before": {
+        "path": "variants/standard-green-white/eda/native/before-border-snake-leo-source.jsonl",
+        "sha256": "49d72551c669aa615002a3df512d3139afd093c8f697c3e2263009621970a331",
+        "owned_silk_ids": [
+          "8bbff6e654bb04a2",
+          "c59a3f99e4843189",
+          "03c2fd756d0e9294",
+          "52feb1a5ad059394",
+          "5613a0e6a27ae4f9",
+          "e85f400bad578100",
+          "179797378a8e9f3e",
+          "99568bc303cc9216",
+          "d8ad0996791ea336",
+          "746456f9f4f9f071",
+          "7faf21ec32768a87",
+          "c697b2268acee77e",
+          "485465c1868a7353",
+          "2a05dee960807af4",
+          "867512b49f52492d",
+          "e63b54c730a24c00",
+          "f8479d44a4f30184",
+          "524b01996c515f00",
+          "44405d2f38914798",
+          "5fc2f3ad97b828d7",
+          "241fb157117cdb51",
+          "1882494591e1d681",
+          "2c1db312575dd761",
+          "628f6ed9e18632b1",
+          "d3a125decafc6cb1",
+          "9416d1718a78141b",
+          "dc6f07830351527f",
+          "918b776286c331b4",
+          "5d1bab3c1d977102",
+          "ac231612e0ee81c9",
+          "78a199b5cae04d36",
+          "25b25bb67632b62f",
+          "d3080de09c1890d9",
+          "c6db19d68315c916",
+          "a8992bcf94ebd434",
+          "d9063fe8b860e3a1",
+          "eb039a34c43f8fed",
+          "883f4b7c590fa000",
+          "bb449b26ed901b3b",
+          "b44152fb1c489659",
+          "9fa3c603ed4d67ae",
+          "8d6d2edcb819ddce"
+        ],
+        "manifest_path": "variants/standard-green-white/eda/native/before-border-export-manifest.json",
+        "manifest_sha256": "f61515f052fbb3fc3f5df782fb21a367e8307defc99ac87536052cb5713df063"
+      },
+      "retention_policy": "owned_top_silk_revision_physical_and_mask_preserved",
       "live_retained": true
     }
   },
@@ -47,7 +162,7 @@
       "name": "Constellations-A-5x37-GreenWhite-100",
       "source": {
         "path": "variants/twelve-options/eda/native/constellations-a-source.jsonl",
-        "sha256": "75ff07452771823512e4966e00805720fd2001fcd4ceef7a647c9a00d0edac9c",
+        "sha256": "b8d18e9372383ff568ac32fe2d7d7cad829f6b6f104ab9d62a6f0dff7ba4d2ab",
         "uuid": "da4d85d9f04979eb"
       },
       "geometry": "geometry/constellations-a.json",
@@ -55,44 +170,44 @@
       "drc": [],
       "gerber": {
         "path": "variants/twelve-options/manufacturing-draft/constellations-a-green-white-gerber.zip",
-        "size": 316675,
-        "sha256": "19dfa8d6d2065fb6929c8cfe07b42db1590c0bd542fcb6b00783d63414a060a5",
+        "size": 460519,
+        "sha256": "c04f827f310b74299bc7b2d910ea14d42939b87f36e29c21e9b983686ead898e",
         "members": {
           "Gerber_TopLayer.GTL": {
             "size": 4644,
-            "sha256": "ac4025aa6e48187fb5ec9f2bb34854277dbc5b38f43029f68b8a48cd8b02b5e7"
+            "sha256": "fc070c76d2d1aebd150610ecb29d09685c9525c6103c5450f9afaa82d1701eda"
           },
           "Gerber_BottomLayer.GBL": {
             "size": 4647,
-            "sha256": "2f6b2fca9f7e035fc31962323a743d4f16d998cabd439f4e3351a2c76786f3e5"
+            "sha256": "f465652a035bcf6898f35dac5747380c49cf7d46793da1c1c7f972c80ac3a7c0"
           },
           "Gerber_TopSilkscreenLayer.GTO": {
-            "size": 450747,
-            "sha256": "e5bfab4fad1b338592ae3ece933decc88ba971999ecbafabc03bc2c45268dcca"
+            "size": 1046376,
+            "sha256": "e5ac3779e2fdbaa2582e071f901989387a996c5a623fc34f5d75505c8bd4b244"
           },
           "Gerber_BottomSilkscreenLayer.GBO": {
             "size": 630,
-            "sha256": "79ded46844cfae7d4284c322c1ebb182aa91acb168bcc2290055a9efb00d1ac9"
+            "sha256": "dc3fab61c69fd43a040d6a1574fcf0a450937de93c8c08628f1e4b9fb38e5534"
           },
           "Gerber_TopSolderMaskLayer.GTS": {
             "size": 437262,
-            "sha256": "a17221eee99ab0b5a2a1a2b3b60366a46ea419150e23fb1169237f2564ad851d"
+            "sha256": "a5a2862b6d0061c4e48d974f64d31ca0bae18ed2df95997d657e88d2aeecfa81"
           },
           "Gerber_BottomSolderMaskLayer.GBS": {
             "size": 4657,
-            "sha256": "f002653a2c3111264a67f9e77415ba0e0e063160ef39ba1d6038661988f0cf2d"
+            "sha256": "75f441f71189ea84a43dc8c60eaabbfec17f22e4b42134dcdcceb5e5182881f4"
           },
           "Gerber_BoardOutlineLayer.GKO": {
             "size": 100077,
-            "sha256": "b4e3e6cbf2f3700b48a2d0c363d3e819a17b60ad3b3ea213a0283ca5a0c9e429"
+            "sha256": "836f811ce2cb464a1044b6635041709b36dfef910f62f7de6a2029eb57a8d8e2"
           },
           "Gerber_DrillDrawingLayer.GDD": {
             "size": 66854,
-            "sha256": "fd66e98a6d615f785043aff9eaee7b92f49d93ec23bc87e896d8dac35f759dfb"
+            "sha256": "e3a2f724929f6669c032e464f755c7d21c410547059d18a277a93d7769b4f1e9"
           },
           "Drill_NPTH_Through.DRL": {
             "size": 3017,
-            "sha256": "49968bc9e19a6035ef1e2b763b384fc0502f1d9097e23ae8aa4f0915ec4f6778"
+            "sha256": "9c65ee77acc5a8a22afe57e2147137a43651b814d84f982329f9f102a30d8c72"
           },
           "PCB下单必读.txt": {
             "size": 94,
@@ -101,8 +216,8 @@
         }
       },
       "revision_baseline": {
-        "path": "variants/twelve-options/eda/native/revision-v1-constellations-a.jsonl",
-        "sha256": "f4b107e716ac4faa4d66c569f0449bfdd5033cad2d107ba41ec628c700896627",
+        "path": "variants/twelve-options/eda/native/revision-border-20261020-constellations-a.jsonl",
+        "sha256": "bed47740eb2e00b1407a5c7edb4acc35022044e6e5ee8de6941618a176803fc4",
         "uuid": "da4d85d9f04979eb"
       }
     },
@@ -119,7 +234,7 @@
       "name": "Constellations-B-5x37-GreenWhite-100",
       "source": {
         "path": "variants/twelve-options/eda/native/constellations-b-source.jsonl",
-        "sha256": "73a7549b14b18024c7ddce5905e886765d60aa3464c7d01b125b574011037d22",
+        "sha256": "dba2d2e1866a2feaa505663d1d4fc57d2b72739359ee4d2a9f144dace80eadbb",
         "uuid": "9883f07d70af99ab"
       },
       "geometry": "geometry/constellations-b.json",
@@ -127,44 +242,44 @@
       "drc": [],
       "gerber": {
         "path": "variants/twelve-options/manufacturing-draft/constellations-b-green-white-gerber.zip",
-        "size": 357301,
-        "sha256": "605ebc4b636d29897bc00a5fe028c416fa837828f0070452a8ed5dcc153b2efa",
+        "size": 500258,
+        "sha256": "f6491c39abea60ca659a4b25278c94795f495cd5647256ab2c87dfc04d1a565b",
         "members": {
           "Gerber_TopLayer.GTL": {
             "size": 4932,
-            "sha256": "c027db009046bb74845af920a407aacd7ed0980d05da9b9f1e62e22479826213"
+            "sha256": "dce0ef8395248bf8747ad7d0a08ebbb1dc06d157c153e878ec85fc595676d317"
           },
           "Gerber_BottomLayer.GBL": {
             "size": 4935,
-            "sha256": "18655113ccb8ce0b2cfe2efde998a1ae38a718ed18555fb19e1138948f2812bd"
+            "sha256": "9af8d990cd8c0f48cb085645a2693da19067234a0cce560aa1a2b0c002cf9c8a"
           },
           "Gerber_TopSilkscreenLayer.GTO": {
-            "size": 549116,
-            "sha256": "b55dbcf40d41cccd0c493df2a1987e07a9c25c1a7ac44aae1414eccb25e229af"
+            "size": 1142260,
+            "sha256": "e550f654116072ea8cc1a0c60f4dc2cab78b9913940faefaa90f7e1acba1f90f"
           },
           "Gerber_BottomSilkscreenLayer.GBO": {
             "size": 630,
-            "sha256": "7bed887b03d215e47d42edad40b415fad3411530cb863d4a84c4567b2f433d1e"
+            "sha256": "3202a62d4ad60202c2b9f2c5338bef0953d63e8586c4b7a4916101cda0d24abb"
           },
           "Gerber_TopSolderMaskLayer.GTS": {
             "size": 486529,
-            "sha256": "54b745e30ff75f1673a77934a5ea4435b3055a56a24074f26a04d02d275592c3"
+            "sha256": "ec9dd5a4167d7ce30434602c9847899d9bdac8b572f89ba152c771d9f0a4f01b"
           },
           "Gerber_BottomSolderMaskLayer.GBS": {
             "size": 4945,
-            "sha256": "b3ea4025d812f6daeda03d324506768eb0f316dce5734a13e799a8952bd2065b"
+            "sha256": "614c4c6764e0689b98d2ba12ed52cc022de8dc05578f37b2fb90ea80f1b4c574"
           },
           "Gerber_BoardOutlineLayer.GKO": {
             "size": 96737,
-            "sha256": "8dae0d9dcaf2e4c9739d2a0a9a2479507b46cd9cd09f53faf70d497584f14230"
+            "sha256": "dc953208f2dc608377535731c567ca3344afafad456d639db1b9666d7050b2bd"
           },
           "Gerber_DrillDrawingLayer.GDD": {
             "size": 67574,
-            "sha256": "e25ecc1eced1738221ea93a3908b51d123e601a1dde92b5881f8ffa020e6ac2b"
+            "sha256": "e5ee0c3aec892e3b14a762ca13fd37f500d360a93508f6caa57fa5632407775a"
           },
           "Drill_NPTH_Through.DRL": {
             "size": 3243,
-            "sha256": "65db24114cd1036336544f0735a720a0d489ebfbe9836c458dfe3e51ec575a08"
+            "sha256": "5fa53f7f8b91a66b9490a240efd7535959da791c303d3dfcacd2b7336e508214"
           },
           "PCB下单必读.txt": {
             "size": 94,
@@ -173,8 +288,8 @@
         }
       },
       "revision_baseline": {
-        "path": "variants/twelve-options/eda/native/revision-v1-constellations-b.jsonl",
-        "sha256": "123ae0e22c716a2b0b4eb8eaf12752872fd0b22144a3f6d3873edf157560ca5c",
+        "path": "variants/twelve-options/eda/native/revision-border-20261020-constellations-b.jsonl",
+        "sha256": "a182ad03defc8eb6dc9c5ca34b6cff84d4a20b6c579e035ec60c4359d513cb85",
         "uuid": "9883f07d70af99ab"
       }
     },
@@ -191,7 +306,7 @@
       "name": "Zodiac-A-5x37-GreenWhite-100",
       "source": {
         "path": "variants/twelve-options/eda/native/zodiac-a-source.jsonl",
-        "sha256": "6c1834fd82a64fa13367542386a6554aebf91b163630aca3dd5cae807a169c3f",
+        "sha256": "757e4417614883b45dca5c817f98949380b5d198b12f1f4c435b035a3339f62f",
         "uuid": "abc3d3a5e6e4793c"
       },
       "geometry": "geometry/zodiac-a.json",
@@ -199,44 +314,44 @@
       "drc": [],
       "gerber": {
         "path": "variants/twelve-options/manufacturing-draft/zodiac-a-green-white-gerber.zip",
-        "size": 142181,
-        "sha256": "98a090f724477cb3d2e73453859ac1f6834a3e320befd3be325838686071fac6",
+        "size": 280570,
+        "sha256": "73c56541332ac4a0d633429ffe223b5b71fbbd4cd4ac39da0f74a8520d11da44",
         "members": {
           "Gerber_TopLayer.GTL": {
             "size": 3229,
-            "sha256": "82a9b38eb8a2f74942627bc786ce7b58e77196679bd9fdfddd1dc8dba00bdb65"
+            "sha256": "63ba41b4f9692e34c7420955d43de997544deaab86dfa9980ccdc5d5bf2307a2"
           },
           "Gerber_BottomLayer.GBL": {
             "size": 3232,
-            "sha256": "470e7842c4bf8d9146e9c7f14c8bb53546c178cb4136e1cb129f1224113c361c"
+            "sha256": "4bd5d26834c57f53edba5a78b10e7f72077db77b8363b7f031fd735f82d923d0"
           },
           "Gerber_TopSilkscreenLayer.GTO": {
-            "size": 580623,
-            "sha256": "57b8c0bfd594882b8ca5e0746204137a2891b35e20e4494992c71fd517294c3d"
+            "size": 1150723,
+            "sha256": "05996b8536189995cb9e24cea79940e3c344d18dfc614ac2edec4c3d17f495c1"
           },
           "Gerber_BottomSilkscreenLayer.GBO": {
             "size": 630,
-            "sha256": "8fbda5cd9e4460432d7d745e4b0185a639473c299eaee67c669ddce715e4f78f"
+            "sha256": "a4b994a7751f3fe06d61c85d8963959649faaf8b5ddee2497958747c5ad16b42"
           },
           "Gerber_TopSolderMaskLayer.GTS": {
             "size": 3239,
-            "sha256": "1fa8b9feb80eb726c559f03ec0c3d0bd55ea50aa4b252f162f43bd65635d7942"
+            "sha256": "453119c345dce958a0bcb7d675157217d0533d7c8256d54e056aa1797da4345d"
           },
           "Gerber_BottomSolderMaskLayer.GBS": {
             "size": 3242,
-            "sha256": "a79fc6eda058064b7cd7ba748c840d3431429fd16fc4248af0bae4a445710b19"
+            "sha256": "f9b1841578b9b6613af59edb53f79fa4883b860bc0b4866b3b338dd8aa598225"
           },
           "Gerber_BoardOutlineLayer.GKO": {
             "size": 11587,
-            "sha256": "1c605c7a4ef624a8fc765385af43c1124826ae328c0ecba00066ad89c55cbdd6"
+            "sha256": "b06922386f6ab69edc64c08582e8dbe11b8eb3a965dca3a52622a6cfa6dd15b5"
           },
           "Gerber_DrillDrawingLayer.GDD": {
             "size": 40161,
-            "sha256": "8fa3b302b49debcff68ee0e6a608c30cd4e0efd08cbc19c3057c74daccc240c1"
+            "sha256": "71646dba4bf01757266e758bdd93eb1f062529c8de0575a9903f33eb52d9c8ca"
           },
           "Drill_NPTH_Through.DRL": {
             "size": 1914,
-            "sha256": "2526169c73eb4d33fa6f2b54ef9ce4aacede146ab1033a3dbd0c044747657e2b"
+            "sha256": "2513926d3446dccb2854c0f426d05ba44d9b59b9c497ed4ddfa66babe003689e"
           },
           "PCB下单必读.txt": {
             "size": 94,
@@ -245,8 +360,8 @@
         }
       },
       "revision_baseline": {
-        "path": "variants/twelve-options/eda/native/revision-v1-zodiac-a.jsonl",
-        "sha256": "1361cd609097c035165e17c6f5e70277a4dfadca833a08e9f9d0e71652bacfde",
+        "path": "variants/twelve-options/eda/native/revision-border-20261020-zodiac-a.jsonl",
+        "sha256": "56c7f14be68c57c298d0eaf77f68d566d096097586f5ae2a734fc3d9185dcebe",
         "uuid": "abc3d3a5e6e4793c"
       }
     },
@@ -263,7 +378,7 @@
       "name": "Zodiac-B-5x37-GreenWhite-100",
       "source": {
         "path": "variants/twelve-options/eda/native/zodiac-b-source.jsonl",
-        "sha256": "f0565631eeec45629182b443970abaf3591ce7b141e62d8069fbf6a47bc0f176",
+        "sha256": "f252c09d90097d438ceb9d09c877526d8a68948be3fe7b08470eca9fad57e95f",
         "uuid": "215baefd4debbd14"
       },
       "geometry": "geometry/zodiac-b.json",
@@ -271,44 +386,44 @@
       "drc": [],
       "gerber": {
         "path": "variants/twelve-options/manufacturing-draft/zodiac-b-green-white-gerber.zip",
-        "size": 116679,
-        "sha256": "8bf4d6c8b9be0a270d4688b8a84f377a526cb3dc54628350f29c2378bf12f141",
+        "size": 253795,
+        "sha256": "6348ba23e63e0aacd5ffa3dc00a1ac2830e6e5865860148091dc57dabbf28601",
         "members": {
           "Gerber_TopLayer.GTL": {
             "size": 3229,
-            "sha256": "5f20c8e7df6ad2eb3ce85c9cc68484c403c8952ee50ee1e1baf13de3a7de2016"
+            "sha256": "3dd5d9be57e5779da47e462bfc78e89389938af79e5c6af83c76426b015cf404"
           },
           "Gerber_BottomLayer.GBL": {
             "size": 3232,
-            "sha256": "387dd4bbffdc70c2fa65f165856a3eaff5cc32a050480f768a849dc22b28dfa0"
+            "sha256": "970accd511c00419e4b8e9517b5bdfa487a4ec9acc49fdbc83c2c56a54bcc705"
           },
           "Gerber_TopSilkscreenLayer.GTO": {
-            "size": 453672,
-            "sha256": "5375685e7671e6dd0424fd4db950c9248ba838d046f101f525b6f261c9e618dc"
+            "size": 1007293,
+            "sha256": "4dd8d180757331175959aa171b7f4b81e706bb07395b65035641cc906a985788"
           },
           "Gerber_BottomSilkscreenLayer.GBO": {
             "size": 630,
-            "sha256": "44ed74f8200d6fe52561db9d8202776892c7fc4e687b2e50854ab95d5ac35286"
+            "sha256": "c2a74a2138a910eaaa4550aea8b9d035cc726227600c676c955e747108bce669"
           },
           "Gerber_TopSolderMaskLayer.GTS": {
             "size": 3239,
-            "sha256": "6439b75c66620c3f2a34b5a8d90464f27c033ed1e329c9449b7af35690b90070"
+            "sha256": "8225846eea548494e8ae4e5ebe3e9db897d9d7d2d155d81404aa194e1d134671"
           },
           "Gerber_BottomSolderMaskLayer.GBS": {
             "size": 3242,
-            "sha256": "e594d1b1901b296697873bcafabdcea23d10ab99475f8c3627508e18c6199406"
+            "sha256": "f72924fde5fc1587c49a7d53f6080b212d8b9d9bd4bce07361c620efcc5a335d"
           },
           "Gerber_BoardOutlineLayer.GKO": {
             "size": 11587,
-            "sha256": "83b481adcddd0500525ebefd95eb84d77d390a550d76259e69d0d77f25a7e210"
+            "sha256": "0e5954aae2c5e5a3e7b4bd26cacc5f63f8f507692b39a1c3a84f2ba2d6bbcc8b"
           },
           "Gerber_DrillDrawingLayer.GDD": {
             "size": 40161,
-            "sha256": "d54b9748f46557f6e01e7ff842f434272cfe8a5bd36bb58cd4be2cfd0d30a6d3"
+            "sha256": "71ffdffa49a62c4cba43e1afbe8c4b097d2bf4af2dfea416ebb9acc5e6684c49"
           },
           "Drill_NPTH_Through.DRL": {
             "size": 1914,
-            "sha256": "d3f46c827e30bca059ba232af296553181794b6e353f7af219857e28cf2454aa"
+            "sha256": "6c83a4eac26915b6a449245135e34431f5d48b78b383ca44ec80033cf22604f4"
           },
           "PCB下单必读.txt": {
             "size": 94,
@@ -317,8 +432,8 @@
         }
       },
       "revision_baseline": {
-        "path": "variants/twelve-options/eda/native/revision-v1-zodiac-b.jsonl",
-        "sha256": "3aacdb72e3ea256b8c209a29fb1cc06116e3f8397b93d608310ec09c08aa57ec",
+        "path": "variants/twelve-options/eda/native/revision-border-20261020-zodiac-b.jsonl",
+        "sha256": "bb6140a47057f20728c7e1c86478539db219e797e073773d56e5e69130abdc37",
         "uuid": "215baefd4debbd14"
       }
     }
@@ -326,9 +441,9 @@
   "status": "four_five_cover_pcbs_saved_and_exported",
   "native_project": {
     "path": "variants/twelve-options/eda/native/nfc-twelve-options.epro2",
-    "size": 2001961,
-    "sha256": "1230fe52929a3be9ce572c7a13d1e04f276a6bc8a5c7907905e17e38649b69bf"
+    "size": 2677686,
+    "sha256": "2eb028245e4e576140581814cfb8f0b6ae3af3e9156eb2a37e054547456d69a2"
   },
   "release_status": "HOLD_CAM_PHYSICAL_VALIDATION_PENDING",
-  "design_manifest_sha256": "0c32ebca438141c73e491be16a412ce8a2818c2a2dc1c0d3b1899b134d7bb941"
+  "design_manifest_sha256": "51952947b367c45794eaa19186832a3df6f27c4bcb33952fa7f24057bf9692ed"
 }

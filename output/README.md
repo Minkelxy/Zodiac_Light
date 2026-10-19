@@ -2,19 +2,21 @@
 
 ## 对外展示成果
 
-以下五份为 A4 横版展示 PDF，适合发送或投屏；前三份配有项目下载二维码。图中的灯效为软件仿真，NFC 外观为设计预览。实际加工仍使用下方的 1:1 制作模板。
+以下五份为 A4 横版展示 PDF，适合发送或投屏；2026-10-14 的原三份配有项目下载二维码。图中的灯效为软件仿真，NFC 外观为设计预览。实际加工仍使用下方的 1:1 制作模板。
+
+两份绿白展示资料覆盖 2026-10-20 的纹理边框与内外分界线修订，来源清单绑定六块绿白 PCB 的本轮源文件和导出版本。原三份展示 PDF 与历史 release 保留对应版本。
 
 | 资料 | 页数 | 展示内容 |
 | --- | --- | --- |
-| [十二星座与生肖拼板展示](pdf/十二星座与生肖_拼板展示.pdf) | 5 | 新增四块五片绿白拼板总览、十星座与十生肖明细 |
+| [十二星座与生肖拼板展示](pdf/十二星座与生肖_拼板展示.pdf) | 5 | 四块五片绿白拼板总览、十星座与十生肖、统一白色纹理边框与分界线 |
 | [项目一页成果速览](pdf/星座灯项目_一页成果速览.pdf) | 1 | 星座灯与 NFC 双款的整体进展，适合快速分享 |
 | [40 cm 星座灯成果展示册](pdf/星座灯_40cm成果展示册.pdf) | 6 | U1 造型、恒星资料、灯珠布局、九种灯效与制作交付 |
 | [NFC 双款设计展示册](pdf/NFC符咒_双款设计展示册.pdf) | 4 | 两款正反面、分层结构、核心布局、归档成果与实物待办 |
-| [NFC 绿白普通工艺展示](pdf/NFC符咒_绿白普通工艺展示.pdf) | 3 | 新增绿白两款正反面、原彩色对照、普通丝印与孔槽开窗边界 |
+| [NFC 绿白普通工艺展示](pdf/NFC符咒_绿白普通工艺展示.pdf) | 3 | 马/蛇绿白正反面与原彩色对照、白色纹理边框、普通工艺边界 |
 
 生成脚本为 [`make_showcase_pdfs.py`](../scripts/make_showcase_pdfs.py)，依赖 NumPy、ReportLab 和 Windows 微软雅黑字体；清单为 [`showcase-manifest.json`](pdf/showcase-manifest.json)。展示内容依据 2026-10-14 的保存资料，不能将设计图当成样件照片或制造放行证明。三份 PDF 也作为附件发布在[项目交付版本页](https://github.com/Minkelxy/Zodiac_Light/releases/tag/project-2026-10-14)。
 
-绿白普通工艺展示依据 2026-10-15 图案资料，由 [`make_green_white_showcase_pdf.py`](../scripts/make_green_white_showcase_pdf.py)生成，复用同一 PDF 排版与字体环境；对应[来源清单](pdf/green-white-showcase-manifest.json)。它保留原彩色对照，说明绿色阻焊、白色丝印和孔槽周围开窗，独立工程与检查进度见[普通绿白版入口](../hardware/nfc-talisman/variants/standard-green-white/README.md)。旧三份展示 PDF 与清单保持原版本。
+绿白普通工艺展示由 [`make_green_white_showcase_pdf.py`](../scripts/make_green_white_showcase_pdf.py)生成，复用同一 PDF 排版与字体环境；对应[来源清单](pdf/green-white-showcase-manifest.json)。它保留原彩色对照，说明绿色阻焊、白色丝印、孔槽周围开窗与本轮纹理边框；原生工程入口统一为九 PCB，独立检查进度见[普通绿白版入口](../hardware/nfc-talisman/variants/standard-green-white/README.md)。五页拼板展示由 [`make_twelve_options_pdf.py`](../scripts/make_twelve_options_pdf.py)生成，对应[来源清单](pdf/twelve-options-showcase-manifest.json)。两份脚本均先核对当前来源和交付检查，再保存 PDF；旧三份展示 PDF 与清单保持原版本。
 
 ## 制作稿定稿
 

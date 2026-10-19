@@ -1,0 +1,1484 @@
+{
+  "project": "c051e4069a83472198ecce7729fbd257",
+  "soldermask": "green",
+  "silkscreen": "white",
+  "boards": [
+    {
+      "variant": "horse-sagittarius",
+      "source_pcb": "4a4719695b24dc2b",
+      "uuid": "7b9104396cd59877",
+      "requested_name": "Horse-Sagittarius-GreenWhite-100-v1",
+      "status": "applied_saved_reopened",
+      "name": "Horse-Sagittarius-GreenWhite-100-v1",
+      "base_copy_source": "variants/standard-green-white/eda/native/base-copy-horse-sagittarius-source.jsonl",
+      "base_copy_sha256": "7c9d5aa2074677678b710069f10e447c5f455077b93f4b6a234917c227e68936",
+      "rename_method": "desktop_tree_UI_verified_by_getPcbInfo",
+      "created": [
+        {
+          "id": "b633f038d69bbe7a",
+          "logical_id": "horse-sagittarius:front:silk:001",
+          "source_id": "animal_horse_01",
+          "face": "front",
+          "kind": "silk",
+          "layer": 3,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "28c3ec0f9c3e3abd",
+          "logical_id": "horse-sagittarius:front:silk:002",
+          "source_id": "animal_horse_02",
+          "face": "front",
+          "kind": "silk",
+          "layer": 3,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "e2f4ca1b91521930",
+          "logical_id": "horse-sagittarius:front:silk:003",
+          "source_id": "animal_horse_03",
+          "face": "front",
+          "kind": "silk",
+          "layer": 3,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "945881467d0a5716",
+          "logical_id": "horse-sagittarius:front:silk:004",
+          "source_id": "animal_horse_04",
+          "face": "front",
+          "kind": "silk",
+          "layer": 3,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "326b535d52047920",
+          "logical_id": "horse-sagittarius:front:silk:005",
+          "source_id": "animal_horse_05",
+          "face": "front",
+          "kind": "silk",
+          "layer": 3,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "c9ae45d9d5922539",
+          "logical_id": "horse-sagittarius:front:silk:006",
+          "source_id": "animal_horse_06",
+          "face": "front",
+          "kind": "silk",
+          "layer": 3,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "438a63485677cc86",
+          "logical_id": "horse-sagittarius:rear:silk:001",
+          "source_id": "sagittarius_outer_keyline_part1_01",
+          "face": "rear",
+          "kind": "silk",
+          "layer": 3,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "59e7520c94fad9ba",
+          "logical_id": "horse-sagittarius:rear:silk:002",
+          "source_id": "star_link_e01_a_01",
+          "face": "rear",
+          "kind": "silk",
+          "layer": 3,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "4e5e1a2b027101cd",
+          "logical_id": "horse-sagittarius:rear:silk:003",
+          "source_id": "star_link_e01_b_01",
+          "face": "rear",
+          "kind": "silk",
+          "layer": 3,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "4e47d7576969d210",
+          "logical_id": "horse-sagittarius:rear:silk:004",
+          "source_id": "star_link_e03_a_01",
+          "face": "rear",
+          "kind": "silk",
+          "layer": 3,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "208779ea617f9be1",
+          "logical_id": "horse-sagittarius:rear:silk:005",
+          "source_id": "star_link_e03_b_01",
+          "face": "rear",
+          "kind": "silk",
+          "layer": 3,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "b95ae0f587c76f1f",
+          "logical_id": "horse-sagittarius:rear:silk:006",
+          "source_id": "star_link_e05_a_01",
+          "face": "rear",
+          "kind": "silk",
+          "layer": 3,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "891f5d5bf52a0042",
+          "logical_id": "horse-sagittarius:rear:silk:007",
+          "source_id": "star_link_e05_b_01",
+          "face": "rear",
+          "kind": "silk",
+          "layer": 3,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "8e913287d9ade7a2",
+          "logical_id": "horse-sagittarius:rear:silk:008",
+          "source_id": "star_link_e06_a_01",
+          "face": "rear",
+          "kind": "silk",
+          "layer": 3,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "88f64425109d897b",
+          "logical_id": "horse-sagittarius:rear:silk:009",
+          "source_id": "star_link_e06_b_01",
+          "face": "rear",
+          "kind": "silk",
+          "layer": 3,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "41cb961c41f60fcd",
+          "logical_id": "horse-sagittarius:rear:silk:010",
+          "source_id": "star_link_e07_a_01",
+          "face": "rear",
+          "kind": "silk",
+          "layer": 3,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "72e2dcc4f3233306",
+          "logical_id": "horse-sagittarius:rear:silk:011",
+          "source_id": "star_link_e07_b_01",
+          "face": "rear",
+          "kind": "silk",
+          "layer": 3,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "4895687b01992b7f",
+          "logical_id": "horse-sagittarius:rear:silk:012",
+          "source_id": "star_link_e08_a_01",
+          "face": "rear",
+          "kind": "silk",
+          "layer": 3,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "9ac17d7d025198b1",
+          "logical_id": "horse-sagittarius:rear:silk:013",
+          "source_id": "star_link_e08_b_01",
+          "face": "rear",
+          "kind": "silk",
+          "layer": 3,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "9ca7e15d4f2091d6",
+          "logical_id": "horse-sagittarius:rear:silk:014",
+          "source_id": "star_link_e09_a_01",
+          "face": "rear",
+          "kind": "silk",
+          "layer": 3,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "570ad6cac92d55f6",
+          "logical_id": "horse-sagittarius:rear:silk:015",
+          "source_id": "star_link_e09_b_01",
+          "face": "rear",
+          "kind": "silk",
+          "layer": 3,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "9f176efd85090365",
+          "logical_id": "horse-sagittarius:rear:silk:016",
+          "source_id": "star_link_e10_a_01",
+          "face": "rear",
+          "kind": "silk",
+          "layer": 3,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "4a686d13799d7dc3",
+          "logical_id": "horse-sagittarius:rear:silk:017",
+          "source_id": "star_link_e10_b_01",
+          "face": "rear",
+          "kind": "silk",
+          "layer": 3,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "fc00720ba9021cb7",
+          "logical_id": "horse-sagittarius:rear:silk:018",
+          "source_id": "star_link_e12_a_01",
+          "face": "rear",
+          "kind": "silk",
+          "layer": 3,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "a32a6290195b3e15",
+          "logical_id": "horse-sagittarius:rear:silk:019",
+          "source_id": "star_link_e12_b_01",
+          "face": "rear",
+          "kind": "silk",
+          "layer": 3,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "0d02b3e063434fb0",
+          "logical_id": "horse-sagittarius:rear:silk:020",
+          "source_id": "star_link_e13_a_01",
+          "face": "rear",
+          "kind": "silk",
+          "layer": 3,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "1728898211b5f9aa",
+          "logical_id": "horse-sagittarius:rear:silk:021",
+          "source_id": "star_link_e13_b_01",
+          "face": "rear",
+          "kind": "silk",
+          "layer": 3,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "39ff9643a269c840",
+          "logical_id": "horse-sagittarius:rear:silk:022",
+          "source_id": "star_link_e14_a_01",
+          "face": "rear",
+          "kind": "silk",
+          "layer": 3,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "fda8cfbbb4ec7f63",
+          "logical_id": "horse-sagittarius:rear:silk:023",
+          "source_id": "star_link_e14_b_01",
+          "face": "rear",
+          "kind": "silk",
+          "layer": 3,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "2da0bae20e46d244",
+          "logical_id": "horse-sagittarius:rear:silk:024",
+          "source_id": "star_ring_01_01",
+          "face": "rear",
+          "kind": "silk",
+          "layer": 3,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "c6892884e016a9a3",
+          "logical_id": "horse-sagittarius:rear:silk:025",
+          "source_id": "star_ring_02_01",
+          "face": "rear",
+          "kind": "silk",
+          "layer": 3,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "8b496ad93328067f",
+          "logical_id": "horse-sagittarius:rear:silk:026",
+          "source_id": "star_ring_03_01",
+          "face": "rear",
+          "kind": "silk",
+          "layer": 3,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "e5614c19e4124dc6",
+          "logical_id": "horse-sagittarius:rear:silk:027",
+          "source_id": "star_ring_04_01",
+          "face": "rear",
+          "kind": "silk",
+          "layer": 3,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "81be7a9605d2fd5e",
+          "logical_id": "horse-sagittarius:rear:silk:028",
+          "source_id": "star_ring_05_01",
+          "face": "rear",
+          "kind": "silk",
+          "layer": 3,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "e6eb900c3c4d65a5",
+          "logical_id": "horse-sagittarius:rear:silk:029",
+          "source_id": "star_ring_06_01",
+          "face": "rear",
+          "kind": "silk",
+          "layer": 3,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "0b68ba7d85244f10",
+          "logical_id": "horse-sagittarius:rear:silk:030",
+          "source_id": "star_ring_07_01",
+          "face": "rear",
+          "kind": "silk",
+          "layer": 3,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "59869f6b9613ec42",
+          "logical_id": "horse-sagittarius:rear:silk:031",
+          "source_id": "star_ring_08_01",
+          "face": "rear",
+          "kind": "silk",
+          "layer": 3,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "e12223012aeb6712",
+          "logical_id": "horse-sagittarius:rear:silk:032",
+          "source_id": "label_sagittarius_01",
+          "face": "rear",
+          "kind": "silk",
+          "layer": 3,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "29ebcfda1f787a2e",
+          "logical_id": "horse-sagittarius:rear:silk:033",
+          "source_id": "label_sagittarius_02",
+          "face": "rear",
+          "kind": "silk",
+          "layer": 3,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "58987271c0588aa5",
+          "logical_id": "horse-sagittarius:rear:silk:034",
+          "source_id": "label_sagittarius_03",
+          "face": "rear",
+          "kind": "silk",
+          "layer": 3,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "d51d7db3592cb00a",
+          "logical_id": "horse-sagittarius:rear:silk:035",
+          "source_id": "label_sagittarius_04",
+          "face": "rear",
+          "kind": "silk",
+          "layer": 3,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "4716f46b7fe5c6ca",
+          "logical_id": "horse-sagittarius:rear:silk:036",
+          "source_id": "label_sagittarius_05",
+          "face": "rear",
+          "kind": "silk",
+          "layer": 3,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "35f6665e08750f69",
+          "logical_id": "horse-sagittarius:rear:silk:037",
+          "source_id": "label_sagittarius_06",
+          "face": "rear",
+          "kind": "silk",
+          "layer": 3,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "2d9ee0749d467374",
+          "logical_id": "horse-sagittarius:rear:silk:038",
+          "source_id": "label_sagittarius_07",
+          "face": "rear",
+          "kind": "silk",
+          "layer": 3,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "ab818d2346bf7abf",
+          "logical_id": "horse-sagittarius:rear:silk:039",
+          "source_id": "label_sagittarius_08",
+          "face": "rear",
+          "kind": "silk",
+          "layer": 3,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "2fe0b86e5531f2b8",
+          "logical_id": "horse-sagittarius:rear:silk:040",
+          "source_id": "label_sagittarius_09",
+          "face": "rear",
+          "kind": "silk",
+          "layer": 3,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "ab6747692998f1fc",
+          "logical_id": "horse-sagittarius:rear:silk:041",
+          "source_id": "label_sagittarius_10",
+          "face": "rear",
+          "kind": "silk",
+          "layer": 3,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "84c2bdc0ab409284",
+          "logical_id": "horse-sagittarius:rear:silk:042",
+          "source_id": "label_sagittarius_11",
+          "face": "rear",
+          "kind": "silk",
+          "layer": 3,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "f75c4033370f8576",
+          "logical_id": "horse-sagittarius:rear:silk:043",
+          "source_id": "label_ad_astra_01",
+          "face": "rear",
+          "kind": "silk",
+          "layer": 3,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "09d5b7f8d8991b95",
+          "logical_id": "horse-sagittarius:rear:silk:044",
+          "source_id": "label_ad_astra_02",
+          "face": "rear",
+          "kind": "silk",
+          "layer": 3,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "f574c7d99238dfb5",
+          "logical_id": "horse-sagittarius:rear:silk:045",
+          "source_id": "label_ad_astra_03",
+          "face": "rear",
+          "kind": "silk",
+          "layer": 3,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "8be2c4491d0b77ff",
+          "logical_id": "horse-sagittarius:rear:silk:046",
+          "source_id": "label_ad_astra_04",
+          "face": "rear",
+          "kind": "silk",
+          "layer": 3,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "ec12483f6c545389",
+          "logical_id": "horse-sagittarius:rear:silk:047",
+          "source_id": "label_ad_astra_05",
+          "face": "rear",
+          "kind": "silk",
+          "layer": 3,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "4277c25326d11945",
+          "logical_id": "horse-sagittarius:rear:silk:048",
+          "source_id": "label_ad_astra_06",
+          "face": "rear",
+          "kind": "silk",
+          "layer": 3,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "c1ae98375aea4992",
+          "logical_id": "horse-sagittarius:rear:silk:049",
+          "source_id": "label_ad_astra_07",
+          "face": "rear",
+          "kind": "silk",
+          "layer": 3,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "c6f523e70fca3ee7",
+          "logical_id": "horse-sagittarius:rear:mask:001",
+          "source_id": "mask_opening_01",
+          "face": "rear",
+          "kind": "mask",
+          "layer": 5,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "c0d67e4b05fa98b0",
+          "logical_id": "horse-sagittarius:rear:mask:002",
+          "source_id": "mask_opening_02",
+          "face": "rear",
+          "kind": "mask",
+          "layer": 5,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "55ab59d8488c6f4a",
+          "logical_id": "horse-sagittarius:rear:mask:003",
+          "source_id": "mask_opening_03",
+          "face": "rear",
+          "kind": "mask",
+          "layer": 5,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "d9985181dc38ca8d",
+          "logical_id": "horse-sagittarius:rear:mask:004",
+          "source_id": "mask_opening_04",
+          "face": "rear",
+          "kind": "mask",
+          "layer": 5,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "c0cd5a3aef4c9c98",
+          "logical_id": "horse-sagittarius:rear:mask:005",
+          "source_id": "mask_opening_05",
+          "face": "rear",
+          "kind": "mask",
+          "layer": 5,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "0bc720d877c60d88",
+          "logical_id": "horse-sagittarius:rear:mask:006",
+          "source_id": "mask_opening_06",
+          "face": "rear",
+          "kind": "mask",
+          "layer": 5,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "380e690e3072681a",
+          "logical_id": "horse-sagittarius:rear:mask:007",
+          "source_id": "mask_opening_07",
+          "face": "rear",
+          "kind": "mask",
+          "layer": 5,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "3793c6b43c70b917",
+          "logical_id": "horse-sagittarius:rear:mask:008",
+          "source_id": "mask_opening_08",
+          "face": "rear",
+          "kind": "mask",
+          "layer": 5,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "403ceca6b9f5c1d0",
+          "logical_id": "horse-sagittarius:rear:mask:009",
+          "source_id": "mask_opening_09",
+          "face": "rear",
+          "kind": "mask",
+          "layer": 5,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "e67b998688be79fe",
+          "logical_id": "horse-sagittarius:rear:mask:010",
+          "source_id": "mask_opening_10",
+          "face": "rear",
+          "kind": "mask",
+          "layer": 5,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "8f9ab6339bb77283",
+          "logical_id": "horse-sagittarius:rear:mask:011",
+          "source_id": "mask_opening_11",
+          "face": "rear",
+          "kind": "mask",
+          "layer": 5,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "0422cdbd82e930d7",
+          "logical_id": "horse-sagittarius:rear:mask:012",
+          "source_id": "mask_opening_12",
+          "face": "rear",
+          "kind": "mask",
+          "layer": 5,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "64acdc7b6db4a5cb",
+          "logical_id": "horse-sagittarius:rear:mask:013",
+          "source_id": "mask_opening_13",
+          "face": "rear",
+          "kind": "mask",
+          "layer": 5,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "1f15c315a19ff587",
+          "logical_id": "horse-sagittarius:rear:mask:014",
+          "source_id": "mask_opening_14",
+          "face": "rear",
+          "kind": "mask",
+          "layer": 5,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "c97ee8a2c7b2e9c7",
+          "logical_id": "horse-sagittarius:rear:mask:015",
+          "source_id": "mask_opening_15",
+          "face": "rear",
+          "kind": "mask",
+          "layer": 5,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "ff470b730b8f5463",
+          "logical_id": "horse-sagittarius:rear:mask:016",
+          "source_id": "mask_opening_16",
+          "face": "rear",
+          "kind": "mask",
+          "layer": 5,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "ef2e5fbc60d108cb",
+          "logical_id": "horse-sagittarius:rear:mask:017",
+          "source_id": "mask_opening_17",
+          "face": "rear",
+          "kind": "mask",
+          "layer": 5,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "a063d54dcc8d7fb4",
+          "logical_id": "horse-sagittarius:rear:mask:018",
+          "source_id": "mask_opening_18",
+          "face": "rear",
+          "kind": "mask",
+          "layer": 5,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "aa36e5ab85963e66",
+          "logical_id": "horse-sagittarius:rear:mask:019",
+          "source_id": "mask_opening_19",
+          "face": "rear",
+          "kind": "mask",
+          "layer": 5,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        }
+      ],
+      "source": "variants/standard-green-white/eda/native/horse-sagittarius-source.jsonl",
+      "source_sha256": "3e1f69e8f491f2e434f7f361b6f5f5b64a33cde1896538dcaaf1cd833d96efb2",
+      "protected_geometry_unchanged": true,
+      "saved_reopened": true,
+      "artwork_source": {
+        "path": "variants/standard-green-white/artwork/horse-sagittarius-standard-layer-artwork.json",
+        "size": 1975554,
+        "sha256": "89917ee2983a92335050726b6b1c10a71a83746f1f5732a7979012e1615de92c"
+      },
+      "import_geometry_sha256": "873a399c92f55118445c6fa9b3482fe10532255004bef68458060d53ca176aae",
+      "import_method": "delete_exact_color_OBJs_then_validated_native_FILL_JSONL_setDocumentSource",
+      "actual_width_mil": [
+        0.2
+      ],
+      "native_width_policy": "Requested width 0; runtime may normalize SOLID width to known 0.2 mil. Exported Gerber contours require independent verification.",
+      "drc": [],
+      "gerber": "variants/standard-green-white/manufacturing-draft/horse-sagittarius-green-white-gerber.zip",
+      "gerber_members": "variants/standard-green-white/manufacturing-draft/horse-sagittarius-green-white-gerber.members.json",
+      "color_silkscreen_export": false
+    },
+    {
+      "variant": "snake-leo",
+      "source_pcb": "fe8ee4534ee0b941",
+      "uuid": "8bb2139a68d10671",
+      "requested_name": "Snake-Leo-GreenWhite-100-v1",
+      "status": "applied_saved_reopened",
+      "name": "Snake-Leo-GreenWhite-100-v1",
+      "base_copy_source": "variants/standard-green-white/eda/native/base-copy-snake-leo-source.jsonl",
+      "base_copy_sha256": "10bb6660b7ce6879359d52d053789f377b15bc8d2fac2dc9eb688060518e2160",
+      "rename_method": "desktop_tree_UI_verified_by_getPcbInfo",
+      "created": [
+        {
+          "id": "8bbff6e654bb04a2",
+          "logical_id": "snake-leo:front:silk:001",
+          "source_id": "animal_snake_01",
+          "face": "front",
+          "kind": "silk",
+          "layer": 3,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "c59a3f99e4843189",
+          "logical_id": "snake-leo:front:silk:002",
+          "source_id": "animal_snake_02",
+          "face": "front",
+          "kind": "silk",
+          "layer": 3,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "03c2fd756d0e9294",
+          "logical_id": "snake-leo:front:silk:003",
+          "source_id": "animal_snake_03",
+          "face": "front",
+          "kind": "silk",
+          "layer": 3,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "52feb1a5ad059394",
+          "logical_id": "snake-leo:front:silk:004",
+          "source_id": "animal_snake_04",
+          "face": "front",
+          "kind": "silk",
+          "layer": 3,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "5613a0e6a27ae4f9",
+          "logical_id": "snake-leo:front:silk:005",
+          "source_id": "animal_snake_05",
+          "face": "front",
+          "kind": "silk",
+          "layer": 3,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "e85f400bad578100",
+          "logical_id": "snake-leo:rear:silk:001",
+          "source_id": "constellation_edge_01_01",
+          "face": "rear",
+          "kind": "silk",
+          "layer": 3,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "179797378a8e9f3e",
+          "logical_id": "snake-leo:rear:silk:002",
+          "source_id": "constellation_edge_01_02",
+          "face": "rear",
+          "kind": "silk",
+          "layer": 3,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "99568bc303cc9216",
+          "logical_id": "snake-leo:rear:silk:003",
+          "source_id": "constellation_edge_02_01",
+          "face": "rear",
+          "kind": "silk",
+          "layer": 3,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "d8ad0996791ea336",
+          "logical_id": "snake-leo:rear:silk:004",
+          "source_id": "constellation_edge_02_02",
+          "face": "rear",
+          "kind": "silk",
+          "layer": 3,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "746456f9f4f9f071",
+          "logical_id": "snake-leo:rear:silk:005",
+          "source_id": "constellation_edge_03_01",
+          "face": "rear",
+          "kind": "silk",
+          "layer": 3,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "7faf21ec32768a87",
+          "logical_id": "snake-leo:rear:silk:006",
+          "source_id": "constellation_edge_03_02",
+          "face": "rear",
+          "kind": "silk",
+          "layer": 3,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "c697b2268acee77e",
+          "logical_id": "snake-leo:rear:silk:007",
+          "source_id": "constellation_edge_04_01",
+          "face": "rear",
+          "kind": "silk",
+          "layer": 3,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "485465c1868a7353",
+          "logical_id": "snake-leo:rear:silk:008",
+          "source_id": "constellation_edge_04_02",
+          "face": "rear",
+          "kind": "silk",
+          "layer": 3,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "2a05dee960807af4",
+          "logical_id": "snake-leo:rear:silk:009",
+          "source_id": "constellation_edge_05_01",
+          "face": "rear",
+          "kind": "silk",
+          "layer": 3,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "867512b49f52492d",
+          "logical_id": "snake-leo:rear:silk:010",
+          "source_id": "constellation_edge_05_02",
+          "face": "rear",
+          "kind": "silk",
+          "layer": 3,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "e63b54c730a24c00",
+          "logical_id": "snake-leo:rear:silk:011",
+          "source_id": "constellation_edge_06_01",
+          "face": "rear",
+          "kind": "silk",
+          "layer": 3,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "f8479d44a4f30184",
+          "logical_id": "snake-leo:rear:silk:012",
+          "source_id": "constellation_edge_06_02",
+          "face": "rear",
+          "kind": "silk",
+          "layer": 3,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "524b01996c515f00",
+          "logical_id": "snake-leo:rear:silk:013",
+          "source_id": "constellation_edge_07_01",
+          "face": "rear",
+          "kind": "silk",
+          "layer": 3,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "44405d2f38914798",
+          "logical_id": "snake-leo:rear:silk:014",
+          "source_id": "constellation_edge_08_01",
+          "face": "rear",
+          "kind": "silk",
+          "layer": 3,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "5fc2f3ad97b828d7",
+          "logical_id": "snake-leo:rear:silk:015",
+          "source_id": "constellation_edge_08_02",
+          "face": "rear",
+          "kind": "silk",
+          "layer": 3,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "241fb157117cdb51",
+          "logical_id": "snake-leo:rear:silk:016",
+          "source_id": "constellation_edge_09_01",
+          "face": "rear",
+          "kind": "silk",
+          "layer": 3,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "1882494591e1d681",
+          "logical_id": "snake-leo:rear:silk:017",
+          "source_id": "constellation_edge_10_01",
+          "face": "rear",
+          "kind": "silk",
+          "layer": 3,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "2c1db312575dd761",
+          "logical_id": "snake-leo:rear:silk:018",
+          "source_id": "constellation_edge_10_02",
+          "face": "rear",
+          "kind": "silk",
+          "layer": 3,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "628f6ed9e18632b1",
+          "logical_id": "snake-leo:rear:silk:019",
+          "source_id": "star_ring_01_01",
+          "face": "rear",
+          "kind": "silk",
+          "layer": 3,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "d3a125decafc6cb1",
+          "logical_id": "snake-leo:rear:silk:020",
+          "source_id": "star_ring_02_01",
+          "face": "rear",
+          "kind": "silk",
+          "layer": 3,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "9416d1718a78141b",
+          "logical_id": "snake-leo:rear:silk:021",
+          "source_id": "star_ring_03_01",
+          "face": "rear",
+          "kind": "silk",
+          "layer": 3,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "dc6f07830351527f",
+          "logical_id": "snake-leo:rear:silk:022",
+          "source_id": "star_ring_04_01",
+          "face": "rear",
+          "kind": "silk",
+          "layer": 3,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "918b776286c331b4",
+          "logical_id": "snake-leo:rear:silk:023",
+          "source_id": "star_ring_05_01",
+          "face": "rear",
+          "kind": "silk",
+          "layer": 3,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "5d1bab3c1d977102",
+          "logical_id": "snake-leo:rear:silk:024",
+          "source_id": "star_ring_06_01",
+          "face": "rear",
+          "kind": "silk",
+          "layer": 3,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "ac231612e0ee81c9",
+          "logical_id": "snake-leo:rear:silk:025",
+          "source_id": "star_ring_07_01",
+          "face": "rear",
+          "kind": "silk",
+          "layer": 3,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "78a199b5cae04d36",
+          "logical_id": "snake-leo:rear:silk:026",
+          "source_id": "star_ring_08_01",
+          "face": "rear",
+          "kind": "silk",
+          "layer": 3,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "25b25bb67632b62f",
+          "logical_id": "snake-leo:rear:silk:027",
+          "source_id": "star_ring_09_01",
+          "face": "rear",
+          "kind": "silk",
+          "layer": 3,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "d3080de09c1890d9",
+          "logical_id": "snake-leo:rear:silk:028",
+          "source_id": "label_leo_01",
+          "face": "rear",
+          "kind": "silk",
+          "layer": 3,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "c6db19d68315c916",
+          "logical_id": "snake-leo:rear:silk:029",
+          "source_id": "label_leo_02",
+          "face": "rear",
+          "kind": "silk",
+          "layer": 3,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "a8992bcf94ebd434",
+          "logical_id": "snake-leo:rear:silk:030",
+          "source_id": "label_leo_03",
+          "face": "rear",
+          "kind": "silk",
+          "layer": 3,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "d9063fe8b860e3a1",
+          "logical_id": "snake-leo:rear:silk:031",
+          "source_id": "label_ad_astra_01",
+          "face": "rear",
+          "kind": "silk",
+          "layer": 3,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "eb039a34c43f8fed",
+          "logical_id": "snake-leo:rear:silk:032",
+          "source_id": "label_ad_astra_02",
+          "face": "rear",
+          "kind": "silk",
+          "layer": 3,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "883f4b7c590fa000",
+          "logical_id": "snake-leo:rear:silk:033",
+          "source_id": "label_ad_astra_03",
+          "face": "rear",
+          "kind": "silk",
+          "layer": 3,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "bb449b26ed901b3b",
+          "logical_id": "snake-leo:rear:silk:034",
+          "source_id": "label_ad_astra_04",
+          "face": "rear",
+          "kind": "silk",
+          "layer": 3,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "b44152fb1c489659",
+          "logical_id": "snake-leo:rear:silk:035",
+          "source_id": "label_ad_astra_05",
+          "face": "rear",
+          "kind": "silk",
+          "layer": 3,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "9fa3c603ed4d67ae",
+          "logical_id": "snake-leo:rear:silk:036",
+          "source_id": "label_ad_astra_06",
+          "face": "rear",
+          "kind": "silk",
+          "layer": 3,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "8d6d2edcb819ddce",
+          "logical_id": "snake-leo:rear:silk:037",
+          "source_id": "label_ad_astra_07",
+          "face": "rear",
+          "kind": "silk",
+          "layer": 3,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "91aafd78cb72cf80",
+          "logical_id": "snake-leo:rear:mask:001",
+          "source_id": "mask_opening_01",
+          "face": "rear",
+          "kind": "mask",
+          "layer": 5,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "a83b8ea920e0804f",
+          "logical_id": "snake-leo:rear:mask:002",
+          "source_id": "mask_opening_02",
+          "face": "rear",
+          "kind": "mask",
+          "layer": 5,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "400445b8dbb83091",
+          "logical_id": "snake-leo:rear:mask:003",
+          "source_id": "mask_opening_03",
+          "face": "rear",
+          "kind": "mask",
+          "layer": 5,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "d7b1986bfaaeb5ff",
+          "logical_id": "snake-leo:rear:mask:004",
+          "source_id": "mask_opening_04",
+          "face": "rear",
+          "kind": "mask",
+          "layer": 5,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "d3ef1adee6016c5d",
+          "logical_id": "snake-leo:rear:mask:005",
+          "source_id": "mask_opening_05",
+          "face": "rear",
+          "kind": "mask",
+          "layer": 5,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "29900754d2da1d3f",
+          "logical_id": "snake-leo:rear:mask:006",
+          "source_id": "mask_opening_06",
+          "face": "rear",
+          "kind": "mask",
+          "layer": 5,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "98535b8095928d7f",
+          "logical_id": "snake-leo:rear:mask:007",
+          "source_id": "mask_opening_07",
+          "face": "rear",
+          "kind": "mask",
+          "layer": 5,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "255c99283423fe44",
+          "logical_id": "snake-leo:rear:mask:008",
+          "source_id": "mask_opening_08",
+          "face": "rear",
+          "kind": "mask",
+          "layer": 5,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "12437a87822579c8",
+          "logical_id": "snake-leo:rear:mask:009",
+          "source_id": "mask_opening_09",
+          "face": "rear",
+          "kind": "mask",
+          "layer": 5,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "4bbee9dfa34470b1",
+          "logical_id": "snake-leo:rear:mask:010",
+          "source_id": "mask_opening_10",
+          "face": "rear",
+          "kind": "mask",
+          "layer": 5,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "2a6bdbbc84919524",
+          "logical_id": "snake-leo:rear:mask:011",
+          "source_id": "mask_opening_11",
+          "face": "rear",
+          "kind": "mask",
+          "layer": 5,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "aa19b5f8ccb525bb",
+          "logical_id": "snake-leo:rear:mask:012",
+          "source_id": "mask_opening_12",
+          "face": "rear",
+          "kind": "mask",
+          "layer": 5,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "7b79255e1f69f20d",
+          "logical_id": "snake-leo:rear:mask:013",
+          "source_id": "mask_opening_13",
+          "face": "rear",
+          "kind": "mask",
+          "layer": 5,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "5c381e8a9e375fbe",
+          "logical_id": "snake-leo:rear:mask:014",
+          "source_id": "mask_opening_14",
+          "face": "rear",
+          "kind": "mask",
+          "layer": 5,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "a7040dd88ffc1765",
+          "logical_id": "snake-leo:rear:mask:015",
+          "source_id": "mask_opening_15",
+          "face": "rear",
+          "kind": "mask",
+          "layer": 5,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "a989a6534cdb4bf7",
+          "logical_id": "snake-leo:rear:mask:016",
+          "source_id": "mask_opening_16",
+          "face": "rear",
+          "kind": "mask",
+          "layer": 5,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "92ffd1e3d556d0cf",
+          "logical_id": "snake-leo:rear:mask:017",
+          "source_id": "mask_opening_17",
+          "face": "rear",
+          "kind": "mask",
+          "layer": 5,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        }
+      ],
+      "source": "variants/standard-green-white/eda/native/snake-leo-source.jsonl",
+      "source_sha256": "c74e63ddf6bf244c288e065517cb2130eee50a6671a777d39deaefde23f90b2e",
+      "protected_geometry_unchanged": true,
+      "saved_reopened": true,
+      "artwork_source": {
+        "path": "variants/standard-green-white/artwork/snake-leo-standard-layer-artwork.json",
+        "size": 2154955,
+        "sha256": "ba72423d36b80ac48f5e2f403a52a65ea30a77771a1958f5339435857945e4fb"
+      },
+      "import_geometry_sha256": "873a399c92f55118445c6fa9b3482fe10532255004bef68458060d53ca176aae",
+      "import_method": "delete_exact_color_OBJs_then_validated_native_FILL_JSONL_setDocumentSource",
+      "actual_width_mil": [
+        0.2
+      ],
+      "native_width_policy": "Requested width 0; runtime may normalize SOLID width to known 0.2 mil. Exported Gerber contours require independent verification.",
+      "drc": [],
+      "gerber": "variants/standard-green-white/manufacturing-draft/snake-leo-green-white-gerber.zip",
+      "gerber_members": "variants/standard-green-white/manufacturing-draft/snake-leo-green-white-gerber.members.json",
+      "color_silkscreen_export": false
+    }
+  ],
+  "original_baselines": {
+    "horse-sagittarius": {
+      "uuid": "4a4719695b24dc2b",
+      "source": "variants/standard-green-white/eda/native/before-horse-sagittarius-source.jsonl",
+      "sha256": "c994fab41feb7f3b480bb13170b8503a4756479c01ed4548f51d2e72919b31c1",
+      "live_retained": true
+    },
+    "snake-leo": {
+      "uuid": "fe8ee4534ee0b941",
+      "source": "variants/standard-green-white/eda/native/before-snake-leo-source.jsonl",
+      "sha256": "5323c8cef4dcf1f16058c9c85f282c823c782099adfbdca61b73ebd2e6b02ccd",
+      "live_retained": true
+    },
+    "core": {
+      "uuid": "eb14b9eaec4f920c",
+      "source": "variants/standard-green-white/eda/native/before-core-source.jsonl",
+      "sha256": "8dab7ed9affadf91e186fea195f485acfaa30a3a471d28ae708f197d6295db05",
+      "live_retained": true
+    }
+  },
+  "project_before": "variants/standard-green-white/eda/native/nfc-before-standard-copies.epro2",
+  "native_project": {
+    "path": "variants/standard-green-white/eda/native/nfc-color-and-green-white.epro2",
+    "size": 1121683,
+    "sha256": "11afd40fc70b3748d4cd97956c71bb974e724b9fdec404f8487bb162b85659f9"
+  },
+  "artwork_file": "variants/standard-green-white/artwork/import-geometry.json",
+  "release_status": "HOLD_CAM_C1_PHYSICAL_VALIDATION_PENDING",
+  "status": "ordinary_green_white_pcbs_saved_and_exported",
+  "files": {
+    "variants/standard-green-white/eda/native/base-copy-horse-sagittarius-source.jsonl": {
+      "size": 209274,
+      "sha256": "7c9d5aa2074677678b710069f10e447c5f455077b93f4b6a234917c227e68936"
+    },
+    "variants/standard-green-white/eda/native/base-copy-snake-leo-source.jsonl": {
+      "size": 221607,
+      "sha256": "10bb6660b7ce6879359d52d053789f377b15bc8d2fac2dc9eb688060518e2160"
+    },
+    "variants/standard-green-white/eda/native/before-core-source.jsonl": {
+      "size": 104578,
+      "sha256": "8dab7ed9affadf91e186fea195f485acfaa30a3a471d28ae708f197d6295db05"
+    },
+    "variants/standard-green-white/eda/native/before-horse-sagittarius-source.jsonl": {
+      "size": 209274,
+      "sha256": "c994fab41feb7f3b480bb13170b8503a4756479c01ed4548f51d2e72919b31c1"
+    },
+    "variants/standard-green-white/eda/native/before-snake-leo-source.jsonl": {
+      "size": 221607,
+      "sha256": "5323c8cef4dcf1f16058c9c85f282c823c782099adfbdca61b73ebd2e6b02ccd"
+    },
+    "variants/standard-green-white/eda/native/horse-sagittarius-source.jsonl": {
+      "size": 381755,
+      "sha256": "3e1f69e8f491f2e434f7f361b6f5f5b64a33cde1896538dcaaf1cd833d96efb2"
+    },
+    "variants/standard-green-white/eda/native/nfc-before-standard-copies.epro2": {
+      "size": 932334,
+      "sha256": "b8d87ee4c26cdab758e07a703c844504ee7c904e55ef4d6b74a71244181d172d"
+    },
+    "variants/standard-green-white/eda/native/nfc-color-and-green-white.epro2": {
+      "size": 1121683,
+      "sha256": "11afd40fc70b3748d4cd97956c71bb974e724b9fdec404f8487bb162b85659f9"
+    },
+    "variants/standard-green-white/eda/native/snake-leo-source.jsonl": {
+      "size": 404583,
+      "sha256": "c74e63ddf6bf244c288e065517cb2130eee50a6671a777d39deaefde23f90b2e"
+    },
+    "variants/standard-green-white/manufacturing-draft/horse-sagittarius-green-white-gerber.members.json": {
+      "size": 2331,
+      "sha256": "7c41646796a0e5ded649c139734b300470c8480b612e3ca3dae614ddb7499348"
+    },
+    "variants/standard-green-white/manufacturing-draft/horse-sagittarius-green-white-gerber.zip": {
+      "size": 113108,
+      "sha256": "ba056c5c0e909a3c6dc45e557e530030dbc4a884b00c8a3f0d1e9e2255bddeb4"
+    },
+    "variants/standard-green-white/manufacturing-draft/snake-leo-green-white-gerber.members.json": {
+      "size": 2331,
+      "sha256": "f1f5dd127af95454a109fe10f3b74f297438c4a5728d9b7c165c20c196a4fc42"
+    },
+    "variants/standard-green-white/manufacturing-draft/snake-leo-green-white-gerber.zip": {
+      "size": 122319,
+      "sha256": "522e487bba702c8f451d91239103cc7425135adfa1342ffed4ba066762d0e9c7"
+    }
+  }
+}

@@ -22,6 +22,7 @@ import build_standard_layer_artwork as art
 import create_standard_layer_pcbs as native
 from constellation_slot_layout import optimize_slot_layout
 import talisman_cover_artwork
+from pcb_cover_border import build_border
 
 HW = Path(__file__).resolve().parents[1]
 OUT = HW/'variants/twelve-options'
@@ -164,20 +165,24 @@ def generate():
     for i,slot in enumerate(slots):poly(affinity.translate(affinity.scale(slot,1,-1,origin=(0,0)),center[0]-18.5,center[1]+18.5),name+f':light-slot:{i}')
     silk=silk.union(label(name.upper(),3.7)).union(label('AD ASTRA',32.1,1.45))
    else:
-    silk,mask,details=talisman_cover_artwork.build_cover(name)
+    silk,mask,details=talisman_cover_artwork.build_cover(name,board_margin_mm=3.0)
     silk=silk.union(label(name.upper(),32.1,1.6))
    clip=affinity.translate(OCT,18.5,18.5).buffer(-1.2)
    if not abbr and silk.difference(clip).area>1e-8:raise ValueError('Talisman/label would be cropped')
    silk=silk.intersection(clip)
    assert silk.is_valid and not silk.is_empty and silk.intersection(mask).area<1e-8
    if not mask.is_empty:assert silk.distance(mask)>.149
+   border,border_meta,_=build_border(silk,mask,board=affinity.translate(OCT,18.5,18.5))
+   details['border']=border_meta
    for kind,g,layer in [('silk',silk,3),('mask',mask,5)]:
     for i,p in enumerate(art.polygons(g)):
      add('FILL',{'partitionId':'','groupId':0,'netName':'','layerId':layer,'width':.2,'fillStyle':'SOLID','path':native_path(p,center),'locked':True,'zIndex':-1},f'{name}:{kind}:{i}')
-   covers.append({'id':name,'name_zh':zh,'center_native_mm':center,'details':details,'silk_polygons':len(art.polygons(silk)),'mask_polygons':len(art.polygons(mask))})
+   for i,p in enumerate(art.polygons(border)):
+    add('FILL',{'partitionId':'','groupId':0,'netName':'','layerId':3,'width':.2,'fillStyle':'SOLID','path':native_path(p,center),'locked':True,'zIndex':-1},f'{name}:border:{i}')
+   covers.append({'id':name,'name_zh':zh,'center_native_mm':center,'details':details,'silk_polygons':len(art.polygons(silk))+len(art.polygons(border)),'mask_polygons':len(art.polygons(mask))})
    # Exterior view of entire PCB: SVG y increases downward.
    cx,cy=center[0]-18.5,100-center[1]-18.5
-   svg_parts.append(f'<g transform="translate({cx},{cy})">'+svg_geometry(affinity.translate(OCT,18.5,18.5),'#147442')+svg_geometry(mask,'#c6ad78')+svg_geometry(silk,'#fafaf3')+'</g>')
+   svg_parts.append(f'<g transform="translate({cx},{cy})">'+svg_geometry(affinity.translate(OCT,18.5,18.5),'#147442')+svg_geometry(mask,'#c6ad78')+svg_geometry(silk.union(border),'#fafaf3')+'</g>')
   svg_parts.append('</svg>')
   (OUT/'artwork').mkdir(exist_ok=True);svg=OUT/'artwork'/f'{key}-100mm.svg';svg.write_text(''.join(svg_parts),encoding='utf-8')
   from PIL import Image
@@ -208,6 +213,8 @@ def generate():
  shapes=[affinity.translate(OCT,*c) for c in CENTERS]
  manifest['minimum_cover_to_cover_gap_mm']=min(a.distance(b) for i,a in enumerate(shapes) for b in shapes[i+1:])
  manifest['minimum_outer_rail_mm']=1.5
+ border_module=Path(__file__).with_name('pcb_cover_border.py')
+ manifest['border_generator']={'path':border_module.relative_to(HW.parents[1]).as_posix(),'sha256':hashlib.sha256(border_module.read_bytes()).hexdigest()}
  manifest['files']={p.relative_to(OUT).as_posix():{'size':p.stat().st_size,'sha256':hashlib.sha256(p.read_bytes()).hexdigest()} for folder in ('geometry','artwork','sources') for p in (OUT/folder).glob('*') if p.is_file()}
  write(OUT/'design-manifest.json',manifest)
  print(json.dumps({'panels':manifest['panels'],'cover_gap_mm':manifest['minimum_cover_to_cover_gap_mm']},ensure_ascii=False,indent=2))

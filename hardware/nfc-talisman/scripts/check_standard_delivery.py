@@ -21,6 +21,13 @@ _BASE = importlib.util.module_from_spec(_SPEC)
 _SPEC.loader.exec_module(_BASE)
 VARIANTS = _BASE.VARIANTS
 STANDARD = "variants/standard-green-white"
+ORIGINAL_UUIDS = {"core": "eb14b9eaec4f920c", "horse-sagittarius": "4a4719695b24dc2b",
+                  "snake-leo": "fe8ee4534ee0b941"}
+STANDARD_UUIDS = {"horse-sagittarius": "7b9104396cd59877", "snake-leo": "8bb2139a68d10671"}
+TWELVE_UUIDS = {"constellations-a": "da4d85d9f04979eb", "constellations-b": "9883f07d70af99ab",
+                "zodiac-a": "abc3d3a5e6e4793c", "zodiac-b": "215baefd4debbd14"}
+ORIGINAL_FIVE = set(ORIGINAL_UUIDS.values()) | set(STANDARD_UUIDS.values())
+SHARED_NINE = ORIGINAL_FIVE | set(TWELVE_UUIDS.values())
 PHYSICAL_KINDS = {"COMPONENT", "ATTR", "PAD_NET", "PAD", "LINE", "ARC", "VIA", "POLY",
                   "FILL", "POUR", "REGION", "STRING", "NET", "TRACK", "RECT", "CIRCLE", "TEXT"}
 PRESERVED_GERBER = {
@@ -59,6 +66,220 @@ def _same_path(expected: Any, actual: Any, tolerance: float = .001) -> bool:
     if isinstance(expected, (int, float)) and not isinstance(expected, bool):
         return isinstance(actual, (int, float)) and not isinstance(actual, bool) and math.isfinite(actual) and abs(expected - actual) <= tolerance
     return expected == actual
+
+
+def _native_documents(root: Path, native: dict[str, Any]) -> dict[str, Any]:
+    path = _BASE._relative(root, native["path"])
+    _BASE._file_check(path, native)
+    with _BASE._archive(path) as archive:
+        journals = [name for name in archive.namelist() if name.endswith(".epru")]
+        _BASE._require(len(journals) == 1, "Expected one native journal")
+        return _BASE._replay(archive.read(journals[0]).decode("utf-8-sig"))
+
+
+def _pcb_uuids(documents: dict[str, Any]) -> set[str]:
+    return {uuid for uuid, doc in documents.items() if doc["head"]["docType"] == "PCB"}
+
+
+def _canonical_hash(geometry: Any) -> str:
+    return _BASE._digest(json.dumps(geometry, sort_keys=True, separators=(",", ":"),
+                                  ensure_ascii=True, allow_nan=False).encode("ascii"))
+
+
+def _ring_points(path: list[Any]) -> list[list[float]]:
+    _BASE._require(len(path) >= 9 and path[2] == "L" and len(path) % 2 == 1,
+                   "Expected a closed straight-line artwork contour")
+    values = path[:2] + path[3:]
+    points = [values[index:index + 2] for index in range(0, len(values), 2)]
+    _BASE._require(all(type(value) in (float, int) and math.isfinite(value) for value in values)
+                   and _same_path(points[0], points[-1]), "Invalid or unclosed artwork contour")
+    return points[:-1]
+
+
+def _contour_same(first: list[Any], second: list[Any]) -> bool:
+    left, right = _ring_points(first), _ring_points(second)
+    if len(left) != len(right):
+        return False
+    size = len(left)
+    return any(all(_same_path(left[index], right[(start + direction * index) % size]) for index in range(size))
+               for start in range(size) if _same_path(left[0], right[start]) for direction in (1, -1))
+
+
+def _polygon_same(first: list[Any], second: list[Any]) -> bool:
+    if len(first) != len(second) or not _contour_same(first[0], second[0]):
+        return False
+    remaining = list(second[1:])
+    for hole in first[1:]:
+        matching = [index for index, actual in enumerate(remaining) if _contour_same(hole, actual)]
+        if not matching:
+            return False
+        remaining.pop(matching[0])
+    return not remaining
+
+
+def _border_paths(geometry: dict[str, Any], center: list[float]) -> list[Any]:
+    _BASE._require(geometry["units"] == "mm" and geometry["coordinate_system"] == "cover_top_left_x_right_y_down",
+                   "Unexpected border coordinate system")
+
+    def ring(points: list[list[float]]) -> list[Any]:
+        _BASE._require(isinstance(points, list) and len(points) >= 3
+                       and all(isinstance(point, list) and len(point) == 2
+                               and all(type(value) in (float, int) and math.isfinite(value) for value in point)
+                               for point in points), "Invalid border polygon coordinates")
+        transformed = [[(center[0] + x - 18.5) / .0254, (center[1] + 18.5 - y) / .0254] for x, y in points]
+        if transformed[0] != transformed[-1]:
+            transformed.append(transformed[0])
+        return transformed[0] + ["L"] + [number for point in transformed[1:] for number in point]
+
+    return [[ring(polygon["exterior"]), *[ring(hole) for hole in polygon["holes"]]]
+            for polygon in geometry["polygons"]]
+
+
+def _check_border(metadata: dict[str, Any], native_paths: list[Any], center: list[float]) -> str:
+    """Bind a border's recorded local contours to separate Top-silk fills."""
+    _BASE._require(metadata["version"] == "af37-double-contour-ticks-v1" and metadata["layer_id"] == 3
+                   and metadata["units"] == "mm" and metadata["coordinate_system"] == "cover_top_left_x_right_y_down",
+                   "Unexpected uniform border version/layer/coordinates")
+    expected_parameters = {"across_flats_mm": 37., "outer_center_inset_mm": .7, "outer_width_mm": .22,
+                           "inner_center_inset_mm": 2.1, "inner_width_mm": .24, "tick_center_inset_mm": 1.35,
+                           "tick_centerline_length_mm": .42, "tick_width_mm": .22, "tick_pitch_mm": 2.4,
+                           "corner_dot_diameter_mm": .28, "content_safe_inset_mm": 3.,
+                           "cardinal_bridge_width_mm": 4., "postage_drill_diameter_mm": .4,
+                           "postage_hole_pitch_mm": .72, "postage_holes_per_bridge": 5}
+    _BASE._require(all(metadata["parameters"].get(key) == value for key, value in expected_parameters.items()),
+                   "Uniform border manufacturing/design parameters changed")
+    for geometry, fingerprint in (("geometry", "geometry_sha256"), ("content_safe_geometry", "content_safe_geometry_sha256")):
+        _BASE._require(_canonical_hash(metadata[geometry]) == metadata[fingerprint], "Border canonical geometry fingerprint differs")
+    expected = _border_paths(metadata["geometry"], center)
+    _BASE._require(len(expected) == len(native_paths) == metadata["polygon_count"] and bool(expected),
+                   "Border polygon count differs from its separate native silk fills")
+    remaining = list(native_paths)
+    for polygon in expected:
+        matches = [index for index, actual in enumerate(remaining) if _polygon_same(polygon, actual)]
+        _BASE._require(bool(matches), "Border contour missing from the native artwork geometry")
+        remaining.pop(matches[0])
+    for key, minimum in (("board_edge", .5), ("postage_holes", .2), ("cardinal_bridges", .3),
+                         ("existing_art", .2), ("aperture_mask", .2), ("disconnected_features", .2)):
+        value = metadata["clearances_mm"][key]
+        _BASE._require(value is None and key in ("aperture_mask", "existing_art")
+                       or type(value) in (float, int) and math.isfinite(value) and value >= minimum - .00001,
+                       "Reported border clearance failed: " + key)
+    return f"{len(expected)} separate Top-silk border polygons match canonical geometry; uniform parameters/recorded clearances pass"
+
+
+def _check_border_generator(root: Path, evidence: dict[str, Any]) -> str:
+    expected = "hardware/nfc-talisman/scripts/pcb_cover_border.py"
+    _BASE._require(evidence["path"] == expected, "Unexpected uniform border generator")
+    _BASE._file_check(_BASE._relative(root.parents[1], expected), {"sha256": evidence["sha256"]})
+    return "Uniform border generator SHA matches its frozen source"
+
+
+def _check_border_audit(root: Path) -> str:
+    report = _BASE._json(root / "variants/twelve-options/border-artwork-audit.json")
+    _BASE._require(report["schema_version"] == 1 and report["status"] == "passed" and not report["errors"],
+                   "Independent border/physical revision audit failed")
+    _BASE._require(report["auditor"]["path"] == "hardware/nfc-talisman/scripts/audit_cover_borders.py",
+                   "Unexpected independent border auditor")
+    _BASE._file_check(_BASE._relative(root.parents[1], report["auditor"]["path"]), report["auditor"])
+    _check_border_generator(root, report["border_generator"])
+    design = _BASE._json(root / "variants/twelve-options/design-manifest.json")
+    artwork = _BASE._json(root / STANDARD / "artwork/manifest.json")
+    _BASE._require(report["border_generator"] == design["border_generator"] == artwork["border_generator"],
+                   "Border generator source bindings differ between deliveries")
+    required_inputs = {"variants/twelve-options/design-manifest.json", STANDARD + "/artwork/manifest.json"}
+    expected_metadata = {}
+    for variant in VARIANTS:
+        name = STANDARD + "/artwork/" + artwork["variants"][variant]["geometry_json"]
+        required_inputs.add(name)
+        artifact = _BASE._json(_BASE._relative(root, name))
+        for face, value in artifact["faces"].items():
+            expected_metadata[f"standard/{variant}/{face}"] = value["source_metadata"]["border"]
+    for panel in design["panels"]:
+        name = "variants/twelve-options/" + panel["geometry"]
+        required_inputs.add(name)
+        for cover in _BASE._json(_BASE._relative(root, name))["covers"]:
+            expected_metadata["twelve/" + cover["id"]] = cover["details"]["border"]
+    _BASE._require(required_inputs <= set(report["inputs"]), "Independent border audit omits current design inputs")
+    for name, metadata in report["inputs"].items():
+        _BASE._file_check(_BASE._relative(root, name), metadata)
+    expected = {f"standard/{variant}/{face}" for variant in VARIANTS for face in ("front", "rear")}
+    expected |= {"twelve/" + cover for panel in design["panels"] for cover in panel["covers"]}
+    _BASE._require(set(report["covers"]) == expected and len(expected) == 24,
+                   "Independent border audit does not cover all 24 product faces")
+    for key, evidence in report["covers"].items():
+        _BASE._require(evidence["passed"] is True and evidence["native_border_paths_match"] is True
+                       and evidence["geometry_sha256"] == expected_metadata[key]["geometry_sha256"],
+                       "Independent border geometry check failed: " + key)
+    _BASE._require(set(report["physical_retention"]) == set(TWELVE_UUIDS) | set(VARIANTS)
+                   and all(evidence["passed"] is True for evidence in report["physical_retention"].values()),
+                   "Independent audit did not retain all six panel physical/mask baselines")
+    _BASE._require(all(evidence["baseline"] in report["inputs"] and evidence["current"] in report["inputs"]
+                       for evidence in report["physical_retention"].values()),
+                   "Independent physical audit omits a before/current native source fingerprint")
+    return "Independent 24-face border/clearance and six-panel physical/mask retention audit is source-hash bound"
+
+
+def _check_silk_revision(root: Path, uuid: str, evidence: dict[str, Any],
+                         current: dict[tuple[str, str], Any], created: list[dict[str, Any]]) -> str:
+    """Permit an owned Top-silk revision; retain mask and every other primitive.
+
+    Ownership is bound to the archived pre-revision manifest and five-PCB
+    snapshot, rather than inferred from layer numbers in a mutable new source.
+    Mask IDs may be regenerated by the importer, but their paths and all other
+    normalized manufacturing properties must still match one for one.
+    """
+    _BASE._require(uuid in STANDARD_UUIDS.values(), "Only the two ordinary PCBs may revise owned silk")
+    source = _BASE._relative(root, evidence["path"])
+    _BASE._file_check(source, {"sha256": evidence["sha256"]})
+    before = _records(source, uuid)
+    old_path = _BASE._relative(root, evidence["manifest_path"])
+    _BASE._file_check(old_path, {"sha256": evidence["manifest_sha256"]})
+    old = _BASE._json(old_path)
+    _BASE._require(not old.get("archive_scope"), "Revision baseline must be the historical five-PCB delivery")
+    old_boards = {board["uuid"]: board for board in old["boards"]}
+    _BASE._require(set(old_boards) == set(STANDARD_UUIDS.values()), "Incorrect historical ordinary PCB set")
+    old_docs = _native_documents(root, old["native_project"])
+    _BASE._require(_pcb_uuids(old_docs) == ORIGINAL_FIVE, "Historical five-PCB snapshot changed scope")
+    _BASE._require(_BASE._design_records(before) == _BASE._design_records(old_docs[uuid]["records"]),
+                   "Revision source differs from the historical five-PCB snapshot")
+    old_created = old_boards[uuid]["created"]
+
+    def owned(records: dict[tuple[str, str], Any], entries: list[dict[str, Any]]) -> tuple[set[str], set[str]]:
+        _BASE._require(len({item["id"] for item in entries}) == len(entries), "Duplicate owned artwork IDs")
+        silk, mask = set(), set()
+        for item in entries:
+            _BASE._require(item["kind"] in ("silk", "mask"), "Unexpected owned artwork kind")
+            layer = 3 if item["kind"] == "silk" else 5
+            body = records.get(("FILL", item["id"]))
+            _BASE._require(isinstance(body, dict) and body.get("layerId") == item["layer"] == layer
+                           and body.get("netName") == "" and body.get("fillStyle") in (0, "SOLID")
+                           and type(body.get("width")) in (int, float) and body["width"] in (0, .2),
+                           "Invalid owned non-net silk/mask fill")
+            (silk if layer == 3 else mask).add(item["id"])
+        actual = {key[1] for key, body in records.items() if key[0] == "FILL" and body.get("layerId") in (3, 5)}
+        _BASE._require(actual == silk | mask, "Unowned or missing ordinary artwork fill")
+        return silk, mask
+
+    old_silk, old_mask = owned(before, old_created)
+    new_silk, new_mask = owned(current, created)
+    declared = evidence["owned_silk_ids"]
+    _BASE._require(len(declared) == len(set(declared)) and set(declared) == old_silk,
+                   "Revision ownership differs from the historical manifest")
+    old_normal, new_normal = _BASE._design_records(before), _BASE._design_records(current)
+    remaining = [new_normal[("FILL", ident)] for ident in sorted(new_mask)]
+    for ident in sorted(old_mask):
+        expected = old_normal[("FILL", ident)]
+        properties = {key: value for key, value in expected.items() if key != "path"}
+        matches = [index for index, actual in enumerate(remaining)
+                   if properties == {key: value for key, value in actual.items() if key != "path"}
+                   and _same_path(expected["path"], actual["path"])]
+        _BASE._require(bool(matches), "Ordinary mask geometry/properties changed during the silk revision")
+        remaining.pop(matches[0])
+    _BASE._require(not remaining, "Additional mask opening introduced during the silk revision")
+    _BASE._require(_protected(before, old_silk | old_mask) == _protected(current, new_silk | new_mask),
+                   "Silk revision changed copper, pads, components, drilling, outlines or other protected artwork")
+    _BASE._require(_objects(before) == _objects(current), "Silk revision changed color objects")
+    return f"Historical ownership verified; {len(old_silk)} -> {len(new_silk)} Top-silk fills; {len(old_mask)} mask fills and all other physical primitives retained"
 
 
 def _gerber_commands(data: bytes, *, remove_color_image: bool = False) -> list[str]:
@@ -214,6 +435,9 @@ def validate(root: Path) -> dict[str, Any]:
         _BASE._require(manifest["release_status"].startswith("HOLD"), "Manufacturing HOLD must remain")
         _BASE._require(len(manifest["boards"]) == 2 and {b["variant"] for b in manifest["boards"]} == set(VARIANTS),
                        "Expected two independent ordinary variant PCBs")
+        _BASE._require({b["variant"]: b["uuid"] for b in manifest["boards"]} == STANDARD_UUIDS
+                       and {key: value["uuid"] for key, value in manifest["original_baselines"].items()} == ORIGINAL_UUIDS,
+                       "Ordinary/original PCB identities differ from the fixed delivery")
         holder["manifest"] = manifest
         return f"Two variants; {len(manifest['files'])} recorded files; {manifest['release_status']}"
 
@@ -228,6 +452,9 @@ def validate(root: Path) -> dict[str, Any]:
             art_manifest = _BASE._json(folder / "manifest.json")
             for name, metadata in art_manifest["files"].items():
                 _BASE._file_check(_BASE._relative(folder, name), metadata)
+            border_required = "archive_scope" in manifest or "border_generator" in art_manifest
+            if border_required:
+                _check_border_generator(root, art_manifest["border_generator"])
             artifacts = {}
             for variant in VARIANTS:
                 artifact = _BASE._json(folder / art_manifest["variants"][variant]["geometry_json"])
@@ -236,6 +463,14 @@ def validate(root: Path) -> dict[str, Any]:
                     _BASE._file_check(_BASE._relative(root.parents[1], name), {"sha256": digest})
                 _BASE._require(artifact["process"]["color_printing"] is False and artifact["process"]["decorative_copper"] is False,
                                "Artwork process adds colored printing or decorative copper")
+                if border_required:
+                    for face_name, face in artifact["faces"].items():
+                        border = [shape for shape in face["silk_polygons"]
+                                  if shape["category"] == "textured_octagonal_border_and_inner_divider"]
+                        _BASE._require(all(shape["layer_id"] == 3 and shape["id"].startswith("cover_border_") for shape in border),
+                                       "Ordinary border is not separate owned Top silk")
+                        center = [20.5, 76.5] if face_name == "front" else [79.5, 23.5]
+                        _check_border(face["source_metadata"]["border"], [shape["path_mil"] for shape in border], center)
                 artifacts[variant] = artifact
             imported = _BASE._json(_BASE._relative(root, manifest["artwork_file"]))
             for variant in VARIANTS:
@@ -244,22 +479,47 @@ def validate(root: Path) -> dict[str, Any]:
             return "Artwork hashes/source hashes match; import geometry equals both generated artifacts"
 
         check("ordinary_artwork_sources", artwork_sources)
+        if "archive_scope" in manifest:
+            check("uniform_border_independent_audit", lambda: _check_border_audit(root))
 
         def load_archive() -> str:
-            native = manifest["native_project"]
-            path = _BASE._relative(root, native["path"])
-            _BASE._file_check(path, native)
-            with _BASE._archive(path) as archive:
-                journals = [name for name in archive.namelist() if name.endswith(".epru")]
-                _BASE._require(len(journals) == 1, "Expected one native journal")
-                documents = _BASE._replay(archive.read(journals[0]).decode("utf-8-sig"))
-            pcbs = {uuid for uuid, doc in documents.items() if doc["head"]["docType"] == "PCB"}
-            expected = {board["uuid"] for board in manifest["boards"]} | {b["uuid"] for b in manifest["original_baselines"].values()}
-            _BASE._require(len(expected) == 5 and pcbs == expected, "Native archive must contain original three and two new PCB documents")
+            documents = _native_documents(root, manifest["native_project"])
+            if "archive_scope" in manifest:
+                scope = manifest["archive_scope"]["pcb_uuids"]
+                _BASE._require(len(scope) == 9 and set(scope) == SHARED_NINE and _pcb_uuids(documents) == SHARED_NINE,
+                               "Shared native archive must contain exactly the fixed nine PCB documents")
+                _BASE._require(manifest["native_project"]["path"] == "variants/twelve-options/eda/native/nfc-twelve-options.epro2"
+                               and manifest["historical_five_pcb_snapshot"] == STANDARD + "/eda/native/nfc-color-and-green-white.epro2",
+                               "Current shared archive and historical five-PCB snapshot paths differ")
+                twelve = _BASE._json(root / "variants/twelve-options/export-manifest.json")
+                _BASE._require({b["key"]: b["uuid"] for b in twelve["boards"]} == TWELVE_UUIDS
+                               and set(twelve["existing"]) == ORIGINAL_FIVE, "Incorrect linked twelve-option PCB scope")
+                _BASE._require(all(manifest["native_project"][key] == twelve["native_project"][key]
+                                   for key in ("path", "sha256", "size")), "Current deliveries do not share the same nine-PCB archive")
+                for board in manifest["boards"]:
+                    linked = twelve["existing"][board["uuid"]]
+                    _BASE._require(linked["path"] == board["source"] and linked["sha256"] == board["source_sha256"]
+                                   and linked["uuid"] == board["uuid"], "Twelve-option ordinary source link is stale")
+                    _BASE._require(linked["retention_policy"] == "owned_top_silk_revision_physical_and_mask_preserved"
+                                   and linked["revision_before"] == board["border_revision"]["before"]
+                                   and board["border_revision"]["status"] == "saved_reopened",
+                                   "Explicit saved ordinary silk-revision evidence is missing")
+                for board in twelve["boards"]:
+                    source = _BASE._relative(root, board["source"]["path"])
+                    _BASE._file_check(source, {"sha256": board["source"]["sha256"]})
+                    _BASE._require(_BASE._design_records(_records(source, board["uuid"])) ==
+                                   _BASE._design_records(documents[board["uuid"]]["records"]),
+                                   "Shared archive differs from a current twelve-option PCB source")
+                holder["twelve"] = twelve
+                detail = "original three, two revised ordinary and four added PCB documents share the exact nine-PCB archive"
+            else:
+                _BASE._require(_pcb_uuids(documents) == ORIGINAL_FIVE,
+                               "Historical native archive must contain the original three and two ordinary PCB documents")
+                detail = "historical original core/color PCBs plus two ordinary PCBs present"
             holder["documents"] = documents
-            return "ZIP CRC and SHA/size pass; original core/color PCBs plus two ordinary PCBs present"
+            return "ZIP CRC and SHA/size pass; " + detail
 
-        check("five_pcb_native_archive", load_archive)
+        check("shared_nine_pcb_native_archive" if "archive_scope" in manifest else "five_pcb_native_archive", load_archive)
         documents = holder.get("documents")
         if documents is not None:
             def original_retained() -> str:
@@ -283,6 +543,10 @@ def validate(root: Path) -> dict[str, Any]:
             artifacts = holder.get("artifacts")
             for board in manifest["boards"]:
                 variant = board["variant"]
+                if "twelve" in holder:
+                    check(f"ordinary_silk_revision:{variant}", lambda board=board: _check_silk_revision(
+                        root, board["uuid"], holder["twelve"]["existing"][board["uuid"]]["revision_before"],
+                        documents[board["uuid"]]["records"], board["created"]))
                 check(f"ordinary_gerber:{variant}", lambda board=board: _check_gerber(root, board))
                 if artifacts is not None:
                     check(f"ordinary_native:{variant}", lambda board=board, variant=variant: _check_board(

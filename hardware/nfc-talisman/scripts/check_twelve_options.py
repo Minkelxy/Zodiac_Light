@@ -10,6 +10,8 @@ import zipfile
 
 S=importlib.util.spec_from_file_location('nfc_archive',Path(__file__).with_name('check_delivery.py'))
 BASE=importlib.util.module_from_spec(S);S.loader.exec_module(BASE)
+SS=importlib.util.spec_from_file_location('nfc_standard_archive',Path(__file__).with_name('check_standard_delivery.py'))
+STANDARD=importlib.util.module_from_spec(SS);SS.loader.exec_module(STANDARD)
 FOLDER='variants/twelve-options'
 STAR_SET={'aries','taurus','gemini','cancer','leo','virgo','libra','scorpius','sagittarius','capricornus','aquarius','pisces'}
 ANIMAL_SET={'rat','ox','tiger','rabbit','dragon','snake','horse','goat','monkey','rooster','dog','pig'}
@@ -79,6 +81,8 @@ def validate(root):
   assert m['status']=='four_five_cover_pcbs_saved_and_exported'
   assert m['design_manifest_sha256']==digest((out/'design-manifest.json').read_bytes())
   assert len(m['boards'])==len(d['panels'])==4
+  assert {b['key']:b['uuid'] for b in m['boards']}==STANDARD.TWELVE_UUIDS,'Twelve-option PCB identities changed'
+  assert set(m['existing'])==STANDARD.ORIGINAL_FIVE,'Incorrect original five-PCB scope'
   stars=[n for p in d['panels'] if p['key'].startswith('constellations') for n in p['covers']]
   animals=[n for p in d['panels'] if p['key'].startswith('zodiac') for n in p['covers']]
   assert len(set(stars))==len(stars)==10 and set(stars)|set(d['existing_constellations'])==STAR_SET
@@ -150,6 +154,24 @@ def validate(root):
    raise ValueError('Expected all ten added zodiac talisman sources exactly once')
   return 'Ten existing talisman PNG/candidate/reference SHA chains and visual statuses match; traced contours are bound to printable geometry; goat maps to sheep'
  check('talisman-artwork-provenance',talisman_sources)
+ def border_artwork():
+  has_border='border_generator' in d
+  if not has_border:
+   assert not any('border' in c['details'] for p in d['panels'] for c in load(out/p['geometry'])['covers']),'Border geometry lacks its generator source binding'
+   return 'Historical cover geometry has no uniform border revision'
+  STANDARD._check_border_generator(root,d['border_generator'])
+  count=0
+  for panel in d['panels']:
+   geometry=load(out/panel['geometry'])
+   for cover in geometry['covers']:
+    entries=[e for e in geometry['primitives'] if e['logical_id'].startswith(cover['id']+':border:')]
+    assert all(e['head']['type']=='FILL' and e['body']['layerId']==3 and e['body'].get('netName','')=='' and e['body']['fillStyle'] in(0,'SOLID') for e in entries),'Border must use separate non-net Top-silk fills'
+    STANDARD._check_border(cover['details']['border'],[e['body']['path'] for e in entries],cover['center_native_mm'])
+    count+=1
+  assert count==20,'Uniform border is missing from an added cover'
+  STANDARD._check_border_audit(root)
+  return 'All 20 added covers use frozen-source separate Top-silk border contours; full 24-face independent clearance/physical audit matches current source hashes'
+ check('uniform-border-source-and-contours',border_artwork)
  def slot_optimization():
   project=root.parents[1];report=load(out/'sources/slot-optimization.json')
   if report.get('schema_version')!=1 or report.get('status')!='passed':
@@ -215,15 +237,40 @@ def validate(root):
    assert z.testzip() is None
    js=[n for n in z.namelist() if n.endswith('.epru')];assert len(js)==1
    docs=BASE._replay(z.read(js[0]).decode('utf-8-sig'))
-  expected=set(m['existing'])|{b['uuid'] for b in m['boards']}
-  assert {u for u,v in docs.items() if v['head']['docType']=='PCB'}==expected and len(expected)==9
+  assert {u for u,v in docs.items() if v['head']['docType']=='PCB'}==STANDARD.SHARED_NINE
+  ordinary_manifest=load(root/'variants/standard-green-white/export-manifest.json')
+  revised='archive_scope' in ordinary_manifest
+  assert revised or not any('revision_before' in ev for ev in m['existing'].values()),'Silk revisions require the explicitly shared nine-PCB scope'
+  ordinary=None
+  if revised:
+   ordinary=ordinary_manifest
+   scope=ordinary['archive_scope']['pcb_uuids']
+   assert len(scope)==9 and set(scope)==STANDARD.SHARED_NINE,'Incorrect shared native archive scope'
+   assert all(ordinary['native_project'][key]==m['native_project'][key] for key in ('path','size','sha256')),'Standard/twelve native archives differ'
+   ordinary={b['uuid']:b for b in ordinary['boards']}
+   assert set(ordinary)==set(STANDARD.STANDARD_UUIDS.values()),'Incorrect ordinary PCB revision set'
   for uuid,ev in m['existing'].items():
-   source=(root/ev['path']).read_bytes();assert digest(source)==ev['sha256']
+   source=BASE._relative(root,ev['path']).read_bytes();assert digest(source)==ev['sha256']
    before=BASE._replay(source.decode())[uuid]['records'];after=docs[uuid]['records']
-   assert BASE._design_records(before)==BASE._design_records(after),'Existing PCB geometry changed: '+uuid
+   assert BASE._design_records(before)==BASE._design_records(after),'Existing current PCB source differs from archive: '+uuid
    assert {k:v for k,v in before.items() if k[0]=='OBJ'}=={k:v for k,v in after.items() if k[0]=='OBJ'}
-  state['docs']=docs;return 'Native CRC/SHA pass; 9 PCB documents present; previous 5 PCB designs and color objects retained'
+   if revised and uuid in STANDARD.STANDARD_UUIDS.values():
+    board=ordinary[uuid]
+    assert ev['uuid']==uuid and ev['path']==board['source'] and ev['sha256']==board['source_sha256'],'Stale ordinary source binding: '+uuid
+    assert ev['retention_policy']=='owned_top_silk_revision_physical_and_mask_preserved','Unexpected ordinary retention policy'
+    assert ev['revision_before']==board['border_revision']['before'] and board['border_revision']['status']=='saved_reopened','Ordinary revision evidence differs'
+    STANDARD._check_silk_revision(root,uuid,ev['revision_before'],after,board['created'])
+   else:
+    assert 'revision_before' not in ev,'Only the two ordinary PCBs may revise owned Top silk'
+  state['docs']=docs;state['standard_revised']=revised
+  return 'Native CRC/SHA pass; exact 9 PCB documents present; original 3 designs/color objects retained; ordinary owned Top-silk revisions retain mask and all other physical geometry' if revised else 'Native CRC/SHA pass; 9 PCB documents present; previous 5 PCB designs and color objects retained'
  check('native-archive-and-existing-pcbs',archive)
+ if state.get('standard_revised'):
+  def standard_delivery():
+   result=STANDARD.validate(root)
+   assert result['status']=='passed','Linked ordinary delivery failed: '+'; '.join(result['errors'])
+   return 'Shared ordinary delivery passes its full source/artwork/Gerber, historical-color and owned-silk revision checks'
+  check('shared-standard-delivery',standard_delivery)
  for board in m['boards']:
   def native_board(board=board):
    key,uuid=board['key'],board['uuid'];g=load(out/board['geometry']);p=root/board['source']['path'];raw=p.read_bytes()

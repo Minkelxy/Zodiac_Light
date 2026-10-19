@@ -44,14 +44,15 @@ python scripts/check_project.py --output build/project-check.json
 
 | 工作 | 命令或入口 | 产生或使用的资料 |
 |---|---|---|
-| NFC 十二选项完整工程 | [nfc-twelve-options.epro2](../hardware/nfc-talisman/variants/twelve-options/eda/native/nfc-twelve-options.epro2)、[四块盖板说明](../hardware/nfc-talisman/variants/twelve-options/README.md) | 保留原有五份 PCB，新增四块各五片盖板；12 星座与 12 生肖分别可选，复用现有核心 |
+| NFC 十二选项完整工程 | [nfc-twelve-options.epro2](../hardware/nfc-talisman/variants/twelve-options/eda/native/nfc-twelve-options.epro2)、[四块盖板说明](../hardware/nfc-talisman/variants/twelve-options/README.md) | 统一九 PCB 当前档；六块绿白板同步纹理边框，核心板与原彩色两板保留，两块整套绿白板保护电气/孔槽/阻焊后更新丝印 |
 | 灯带交互预览 | `python -m constellation_lamp preview` | 已保存的 21 星、24 边、268 灯布局与九种灯效 |
 | 灯带构建 | `python -m constellation_lamp build` | `build/` 内运行表、裁切/接线 CSV、C 头文件、静态图 |
 | 静态灯效 | `python -m constellation_lamp render --effect ripple --time-ms 2400 --output build/ripple.png` | 指定时刻的 PNG |
 | U1 与灯条打印 | [40 cm 制作资料](../output/README.md) | U1 PDF 第 2–7 页与定位 PDF 第 2–7 页；先实测 100 mm 校准尺 |
 | ESP32 构建 | [固件说明](hardware.md) | 安装 ESP-IDF/工具后运行 `scripts/build_idf.ps1`；固件输出到 `build/esp-idf/` |
 | NFC 原彩色原生工程 | [nfc-two-variants.epro2](../hardware/nfc-talisman/variants/common/eda/native/nfc-two-variants.epro2) | 原彩色 3 PCB 归档，含共用核心和两款独立拼板 |
-| NFC 普通绿白与全工程 | [绿白双款入口](../hardware/nfc-talisman/variants/standard-green-white/README.md)、[全 5 PCB 原生工程](../hardware/nfc-talisman/variants/standard-green-white/eda/native/nfc-color-and-green-white.epro2)、[独立导出清单](../hardware/nfc-talisman/variants/standard-green-white/export-manifest.json) | 含共用核心、两款原彩色拼板与两款绿白拼板；普通工程与制造导出状态以独立清单为准 |
+| NFC 普通绿白与全工程 | [绿白双款入口](../hardware/nfc-talisman/variants/standard-green-white/README.md)、[统一九 PCB 原生工程](../hardware/nfc-talisman/variants/twelve-options/eda/native/nfc-twelve-options.epro2)、[独立导出清单](../hardware/nfc-talisman/variants/standard-green-white/export-manifest.json) | 当前普通绿白版与十二选项共用九板归档；制造导出状态以对应独立清单为准 |
+| NFC 绿白历史五板档 | [nfc-color-and-green-white.epro2](../hardware/nfc-talisman/variants/standard-green-white/eda/native/nfc-color-and-green-white.epro2) | 加边框前的五板工程快照保留，不能代替当前九板归档 |
 | NFC 制造审阅 | [原彩色导出清单](../hardware/nfc-talisman/variants/common/export-manifest.json)、[原彩色装配审阅清单](../hardware/nfc-talisman/variants/common/assembly-review-manifest.json)、[普通绿白入口](../hardware/nfc-talisman/variants/standard-green-white/README.md) | 按工艺版本选择原生快照、Gerber 和四灯/两灯审阅表，原彩色清单不覆盖为绿白版 |
 
 打印资料的再生成需要 ReportLab 和 Windows 黑体字体；具体依赖、输出覆盖范围见[制作资料的再生成说明](../output/README.md#重新生成)。现有 PDF 可直接下载打印。PDF 生成会包含生成时的元数据，重新生成后应使用本次同步更新的清单核对，不能要求它与旧 PDF 的字节哈希相同。
