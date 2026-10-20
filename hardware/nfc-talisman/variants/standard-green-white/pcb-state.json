@@ -3876,8 +3876,8 @@
   "project_before": "variants/standard-green-white/eda/native/nfc-before-standard-copies.epro2",
   "native_project": {
     "path": "variants/twelve-options/eda/native/nfc-twelve-options.epro2",
-    "size": 2853177,
-    "sha256": "427cdabe8783d6b628a6b83fc9f7054477c8722da6668da9fe18cbab7e19189e"
+    "size": 2930563,
+    "sha256": "3157999cc2edd4d0468a7ef83dade3b8db4d4cc2dbcc9ca8ed04e108a7277e42"
   },
   "artwork_file": "variants/standard-green-white/artwork/import-geometry.json",
   "release_status": "HOLD_CAM_C1_PHYSICAL_VALIDATION_PENDING",
@@ -3964,6 +3964,7 @@
     "pcb_uuids": [
       "215baefd4debbd14",
       "4a4719695b24dc2b",
+      "59b61956941700e8",
       "7b9104396cd59877",
       "8bb2139a68d10671",
       "9883f07d70af99ab",

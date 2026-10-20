@@ -166,7 +166,7 @@ def generate():
     silk=silk.union(label(name.upper(),3.7)).union(label('AD ASTRA',32.1,1.45))
    else:
     silk,mask,details=talisman_cover_artwork.build_cover(name,board_margin_mm=3.0)
-    silk=silk.union(label(name.upper(),32.1,1.6))
+    details['english_label_on_pcb']=False
    clip=affinity.translate(OCT,18.5,18.5).buffer(-1.2)
    if not abbr and silk.difference(clip).area>1e-8:raise ValueError('Talisman/label would be cropped')
    silk=silk.intersection(clip)

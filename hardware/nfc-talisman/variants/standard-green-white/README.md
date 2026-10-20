@@ -1,8 +1,10 @@
 # 绿色阻焊 + 白色丝印普通工艺双款
 
+2026-10-20 R3：新增[马、蛇盖板与三片空心隔层](../horse-snake-spacers/README.md)独立拼板；生肖 A/B 去除英文名称。当前工程共十份 PCB，其中七块绿白。六页展示资料第 6 页展示新增拼板，其他既有电气与孔槽设计保留。
+
 本版为两款 37 mm 双面 NFC 符咒新增独立普通 PCB：**马 + 射手座**与**蛇 + 狮子座**。用户选定绿色阻焊、白色丝印；原彩色 PCB、图案和归档继续保留。本页记录图案输入与工程交付状态，当前保持 **`HOLD_CAM_C1_PHYSICAL_VALIDATION_PENDING`**。
 
-2026-10-20 修订：两款绿白整套拼板与四块星座/生肖选项拼板同步增加白色纹理边框、闭合内框，并把拆板孔心向外移动 0.40 mm。核心板与原彩色两板完整保留；绿白两板有意更新丝印，铜、天线、电路、星孔、光槽及原阻焊开窗为保护基线，拆板孔心按要求外移 0.40 mm。六板均已保存重开且 DRC 为 0，两套当前清单共同绑定重新导出的统一九板归档；上一版检查仅适用于其历史快照。
+2026-10-20 修订：两款绿白整套拼板与四块星座/生肖选项拼板同步增加白色纹理边框、闭合内框，并把拆板孔心向外移动 0.40 mm。核心板与原彩色两板完整保留；绿白两板有意更新丝印，铜、天线、电路、星孔、光槽及原阻焊开窗为保护基线，拆板孔心按要求外移 0.40 mm。六板均已保存重开且 DRC 为 0，两套当前清单共同绑定重新导出的统一十板归档；上一版检查仅适用于其历史快照。
 
 ## 两款独立 PCB
 
@@ -34,7 +36,7 @@
 |---|---|---|
 | 图案源、导入几何和预览 | [artwork/README.md](artwork/README.md)、[图案清单](artwork/manifest.json) | SVG/PNG 与丝印/阻焊多边形已生成；详细处理参数和图形边界见技术说明。 |
 | 彩色与绿白展示 | [绿白普通工艺展示 PDF](../../../../output/pdf/NFC符咒_绿白普通工艺展示.pdf) | 外观对比与工艺说明，效果示意不是实物。 |
-| 当前统一原生工程 | [nfc-twelve-options.epro2](../twelve-options/eda/native/nfc-twelve-options.epro2) | 9 PCB：共用核心、2 原彩色、2 绿白整套拼板与 4 选项拼板；本轮边框归档已导出，实际版本由两套清单绑定。 |
+| 当前统一原生工程 | [nfc-twelve-options.epro2](../twelve-options/eda/native/nfc-twelve-options.epro2) | 10 PCB：共用核心、2 原彩色、2 绿白整套拼板、4 选项拼板与 1 马蛇隔层拼板；本轮边框归档已导出，实际版本由两套清单绑定。 |
 | 绿白历史五板快照 | [nfc-color-and-green-white.epro2](eda/native/nfc-color-and-green-white.epro2) | 2026-10-15 的 5 PCB 快照保留，1,121,683 bytes；它是加边框前版本，不覆盖为本轮新工程。 |
 | 保存重开 DRC | [export-manifest.json](export-manifest.json) | 本轮两款 PCB 均为 `saved_reopened=true`、`drc=[]`；不借用原彩色或旧边框前快照的结果。 |
 | Gerber 与制造草案 | [马 + 射手 Gerber](manufacturing-draft/horse-sagittarius-green-white-gerber.zip)、[蛇 + 狮子 Gerber](manufacturing-draft/snake-leo-green-white-gerber.zip) | 普通工艺、关闭彩色喷印；边框版已重新导出，实际 Gerber 图案区域审计通过，未送厂或下单。 |
@@ -42,7 +44,7 @@
 
 原彩色版本的源工程见 [nfc-two-variants.epro2](../common/eda/native/nfc-two-variants.epro2)，对应 [原彩色导出清单](../common/export-manifest.json)；它们不由本版图案生成脚本覆盖。所有版本入口见[版本导航](../README.md)。
 
-本版[导出清单](export-manifest.json)记录文件大小、SHA-256、两款 PCB 的保存重开/DRC 状态，并与十二选项清单共同绑定统一九板工程。图案来源与处理记录由独立 [artwork/manifest.json](artwork/manifest.json)维护。边框参数及板边、图案、孔槽的避让以本轮几何记录为准；旧五板工程与原彩色三板清单继续保留历史角色。
+本版[导出清单](export-manifest.json)记录文件大小、SHA-256、两款 PCB 的保存重开/DRC 状态，并与十二选项清单共同绑定统一十板工程。图案来源与处理记录由独立 [artwork/manifest.json](artwork/manifest.json)维护。边框参数及板边、图案、孔槽的避让以本轮几何记录为准；旧五板工程与原彩色三板清单继续保留历史角色。
 
 ## 制造与展示边界
 

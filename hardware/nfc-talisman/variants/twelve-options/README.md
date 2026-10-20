@@ -1,5 +1,7 @@
 # 十二星座与十二生肖：四块五片盖板拼板
 
+2026-10-20 R3：新增[马、蛇盖板与三片空心隔层](../horse-snake-spacers/README.md)独立拼板；生肖 A/B 去除英文名称。当前工程共十份 PCB，其中七块绿白。六页展示资料第 6 页展示新增拼板，其他既有电气与孔槽设计保留。
+
 新增 **4 块独立的 100 × 100 mm PCB**，每块包含 5 个不同的 **37 mm AF 八边形盖板**。沿用用户选定的绿色阻焊、白色丝印；星座后盖与生肖前盖分别成组，共用现有 NFC 核心设计。加上原有的射手座、狮子座，以及马、蛇，分别得到完整的 12 个星座与 12 个生肖选项。
 
 本轮已优化新增十款星座的开槽，并将十款新增生肖改为项目已归档的严格单色符咒图。四块 PCB 的原生工程与普通 Gerber 已同步导出，保存重开后 DRC 均为 0；检查结论由清单中的源文件哈希绑定。
@@ -18,12 +20,12 @@
 ## 文件入口
 
 - [全部九份 PCB 的集成原生工程](eda/native/nfc-twelve-options.epro2)：包含共用核心、两份原彩色拼板、两份绿白双款拼板及四份新盖板拼板。
-- [五页拼板展示 PDF](../../../../output/pdf/十二星座与生肖_拼板展示.pdf)：用于分享与投屏，非 1:1 加工模板。
+- [六页拼板展示 PDF](../../../../output/pdf/十二星座与生肖_拼板展示.pdf)：用于分享与投屏，非 1:1 加工模板。
 - [导出清单](export-manifest.json)、[图案与来源清单](design-manifest.json)、[交付检查](delivery-audit.json)、[Gerber 几何与连接性检查](gerber-geometry-audit.json)、[离线孔槽与连板几何审计](slot-layout-geometry-audit.json)、[六板边框独立审计](border-artwork-audit.json)。
 - 四份独立 Gerber：[星座 A](manufacturing-draft/constellations-a-green-white-gerber.zip)、[星座 B](manufacturing-draft/constellations-b-green-white-gerber.zip)、[生肖 A](manufacturing-draft/zodiac-a-green-white-gerber.zip)、[生肖 B](manufacturing-draft/zodiac-b-green-white-gerber.zip)。
 - SVG 与 PNG 在 [artwork](artwork/)；原生导入几何在 [geometry](geometry/)；数据快照与请求参数在 [sources](sources/)。
 
-本轮四份选项 PCB 已保存、关闭、重开，DRC 返回空数组；两份整套绿白 PCB 也已保存重开且 DRC 为 0。核心板及两份原彩色设计/彩色对象严格保留，两份既有绿白板允许受控白色丝印更新及拆板孔心外移 0.40 mm，其电气、星孔和光槽保留。保存重开及实际导出检查由两套当前清单共同绑定统一九板工程。集成工程与 Gerber 仍保持 **`HOLD_CAM_PHYSICAL_VALIDATION_PENDING`**；盖板加工、拆板手感、叠装、NFC 与光效需要供应商 CAM 和首件确认。
+本轮四份选项 PCB 已保存、关闭、重开，DRC 返回空数组；两份整套绿白 PCB 也已保存重开且 DRC 为 0。核心板及两份原彩色设计/彩色对象严格保留，两份既有绿白板允许受控白色丝印更新及拆板孔心外移 0.40 mm，其电气、星孔和光槽保留。保存重开及实际导出检查由两套当前清单共同绑定统一十板工程。集成工程与 Gerber 仍保持 **`HOLD_CAM_PHYSICAL_VALIDATION_PENDING`**；盖板加工、拆板手感、叠装、NFC 与光效需要供应商 CAM 和首件确认。
 
 ## 图案与加工参数
 

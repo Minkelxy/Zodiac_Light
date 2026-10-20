@@ -60,6 +60,7 @@ def link_checks(root: Path) -> list[dict]:
                root / "hardware/nfc-talisman/README.md",
                root / "hardware/nfc-talisman/variants/standard-green-white/README.md",
                root / "hardware/nfc-talisman/variants/twelve-options/README.md",
+               root / "hardware/nfc-talisman/variants/horse-snake-spacers/README.md",
                *sorted((root / "docs").glob("*.md"))]
     pattern = re.compile(r"!?\[[^\]\n]*\]\((<[^>]+>|[^\s)]+)(?:\s+\"[^\"]*\")?\)")
     for entry in entries:
@@ -115,6 +116,15 @@ def validate(root: Path = ROOT, *, run_tests: bool = True) -> dict:
     except (OSError, ValueError, ImportError, AttributeError) as exc:
         twelve = {"status": "failed", "errors": [str(exc)]}
         checks.append({"id": "twelve-hardware-checker", "passed": False, "detail": str(exc)})
+    try:
+        spec = importlib.util.spec_from_file_location(
+            "additional_hardware_delivery", hardware_path.with_name("check_horse_snake_spacers.py"))
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        additional = module.validate(root)
+        checks.extend(additional["checks"])
+    except (OSError, ValueError, ImportError, AttributeError) as exc:
+        checks.append({"id": "additional-hardware-checker", "passed": False, "detail": str(exc)})
     budget_code = (
         "from pathlib import Path; "
         "from constellation_lamp.model import read_json,compile_layout; "

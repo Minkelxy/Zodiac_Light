@@ -25,7 +25,7 @@
     {
       "id": "twelve:native-archive-and-existing-pcbs",
       "passed": true,
-      "detail": "Native CRC/SHA pass; exact 9 PCB documents present; original 3 designs/color objects retained; ordinary owned Top-silk revisions retain mask and all other physical geometry"
+      "detail": "Native CRC/SHA pass; exact 10 PCB documents present; original 3 designs/color objects retained; declared ordinary silk/mousebite revisions verified"
     },
     {
       "id": "twelve:shared-standard-delivery",
@@ -55,7 +55,7 @@
     {
       "id": "twelve:zodiac-a:native",
       "passed": true,
-      "detail": "437 owned primitives match final native source and archive; no decorative copper or image objects; saved/reopened DRC 0"
+      "detail": "415 owned primitives match final native source and archive; no decorative copper or image objects; saved/reopened DRC 0"
     },
     {
       "id": "twelve:zodiac-a:gerber",
@@ -65,7 +65,7 @@
     {
       "id": "twelve:zodiac-b:native",
       "passed": true,
-      "detail": "437 owned primitives match final native source and archive; no decorative copper or image objects; saved/reopened DRC 0"
+      "detail": "414 owned primitives match final native source and archive; no decorative copper or image objects; saved/reopened DRC 0"
     },
     {
       "id": "twelve:zodiac-b:gerber",

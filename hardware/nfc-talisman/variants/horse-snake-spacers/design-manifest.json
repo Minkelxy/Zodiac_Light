@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "key": "horse-snake-spacers",
+  "name": "Horse-Snake-3Spacers-GreenWhite-100",
+  "panel_mm": [
+    100,
+    100
+  ],
+  "cover_af_mm": 37,
+  "animal_covers": [
+    "horse",
+    "snake"
+  ],
+  "hollow_spacers": 3,
+  "spacer_window_af_mm": 30,
+  "spacer_inner_radius_mm": 1,
+  "mousebite_outward_offset_mm": 0.4,
+  "mousebite_diameter_mm": 0.4,
+  "mousebite_pitch_mm": 0.72,
+  "english_labels": false,
+  "sources": {
+    "hardware/nfc-talisman/geometry/design.json": "3c677d826508b96cc74d04c815f9a35a69bd39f6a7b3d6d455734b9061138391",
+    "hardware/nfc-talisman/variants/standard-green-white/artwork/horse-sagittarius-standard-layer-artwork.json": "c3d243e47f8509152e44d3afaf25fd837b7dce9d36a4b5a12c9f3a2d6a5d1a21",
+    "hardware/nfc-talisman/variants/horse-sagittarius/artwork/front-horse-37mm.svg": "e2515c519c438d0df35ea617b6f5f56bbcd0efe966925045a95b145abb0c30a9",
+    "hardware/nfc-talisman/variants/horse-sagittarius/artwork/rear-sagittarius-37mm.svg": "1a29f5adeafa71ea0f5a204e0cb1c1246bed4954cd5ad8ccc0b2698783f69170",
+    "hardware/nfc-talisman/variants/standard-green-white/artwork/snake-leo-standard-layer-artwork.json": "aaf9c2a540b7698360b54542b78b30d53b4f97f254f35767debc7a0066d839e4",
+    "hardware/nfc-talisman/variants/snake-leo/artwork/front-snake-37mm.svg": "1cc887f1b3ec5986e9f40836d2486626d909b13a8461100b21d4252777fb5516",
+    "hardware/nfc-talisman/variants/snake-leo/artwork/rear-leo-37mm.svg": "26b6315e4144a75b95ca2553e285bc143bdc51683cf339fa6128ea8fbd3465ab",
+    "hardware/nfc-talisman/variants/snake-leo/leo-geometry.json": "341a0a0c643e3ce31f24800456e8682798f96e7560482f37f41c94f673fd9759",
+    "hardware/nfc-talisman/scripts/build_horse_snake_spacers.py": "11a754ce3c4322f10b631b61952d2750ca2e11e9cb4550b536ddddc0cbfff817",
+    "hardware/nfc-talisman/scripts/pcb_cover_border.py": "a91dbfb3bdbf89c071a1d5ee200c883bc780fdc553a73acb2940de98b3c6f34c",
+    "hardware/nfc-talisman/scripts/build_twelve_option_panels.py": "99473662d1f7fda5ddaa1680d29068205d3c276190235994d8c22559e65953fe",
+    "hardware/nfc-talisman/scripts/build_standard_layer_artwork.py": "9a702d485ec4d2d7a59a793ddd59ba14bf303b9e715714fbb6baacf8dac87f74",
+    "hardware/nfc-talisman/scripts/audit_cover_borders.py": "7bfdc47525946f86a7e9a4d3c0fda456fe7d90801797dd30c45c0ee326bd7707"
+  },
+  "files": {
+    "geometry.json": {
+      "size": 3138382,
+      "sha256": "9c9d5f2056c1a4b9b36c33bb9d46dc2374ff36b20c210433709e548f233c0a4a"
+    },
+    "panel-preview.svg": {
+      "size": 392004,
+      "sha256": "023fa01d3c23b1fd9df64ac592a1b42237fa3a5490a909aaa7a0e5311df03b1c"
+    },
+    "panel-preview.png": {
+      "size": 165278,
+      "sha256": "92973d7a9a9e6954fa33ca66bdd038b6971e77fa5185a4725df6118c47f3118a"
+    }
+  },
+  "release_status": "HOLD_CAM_PHYSICAL_VALIDATION_PENDING"
+}

@@ -1,5 +1,7 @@
 # 当前项目状态
 
+2026-10-20 R3：生肖 A/B 图案不再印英文名称，新增[马、蛇盖板与三片空心隔层](../hardware/nfc-talisman/variants/horse-snake-spacers/README.md)独立拼板。当前统一十 PCB 工程包含七块绿白 PCB；六页展示资料的第 6 页为新增页面。
+
 本仓库交付灯带软件、40 cm 亚克力制作稿和两款 NFC 符咒设计草案。下表与 NFC 明细以保存文件和对应清单为依据；全项目检查与交付包使用方法见[复现与交付指南](delivery.md)。
 
 ## 40 cm 灯带与刻线稿
@@ -15,7 +17,7 @@
 
 ### 十二星座与生肖：六块绿白板的边框修订（2026-10-20）
 
-已有[四块五片盖板拼板](../hardware/nfc-talisman/variants/twelve-options/README.md)：两块覆盖新增十星座，两块覆盖新增十生肖，配合射手、狮子与马、蛇补齐各十二款。四板均为 100 × 100 mm、绿色阻焊与白色丝印，盖板为 37 mm AF，可复用现有 NFC 核心。本轮四块选项拼板及两块绿白整套拼板统一增加白色纹理边框和内外分界线；原有核心与原彩色两板保留，两块绿白板的丝印有意更新，电气、铜、天线、星孔、光槽和原阻焊保持保护基线，拆板孔心按要求外移 0.40 mm。六板均已保存重开且 DRC 为 0，[统一九 PCB 工程](../hardware/nfc-talisman/variants/twelve-options/eda/native/nfc-twelve-options.epro2)及六份普通 Gerber 已重新导出，[来源及设计清单](../hardware/nfc-talisman/variants/twelve-options/design-manifest.json)和[实际 Gerber 与连板检查](../hardware/nfc-talisman/variants/twelve-options/gerber-geometry-audit.json)以源文件哈希确认适用版本。[五页展示 PDF](../output/pdf/十二星座与生肖_拼板展示.pdf)用于图案展示。供应商 CAM、板厚/拆板、叠装与光效首件仍待确认。
+已有[四块五片盖板拼板](../hardware/nfc-talisman/variants/twelve-options/README.md)：两块覆盖新增十星座，两块覆盖新增十生肖，配合射手、狮子与马、蛇补齐各十二款。四板均为 100 × 100 mm、绿色阻焊与白色丝印，盖板为 37 mm AF，可复用现有 NFC 核心。本轮四块选项拼板及两块绿白整套拼板统一增加白色纹理边框和内外分界线；原有核心与原彩色两板保留，两块绿白板的丝印有意更新，电气、铜、天线、星孔、光槽和原阻焊保持保护基线，拆板孔心按要求外移 0.40 mm。六板均已保存重开且 DRC 为 0，[统一十 PCB 工程](../hardware/nfc-talisman/variants/twelve-options/eda/native/nfc-twelve-options.epro2)及六份普通 Gerber 已重新导出，[来源及设计清单](../hardware/nfc-talisman/variants/twelve-options/design-manifest.json)和[实际 Gerber 与连板检查](../hardware/nfc-talisman/variants/twelve-options/gerber-geometry-audit.json)以源文件哈希确认适用版本。[六页展示 PDF](../output/pdf/十二星座与生肖_拼板展示.pdf)用于图案展示。供应商 CAM、板厚/拆板、叠装与光效首件仍待确认。
 
 原彩色两款 NFC 的原生集成、保存重开 DRC 与导出快照已同步；实体验收和制造放行仍未完成。星图美观和 LED 布局的结论见[双款设计审阅](../hardware/nfc-talisman/variants/common/design-review.md)。新增绿白普通工艺版的状态单列如下，所有版本入口见[工艺版本导航](../hardware/nfc-talisman/variants/README.md)。
 
@@ -23,7 +25,7 @@
 
 [绿白普通工艺版](../hardware/nfc-talisman/variants/standard-green-white/README.md)为马/蛇两款分别新增独立 PCB，名称为 `Horse-Sagittarius-GreenWhite-100-v1`、`Snake-Leo-GreenWhite-100-v1`。原彩色工程与图案保留；绿色来自未开窗的阻焊，白色轮廓、星图和文字来自丝印，无彩色喷印、无装饰铜。阻焊仅在原孔槽周围开窗；导出清单记录原星孔、光槽、铜、天线与电路保护基线保持；拆板孔心外移 0.40 mm。
 
-本轮两款的图案、原生和普通 Gerber 由[独立导出清单](../hardware/nfc-talisman/variants/standard-green-white/export-manifest.json)绑定[统一九 PCB 工程](../hardware/nfc-talisman/variants/twelve-options/eda/native/nfc-twelve-options.epro2)；两款均已保存重开且 DRC 为 0，实际 Gerber 图案区域审计通过。[对比展示 PDF](../output/pdf/NFC符咒_绿白普通工艺展示.pdf)为效果示意。旧[五 PCB 集成归档](../hardware/nfc-talisman/variants/standard-green-white/eda/native/nfc-color-and-green-white.epro2)保留为边框前历史快照，包含共用核心、2 原彩色和 2 绿白拼板，大小 1,121,683 bytes。历史检查不替代本轮结果，制造 HOLD 保持。
+本轮两款的图案、原生和普通 Gerber 由[独立导出清单](../hardware/nfc-talisman/variants/standard-green-white/export-manifest.json)绑定[统一十 PCB 工程](../hardware/nfc-talisman/variants/twelve-options/eda/native/nfc-twelve-options.epro2)；两款均已保存重开且 DRC 为 0，实际 Gerber 图案区域审计通过。[对比展示 PDF](../output/pdf/NFC符咒_绿白普通工艺展示.pdf)为效果示意。旧[五 PCB 集成归档](../hardware/nfc-talisman/variants/standard-green-white/eda/native/nfc-color-and-green-white.epro2)保留为边框前历史快照，包含共用核心、2 原彩色和 2 绿白拼板，大小 1,121,683 bytes。历史检查不替代本轮结果，制造 HOLD 保持。
 
 ### 当前目标
 

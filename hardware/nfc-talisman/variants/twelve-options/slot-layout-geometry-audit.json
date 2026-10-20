@@ -1,7 +1,7 @@
 {
   "status": "passed",
   "read_only": true,
-  "design_manifest_sha256": "11b4a32624af9f1568a08f98f368792511bf970c0c020c38b25022aee6d7da2b",
+  "design_manifest_sha256": "07543a3d25e476ae760dc92177b9635562c47c5f6c755756d4d97a427514f8d4",
   "slot_optimization_report_sha256": "65f838b5897454da428524f768c9586280e36c6d413beb4b72e5a1c41ebd4335",
   "panels": {
     "constellations-a": {
@@ -216,7 +216,7 @@
           "routing_unchanged": true
         }
       },
-      "geometry_sha256": "542d83f6c0efe38811fbe42a96113268259c269f17848c7d03d394e2ca12d31b",
+      "geometry_sha256": "d4022826871b49daf099c125e2a9679028f5744cc7ed32634d4dcd6a848c5069",
       "passed": true,
       "frame_mm": [
         100,
@@ -263,7 +263,7 @@
           "routing_unchanged": true
         }
       },
-      "geometry_sha256": "e7ca40de9b50598afcf1087d8195700659eed614b213ce0fa9f264d5e50cc9f9",
+      "geometry_sha256": "c3c8ac93d4f30dc54ec0ee769a892fae7f1925cca90883643214742bfa7911be",
       "passed": true,
       "frame_mm": [
         100,

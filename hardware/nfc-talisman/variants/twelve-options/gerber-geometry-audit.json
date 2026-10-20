@@ -1,10 +1,10 @@
 {
   "status": "passed",
   "coordinate_tolerance_mm": 1e-05,
-  "design_manifest_sha256": "11b4a32624af9f1568a08f98f368792511bf970c0c020c38b25022aee6d7da2b",
+  "design_manifest_sha256": "07543a3d25e476ae760dc92177b9635562c47c5f6c755756d4d97a427514f8d4",
   "panels": {
     "constellations-a": {
-      "gerber_sha256": "b8d3d922cc56baacac267e23cbff47ca51e3e087e91abcd8923c66c0b89dc67e",
+      "gerber_sha256": "50ab2cf813681b6ca494f24836b13ff03b6e7b4e585535bafecc02328b871283",
       "router_contours": {
         "count": 47,
         "maximum_boundary_error_mm": 2.3425149691638475e-06,
@@ -37,7 +37,7 @@
       "cover_count": 5
     },
     "constellations-b": {
-      "gerber_sha256": "d4deb09eacc8502f9974b3b3e5ff3a326a75cffd1b22d5fbd7d4c656a8d9f5b5",
+      "gerber_sha256": "78b7ee94dfc313b6421da61564c7084c02280b358f309041c1e3a41b6ad37e44",
       "router_contours": {
         "count": 46,
         "maximum_boundary_error_mm": 2.1890549457948763e-06,
@@ -70,7 +70,7 @@
       "cover_count": 5
     },
     "zodiac-a": {
-      "gerber_sha256": "ba189e79984635f52755c6a691a77234bef9768317e1fa4263a2099d80e4344a",
+      "gerber_sha256": "d737c1e7c15219a268d22756a681891a2e26cc75e846c9f787d80f2559e6537e",
       "router_contours": {
         "count": 21,
         "maximum_boundary_error_mm": 1.9633520812157904e-06,
@@ -78,8 +78,8 @@
       },
       "silk": {
         "boundary_error_mm": 2.29679187091548e-06,
-        "area_mm2": 1038.5223553366366,
-        "negative_holes": 88,
+        "area_mm2": 1022.9497696408463,
+        "negative_holes": 74,
         "nominal_width_has_no_extra_stroke": true
       },
       "mask": {
@@ -96,7 +96,7 @@
       "cover_count": 5
     },
     "zodiac-b": {
-      "gerber_sha256": "d43e15aa24e3881f22df5576e2dfe332fa490a0a1f47905c94d0a8bb3d2be8da",
+      "gerber_sha256": "d703585e2aa5cf47b4c856706863ea4527e3a553c88ffde5c550a535abb7c47f",
       "router_contours": {
         "count": 21,
         "maximum_boundary_error_mm": 1.9633520812157904e-06,
@@ -104,8 +104,8 @@
       },
       "silk": {
         "boundary_error_mm": 2.3965680368388724e-06,
-        "area_mm2": 904.3328272440297,
-        "negative_holes": 51,
+        "area_mm2": 887.5568775712276,
+        "negative_holes": 41,
         "nominal_width_has_no_extra_stroke": true
       },
       "mask": {

@@ -29,6 +29,16 @@ TWELVE_UUIDS = {"constellations-a": "da4d85d9f04979eb", "constellations-b": "988
                 "zodiac-a": "abc3d3a5e6e4793c", "zodiac-b": "215baefd4debbd14"}
 ORIGINAL_FIVE = set(ORIGINAL_UUIDS.values()) | set(STANDARD_UUIDS.values())
 SHARED_NINE = ORIGINAL_FIVE | set(TWELVE_UUIDS.values())
+SUPPLEMENT_UUID = '59b61956941700e8'
+
+
+def shared_pcb_scope(root):
+    path=Path(root)/'variants/horse-snake-spacers/export-manifest.json'
+    if not path.exists():return SHARED_NINE
+    value=_BASE._json(path)
+    _BASE._require(len(value['boards'])==1 and value['boards'][0]['uuid']==SUPPLEMENT_UUID,
+                   'Unexpected additional horse/snake/spacer PCB identity')
+    return SHARED_NINE|{SUPPLEMENT_UUID}
 PHYSICAL_KINDS = {"COMPONENT", "ATTR", "PAD_NET", "PAD", "LINE", "ARC", "VIA", "POLY",
                   "FILL", "POUR", "REGION", "STRING", "NET", "TRACK", "RECT", "CIRCLE", "TEXT"}
 PRESERVED_GERBER = {
@@ -579,8 +589,9 @@ def validate(root: Path) -> dict[str, Any]:
             documents = _native_documents(root, manifest["native_project"])
             if "archive_scope" in manifest:
                 scope = manifest["archive_scope"]["pcb_uuids"]
-                _BASE._require(len(scope) == 9 and set(scope) == SHARED_NINE and _pcb_uuids(documents) == SHARED_NINE,
-                               "Shared native archive must contain exactly the fixed nine PCB documents")
+                expected_scope=shared_pcb_scope(root)
+                _BASE._require(len(scope) == len(expected_scope) and set(scope) == expected_scope and _pcb_uuids(documents) == expected_scope,
+                               "Shared native archive must contain exactly the reviewed PCB documents")
                 _BASE._require(manifest["native_project"]["path"] == "variants/twelve-options/eda/native/nfc-twelve-options.epro2"
                                and manifest["historical_five_pcb_snapshot"] == STANDARD + "/eda/native/nfc-color-and-green-white.epro2",
                                "Current shared archive and historical five-PCB snapshot paths differ")
@@ -604,7 +615,7 @@ def validate(root: Path) -> dict[str, Any]:
                                    _BASE._design_records(documents[board["uuid"]]["records"]),
                                    "Shared archive differs from a current twelve-option PCB source")
                 holder["twelve"] = twelve
-                detail = "original three, two revised ordinary and four added PCB documents share the exact nine-PCB archive"
+                detail = f"original three, two ordinary and reviewed passive panels share the exact {len(expected_scope)}-PCB archive"
             else:
                 _BASE._require(_pcb_uuids(documents) == ORIGINAL_FIVE,
                                "Historical native archive must contain the original three and two ordinary PCB documents")

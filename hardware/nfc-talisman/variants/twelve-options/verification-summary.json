@@ -9,11 +9,11 @@
   },
   "delivery_checks": {
     "command": "python scripts/check_project.py --skip-tests --output build/project-check-20261020.json",
-    "checks_passed": 109,
+    "checks_passed": 114,
     "failures": 0,
     "unittest_run_in_this_command": false
   },
-  "new_passive_cover_pcbs": 4,
+  "new_passive_cover_pcbs": 5,
   "covers_per_new_pcb": 5,
   "ordinary_full_product_pcbs_added": 2,
   "existing_color_pcbs_retained": true,
@@ -23,7 +23,7 @@
     [],
     []
   ],
-  "new_npth_positions_and_diameters_verified": 543,
+  "new_npth_positions_and_diameters_verified": 643,
   "release_ready": false,
   "release_status": "HOLD_CAM_C1_PHYSICAL_VALIDATION_PENDING",
   "revision": {
@@ -48,7 +48,7 @@
     ],
     "white_silk_only": false,
     "independent_audit": "border-artwork-audit.json",
-    "pdf_pages_visually_checked": 8,
+    "pdf_pages_visually_checked": 9,
     "original_three_pcbs_retained": true,
     "historical_five_pcb_snapshot_retained": true,
     "inner_dividers_closed": 24
@@ -62,5 +62,23 @@
     "added_cover_hole_diameter_mm": 0.4,
     "baseline_native": "eda/native/before-depanel-20261020.epro2",
     "maximum_breakaway_finishing_allowance_mm": 0.7
+  },
+  "current_native_pcb_count": 10,
+  "current_green_white_pcbs": 7,
+  "english_zodiac_labels_on_pcbs": false,
+  "additional_panel": {
+    "native_page_name": "PCB2",
+    "uuid": "59b61956941700e8",
+    "animal_covers": [
+      "horse",
+      "snake"
+    ],
+    "hollow_spacers": 3,
+    "spacer_window_af_mm": 30,
+    "spacer_inner_corner_radius_mm": 1,
+    "minimum_ring_wall_mm": 3.5,
+    "npth_verified": 100,
+    "drc": [],
+    "catalogue_page": 6
   }
 }

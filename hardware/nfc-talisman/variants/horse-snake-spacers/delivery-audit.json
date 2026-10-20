@@ -1,0 +1,30 @@
+{
+  "status": "passed",
+  "read_only": true,
+  "checks": [
+    {
+      "id": "additional:design-and-sources",
+      "passed": true,
+      "detail": "Frozen sources match: 100mm panel, horse + snake + three 30mm R1 hollow spacer rings; no English labels"
+    },
+    {
+      "id": "additional:native-ten-pcb-archive",
+      "passed": true,
+      "detail": "Exact ten-PCB native archive; saved new PCB matches all owned primitives; no copper/components/images"
+    },
+    {
+      "id": "additional:animals-and-real-spacer-windows",
+      "passed": true,
+      "detail": "Existing horse/snake silhouettes retained without labels; both frames closed; three real 30mm R1 windows, minimum ring wall 3.5mm"
+    },
+    {
+      "id": "additional:gerber-and-connected-material",
+      "passed": true,
+      "detail": "Gerber: 24 router contours, 100 matching NPTH; three windows, real silk negative spaces and one connected panel verified"
+    }
+  ],
+  "errors": [],
+  "checks_run": 4,
+  "release_ready": false,
+  "release_status": "HOLD_CAM_PHYSICAL_VALIDATION_PENDING"
+}

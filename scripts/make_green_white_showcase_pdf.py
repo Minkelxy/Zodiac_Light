@@ -138,7 +138,7 @@ def process_page(c):
         style.lines(c, description, 175, y + 20, 610, 11.2, INK, leading=16)
     style.box(c, 36, 93, 770, 105, '#FFF3DF', 8)
     style.text(c, '制造状态保持 HOLD', 51, 171, 15, '#785829', True)
-    style.lines(c, '两款 PCB 已保存重开，DRC 均为 0；共用全 9 PCB 工程，普通 Gerber 与图案区域检查通过。\nC1 采购/适配、正式 CAM、RF/NFC 与实物光效待验收；细节与阻焊/丝印套准仍须 CAM 评审。',
+    style.lines(c, '两款 PCB 已保存重开，DRC 均为 0；共用全 10 PCB 工程，普通 Gerber 与图案区域检查通过。\nC1 采购/适配、正式 CAM、RF/NFC 与实物光效待验收；细节与阻焊/丝印套准仍须 CAM 评审。',
                 51, 146, 735, 11, '#785829', leading=18)
     style.text(c, 'HOLD_CAM_C1_PHYSICAL_VALIDATION_PENDING', 51, 105, 9, '#785829')
     style.text(c, '两块独立 PCB：Horse-Sagittarius-GreenWhite-100-v1 / Snake-Leo-GreenWhite-100-v1',

@@ -115,7 +115,7 @@
     {
       "id": "shared_nine_pcb_native_archive",
       "passed": true,
-      "detail": "ZIP CRC and SHA/size pass; original three, two revised ordinary and four added PCB documents share the exact nine-PCB archive"
+      "detail": "ZIP CRC and SHA/size pass; original three, two ordinary and reviewed passive panels share the exact 10-PCB archive"
     },
     {
       "id": "original_color_pcbs_retained",

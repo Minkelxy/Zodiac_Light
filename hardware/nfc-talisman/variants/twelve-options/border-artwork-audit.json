@@ -14,7 +14,7 @@
   "inputs": {
     "variants/twelve-options/design-manifest.json": {
       "size": 5104,
-      "sha256": "11b4a32624af9f1568a08f98f368792511bf970c0c020c38b25022aee6d7da2b"
+      "sha256": "07543a3d25e476ae760dc92177b9635562c47c5f6c755756d4d97a427514f8d4"
     },
     "variants/standard-green-white/artwork/manifest.json": {
       "size": 3640,
@@ -73,28 +73,28 @@
       "sha256": "592268436a2711c393a731e760a1f9342d23ea96086d17b0479cc94eb0232a00"
     },
     "variants/twelve-options/geometry/zodiac-a.json": {
-      "size": 7494188,
-      "sha256": "542d83f6c0efe38811fbe42a96113268259c269f17848c7d03d394e2ca12d31b"
+      "size": 7456869,
+      "sha256": "d4022826871b49daf099c125e2a9679028f5744cc7ed32634d4dcd6a848c5069"
     },
     "variants/twelve-options/eda/native/revision-border-20261020-zodiac-a.jsonl": {
       "size": 557817,
       "sha256": "56c7f14be68c57c298d0eaf77f68d566d096097586f5ae2a734fc3d9185dcebe"
     },
     "variants/twelve-options/eda/native/zodiac-a-source.jsonl": {
-      "size": 1081501,
-      "sha256": "83b1dd9192b2639d7eac9b8a99f3e806d766623a74f1706893c042bf519d7854"
+      "size": 1066295,
+      "sha256": "d92420c83160eb7724d514a7f63bf6e5a8d9b2569d869421921fb126430abdd0"
     },
     "variants/twelve-options/geometry/zodiac-b.json": {
-      "size": 6653271,
-      "sha256": "e7ca40de9b50598afcf1087d8195700659eed614b213ce0fa9f264d5e50cc9f9"
+      "size": 6612732,
+      "sha256": "c3c8ac93d4f30dc54ec0ee769a892fae7f1925cca90883643214742bfa7911be"
     },
     "variants/twelve-options/eda/native/revision-border-20261020-zodiac-b.jsonl": {
       "size": 463600,
       "sha256": "bb6140a47057f20728c7e1c86478539db219e797e073773d56e5e69130abdc37"
     },
     "variants/twelve-options/eda/native/zodiac-b-source.jsonl": {
-      "size": 975516,
-      "sha256": "350b7be4b3545c0313c30d871c243259f443c49ec535088a3d519627265c54ab"
+      "size": 958885,
+      "sha256": "ed48276adc7a168a57ff60bfe47a7c7e107d98ea4f91ccf6f13368e06b11e5c2"
     }
   },
   "covers": {

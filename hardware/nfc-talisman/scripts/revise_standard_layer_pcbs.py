@@ -149,6 +149,8 @@ def bind_native():
  state=load(OUT/'pcb-state.json');twelve=load(TWELVE/'export-manifest.json')
  state['native_project']=twelve['native_project']
  state['archive_scope']={'pcb_uuids':sorted(set(twelve['existing'])|{b['uuid'] for b in twelve['boards']})}
+ if (HW/'variants/horse-snake-spacers/export-manifest.json').exists():
+  state['archive_scope']['pcb_uuids']=sorted(checker.shared_pcb_scope(HW))
  state['files']={p.relative_to(HW).as_posix():{'size':p.stat().st_size,'sha256':sha(p)} for folder in ('eda/native','manufacturing-draft') for p in (OUT/folder).glob('*') if p.is_file()}
  state['artwork_file']='variants/standard-green-white/artwork/import-geometry.json'
  state['historical_five_pcb_snapshot']='variants/standard-green-white/eda/native/nfc-color-and-green-white.epro2'

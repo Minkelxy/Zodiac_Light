@@ -145,6 +145,8 @@ def validate(root):
      matches=[i for i,p in enumerate(available) if polygon_same(expected_path,p)]
      if not matches:raise ValueError('Source talisman contour missing from native import geometry: '+animal)
      available.pop(matches[0])
+    if details.get('english_label_on_pcb') is not False or available:
+     raise ValueError('Zodiac silk must contain only the traced animal and its separate border, without English labels: '+animal)
     if details.get('star_holes')!=0 or details.get('animal_mask_openings')!=0 or cover.get('mask_polygons')!=0:
      raise ValueError('Animal cover must not add holes or soldermask openings: '+animal)
     seen.append(animal)
@@ -237,7 +239,8 @@ def validate(root):
    assert z.testzip() is None
    js=[n for n in z.namelist() if n.endswith('.epru')];assert len(js)==1
    docs=BASE._replay(z.read(js[0]).decode('utf-8-sig'))
-  assert {u for u,v in docs.items() if v['head']['docType']=='PCB'}==STANDARD.SHARED_NINE
+  expected_scope=STANDARD.shared_pcb_scope(root)
+  assert {u for u,v in docs.items() if v['head']['docType']=='PCB'}==expected_scope
   ordinary_manifest=load(root/'variants/standard-green-white/export-manifest.json')
   revised='archive_scope' in ordinary_manifest
   assert revised or not any('revision_before' in ev for ev in m['existing'].values()),'Silk revisions require the explicitly shared nine-PCB scope'
@@ -245,7 +248,7 @@ def validate(root):
   if revised:
    ordinary=ordinary_manifest
    scope=ordinary['archive_scope']['pcb_uuids']
-   assert len(scope)==9 and set(scope)==STANDARD.SHARED_NINE,'Incorrect shared native archive scope'
+   assert len(scope)==len(expected_scope) and set(scope)==expected_scope,'Incorrect shared native archive scope'
    assert all(ordinary['native_project'][key]==m['native_project'][key] for key in ('path','size','sha256')),'Standard/twelve native archives differ'
    ordinary={b['uuid']:b for b in ordinary['boards']}
    assert set(ordinary)==set(STANDARD.STANDARD_UUIDS.values()),'Incorrect ordinary PCB revision set'
@@ -263,7 +266,7 @@ def validate(root):
    else:
     assert 'revision_before' not in ev,'Only the two ordinary PCBs may revise owned Top silk'
   state['docs']=docs;state['standard_revised']=revised
-  return 'Native CRC/SHA pass; exact 9 PCB documents present; original 3 designs/color objects retained; ordinary owned Top-silk revisions retain mask and all other physical geometry' if revised else 'Native CRC/SHA pass; 9 PCB documents present; previous 5 PCB designs and color objects retained'
+  return f'Native CRC/SHA pass; exact {len(expected_scope)} PCB documents present; original 3 designs/color objects retained; declared ordinary silk/mousebite revisions verified'
  check('native-archive-and-existing-pcbs',archive)
  if state.get('standard_revised'):
   def standard_delivery():

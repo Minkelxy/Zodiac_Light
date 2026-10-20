@@ -55,7 +55,7 @@
       ],
       "geometry": "geometry/zodiac-a.json",
       "preview": "artwork/zodiac-a-100mm.png",
-      "primitive_count": 437
+      "primitive_count": 415
     },
     {
       "key": "zodiac-b",
@@ -69,7 +69,7 @@
       ],
       "geometry": "geometry/zodiac-b.json",
       "preview": "artwork/zodiac-b-100mm.png",
-      "primitive_count": 437
+      "primitive_count": 414
     }
   ],
   "cover_af_mm": 37,
@@ -99,12 +99,12 @@
       "sha256": "1db7dbb687def139b8879a35b5d7539586d0f63a1a1052e615865cfba3d89880"
     },
     "geometry/zodiac-a.json": {
-      "size": 7494188,
-      "sha256": "542d83f6c0efe38811fbe42a96113268259c269f17848c7d03d394e2ca12d31b"
+      "size": 7456869,
+      "sha256": "d4022826871b49daf099c125e2a9679028f5744cc7ed32634d4dcd6a848c5069"
     },
     "geometry/zodiac-b.json": {
-      "size": 6653271,
-      "sha256": "e7ca40de9b50598afcf1087d8195700659eed614b213ce0fa9f264d5e50cc9f9"
+      "size": 6612732,
+      "sha256": "c3c8ac93d4f30dc54ec0ee769a892fae7f1925cca90883643214742bfa7911be"
     },
     "artwork/constellations-a-100mm.png": {
       "size": 353477,
@@ -127,20 +127,20 @@
       "sha256": "503c75f1874729eb31edbfec133ee1025b278f1999bd8ae3ba02badf3774bf90"
     },
     "artwork/zodiac-a-100mm.png": {
-      "size": 468969,
-      "sha256": "4de69e5c42900b15722b8da51c1b20d2a3c081a0e385fc43b9550adb61e4683b"
+      "size": 453979,
+      "sha256": "ffaef6dbcb4913ff08d5ccea16225a756d1d443c9b28b7fb8311ffca16f9952f"
     },
     "artwork/zodiac-a-100mm.svg": {
-      "size": 1047361,
-      "sha256": "57d5097cef806d5444c1d14d2726d0c03fbed9babbc33a5fcdabec8eca908652"
+      "size": 1036677,
+      "sha256": "c49d401e3314279798cffe1768c9205290587afb1cda95c4921580f52c332755"
     },
     "artwork/zodiac-b-100mm.png": {
-      "size": 388845,
-      "sha256": "20175afb5db3b1f36f787462f1153ddd02707fa3f1935ff5ce4eb853b9bc4db4"
+      "size": 372208,
+      "sha256": "dd1e00834fe4cb33e74a846287abc983c25c60b1ba851c28d4f8d104dc2dff57"
     },
     "artwork/zodiac-b-100mm.svg": {
-      "size": 939392,
-      "sha256": "2a32452338191055f30fcc34f217eb53db61f33e69e973a45d2b5f424c24c6bb"
+      "size": 927640,
+      "sha256": "f6dfbbb33d50fe27d0118b068976089f931605e498fc3d320ca29b02013bbd01"
     },
     "sources/hipparcos-zodiac.tsv": {
       "size": 7164,

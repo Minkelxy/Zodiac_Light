@@ -5,18 +5,18 @@
   "purpose": "design comparison and ordinary process explanation; not a physical sample",
   "manufacturing_release_status": "HOLD_CAM_C1_PHYSICAL_VALIDATION_PENDING",
   "sources": {
-    "scripts/make_green_white_showcase_pdf.py": "8332aed0b3843d57d1a81bda5ba13f9262e17066ecb030abb9632eeeac6ce4c8",
-    "hardware/nfc-talisman/variants/standard-green-white/README.md": "7cfbff202da95eafcc231a1cd4840b366ecf056b42d0bea062ce4c2227fa5ff0",
-    "hardware/nfc-talisman/variants/standard-green-white/export-manifest.json": "9eeec35d128387d0625c5657f54cf7d316db2921a4c5a03ed837eb30149ac317",
+    "scripts/make_green_white_showcase_pdf.py": "ab8c9be1bd428d4f0d03ec5a85caf65e3ee9685c663927c559cc783c834ce359",
+    "hardware/nfc-talisman/variants/standard-green-white/README.md": "a898fe7249b3dc8caf0b798774306ebb0484f47324f9fb85544571a344ce32c7",
+    "hardware/nfc-talisman/variants/standard-green-white/export-manifest.json": "c12dc5baa2a68a50e8354be502d07513c4542a0be69b219c5d4d8b56f10f7083",
     "hardware/nfc-talisman/variants/standard-green-white/artwork/manifest.json": "1e9757a06dcd1320eac05b667838ca941fe7b7280fa563dcab8f2b2287e8d79f",
     "hardware/nfc-talisman/scripts/pcb_cover_border.py": "a91dbfb3bdbf89c071a1d5ee200c883bc780fdc553a73acb2940de98b3c6f34c",
     "hardware/nfc-talisman/scripts/audit_cover_borders.py": "7bfdc47525946f86a7e9a4d3c0fda456fe7d90801797dd30c45c0ee326bd7707",
-    "hardware/nfc-talisman/variants/twelve-options/border-artwork-audit.json": "c18d4db17c1e7f8a2e960ee674958b0fa66c1c2b379b20acdf2452745aaf0a35",
+    "hardware/nfc-talisman/variants/twelve-options/border-artwork-audit.json": "b9f9cec0aa2e1b08b5241ffae973accab228d243c3085628e8c86d595a2438b5",
     "hardware/nfc-talisman/variants/standard-green-white/artwork/README.md": "ffbb08a7b8f5b3c05ce3cb61dcf253f9d291f1218cb0cbd82aad6d6dad23a54d",
     "hardware/nfc-talisman/variants/standard-green-white/artwork/import-geometry.json": "eae7a4dfcca63f8255e96f3dabe78707a73c2d692013b315013c28ceea1872ad",
     "hardware/nfc-talisman/variants/horse-sagittarius/artwork/cover-review-preview.png": "79bd51335a5d414a2850d50bf73191071128b704ab651b6c899b4437581f2066",
     "hardware/nfc-talisman/variants/snake-leo/artwork/cover-review-preview.png": "591b5ad963a9b6306f33c6fd031884e86db17a75ad2ee7997d7d3f29191ad259",
-    "hardware/nfc-talisman/variants/twelve-options/eda/native/nfc-twelve-options.epro2": "427cdabe8783d6b628a6b83fc9f7054477c8722da6668da9fe18cbab7e19189e",
+    "hardware/nfc-talisman/variants/twelve-options/eda/native/nfc-twelve-options.epro2": "3157999cc2edd4d0468a7ef83dade3b8db4d4cc2dbcc9ca8ed04e108a7277e42",
     "hardware/nfc-talisman/variants/standard-green-white/artwork/horse-sagittarius-front-standard-green-white-37mm.png": "439b6ddaa6344c29580290f62a9782f4e34c687290f281b934a537a7a3c940dc",
     "hardware/nfc-talisman/variants/standard-green-white/artwork/horse-sagittarius-front-standard-green-white-37mm.svg": "b366e03507310582e75cc36762dc04532575f8572eb56c5273368dbc9945f049",
     "hardware/nfc-talisman/variants/standard-green-white/artwork/horse-sagittarius-rear-standard-green-white-37mm.png": "c008ed2f2f3411a9b227e9d5592d273dc675f5a6b53711b8dd79fc8293f4eb21",
@@ -35,9 +35,9 @@
   "process_evidence": {
     "hardware/nfc-talisman/variants/standard-green-white/artwork/README.md": "ffbb08a7b8f5b3c05ce3cb61dcf253f9d291f1218cb0cbd82aad6d6dad23a54d",
     "hardware/nfc-talisman/variants/standard-green-white/artwork/manifest.json": "1e9757a06dcd1320eac05b667838ca941fe7b7280fa563dcab8f2b2287e8d79f",
-    "hardware/nfc-talisman/variants/standard-green-white/export-manifest.json": "9eeec35d128387d0625c5657f54cf7d316db2921a4c5a03ed837eb30149ac317",
+    "hardware/nfc-talisman/variants/standard-green-white/export-manifest.json": "c12dc5baa2a68a50e8354be502d07513c4542a0be69b219c5d4d8b56f10f7083",
     "hardware/nfc-talisman/variants/standard-green-white/artwork/horse-sagittarius-standard-layer-artwork.json": "c3d243e47f8509152e44d3afaf25fd837b7dce9d36a4b5a12c9f3a2d6a5d1a21",
     "hardware/nfc-talisman/variants/standard-green-white/artwork/snake-leo-standard-layer-artwork.json": "aaf9c2a540b7698360b54542b78b30d53b4f97f254f35767debc7a0066d839e4"
   },
-  "pdf_sha256": "f142d5d5ecb6efc0c4445a9cb1a3d6567092ee44467fdd2d061efd2c14a04640"
+  "pdf_sha256": "5c31b6fa2f62cc7e548f568dc2148b2a499862e77d931d4a53b96400331faf8d"
 }

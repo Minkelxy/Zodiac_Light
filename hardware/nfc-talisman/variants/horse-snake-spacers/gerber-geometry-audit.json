@@ -1,0 +1,42 @@
+{
+  "status": "passed",
+  "coordinate_tolerance_mm": 1e-05,
+  "design_manifest_sha256": "9831f7cf0d6e9638cd4c1253961ff4e616550a0515f3b7c4e6ac5c7932ad5aac",
+  "panels": {
+    "horse-snake-spacers": {
+      "gerber_sha256": "3a1510eabd2190539bddf1034c18a53d50e8e447bc6f00d754ac3b5a3e4f84fc",
+      "router_contours": {
+        "count": 24,
+        "maximum_boundary_error_mm": 1.9633520812157904e-06,
+        "all_expected_contours_matched": true
+      },
+      "silk": {
+        "boundary_error_mm": 2.179059098854182e-06,
+        "area_mm2": 381.32850326760536,
+        "negative_holes": 16,
+        "nominal_width_has_no_extra_stroke": true
+      },
+      "mask": {
+        "boundary_error_mm": null,
+        "area_mm2": 0.0,
+        "negative_holes": 0,
+        "nominal_width_has_no_extra_stroke": true
+      },
+      "status": "passed",
+      "connected_substrate": true,
+      "substrate_area_mm2": 7202.510022854105,
+      "actual_silk_mask_gap_mm": null,
+      "npth_positions_and_diameters_verified": 100,
+      "cover_count": 5
+    }
+  },
+  "errors": [],
+  "limitations": [
+    "Ideal geometry and export consistency only. Router corner treatment, mousebite breakout force, laminate thickness and optical/stacking acceptance require supplier CAM and samples."
+  ],
+  "audit_sources": {
+    "hardware/nfc-talisman/scripts/audit_horse_snake_spacers.py": "fe64134703a6e30d163233694348be9333cf8b145bba326af2386523d5f9e46f",
+    "hardware/nfc-talisman/scripts/audit_twelve_options_geometry.py": "30ebd49cba4ec234c9def9c743bf29d25cbb2176fb5af5f73131d85ddbe6ffe1",
+    "hardware/nfc-talisman/scripts/audit_standard_gerber_artwork.py": "204220ac965e6093e42d8f0d30acc94619c097a11a214979da7763ceec39eafc"
+  }
+}

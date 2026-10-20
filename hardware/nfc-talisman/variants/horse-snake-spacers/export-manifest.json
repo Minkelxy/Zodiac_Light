@@ -1,0 +1,126 @@
+{
+  "schema_version": 1,
+  "status": "additional_panel_saved_exported",
+  "boards": [
+    {
+      "status": "saved_reopened",
+      "existing_catalog": [
+        {
+          "uuid": "da4d85d9f04979eb",
+          "name": "Constellations-A-5x37-GreenWhite-100"
+        },
+        {
+          "uuid": "9883f07d70af99ab",
+          "name": "Constellations-B-5x37-GreenWhite-100"
+        },
+        {
+          "uuid": "abc3d3a5e6e4793c",
+          "name": "Zodiac-A-5x37-GreenWhite-100"
+        },
+        {
+          "uuid": "215baefd4debbd14",
+          "name": "Zodiac-B-5x37-GreenWhite-100"
+        },
+        {
+          "uuid": "7b9104396cd59877",
+          "name": "Horse-Sagittarius-GreenWhite-100-v1"
+        },
+        {
+          "uuid": "8bb2139a68d10671",
+          "name": "Snake-Leo-GreenWhite-100-v1"
+        },
+        {
+          "uuid": "fe8ee4534ee0b941",
+          "name": "ManufacturingPanel100_1"
+        },
+        {
+          "uuid": "4a4719695b24dc2b",
+          "name": "Horse-Sagittarius-100"
+        },
+        {
+          "uuid": "eb14b9eaec4f920c",
+          "name": "PCB1"
+        }
+      ],
+      "before_native": {
+        "path": "variants/horse-snake-spacers/eda/native/before-additional-panel.epro2",
+        "sha256": "427cdabe8783d6b628a6b83fc9f7054477c8722da6668da9fe18cbab7e19189e"
+      },
+      "uuid": "59b61956941700e8",
+      "name": "PCB2",
+      "requested_name": "Horse-Snake-3Spacers-GreenWhite-100",
+      "display_name": "马、蛇盖板与三片空心隔层",
+      "blank_source": {
+        "path": "variants/horse-snake-spacers/eda/native/blank.jsonl",
+        "sha256": "6dd8d6d71729ea7f52da690735e6ad7aef1ba88750b2a57bacf144dc3f3ff000"
+      },
+      "source": {
+        "path": "variants/horse-snake-spacers/eda/native/horse-snake-spacers-source.jsonl",
+        "sha256": "e5564eb9829fdf257699675cb823696839b5726431ba28bb587666cf404cdc3e"
+      },
+      "geometry": "geometry.json",
+      "key": "horse-snake-spacers",
+      "cover_count": 5,
+      "drc": [],
+      "gerber": {
+        "path": "variants/horse-snake-spacers/manufacturing-draft/horse-snake-spacers-green-white-gerber.zip",
+        "size": 90673,
+        "sha256": "3a1510eabd2190539bddf1034c18a53d50e8e447bc6f00d754ac3b5a3e4f84fc",
+        "members": {
+          "Gerber_TopLayer.GTL": {
+            "size": 3229,
+            "sha256": "c33a2d520e5c853e1f71f8f51398620c5e33d541ebe842249868839055d03939"
+          },
+          "Gerber_BottomLayer.GBL": {
+            "size": 3232,
+            "sha256": "48afcaec2e47b08b4dbc945197df2a40a649a402ec021b03d23a5b91ea20413c"
+          },
+          "Gerber_TopSilkscreenLayer.GTO": {
+            "size": 312218,
+            "sha256": "13bdc1dfe147429c6f429efb5bc48562484a037fd1d6518921b81a2ebc654283"
+          },
+          "Gerber_BottomSilkscreenLayer.GBO": {
+            "size": 630,
+            "sha256": "a19a140679f2d69691ab62c758c2ec1845f789e702fc49ae9fdd9dc2f0b4f120"
+          },
+          "Gerber_TopSolderMaskLayer.GTS": {
+            "size": 3239,
+            "sha256": "2e4b3a2df432feb50d75bd81ac745760388223d2e1b1e8586e01b3c530ee4777"
+          },
+          "Gerber_BottomSolderMaskLayer.GBS": {
+            "size": 3242,
+            "sha256": "b38148e4dc1087bd0d3124b02ef46ab6aff4b60fc1421549cc062c1bd4807591"
+          },
+          "Gerber_BoardOutlineLayer.GKO": {
+            "size": 22171,
+            "sha256": "28bdfa4282a3b2d35e0c404ed804bf043ead9c27d85d876b462dac38a93f73e5"
+          },
+          "Gerber_DrillDrawingLayer.GDD": {
+            "size": 40161,
+            "sha256": "ccad13d1eb58991df59993f018f21f51f53e01e474027ea8e13b4663522ab0ca"
+          },
+          "Drill_NPTH_Through.DRL": {
+            "size": 2064,
+            "sha256": "f37ec0337f105e38ab179ab18b92bd998a187a3304c500c2a7213acd3a9c3956"
+          },
+          "PCB下单必读.txt": {
+            "size": 94,
+            "sha256": "dcb3ee1c645c17a009d70726ad9ab708b68a074556fabcf75a4a059d3b43ec59"
+          }
+        }
+      },
+      "native_project": {
+        "path": "variants/twelve-options/eda/native/nfc-twelve-options.epro2",
+        "size": 2930563,
+        "sha256": "3157999cc2edd4d0468a7ef83dade3b8db4d4cc2dbcc9ca8ed04e108a7277e42"
+      }
+    }
+  ],
+  "native_project": {
+    "path": "variants/twelve-options/eda/native/nfc-twelve-options.epro2",
+    "size": 2930563,
+    "sha256": "3157999cc2edd4d0468a7ef83dade3b8db4d4cc2dbcc9ca8ed04e108a7277e42"
+  },
+  "design_manifest_sha256": "9831f7cf0d6e9638cd4c1253961ff4e616550a0515f3b7c4e6ac5c7932ad5aac",
+  "release_status": "HOLD_CAM_PHYSICAL_VALIDATION_PENDING"
+}
