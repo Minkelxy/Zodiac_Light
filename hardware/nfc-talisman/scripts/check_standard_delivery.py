@@ -7,6 +7,7 @@ from __future__ import annotations
 
 import argparse
 import base64
+import copy
 from collections import Counter
 import importlib.util
 import json
@@ -57,6 +58,35 @@ def _protected(records: dict[tuple[str, str], Any], excluded: set[str] | None = 
 
 def _objects(records: dict[tuple[str, str], Any]) -> dict[tuple[str, str], Any]:
     return {key: body for key, body in records.items() if key[0] == "OBJ"}
+
+
+def _mousebite_delta(body):
+    match = re.fullmatch(r'[A-Za-z0-9_]+_(TOP|BOTTOM|LEFT|RIGHT|N|S|E|W)_MB[1-5]', str(body.get('num', '')))
+    if not match:
+        return None
+    _BASE._require(body.get('plated') is False and body.get('hole')
+                   and abs(body['hole']['width'] * .0254 - (.6 if len(match[1]) > 1 else .4)) < .00001,
+                   'Invalid owned mousebite diameter/plating')
+    return {'TOP': (0, .4), 'N': (0, .4), 'BOTTOM': (0, -.4), 'S': (0, -.4),
+            'RIGHT': (.4, 0), 'E': (.4, 0), 'LEFT': (-.4, 0), 'W': (-.4, 0)}[match[1]]
+
+
+def _undo_mousebites(before, current):
+    """Verify the exact requested 0.40 mm displacement, retaining every other field."""
+    old = {b['num']: b for (kind, _), b in before.items() if kind == 'PAD' and _mousebite_delta(b) is not None}
+    new = {b['num']: (key, b) for key, b in current.items() if key[0] == 'PAD' and _mousebite_delta(b) is not None}
+    _BASE._require(len(old) == len(new) == 100 and set(old) == set(new), 'Expected exactly 100 owned mousebites')
+    result = dict(current)
+    for name, original in old.items():
+        key, actual = new[name]
+        dx, dy = _mousebite_delta(original)
+        _BASE._require(abs(actual['centerX'] - original['centerX'] - dx/.0254) < .001
+                       and abs(actual['centerY'] - original['centerY'] - dy/.0254) < .001,
+                       'Mousebite must move exactly 0.40 mm outward: ' + name)
+        body = copy.deepcopy(actual)
+        body.update(centerX=original['centerX'], centerY=original['centerY'])
+        result[key] = body
+    return result
 
 
 def _same_path(expected: Any, actual: Any, tolerance: float = .001) -> bool:
@@ -137,18 +167,25 @@ def _border_paths(geometry: dict[str, Any], center: list[float]) -> list[Any]:
 
 def _check_border(metadata: dict[str, Any], native_paths: list[Any], center: list[float]) -> str:
     """Bind a border's recorded local contours to separate Top-silk fills."""
-    _BASE._require(metadata["version"] == "af37-double-contour-ticks-v1" and metadata["layer_id"] == 3
+    _BASE._require(metadata["version"] == "af37-closed-double-contour-ticks-v2" and metadata["layer_id"] == 3
                    and metadata["units"] == "mm" and metadata["coordinate_system"] == "cover_top_left_x_right_y_down",
                    "Unexpected uniform border version/layer/coordinates")
     expected_parameters = {"across_flats_mm": 37., "outer_center_inset_mm": .7, "outer_width_mm": .22,
                            "inner_center_inset_mm": 2.1, "inner_width_mm": .24, "tick_center_inset_mm": 1.35,
                            "tick_centerline_length_mm": .42, "tick_width_mm": .22, "tick_pitch_mm": 2.4,
                            "corner_dot_diameter_mm": .28, "content_safe_inset_mm": 3.,
-                           "cardinal_bridge_width_mm": 4., "postage_drill_diameter_mm": .4,
-                           "postage_hole_pitch_mm": .72, "postage_holes_per_bridge": 5}
+                           "cardinal_bridge_depth_mm": 0., "postage_outward_offset_mm": .4,
+                           "postage_holes_per_bridge": 5}
     _BASE._require(all(metadata["parameters"].get(key) == value for key, value in expected_parameters.items()),
                    "Uniform border manufacturing/design parameters changed")
-    for geometry, fingerprint in (("geometry", "geometry_sha256"), ("content_safe_geometry", "content_safe_geometry_sha256")):
+    p = metadata['parameters']
+    _BASE._require((p['cardinal_bridge_width_mm'], p['postage_drill_diameter_mm'], p['postage_hole_pitch_mm'])
+                   in ((4., .4, .72), (5., .6, .95)), 'Unknown retained mechanical family')
+    inner = metadata['feature_counts']['inner_divider']
+    _BASE._require(metadata['inner_divider_closed'] is True and inner == {'proposed': 1, 'accepted_parts': 1, 'trimmed': 0},
+                   'Inner divider must be one complete closed ring')
+    for geometry, fingerprint in (("geometry", "geometry_sha256"), ("content_safe_geometry", "content_safe_geometry_sha256"),
+                                  ('inner_divider_geometry','inner_divider_geometry_sha256')):
         _BASE._require(_canonical_hash(metadata[geometry]) == metadata[fingerprint], "Border canonical geometry fingerprint differs")
     expected = _border_paths(metadata["geometry"], center)
     _BASE._require(len(expected) == len(native_paths) == metadata["polygon_count"] and bool(expected),
@@ -208,6 +245,7 @@ def _check_border_audit(root: Path) -> str:
                    "Independent border audit does not cover all 24 product faces")
     for key, evidence in report["covers"].items():
         _BASE._require(evidence["passed"] is True and evidence["native_border_paths_match"] is True
+                       and evidence['inner_divider_closed'] is True
                        and evidence["geometry_sha256"] == expected_metadata[key]["geometry_sha256"],
                        "Independent border geometry check failed: " + key)
     _BASE._require(set(report["physical_retention"]) == set(TWELVE_UUIDS) | set(VARIANTS)
@@ -276,13 +314,17 @@ def _check_silk_revision(root: Path, uuid: str, evidence: dict[str, Any],
         _BASE._require(bool(matches), "Ordinary mask geometry/properties changed during the silk revision")
         remaining.pop(matches[0])
     _BASE._require(not remaining, "Additional mask opening introduced during the silk revision")
-    _BASE._require(_protected(before, old_silk | old_mask) == _protected(current, new_silk | new_mask),
+    compared = current
+    if 'depanel_offset_mm' in evidence:
+        _BASE._require(evidence['depanel_offset_mm'] == .4, 'Unexpected mousebite displacement')
+        compared = _undo_mousebites(before, current)
+    _BASE._require(_protected(before, old_silk | old_mask) == _protected(compared, new_silk | new_mask),
                    "Silk revision changed copper, pads, components, drilling, outlines or other protected artwork")
     _BASE._require(_objects(before) == _objects(current), "Silk revision changed color objects")
-    return f"Historical ownership verified; {len(old_silk)} -> {len(new_silk)} Top-silk fills; {len(old_mask)} mask fills and all other physical primitives retained"
+    return f"Historical ownership verified; {len(old_silk)} -> {len(new_silk)} Top-silk fills; {len(old_mask)} mask fills retained; only declared 0.40mm mousebite displacement is permitted"
 
 
-def _gerber_commands(data: bytes, *, remove_color_image: bool = False) -> list[str]:
+def _gerber_commands(data: bytes, *, remove_color_image: bool = False, mousebite_moves=None) -> list[str]:
     """Bind used apertures, ignoring unused definitions and region apertures.
 
     EasyEDA assigns fresh aperture numbers and unused random circular sizes on
@@ -292,9 +334,11 @@ def _gerber_commands(data: bytes, *, remove_color_image: bool = False) -> list[s
     """
     text = data.decode("utf-8-sig")
     result, apertures = [], {}
-    active, region, image = None, False, False
+    active, region, image, pad_section = None, False, False, False
     for raw in text.splitlines():
         line = raw.strip()
+        if line == 'G04 Pad Start*':pad_section=True
+        if line == 'G04 Pad End*':pad_section=False
         if line == "G04 Image Start*":
             image = True
         if line == "G04 Image End*":
@@ -304,6 +348,14 @@ def _gerber_commands(data: bytes, *, remove_color_image: bool = False) -> list[s
             continue
         if not line or line.startswith(("G04", ";")):
             continue
+        flash=re.fullmatch(r'(G01)?X(-?\d+)Y(-?\d+)D03\*',line)
+        if flash and pad_section and mousebite_moves:
+            x,y=int(flash[2])/1e6,int(flash[3])/1e6
+            matches=[target for origin,target in mousebite_moves if max(abs(x-origin[0]),abs(y-origin[1]))<.000003]
+            _BASE._require(len(matches)<=1,'Ambiguous mousebite Pad flash')
+            if matches:
+                tx,ty=matches[0]
+                line=f"{flash[1] or ''}X{round(tx*1e6)}Y{round(ty*1e6)}D03*"
         definition = re.fullmatch(r"%ADD(\d+)(.+)\*%", line)
         if definition:
             apertures[definition[1]] = definition[2]
@@ -334,6 +386,14 @@ def _check_gerber(root: Path, board: dict[str, Any]) -> str:
     _BASE._require(PRESERVED_GERBER | {"Gerber_TopSilkscreenLayer.GTO", "Gerber_TopSolderMaskLayer.GTS"} <= set(expected),
                    "Required ordinary Gerber/drill layer missing")
     original = root / "variants" / variant / "manufacturing-draft" / f"{variant}-gerber.zip"
+    moves=None
+    if board.get('depanel_revision'):
+        prior=_records(_BASE._relative(root,board['base_copy_source']),board['uuid'])
+        current=_records(_BASE._relative(root,board['source']),board['uuid'])
+        _undo_mousebites(prior,current)
+        old_holes={b['num']:b for (kind,_),b in prior.items() if kind=='PAD' and _mousebite_delta(b) is not None}
+        new_holes={b['num']:b for (kind,_),b in current.items() if kind=='PAD' and _mousebite_delta(b) is not None}
+        moves=[((b['centerX']*.0254,b['centerY']*.0254),(new_holes[name]['centerX']*.0254,new_holes[name]['centerY']*.0254)) for name,b in old_holes.items()]
     with _BASE._archive(path) as archive, _BASE._archive(original) as before:
         _BASE._require(set(archive.namelist()) == set(expected), "ZIP members differ from manifest")
         for name, metadata in expected.items():
@@ -341,11 +401,14 @@ def _check_gerber(root: Path, board: dict[str, Any]) -> str:
             _BASE._require(len(data) == metadata["size"] and _BASE._digest(data) == metadata["sha256"],
                            f"Gerber member SHA/size differs: {name}")
         for name in PRESERVED_GERBER:
+            if name == 'Drill_NPTH_Through.DRL' and board.get('depanel_revision'):
+                _check_npth_drills(root, board, archive.read(name))
+                continue
             # Color OBJ images generated a bottom-mask Image proxy in the old
             # colored export. Ordinary PCB copies intentionally remove that
             # image section; all original pad openings still compare exactly.
             _BASE._require(_gerber_commands(archive.read(name)) == _gerber_commands(
-                before.read(name), remove_color_image=name == "Gerber_BottomSolderMaskLayer.GBS"),
+                before.read(name), remove_color_image=name == "Gerber_BottomSolderMaskLayer.GBS", mousebite_moves=moves),
                            f"Protected Gerber/drill commands changed: {name}")
         for name in ("Gerber_TopSilkscreenLayer.GTO", "Gerber_TopSolderMaskLayer.GTS"):
             after_commands = _gerber_commands(archive.read(name))
@@ -356,7 +419,35 @@ def _check_gerber(root: Path, board: dict[str, Any]) -> str:
         _BASE._require(_gerber_commands(archive.read("Drill_PTH_Through.DRL")) ==
                        _gerber_commands(archive.read("Drill_PTH_Through_Via.DRL")),
                        "The two PTH programs no longer describe identical drill locations")
-    return f"CRC and {len(expected)} hashes match; effective copper/paste/outline/drill/pad-mask commands unchanged; color Image mask proxy removed"
+    return f"CRC and {len(expected)} hashes match; copper/paste/outline/PTH/pad-mask retained; all NPTH locations and diameters match current source"
+
+
+def _check_npth_drills(root, board, raw):
+    diameters, tool, actual = {}, None, []
+    text = raw.decode('utf-8-sig')
+    _BASE._require('METRIC' in text, 'Expected metric NPTH drill program')
+    for line in text.splitlines():
+        line = line.strip()
+        m = re.fullmatch(r'T(\d+)C([\d.]+)', line)
+        if m:
+            diameters[m[1]] = float(m[2]); continue
+        m = re.fullmatch(r'T(\d+)', line)
+        if m:
+            tool = m[1]; continue
+        m = re.fullmatch(r'X(-?[\d.]+)Y(-?[\d.]+)', line)
+        if m:
+            actual.append((float(m[1]), float(m[2]), diameters[tool]))
+    _BASE._require(bool(actual), 'No NPTH drilling exported')
+    scale = 1e6 if max(abs(n) for hole in actual for n in hole[:2]) > 101 else 1
+    remaining = [(x/scale, y/scale, d) for x, y, d in actual]
+    records = _records(_BASE._relative(root, board['source']), board['uuid'])
+    expected = [(b['centerX']*.0254, b['centerY']*.0254, b['hole']['width']*.0254)
+                for (kind, _), b in records.items() if kind == 'PAD' and b.get('hole') and b.get('plated') is False]
+    _BASE._require(len(expected) == len(remaining), 'NPTH drill count differs from source')
+    for hole in expected:
+        matches = [i for i, candidate in enumerate(remaining) if max(abs(a-b) for a,b in zip(hole,candidate)) < .00002]
+        _BASE._require(bool(matches), 'NPTH position/diameter differs from current source')
+        remaining.pop(matches[0])
 
 
 def _check_board(root: Path, board: dict[str, Any], artifact: dict[str, Any],
@@ -390,8 +481,10 @@ def _check_board(root: Path, board: dict[str, Any], artifact: dict[str, Any],
     _BASE._require(len(made) == len(shapes) and len({entry["id"] for entry in made}) == len(made),
                    "Imported artwork has missing or duplicate primitive IDs")
     added = {entry["id"] for entry in made}
-    _BASE._require(_protected(current, added) == _protected(copied), "Copper, components, net/pads, drilling or outlines changed")
-    _BASE._require(_protected(archive_records, added) == _protected(copied), "epro2 protected primitives differ from saved copy")
+    compared = _undo_mousebites(copied, current) if board.get('depanel_revision') else current
+    archived_compared = _undo_mousebites(copied, archive_records) if board.get('depanel_revision') else archive_records
+    _BASE._require(_protected(compared, added) == _protected(copied), "Copper, components, net/pads, drilling or outlines changed")
+    _BASE._require(_protected(archived_compared, added) == _protected(copied), "epro2 protected primitives differ from saved copy")
     _BASE._require({key for key in current if key[0] == "FILL" and current[key].get("layerId") in (3, 5)} ==
                    {("FILL", ident) for ident in added}, "Unexpected or missing silk/mask decorations")
     _BASE._require(_BASE._design_records(current) == _BASE._design_records(archive_records),

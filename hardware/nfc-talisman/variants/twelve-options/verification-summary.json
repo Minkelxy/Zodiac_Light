@@ -2,14 +2,14 @@
   "date": "2026-10-20",
   "full_software_tests": {
     "command": "cmd /c scripts/run_checks.cmd",
-    "tests_passed": 196,
+    "tests_passed": 204,
     "failures": 0,
     "native_compilation": "MSVC x64; no skipped tests",
     "skipped": 0
   },
   "delivery_checks": {
     "command": "python scripts/check_project.py --skip-tests --output build/project-check-20261020.json",
-    "checks_passed": 106,
+    "checks_passed": 109,
     "failures": 0,
     "unittest_run_in_this_command": false
   },
@@ -38,11 +38,29 @@
   "border_revision": {
     "faces": 24,
     "green_white_pcbs_updated": 6,
-    "all_six_drc": [],
-    "white_silk_only": true,
+    "all_six_drc": [
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ],
+    "white_silk_only": false,
     "independent_audit": "border-artwork-audit.json",
     "pdf_pages_visually_checked": 8,
     "original_three_pcbs_retained": true,
-    "historical_five_pcb_snapshot_retained": true
+    "historical_five_pcb_snapshot_retained": true,
+    "inner_dividers_closed": 24
+  },
+  "depanel_revision": {
+    "outward_offset_mm": 0.4,
+    "mousebites_verified": 600,
+    "original_hole_diameters_and_pitch_retained": true,
+    "all_star_holes_and_light_slots_retained": true,
+    "standard_hole_diameter_mm": 0.6,
+    "added_cover_hole_diameter_mm": 0.4,
+    "baseline_native": "eda/native/before-depanel-20261020.epro2",
+    "maximum_breakaway_finishing_allowance_mm": 0.7
   }
 }

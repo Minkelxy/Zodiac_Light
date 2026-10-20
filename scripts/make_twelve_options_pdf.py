@@ -74,7 +74,7 @@ def main():
  s.DATE='2026.10.20';s.register_fonts();c=canvas.Canvas(str(OUTPUT),pagesize=(s.W,s.H),pageCompression=1)
  c.setTitle('十二星座与十二生肖 - 四块五片 100 mm 绿白 PCB 拼板')
  c.setAuthor('Zodiac Light Project')
- s.header(c,'十二星座 · 十二生肖','绿色阻焊、白色丝印；动物与星图加入纹理边框和内外分界线',1,5,collection='NFC 盖板系列')
+ s.header(c,'十二星座 · 十二生肖','绿色阻焊、白色丝印；内框闭合，拆板孔心外移 0.40 mm',1,5,collection='NFC 盖板系列')
  for i,p in enumerate(d['panels']):
   x=36+(i%2)*183;y=71+(1-i//2)*190
   s.image(c,SOURCE/p['preview'],x,y,174,174)
@@ -92,8 +92,8 @@ def main():
   s.text(c,'本板包含',482,444,17,'#17442D',True)
   s.lines(c,GROUPS[p['key']],482,412,313,16,'#17442D',leading=30)
   s.box(c,482,209,320,111,'#EEF4EF',8)
-  mechanical_note='连接桥、邮票孔与光槽保留。' if p['key'].startswith('constellations') else '连接桥与邮票孔保留。'
-  s.lines(c,'白色纹理边框与内外分界线。\n'+mechanical_note+'\n无彩色喷印，无装饰铜。',496,294,288,11,leading=23)
+  mechanical_note='星孔、光槽与连接桥保留。' if p['key'].startswith('constellations') else '符咒图案与连接桥保留。'
+  s.lines(c,'内框闭合，拆板孔外移 0.40 mm。\n'+mechanical_note+'\n边缘余量可打磨修平。',496,294,288,11,leading=23)
   note='星点为 0.8 mm 非金属孔。开槽按孔槽间实材和连通要求优化，其余连线保留为白丝印；孔位调整与加工数据见各款几何记录。' if p['key'].startswith('constellations') else '生肖沿用项目归档符咒图，按源图透明轮廓转换为白色丝印；原图与处理参数可追溯，动物图案不做去绿油开窗。'
   s.lines(c,note,482,176,313,10.6,leading=19)
   if p['key'].startswith('constellations'):

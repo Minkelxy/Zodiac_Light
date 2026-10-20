@@ -173,7 +173,14 @@ def main():
                     hole_points = []
                     for entry in entries:
                         for ring in entry["rings_mil"][1:]:
-                            point = Polygon([(x * .0254, y * .0254) for x, y in ring]).representative_point()
+                            # A closed frame surrounds other legitimate artwork.
+                            # Check its true negative space after accounting for
+                            # all expected white shapes inside that frame.
+                            void = Polygon([(x * .0254, y * .0254) for x, y in ring]).difference(expected)
+                            if void.is_empty:
+                                continue
+                            assert actual.intersection(void).area <= void.length*TOLERANCE_MM*1.1, f"Negative area filled: {entry['id']}"
+                            point = void.representative_point()
                             assert not actual.covers(point), f"Negative hole filled: {entry['id']}"
                             hole_points.append(point)
                     if kind == "silk" and face_name == "rear":

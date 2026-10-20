@@ -21,7 +21,7 @@ import build_standard_layer_artwork as standard
 from talisman_cover_artwork import canonical_geometry, compact
 
 
-VERSION = "af37-double-contour-ticks-v1"
+VERSION = "af37-closed-double-contour-ticks-v2"
 HW = Path(__file__).resolve().parents[1]
 PROJECT = HW.parents[1]
 PARAMETERS = {
@@ -36,10 +36,11 @@ PARAMETERS = {
     "minimum_board_edge_gap_mm": .50,
     "existing_art_clearance_mm": .20, "aperture_mask_clearance_mm": .20,
     "numerical_clearance_guard_mm": .01,
-    "cardinal_bridge_width_mm": 4.0, "cardinal_bridge_depth_mm": 2.30,
+    "cardinal_bridge_width_mm": 4.0, "cardinal_bridge_depth_mm": 0.0,
     "bridge_clearance_mm": .30,
     "postage_drill_diameter_mm": .40, "postage_hole_pitch_mm": .72,
     "postage_holes_per_bridge": 5, "postage_hole_clearance_mm": .20,
+    "postage_outward_offset_mm": .40,
     "trimmed_endpoint_retreat_mm": .22, "minimum_centerline_fragment_mm": .30,
 }
 
@@ -77,13 +78,13 @@ def _minimum_component_gap(geometry):
     return min((a.distance(b) for i, a in enumerate(parts) for b in parts[i + 1:]), default=None)
 
 
-def _nominal_mechanical_keepouts():
+def _nominal_mechanical_keepouts(parameters=None):
     """Nominal bridges/postage drilling of the existing 100 mm cover panels.
 
     These are conservative silk exclusions, not replacement physical geometry.
     Actual supplied mask openings are additionally respected by build_border.
     """
-    p = PARAMETERS
+    p = PARAMETERS if parameters is None else parameters
     half_width = p["cardinal_bridge_width_mm"] / 2
     depth = p["cardinal_bridge_depth_mm"]
     middle = 18.5
@@ -96,14 +97,15 @@ def _nominal_mechanical_keepouts():
     drill_centers = []
     for index in range(p["postage_holes_per_bridge"]):
         offset = (index - (p["postage_holes_per_bridge"] - 1) / 2) * p["postage_hole_pitch_mm"]
-        drill_centers.extend([(middle + offset, 0), (middle + offset, 37),
-                              (0, middle + offset), (37, middle + offset)])
+        outward = p["postage_outward_offset_mm"]
+        drill_centers.extend([(middle + offset, -outward), (middle + offset, 37 + outward),
+                              (-outward, middle + offset), (37 + outward, middle + offset)])
     drills = unary_union([Point(x, y).buffer(p["postage_drill_diameter_mm"] / 2, quad_segs=16)
                           for x, y in drill_centers])
     return bridges, drills, drill_centers
 
 
-def build_border(existing_art=None, aperture_mask=None, *, board=None):
+def build_border(existing_art=None, aperture_mask=None, *, board=None, standard_panel=False):
     """Build separate silk fills around existing art and actual mask openings.
 
     Art is never clipped or modified.  Obstructed border centerlines are cut
@@ -111,7 +113,9 @@ def build_border(existing_art=None, aperture_mask=None, *, board=None):
     A 0.01 mm numerical guard is added to the required 0.20 mm art/mask gap.
     ``content_safe_region`` is the board inset 3 mm (before any art/mask cuts).
     """
-    p = PARAMETERS
+    p = dict(PARAMETERS)
+    if standard_panel:
+        p.update(cardinal_bridge_width_mm=5., postage_drill_diameter_mm=.6, postage_hole_pitch_mm=.95)
     board = af37_board() if board is None else board
     art = GeometryCollection() if existing_art is None else existing_art
     mask = GeometryCollection() if aperture_mask is None else aperture_mask
@@ -121,18 +125,32 @@ def build_border(existing_art=None, aperture_mask=None, *, board=None):
         raise ValueError("Border coordinates require a local 37 mm cover at (0,0)")
     if not art.is_valid or not mask.is_valid:
         raise ValueError("Existing art and aperture mask must be valid geometry")
-    bridges, drills, drill_centers = _nominal_mechanical_keepouts()
+    bridges, drills, drill_centers = _nominal_mechanical_keepouts(p)
+    padding=p['inner_width_mm']/2+p['existing_art_clearance_mm']+p['numerical_clearance_guard_mm']
+    inner_region=unary_union([board.buffer(-p['inner_center_inset_mm'],join_style='mitre'),
+                             art.buffer(padding,quad_segs=24),mask.buffer(padding,quad_segs=24)]).convex_hull
+    inner_line=LineString(inner_region.exterior.coords)
+    inner_silk=inner_line.buffer(p['inner_width_mm']/2,quad_segs=24)
+    if inner_silk.geom_type!='Polygon' or len(inner_silk.interiors)!=1:
+        raise ValueError('Inner divider must be one closed enclosing ring')
     blocked = unary_union([
         bridges.buffer(p["bridge_clearance_mm"], join_style="mitre"),
         drills.buffer(p["postage_hole_clearance_mm"]),
         art.buffer(p["existing_art_clearance_mm"] + p["numerical_clearance_guard_mm"]),
         mask.buffer(p["aperture_mask_clearance_mm"] + p["numerical_clearance_guard_mm"]),
+        inner_silk.buffer(p['minimum_feature_gap_mm']+p['numerical_clearance_guard_mm']),
     ])
     features, counts = [], {}
 
     def stroke(role, line, width):
+        if role=='inner_divider':
+            features.append(inner_silk)
+            counts[role]={'proposed':1,'accepted_parts':1,'trimmed':0}
+            return
         available = line.difference(blocked.buffer(width / 2, quad_segs=24))
         trimmed = not line.equals(available)
+        if role == "inner_divider" and (trimmed or not available.is_ring):
+            raise ValueError("The inner divider must remain a complete closed ring")
         # A closed ring's arbitrary first vertex is not an actual cut. Join
         # pieces meeting there before retreating genuine obstructed endpoints.
         if available.geom_type == "MultiLineString":
@@ -208,6 +226,10 @@ def build_border(existing_art=None, aperture_mask=None, *, board=None):
         "version": VERSION, "layer_id": 3, "parameters": dict(p),
         "coordinate_system": "cover_top_left_x_right_y_down", "units": "mm",
         "feature_counts": counts, "polygon_count": len(list(standard.polygons(silk))),
+        "inner_divider_closed": True,
+        "inner_divider_geometry": canonical_geometry(inner_silk),
+        "inner_divider_geometry_sha256": _geometry_hash(inner_silk),
+        "inner_divider_policy": "Closed convex envelope of nominal 2.10mm inset and complete art/mask padded by 0.33mm; locally steps outward around crowded stars without moving apertures",
         "silk_area_mm2": round(silk.area, 6), "clearances_mm": clearances,
         "geometry": canonical_geometry(silk), "geometry_sha256": _geometry_hash(silk),
         "content_safe_geometry": canonical_geometry(safe),
@@ -216,7 +238,7 @@ def build_border(existing_art=None, aperture_mask=None, *, board=None):
         "aperture_mask_geometry_sha256": _geometry_hash(mask),
         "postage_drill_centers_mm": drill_centers,
         "bridge_exclusion_geometry": canonical_geometry(bridges.buffer(p["bridge_clearance_mm"], join_style="mitre")),
-        "mechanical_policy": "Nominal bridge/postage geometry is a silk keepout only; actual source mask, copper, drills, slots and outline are unchanged",
+        "mechanical_policy": "Mousebite centers are 0.40 mm outside the nominal cover; original hole diameter/pitch retained. Bridge material lies outside the cover; inner divider is closed.",
         "stroke_policy": "Trim centerlines before full-width round buffering; retreat cut endpoints; reject whole obstructed corner dots; no morphological change to artwork",
         "content_safe_policy": "Exact AF37 polygon inset 3.0 mm for whole-subject fitting; source art is not cropped by this module",
     }

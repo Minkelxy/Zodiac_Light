@@ -15,7 +15,7 @@
       "rename_method": "desktop_tree_UI_verified_by_getPcbInfo",
       "created": [
         {
-          "id": "ec2f27093f251f45",
+          "id": "fd2b4197be94173c",
           "logical_id": "horse-sagittarius:front:silk:001",
           "source_id": "animal_horse_01",
           "face": "front",
@@ -25,7 +25,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "95e38f27c9148d9a",
+          "id": "88088a80b585b010",
           "logical_id": "horse-sagittarius:front:silk:002",
           "source_id": "animal_horse_02",
           "face": "front",
@@ -35,7 +35,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "6cdebbcc25db223b",
+          "id": "2d921ec067aa30cd",
           "logical_id": "horse-sagittarius:front:silk:003",
           "source_id": "animal_horse_03",
           "face": "front",
@@ -45,7 +45,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "811e654c4caeef6b",
+          "id": "2ca7295ddefd759d",
           "logical_id": "horse-sagittarius:front:silk:004",
           "source_id": "animal_horse_04",
           "face": "front",
@@ -55,7 +55,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "3bbeeb4ae891e5db",
+          "id": "760abeb1998f8de0",
           "logical_id": "horse-sagittarius:front:silk:005",
           "source_id": "animal_horse_05",
           "face": "front",
@@ -65,7 +65,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "82d1bc82b60abeab",
+          "id": "e73d626c9ac27831",
           "logical_id": "horse-sagittarius:front:silk:006",
           "source_id": "animal_horse_06",
           "face": "front",
@@ -75,7 +75,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "429579b52e76a3f6",
+          "id": "3be04de3b02f74fa",
           "logical_id": "horse-sagittarius:front:silk:007",
           "source_id": "cover_border_01",
           "face": "front",
@@ -85,7 +85,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "7e138725e1b4e94c",
+          "id": "7b4ebee8e97696fd",
           "logical_id": "horse-sagittarius:front:silk:008",
           "source_id": "cover_border_02",
           "face": "front",
@@ -95,7 +95,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "2a274ff9add8ee03",
+          "id": "3752f8089e32187e",
           "logical_id": "horse-sagittarius:front:silk:009",
           "source_id": "cover_border_03",
           "face": "front",
@@ -105,7 +105,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "2fb011c1395d2844",
+          "id": "b772cdcf4524f710",
           "logical_id": "horse-sagittarius:front:silk:010",
           "source_id": "cover_border_04",
           "face": "front",
@@ -115,7 +115,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "ad0a5f89f688f598",
+          "id": "97cd8c6bd0448443",
           "logical_id": "horse-sagittarius:front:silk:011",
           "source_id": "cover_border_05",
           "face": "front",
@@ -125,7 +125,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "5d09a53fa0fc341b",
+          "id": "4d4a0c7717b23512",
           "logical_id": "horse-sagittarius:front:silk:012",
           "source_id": "cover_border_06",
           "face": "front",
@@ -135,7 +135,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "e1c1ce01858d181e",
+          "id": "7cb765709ce7c60c",
           "logical_id": "horse-sagittarius:front:silk:013",
           "source_id": "cover_border_07",
           "face": "front",
@@ -145,7 +145,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "b74bfca33e4f4f1b",
+          "id": "0de8bf21460d6ff4",
           "logical_id": "horse-sagittarius:front:silk:014",
           "source_id": "cover_border_08",
           "face": "front",
@@ -155,7 +155,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "c3c9bbcfc316bc4e",
+          "id": "6ec33c79af35e6cc",
           "logical_id": "horse-sagittarius:front:silk:015",
           "source_id": "cover_border_09",
           "face": "front",
@@ -165,7 +165,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "2a7e77a31775c873",
+          "id": "ff834cc003c0872e",
           "logical_id": "horse-sagittarius:front:silk:016",
           "source_id": "cover_border_10",
           "face": "front",
@@ -175,7 +175,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "100cf14061bd40d1",
+          "id": "ec0ab3f3fc239f84",
           "logical_id": "horse-sagittarius:front:silk:017",
           "source_id": "cover_border_11",
           "face": "front",
@@ -185,7 +185,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "682886e33e88c9e0",
+          "id": "3d290f278b34b4b8",
           "logical_id": "horse-sagittarius:front:silk:018",
           "source_id": "cover_border_12",
           "face": "front",
@@ -195,7 +195,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "8e1e1cf4b7ceebbf",
+          "id": "27014c51c14704b2",
           "logical_id": "horse-sagittarius:front:silk:019",
           "source_id": "cover_border_13",
           "face": "front",
@@ -205,7 +205,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "823a5b5bc0f3e09a",
+          "id": "5b690c6420b7dece",
           "logical_id": "horse-sagittarius:front:silk:020",
           "source_id": "cover_border_14",
           "face": "front",
@@ -215,7 +215,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "c792b64507a6dddf",
+          "id": "2f05ed8ba7b2afee",
           "logical_id": "horse-sagittarius:front:silk:021",
           "source_id": "cover_border_15",
           "face": "front",
@@ -225,7 +225,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "fdc9a3ebb1a509b1",
+          "id": "d2fabe15049d7f4a",
           "logical_id": "horse-sagittarius:front:silk:022",
           "source_id": "cover_border_16",
           "face": "front",
@@ -235,7 +235,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "7c89e7e13a65e43b",
+          "id": "3b1d418004f22ed7",
           "logical_id": "horse-sagittarius:front:silk:023",
           "source_id": "cover_border_17",
           "face": "front",
@@ -245,7 +245,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "47456f88b79e0e09",
+          "id": "b789e4dcf2139173",
           "logical_id": "horse-sagittarius:front:silk:024",
           "source_id": "cover_border_18",
           "face": "front",
@@ -255,7 +255,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "028be11b333a95e3",
+          "id": "0887e85a66b93968",
           "logical_id": "horse-sagittarius:front:silk:025",
           "source_id": "cover_border_19",
           "face": "front",
@@ -265,7 +265,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "a00668734c9cc07c",
+          "id": "915be4d5de5d4339",
           "logical_id": "horse-sagittarius:front:silk:026",
           "source_id": "cover_border_20",
           "face": "front",
@@ -275,7 +275,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "c220decf0720cbbd",
+          "id": "a7df9577ed459a81",
           "logical_id": "horse-sagittarius:front:silk:027",
           "source_id": "cover_border_21",
           "face": "front",
@@ -285,7 +285,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "c4ccf62f152b43dd",
+          "id": "bb702577791dc3df",
           "logical_id": "horse-sagittarius:front:silk:028",
           "source_id": "cover_border_22",
           "face": "front",
@@ -295,7 +295,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "30443d1ee85a9923",
+          "id": "2c9d18380e4ea117",
           "logical_id": "horse-sagittarius:front:silk:029",
           "source_id": "cover_border_23",
           "face": "front",
@@ -305,7 +305,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "b0af401f99f278f5",
+          "id": "1945a91bc93fe36d",
           "logical_id": "horse-sagittarius:front:silk:030",
           "source_id": "cover_border_24",
           "face": "front",
@@ -315,7 +315,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "81e9d4f0b967c628",
+          "id": "d9e7abce4f4aad2a",
           "logical_id": "horse-sagittarius:front:silk:031",
           "source_id": "cover_border_25",
           "face": "front",
@@ -325,7 +325,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "5e9e1bb790cae645",
+          "id": "d3af5006d6802f05",
           "logical_id": "horse-sagittarius:front:silk:032",
           "source_id": "cover_border_26",
           "face": "front",
@@ -335,7 +335,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "1ae551f237e80e13",
+          "id": "422a17403b4cb0ce",
           "logical_id": "horse-sagittarius:front:silk:033",
           "source_id": "cover_border_27",
           "face": "front",
@@ -345,7 +345,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "8b0c079299002f5c",
+          "id": "c0b04d353e7cf5ae",
           "logical_id": "horse-sagittarius:front:silk:034",
           "source_id": "cover_border_28",
           "face": "front",
@@ -355,7 +355,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "ddfd477ea330c10c",
+          "id": "a2a919616d845e0a",
           "logical_id": "horse-sagittarius:front:silk:035",
           "source_id": "cover_border_29",
           "face": "front",
@@ -365,7 +365,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "798a2fe4356324da",
+          "id": "f8a8c7a36dde9176",
           "logical_id": "horse-sagittarius:front:silk:036",
           "source_id": "cover_border_30",
           "face": "front",
@@ -375,7 +375,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "44166a8b06f875e6",
+          "id": "91924ee15013a742",
           "logical_id": "horse-sagittarius:front:silk:037",
           "source_id": "cover_border_31",
           "face": "front",
@@ -385,7 +385,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "60109a4da0d94a6e",
+          "id": "028134e173913746",
           "logical_id": "horse-sagittarius:front:silk:038",
           "source_id": "cover_border_32",
           "face": "front",
@@ -395,7 +395,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "426499fb1ed520cd",
+          "id": "c3119b1e66419020",
           "logical_id": "horse-sagittarius:front:silk:039",
           "source_id": "cover_border_33",
           "face": "front",
@@ -405,7 +405,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "3ed0723c5437144e",
+          "id": "fd86fb6fe6aed218",
           "logical_id": "horse-sagittarius:front:silk:040",
           "source_id": "cover_border_34",
           "face": "front",
@@ -415,7 +415,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "2e41b5a8263068a9",
+          "id": "bad66cc2c05fa939",
           "logical_id": "horse-sagittarius:front:silk:041",
           "source_id": "cover_border_35",
           "face": "front",
@@ -425,7 +425,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "c67089975a5065da",
+          "id": "b9813c360d4e67b5",
           "logical_id": "horse-sagittarius:front:silk:042",
           "source_id": "cover_border_36",
           "face": "front",
@@ -435,7 +435,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "11a22b61d6fce82f",
+          "id": "92197bee7c0a2941",
           "logical_id": "horse-sagittarius:front:silk:043",
           "source_id": "cover_border_37",
           "face": "front",
@@ -445,7 +445,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "b73e6e8902381940",
+          "id": "ba58bf75135308f1",
           "logical_id": "horse-sagittarius:front:silk:044",
           "source_id": "cover_border_38",
           "face": "front",
@@ -455,7 +455,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "8556271eed34d43c",
+          "id": "7722fed2804b39e8",
           "logical_id": "horse-sagittarius:front:silk:045",
           "source_id": "cover_border_39",
           "face": "front",
@@ -465,7 +465,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "d375496a5ef04bea",
+          "id": "42eb1e673e7330b7",
           "logical_id": "horse-sagittarius:front:silk:046",
           "source_id": "cover_border_40",
           "face": "front",
@@ -475,7 +475,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "019860e652b097b8",
+          "id": "0ed8eea565bae5d1",
           "logical_id": "horse-sagittarius:front:silk:047",
           "source_id": "cover_border_41",
           "face": "front",
@@ -485,7 +485,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "bcc2c3ba0cb6148e",
+          "id": "2c1f0dba9aefdebe",
           "logical_id": "horse-sagittarius:front:silk:048",
           "source_id": "cover_border_42",
           "face": "front",
@@ -495,7 +495,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "e661baa0da981207",
+          "id": "8b218a89f4f118ab",
           "logical_id": "horse-sagittarius:front:silk:049",
           "source_id": "cover_border_43",
           "face": "front",
@@ -505,7 +505,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "317e6494babf9961",
+          "id": "568d571f3b3d0cad",
           "logical_id": "horse-sagittarius:front:silk:050",
           "source_id": "cover_border_44",
           "face": "front",
@@ -515,7 +515,67 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "0a88aac5f194eace",
+          "id": "6b9764624e5f465a",
+          "logical_id": "horse-sagittarius:front:silk:051",
+          "source_id": "cover_border_45",
+          "face": "front",
+          "kind": "silk",
+          "layer": 3,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "6d50db9719ba934d",
+          "logical_id": "horse-sagittarius:front:silk:052",
+          "source_id": "cover_border_46",
+          "face": "front",
+          "kind": "silk",
+          "layer": 3,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "ce3353819e969923",
+          "logical_id": "horse-sagittarius:front:silk:053",
+          "source_id": "cover_border_47",
+          "face": "front",
+          "kind": "silk",
+          "layer": 3,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "6b994dbf3c564207",
+          "logical_id": "horse-sagittarius:front:silk:054",
+          "source_id": "cover_border_48",
+          "face": "front",
+          "kind": "silk",
+          "layer": 3,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "248ede07a681da88",
+          "logical_id": "horse-sagittarius:front:silk:055",
+          "source_id": "cover_border_49",
+          "face": "front",
+          "kind": "silk",
+          "layer": 3,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "8ff1dcc93c675927",
+          "logical_id": "horse-sagittarius:front:silk:056",
+          "source_id": "cover_border_50",
+          "face": "front",
+          "kind": "silk",
+          "layer": 3,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "993e7d5761a8ebb5",
           "logical_id": "horse-sagittarius:rear:silk:001",
           "source_id": "star_link_e01_a_01",
           "face": "rear",
@@ -525,7 +585,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "832ec3b6af3bdea2",
+          "id": "4856c3b2dcc0aa4f",
           "logical_id": "horse-sagittarius:rear:silk:002",
           "source_id": "star_link_e01_b_01",
           "face": "rear",
@@ -535,7 +595,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "fcd01629c71d607d",
+          "id": "71030a6dc4388bc1",
           "logical_id": "horse-sagittarius:rear:silk:003",
           "source_id": "star_link_e03_a_01",
           "face": "rear",
@@ -545,7 +605,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "6d0fa3d7924189fd",
+          "id": "0fee04071f5e641c",
           "logical_id": "horse-sagittarius:rear:silk:004",
           "source_id": "star_link_e03_b_01",
           "face": "rear",
@@ -555,7 +615,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "4a6c16a0ed4dbd63",
+          "id": "6c32ffc7e80ec6ad",
           "logical_id": "horse-sagittarius:rear:silk:005",
           "source_id": "star_link_e05_a_01",
           "face": "rear",
@@ -565,7 +625,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "d6c06d25460df203",
+          "id": "642883bc882c35e9",
           "logical_id": "horse-sagittarius:rear:silk:006",
           "source_id": "star_link_e05_b_01",
           "face": "rear",
@@ -575,7 +635,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "ab59d63b16a13010",
+          "id": "564ea0a01b9510dd",
           "logical_id": "horse-sagittarius:rear:silk:007",
           "source_id": "star_link_e06_a_01",
           "face": "rear",
@@ -585,7 +645,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "499e76ba5be8673f",
+          "id": "b91737a66ce10019",
           "logical_id": "horse-sagittarius:rear:silk:008",
           "source_id": "star_link_e06_b_01",
           "face": "rear",
@@ -595,7 +655,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "4ec241cce3ab0d80",
+          "id": "f5e2e2a764f166d3",
           "logical_id": "horse-sagittarius:rear:silk:009",
           "source_id": "star_link_e07_a_01",
           "face": "rear",
@@ -605,7 +665,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "19a22023e2cbea3a",
+          "id": "5fe8c4f525b17169",
           "logical_id": "horse-sagittarius:rear:silk:010",
           "source_id": "star_link_e07_b_01",
           "face": "rear",
@@ -615,7 +675,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "2022ae3db785f5b9",
+          "id": "52abb72965a2660e",
           "logical_id": "horse-sagittarius:rear:silk:011",
           "source_id": "star_link_e08_a_01",
           "face": "rear",
@@ -625,7 +685,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "17d553d203e77302",
+          "id": "befe73bede25e6ee",
           "logical_id": "horse-sagittarius:rear:silk:012",
           "source_id": "star_link_e08_b_01",
           "face": "rear",
@@ -635,7 +695,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "541806d6d977fb83",
+          "id": "7137e334cb6690f0",
           "logical_id": "horse-sagittarius:rear:silk:013",
           "source_id": "star_link_e09_a_01",
           "face": "rear",
@@ -645,7 +705,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "cec93a4ca840cf9c",
+          "id": "69cd241c8e425a37",
           "logical_id": "horse-sagittarius:rear:silk:014",
           "source_id": "star_link_e09_b_01",
           "face": "rear",
@@ -655,7 +715,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "0b32aecbbdf92b54",
+          "id": "3e18641c57c94053",
           "logical_id": "horse-sagittarius:rear:silk:015",
           "source_id": "star_link_e10_a_01",
           "face": "rear",
@@ -665,7 +725,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "13fab79528e36519",
+          "id": "ef359e8705c6cdad",
           "logical_id": "horse-sagittarius:rear:silk:016",
           "source_id": "star_link_e10_b_01",
           "face": "rear",
@@ -675,7 +735,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "d1b5b24b9cb6b4f2",
+          "id": "a9d6c89c7fd6d1c9",
           "logical_id": "horse-sagittarius:rear:silk:017",
           "source_id": "star_link_e12_a_01",
           "face": "rear",
@@ -685,7 +745,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "49c7fc2cab66fa9b",
+          "id": "bbc83267a8faf009",
           "logical_id": "horse-sagittarius:rear:silk:018",
           "source_id": "star_link_e12_b_01",
           "face": "rear",
@@ -695,7 +755,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "045eaa8ac321ca7a",
+          "id": "a646fd189c577adf",
           "logical_id": "horse-sagittarius:rear:silk:019",
           "source_id": "star_link_e13_a_01",
           "face": "rear",
@@ -705,7 +765,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "2c8298203b32e1a5",
+          "id": "e6db3bf5ae85cc9a",
           "logical_id": "horse-sagittarius:rear:silk:020",
           "source_id": "star_link_e13_b_01",
           "face": "rear",
@@ -715,7 +775,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "4f4c4356d83739fa",
+          "id": "6d4b58643ac3a4e3",
           "logical_id": "horse-sagittarius:rear:silk:021",
           "source_id": "star_link_e14_a_01",
           "face": "rear",
@@ -725,7 +785,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "020b4b6824fe2bb1",
+          "id": "b7ce433016793ac8",
           "logical_id": "horse-sagittarius:rear:silk:022",
           "source_id": "star_link_e14_b_01",
           "face": "rear",
@@ -735,7 +795,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "1046db239932aa44",
+          "id": "7c0af1989050c8ed",
           "logical_id": "horse-sagittarius:rear:silk:023",
           "source_id": "star_ring_01_01",
           "face": "rear",
@@ -745,7 +805,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "4bb8fec83de27986",
+          "id": "de951531ebd4dc50",
           "logical_id": "horse-sagittarius:rear:silk:024",
           "source_id": "star_ring_02_01",
           "face": "rear",
@@ -755,7 +815,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "26f386709b8c99d0",
+          "id": "fe5b00220f692b85",
           "logical_id": "horse-sagittarius:rear:silk:025",
           "source_id": "star_ring_03_01",
           "face": "rear",
@@ -765,7 +825,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "a0c2dc86a43b94dc",
+          "id": "326e05c4460a8e07",
           "logical_id": "horse-sagittarius:rear:silk:026",
           "source_id": "star_ring_04_01",
           "face": "rear",
@@ -775,7 +835,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "f2f99f8d0eae6648",
+          "id": "2cc5f2013fc91afb",
           "logical_id": "horse-sagittarius:rear:silk:027",
           "source_id": "star_ring_05_01",
           "face": "rear",
@@ -785,7 +845,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "8a4483bfabe3f83b",
+          "id": "af14535fe246742a",
           "logical_id": "horse-sagittarius:rear:silk:028",
           "source_id": "star_ring_06_01",
           "face": "rear",
@@ -795,7 +855,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "93349c3fb6b8b204",
+          "id": "4668c11b3f42075c",
           "logical_id": "horse-sagittarius:rear:silk:029",
           "source_id": "star_ring_07_01",
           "face": "rear",
@@ -805,7 +865,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "b059993acd3c1262",
+          "id": "aa5250aa245ee82d",
           "logical_id": "horse-sagittarius:rear:silk:030",
           "source_id": "star_ring_08_01",
           "face": "rear",
@@ -815,7 +875,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "d3ac79500888d7e2",
+          "id": "650065d9016a9786",
           "logical_id": "horse-sagittarius:rear:silk:031",
           "source_id": "label_sagittarius_01",
           "face": "rear",
@@ -825,7 +885,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "720654d33bac16c3",
+          "id": "a497156316401e74",
           "logical_id": "horse-sagittarius:rear:silk:032",
           "source_id": "label_sagittarius_02",
           "face": "rear",
@@ -835,7 +895,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "eb90059513a8d84b",
+          "id": "b176291caa569979",
           "logical_id": "horse-sagittarius:rear:silk:033",
           "source_id": "label_sagittarius_03",
           "face": "rear",
@@ -845,7 +905,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "9d4923661fac443a",
+          "id": "e25b5746ed1270c5",
           "logical_id": "horse-sagittarius:rear:silk:034",
           "source_id": "label_sagittarius_04",
           "face": "rear",
@@ -855,7 +915,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "5f4aeea2b6edc8cd",
+          "id": "bb4ecd48b45d30e8",
           "logical_id": "horse-sagittarius:rear:silk:035",
           "source_id": "label_sagittarius_05",
           "face": "rear",
@@ -865,7 +925,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "5d399b59c635f7af",
+          "id": "60de53e64b5ed39e",
           "logical_id": "horse-sagittarius:rear:silk:036",
           "source_id": "label_sagittarius_06",
           "face": "rear",
@@ -875,7 +935,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "ed422c1d0a5001a7",
+          "id": "0e4ef901302b0ce9",
           "logical_id": "horse-sagittarius:rear:silk:037",
           "source_id": "label_sagittarius_07",
           "face": "rear",
@@ -885,7 +945,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "7f78da2b2c22a845",
+          "id": "79d0863179d34edb",
           "logical_id": "horse-sagittarius:rear:silk:038",
           "source_id": "label_sagittarius_08",
           "face": "rear",
@@ -895,7 +955,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "cee564cf976805cd",
+          "id": "557a5ecc95324bef",
           "logical_id": "horse-sagittarius:rear:silk:039",
           "source_id": "label_sagittarius_09",
           "face": "rear",
@@ -905,7 +965,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "2ad98c30d701346d",
+          "id": "f4bef997e3139eb9",
           "logical_id": "horse-sagittarius:rear:silk:040",
           "source_id": "label_sagittarius_10",
           "face": "rear",
@@ -915,7 +975,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "cdbb5a8e73b6c0de",
+          "id": "4bed3a777b59a02b",
           "logical_id": "horse-sagittarius:rear:silk:041",
           "source_id": "label_sagittarius_11",
           "face": "rear",
@@ -925,7 +985,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "c2fb8e30803db702",
+          "id": "a32b58988f90d197",
           "logical_id": "horse-sagittarius:rear:silk:042",
           "source_id": "label_ad_astra_01",
           "face": "rear",
@@ -935,7 +995,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "1faec4c35776a8fc",
+          "id": "1275ce551b579fa9",
           "logical_id": "horse-sagittarius:rear:silk:043",
           "source_id": "label_ad_astra_02",
           "face": "rear",
@@ -945,7 +1005,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "1e3e048a3166f454",
+          "id": "d753a5bf36c784d1",
           "logical_id": "horse-sagittarius:rear:silk:044",
           "source_id": "label_ad_astra_03",
           "face": "rear",
@@ -955,7 +1015,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "bacfe3fc2cfc38d0",
+          "id": "aa053aa170a235df",
           "logical_id": "horse-sagittarius:rear:silk:045",
           "source_id": "label_ad_astra_04",
           "face": "rear",
@@ -965,7 +1025,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "c0b1dc65b7395538",
+          "id": "2d20c6334fad2866",
           "logical_id": "horse-sagittarius:rear:silk:046",
           "source_id": "label_ad_astra_05",
           "face": "rear",
@@ -975,7 +1035,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "d9259c96cc9143b2",
+          "id": "63b67bf99f304cad",
           "logical_id": "horse-sagittarius:rear:silk:047",
           "source_id": "label_ad_astra_06",
           "face": "rear",
@@ -985,7 +1045,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "4116ee7f86b4288c",
+          "id": "7ae07e9b9854aaf7",
           "logical_id": "horse-sagittarius:rear:silk:048",
           "source_id": "label_ad_astra_07",
           "face": "rear",
@@ -995,7 +1055,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "5d73608ee77a1421",
+          "id": "f1eddc660483ce19",
           "logical_id": "horse-sagittarius:rear:silk:049",
           "source_id": "cover_border_01",
           "face": "rear",
@@ -1005,7 +1065,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "19d2e91fcac89c39",
+          "id": "4990bf22b0e7b2b6",
           "logical_id": "horse-sagittarius:rear:silk:050",
           "source_id": "cover_border_02",
           "face": "rear",
@@ -1015,7 +1075,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "c122693fff103c58",
+          "id": "6913b4d4b0d2217d",
           "logical_id": "horse-sagittarius:rear:silk:051",
           "source_id": "cover_border_03",
           "face": "rear",
@@ -1025,7 +1085,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "f1b3774d59bf359b",
+          "id": "dd805ef37410bf6a",
           "logical_id": "horse-sagittarius:rear:silk:052",
           "source_id": "cover_border_04",
           "face": "rear",
@@ -1035,7 +1095,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "d2c6ec8fb6910cf5",
+          "id": "560dfc5314e98687",
           "logical_id": "horse-sagittarius:rear:silk:053",
           "source_id": "cover_border_05",
           "face": "rear",
@@ -1045,7 +1105,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "7af36e3bd530909b",
+          "id": "d6fec68f2a9c31ca",
           "logical_id": "horse-sagittarius:rear:silk:054",
           "source_id": "cover_border_06",
           "face": "rear",
@@ -1055,7 +1115,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "afb680b5616a88c2",
+          "id": "b4561b4b98ca82b1",
           "logical_id": "horse-sagittarius:rear:silk:055",
           "source_id": "cover_border_07",
           "face": "rear",
@@ -1065,7 +1125,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "768e6959df84c61a",
+          "id": "b8bb8f0cb94c954c",
           "logical_id": "horse-sagittarius:rear:silk:056",
           "source_id": "cover_border_08",
           "face": "rear",
@@ -1075,7 +1135,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "1d0e55ee53d2f259",
+          "id": "0f6f52717ced097e",
           "logical_id": "horse-sagittarius:rear:silk:057",
           "source_id": "cover_border_09",
           "face": "rear",
@@ -1085,7 +1145,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "c76be74c1aaf28c0",
+          "id": "91042b822f56c731",
           "logical_id": "horse-sagittarius:rear:silk:058",
           "source_id": "cover_border_10",
           "face": "rear",
@@ -1095,7 +1155,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "32aaedc2cf2ce079",
+          "id": "82844e3886d51b94",
           "logical_id": "horse-sagittarius:rear:silk:059",
           "source_id": "cover_border_11",
           "face": "rear",
@@ -1105,7 +1165,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "4137d26d27cb7d6d",
+          "id": "500e17f3a463c1f0",
           "logical_id": "horse-sagittarius:rear:silk:060",
           "source_id": "cover_border_12",
           "face": "rear",
@@ -1115,7 +1175,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "26b2a4fc50f87e81",
+          "id": "33f028d0cb1b5cff",
           "logical_id": "horse-sagittarius:rear:silk:061",
           "source_id": "cover_border_13",
           "face": "rear",
@@ -1125,7 +1185,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "8b41b77b961c7efb",
+          "id": "346a17c78d87c431",
           "logical_id": "horse-sagittarius:rear:silk:062",
           "source_id": "cover_border_14",
           "face": "rear",
@@ -1135,7 +1195,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "0b08f88ac91b3dfe",
+          "id": "062b56496b3428bf",
           "logical_id": "horse-sagittarius:rear:silk:063",
           "source_id": "cover_border_15",
           "face": "rear",
@@ -1145,7 +1205,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "e882d7c816da67fe",
+          "id": "60798de6dce859a1",
           "logical_id": "horse-sagittarius:rear:silk:064",
           "source_id": "cover_border_16",
           "face": "rear",
@@ -1155,7 +1215,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "5235365bb803f92d",
+          "id": "0f1b32ff6d0bf572",
           "logical_id": "horse-sagittarius:rear:silk:065",
           "source_id": "cover_border_17",
           "face": "rear",
@@ -1165,7 +1225,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "54ddf2f57499a564",
+          "id": "254e713a8e58a0fe",
           "logical_id": "horse-sagittarius:rear:silk:066",
           "source_id": "cover_border_18",
           "face": "rear",
@@ -1175,7 +1235,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "ce93372586e7e82a",
+          "id": "dcde3f47b731fde4",
           "logical_id": "horse-sagittarius:rear:silk:067",
           "source_id": "cover_border_19",
           "face": "rear",
@@ -1185,7 +1245,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "b6fec91d6ec78f31",
+          "id": "550cb20ea9b29146",
           "logical_id": "horse-sagittarius:rear:silk:068",
           "source_id": "cover_border_20",
           "face": "rear",
@@ -1195,7 +1255,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "785e4a07776b99e8",
+          "id": "a1af56d47fe90c30",
           "logical_id": "horse-sagittarius:rear:silk:069",
           "source_id": "cover_border_21",
           "face": "rear",
@@ -1205,7 +1265,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "6d60a9abf5f1a244",
+          "id": "8cdf48be03f28188",
           "logical_id": "horse-sagittarius:rear:silk:070",
           "source_id": "cover_border_22",
           "face": "rear",
@@ -1215,7 +1275,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "03839101b3d0463e",
+          "id": "f5a7f78e1cdc54ca",
           "logical_id": "horse-sagittarius:rear:silk:071",
           "source_id": "cover_border_23",
           "face": "rear",
@@ -1225,7 +1285,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "a64e60b4c8d4b76c",
+          "id": "aadf39f10c2b5bfc",
           "logical_id": "horse-sagittarius:rear:silk:072",
           "source_id": "cover_border_24",
           "face": "rear",
@@ -1235,7 +1295,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "f13adfeb1a933938",
+          "id": "dc13f986cce9019d",
           "logical_id": "horse-sagittarius:rear:silk:073",
           "source_id": "cover_border_25",
           "face": "rear",
@@ -1245,7 +1305,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "00127b50b08d6791",
+          "id": "6856da683cf49e86",
           "logical_id": "horse-sagittarius:rear:silk:074",
           "source_id": "cover_border_26",
           "face": "rear",
@@ -1255,7 +1315,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "87a85606cc724a4d",
+          "id": "4892a2acba6e80ee",
           "logical_id": "horse-sagittarius:rear:silk:075",
           "source_id": "cover_border_27",
           "face": "rear",
@@ -1265,7 +1325,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "f7298de9c3d3ec9c",
+          "id": "04055cec2040e1ac",
           "logical_id": "horse-sagittarius:rear:silk:076",
           "source_id": "cover_border_28",
           "face": "rear",
@@ -1275,7 +1335,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "7b068bbbe4a4f6b7",
+          "id": "b92d0e400ac69def",
           "logical_id": "horse-sagittarius:rear:silk:077",
           "source_id": "cover_border_29",
           "face": "rear",
@@ -1285,7 +1345,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "5d5bc1482b1a9bf0",
+          "id": "c62f8b9a692a250e",
           "logical_id": "horse-sagittarius:rear:silk:078",
           "source_id": "cover_border_30",
           "face": "rear",
@@ -1295,7 +1355,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "3db1937b0c69b908",
+          "id": "0551809c20990556",
           "logical_id": "horse-sagittarius:rear:silk:079",
           "source_id": "cover_border_31",
           "face": "rear",
@@ -1305,7 +1365,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "0328972d1db09a5e",
+          "id": "f33c0ea963d93725",
           "logical_id": "horse-sagittarius:rear:silk:080",
           "source_id": "cover_border_32",
           "face": "rear",
@@ -1315,7 +1375,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "d0fa22f85bf113e8",
+          "id": "c12362c07cff8515",
           "logical_id": "horse-sagittarius:rear:silk:081",
           "source_id": "cover_border_33",
           "face": "rear",
@@ -1325,7 +1385,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "44a8e26860429d63",
+          "id": "f9085f5910fc90f8",
           "logical_id": "horse-sagittarius:rear:silk:082",
           "source_id": "cover_border_34",
           "face": "rear",
@@ -1335,7 +1395,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "a12220fb5996de29",
+          "id": "76adf53e15a7f70c",
           "logical_id": "horse-sagittarius:rear:silk:083",
           "source_id": "cover_border_35",
           "face": "rear",
@@ -1345,7 +1405,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "e9b49b3e19ae9adf",
+          "id": "a8bf18100330d4de",
           "logical_id": "horse-sagittarius:rear:silk:084",
           "source_id": "cover_border_36",
           "face": "rear",
@@ -1355,7 +1415,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "161a92935f28093d",
+          "id": "8d0fb0a7ee868e43",
           "logical_id": "horse-sagittarius:rear:silk:085",
           "source_id": "cover_border_37",
           "face": "rear",
@@ -1365,7 +1425,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "fc516ea1306a254b",
+          "id": "2973728bb8f5b32f",
           "logical_id": "horse-sagittarius:rear:silk:086",
           "source_id": "cover_border_38",
           "face": "rear",
@@ -1375,7 +1435,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "023716fbfcb2cad7",
+          "id": "35efca07dde9ea44",
           "logical_id": "horse-sagittarius:rear:silk:087",
           "source_id": "cover_border_39",
           "face": "rear",
@@ -1385,7 +1445,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "127c8cef030f84b0",
+          "id": "8e83abf1e0599c48",
           "logical_id": "horse-sagittarius:rear:silk:088",
           "source_id": "cover_border_40",
           "face": "rear",
@@ -1395,7 +1455,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "af198cc0543c80a8",
+          "id": "87685dfbff4d9423",
           "logical_id": "horse-sagittarius:rear:silk:089",
           "source_id": "cover_border_41",
           "face": "rear",
@@ -1405,7 +1465,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "2025acb8fbf04551",
+          "id": "9982986ef58cae46",
           "logical_id": "horse-sagittarius:rear:silk:090",
           "source_id": "cover_border_42",
           "face": "rear",
@@ -1415,7 +1475,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "b0aa80bd745c2386",
+          "id": "ef0bfa6f7fca502a",
           "logical_id": "horse-sagittarius:rear:silk:091",
           "source_id": "cover_border_43",
           "face": "rear",
@@ -1425,7 +1485,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "19d752d9e1c3dd78",
+          "id": "37a42c01b219d228",
           "logical_id": "horse-sagittarius:rear:silk:092",
           "source_id": "cover_border_44",
           "face": "rear",
@@ -1435,7 +1495,67 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "e5fdc3ab8e0fe13d",
+          "id": "27f764e76c8cc4d6",
+          "logical_id": "horse-sagittarius:rear:silk:093",
+          "source_id": "cover_border_45",
+          "face": "rear",
+          "kind": "silk",
+          "layer": 3,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "997419ce278a6183",
+          "logical_id": "horse-sagittarius:rear:silk:094",
+          "source_id": "cover_border_46",
+          "face": "rear",
+          "kind": "silk",
+          "layer": 3,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "0de74104b3751123",
+          "logical_id": "horse-sagittarius:rear:silk:095",
+          "source_id": "cover_border_47",
+          "face": "rear",
+          "kind": "silk",
+          "layer": 3,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "cc31c27dea1f453d",
+          "logical_id": "horse-sagittarius:rear:silk:096",
+          "source_id": "cover_border_48",
+          "face": "rear",
+          "kind": "silk",
+          "layer": 3,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "345019e23ec715dc",
+          "logical_id": "horse-sagittarius:rear:silk:097",
+          "source_id": "cover_border_49",
+          "face": "rear",
+          "kind": "silk",
+          "layer": 3,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "56cda70dc1fbe451",
+          "logical_id": "horse-sagittarius:rear:silk:098",
+          "source_id": "cover_border_50",
+          "face": "rear",
+          "kind": "silk",
+          "layer": 3,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "504c862e5db15842",
           "logical_id": "horse-sagittarius:rear:mask:001",
           "source_id": "mask_opening_01",
           "face": "rear",
@@ -1445,7 +1565,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "6afa6276bcec3108",
+          "id": "bbc7f491249b9fe9",
           "logical_id": "horse-sagittarius:rear:mask:002",
           "source_id": "mask_opening_02",
           "face": "rear",
@@ -1455,7 +1575,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "ac338c26f79c5376",
+          "id": "8867570c3a1745ce",
           "logical_id": "horse-sagittarius:rear:mask:003",
           "source_id": "mask_opening_03",
           "face": "rear",
@@ -1465,7 +1585,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "7f3f1e6e1e22b3cf",
+          "id": "0b4fa3dd0728b5c8",
           "logical_id": "horse-sagittarius:rear:mask:004",
           "source_id": "mask_opening_04",
           "face": "rear",
@@ -1475,7 +1595,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "d8dfca13c605332b",
+          "id": "e44850b17862e05f",
           "logical_id": "horse-sagittarius:rear:mask:005",
           "source_id": "mask_opening_05",
           "face": "rear",
@@ -1485,7 +1605,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "7d99859ec97a37e7",
+          "id": "c4c3d04ddddbb8cf",
           "logical_id": "horse-sagittarius:rear:mask:006",
           "source_id": "mask_opening_06",
           "face": "rear",
@@ -1495,7 +1615,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "f42283016708e372",
+          "id": "66fca392bf86614e",
           "logical_id": "horse-sagittarius:rear:mask:007",
           "source_id": "mask_opening_07",
           "face": "rear",
@@ -1505,7 +1625,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "af4b728248cae2f5",
+          "id": "f82b73aa56bcaca4",
           "logical_id": "horse-sagittarius:rear:mask:008",
           "source_id": "mask_opening_08",
           "face": "rear",
@@ -1515,7 +1635,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "582238616290ee12",
+          "id": "da7a33dad3d5137e",
           "logical_id": "horse-sagittarius:rear:mask:009",
           "source_id": "mask_opening_09",
           "face": "rear",
@@ -1525,7 +1645,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "d577184cea79f85d",
+          "id": "510bd5e6a8c410a1",
           "logical_id": "horse-sagittarius:rear:mask:010",
           "source_id": "mask_opening_10",
           "face": "rear",
@@ -1535,7 +1655,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "2880b772921645b1",
+          "id": "2599a3f2fcdb177e",
           "logical_id": "horse-sagittarius:rear:mask:011",
           "source_id": "mask_opening_11",
           "face": "rear",
@@ -1545,7 +1665,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "3822a21c0aecb127",
+          "id": "c290d6da20388847",
           "logical_id": "horse-sagittarius:rear:mask:012",
           "source_id": "mask_opening_12",
           "face": "rear",
@@ -1555,7 +1675,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "23ac0d7d6c6d0508",
+          "id": "6f5f2bad5453ac4b",
           "logical_id": "horse-sagittarius:rear:mask:013",
           "source_id": "mask_opening_13",
           "face": "rear",
@@ -1565,7 +1685,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "dbbbbb04bf0f490b",
+          "id": "0278458f3636451e",
           "logical_id": "horse-sagittarius:rear:mask:014",
           "source_id": "mask_opening_14",
           "face": "rear",
@@ -1575,7 +1695,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "9a212ffe0c8d77e6",
+          "id": "bf476dadf5614e6b",
           "logical_id": "horse-sagittarius:rear:mask:015",
           "source_id": "mask_opening_15",
           "face": "rear",
@@ -1585,7 +1705,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "1bfe0f156262b1e5",
+          "id": "4eee6e1dde7875db",
           "logical_id": "horse-sagittarius:rear:mask:016",
           "source_id": "mask_opening_16",
           "face": "rear",
@@ -1595,7 +1715,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "b94a551c1155a34b",
+          "id": "b6146c57170a782d",
           "logical_id": "horse-sagittarius:rear:mask:017",
           "source_id": "mask_opening_17",
           "face": "rear",
@@ -1605,7 +1725,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "3d58a5361a6fb7ad",
+          "id": "665d09fa21aa8d1c",
           "logical_id": "horse-sagittarius:rear:mask:018",
           "source_id": "mask_opening_18",
           "face": "rear",
@@ -1615,7 +1735,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "c6c3cdd823321963",
+          "id": "feb25b24a94f37e5",
           "logical_id": "horse-sagittarius:rear:mask:019",
           "source_id": "mask_opening_19",
           "face": "rear",
@@ -1626,15 +1746,15 @@
         }
       ],
       "source": "variants/standard-green-white/eda/native/horse-sagittarius-source.jsonl",
-      "source_sha256": "40632c3b414c5f18af261fa78b6fde504690879edf98acd16050680b9a072aef",
+      "source_sha256": "3ae655ce5ce3a635dccff66600f5d3669b75b61deab6ad703841160f65e27001",
       "protected_geometry_unchanged": true,
       "saved_reopened": true,
       "artwork_source": {
         "path": "variants/standard-green-white/artwork/horse-sagittarius-standard-layer-artwork.json",
-        "size": 5142450,
-        "sha256": "2dc55caea04fd6c8af5951cace46fe0b46bbd10b1d7310a42d0fdbedba36c52f"
+        "size": 5447193,
+        "sha256": "c3d243e47f8509152e44d3afaf25fd837b7dce9d36a4b5a12c9f3a2d6a5d1a21"
       },
-      "import_geometry_sha256": "651b355a6591eff07fb86006c44f7121d5aea7c04bbe19edc3a3f59ad2826374",
+      "import_geometry_sha256": "eae7a4dfcca63f8255e96f3dabe78707a73c2d692013b315013c28ceea1872ad",
       "import_method": "guarded_owned_top_silk_revision_mask_geometry_and_physical_primitives_preserved",
       "actual_width_mil": [
         0.2
@@ -1707,84 +1827,188 @@
             "c1ae98375aea4992"
           ],
           "manifest_path": "variants/standard-green-white/eda/native/before-border-export-manifest.json",
-          "manifest_sha256": "f61515f052fbb3fc3f5df782fb21a367e8307defc99ac87536052cb5713df063"
+          "manifest_sha256": "f61515f052fbb3fc3f5df782fb21a367e8307defc99ac87536052cb5713df063",
+          "depanel_offset_mm": 0.4
         },
         "old_owned_ids": [
-          "b633f038d69bbe7a",
-          "28c3ec0f9c3e3abd",
-          "e2f4ca1b91521930",
-          "945881467d0a5716",
-          "326b535d52047920",
-          "c9ae45d9d5922539",
-          "438a63485677cc86",
-          "59e7520c94fad9ba",
-          "4e5e1a2b027101cd",
-          "4e47d7576969d210",
-          "208779ea617f9be1",
-          "b95ae0f587c76f1f",
-          "891f5d5bf52a0042",
-          "8e913287d9ade7a2",
-          "88f64425109d897b",
-          "41cb961c41f60fcd",
-          "72e2dcc4f3233306",
-          "4895687b01992b7f",
-          "9ac17d7d025198b1",
-          "9ca7e15d4f2091d6",
-          "570ad6cac92d55f6",
-          "9f176efd85090365",
-          "4a686d13799d7dc3",
-          "fc00720ba9021cb7",
-          "a32a6290195b3e15",
-          "0d02b3e063434fb0",
-          "1728898211b5f9aa",
-          "39ff9643a269c840",
-          "fda8cfbbb4ec7f63",
-          "2da0bae20e46d244",
-          "c6892884e016a9a3",
-          "8b496ad93328067f",
-          "e5614c19e4124dc6",
-          "81be7a9605d2fd5e",
-          "e6eb900c3c4d65a5",
-          "0b68ba7d85244f10",
-          "59869f6b9613ec42",
-          "e12223012aeb6712",
-          "29ebcfda1f787a2e",
-          "58987271c0588aa5",
-          "d51d7db3592cb00a",
-          "4716f46b7fe5c6ca",
-          "35f6665e08750f69",
-          "2d9ee0749d467374",
-          "ab818d2346bf7abf",
-          "2fe0b86e5531f2b8",
-          "ab6747692998f1fc",
-          "84c2bdc0ab409284",
-          "f75c4033370f8576",
-          "09d5b7f8d8991b95",
-          "f574c7d99238dfb5",
-          "8be2c4491d0b77ff",
-          "ec12483f6c545389",
-          "4277c25326d11945",
-          "c1ae98375aea4992",
-          "c6f523e70fca3ee7",
-          "c0d67e4b05fa98b0",
-          "55ab59d8488c6f4a",
-          "d9985181dc38ca8d",
-          "c0cd5a3aef4c9c98",
-          "0bc720d877c60d88",
-          "380e690e3072681a",
-          "3793c6b43c70b917",
-          "403ceca6b9f5c1d0",
-          "e67b998688be79fe",
-          "8f9ab6339bb77283",
-          "0422cdbd82e930d7",
-          "64acdc7b6db4a5cb",
-          "1f15c315a19ff587",
-          "c97ee8a2c7b2e9c7",
-          "ff470b730b8f5463",
-          "ef2e5fbc60d108cb",
-          "a063d54dcc8d7fb4",
-          "aa36e5ab85963e66"
+          "ec2f27093f251f45",
+          "95e38f27c9148d9a",
+          "6cdebbcc25db223b",
+          "811e654c4caeef6b",
+          "3bbeeb4ae891e5db",
+          "82d1bc82b60abeab",
+          "429579b52e76a3f6",
+          "7e138725e1b4e94c",
+          "2a274ff9add8ee03",
+          "2fb011c1395d2844",
+          "ad0a5f89f688f598",
+          "5d09a53fa0fc341b",
+          "e1c1ce01858d181e",
+          "b74bfca33e4f4f1b",
+          "c3c9bbcfc316bc4e",
+          "2a7e77a31775c873",
+          "100cf14061bd40d1",
+          "682886e33e88c9e0",
+          "8e1e1cf4b7ceebbf",
+          "823a5b5bc0f3e09a",
+          "c792b64507a6dddf",
+          "fdc9a3ebb1a509b1",
+          "7c89e7e13a65e43b",
+          "47456f88b79e0e09",
+          "028be11b333a95e3",
+          "a00668734c9cc07c",
+          "c220decf0720cbbd",
+          "c4ccf62f152b43dd",
+          "30443d1ee85a9923",
+          "b0af401f99f278f5",
+          "81e9d4f0b967c628",
+          "5e9e1bb790cae645",
+          "1ae551f237e80e13",
+          "8b0c079299002f5c",
+          "ddfd477ea330c10c",
+          "798a2fe4356324da",
+          "44166a8b06f875e6",
+          "60109a4da0d94a6e",
+          "426499fb1ed520cd",
+          "3ed0723c5437144e",
+          "2e41b5a8263068a9",
+          "c67089975a5065da",
+          "11a22b61d6fce82f",
+          "b73e6e8902381940",
+          "8556271eed34d43c",
+          "d375496a5ef04bea",
+          "019860e652b097b8",
+          "bcc2c3ba0cb6148e",
+          "e661baa0da981207",
+          "317e6494babf9961",
+          "0a88aac5f194eace",
+          "832ec3b6af3bdea2",
+          "fcd01629c71d607d",
+          "6d0fa3d7924189fd",
+          "4a6c16a0ed4dbd63",
+          "d6c06d25460df203",
+          "ab59d63b16a13010",
+          "499e76ba5be8673f",
+          "4ec241cce3ab0d80",
+          "19a22023e2cbea3a",
+          "2022ae3db785f5b9",
+          "17d553d203e77302",
+          "541806d6d977fb83",
+          "cec93a4ca840cf9c",
+          "0b32aecbbdf92b54",
+          "13fab79528e36519",
+          "d1b5b24b9cb6b4f2",
+          "49c7fc2cab66fa9b",
+          "045eaa8ac321ca7a",
+          "2c8298203b32e1a5",
+          "4f4c4356d83739fa",
+          "020b4b6824fe2bb1",
+          "1046db239932aa44",
+          "4bb8fec83de27986",
+          "26f386709b8c99d0",
+          "a0c2dc86a43b94dc",
+          "f2f99f8d0eae6648",
+          "8a4483bfabe3f83b",
+          "93349c3fb6b8b204",
+          "b059993acd3c1262",
+          "d3ac79500888d7e2",
+          "720654d33bac16c3",
+          "eb90059513a8d84b",
+          "9d4923661fac443a",
+          "5f4aeea2b6edc8cd",
+          "5d399b59c635f7af",
+          "ed422c1d0a5001a7",
+          "7f78da2b2c22a845",
+          "cee564cf976805cd",
+          "2ad98c30d701346d",
+          "cdbb5a8e73b6c0de",
+          "c2fb8e30803db702",
+          "1faec4c35776a8fc",
+          "1e3e048a3166f454",
+          "bacfe3fc2cfc38d0",
+          "c0b1dc65b7395538",
+          "d9259c96cc9143b2",
+          "4116ee7f86b4288c",
+          "5d73608ee77a1421",
+          "19d2e91fcac89c39",
+          "c122693fff103c58",
+          "f1b3774d59bf359b",
+          "d2c6ec8fb6910cf5",
+          "7af36e3bd530909b",
+          "afb680b5616a88c2",
+          "768e6959df84c61a",
+          "1d0e55ee53d2f259",
+          "c76be74c1aaf28c0",
+          "32aaedc2cf2ce079",
+          "4137d26d27cb7d6d",
+          "26b2a4fc50f87e81",
+          "8b41b77b961c7efb",
+          "0b08f88ac91b3dfe",
+          "e882d7c816da67fe",
+          "5235365bb803f92d",
+          "54ddf2f57499a564",
+          "ce93372586e7e82a",
+          "b6fec91d6ec78f31",
+          "785e4a07776b99e8",
+          "6d60a9abf5f1a244",
+          "03839101b3d0463e",
+          "a64e60b4c8d4b76c",
+          "f13adfeb1a933938",
+          "00127b50b08d6791",
+          "87a85606cc724a4d",
+          "f7298de9c3d3ec9c",
+          "7b068bbbe4a4f6b7",
+          "5d5bc1482b1a9bf0",
+          "3db1937b0c69b908",
+          "0328972d1db09a5e",
+          "d0fa22f85bf113e8",
+          "44a8e26860429d63",
+          "a12220fb5996de29",
+          "e9b49b3e19ae9adf",
+          "161a92935f28093d",
+          "fc516ea1306a254b",
+          "023716fbfcb2cad7",
+          "127c8cef030f84b0",
+          "af198cc0543c80a8",
+          "2025acb8fbf04551",
+          "b0aa80bd745c2386",
+          "19d752d9e1c3dd78",
+          "e5fdc3ab8e0fe13d",
+          "6afa6276bcec3108",
+          "ac338c26f79c5376",
+          "7f3f1e6e1e22b3cf",
+          "d8dfca13c605332b",
+          "7d99859ec97a37e7",
+          "f42283016708e372",
+          "af4b728248cae2f5",
+          "582238616290ee12",
+          "d577184cea79f85d",
+          "2880b772921645b1",
+          "3822a21c0aecb127",
+          "23ac0d7d6c6d0508",
+          "dbbbbb04bf0f490b",
+          "9a212ffe0c8d77e6",
+          "1bfe0f156262b1e5",
+          "b94a551c1155a34b",
+          "3d58a5361a6fb7ad",
+          "c6c3cdd823321963"
         ]
+      },
+      "depanel_revision": {
+        "status": "saved_reopened",
+        "outward_offset_mm": 0.4,
+        "before": {
+          "path": "variants/standard-green-white/eda/native/before-depanel-horse-sagittarius-source.jsonl",
+          "sha256": "5a8e2d05ae96aa397ae8890ed0be00a5ee14fba0f82bbf32ecaf12b5795bbafd"
+        },
+        "before_manifest": {
+          "path": "variants/standard-green-white/eda/native/before-depanel-export-manifest.json",
+          "sha256": "6afae097dfc354e907e0cd09776aa25b40d28c3aa7accdafe92bc4de936880de"
+        },
+        "before_native": {
+          "path": "variants/twelve-options/eda/native/before-depanel-20261020.epro2",
+          "sha256": "2eb028245e4e576140581814cfb8f0b6ae3af3e9156eb2a37e054547456d69a2"
+        }
       }
     },
     {
@@ -1799,7 +2023,7 @@
       "rename_method": "desktop_tree_UI_verified_by_getPcbInfo",
       "created": [
         {
-          "id": "f25bd5a9fb633b07",
+          "id": "4d579171fb6746aa",
           "logical_id": "snake-leo:front:silk:001",
           "source_id": "animal_snake_01",
           "face": "front",
@@ -1809,7 +2033,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "2dedd9e88e906c92",
+          "id": "d4772d21a37b5ae5",
           "logical_id": "snake-leo:front:silk:002",
           "source_id": "animal_snake_02",
           "face": "front",
@@ -1819,7 +2043,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "353062b94fb4e3cb",
+          "id": "680268a2a3784e72",
           "logical_id": "snake-leo:front:silk:003",
           "source_id": "animal_snake_03",
           "face": "front",
@@ -1829,7 +2053,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "3eff3c977df2d50f",
+          "id": "4ae204fcde25b31d",
           "logical_id": "snake-leo:front:silk:004",
           "source_id": "animal_snake_04",
           "face": "front",
@@ -1839,7 +2063,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "9fb4bca6b04ded91",
+          "id": "32128480b9661d65",
           "logical_id": "snake-leo:front:silk:005",
           "source_id": "animal_snake_05",
           "face": "front",
@@ -1849,7 +2073,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "1a276bb26d3af121",
+          "id": "4b89988e353641a6",
           "logical_id": "snake-leo:front:silk:006",
           "source_id": "cover_border_01",
           "face": "front",
@@ -1859,7 +2083,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "ae2daa7b7aa43617",
+          "id": "5e8d4faac540842c",
           "logical_id": "snake-leo:front:silk:007",
           "source_id": "cover_border_02",
           "face": "front",
@@ -1869,7 +2093,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "16bc65f525fa25f2",
+          "id": "710ad5f902d54d41",
           "logical_id": "snake-leo:front:silk:008",
           "source_id": "cover_border_03",
           "face": "front",
@@ -1879,7 +2103,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "484a00b33883a226",
+          "id": "8d314fdf228ca0ff",
           "logical_id": "snake-leo:front:silk:009",
           "source_id": "cover_border_04",
           "face": "front",
@@ -1889,7 +2113,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "6af24555dfe09726",
+          "id": "75fea3754f96904b",
           "logical_id": "snake-leo:front:silk:010",
           "source_id": "cover_border_05",
           "face": "front",
@@ -1899,7 +2123,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "da191ce4c859139f",
+          "id": "36601d471778cdd7",
           "logical_id": "snake-leo:front:silk:011",
           "source_id": "cover_border_06",
           "face": "front",
@@ -1909,7 +2133,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "3abb4c2bdba847f8",
+          "id": "b5cd854616f9c38e",
           "logical_id": "snake-leo:front:silk:012",
           "source_id": "cover_border_07",
           "face": "front",
@@ -1919,7 +2143,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "36b48f4f71a26861",
+          "id": "85c6e05a14208902",
           "logical_id": "snake-leo:front:silk:013",
           "source_id": "cover_border_08",
           "face": "front",
@@ -1929,7 +2153,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "63093399b3b48e5f",
+          "id": "56078496b3464601",
           "logical_id": "snake-leo:front:silk:014",
           "source_id": "cover_border_09",
           "face": "front",
@@ -1939,7 +2163,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "49e60373d7c43941",
+          "id": "47ed484b73275fa8",
           "logical_id": "snake-leo:front:silk:015",
           "source_id": "cover_border_10",
           "face": "front",
@@ -1949,7 +2173,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "87a93d92e5a7f953",
+          "id": "e152bb1935579e5c",
           "logical_id": "snake-leo:front:silk:016",
           "source_id": "cover_border_11",
           "face": "front",
@@ -1959,7 +2183,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "687a030bbb6c30af",
+          "id": "438d11dd76c05805",
           "logical_id": "snake-leo:front:silk:017",
           "source_id": "cover_border_12",
           "face": "front",
@@ -1969,7 +2193,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "2ec0287244db63fb",
+          "id": "210f806190d15876",
           "logical_id": "snake-leo:front:silk:018",
           "source_id": "cover_border_13",
           "face": "front",
@@ -1979,7 +2203,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "b4ce00d369b596b8",
+          "id": "c5e59686852a9754",
           "logical_id": "snake-leo:front:silk:019",
           "source_id": "cover_border_14",
           "face": "front",
@@ -1989,7 +2213,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "2c9dd36a79d6c3f1",
+          "id": "550698c357c7702b",
           "logical_id": "snake-leo:front:silk:020",
           "source_id": "cover_border_15",
           "face": "front",
@@ -1999,7 +2223,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "0aa7fff398768c4d",
+          "id": "bbb5fd3b60b19793",
           "logical_id": "snake-leo:front:silk:021",
           "source_id": "cover_border_16",
           "face": "front",
@@ -2009,7 +2233,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "18049fbe30f0a407",
+          "id": "ce86b3b037673d62",
           "logical_id": "snake-leo:front:silk:022",
           "source_id": "cover_border_17",
           "face": "front",
@@ -2019,7 +2243,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "a704696e45eceb95",
+          "id": "3580a931b294fc00",
           "logical_id": "snake-leo:front:silk:023",
           "source_id": "cover_border_18",
           "face": "front",
@@ -2029,7 +2253,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "042732bb23abceff",
+          "id": "ad32c7a3eacfb90e",
           "logical_id": "snake-leo:front:silk:024",
           "source_id": "cover_border_19",
           "face": "front",
@@ -2039,7 +2263,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "fede6a7d7fbb8b5b",
+          "id": "127ac097383f43af",
           "logical_id": "snake-leo:front:silk:025",
           "source_id": "cover_border_20",
           "face": "front",
@@ -2049,7 +2273,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "6166b2151bae2e89",
+          "id": "7fbda472d0d1c6af",
           "logical_id": "snake-leo:front:silk:026",
           "source_id": "cover_border_21",
           "face": "front",
@@ -2059,7 +2283,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "de93d79f101f9d4e",
+          "id": "77ea8b643fcba901",
           "logical_id": "snake-leo:front:silk:027",
           "source_id": "cover_border_22",
           "face": "front",
@@ -2069,7 +2293,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "ee1a3b3758aa5f6d",
+          "id": "de44585d9dc5dff5",
           "logical_id": "snake-leo:front:silk:028",
           "source_id": "cover_border_23",
           "face": "front",
@@ -2079,7 +2303,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "69e0a0bbb386e62d",
+          "id": "a5ba645d970bbe7f",
           "logical_id": "snake-leo:front:silk:029",
           "source_id": "cover_border_24",
           "face": "front",
@@ -2089,7 +2313,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "2f1b98ccefc688db",
+          "id": "baa484911a23310f",
           "logical_id": "snake-leo:front:silk:030",
           "source_id": "cover_border_25",
           "face": "front",
@@ -2099,7 +2323,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "9d075b7cc11d7d4e",
+          "id": "678d39d66cf482be",
           "logical_id": "snake-leo:front:silk:031",
           "source_id": "cover_border_26",
           "face": "front",
@@ -2109,7 +2333,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "a03da9cd6d6a16f5",
+          "id": "8ff2ff8a4ddd9f8a",
           "logical_id": "snake-leo:front:silk:032",
           "source_id": "cover_border_27",
           "face": "front",
@@ -2119,7 +2343,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "e1075f5ca3d7e18c",
+          "id": "fe628883c43cfec7",
           "logical_id": "snake-leo:front:silk:033",
           "source_id": "cover_border_28",
           "face": "front",
@@ -2129,7 +2353,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "c237abcae8cd6ebc",
+          "id": "9ed58a78ff16edad",
           "logical_id": "snake-leo:front:silk:034",
           "source_id": "cover_border_29",
           "face": "front",
@@ -2139,7 +2363,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "74f65103d987bdf3",
+          "id": "bd8705987b167a6e",
           "logical_id": "snake-leo:front:silk:035",
           "source_id": "cover_border_30",
           "face": "front",
@@ -2149,7 +2373,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "e4f5ca178ee4d50b",
+          "id": "f178d7c50db8bb28",
           "logical_id": "snake-leo:front:silk:036",
           "source_id": "cover_border_31",
           "face": "front",
@@ -2159,7 +2383,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "9a35dd6ee4caa0aa",
+          "id": "07823e2ee01676c9",
           "logical_id": "snake-leo:front:silk:037",
           "source_id": "cover_border_32",
           "face": "front",
@@ -2169,7 +2393,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "1906a5739b226f44",
+          "id": "5e8a1454ed282b9d",
           "logical_id": "snake-leo:front:silk:038",
           "source_id": "cover_border_33",
           "face": "front",
@@ -2179,7 +2403,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "327ee68d83ab8cb1",
+          "id": "4e901dff51de9801",
           "logical_id": "snake-leo:front:silk:039",
           "source_id": "cover_border_34",
           "face": "front",
@@ -2189,7 +2413,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "fa4cfb622309ef5c",
+          "id": "0f75af169ba2071d",
           "logical_id": "snake-leo:front:silk:040",
           "source_id": "cover_border_35",
           "face": "front",
@@ -2199,7 +2423,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "b7928e80ff9da694",
+          "id": "2e9cec91d4f2df40",
           "logical_id": "snake-leo:front:silk:041",
           "source_id": "cover_border_36",
           "face": "front",
@@ -2209,7 +2433,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "cfaba5cdcc316914",
+          "id": "2c3285d7ed68e1cf",
           "logical_id": "snake-leo:front:silk:042",
           "source_id": "cover_border_37",
           "face": "front",
@@ -2219,7 +2443,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "d1130781831d7060",
+          "id": "7a0cdc4a3dfb037b",
           "logical_id": "snake-leo:front:silk:043",
           "source_id": "cover_border_38",
           "face": "front",
@@ -2229,7 +2453,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "a19eee756fdcb0e8",
+          "id": "944874384545be4b",
           "logical_id": "snake-leo:front:silk:044",
           "source_id": "cover_border_39",
           "face": "front",
@@ -2239,7 +2463,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "7a416c0aecdc1b45",
+          "id": "24f7f4cf00a177e0",
           "logical_id": "snake-leo:front:silk:045",
           "source_id": "cover_border_40",
           "face": "front",
@@ -2249,7 +2473,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "88aeab15f47bb4f8",
+          "id": "0887a28a77d875d6",
           "logical_id": "snake-leo:front:silk:046",
           "source_id": "cover_border_41",
           "face": "front",
@@ -2259,7 +2483,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "68a2f53add844bb7",
+          "id": "61e230427a0e953a",
           "logical_id": "snake-leo:front:silk:047",
           "source_id": "cover_border_42",
           "face": "front",
@@ -2269,7 +2493,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "cfc9c99e016488ec",
+          "id": "a87c2ed75883f154",
           "logical_id": "snake-leo:front:silk:048",
           "source_id": "cover_border_43",
           "face": "front",
@@ -2279,7 +2503,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "03c3a5006ce9c1f7",
+          "id": "2336b3da3bb8a490",
           "logical_id": "snake-leo:front:silk:049",
           "source_id": "cover_border_44",
           "face": "front",
@@ -2289,7 +2513,67 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "8a5dfc772b18c3ac",
+          "id": "e1522ef23572fa49",
+          "logical_id": "snake-leo:front:silk:050",
+          "source_id": "cover_border_45",
+          "face": "front",
+          "kind": "silk",
+          "layer": 3,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "879ffd0afd35dce8",
+          "logical_id": "snake-leo:front:silk:051",
+          "source_id": "cover_border_46",
+          "face": "front",
+          "kind": "silk",
+          "layer": 3,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "146595619e522208",
+          "logical_id": "snake-leo:front:silk:052",
+          "source_id": "cover_border_47",
+          "face": "front",
+          "kind": "silk",
+          "layer": 3,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "4ecbc3ebb54f19af",
+          "logical_id": "snake-leo:front:silk:053",
+          "source_id": "cover_border_48",
+          "face": "front",
+          "kind": "silk",
+          "layer": 3,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "b3389d23224c0cae",
+          "logical_id": "snake-leo:front:silk:054",
+          "source_id": "cover_border_49",
+          "face": "front",
+          "kind": "silk",
+          "layer": 3,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "9c3b0bf3bbe0aa3f",
+          "logical_id": "snake-leo:front:silk:055",
+          "source_id": "cover_border_50",
+          "face": "front",
+          "kind": "silk",
+          "layer": 3,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "f2f6bdd404023a48",
           "logical_id": "snake-leo:rear:silk:001",
           "source_id": "constellation_edge_01_01",
           "face": "rear",
@@ -2299,7 +2583,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "36d8131f9d5795b6",
+          "id": "659f9014d0e142dc",
           "logical_id": "snake-leo:rear:silk:002",
           "source_id": "constellation_edge_01_02",
           "face": "rear",
@@ -2309,7 +2593,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "fe37d1c19a0de60f",
+          "id": "79f68562fbf9f556",
           "logical_id": "snake-leo:rear:silk:003",
           "source_id": "constellation_edge_02_01",
           "face": "rear",
@@ -2319,7 +2603,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "973b771fa15ba4f0",
+          "id": "5b2a9aee85ab2e1a",
           "logical_id": "snake-leo:rear:silk:004",
           "source_id": "constellation_edge_02_02",
           "face": "rear",
@@ -2329,7 +2613,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "9d8e376f5a8012ff",
+          "id": "3a1b93776dfd4094",
           "logical_id": "snake-leo:rear:silk:005",
           "source_id": "constellation_edge_03_01",
           "face": "rear",
@@ -2339,7 +2623,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "64ea40763def8748",
+          "id": "6957a3710370b329",
           "logical_id": "snake-leo:rear:silk:006",
           "source_id": "constellation_edge_03_02",
           "face": "rear",
@@ -2349,7 +2633,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "26dadc59765d7582",
+          "id": "ccfe103c19f56770",
           "logical_id": "snake-leo:rear:silk:007",
           "source_id": "constellation_edge_04_01",
           "face": "rear",
@@ -2359,7 +2643,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "bae546a967a8ae32",
+          "id": "6bb2fa83af87c9c2",
           "logical_id": "snake-leo:rear:silk:008",
           "source_id": "constellation_edge_04_02",
           "face": "rear",
@@ -2369,7 +2653,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "03c8467327e48592",
+          "id": "9f5bd5fe22eadf16",
           "logical_id": "snake-leo:rear:silk:009",
           "source_id": "constellation_edge_05_01",
           "face": "rear",
@@ -2379,7 +2663,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "8a3515a2b4d12f86",
+          "id": "0ebb05717ade881d",
           "logical_id": "snake-leo:rear:silk:010",
           "source_id": "constellation_edge_05_02",
           "face": "rear",
@@ -2389,7 +2673,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "d62298f83c56abd8",
+          "id": "3f4fa9132a445c7c",
           "logical_id": "snake-leo:rear:silk:011",
           "source_id": "constellation_edge_06_01",
           "face": "rear",
@@ -2399,7 +2683,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "63118dfbd229c939",
+          "id": "2d1ec552ed918747",
           "logical_id": "snake-leo:rear:silk:012",
           "source_id": "constellation_edge_06_02",
           "face": "rear",
@@ -2409,7 +2693,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "3a55ef2e7e74019a",
+          "id": "295b619fb9afc710",
           "logical_id": "snake-leo:rear:silk:013",
           "source_id": "constellation_edge_07_01",
           "face": "rear",
@@ -2419,7 +2703,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "a40041d20ca71c0b",
+          "id": "aa85a693dd069c88",
           "logical_id": "snake-leo:rear:silk:014",
           "source_id": "constellation_edge_08_01",
           "face": "rear",
@@ -2429,7 +2713,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "b8abdc2eaf65c819",
+          "id": "213b734e14f1dbf8",
           "logical_id": "snake-leo:rear:silk:015",
           "source_id": "constellation_edge_08_02",
           "face": "rear",
@@ -2439,7 +2723,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "6ad0472121a61b40",
+          "id": "3f7695e572f6b5df",
           "logical_id": "snake-leo:rear:silk:016",
           "source_id": "constellation_edge_09_01",
           "face": "rear",
@@ -2449,7 +2733,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "915b2cd013a40a50",
+          "id": "e068770ee144810b",
           "logical_id": "snake-leo:rear:silk:017",
           "source_id": "constellation_edge_10_01",
           "face": "rear",
@@ -2459,7 +2743,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "27a86ea65cae3581",
+          "id": "bd1f1e1d96f23ab7",
           "logical_id": "snake-leo:rear:silk:018",
           "source_id": "constellation_edge_10_02",
           "face": "rear",
@@ -2469,7 +2753,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "9b7d51b9256f317d",
+          "id": "95a71f73bf9ce74b",
           "logical_id": "snake-leo:rear:silk:019",
           "source_id": "star_ring_01_01",
           "face": "rear",
@@ -2479,7 +2763,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "449b866890d4c091",
+          "id": "eb64f8219c452f04",
           "logical_id": "snake-leo:rear:silk:020",
           "source_id": "star_ring_02_01",
           "face": "rear",
@@ -2489,7 +2773,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "32a184f3b9475775",
+          "id": "13edded19597f6fa",
           "logical_id": "snake-leo:rear:silk:021",
           "source_id": "star_ring_03_01",
           "face": "rear",
@@ -2499,7 +2783,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "ea3cfafcebf1f3e3",
+          "id": "9a1f2a966040945e",
           "logical_id": "snake-leo:rear:silk:022",
           "source_id": "star_ring_04_01",
           "face": "rear",
@@ -2509,7 +2793,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "5f55327a4bc9aabb",
+          "id": "979bd1f4417c3927",
           "logical_id": "snake-leo:rear:silk:023",
           "source_id": "star_ring_05_01",
           "face": "rear",
@@ -2519,7 +2803,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "927442308ab56d57",
+          "id": "3763c6a06de6b339",
           "logical_id": "snake-leo:rear:silk:024",
           "source_id": "star_ring_06_01",
           "face": "rear",
@@ -2529,7 +2813,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "d53b0edeef7d9217",
+          "id": "3ad33dccf4b7ba78",
           "logical_id": "snake-leo:rear:silk:025",
           "source_id": "star_ring_07_01",
           "face": "rear",
@@ -2539,7 +2823,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "7870bb9d6ea9f283",
+          "id": "20db23ce1b004027",
           "logical_id": "snake-leo:rear:silk:026",
           "source_id": "star_ring_08_01",
           "face": "rear",
@@ -2549,7 +2833,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "3f00419a69d19dfb",
+          "id": "a4356905d721034d",
           "logical_id": "snake-leo:rear:silk:027",
           "source_id": "star_ring_09_01",
           "face": "rear",
@@ -2559,7 +2843,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "7cba6f5a22e38a1c",
+          "id": "37b97b1b87854340",
           "logical_id": "snake-leo:rear:silk:028",
           "source_id": "label_leo_01",
           "face": "rear",
@@ -2569,7 +2853,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "98a7366feefac805",
+          "id": "3b1f3676e5a411bd",
           "logical_id": "snake-leo:rear:silk:029",
           "source_id": "label_leo_02",
           "face": "rear",
@@ -2579,7 +2863,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "4a10ba0a7e77f102",
+          "id": "f1a96d431a1d820a",
           "logical_id": "snake-leo:rear:silk:030",
           "source_id": "label_leo_03",
           "face": "rear",
@@ -2589,7 +2873,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "8142a3af94f988ba",
+          "id": "0ba67610f5a78db8",
           "logical_id": "snake-leo:rear:silk:031",
           "source_id": "label_ad_astra_01",
           "face": "rear",
@@ -2599,7 +2883,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "567872bb95b9f0cc",
+          "id": "8c7b4df6bf704bcf",
           "logical_id": "snake-leo:rear:silk:032",
           "source_id": "label_ad_astra_02",
           "face": "rear",
@@ -2609,7 +2893,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "cd2061890f43aa98",
+          "id": "c8852783939908b2",
           "logical_id": "snake-leo:rear:silk:033",
           "source_id": "label_ad_astra_03",
           "face": "rear",
@@ -2619,7 +2903,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "6580a6eca03b1f1a",
+          "id": "ccbddcb3a80e5f56",
           "logical_id": "snake-leo:rear:silk:034",
           "source_id": "label_ad_astra_04",
           "face": "rear",
@@ -2629,7 +2913,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "206b77838e4a85fc",
+          "id": "ca2da72100b60515",
           "logical_id": "snake-leo:rear:silk:035",
           "source_id": "label_ad_astra_05",
           "face": "rear",
@@ -2639,7 +2923,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "d9497005d192a247",
+          "id": "711fb51dbff277c0",
           "logical_id": "snake-leo:rear:silk:036",
           "source_id": "label_ad_astra_06",
           "face": "rear",
@@ -2649,7 +2933,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "93287dc3ca89b4ee",
+          "id": "f8032431a1ad63cc",
           "logical_id": "snake-leo:rear:silk:037",
           "source_id": "label_ad_astra_07",
           "face": "rear",
@@ -2659,7 +2943,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "36ea697edfc4d1b6",
+          "id": "e7f64d5857d08e0e",
           "logical_id": "snake-leo:rear:silk:038",
           "source_id": "cover_border_01",
           "face": "rear",
@@ -2669,7 +2953,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "3a18635f86c37b3f",
+          "id": "a37099fb89082f44",
           "logical_id": "snake-leo:rear:silk:039",
           "source_id": "cover_border_02",
           "face": "rear",
@@ -2679,7 +2963,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "6971d7cae6698fdc",
+          "id": "3d52095589ae77f1",
           "logical_id": "snake-leo:rear:silk:040",
           "source_id": "cover_border_03",
           "face": "rear",
@@ -2689,7 +2973,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "3f2b8731439dc339",
+          "id": "09d97d05bfd5091d",
           "logical_id": "snake-leo:rear:silk:041",
           "source_id": "cover_border_04",
           "face": "rear",
@@ -2699,7 +2983,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "46512279b1e16164",
+          "id": "ce2c836529743c38",
           "logical_id": "snake-leo:rear:silk:042",
           "source_id": "cover_border_05",
           "face": "rear",
@@ -2709,7 +2993,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "3f0f8dfe33e68f6b",
+          "id": "a07459b639cb3752",
           "logical_id": "snake-leo:rear:silk:043",
           "source_id": "cover_border_06",
           "face": "rear",
@@ -2719,7 +3003,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "c34a6ed9b987f603",
+          "id": "1ab8b3b74e1b6818",
           "logical_id": "snake-leo:rear:silk:044",
           "source_id": "cover_border_07",
           "face": "rear",
@@ -2729,7 +3013,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "bb1a48585f3719b2",
+          "id": "4e382316294cbfab",
           "logical_id": "snake-leo:rear:silk:045",
           "source_id": "cover_border_08",
           "face": "rear",
@@ -2739,7 +3023,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "a6144000d1ee866b",
+          "id": "e95c4d9e120b39d5",
           "logical_id": "snake-leo:rear:silk:046",
           "source_id": "cover_border_09",
           "face": "rear",
@@ -2749,7 +3033,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "3564c055bb849cb1",
+          "id": "cddd969c74ad822b",
           "logical_id": "snake-leo:rear:silk:047",
           "source_id": "cover_border_10",
           "face": "rear",
@@ -2759,7 +3043,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "18a9ba6ae46ec410",
+          "id": "299c96ab91626ee4",
           "logical_id": "snake-leo:rear:silk:048",
           "source_id": "cover_border_11",
           "face": "rear",
@@ -2769,7 +3053,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "e6087f56bfbc9a92",
+          "id": "c0abcc4035a74f84",
           "logical_id": "snake-leo:rear:silk:049",
           "source_id": "cover_border_12",
           "face": "rear",
@@ -2779,7 +3063,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "8b733501d938f19e",
+          "id": "deaca4424473838d",
           "logical_id": "snake-leo:rear:silk:050",
           "source_id": "cover_border_13",
           "face": "rear",
@@ -2789,7 +3073,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "8445115ca484f344",
+          "id": "cc5661b654454669",
           "logical_id": "snake-leo:rear:silk:051",
           "source_id": "cover_border_14",
           "face": "rear",
@@ -2799,7 +3083,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "88c614e64f8c7e3b",
+          "id": "b35d60f038d1bcda",
           "logical_id": "snake-leo:rear:silk:052",
           "source_id": "cover_border_15",
           "face": "rear",
@@ -2809,7 +3093,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "4790fcdcc28102c2",
+          "id": "a17e08aeb7685150",
           "logical_id": "snake-leo:rear:silk:053",
           "source_id": "cover_border_16",
           "face": "rear",
@@ -2819,7 +3103,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "a4714c35143c524e",
+          "id": "7240539708aa209f",
           "logical_id": "snake-leo:rear:silk:054",
           "source_id": "cover_border_17",
           "face": "rear",
@@ -2829,7 +3113,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "d71cc8033d36c29c",
+          "id": "606689a3337ecd87",
           "logical_id": "snake-leo:rear:silk:055",
           "source_id": "cover_border_18",
           "face": "rear",
@@ -2839,7 +3123,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "ab3ba46ce546c8fd",
+          "id": "0782fbcbcf9b325f",
           "logical_id": "snake-leo:rear:silk:056",
           "source_id": "cover_border_19",
           "face": "rear",
@@ -2849,7 +3133,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "19cb061008eb9fa9",
+          "id": "976d0a87deecf8b6",
           "logical_id": "snake-leo:rear:silk:057",
           "source_id": "cover_border_20",
           "face": "rear",
@@ -2859,7 +3143,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "0c905b075040bbe3",
+          "id": "8992c354d3694541",
           "logical_id": "snake-leo:rear:silk:058",
           "source_id": "cover_border_21",
           "face": "rear",
@@ -2869,7 +3153,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "5bacf83018bd8ec7",
+          "id": "f03f3ce31b9cff1a",
           "logical_id": "snake-leo:rear:silk:059",
           "source_id": "cover_border_22",
           "face": "rear",
@@ -2879,7 +3163,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "89a87e602197c1fc",
+          "id": "d927fa12170829a2",
           "logical_id": "snake-leo:rear:silk:060",
           "source_id": "cover_border_23",
           "face": "rear",
@@ -2889,7 +3173,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "e9ad578b1e180ad3",
+          "id": "eba8b9e6cd881d5d",
           "logical_id": "snake-leo:rear:silk:061",
           "source_id": "cover_border_24",
           "face": "rear",
@@ -2899,7 +3183,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "d1cfc9c391f01a46",
+          "id": "053a6efbc4e4666e",
           "logical_id": "snake-leo:rear:silk:062",
           "source_id": "cover_border_25",
           "face": "rear",
@@ -2909,7 +3193,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "b9a4c6bec9790814",
+          "id": "e622afd8c01d3cff",
           "logical_id": "snake-leo:rear:silk:063",
           "source_id": "cover_border_26",
           "face": "rear",
@@ -2919,7 +3203,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "25983b8c5d591103",
+          "id": "f8aceba1adaacee1",
           "logical_id": "snake-leo:rear:silk:064",
           "source_id": "cover_border_27",
           "face": "rear",
@@ -2929,7 +3213,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "ab039afd6852b474",
+          "id": "e0dec3a9b97286a7",
           "logical_id": "snake-leo:rear:silk:065",
           "source_id": "cover_border_28",
           "face": "rear",
@@ -2939,7 +3223,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "e081e25808e4cc40",
+          "id": "b29704428c6d2f7c",
           "logical_id": "snake-leo:rear:silk:066",
           "source_id": "cover_border_29",
           "face": "rear",
@@ -2949,7 +3233,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "6dd72ac0353da821",
+          "id": "aaa2c6f4b1ceabb0",
           "logical_id": "snake-leo:rear:silk:067",
           "source_id": "cover_border_30",
           "face": "rear",
@@ -2959,7 +3243,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "cf0d9b3d310e9a37",
+          "id": "2ae98fb5fbfd9f58",
           "logical_id": "snake-leo:rear:silk:068",
           "source_id": "cover_border_31",
           "face": "rear",
@@ -2969,7 +3253,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "bb23f35fb33edcdd",
+          "id": "8145df2e64557e04",
           "logical_id": "snake-leo:rear:silk:069",
           "source_id": "cover_border_32",
           "face": "rear",
@@ -2979,7 +3263,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "37b3e78f58bb7748",
+          "id": "2c3c8d6edc62f4d4",
           "logical_id": "snake-leo:rear:silk:070",
           "source_id": "cover_border_33",
           "face": "rear",
@@ -2989,7 +3273,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "cfaa4857fabc3460",
+          "id": "831ede54dc3c1c74",
           "logical_id": "snake-leo:rear:silk:071",
           "source_id": "cover_border_34",
           "face": "rear",
@@ -2999,7 +3283,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "9e69c5266601fea7",
+          "id": "76d26efe0a8b3250",
           "logical_id": "snake-leo:rear:silk:072",
           "source_id": "cover_border_35",
           "face": "rear",
@@ -3009,7 +3293,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "04d03c0c93e2b95c",
+          "id": "f91b1ac3f4965aad",
           "logical_id": "snake-leo:rear:silk:073",
           "source_id": "cover_border_36",
           "face": "rear",
@@ -3019,7 +3303,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "2bec3758865391d0",
+          "id": "49b531d1d0e7e67f",
           "logical_id": "snake-leo:rear:silk:074",
           "source_id": "cover_border_37",
           "face": "rear",
@@ -3029,7 +3313,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "ad9bc20c46999d2b",
+          "id": "bbe24f45d7560cfa",
           "logical_id": "snake-leo:rear:silk:075",
           "source_id": "cover_border_38",
           "face": "rear",
@@ -3039,7 +3323,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "7ec83e2bdd91fb74",
+          "id": "bbf8b0f2ecd9e538",
           "logical_id": "snake-leo:rear:silk:076",
           "source_id": "cover_border_39",
           "face": "rear",
@@ -3049,7 +3333,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "bb33e143f0d090ce",
+          "id": "e6a4767ea294fa03",
           "logical_id": "snake-leo:rear:silk:077",
           "source_id": "cover_border_40",
           "face": "rear",
@@ -3059,7 +3343,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "1e327b29aeaa8dbf",
+          "id": "217d15acec5f07ba",
           "logical_id": "snake-leo:rear:silk:078",
           "source_id": "cover_border_41",
           "face": "rear",
@@ -3069,7 +3353,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "fc1327d0cd4f1aa2",
+          "id": "82a36285a7d4a4aa",
           "logical_id": "snake-leo:rear:silk:079",
           "source_id": "cover_border_42",
           "face": "rear",
@@ -3079,7 +3363,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "b3125aeb645634de",
+          "id": "38536f47608915e6",
           "logical_id": "snake-leo:rear:silk:080",
           "source_id": "cover_border_43",
           "face": "rear",
@@ -3089,7 +3373,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "41c03e6816ca0fca",
+          "id": "0fe4837e1c395c54",
           "logical_id": "snake-leo:rear:silk:081",
           "source_id": "cover_border_44",
           "face": "rear",
@@ -3099,7 +3383,67 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "d6be0d8c8d28b1e9",
+          "id": "56df0da87cddce1c",
+          "logical_id": "snake-leo:rear:silk:082",
+          "source_id": "cover_border_45",
+          "face": "rear",
+          "kind": "silk",
+          "layer": 3,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "b6c1f8bf75b5aaa1",
+          "logical_id": "snake-leo:rear:silk:083",
+          "source_id": "cover_border_46",
+          "face": "rear",
+          "kind": "silk",
+          "layer": 3,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "303ab0dc82a4e87e",
+          "logical_id": "snake-leo:rear:silk:084",
+          "source_id": "cover_border_47",
+          "face": "rear",
+          "kind": "silk",
+          "layer": 3,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "9678ad4a5807d815",
+          "logical_id": "snake-leo:rear:silk:085",
+          "source_id": "cover_border_48",
+          "face": "rear",
+          "kind": "silk",
+          "layer": 3,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "ad779a19c8dce8f1",
+          "logical_id": "snake-leo:rear:silk:086",
+          "source_id": "cover_border_49",
+          "face": "rear",
+          "kind": "silk",
+          "layer": 3,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "f8b0087328b77683",
+          "logical_id": "snake-leo:rear:silk:087",
+          "source_id": "cover_border_50",
+          "face": "rear",
+          "kind": "silk",
+          "layer": 3,
+          "requested_width_mil": 0,
+          "actual_width_mil": 0.2
+        },
+        {
+          "id": "001a7aaa0e761989",
           "logical_id": "snake-leo:rear:mask:001",
           "source_id": "mask_opening_01",
           "face": "rear",
@@ -3109,7 +3453,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "8f08e367299e35a5",
+          "id": "c80fa56728c33e68",
           "logical_id": "snake-leo:rear:mask:002",
           "source_id": "mask_opening_02",
           "face": "rear",
@@ -3119,7 +3463,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "bbfec4121fc2bd38",
+          "id": "d7440b576eab2af9",
           "logical_id": "snake-leo:rear:mask:003",
           "source_id": "mask_opening_03",
           "face": "rear",
@@ -3129,7 +3473,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "9bbd323b12d4652d",
+          "id": "afad070798510fc8",
           "logical_id": "snake-leo:rear:mask:004",
           "source_id": "mask_opening_04",
           "face": "rear",
@@ -3139,7 +3483,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "ef90e136097c562b",
+          "id": "95ac25c6551ab349",
           "logical_id": "snake-leo:rear:mask:005",
           "source_id": "mask_opening_05",
           "face": "rear",
@@ -3149,7 +3493,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "43ed47a97913a021",
+          "id": "e795d5b1918b8579",
           "logical_id": "snake-leo:rear:mask:006",
           "source_id": "mask_opening_06",
           "face": "rear",
@@ -3159,7 +3503,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "e1755fbd58c1a575",
+          "id": "f4d728b0fe4f41b4",
           "logical_id": "snake-leo:rear:mask:007",
           "source_id": "mask_opening_07",
           "face": "rear",
@@ -3169,7 +3513,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "f58ae4a9f986ac32",
+          "id": "f9dbfbde5d306434",
           "logical_id": "snake-leo:rear:mask:008",
           "source_id": "mask_opening_08",
           "face": "rear",
@@ -3179,7 +3523,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "7019e59908cdfb1d",
+          "id": "57f3d81e9ef09364",
           "logical_id": "snake-leo:rear:mask:009",
           "source_id": "mask_opening_09",
           "face": "rear",
@@ -3189,7 +3533,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "20bcc040c7ecfc07",
+          "id": "14314548dcc7ced7",
           "logical_id": "snake-leo:rear:mask:010",
           "source_id": "mask_opening_10",
           "face": "rear",
@@ -3199,7 +3543,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "0eb3689157dfe055",
+          "id": "0bcb4e22ba0f0904",
           "logical_id": "snake-leo:rear:mask:011",
           "source_id": "mask_opening_11",
           "face": "rear",
@@ -3209,7 +3553,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "49a28ca2dd788f5b",
+          "id": "cee82d96aada56bd",
           "logical_id": "snake-leo:rear:mask:012",
           "source_id": "mask_opening_12",
           "face": "rear",
@@ -3219,7 +3563,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "fee3fb3307619272",
+          "id": "7c28ceb533582f9e",
           "logical_id": "snake-leo:rear:mask:013",
           "source_id": "mask_opening_13",
           "face": "rear",
@@ -3229,7 +3573,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "241b85f5fa21df4a",
+          "id": "a966f98090a1cb29",
           "logical_id": "snake-leo:rear:mask:014",
           "source_id": "mask_opening_14",
           "face": "rear",
@@ -3239,7 +3583,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "6550e6ee5b70fecb",
+          "id": "245d524f3e95b5fc",
           "logical_id": "snake-leo:rear:mask:015",
           "source_id": "mask_opening_15",
           "face": "rear",
@@ -3249,7 +3593,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "a8c4ec0ea66725ba",
+          "id": "6b332977f0f4900c",
           "logical_id": "snake-leo:rear:mask:016",
           "source_id": "mask_opening_16",
           "face": "rear",
@@ -3259,7 +3603,7 @@
           "actual_width_mil": 0.2
         },
         {
-          "id": "18647c4dbe1900e9",
+          "id": "301d318d719f2889",
           "logical_id": "snake-leo:rear:mask:017",
           "source_id": "mask_opening_17",
           "face": "rear",
@@ -3270,15 +3614,15 @@
         }
       ],
       "source": "variants/standard-green-white/eda/native/snake-leo-source.jsonl",
-      "source_sha256": "f258da0417399855a5233920fb2570e4f0b100fc8c75b12776391a231f3dd660",
+      "source_sha256": "8854fb04488ca79b4f0dc1c2483204728834453bc4f3e94182f465eb9a45edef",
       "protected_geometry_unchanged": true,
       "saved_reopened": true,
       "artwork_source": {
         "path": "variants/standard-green-white/artwork/snake-leo-standard-layer-artwork.json",
-        "size": 5338118,
-        "sha256": "9ca531bd66589caa5c6348a8949774eeda43d0d9d4affc870ffd0ace2ffe4ab5"
+        "size": 5642863,
+        "sha256": "aaf9c2a540b7698360b54542b78b30d53b4f97f254f35767debc7a0066d839e4"
       },
-      "import_geometry_sha256": "651b355a6591eff07fb86006c44f7121d5aea7c04bbe19edc3a3f59ad2826374",
+      "import_geometry_sha256": "eae7a4dfcca63f8255e96f3dabe78707a73c2d692013b315013c28ceea1872ad",
       "import_method": "guarded_owned_top_silk_revision_mask_geometry_and_physical_primitives_preserved",
       "actual_width_mil": [
         0.2
@@ -3338,69 +3682,174 @@
             "8d6d2edcb819ddce"
           ],
           "manifest_path": "variants/standard-green-white/eda/native/before-border-export-manifest.json",
-          "manifest_sha256": "f61515f052fbb3fc3f5df782fb21a367e8307defc99ac87536052cb5713df063"
+          "manifest_sha256": "f61515f052fbb3fc3f5df782fb21a367e8307defc99ac87536052cb5713df063",
+          "depanel_offset_mm": 0.4
         },
         "old_owned_ids": [
-          "8bbff6e654bb04a2",
-          "c59a3f99e4843189",
-          "03c2fd756d0e9294",
-          "52feb1a5ad059394",
-          "5613a0e6a27ae4f9",
-          "e85f400bad578100",
-          "179797378a8e9f3e",
-          "99568bc303cc9216",
-          "d8ad0996791ea336",
-          "746456f9f4f9f071",
-          "7faf21ec32768a87",
-          "c697b2268acee77e",
-          "485465c1868a7353",
-          "2a05dee960807af4",
-          "867512b49f52492d",
-          "e63b54c730a24c00",
-          "f8479d44a4f30184",
-          "524b01996c515f00",
-          "44405d2f38914798",
-          "5fc2f3ad97b828d7",
-          "241fb157117cdb51",
-          "1882494591e1d681",
-          "2c1db312575dd761",
-          "628f6ed9e18632b1",
-          "d3a125decafc6cb1",
-          "9416d1718a78141b",
-          "dc6f07830351527f",
-          "918b776286c331b4",
-          "5d1bab3c1d977102",
-          "ac231612e0ee81c9",
-          "78a199b5cae04d36",
-          "25b25bb67632b62f",
-          "d3080de09c1890d9",
-          "c6db19d68315c916",
-          "a8992bcf94ebd434",
-          "d9063fe8b860e3a1",
-          "eb039a34c43f8fed",
-          "883f4b7c590fa000",
-          "bb449b26ed901b3b",
-          "b44152fb1c489659",
-          "9fa3c603ed4d67ae",
-          "8d6d2edcb819ddce",
-          "91aafd78cb72cf80",
-          "a83b8ea920e0804f",
-          "400445b8dbb83091",
-          "d7b1986bfaaeb5ff",
-          "d3ef1adee6016c5d",
-          "29900754d2da1d3f",
-          "98535b8095928d7f",
-          "255c99283423fe44",
-          "12437a87822579c8",
-          "4bbee9dfa34470b1",
-          "2a6bdbbc84919524",
-          "aa19b5f8ccb525bb",
-          "7b79255e1f69f20d",
-          "5c381e8a9e375fbe",
-          "a7040dd88ffc1765",
-          "a989a6534cdb4bf7",
-          "92ffd1e3d556d0cf"
+          "f25bd5a9fb633b07",
+          "2dedd9e88e906c92",
+          "353062b94fb4e3cb",
+          "3eff3c977df2d50f",
+          "9fb4bca6b04ded91",
+          "1a276bb26d3af121",
+          "ae2daa7b7aa43617",
+          "16bc65f525fa25f2",
+          "484a00b33883a226",
+          "6af24555dfe09726",
+          "da191ce4c859139f",
+          "3abb4c2bdba847f8",
+          "36b48f4f71a26861",
+          "63093399b3b48e5f",
+          "49e60373d7c43941",
+          "87a93d92e5a7f953",
+          "687a030bbb6c30af",
+          "2ec0287244db63fb",
+          "b4ce00d369b596b8",
+          "2c9dd36a79d6c3f1",
+          "0aa7fff398768c4d",
+          "18049fbe30f0a407",
+          "a704696e45eceb95",
+          "042732bb23abceff",
+          "fede6a7d7fbb8b5b",
+          "6166b2151bae2e89",
+          "de93d79f101f9d4e",
+          "ee1a3b3758aa5f6d",
+          "69e0a0bbb386e62d",
+          "2f1b98ccefc688db",
+          "9d075b7cc11d7d4e",
+          "a03da9cd6d6a16f5",
+          "e1075f5ca3d7e18c",
+          "c237abcae8cd6ebc",
+          "74f65103d987bdf3",
+          "e4f5ca178ee4d50b",
+          "9a35dd6ee4caa0aa",
+          "1906a5739b226f44",
+          "327ee68d83ab8cb1",
+          "fa4cfb622309ef5c",
+          "b7928e80ff9da694",
+          "cfaba5cdcc316914",
+          "d1130781831d7060",
+          "a19eee756fdcb0e8",
+          "7a416c0aecdc1b45",
+          "88aeab15f47bb4f8",
+          "68a2f53add844bb7",
+          "cfc9c99e016488ec",
+          "03c3a5006ce9c1f7",
+          "8a5dfc772b18c3ac",
+          "36d8131f9d5795b6",
+          "fe37d1c19a0de60f",
+          "973b771fa15ba4f0",
+          "9d8e376f5a8012ff",
+          "64ea40763def8748",
+          "26dadc59765d7582",
+          "bae546a967a8ae32",
+          "03c8467327e48592",
+          "8a3515a2b4d12f86",
+          "d62298f83c56abd8",
+          "63118dfbd229c939",
+          "3a55ef2e7e74019a",
+          "a40041d20ca71c0b",
+          "b8abdc2eaf65c819",
+          "6ad0472121a61b40",
+          "915b2cd013a40a50",
+          "27a86ea65cae3581",
+          "9b7d51b9256f317d",
+          "449b866890d4c091",
+          "32a184f3b9475775",
+          "ea3cfafcebf1f3e3",
+          "5f55327a4bc9aabb",
+          "927442308ab56d57",
+          "d53b0edeef7d9217",
+          "7870bb9d6ea9f283",
+          "3f00419a69d19dfb",
+          "7cba6f5a22e38a1c",
+          "98a7366feefac805",
+          "4a10ba0a7e77f102",
+          "8142a3af94f988ba",
+          "567872bb95b9f0cc",
+          "cd2061890f43aa98",
+          "6580a6eca03b1f1a",
+          "206b77838e4a85fc",
+          "d9497005d192a247",
+          "93287dc3ca89b4ee",
+          "36ea697edfc4d1b6",
+          "3a18635f86c37b3f",
+          "6971d7cae6698fdc",
+          "3f2b8731439dc339",
+          "46512279b1e16164",
+          "3f0f8dfe33e68f6b",
+          "c34a6ed9b987f603",
+          "bb1a48585f3719b2",
+          "a6144000d1ee866b",
+          "3564c055bb849cb1",
+          "18a9ba6ae46ec410",
+          "e6087f56bfbc9a92",
+          "8b733501d938f19e",
+          "8445115ca484f344",
+          "88c614e64f8c7e3b",
+          "4790fcdcc28102c2",
+          "a4714c35143c524e",
+          "d71cc8033d36c29c",
+          "ab3ba46ce546c8fd",
+          "19cb061008eb9fa9",
+          "0c905b075040bbe3",
+          "5bacf83018bd8ec7",
+          "89a87e602197c1fc",
+          "e9ad578b1e180ad3",
+          "d1cfc9c391f01a46",
+          "b9a4c6bec9790814",
+          "25983b8c5d591103",
+          "ab039afd6852b474",
+          "e081e25808e4cc40",
+          "6dd72ac0353da821",
+          "cf0d9b3d310e9a37",
+          "bb23f35fb33edcdd",
+          "37b3e78f58bb7748",
+          "cfaa4857fabc3460",
+          "9e69c5266601fea7",
+          "04d03c0c93e2b95c",
+          "2bec3758865391d0",
+          "ad9bc20c46999d2b",
+          "7ec83e2bdd91fb74",
+          "bb33e143f0d090ce",
+          "1e327b29aeaa8dbf",
+          "fc1327d0cd4f1aa2",
+          "b3125aeb645634de",
+          "41c03e6816ca0fca",
+          "d6be0d8c8d28b1e9",
+          "8f08e367299e35a5",
+          "bbfec4121fc2bd38",
+          "9bbd323b12d4652d",
+          "ef90e136097c562b",
+          "43ed47a97913a021",
+          "e1755fbd58c1a575",
+          "f58ae4a9f986ac32",
+          "7019e59908cdfb1d",
+          "20bcc040c7ecfc07",
+          "0eb3689157dfe055",
+          "49a28ca2dd788f5b",
+          "fee3fb3307619272",
+          "241b85f5fa21df4a",
+          "6550e6ee5b70fecb",
+          "a8c4ec0ea66725ba",
+          "18647c4dbe1900e9"
         ]
+      },
+      "depanel_revision": {
+        "status": "saved_reopened",
+        "outward_offset_mm": 0.4,
+        "before": {
+          "path": "variants/standard-green-white/eda/native/before-depanel-snake-leo-source.jsonl",
+          "sha256": "fe23ee596a01d8305487faf7fbed0117ba375455b34e60fdc1f16898872ed4ef"
+        },
+        "before_manifest": {
+          "path": "variants/standard-green-white/eda/native/before-depanel-export-manifest.json",
+          "sha256": "6afae097dfc354e907e0cd09776aa25b40d28c3aa7accdafe92bc4de936880de"
+        },
+        "before_native": {
+          "path": "variants/twelve-options/eda/native/before-depanel-20261020.epro2",
+          "sha256": "2eb028245e4e576140581814cfb8f0b6ae3af3e9156eb2a37e054547456d69a2"
+        }
       }
     }
   ],
@@ -3427,8 +3876,8 @@
   "project_before": "variants/standard-green-white/eda/native/nfc-before-standard-copies.epro2",
   "native_project": {
     "path": "variants/twelve-options/eda/native/nfc-twelve-options.epro2",
-    "size": 2677686,
-    "sha256": "2eb028245e4e576140581814cfb8f0b6ae3af3e9156eb2a37e054547456d69a2"
+    "size": 2853177,
+    "sha256": "427cdabe8783d6b628a6b83fc9f7054477c8722da6668da9fe18cbab7e19189e"
   },
   "artwork_file": "variants/standard-green-white/artwork/import-geometry.json",
   "release_status": "HOLD_CAM_C1_PHYSICAL_VALIDATION_PENDING",
@@ -3458,6 +3907,18 @@
       "size": 104578,
       "sha256": "8dab7ed9affadf91e186fea195f485acfaa30a3a471d28ae708f197d6295db05"
     },
+    "variants/standard-green-white/eda/native/before-depanel-export-manifest.json": {
+      "size": 112672,
+      "sha256": "6afae097dfc354e907e0cd09776aa25b40d28c3aa7accdafe92bc4de936880de"
+    },
+    "variants/standard-green-white/eda/native/before-depanel-horse-sagittarius-source.jsonl": {
+      "size": 576705,
+      "sha256": "5a8e2d05ae96aa397ae8890ed0be00a5ee14fba0f82bbf32ecaf12b5795bbafd"
+    },
+    "variants/standard-green-white/eda/native/before-depanel-snake-leo-source.jsonl": {
+      "size": 601042,
+      "sha256": "fe23ee596a01d8305487faf7fbed0117ba375455b34e60fdc1f16898872ed4ef"
+    },
     "variants/standard-green-white/eda/native/before-horse-sagittarius-source.jsonl": {
       "size": 209274,
       "sha256": "c994fab41feb7f3b480bb13170b8503a4756479c01ed4548f51d2e72919b31c1"
@@ -3467,8 +3928,8 @@
       "sha256": "5323c8cef4dcf1f16058c9c85f282c823c782099adfbdca61b73ebd2e6b02ccd"
     },
     "variants/standard-green-white/eda/native/horse-sagittarius-source.jsonl": {
-      "size": 576705,
-      "sha256": "40632c3b414c5f18af261fa78b6fde504690879edf98acd16050680b9a072aef"
+      "size": 594803,
+      "sha256": "3ae655ce5ce3a635dccff66600f5d3669b75b61deab6ad703841160f65e27001"
     },
     "variants/standard-green-white/eda/native/nfc-before-standard-copies.epro2": {
       "size": 932334,
@@ -3479,24 +3940,24 @@
       "sha256": "11afd40fc70b3748d4cd97956c71bb974e724b9fdec404f8487bb162b85659f9"
     },
     "variants/standard-green-white/eda/native/snake-leo-source.jsonl": {
-      "size": 601042,
-      "sha256": "f258da0417399855a5233920fb2570e4f0b100fc8c75b12776391a231f3dd660"
+      "size": 619140,
+      "sha256": "8854fb04488ca79b4f0dc1c2483204728834453bc4f3e94182f465eb9a45edef"
     },
     "variants/standard-green-white/manufacturing-draft/horse-sagittarius-green-white-gerber.members.json": {
       "size": 2331,
-      "sha256": "593fa79fd2defa79187671e90bf6ddf53d44c9b3e4ff6eafb26cce9201220612"
+      "sha256": "2eac3ccb55d3459888274963e86d2c6062afffd723ce09cefe45d856faee224f"
     },
     "variants/standard-green-white/manufacturing-draft/horse-sagittarius-green-white-gerber.zip": {
-      "size": 170121,
-      "sha256": "37b966fcd30e144cc19a42e6c8f5595efd5b4432eb21191be89e3930b221909a"
+      "size": 171706,
+      "sha256": "463d684cd0174cd1c2e9adcfaf3c9f53a5a9d8614c5668ff3775caaacfe0f5a1"
     },
     "variants/standard-green-white/manufacturing-draft/snake-leo-green-white-gerber.members.json": {
       "size": 2331,
-      "sha256": "2972ae89f435ea3ca157baca06d4946c2b275a2af3d378f2011b7eb89fc4a3de"
+      "sha256": "fc15c7608aab63fc2cf5a6fb8d32dc3291a22be1d47f31787af790ed04c91c9c"
     },
     "variants/standard-green-white/manufacturing-draft/snake-leo-green-white-gerber.zip": {
-      "size": 179887,
-      "sha256": "2ab391e51027527926b45295ea85e2a80ea7c05388d2fbd942f6fe7ad97a7b9d"
+      "size": 181653,
+      "sha256": "ab1abfb9798f9bd0bf358d6817d4c3f80c9f2e0c5e3b249e5eed23d95cb124e7"
     }
   },
   "archive_scope": {

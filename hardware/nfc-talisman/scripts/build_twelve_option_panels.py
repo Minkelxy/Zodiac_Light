@@ -132,7 +132,7 @@ def generate():
  hole_template=next(b for h,b in native.rows(source.read_text()) if h['type']=='PAD' and b.get('hole') and not b.get('plated'))
  manifest={'schema_version':1,'process':{'mask':'green','silk':'white','color_printing':False,'decorative_copper':False},
   'existing_constellations':['sagittarius','leo'],'existing_zodiac':['horse','snake'],'panels':[],
-  'cover_af_mm':37,'panel_mm':[100,100],'routing_gap_mm':1.,'tab_width_mm':4.,'mousebite_diameter_mm':.4,
+  'cover_af_mm':37,'panel_mm':[100,100],'routing_gap_mm':1.,'tab_width_mm':4.,'mousebite_diameter_mm':.4,'mousebite_outward_offset_mm':.4,
   'release_status':'HOLD_CAM_PHYSICAL_VALIDATION_PENDING','role':'interchangeable passive covers; reuse existing NFC core'}
  for key,entries in GROUPS.items():
   primitives=[];covers=[];counter=0
@@ -157,7 +157,7 @@ def generate():
    poly(routing,name+':routing');route_all.append(routing)
    for edge in ('N','S','E','W'):
     for j,v in enumerate((-1.44,-.72,0,.72,1.44)):
-     x,y=(center[0]+v,center[1]+(18.5 if edge=='N' else -18.5)) if edge in('N','S') else (center[0]+(18.5 if edge=='E' else -18.5),center[1]+v)
+     x,y=(center[0]+v,center[1]+(18.9 if edge=='N' else -18.9)) if edge in('N','S') else (center[0]+(18.9 if edge=='E' else -18.9),center[1]+v)
      hole(x,y,.4,f'{name}_{edge}_MB{j+1}')
    if abbr:
     silk,mask,positions,slots,details=star_cover(abbr,catalog,patterns)

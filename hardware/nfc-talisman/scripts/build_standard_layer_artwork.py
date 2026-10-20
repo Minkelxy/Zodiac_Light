@@ -400,7 +400,7 @@ def generate_variant(variant: str, output: Path):
         else:
             board, physical, mask, features, metadata = rear_geometry(source, config["constellation"])
         silk = unary_union([geometry for _, _, geometry in features])
-        border, border_metadata, _ = build_border(silk, mask, board=board)
+        border, border_metadata, _ = build_border(silk, mask, board=board, standard_panel=True)
         features.append(('cover_border', 'textured_octagonal_border_and_inner_divider', border))
         metadata['border'] = border_metadata
         silk = silk.union(border)

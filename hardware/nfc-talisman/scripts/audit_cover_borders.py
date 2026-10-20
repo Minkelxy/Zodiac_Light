@@ -11,7 +11,7 @@ import json
 import math
 from pathlib import Path
 
-from shapely.geometry import GeometryCollection, Point, Polygon, box
+from shapely.geometry import GeometryCollection, LineString, Point, Polygon, box
 from shapely.ops import unary_union
 
 import check_standard_delivery as standard
@@ -121,17 +121,20 @@ def audit(root):
     exact_board = Polygon([(half - corner, 0), (half + corner, 0), (37, half - corner),
                            (37, half + corner), (half + corner, 37), (half - corner, 37),
                            (0, half + corner), (0, half - corner)])
-    bridges = unary_union([box(16.5, -1, 20.5, 2.3), box(16.5, 34.7, 20.5, 38),
-                           box(-1, 16.5, 2.3, 20.5), box(34.7, 16.5, 38, 20.5)])
-    drill_centers = [(x, y) for offset in (-1.44, -.72, 0, .72, 1.44)
-                     for x, y in ((18.5 + offset, 0), (18.5 + offset, 37), (0, 18.5 + offset), (37, 18.5 + offset))]
 
     def cover(key, metadata, border_paths, art_paths, mask_paths, center, board):
         nonlocal parameters
         standard._check_border(metadata, border_paths, center)
+        p=metadata['parameters']
+        visual={k:v for k,v in p.items() if k not in ('cardinal_bridge_width_mm','postage_drill_diameter_mm','postage_hole_pitch_mm')}
         if parameters is None:
-            parameters = metadata["parameters"]
-        require(metadata["parameters"] == parameters, "Nonuniform border parameters: " + key)
+            parameters = visual
+        require(visual == parameters, "Nonuniform visual border parameters: " + key)
+        half_width=p['cardinal_bridge_width_mm']/2
+        bridges=unary_union([box(18.5-half_width,-1,18.5+half_width,0),box(18.5-half_width,37,18.5+half_width,38),
+                             box(-1,18.5-half_width,0,18.5+half_width),box(37,18.5-half_width,38,18.5+half_width)])
+        drill_centers=[(x,y) for i in range(5) for offset in [(i-2)*p['postage_hole_pitch_mm']]
+                       for x,y in ((18.5+offset,-.4),(18.5+offset,37.4),(-.4,18.5+offset),(37.4,18.5+offset))]
         actual = unary_union([native_polygon(path, center) for path in border_paths])
         recorded = canonical_geometry(metadata["geometry"])
         art = unary_union([native_polygon(path, center) for path in art_paths]) if art_paths else GeometryCollection()
@@ -143,7 +146,7 @@ def audit(root):
         require(hausdorff < .00002 and delta < .0002, "Canonical/import border shape differs: " + key)
         parts = polygons(actual)
         clearances = dict(board_edge=actual.distance(board.boundary),
-                          postage_holes=min(actual.distance(Point(point)) - .2 for point in drill_centers),
+                          postage_holes=min(actual.distance(Point(point)) - p['postage_drill_diameter_mm']/2 for point in drill_centers),
                           cardinal_bridges=actual.distance(bridges),
                           existing_art=None if art.is_empty else actual.distance(art),
                           aperture_mask=None if mask.is_empty else actual.distance(mask),
@@ -159,9 +162,13 @@ def audit(root):
                     "Recorded border clearance differs: " + key + " " + field + " " + str((value, reported)))
         require(actual.intersection(art).area < 1e-8 and actual.intersection(mask).area < 1e-8,
                 "Border overlaps existing art/mask: " + key)
+        envelope=unary_union([board.buffer(-2.1,join_style='mitre'),art.buffer(.33,quad_segs=24),mask.buffer(.33,quad_segs=24)]).convex_hull
+        inner=LineString(envelope.exterior.coords).buffer(.12,quad_segs=24)
+        require(inner.geom_type=='Polygon' and len(inner.interiors)==1 and inner.difference(actual.buffer(.00002)).area<.00001,
+                'Inner silk divider is not a complete closed ring: '+key)
         evidence["covers"][key] = dict(passed=True, native_border_paths_match=True,
                                       geometry_sha256=metadata["geometry_sha256"], polygon_count=len(parts),
-                                      native_polygon_count=len(border_paths), border_area_mm2=round(actual.area, 8),
+                                      native_polygon_count=len(border_paths), border_area_mm2=round(actual.area, 8), inner_divider_closed=True,
                                       holes=sum(len(part.interiors) for part in parts),
                                       canonical_symmetric_difference_mm2=round(delta, 10),
                                       canonical_hausdorff_mm=round(hausdorff, 10),
@@ -204,7 +211,7 @@ def audit(root):
         def protected(records):
             return {key: value for key, value in standard._protected(records).items()
                     if not (key[0] == "FILL" and value["layerId"] == 3)}
-        before, after = protected(old), protected(new)
+        before, after = protected(old), protected(standard._undo_mousebites(old,new))
         same, detail = manufacturing_equal(before, after)
         require(same, "Physical/mask primitive changes on " + key + ": " + detail)
         require(not standard._objects(old) and not standard._objects(new), "Color image present on " + key)
@@ -213,7 +220,8 @@ def audit(root):
                                                    current=current_path.relative_to(root).as_posix(),
                                                    preserved_primitive_counts=counts,
                                                    native_coordinate_tolerance_mil=.001,
-                                                   detail="All non-Top-silk manufacturing primitives retain their properties and one-to-one geometry; generated IDs and closed-contour start/direction may differ; saved-native serialization tolerance 0.001mil")
+                                                   mousebites_moved_outward=100, outward_offset_mm=.4,
+                                                   detail="100 named mousebites move exactly 0.40mm outward; every other non-Top-silk manufacturing property and one-to-one geometry is retained; native tolerance 0.001mil")
         for value in geometry["covers"]:
             prefix = value["id"] + ":"
             def paths(role):
@@ -228,7 +236,8 @@ def audit(root):
                                minimum_clearances_mm={name: min(value["actual_clearances_mm"][name] for value in evidence["covers"].values()
                                                                 if value["actual_clearances_mm"][name] is not None)
                                                       for name in next(iter(evidence["covers"].values()))["actual_clearances_mm"]},
-                               physical_changes="Owned Top silk only; mask, copper, pads, holes, slots, board outlines and breakaway geometry retained")
+                               inner_dividers_closed=24, mousebites_moved_outward=600, outward_offset_mm=.4,
+                               physical_changes="Closed owned Top silk plus exactly 0.40mm outward movement of 600 existing mousebites; original diameters/pitch, mask, copper, star holes, light slots and board outlines retained")
     return evidence
 
 

@@ -2,20 +2,20 @@
   "status": "passed",
   "read_only": true,
   "coordinate_tolerance_mm": 1e-05,
-  "export_manifest_sha256": "6afae097dfc354e907e0cd09776aa25b40d28c3aa7accdafe92bc4de936880de",
+  "export_manifest_sha256": "9eeec35d128387d0625c5657f54cf7d316db2921a4c5a03ed837eb30149ac317",
   "variants": {
     "horse-sagittarius": {
-      "artwork_geometry_sha256": "2dc55caea04fd6c8af5951cace46fe0b46bbd10b1d7310a42d0fdbedba36c52f",
+      "artwork_geometry_sha256": "c3d243e47f8509152e44d3afaf25fd837b7dce9d36a4b5a12c9f3a2d6a5d1a21",
       "faces": {
         "front": {
           "silk": {
-            "expected_area_mm2": 188.43223634537603,
-            "gerber_area_mm2": 188.43215709239792,
-            "symmetric_difference_mm2": 0.0003051340389984142,
+            "expected_area_mm2": 199.36169873077554,
+            "gerber_area_mm2": 199.361584212458,
+            "symmetric_difference_mm2": 0.0003536284849636447,
             "hausdorff_mm": 2.250497609717561e-06,
-            "negative_hole_probes_checked": 0,
-            "expected_union_holes": 0,
-            "actual_union_holes": 0,
+            "negative_hole_probes_checked": 2,
+            "expected_union_holes": 2,
+            "actual_union_holes": 2,
             "negative_holes_preserved": true,
             "nominal_fill_width_causes_no_extra_stroke": true
           },
@@ -34,13 +34,13 @@
         },
         "rear": {
           "silk": {
-            "expected_area_mm2": 71.73644904372415,
-            "gerber_area_mm2": 71.73656533047792,
-            "symmetric_difference_mm2": 0.0003861883005821084,
+            "expected_area_mm2": 82.66591158499114,
+            "gerber_area_mm2": 82.66607407346817,
+            "symmetric_difference_mm2": 0.00048109091746036364,
             "hausdorff_mm": 2.151063813790223e-06,
-            "negative_hole_probes_checked": 16,
-            "expected_union_holes": 16,
-            "actual_union_holes": 16,
+            "negative_hole_probes_checked": 18,
+            "expected_union_holes": 18,
+            "actual_union_holes": 18,
             "negative_holes_preserved": true,
             "nominal_fill_width_causes_no_extra_stroke": true
           },
@@ -58,13 +58,13 @@
           "actual_silk_mask_gap_mm": 0.15991174123516685
         }
       },
-      "gerber_sha256": "37b966fcd30e144cc19a42e6c8f5595efd5b4432eb21191be89e3930b221909a",
+      "gerber_sha256": "463d684cd0174cd1c2e9adcfaf3c9f53a5a9d8614c5668ff3775caaacfe0f5a1",
       "silk_regions": {
-        "polygon_model_dark": 142,
+        "polygon_model_dark": 154,
         "polygon_model_clear": 0,
         "all_sections": {
           "Text": 16,
-          "PolygonModel": 142
+          "PolygonModel": 154
         }
       },
       "mask_regions": {
@@ -77,17 +77,17 @@
       "passed": true
     },
     "snake-leo": {
-      "artwork_geometry_sha256": "9ca531bd66589caa5c6348a8949774eeda43d0d9d4affc870ffd0ace2ffe4ab5",
+      "artwork_geometry_sha256": "aaf9c2a540b7698360b54542b78b30d53b4f97f254f35767debc7a0066d839e4",
       "faces": {
         "front": {
           "silk": {
-            "expected_area_mm2": 171.0374266574353,
-            "gerber_area_mm2": 171.03736399248004,
-            "symmetric_difference_mm2": 0.0004074591251702884,
+            "expected_area_mm2": 181.96688904283496,
+            "gerber_area_mm2": 181.96679111254014,
+            "symmetric_difference_mm2": 0.0004559535711213095,
             "hausdorff_mm": 2.250497609717561e-06,
-            "negative_hole_probes_checked": 12,
-            "expected_union_holes": 12,
-            "actual_union_holes": 12,
+            "negative_hole_probes_checked": 14,
+            "expected_union_holes": 14,
+            "actual_union_holes": 14,
             "negative_holes_preserved": true,
             "nominal_fill_width_causes_no_extra_stroke": true
           },
@@ -106,13 +106,13 @@
         },
         "rear": {
           "silk": {
-            "expected_area_mm2": 67.41106505179252,
-            "gerber_area_mm2": 67.41118272894789,
-            "symmetric_difference_mm2": 0.00036447254882964684,
+            "expected_area_mm2": 78.34052759305891,
+            "gerber_area_mm2": 78.340691471937,
+            "symmetric_difference_mm2": 0.00045937516570770606,
             "hausdorff_mm": 2.2156247721828144e-06,
-            "negative_hole_probes_checked": 15,
-            "expected_union_holes": 15,
-            "actual_union_holes": 15,
+            "negative_hole_probes_checked": 17,
+            "expected_union_holes": 17,
+            "actual_union_holes": 17,
             "negative_holes_preserved": true,
             "nominal_fill_width_causes_no_extra_stroke": true
           },
@@ -130,13 +130,13 @@
           "actual_silk_mask_gap_mm": 0.15991189109281198
         }
       },
-      "gerber_sha256": "2ab391e51027527926b45295ea85e2a80ea7c05388d2fbd942f6fe7ad97a7b9d",
+      "gerber_sha256": "ab1abfb9798f9bd0bf358d6817d4c3f80c9f2e0c5e3b249e5eed23d95cb124e7",
       "silk_regions": {
-        "polygon_model_dark": 130,
+        "polygon_model_dark": 142,
         "polygon_model_clear": 0,
         "all_sections": {
           "Text": 16,
-          "PolygonModel": 130
+          "PolygonModel": 142
         }
       },
       "mask_regions": {

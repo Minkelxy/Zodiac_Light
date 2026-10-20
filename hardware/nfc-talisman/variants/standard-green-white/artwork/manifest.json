@@ -1,14 +1,18 @@
 {
   "schema_version": 1,
   "version": "ordinary-green-white-v1",
+  "border_generator": {
+    "path": "hardware/nfc-talisman/scripts/pcb_cover_border.py",
+    "sha256": "a91dbfb3bdbf89c071a1d5ee200c883bc780fdc553a73acb2940de98b3c6f34c"
+  },
   "generator": "hardware/nfc-talisman/scripts/build_standard_layer_artwork.py",
-  "generator_sha256": "9b9848d6bb39564a56721182b13d196455c5632ca759392f446cc127b016ff86",
+  "generator_sha256": "9a702d485ec4d2d7a59a793ddd59ba14bf303b9e715714fbb6baacf8dac87f74",
   "variants": {
     "horse-sagittarius": {
       "geometry_json": "horse-sagittarius-standard-layer-artwork.json",
       "silk_polygon_count": {
-        "front": 50,
-        "rear": 92
+        "front": 56,
+        "rear": 98
       },
       "mask_opening_polygon_count": {
         "front": 0,
@@ -19,8 +23,8 @@
     "snake-leo": {
       "geometry_json": "snake-leo-standard-layer-artwork.json",
       "silk_polygon_count": {
-        "front": 49,
-        "rear": 81
+        "front": 55,
+        "rear": 87
       },
       "mask_opening_polygon_count": {
         "front": 0,
@@ -31,56 +35,56 @@
   },
   "files": {
     "horse-sagittarius-front-standard-green-white-37mm.png": {
-      "sha256": "b850450d551f3dafe57b34ec3a904351b24f8771879bd578291062aeda0c53a8",
-      "size": 166065
+      "sha256": "439b6ddaa6344c29580290f62a9782f4e34c687290f281b934a537a7a3c940dc",
+      "size": 167246
     },
     "horse-sagittarius-front-standard-green-white-37mm.svg": {
-      "sha256": "4047f6f6dc9e22414dbab7e699594cb10423b54e8b2223f28246d20647dccd8f",
-      "size": 101368
+      "sha256": "b366e03507310582e75cc36762dc04532575f8572eb56c5273368dbc9945f049",
+      "size": 109199
     },
     "horse-sagittarius-rear-standard-green-white-37mm.png": {
-      "sha256": "08dd155c8c2de41b8a17eeb245cb4145dc2bddf5aa7f0cc9a720b11c8256a31b",
-      "size": 367187
+      "sha256": "c008ed2f2f3411a9b227e9d5592d273dc675f5a6b53711b8dd79fc8293f4eb21",
+      "size": 368219
     },
     "horse-sagittarius-rear-standard-green-white-37mm.svg": {
-      "sha256": "4941dc975cad864d02f0d803adbe20e7cc07d8097e1387a63dfc99db7836a7a0",
-      "size": 301191
+      "sha256": "c97229ca0939ab3e44fa04a68258881d448c334eb40e5188f873b89584bdb1b1",
+      "size": 309025
     },
     "horse-sagittarius-standard-green-white-two-face-preview.png": {
-      "sha256": "1626eafc2c8919cb3654be8b5d6c0cd08fee7306621aa3fd2bd64c3b1524b18a",
-      "size": 292290
+      "sha256": "c2fdfc5ce4658e1aade2ad16d24e8ee9e520349fdafa2317b2ae962aca142919",
+      "size": 296690
     },
     "horse-sagittarius-standard-layer-artwork.json": {
-      "sha256": "2dc55caea04fd6c8af5951cace46fe0b46bbd10b1d7310a42d0fdbedba36c52f",
-      "size": 5142450
+      "sha256": "c3d243e47f8509152e44d3afaf25fd837b7dce9d36a4b5a12c9f3a2d6a5d1a21",
+      "size": 5447193
     },
     "README.md": {
       "sha256": "ffbb08a7b8f5b3c05ce3cb61dcf253f9d291f1218cb0cbd82aad6d6dad23a54d",
       "size": 2863
     },
     "snake-leo-front-standard-green-white-37mm.png": {
-      "sha256": "4ea6fc0c2cc0e349818daf1a9e4355a400c82044dd9ab7f03d1ecef54cca499b",
-      "size": 254872
+      "sha256": "4d13286efee160b2a2301a56f8b18d6a0506231b43c2549e34ebf70107acabc1",
+      "size": 256236
     },
     "snake-leo-front-standard-green-white-37mm.svg": {
-      "sha256": "9bff6244c29503f132a9abe6e3163a7372314a68ebb85736cf4290ebe948d55b",
-      "size": 116538
+      "sha256": "1446d96f8ae51466fe78a07271887810789351277cc3a8a70cd3069686773036",
+      "size": 124370
     },
     "snake-leo-rear-standard-green-white-37mm.png": {
-      "sha256": "cebf70a66be097c03a8ca95b591bffc7d3309e8998eb1ece2a61f832fee73b68",
-      "size": 302886
+      "sha256": "295d6657fe1f115f1b99ee0575ea484eee710e119eeef74e0043d772bef4bad6",
+      "size": 305474
     },
     "snake-leo-rear-standard-green-white-37mm.svg": {
-      "sha256": "d06c3cd7c0b15992184c34d962e1e5876125d8658cda093e828056ac07b2ac63",
-      "size": 297880
+      "sha256": "f376c7b0a77e420e3c0fd6c25119c7f11ab4417299bd630fd66df0f2aa347daa",
+      "size": 305713
     },
     "snake-leo-standard-green-white-two-face-preview.png": {
-      "sha256": "d0486a2a46c4ac297a4e40908c85bb0e5aca8151b0ec736f98767db31f6dda87",
-      "size": 301257
+      "sha256": "9892bda8d7d5c255f9fba8703c4f8e286e2f81f297016963c6691d20ff8c87e5",
+      "size": 305878
     },
     "snake-leo-standard-layer-artwork.json": {
-      "sha256": "9ca531bd66589caa5c6348a8949774eeda43d0d9d4affc870ffd0ace2ffe4ab5",
-      "size": 5338118
+      "sha256": "aaf9c2a540b7698360b54542b78b30d53b4f97f254f35767debc7a0066d839e4",
+      "size": 5642863
     },
     "source-horse-single-ink.png": {
       "sha256": "c732fa1d57448ed367c3a7d841f3674c9f5a4565fe4e5d2999c4e43b0d17c728",
@@ -90,9 +94,5 @@
       "sha256": "45edc71977712929173bdae0f626a40364369b3582664eda9890f66b7ce6de8d",
       "size": 135886
     }
-  },
-  "border_generator": {
-    "path": "hardware/nfc-talisman/scripts/pcb_cover_border.py",
-    "sha256": "c5e801731819e7ca2d0b681675553a583ce1ec3cbfb87deba40558fee99ff1d7"
   }
 }

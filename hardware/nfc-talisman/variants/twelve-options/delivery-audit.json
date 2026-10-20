@@ -35,7 +35,7 @@
     {
       "id": "twelve:constellations-a:native",
       "passed": true,
-      "detail": "590 owned primitives match final native source and archive; no decorative copper or image objects; saved/reopened DRC 0"
+      "detail": "605 owned primitives match final native source and archive; no decorative copper or image objects; saved/reopened DRC 0"
     },
     {
       "id": "twelve:constellations-a:gerber",
@@ -45,7 +45,7 @@
     {
       "id": "twelve:constellations-b:native",
       "passed": true,
-      "detail": "618 owned primitives match final native source and archive; no decorative copper or image objects; saved/reopened DRC 0"
+      "detail": "638 owned primitives match final native source and archive; no decorative copper or image objects; saved/reopened DRC 0"
     },
     {
       "id": "twelve:constellations-b:gerber",
@@ -55,7 +55,7 @@
     {
       "id": "twelve:zodiac-a:native",
       "passed": true,
-      "detail": "407 owned primitives match final native source and archive; no decorative copper or image objects; saved/reopened DRC 0"
+      "detail": "437 owned primitives match final native source and archive; no decorative copper or image objects; saved/reopened DRC 0"
     },
     {
       "id": "twelve:zodiac-a:gerber",
@@ -65,7 +65,7 @@
     {
       "id": "twelve:zodiac-b:native",
       "passed": true,
-      "detail": "407 owned primitives match final native source and archive; no decorative copper or image objects; saved/reopened DRC 0"
+      "detail": "437 owned primitives match final native source and archive; no decorative copper or image objects; saved/reopened DRC 0"
     },
     {
       "id": "twelve:zodiac-b:gerber",

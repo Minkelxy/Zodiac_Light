@@ -44,7 +44,7 @@ python scripts/check_project.py --output build/project-check.json
 
 | 工作 | 命令或入口 | 产生或使用的资料 |
 |---|---|---|
-| NFC 十二选项完整工程 | [nfc-twelve-options.epro2](../hardware/nfc-talisman/variants/twelve-options/eda/native/nfc-twelve-options.epro2)、[四块盖板说明](../hardware/nfc-talisman/variants/twelve-options/README.md) | 统一九 PCB 当前档；六块绿白板同步纹理边框，核心板与原彩色两板保留，两块整套绿白板保护电气/孔槽/阻焊后更新丝印 |
+| NFC 十二选项完整工程 | [nfc-twelve-options.epro2](../hardware/nfc-talisman/variants/twelve-options/eda/native/nfc-twelve-options.epro2)、[四块盖板说明](../hardware/nfc-talisman/variants/twelve-options/README.md) | 统一九 PCB 当前档；六块绿白板同步纹理边框，核心板与原彩色两板保留，两块整套绿白板保护电气/星孔光槽/阻焊，拆板孔外移 0.40 mm 并闭合内框 |
 | 灯带交互预览 | `python -m constellation_lamp preview` | 已保存的 21 星、24 边、268 灯布局与九种灯效 |
 | 灯带构建 | `python -m constellation_lamp build` | `build/` 内运行表、裁切/接线 CSV、C 头文件、静态图 |
 | 静态灯效 | `python -m constellation_lamp render --effect ripple --time-ms 2400 --output build/ripple.png` | 指定时刻的 PNG |

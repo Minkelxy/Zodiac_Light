@@ -68,9 +68,9 @@ def main():
                     edge, number = re.search(r"_([NSEW])_MB([1-5])$", item["logical_id"]).groups()
                     offset = (-1.44, -.72, 0, .72, 1.44)[int(number) - 1]
                     if edge in ("N", "S"):
-                        expected_xy = (cx + offset, cy + (18.5 if edge == "N" else -18.5))
+                        expected_xy = (cx + offset, cy + (18.9 if edge == "N" else -18.9))
                     else:
-                        expected_xy = (cx + (18.5 if edge == "E" else -18.5), cy + offset)
+                        expected_xy = (cx + (18.9 if edge == "E" else -18.9), cy + offset)
                     xy = (body["centerX"] * .0254, body["centerY"] * .0254)
                     assert math.dist(xy, expected_xy) < 1e-7
                     assert body["plated"] is False and abs(body["hole"]["width"] * .0254 - .4) < 1e-7
